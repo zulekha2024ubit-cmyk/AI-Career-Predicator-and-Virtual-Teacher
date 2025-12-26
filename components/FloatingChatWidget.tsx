@@ -1,5 +1,6 @@
 "use client"
 import React, { useState } from 'react'
+import ReactMarkdown from 'react-markdown'
 import { Button } from './Button'
 
 export const FloatingChatWidget: React.FC = () => {
@@ -127,9 +128,15 @@ export const FloatingChatWidget: React.FC = () => {
             )}
             {messages.map((m, i) => (
               <div key={i} className={m.role === 'user' ? 'text-right' : 'text-left'}>
-                <span className={m.role === 'user' ? 'inline-block rounded bg-kaggle-blue/10 px-2 py-1' : 'inline-block rounded bg-gray-100 px-2 py-1'}>
-                  {m.content}
-                </span>
+                {m.role === 'user' ? (
+                  <span className="inline-block rounded bg-kaggle-blue/10 px-3 py-2">
+                    {m.content}
+                  </span>
+                ) : (
+                  <div className="inline-block rounded bg-gray-100 px-3 py-2 max-w-full text-left prose prose-sm prose-gray prose-p:my-2 prose-headings:my-2 prose-ul:my-1 prose-li:my-0 prose-code:bg-gray-200 prose-code:text-pink-600 prose-code:px-1 prose-code:rounded prose-pre:bg-gray-900 prose-pre:text-green-400 prose-pre:p-3 prose-pre:rounded-lg prose-pre:overflow-x-auto prose-pre:text-xs">
+                    <ReactMarkdown>{m.content}</ReactMarkdown>
+                  </div>
+                )}
               </div>
             ))}
             {loading && (
