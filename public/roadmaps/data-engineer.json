@@ -1,0 +1,1592 @@
+{
+  "slug": "data-engineer",
+  "title": "Data Engineer",
+  "summary": "Build and maintain infrastructure for data generation, storage, and processing at scale to enable data scientists and analysts.",
+  "timeline": "8-14 months",
+  "difficulty": "Moderate to Advanced",
+  "steps": [
+    {
+      "id": "programming-fundamentals",
+      "title": "Programming Fundamentals (4-6 weeks)",
+      "description": "Master Python for data engineering, SQL for data manipulation, Git for version control, and Linux command line for server management.",
+      "resources": [
+        {
+          "title": "Python Full Course - freeCodeCamp",
+          "url": "https://www.youtube.com/embed/rfscVS0vtbw?si=f1xJfH42mMKxuQeo",
+          "type": "Video",
+          "duration": "4 hours",
+          "note": "BEST Python course"
+        },
+        {
+          "title": "SQL Mastery Full Course",
+          "url": "https://www.youtube.com/embed/HXV3zeQKqGY?si=5DJUfzWFzdsdAqqP",
+          "type": "Video",
+          "duration": "4 hours"
+        },
+        {
+          "title": "SQLZoo - Interactive Practice",
+          "url": "https://sqlzoo.net/",
+          "type": "interactive"
+        },
+        {
+          "title": "Git & Version Control",
+          "url": "https://www.youtube.com/embed/RGOj5yH7evk?si=C6rH_6sRuhE8HO2u",
+          "type": "Video",
+          "duration": "1 hour"
+        },
+        {
+          "title": "Learn Git Branching",
+          "url": "https://learngitbranching.js.org/",
+          "type": "Interactive"
+        },
+        {
+          "title": "Linux Command Line Full Course",
+          "url": "https://www.youtube.com/embed/ZtqBQ68cfJc?si=516HB8n6oqSJe-R6" ,
+          "type": "Video",
+          "duration": "5 hours"
+        }
+      ],
+      "quiz": [
+        {"question": "What is Python used for in data engineering?", "options": ["Data pipelines, ETL scripts, automation", "Database", "CSS styling", "Graphics design"], "correctAnswer": 0, "explanation": "Python is primary language for data engineering tasks."},
+        {"question": "What is SQL?", "options": ["CSS language", "Structured Query Language for databases", "Programming language", "Markup language"], "correctAnswer": 1, "explanation": "SQL queries, filters, joins, and aggregates data."},
+        {"question": "What is a JOIN in SQL?", "options": ["Combining data from multiple tables", "Database join", "CSS join", "Array join"], "correctAnswer": 0, "explanation": "Joins include INNER, LEFT, RIGHT, FULL OUTER joins."},
+        {"question": "What is Git?", "options": ["Database git", "Version control system for code", "CSS git", "Testing tool"], "correctAnswer": 1, "explanation": "Git tracks changes and enables collaboration."},
+        {"question": "What is a Git branch?", "options": ["Separate line of development", "Database branch", "CSS branch", "File branch"], "correctAnswer": 0, "explanation": "Branches enable parallel feature development."},
+        {"question": "What is Linux used for in data engineering?", "options": ["CSS linux", "Server management and automation", "Graphics design", "Mobile apps"], "correctAnswer": 1, "explanation": "Linux runs most data infrastructure and servers."},
+        {"question": "What is a GROUP BY clause?", "options": ["Aggregating data by specific columns", "Database group", "CSS group", "File grouping"], "correctAnswer": 0, "explanation": "GROUP BY is used with aggregation functions like SUM, COUNT."},
+        {"question": "What is pandas?", "options": ["Database pandas", "Python library for data manipulation", "CSS pandas", "Animal"], "correctAnswer": 1, "explanation": "Pandas provides DataFrames for tabular data analysis."},
+        {"question": "What is a shell script?", "options": ["Automated series of Linux commands", "Database script", "CSS script", "Graphics script"], "correctAnswer": 0, "explanation": "Shell scripts automate data pipeline tasks."},
+        {"question": "What is GitHub?", "options": ["CSS platform", "Platform for hosting Git repositories", "Database platform", "Testing platform"], "correctAnswer": 1, "explanation": "GitHub enables code collaboration and version control."},
+        {"question": "What is INNER JOIN?", "options": ["Database join", "Returns only matching rows from both tables", "Returns all rows", "CSS join"], "correctAnswer": 1, "explanation": "INNER JOIN filters out non-matching rows."},
+        {"question": "What is LEFT JOIN?", "options": ["Returns all left table rows and matching right rows", "Returns only matching rows", "CSS join", "Database operation"], "correctAnswer": 0, "explanation": "LEFT JOIN preserves all rows from the left table."},
+        {"question": "What is a WHERE clause?", "options": ["Filters rows based on conditions", "Joins tables", "Groups data", "Sorts data"], "correctAnswer": 0, "explanation": "WHERE filters data before aggregation."},
+        {"question": "What is Git merge?", "options": ["CSS merge", "Combining branches into one", "Deleting branches", "Creating branches"], "correctAnswer": 1, "explanation": "Merge integrates changes from different branches."},
+        {"question": "What is a primary key?", "options": ["Unique identifier for table rows", "Foreign key", "Index", "Column name"], "correctAnswer": 0, "explanation": "Primary keys ensure row uniqueness."},
+        {"question": "What is a foreign key?", "options": ["Index type", "Column referencing primary key in another table", "Unique key", "Sort key"], "correctAnswer": 1, "explanation": "Foreign keys establish table relationships."},
+        {"question": "What is chmod in Linux?", "options": ["Changes file permissions", "Copies files", "Moves files", "Deletes files"], "correctAnswer": 0, "explanation": "chmod modifies read/write/execute permissions."},
+        {"question": "What is pip?", "options": ["Database tool", "Python package manager", "Linux command", "Git tool"], "correctAnswer": 1, "explanation": "pip installs Python libraries and dependencies."},
+        {"question": "What is a DataFrame?", "options": ["2D labeled data structure in pandas", "Database", "Array", "Dictionary"], "correctAnswer": 0, "explanation": "DataFrames organize data in rows and columns."},
+        {"question": "What is Git commit?", "options": ["Saving changes to local repository", "Pushing to remote", "Pulling from remote", "Creating branch"], "correctAnswer": 0, "explanation": "Commits record snapshots of project changes."}
+      ]
+    },
+    {
+      "id": "database-fundamentals",
+      "title": "Database Fundamentals (6-8 weeks)",
+      "description": "Deep dive into PostgreSQL, NoSQL databases (MongoDB, Redis, Cassandra), and data modeling including star schema, snowflake schema, and slowly changing dimensions.",
+      "resources": [
+        {
+          "title": "PostgreSQL Official Documentation",
+          "url": "https://neon.com/postgresql/tutorial",
+          "type": "Article"
+        },
+        {
+          "title": "MongoDB Crash Course",
+          "url": "https://www.youtube.com/embed/ofme2o29ngU?si=Z6chK1uWCwWEDbCg" ,
+          "type": "Course"
+        },
+        {
+          "title": "Data Modeling Tutorial",
+          "url": "https://www.youtube.com/embed/tR_rOJPiEXc?si=q4DzjdyTrTU6GMOW",
+          "type": "Video"
+        }
+      ],
+      "quiz": [
+        {"question": "What is PostgreSQL?", "options": ["Open-source relational database", "NoSQL database", "CSS database", "Cloud service"], "correctAnswer": 0, "explanation": "PostgreSQL offers ACID compliance and rich features."},
+        {"question": "What is MongoDB?", "options": ["CSS database", "NoSQL document database", "Relational database", "Cache"], "correctAnswer": 1, "explanation": "MongoDB stores data in flexible JSON-like documents."},
+        {"question": "What is Redis?", "options": ["In-memory key-value store for caching", "Relational database", "CSS store", "File storage"], "correctAnswer": 0, "explanation": "Redis provides fast data access for sessions, caching."},
+        {"question": "What is Cassandra?", "options": ["Database cassandra", "Distributed NoSQL database for scalability", "CSS cassandra", "SQL database"], "correctAnswer": 1, "explanation": "Cassandra handles massive datasets across nodes."},
+        {"question": "What is data modeling?", "options": ["Designing database structure and relationships", "CSS modeling", "Graphics modeling", "Testing"], "correctAnswer": 0, "explanation": "Data modeling defines tables, keys, and constraints."},
+        {"question": "What is a star schema?", "options": ["CSS schema", "Data warehouse schema with fact and dimension tables", "Database star", "Network schema"], "correctAnswer": 1, "explanation": "Star schema optimizes analytical queries."},
+        {"question": "What is a snowflake schema?", "options": ["Normalized star schema with hierarchical dimensions", "Database snowflake", "CSS snowflake", "Simple schema"], "correctAnswer": 0, "explanation": "Snowflake schema reduces redundancy via normalization."},
+        {"question": "What are slowly changing dimensions?", "options": ["Database dimensions", "Dimension attributes that change over time", "CSS dimensions", "Static dimensions"], "correctAnswer": 1, "explanation": "SCDs track historical changes (Type 1, 2, 3)."},
+        {"question": "What is ACID?", "options": ["Atomicity, Consistency, Isolation, Durability", "Database ACID", "CSS ACID", "Network ACID"], "correctAnswer": 0, "explanation": "ACID ensures reliable database transactions."},
+        {"question": "What is indexing?", "options": ["CSS indexing", "Creating data structures for faster queries", "Database indexing", "File indexing"], "correctAnswer": 1, "explanation": "Indexes speed up data retrieval using B-trees."},
+        {"question": "What is normalization?", "options": ["Organizing data to reduce redundancy", "Data scaling", "Data encryption", "Data backup"], "correctAnswer": 0, "explanation": "Normalization splits data into related tables."},
+        {"question": "What is denormalization?", "options": ["CSS denormalization", "Combining tables for query performance", "Database backup", "Data encryption"], "correctAnswer": 1, "explanation": "Denormalization trades storage for faster reads."},
+        {"question": "What is a composite key?", "options": ["Primary key using multiple columns", "Single column key", "Foreign key", "Index"], "correctAnswer": 0, "explanation": "Composite keys uniquely identify rows with multiple fields."},
+        {"question": "What is sharding?", "options": ["Database sharding", "Horizontal partitioning across databases", "Vertical partitioning", "Replication"], "correctAnswer": 1, "explanation": "Sharding distributes data across multiple database instances."},
+        {"question": "What is replication?", "options": ["Copying data across multiple servers", "Data backup", "Data deletion", "Data encryption"], "correctAnswer": 0, "explanation": "Replication improves availability and read performance."},
+        {"question": "What is CAP theorem?", "options": ["CSS theorem", "Consistency, Availability, Partition tolerance tradeoff", "Database theorem", "Network theorem"], "correctAnswer": 1, "explanation": "CAP states you can only guarantee 2 of 3 properties."},
+        {"question": "What is a B-tree?", "options": ["Balanced tree structure for database indexes", "Binary tree", "Graph structure", "Array"], "correctAnswer": 0, "explanation": "B-trees enable efficient range queries and sorting."},
+        {"question": "What is eventual consistency?", "options": ["Database consistency", "Data becomes consistent over time", "Immediate consistency", "No consistency"], "correctAnswer": 1, "explanation": "Eventual consistency prioritizes availability over immediacy."},
+        {"question": "What is a transaction?", "options": ["Group of database operations as single unit", "Single query", "Table join", "Index scan"], "correctAnswer": 0, "explanation": "Transactions ensure all-or-nothing execution."},
+        {"question": "What is OLTP vs OLAP?", "options": ["OLTP: transactions; OLAP: analytics", "Same thing", "OLAP is faster", "OLTP is newer"], "correctAnswer": 0, "explanation": "OLTP handles real-time transactions; OLAP handles complex queries."}
+      ]
+    },
+    {
+      "id": "data-warehousing",
+      "title": "Data Warehousing (4-6 weeks)",
+      "description": "Learn modern data warehousing with Snowflake, Google BigQuery, and data warehouse design patterns including Kimball methodology, star schema, and lakehouse architecture.",
+      "resources": [
+        {
+          "title": "Snowflake Fundamentals",
+          "url": "https://www.youtube.com/embed/videoseries?si=VIvBS6DJFY5a8SOQ&amp;list=PLc2EZr8W2QIBqETApuLNGGB8X_WL47AKb",
+          "type": "Course"
+        },
+        {
+          "title": "BigQuery Tutorial",
+          "url": "https://www.youtube.com/embed/videoseries?si=K1XBoXyy54ckzH2a&amp;list=PLFz7Ouda3Gw0Sui_PBIQtFPgYeat_LKzR",
+          "type": "Course"
+        },
+        {
+          "title": "Data Warehouse Design",
+          "url": "https://www.youtube.com/embed/HKcEyHF1U00?si=k0xCejwg7eBoKePR",
+          "type": "Course"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is a data warehouse?",
+          "options": ["Central repository for analytical queries", "Database warehouse", "CSS warehouse", "File storage"],
+          "correctAnswer": 0,
+          "explanation": "Data warehouses consolidate data from multiple sources."
+        },
+        {
+          "question": "What is Snowflake?",
+          "options": ["CSS snowflake", "Cloud data warehouse platform", "Database snowflake", "Schema type"],
+          "correctAnswer": 1,
+          "explanation": "Snowflake offers scalable, serverless data warehousing."
+        },
+        {
+          "question": "What is BigQuery?",
+          "options": ["Google's serverless data warehouse", "Database query", "CSS query", "SQL query"],
+          "correctAnswer": 0,
+          "explanation": "BigQuery enables fast SQL queries on large datasets."
+        },
+        {
+          "question": "What is Kimball methodology?",
+          "options": ["Database methodology", "Dimensional modeling approach for warehouses", "CSS methodology", "Testing methodology"],
+          "correctAnswer": 1,
+          "explanation": "Kimball focuses on business processes and dimensions."
+        },
+        {
+          "question": "What is a fact table?",
+          "options": ["Table storing measurable business metrics", "Database fact", "CSS fact", "Dimension table"],
+          "correctAnswer": 0,
+          "explanation": "Fact tables contain quantitative data (sales, revenue)."
+        },
+        {
+          "question": "What is a dimension table?",
+          "options": ["CSS dimension", "Table storing descriptive attributes", "Database dimension", "Fact table"],
+          "correctAnswer": 1,
+          "explanation": "Dimension tables provide context (time, product, customer)."
+        },
+        {
+          "question": "What is a lakehouse?",
+          "options": ["Architecture combining data lake and warehouse", "Database lakehouse", "CSS lakehouse", "Physical house"],
+          "correctAnswer": 0,
+          "explanation": "Lakehouse offers flexibility and performance together."
+        },
+        {
+          "question": "What is columnar storage?",
+          "options": ["Database storage", "Storing data by columns for analytics", "CSS storage", "Row storage"],
+          "correctAnswer": 1,
+          "explanation": "Columnar storage improves query performance for aggregations."
+        },
+        {
+          "question": "What is partitioning?",
+          "options": ["Dividing tables into smaller chunks", "Database partition", "CSS partition", "Disk partition"],
+          "correctAnswer": 0,
+          "explanation": "Partitioning improves query speed by scanning less data."
+        },
+        {
+          "question": "What is MPP?",
+          "options": ["CSS MPP", "Massively Parallel Processing for distributed queries", "Database MPP", "Network MPP"],
+          "correctAnswer": 1,
+          "explanation": "MPP warehouses distribute queries across nodes."
+        },
+        {
+          "question": "What is a surrogate key?",
+          "options": ["Artificial primary key for dimension tables", "Natural key", "Foreign key", "Composite key"],
+          "correctAnswer": 0,
+          "explanation": "Surrogate keys simplify joins and track changes."
+        },
+        {
+          "question": "What is an aggregate table?",
+          "options": ["CSS table", "Pre-computed summary table for performance", "Raw data table", "Dimension table"],
+          "correctAnswer": 1,
+          "explanation": "Aggregate tables speed up common analytical queries."
+        },
+        {
+          "question": "What is data vault modeling?",
+          "options": ["Flexible warehouse methodology with hubs and satellites", "Star schema", "Snowflake schema", "Flat schema"],
+          "correctAnswer": 0,
+          "explanation": "Data vault enables agile, auditable data warehouses."
+        },
+        {
+          "question": "What is an OLAP cube?",
+          "options": ["Database cube", "Multi-dimensional data structure for analysis", "CSS cube", "Single dimension"],
+          "correctAnswer": 1,
+          "explanation": "OLAP cubes enable drill-down, roll-up, slice-and-dice."
+        },
+        {
+          "question": "What is incremental load?",
+          "options": ["Loading only new or changed data", "Full data load", "CSS load", "Batch load"],
+          "correctAnswer": 0,
+          "explanation": "Incremental loads reduce processing time and costs."
+        },
+        {
+          "question": "What is a conformed dimension?",
+          "options": ["CSS dimension", "Shared dimension across fact tables", "Private dimension", "Single-use dimension"],
+          "correctAnswer": 1,
+          "explanation": "Conformed dimensions ensure consistency across marts."
+        },
+        {
+          "question": "What is slowly changing dimension Type 2?",
+          "options": ["Tracks full history with new rows", "Overwrites old data", "Adds new column", "Ignores changes"],
+          "correctAnswer": 0,
+          "explanation": "Type 2 SCD maintains historical records via versioning."
+        },
+        {
+          "question": "What is materialized view?",
+          "options": ["Database view", "Pre-computed query result stored as table", "Virtual view", "CSS view"],
+          "correctAnswer": 1,
+          "explanation": "Materialized views cache complex query results."
+        },
+        {
+          "question": "What is query federation?",
+          "options": ["Querying multiple data sources as one", "Single database query", "CSS federation", "Data backup"],
+          "correctAnswer": 0,
+          "explanation": "Federation unifies disparate data sources."
+        },
+        {
+          "question": "What is data warehouse clustering?",
+          "options": ["Organizing data by commonly queried columns", "Data grouping", "Server clustering", "CSS clustering"],
+          "correctAnswer": 0,
+          "explanation": "Clustering co-locates related data for faster access."
+        }
+      ]
+    },
+    {
+      "id": "etl-elt-tools",
+      "title": "ETL/ELT Tools (6-8 weeks)",
+      "description": "Master Apache Airflow for orchestration, dbt for transformation, and Apache Spark for big data processing. Learn to build scalable data pipelines.",
+      "resources": [
+        {
+          "title": "Apache Airflow",
+          "url": "https://www.youtube.com/embed/cHATHSB_450?si=oBjDgvx6v1GN2HVr",
+          "type": "Video",
+          "note": "BEST orchestration tool"
+        },
+        {
+          "title": "dbt (Data Build Tool) Tutorial",
+          "url": "https://www.youtube.com/embed/videoseries?si=J8HrikvF2bIVL32h&amp;list=PLc2EZr8W2QIBegSYp4dEIMrfLj_cCJgYA",
+          "type": "Course",
+          "note": "BEST transformation tool"
+        },
+        {
+          "title": "Apache Spark",
+          "url": "https://www.youtube.com/embed/_C8kWso4ne4?si=wamWBB2Acoirqo5H",
+          "type": "Video"
+        },
+        {
+          "title": "Apache NiFi Tutorial",
+          "url": "https://www.youtube.com/embed/9OCNVt4UanA?si=dDwaT02_-Z31mzC1",
+          "type": "Video"
+        },
+        {
+          "title": "Airbyte - ELT Platform",
+          "url": "https://www.youtube.com/embed/videoseries?si=DUKKVV0sz8uRBvJ1&amp;list=PLgyvStszwUHhA1KKL3f0Yaal9FRU-4bHn",
+          "type": "Video"
+        },
+        {
+          "title": "Fivetran Tutorial",
+          "url": "https://www.youtube.com/embed/Mt2zpL9OcJQ?si=9j5ZYYyUm8i37jIB",
+          "type": "Video"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is ETL?",
+          "options": ["Extract, Transform, Load data process", "Database ETL", "CSS ETL", "Network ETL"],
+          "correctAnswer": 0,
+          "explanation": "ETL moves and transforms data from sources to warehouse."
+        },
+        {
+          "question": "What is ELT?",
+          "options": ["CSS ELT", "Extract, Load, Transform in warehouse", "Database ELT", "ETL reverse"],
+          "correctAnswer": 1,
+          "explanation": "ELT leverages warehouse power for transformations."
+        },
+        {
+          "question": "What is Apache Airflow?",
+          "options": ["Workflow orchestration platform", "Database airflow", "CSS airflow", "Testing tool"],
+          "correctAnswer": 0,
+          "explanation": "Airflow schedules and monitors data pipelines via DAGs."
+        },
+        {
+          "question": "What is dbt?",
+          "options": ["Database tool", "Data build tool for SQL transformations", "CSS tool", "ETL tool"],
+          "correctAnswer": 1,
+          "explanation": "dbt enables analytics engineering with version control."
+        },
+        {
+          "question": "What is Apache Spark?",
+          "options": ["Distributed processing engine for big data", "Database spark", "CSS spark", "Web server"],
+          "correctAnswer": 0,
+          "explanation": "Spark processes large datasets in-memory across clusters."
+        },
+        {
+          "question": "What is a DAG?",
+          "options": ["CSS DAG", "Directed Acyclic Graph for workflows", "Database DAG", "Network DAG"],
+          "correctAnswer": 1,
+          "explanation": "DAGs define task dependencies in Airflow pipelines."
+        },
+        {
+          "question": "What is Apache NiFi?",
+          "options": ["Data ingestion and routing tool", "Database nifi", "CSS nifi", "Testing tool"],
+          "correctAnswer": 0,
+          "explanation": "NiFi provides visual flow-based data movement."
+        },
+        {
+          "question": "What is Airbyte?",
+          "options": ["Database airbyte", "Open-source ELT platform for data connectors", "CSS airbyte", "Cloud service"],
+          "correctAnswer": 1,
+          "explanation": "Airbyte syncs data from APIs to warehouses."
+        },
+        {
+          "question": "What is idempotency?",
+          "options": ["Running pipeline multiple times gives same result", "Database idempotency", "CSS idempotency", "Error handling"],
+          "correctAnswer": 0,
+          "explanation": "Idempotent pipelines are safe to retry."
+        },
+        {
+          "question": "What is data lineage?",
+          "options": ["CSS lineage", "Tracking data flow from source to destination", "Database lineage", "Network lineage"],
+          "correctAnswer": 1,
+          "explanation": "Lineage provides transparency and debugging."
+        },
+        {
+          "question": "What is an Airflow operator?",
+          "options": ["Task definition in Airflow DAG", "Database operator", "CSS operator", "Network operator"],
+          "correctAnswer": 0,
+          "explanation": "Operators define work units like PythonOperator, BashOperator."
+        },
+        {
+          "question": "What is data validation?",
+          "options": ["Database validation", "Checking data quality and correctness", "CSS validation", "Network validation"],
+          "correctAnswer": 1,
+          "explanation": "Validation catches errors before downstream consumption."
+        },
+        {
+          "question": "What is backfill?",
+          "options": ["Reprocessing historical data with updated logic", "Initial load", "CSS backfill", "Data deletion"],
+          "correctAnswer": 0,
+          "explanation": "Backfills apply new transformations to past data."
+        },
+        {
+          "question": "What is dependency management?",
+          "options": ["CSS management", "Defining task execution order and prerequisites", "Database management", "Network management"],
+          "correctAnswer": 1,
+          "explanation": "Dependencies prevent tasks from running prematurely."
+        },
+        {
+          "question": "What is error handling in ETL?",
+          "options": ["Mechanisms to catch, log, and retry failed tasks", "CSS handling", "Database handling", "Network handling"],
+          "correctAnswer": 0,
+          "explanation": "Error handling ensures pipeline resilience."
+        },
+        {
+          "question": "What is incremental processing?",
+          "options": ["Database processing", "Processing only new or changed data", "Full processing", "CSS processing"],
+          "correctAnswer": 1,
+          "explanation": "Incremental processing reduces compute and time."
+        },
+        {
+          "question": "What is a dbt model?",
+          "options": ["SQL SELECT statement defining transformation", "Database model", "CSS model", "Testing model"],
+          "correctAnswer": 0,
+          "explanation": "dbt models create tables/views from SQL logic."
+        },
+        {
+          "question": "What is pipeline monitoring?",
+          "options": ["CSS monitoring", "Tracking pipeline health, performance, failures", "Database monitoring", "Network monitoring"],
+          "correctAnswer": 1,
+          "explanation": "Monitoring enables proactive issue detection."
+        },
+        {
+          "question": "What is CDC integration in ETL?",
+          "options": ["Capturing database changes in real-time", "Batch extraction", "CSS integration", "Full snapshot"],
+          "correctAnswer": 0,
+          "explanation": "CDC minimizes latency and data movement."
+        },
+        {
+          "question": "What is SLA monitoring?",
+          "options": ["Database monitoring", "Tracking if pipelines meet time commitments", "CSS monitoring", "Network monitoring"],
+          "correctAnswer": 1,
+          "explanation": "SLA monitoring ensures business requirements are met."
+        }
+      ]
+    },
+    {
+      "id": "streaming-real-time",
+      "title": "Streaming & Real-Time Processing (6-8 weeks)",
+      "description": "Learn Apache Kafka for messaging, stream processing with Kafka Streams and Apache Flink, and building real-time data pipelines.",
+      "resources": [
+        {
+          "title": "Apache Kafka Official Documentation",
+          "url": "https://kafka.apache.org/documentation/",
+          "type": "Article",
+          "note": "BEST messaging platform"
+        },
+        {
+          "title": "Apache Kafka Full Course",
+          "url": "https://www.youtube.com/embed/DSyp5yp6Fug?si=AxxWpt83qFIvQy8v",
+          "type": "Video",
+          "duration": "4 hours"
+        },
+        {
+          "title": "Apache Flink Basics",
+          "url": "https://www.youtube.com/embed/videoseries?si=2CP2-10WZ9KyZV-5&amp;list=PLa7VYi0yPIH1UdmQcnUr8lvjbUV8JriK0",
+          "type": "Video"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is streaming data?",
+          "options": ["Continuous real-time data flow", "Database streaming", "CSS streaming", "Batch data"],
+          "correctAnswer": 0,
+          "explanation": "Streaming processes data as it arrives."
+        },
+        {
+          "question": "What is Apache Kafka?",
+          "options": ["CSS kafka", "Distributed event streaming platform", "Database kafka", "Web server"],
+          "correctAnswer": 1,
+          "explanation": "Kafka handles high-throughput pub/sub messaging."
+        },
+        {
+          "question": "What is a Kafka topic?",
+          "options": ["Category for organizing messages", "Database topic", "CSS topic", "File topic"],
+          "correctAnswer": 0,
+          "explanation": "Topics store message streams by category."
+        },
+        {
+          "question": "What is a Kafka producer?",
+          "options": ["Database producer", "Application publishing messages to topics", "CSS producer", "Consumer"],
+          "correctAnswer": 1,
+          "explanation": "Producers send data to Kafka topics."
+        },
+        {
+          "question": "What is a Kafka consumer?",
+          "options": ["Application reading messages from topics", "Database consumer", "CSS consumer", "Producer"],
+          "correctAnswer": 0,
+          "explanation": "Consumers subscribe to topics and process messages."
+        },
+        {
+          "question": "What is Apache Flink?",
+          "options": ["CSS flink", "Stream processing framework", "Database flink", "Batch processor"],
+          "correctAnswer": 1,
+          "explanation": "Flink processes unbounded and bounded data streams."
+        },
+        {
+          "question": "What is event-driven architecture?",
+          "options": ["System reacting to events in real-time", "Database architecture", "CSS architecture", "Batch architecture"],
+          "correctAnswer": 0,
+          "explanation": "Event-driven systems respond to events immediately."
+        },
+        {
+          "question": "What is windowing?",
+          "options": ["Database windowing", "Grouping stream data by time intervals", "CSS windowing", "Batch processing"],
+          "correctAnswer": 1,
+          "explanation": "Windowing enables aggregations on streaming data."
+        },
+        {
+          "question": "What is exactly-once semantics?",
+          "options": ["Guarantee processing each message once", "Database semantics", "CSS semantics", "At-least-once"],
+          "correctAnswer": 0,
+          "explanation": "Exactly-once prevents duplicates in stream processing."
+        },
+        {
+          "question": "What is backpressure?",
+          "options": ["CSS pressure", "Mechanism handling fast data producers", "Database pressure", "Network pressure"],
+          "correctAnswer": 1,
+          "explanation": "Backpressure prevents system overload."
+        },
+        {
+          "question": "What is a Kafka consumer group?",
+          "options": ["Group of consumers sharing topic partition processing", "Single consumer", "Producer group", "CSS group"],
+          "correctAnswer": 0,
+          "explanation": "Consumer groups enable parallel message processing."
+        },
+        {
+          "question": "What is offset management?",
+          "options": ["CSS management", "Tracking position in Kafka topic", "Database management", "Network management"],
+          "correctAnswer": 1,
+          "explanation": "Offsets ensure messages aren't missed or duplicated."
+        },
+        {
+          "question": "What is stream join?",
+          "options": ["Combining multiple data streams", "Database join", "CSS join", "Single stream"],
+          "correctAnswer": 0,
+          "explanation": "Stream joins correlate events from different sources."
+        },
+        {
+          "question": "What is stateful stream processing?",
+          "options": ["Database processing", "Processing maintaining state across events", "Stateless processing", "CSS processing"],
+          "correctAnswer": 1,
+          "explanation": "Stateful processing tracks aggregations and context."
+        },
+        {
+          "question": "What are watermarks?",
+          "options": ["Mechanism handling late-arriving data in streams", "Database marks", "CSS marks", "Network marks"],
+          "correctAnswer": 0,
+          "explanation": "Watermarks ensure accurate windowed computations."
+        },
+        {
+          "question": "What is Kafka partition?",
+          "options": ["CSS partition", "Subdivision of topic for parallelism", "Database partition", "Network partition"],
+          "correctAnswer": 1,
+          "explanation": "Partitions enable horizontal scaling of topics."
+        },
+        {
+          "question": "What is stream fault tolerance?",
+          "options": ["Recovering from failures without data loss", "CSS tolerance", "Database tolerance", "Network tolerance"],
+          "correctAnswer": 0,
+          "explanation": "Fault tolerance uses checkpointing and replication."
+        },
+        {
+          "question": "What is event time vs processing time?",
+          "options": ["Database time", "Event time: when occurred; processing time: when processed", "Same thing", "CSS time"],
+          "correctAnswer": 1,
+          "explanation": "Event time ensures correct ordering despite delays."
+        },
+        {
+          "question": "What is Kafka retention?",
+          "options": ["How long messages are stored in topics", "Message deletion", "CSS retention", "Database retention"],
+          "correctAnswer": 0,
+          "explanation": "Retention policies balance storage and data availability."
+        },
+        {
+          "question": "What is stream schema evolution?",
+          "options": ["CSS evolution", "Managing changes to stream data structure", "Database evolution", "Network evolution"],
+          "correctAnswer": 1,
+          "explanation": "Schema evolution maintains compatibility across versions."
+        }
+      ]
+    },
+    {
+      "id": "cloud-platforms",
+      "title": "Cloud Platforms (6-8 weeks)",
+      "description": "Master AWS data services (S3, Glue, Redshift, Lambda, Kinesis, EMR), Google Cloud Platform (BigQuery, Dataflow, Pub/Sub), and Azure data platform.",
+      "resources": [
+        {
+          "title": "AWS for Data Engineering",
+          "url": "https://www.youtube.com/embed/Xl40yelD4PU?si=-5u-4BkqRAq2FqsH",
+          "type": "Course"
+        },
+        {
+          "title": "AWS Glue Tutorial",
+          "url": "https://www.youtube.com/embed/weWeaM5-EHc?si=cC15aosQETwwdZ6s",
+          "type": "Video"
+        },
+        {
+          "title": "Amazon Redshift Tutorial",
+          "url": "https://www.youtube.com/embed/7bfOllAyxlg?si=dAxWoQY7UzeSKjur",
+          "type": "Video"
+        },
+        {
+          "title": "AWS Lambda Tutorial",
+          "url": "https://www.youtube.com/embed/NWzfgAw_DYA?si=GzxBCR6N4uU0ZxqI",
+          "type": "Video"
+        },
+        {
+          "title": "Amazon Kinesis Tutorial",
+          "url": "https://www.youtube.com/embed/videoseries?si=rF2o11jcpBoVoZP8&amp;list=PLhr1KZpdzukc0sNn1D8NaAncdBAYLJR3T",
+          "type": "Video"
+        },
+        {
+          "title": "AWS EMR Tutorial",
+          "url": "https://www.youtube.com/embed/v9nk6mVxJDU?si=SwlelRewwBcqEk9Z",
+          "type": "Video"
+        },
+        {
+          "title": "Google Cloud Platform Training",
+          "url": "https://www.youtube.com/embed/IUU6OR8yHCc?si=L-2owa3Hua-2QnlR",
+          "type": "Course"
+        },
+        {
+          "title": "Cloud Storage Course",
+          "url": "https://www.youtube.com/embed/videoseries?si=nU-5mPgfatrrwpTi&amp;list=PLLhBy6YSIT0A63_RuqW6naWa66xzYVtP5",
+          "type": "Video"
+        },
+        {
+          "title": "BigQuery Tutorial",
+          "url": "https://www.youtube.com/embed/videoseries?si=RMqeOlyQC0HLfJVE&amp;list=PLFz7Ouda3Gw0Sui_PBIQtFPgYeat_LKzR",
+          "type": "Video"
+        },
+        {
+          "title": "Dataflow Tutorial",
+          "url": "https://www.youtube.com/embed/videoseries?si=ex1K8KBXU3XIZrpq&amp;list=PLLrA_pU9-Gz1Sx4hWz2t3iVQHgzjGY8QW" ,
+          "type": "Video"
+        },
+        {
+          "title": "Pub/Sub Tutorial",
+          "url": "https://www.youtube.com/embed/videoseries?si=y8nP_EP280EuZm9x&amp;list=PLb2TomhKydIngpqoMECZII8GCNMH1O0Pm",
+          "type": "Video"
+        },
+        {
+          "title": "Cloud Composer Tutorial",
+          "url": "https://www.youtube.com/embed/0IVjhUnX_kU?si=ZAo43zswbzHTvU_n",
+          "type": "Video"
+        },
+        {
+          "title": "Azure Data Platform Guide",
+          "url": "https://www.youtube.com/embed/videoseries?si=Qxp1PID_ym-dql2-&amp;list=PL9ooVrP1hQOGpbAJW6fvGa68Yb1C9Ytkt",
+          "type": "Video"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is AWS S3?",
+          "options": ["Object storage service for data lakes", "Database S3", "CSS S3", "Compute service"],
+          "correctAnswer": 0,
+          "explanation": "S3 stores raw data files cost-effectively."
+        },
+        {
+          "question": "What is AWS Glue?",
+          "options": ["CSS glue", "Serverless ETL service", "Database glue", "Storage service"],
+          "correctAnswer": 1,
+          "explanation": "Glue discovers, catalogs, and transforms data."
+        },
+        {
+          "question": "What is Amazon Redshift?",
+          "options": ["Cloud data warehouse for analytics", "Database redshift", "CSS redshift", "Storage service"],
+          "correctAnswer": 0,
+          "explanation": "Redshift runs SQL queries on petabyte-scale data."
+        },
+        {
+          "question": "What is AWS Lambda?",
+          "options": ["Database lambda", "Serverless compute for event-driven tasks", "CSS lambda", "Storage service"],
+          "correctAnswer": 1,
+          "explanation": "Lambda runs code without provisioning servers."
+        },
+        {
+          "question": "What is Amazon Kinesis?",
+          "options": ["Real-time data streaming service", "Database kinesis", "CSS kinesis", "Storage service"],
+          "correctAnswer": 0,
+          "explanation": "Kinesis ingests and processes streaming data."
+        },
+        {
+          "question": "What is AWS EMR?",
+          "options": ["CSS EMR", "Managed Hadoop/Spark clusters", "Database EMR", "Storage service"],
+          "correctAnswer": 1,
+          "explanation": "EMR processes big data using distributed frameworks."
+        },
+        {
+          "question": "What is Google Dataflow?",
+          "options": ["Unified stream and batch processing service", "Database dataflow", "CSS dataflow", "Storage service"],
+          "correctAnswer": 0,
+          "explanation": "Dataflow runs Apache Beam pipelines."
+        },
+        {
+          "question": "What is Google Pub/Sub?",
+          "options": ["Database pub/sub", "Messaging service for event-driven systems", "CSS pub/sub", "Storage service"],
+          "correctAnswer": 1,
+          "explanation": "Pub/Sub decouples services via asynchronous messaging."
+        },
+        {
+          "question": "What is Cloud Composer?",
+          "options": ["Managed Apache Airflow on GCP", "Database composer", "CSS composer", "Storage service"],
+          "correctAnswer": 0,
+          "explanation": "Composer orchestrates multi-cloud workflows."
+        },
+        {
+          "question": "What is Azure Synapse?",
+          "options": ["CSS synapse", "Analytics service integrating data warehousing and big data", "Database synapse", "Storage service"],
+          "correctAnswer": 1,
+          "explanation": "Synapse combines SQL, Spark, and pipelines."
+        },
+        {
+          "question": "What is S3 lifecycle policy?",
+          "options": ["Automating data transitions to save costs", "Database policy", "CSS policy", "Security policy"],
+          "correctAnswer": 0,
+          "explanation": "Lifecycle policies move data to cheaper storage tiers."
+        },
+        {
+          "question": "What is IAM in cloud?",
+          "options": ["CSS IAM", "Identity and Access Management for security", "Database IAM", "Storage IAM"],
+          "correctAnswer": 1,
+          "explanation": "IAM controls who can access cloud resources."
+        },
+        {
+          "question": "What is VPC?",
+          "options": ["Virtual Private Cloud for network isolation", "Database VPC", "CSS VPC", "Storage VPC"],
+          "correctAnswer": 0,
+          "explanation": "VPC provides secure, isolated network environments."
+        },
+        {
+          "question": "What is multi-region replication?",
+          "options": ["Database replication", "Copying data across geographic regions", "CSS replication", "Single region"],
+          "correctAnswer": 1,
+          "explanation": "Multi-region improves availability and disaster recovery."
+        },
+        {
+          "question": "What is serverless computing?",
+          "options": ["Running code without managing infrastructure", "CSS computing", "Database computing", "Server computing"],
+          "correctAnswer": 0,
+          "explanation": "Serverless auto-scales and charges per execution."
+        },
+        {
+          "question": "What is AWS Glue Data Catalog?",
+          "options": ["CSS catalog", "Centralized metadata repository", "Database catalog", "Storage catalog"],
+          "correctAnswer": 1,
+          "explanation": "Data Catalog tracks schemas and table definitions."
+        },
+        {
+          "question": "What is cost optimization in cloud?",
+          "options": ["Strategies to reduce cloud spending", "Database optimization", "CSS optimization", "Network optimization"],
+          "correctAnswer": 0,
+          "explanation": "Cost optimization uses right-sizing, reserved instances, spot instances."
+        },
+        {
+          "question": "What is data transfer cost?",
+          "options": ["Database cost", "Charges for moving data between services/regions", "CSS cost", "Storage cost"],
+          "correctAnswer": 1,
+          "explanation": "Data egress and cross-region transfers incur charges."
+        },
+        {
+          "question": "What is cloud compliance?",
+          "options": ["Meeting regulatory requirements in cloud", "CSS compliance", "Database compliance", "Network compliance"],
+          "correctAnswer": 0,
+          "explanation": "Compliance includes GDPR, HIPAA, SOC 2 certifications."
+        },
+        {
+          "question": "What is disaster recovery plan?",
+          "options": ["CSS plan", "Strategy for restoring systems after failure", "Database plan", "Network plan"],
+          "correctAnswer": 1,
+          "explanation": "DR plans define RTO and RPO for business continuity."
+        }
+      ]
+    },
+    {
+      "id": "data-quality-governance",
+      "title": "Data Quality & Governance (3-4 weeks)",
+      "description": "Implement data quality testing with Great Expectations, data lineage tracking, metadata management, and data governance practices.",
+      "resources": [
+        {
+          "title": "Great Expectations Tutorial",
+          "url": "https://www.youtube.com/embed/oxOj30rl_xs?si=729XAI8vdLaJpdY9",
+          "type": "Video"
+        },
+        {
+          "title": "Data Lineage Tutorial",
+          "url": "https://www.youtube.com/embed/a4HPjtRHaHk?si=23O5E8fgM3mTxbYi",
+          "type": "Video"
+        },
+        {
+          "title": "Data Governance Basics",
+          "url": "https://www.youtube.com/embed/cRmI_Kkrb8E?si=vYk-YgOGg2O3qoFn",
+          "type": "Video"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is data quality?",
+          "options": ["Accuracy, completeness, consistency of data", "Database quality", "CSS quality", "File quality"],
+          "correctAnswer": 0,
+          "explanation": "Data quality ensures reliable analytics."
+        },
+        {
+          "question": "What is Great Expectations?",
+          "options": ["CSS expectations", "Data quality testing framework", "Database expectations", "ETL tool"],
+          "correctAnswer": 1,
+          "explanation": "Great Expectations validates data pipelines."
+        },
+        {
+          "question": "What is data lineage?",
+          "options": ["Tracking data from source to consumption", "Database lineage", "CSS lineage", "Network lineage"],
+          "correctAnswer": 0,
+          "explanation": "Lineage shows data transformations and dependencies."
+        },
+        {
+          "question": "What is metadata?",
+          "options": ["Database metadata", "Data about data (schema, owner, lineage)", "CSS metadata", "File metadata"],
+          "correctAnswer": 1,
+          "explanation": "Metadata enables discovery and governance."
+        },
+        {
+          "question": "What is data governance?",
+          "options": ["Policies ensuring data quality and security", "Database governance", "CSS governance", "Network governance"],
+          "correctAnswer": 0,
+          "explanation": "Governance defines roles, standards, and compliance."
+        },
+        {
+          "question": "What is a data catalog?",
+          "options": ["CSS catalog", "Inventory of available data assets", "Database catalog", "File catalog"],
+          "correctAnswer": 1,
+          "explanation": "Catalogs help users discover datasets."
+        },
+        {
+          "question": "What is data profiling?",
+          "options": ["Analyzing data structure and content", "Database profiling", "CSS profiling", "Performance profiling"],
+          "correctAnswer": 0,
+          "explanation": "Profiling identifies quality issues early."
+        },
+        {
+          "question": "What is data observability?",
+          "options": ["Database observability", "Monitoring data pipeline health", "CSS observability", "Network observability"],
+          "correctAnswer": 1,
+          "explanation": "Observability detects anomalies and downtime."
+        },
+        {
+          "question": "What is data freshness?",
+          "options": ["How recent data is", "Database freshness", "CSS freshness", "File freshness"],
+          "correctAnswer": 0,
+          "explanation": "Freshness SLAs ensure timely data delivery."
+        },
+        {
+          "question": "What is schema evolution?",
+          "options": ["CSS evolution", "Handling schema changes over time", "Database evolution", "Network evolution"],
+          "correctAnswer": 1,
+          "explanation": "Schema evolution prevents pipeline breakage."
+        },
+        {
+          "question": "What is data anomaly detection?",
+          "options": ["Identifying unusual patterns in data", "Database detection", "CSS detection", "Network detection"],
+          "correctAnswer": 0,
+          "explanation": "Anomaly detection catches data quality issues."
+        },
+        {
+          "question": "What is data reconciliation?",
+          "options": ["CSS reconciliation", "Verifying data consistency across systems", "Database reconciliation", "Network reconciliation"],
+          "correctAnswer": 1,
+          "explanation": "Reconciliation ensures source-target data matches."
+        },
+        {
+          "question": "What is a data quality metric?",
+          "options": ["Measure of completeness, accuracy, consistency", "Database metric", "CSS metric", "Network metric"],
+          "correctAnswer": 0,
+          "explanation": "Metrics track quality dimensions over time."
+        },
+        {
+          "question": "What is data stewardship?",
+          "options": ["Database stewardship", "Role responsible for data quality and governance", "CSS stewardship", "Network stewardship"],
+          "correctAnswer": 1,
+          "explanation": "Stewards enforce policies and resolve issues."
+        },
+        {
+          "question": "What is PII?",
+          "options": ["Personally Identifiable Information requiring protection", "Database PII", "CSS PII", "Network PII"],
+          "correctAnswer": 0,
+          "explanation": "PII includes names, emails, SSNs, addresses."
+        },
+        {
+          "question": "What is data masking?",
+          "options": ["CSS masking", "Obfuscating sensitive data for security", "Database masking", "Network masking"],
+          "correctAnswer": 1,
+          "explanation": "Masking protects PII in non-production environments."
+        },
+        {
+          "question": "What is GDPR?",
+          "options": ["General Data Protection Regulation for privacy", "Database GDPR", "CSS GDPR", "Network GDPR"],
+          "correctAnswer": 0,
+          "explanation": "GDPR mandates data protection and user rights."
+        },
+        {
+          "question": "What is data audit logging?",
+          "options": ["Database logging", "Recording data access and changes", "CSS logging", "Network logging"],
+          "correctAnswer": 1,
+          "explanation": "Audit logs provide compliance and security trails."
+        },
+        {
+          "question": "What is data contract?",
+          "options": ["Agreement defining data schema and SLAs", "Database contract", "CSS contract", "Network contract"],
+          "correctAnswer": 0,
+          "explanation": "Contracts prevent breaking changes between teams."
+        },
+        {
+          "question": "What is access control?",
+          "options": ["Restricting data based on roles and permissions", "Database control", "CSS control", "Network control"],
+          "correctAnswer": 0,
+          "explanation": "Access control implements least privilege principle."
+        }
+      ]
+    },
+    {
+      "id": "containerization-orchestration",
+      "title": "Containerization & Orchestration (4-6 weeks)",
+      "description": "Learn Docker for containerizing data pipelines and Kubernetes for orchestration. Deploy Airflow, Spark, and Kafka on Kubernetes.",
+      "resources": [
+        {
+          "title": "Docker for Data Engineering",
+          "url": "https://www.youtube.com/embed/pg19Z8LL06w?si=uKK4atlkSvb7oJsM",
+          "type": "Video"
+        },
+        {
+          "title": "Kubernetes Fundamentals",
+          "url": "https://kubernetes.io/docs/tutorials/",
+          "type": "Article"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is Docker?",
+          "options": ["Containerization platform for applications", "Database docker", "CSS docker", "Testing tool"],
+          "correctAnswer": 0,
+          "explanation": "Docker packages apps with dependencies."
+        },
+        {
+          "question": "What is a container?",
+          "options": ["CSS container", "Lightweight isolated environment for apps", "Database container", "Virtual machine"],
+          "correctAnswer": 1,
+          "explanation": "Containers share OS kernel for efficiency."
+        },
+        {
+          "question": "What is Kubernetes?",
+          "options": ["Container orchestration platform", "Database kubernetes", "CSS kubernetes", "Testing tool"],
+          "correctAnswer": 0,
+          "explanation": "Kubernetes automates container deployment and scaling."
+        },
+        {
+          "question": "What is a Pod?",
+          "options": ["Database pod", "Smallest deployable unit in Kubernetes", "CSS pod", "Virtual machine"],
+          "correctAnswer": 1,
+          "explanation": "Pods run one or more containers together."
+        },
+        {
+          "question": "What is a Deployment?",
+          "options": ["Kubernetes resource managing replicas", "Database deployment", "CSS deployment", "Manual process"],
+          "correctAnswer": 0,
+          "explanation": "Deployments ensure desired state of Pods."
+        },
+        {
+          "question": "What is a Docker image?",
+          "options": ["CSS image", "Template for creating containers", "Database image", "Graphic image"],
+          "correctAnswer": 1,
+          "explanation": "Images contain app code and dependencies."
+        },
+        {
+          "question": "What is Docker Compose?",
+          "options": ["Tool for multi-container applications", "Database compose", "CSS compose", "Single container"],
+          "correctAnswer": 0,
+          "explanation": "Compose defines multi-container apps in YAML."
+        },
+        {
+          "question": "What is kubectl?",
+          "options": ["Database kubectl", "Kubernetes command-line tool", "CSS kubectl", "Docker tool"],
+          "correctAnswer": 1,
+          "explanation": "kubectl manages Kubernetes resources."
+        },
+        {
+          "question": "What is a Service?",
+          "options": ["Kubernetes networking abstraction for Pods", "Database service", "CSS service", "Container"],
+          "correctAnswer": 0,
+          "explanation": "Services enable communication between Pods."
+        },
+        {
+          "question": "What is Helm?",
+          "options": ["CSS helm", "Package manager for Kubernetes", "Database helm", "Docker tool"],
+          "correctAnswer": 1,
+          "explanation": "Helm simplifies Kubernetes application deployment."
+        },
+        {
+          "question": "What is a Docker volume?",
+          "options": ["Persistent storage for containers", "Database volume", "CSS volume", "Temporary storage"],
+          "correctAnswer": 0,
+          "explanation": "Volumes persist data beyond container lifecycle."
+        },
+        {
+          "question": "What is Kubernetes networking?",
+          "options": ["Database networking", "Enabling communication between Pods and services", "CSS networking", "Single host"],
+          "correctAnswer": 1,
+          "explanation": "Networking uses CNI plugins and Ingress controllers."
+        },
+        {
+          "question": "What is a Secret in Kubernetes?",
+          "options": ["Object storing sensitive data like passwords", "Database secret", "CSS secret", "Public data"],
+          "correctAnswer": 0,
+          "explanation": "Secrets protect credentials and API keys."
+        },
+        {
+          "question": "What are resource limits?",
+          "options": ["CSS limits", "CPU/memory constraints for containers", "Database limits", "Network limits"],
+          "correctAnswer": 1,
+          "explanation": "Limits prevent resource starvation."
+        },
+        {
+          "question": "What is a health check?",
+          "options": ["Probe verifying container health", "Database check", "CSS check", "Network check"],
+          "correctAnswer": 0,
+          "explanation": "Health checks enable automatic restarts."
+        },
+        {
+          "question": "What is a StatefulSet?",
+          "options": ["Database StatefulSet", "Kubernetes resource for stateful applications", "CSS StatefulSet", "Deployment"],
+          "correctAnswer": 1,
+          "explanation": "StatefulSets maintain Pod identity and persistent storage."
+        },
+        {
+          "question": "What is a PersistentVolume?",
+          "options": ["Storage resource in Kubernetes cluster", "Database volume", "CSS volume", "Temporary storage"],
+          "correctAnswer": 0,
+          "explanation": "PersistentVolumes outlive individual Pods."
+        },
+        {
+          "question": "What is a namespace?",
+          "options": ["CSS namespace", "Virtual cluster for resource isolation", "Database namespace", "Network namespace"],
+          "correctAnswer": 1,
+          "explanation": "Namespaces organize resources by team or environment."
+        },
+        {
+          "question": "What is RBAC?",
+          "options": ["Role-Based Access Control for security", "Database RBAC", "CSS RBAC", "Network RBAC"],
+          "correctAnswer": 0,
+          "explanation": "RBAC defines who can access what resources."
+        },
+        {
+          "question": "What is horizontal scaling?",
+          "options": ["Adding more Pod replicas", "Vertical scaling", "CSS scaling", "Database scaling"],
+          "correctAnswer": 0,
+          "explanation": "Horizontal scaling handles increased load."
+        }
+      ]
+    },
+    {
+      "id": "infrastructure-as-code",
+      "title": "Infrastructure as Code (3-4 weeks)",
+      "description": "Master Terraform for provisioning data infrastructure and implement CI/CD for data pipelines using GitHub Actions.",
+      "resources": [
+        {
+          "title": "Terraform for Data Infrastructure",
+          "url": "https://www.youtube.com/embed/T8ahyYdSCGg?si=OqBuWtaPrvU-6z4q",
+          "type": "Video"
+        },
+        {
+          "title": "CI/CD for Data Pipelines",
+          "url": "https://www.youtube.com/embed/gLptmcuCx6Q?si=cjqaFhA6SBNcR27B" ,
+          "type": "Video"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is Infrastructure as Code?",
+          "options": ["Managing infrastructure with code files", "Database infrastructure", "CSS infrastructure", "Manual setup"],
+          "correctAnswer": 0,
+          "explanation": "IaC enables version control and automation."
+        },
+        {
+          "question": "What is Terraform?",
+          "options": ["CSS terraform", "IaC tool for provisioning cloud resources", "Database terraform", "Testing tool"],
+          "correctAnswer": 1,
+          "explanation": "Terraform uses declarative configuration files."
+        },
+        {
+          "question": "What is a Terraform state?",
+          "options": ["File tracking infrastructure state", "Database state", "CSS state", "Application state"],
+          "correctAnswer": 0,
+          "explanation": "State enables Terraform to manage resources."
+        },
+        {
+          "question": "What is CI/CD?",
+          "options": ["Database CI/CD", "Continuous Integration/Continuous Deployment", "CSS CI/CD", "Manual deployment"],
+          "correctAnswer": 1,
+          "explanation": "CI/CD automates testing and deployment."
+        },
+        {
+          "question": "What is GitHub Actions?",
+          "options": ["CI/CD platform for automation", "Database actions", "CSS actions", "Manual actions"],
+          "correctAnswer": 0,
+          "explanation": "GitHub Actions runs workflows on code events."
+        },
+        {
+          "question": "What is a Terraform module?",
+          "options": ["CSS module", "Reusable infrastructure component", "Database module", "Testing module"],
+          "correctAnswer": 1,
+          "explanation": "Modules promote code reuse and organization."
+        },
+        {
+          "question": "What is terraform plan?",
+          "options": ["Command showing planned changes", "Database plan", "CSS plan", "Deployment"],
+          "correctAnswer": 0,
+          "explanation": "Plan previews infrastructure changes safely."
+        },
+        {
+          "question": "What is terraform apply?",
+          "options": ["Database apply", "Command executing infrastructure changes", "CSS apply", "Testing command"],
+          "correctAnswer": 1,
+          "explanation": "Apply provisions resources defined in code."
+        },
+        {
+          "question": "What is version control for pipelines?",
+          "options": ["Tracking pipeline code changes in Git", "Database versioning", "CSS versioning", "Manual versioning"],
+          "correctAnswer": 0,
+          "explanation": "Version control enables collaboration and rollbacks."
+        },
+        {
+          "question": "What is deployment automation?",
+          "options": ["CSS automation", "Automated pipeline deployment to production", "Database automation", "Manual deployment"],
+          "correctAnswer": 1,
+          "explanation": "Automation reduces errors and speeds delivery."
+        },
+        {
+          "question": "What is remote state?",
+          "options": ["Storing Terraform state in cloud backend", "Local state", "CSS state", "Database state"],
+          "correctAnswer": 0,
+          "explanation": "Remote state enables team collaboration."
+        },
+        {
+          "question": "What is a Terraform workspace?",
+          "options": ["CSS workspace", "Isolated instance of state for environments", "Database workspace", "Network workspace"],
+          "correctAnswer": 1,
+          "explanation": "Workspaces manage dev, staging, prod separately."
+        },
+        {
+          "question": "What is provider versioning?",
+          "options": ["Specifying provider versions for consistency", "Database versioning", "CSS versioning", "Code versioning"],
+          "correctAnswer": 0,
+          "explanation": "Versioning prevents unexpected breaking changes."
+        },
+        {
+          "question": "What is drift detection?",
+          "options": ["Database detection", "Identifying manual infrastructure changes", "CSS detection", "Network detection"],
+          "correctAnswer": 1,
+          "explanation": "Drift detection ensures infrastructure matches code."
+        },
+        {
+          "question": "What is terraform import?",
+          "options": ["Importing existing resources into state", "Database import", "CSS import", "Data import"],
+          "correctAnswer": 0,
+          "explanation": "Import brings unmanaged resources under Terraform."
+        },
+        {
+          "question": "What is terraform destroy?",
+          "options": ["CSS destroy", "Command removing all managed resources", "Database destroy", "Build command"],
+          "correctAnswer": 1,
+          "explanation": "Destroy tears down infrastructure safely."
+        },
+        {
+          "question": "What is secret management in IaC?",
+          "options": ["Securing sensitive values like passwords", "Database secrets", "CSS secrets", "Public data"],
+          "correctAnswer": 0,
+          "explanation": "Secret management uses tools like Vault, AWS Secrets Manager."
+        },
+        {
+          "question": "What is multi-environment deployment?",
+          "options": ["Database deployment", "Managing dev, staging, prod with IaC", "CSS deployment", "Single environment"],
+          "correctAnswer": 1,
+          "explanation": "Multi-environment ensures consistency across stages."
+        },
+        {
+          "question": "What is IaC testing?",
+          "options": ["Validating infrastructure code before apply", "Database testing", "CSS testing", "Manual testing"],
+          "correctAnswer": 0,
+          "explanation": "Testing uses tools like Terratest, Checkov."
+        },
+        {
+          "question": "What is GitOps?",
+          "options": ["Using Git as single source of truth for infrastructure", "Database GitOps", "CSS GitOps", "Manual ops"],
+          "correctAnswer": 0,
+          "explanation": "GitOps syncs infrastructure with Git repo state."
+        }
+      ]
+    },
+    {
+      "id": "performance-optimization",
+      "title": "Performance Optimization (4-6 weeks)",
+      "description": "Learn query optimization techniques, Spark performance tuning, and best practices for scaling data systems.",
+      "resources": [
+        {
+          "title": "SQL Query Optimization",
+          "url": "https://www.youtube.com/embed/MpczBuIk7R8?si=EG2JiwAMW6c0lbtO",
+          "type": "Video",
+          "note": "BEST resource"
+        },
+        {
+          "title": "Spark Performance Tuning",
+          "url": "https://www.youtube.com/embed/videoseries?si=ocXklbG9AaQuIG4D&amp;list=PLWAuYt0wgRcLCtWzUxNg4BjnYlCZNEVth",
+          "type": "Video"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is query optimization?",
+          "options": ["Improving query execution speed", "Database optimization", "CSS optimization", "Code formatting"],
+          "correctAnswer": 0,
+          "explanation": "Optimization reduces query time and costs."
+        },
+        {
+          "question": "What is an index?",
+          "options": ["CSS index", "Data structure speeding up queries", "Database index", "File index"],
+          "correctAnswer": 1,
+          "explanation": "Indexes improve WHERE clause performance."
+        },
+        {
+          "question": "What is partitioning?",
+          "options": ["Dividing data into smaller chunks", "Database partition", "CSS partition", "Merging data"],
+          "correctAnswer": 0,
+          "explanation": "Partitioning reduces data scanned per query."
+        },
+        {
+          "question": "What is caching?",
+          "options": ["Database caching", "Storing frequently accessed data in memory", "CSS caching", "Deleting data"],
+          "correctAnswer": 1,
+          "explanation": "Caching improves read performance."
+        },
+        {
+          "question": "What is Spark partitioning?",
+          "options": ["Distributing data across executors", "Database partitioning", "CSS partitioning", "Single partition"],
+          "correctAnswer": 0,
+          "explanation": "Proper partitioning improves parallelism."
+        },
+        {
+          "question": "What is a broadcast join?",
+          "options": ["CSS join", "Sending small table to all executors", "Database join", "Regular join"],
+          "correctAnswer": 1,
+          "explanation": "Broadcast joins optimize small-large table joins."
+        },
+        {
+          "question": "What is data skew?",
+          "options": ["Uneven data distribution across partitions", "Database skew", "CSS skew", "Even distribution"],
+          "correctAnswer": 0,
+          "explanation": "Skew causes slow executors and bottlenecks."
+        },
+        {
+          "question": "What is a materialized view?",
+          "options": ["Database view", "Pre-computed query result stored as table", "CSS view", "Virtual view"],
+          "correctAnswer": 1,
+          "explanation": "Materialized views cache expensive query results."
+        },
+        {
+          "question": "What is query execution plan?",
+          "options": ["Step-by-step plan database uses for queries", "Database plan", "CSS plan", "Testing plan"],
+          "correctAnswer": 0,
+          "explanation": "Execution plans reveal bottlenecks."
+        },
+        {
+          "question": "What is vacuuming?",
+          "options": ["CSS vacuuming", "Reclaiming space from deleted rows", "Database vacuuming", "Data backup"],
+          "correctAnswer": 1,
+          "explanation": "Vacuuming maintains database performance."
+        },
+        {
+          "question": "What are database statistics?",
+          "options": ["Metadata about table size and distribution", "Database statistics", "CSS statistics", "Network statistics"],
+          "correctAnswer": 0,
+          "explanation": "Statistics help query planner choose optimal paths."
+        },
+        {
+          "question": "What is cost-based optimization?",
+          "options": ["Database optimization", "Choosing query plan based on estimated cost", "CSS optimization", "Manual optimization"],
+          "correctAnswer": 1,
+          "explanation": "Cost-based optimizers evaluate multiple execution strategies."
+        },
+        {
+          "question": "What is compression?",
+          "options": ["Reducing data size for storage/transfer", "Database compression", "CSS compression", "Expansion"],
+          "correctAnswer": 0,
+          "explanation": "Compression saves storage and I/O costs."
+        },
+        {
+          "question": "What is bucketing?",
+          "options": ["CSS bucketing", "Organizing data into fixed buckets for joins", "Database bucketing", "Random distribution"],
+          "correctAnswer": 1,
+          "explanation": "Bucketing optimizes Spark join performance."
+        },
+        {
+          "question": "What is a query hint?",
+          "options": ["Instruction guiding query optimizer", "Database hint", "CSS hint", "Error message"],
+          "correctAnswer": 0,
+          "explanation": "Hints override optimizer decisions when needed."
+        },
+        {
+          "question": "What is parallel execution?",
+          "options": ["Database execution", "Running query parts simultaneously", "CSS execution", "Sequential execution"],
+          "correctAnswer": 1,
+          "explanation": "Parallelism reduces query execution time."
+        },
+        {
+          "question": "What is memory tuning?",
+          "options": ["Configuring memory allocation for performance", "Database tuning", "CSS tuning", "Disk tuning"],
+          "correctAnswer": 0,
+          "explanation": "Memory tuning prevents OOM errors and spilling."
+        },
+        {
+          "question": "What is disk I/O optimization?",
+          "options": ["CSS optimization", "Minimizing disk reads/writes", "Database optimization", "Network optimization"],
+          "correctAnswer": 1,
+          "explanation": "I/O optimization uses SSDs, proper partitioning, caching."
+        },
+        {
+          "question": "What is query monitoring?",
+          "options": ["Tracking query performance and resource usage", "Database monitoring", "CSS monitoring", "Network monitoring"],
+          "correctAnswer": 0,
+          "explanation": "Monitoring identifies slow queries needing optimization."
+        },
+        {
+          "question": "What is predicate pushdown?",
+          "options": ["Filtering data early in query execution", "Database pushdown", "CSS pushdown", "Late filtering"],
+          "correctAnswer": 0,
+          "explanation": "Pushdown reduces data movement and processing."
+        }
+      ]
+    },
+    {
+      "id": "advanced-topics",
+      "title": "Advanced Topics (Ongoing)",
+      "description": "Explore data lake architecture (Delta Lake, Apache Iceberg, Apache Hudi), change data capture (CDC), data mesh concepts, and machine learning pipelines.",
+      "resources": [
+        {
+          "title": "Data Lake Architecture",
+          "url": "https://www.youtube.com/embed/1x0uJzMd1Pg?si=7WNmviIscE_DzhXd",
+          "type": "Video"
+        },
+        {
+          "title": "Delta Lake Explained",
+          "url": "https://www.youtube.com/embed/PftRBoqjhZM?si=_DcBYfHtcBCjPly9",
+          "type": "Video"
+        },
+        {
+          "title": "Apache Iceberg",
+          "url": "https://www.youtube.com/embed/6tjSVXpHrE8?si=hwTRZK4bXKYn8g6R",
+          "type": "Video"
+        },
+        {
+          "title": "Apache Hudi",
+          "url": "https://www.youtube.com/embed/pyK18sDYnS0?si=M5wx6IquhF_az-IX",
+          "type": "Video"
+        },
+        {
+          "title": "Debezium for CDC",
+          "url": "https://www.youtube.com/embed/xkjCXXqDnp4?si=LS9lG_wRU487nQvX",
+          "type": "Video"
+        },
+        {
+          "title": "Data Mesh Principles",
+          "url": "https://www.youtube.com/embed/zfFyE3xmJ7I?si=a0ZVGZ1Ixkj87eVk",
+          "type": "Video"
+        },
+        {
+          "title": "Machine Learning Pipelines",
+          "url": "https://www.youtube.com/embed/xOccYkgRV4Q?si=gW1GEm8fBlXfBN4A",
+          "type": "Video"
+        },
+        {
+          "title": "Fundamentals of Data Engineering Book",
+          "url": "https://www.oreilly.com/library/view/fundamentals-of-data/9781098108298/",
+          "type": "Book",
+          "note": "BEST Book"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is a data lake?",
+          "options": ["Central repository for raw data at scale", "Database lake", "CSS lake", "Data warehouse"],
+          "correctAnswer": 0,
+          "explanation": "Data lakes store structured and unstructured data."
+        },
+        {
+          "question": "What is Delta Lake?",
+          "options": ["CSS delta", "ACID transactions layer for data lakes", "Database delta", "Data warehouse"],
+          "correctAnswer": 1,
+          "explanation": "Delta Lake adds reliability to data lakes."
+        },
+        {
+          "question": "What is Apache Iceberg?",
+          "options": ["Table format for large analytics datasets", "Database iceberg", "CSS iceberg", "Cloud service"],
+          "correctAnswer": 0,
+          "explanation": "Iceberg enables schema evolution and time travel."
+        },
+        {
+          "question": "What is Apache Hudi?",
+          "options": ["Database hudi", "Data lake platform for incremental processing", "CSS hudi", "Testing tool"],
+          "correctAnswer": 1,
+          "explanation": "Hudi supports upserts and deletions in data lakes."
+        },
+        {
+          "question": "What is CDC?",
+          "options": ["Change Data Capture for tracking changes", "Database CDC", "CSS CDC", "Static data"],
+          "correctAnswer": 0,
+          "explanation": "CDC streams database changes to data lakes."
+        },
+        {
+          "question": "What is Debezium?",
+          "options": ["CSS debezium", "CDC platform for database replication", "Database debezium", "ETL tool"],
+          "correctAnswer": 1,
+          "explanation": "Debezium captures row-level changes."
+        },
+        {
+          "question": "What is data mesh?",
+          "options": ["Decentralized data ownership architecture", "Database mesh", "CSS mesh", "Centralized architecture"],
+          "correctAnswer": 0,
+          "explanation": "Data mesh treats data as product with domain ownership."
+        },
+        {
+          "question": "What is a feature store?",
+          "options": ["Database store", "Repository for ML features", "CSS store", "Data warehouse"],
+          "correctAnswer": 1,
+          "explanation": "Feature stores serve ML models with consistent data."
+        },
+        {
+          "question": "What is ML pipeline?",
+          "options": ["Automated workflow for training/deploying models", "Database pipeline", "CSS pipeline", "ETL pipeline"],
+          "correctAnswer": 0,
+          "explanation": "ML pipelines include data prep, training, deployment."
+        },
+        {
+          "question": "What is time travel?",
+          "options": ["CSS travel", "Querying historical data versions", "Database travel", "Future prediction"],
+          "correctAnswer": 1,
+          "explanation": "Time travel enables auditing and rollbacks."
+        },
+        {
+          "question": "What is medallion architecture?",
+          "options": ["Bronze/silver/gold data layers", "Database architecture", "CSS architecture", "Network architecture"],
+          "correctAnswer": 0,
+          "explanation": "Medallion architecture organizes data lake by refinement level."
+        },
+        {
+          "question": "What is streaming ETL?",
+          "options": ["CSS ETL", "Real-time data transformation pipeline", "Database ETL", "Batch ETL"],
+          "correctAnswer": 1,
+          "explanation": "Streaming ETL processes data continuously as it arrives."
+        },
+        {
+          "question": "What is real-time analytics?",
+          "options": ["Analyzing data as it's generated", "Database analytics", "CSS analytics", "Batch analytics"],
+          "correctAnswer": 0,
+          "explanation": "Real-time analytics enables immediate insights and actions."
+        },
+        {
+          "question": "What is DataOps?",
+          "options": ["Database DataOps", "Practices for improving data pipeline quality", "CSS DataOps", "Manual operations"],
+          "correctAnswer": 1,
+          "explanation": "DataOps applies DevOps principles to data workflows."
+        },
+        {
+          "question": "What is reverse ETL?",
+          "options": ["Moving warehouse data back to operational systems", "Database reverse", "CSS reverse", "Forward ETL"],
+          "correctAnswer": 0,
+          "explanation": "Reverse ETL activates analytics insights in business tools."
+        },
+        {
+          "question": "What is event sourcing?",
+          "options": ["CSS sourcing", "Storing state as sequence of events", "Database sourcing", "Snapshot storage"],
+          "correctAnswer": 1,
+          "explanation": "Event sourcing enables full audit trail and replay."
+        },
+        {
+          "question": "What is CQRS?",
+          "options": ["Command Query Responsibility Segregation", "Database CQRS", "CSS CQRS", "Network CQRS"],
+          "correctAnswer": 0,
+          "explanation": "CQRS separates read and write data models."
+        },
+        {
+          "question": "What is lambda architecture?",
+          "options": ["Database architecture", "Batch + streaming hybrid architecture", "CSS architecture", "Single layer"],
+          "correctAnswer": 1,
+          "explanation": "Lambda combines batch and speed layers for analytics."
+        },
+        {
+          "question": "What is kappa architecture?",
+          "options": ["Stream-only processing architecture", "Database architecture", "CSS architecture", "Batch architecture"],
+          "correctAnswer": 0,
+          "explanation": "Kappa simplifies lambda by using only streaming."
+        },
+        {
+          "question": "What is data mesh domain?",
+          "options": ["Business unit owning its data products", "Database domain", "CSS domain", "Central team"],
+          "correctAnswer": 0,
+          "explanation": "Domains have autonomy over their data lifecycle."
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "ETL Pipeline for CSV Data",
+      "description": "Build a simple ETL pipeline that extracts data from CSV files, transforms it with Python/Pandas, and loads it into a PostgreSQL database.",
+      "difficulty": "Beginner",
+      "duration": "2-3 weeks",
+      "skills": ["Python", "Pandas", "PostgreSQL", "SQL", "Data Cleaning"],
+      "tasks": [
+        "Set up PostgreSQL database",
+        "Read CSV files using Pandas",
+        "Clean and validate data",
+        "Transform data formats and types",
+        "Create database schema",
+        "Load data into PostgreSQL",
+        "Add error handling and logging",
+        "Schedule pipeline with cron"
+      ]
+    },
+    {
+      "title": "Real-Time Data Streaming Pipeline",
+      "description": "Develop a real-time data pipeline using Apache Kafka to ingest, process, and store streaming data from multiple sources.",
+      "difficulty": "Intermediate",
+      "duration": "3-4 weeks",
+      "skills": ["Apache Kafka", "Python", "Stream Processing", "Docker", "Data Ingestion"],
+      "tasks": [
+        "Set up Kafka cluster with Docker",
+        "Create Kafka producers for data sources",
+        "Implement Kafka consumers",
+        "Process streaming data in real-time",
+        "Store processed data in database",
+        "Add monitoring with Kafka metrics",
+        "Implement error handling and retries",
+        "Test with simulated high-volume data",
+        "Document architecture and data flow"
+      ]
+    },
+    {
+      "title": "Data Warehouse with Dimensional Modeling",
+      "description": "Design and implement a data warehouse using star schema, ETL processes, and OLAP operations for business analytics.",
+      "difficulty": "Intermediate",
+      "duration": "4-5 weeks",
+      "skills": ["Data Warehousing", "Star Schema", "ETL", "SQL", "Business Intelligence"],
+      "tasks": [
+        "Analyze business requirements",
+        "Design star schema with fact and dimension tables",
+        "Create data warehouse on PostgreSQL/Snowflake",
+        "Build ETL jobs to populate warehouse",
+        "Implement slowly changing dimensions (SCD)",
+        "Create aggregate tables for performance",
+        "Write complex analytical queries",
+        "Add data quality checks",
+        "Connect to BI tool (Tableau/Power BI)",
+        "Document data dictionary"
+      ]
+    },
+    {
+      "title": "Big Data Processing with Spark",
+      "description": "Build a large-scale data processing system using Apache Spark for batch and streaming analytics with data lake integration.",
+      "difficulty": "Advanced",
+      "duration": "6-7 weeks",
+      "skills": ["Apache Spark", "PySpark", "Big Data", "Hadoop", "Data Lake"],
+      "tasks": [
+        "Set up Spark cluster (local or cloud)",
+        "Ingest data from various sources (S3, HDFS)",
+        "Implement batch processing with Spark SQL",
+        "Build streaming pipeline with Spark Streaming",
+        "Perform complex transformations and aggregations",
+        "Optimize Spark jobs for performance",
+        "Implement data partitioning strategies",
+        "Add data quality monitoring",
+        "Create Delta Lake for ACID transactions",
+        "Deploy on AWS EMR or Databricks",
+        "Set up job orchestration with Airflow"
+      ]
+    },
+    {
+      "title": "End-to-End Modern Data Platform",
+      "description": "Design and build a comprehensive data platform with data ingestion, processing, warehousing, orchestration, monitoring, and governance.",
+      "difficulty": "Advanced",
+      "duration": "8-10 weeks",
+      "skills": ["Data Architecture", "Airflow", "dbt", "Snowflake", "Data Governance"],
+      "tasks": [
+        "Design modern data platform architecture",
+        "Set up data lake on S3 with zones (raw/processed/curated)",
+        "Implement data ingestion from APIs and databases",
+        "Build Airflow DAGs for orchestration",
+        "Use dbt for data transformations",
+        "Set up Snowflake data warehouse",
+        "Implement data quality framework (Great Expectations)",
+        "Add data catalog and lineage tracking",
+        "Create monitoring dashboards",
+        "Implement data governance policies",
+        "Set up CI/CD for data pipelines",
+        "Add cost optimization strategies",
+        "Document complete platform architecture"
+      ]
+    }
+  ]
+}

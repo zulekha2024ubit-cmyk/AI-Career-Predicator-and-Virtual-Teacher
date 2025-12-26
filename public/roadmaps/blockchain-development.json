@@ -1,0 +1,1697 @@
+{
+  "slug": "blockchain-development",
+  "title": "Blockchain Development",
+  "summary": "Build decentralized applications (dApps), smart contracts, and blockchain infrastructure for Web3.",
+  "timeline": "8-12 months",
+  "difficulty": "Advanced",
+  "steps": [
+    {
+      "id": "blockchain-fundamentals",
+      "title": "Blockchain Fundamentals (3-4 weeks)",
+      "description": "Understand blockchain basics, distributed ledger technology, consensus mechanisms (PoW, PoS), cryptographic hash functions, and Bitcoin/Ethereum fundamentals.",
+      "resources": [
+        {
+          "title": "Blockchain Basics",
+          "url": "https://www.youtube.com/embed/yubzJw0uiE4?si=vnag9XOLyFjmLpCI",
+          "type": "Video"
+        },
+        {
+          "title": "How Bitcoin Works - 3Blue1Brown",
+          "url": "https://www.youtube.com/embed/bBC-nXj3Ng4",
+          "type": "Video",
+          "note": "BEST visual explanation"
+
+        },
+        {
+          "title": "Blockchain Full Course - freeCodeCamp",
+          "url": "https://www.youtube.com/embed/gyMwXuJrbJQ",
+          "type": "Video",
+          "duration": "3 hours"
+        },
+        {
+          "title": "Bitcoin",
+          "url": "https://www.youtube.com/embed/SXqfFTmYmT0?si=pNa9vxV58fdLiaAo",
+          "type": "Video"
+        },
+        {
+          "title": "Ethereum",
+          "url": "https://www.youtube.com/embed/jxLkbJozKbY?si=dWFgPRo342ZpqWb7",
+          "type": "Video"
+        },
+        {
+          "title": "Public Key Cryptography",
+          "url": "https://www.youtube.com/embed/GSIDS_lvRv4",
+          "type": "Video"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is blockchain?",
+          "options": ["Distributed ledger recording transactions", "Database", "CSS framework", "Web server"],
+          "correctAnswer": 0,
+          "explanation": "Blockchain is decentralized, immutable ledger technology."
+        },
+        {
+          "question": "What is a block?",
+          "options": ["Database block", "Container of transactions with hash", "CSS block", "Server block"],
+          "correctAnswer": 1,
+          "explanation": "Blocks contain transactions, timestamp, and previous block hash."
+        },
+        {
+          "question": "What is Proof of Work (PoW)?",
+          "options": ["Consensus requiring computational work to mine", "Database proof", "CSS proof", "Manual verification"],
+          "correctAnswer": 0,
+          "explanation": "PoW uses mining to validate blocks (Bitcoin)."
+        },
+        {
+          "question": "What is Proof of Stake (PoS)?",
+          "options": ["Database stake", "Consensus using staked tokens for validation", "CSS stake", "Mining"],
+          "correctAnswer": 1,
+          "explanation": "PoS validators stake tokens instead of mining (Ethereum 2.0)."
+        },
+        {
+          "question": "What is a cryptographic hash?",
+          "options": ["One-way function creating unique fingerprint", "Database hash", "CSS hash", "URL hash"],
+          "correctAnswer": 0,
+          "explanation": "Hash functions (SHA-256) ensure data integrity."
+        },
+        {
+          "question": "What is Bitcoin?",
+          "options": ["CSS bitcoin", "First decentralized cryptocurrency", "Database bitcoin", "Web framework"],
+          "correctAnswer": 1,
+          "explanation": "Bitcoin introduced blockchain for peer-to-peer payments."
+        },
+        {
+          "question": "What is Ethereum?",
+          "options": ["Blockchain platform with smart contracts", "Database", "CSS framework", "Web server"],
+          "correctAnswer": 0,
+          "explanation": "Ethereum enables programmable decentralized applications."
+        },
+        {
+          "question": "What is a distributed ledger?",
+          "options": ["Database ledger", "Ledger replicated across multiple nodes", "CSS ledger", "Single server"],
+          "correctAnswer": 1,
+          "explanation": "Distributed ledgers provide transparency and fault tolerance."
+        },
+        {
+          "question": "What is decentralization?",
+          "options": ["No single point of control or failure", "Centralized server", "Database centralization", "CSS centralization"],
+          "correctAnswer": 0,
+          "explanation": "Decentralization distributes power across network participants."
+        },
+        {
+          "question": "What is immutability?",
+          "options": ["Database mutation", "Data cannot be changed once recorded", "CSS mutation", "Easy editing"],
+          "correctAnswer": 1,
+          "explanation": "Blockchain immutability ensures tamper-proof records."
+        },
+        {
+          "question": "What is mining?",
+          "options": ["Process of validating transactions and creating blocks", "Database mining", "CSS mining", "Data extraction"],
+          "correctAnswer": 0,
+          "explanation": "Mining uses computational power to solve cryptographic puzzles."
+        },
+        {
+          "question": "What is a node?",
+          "options": ["CSS node", "Database node", "Computer participating in blockchain network", "Web server"],
+          "correctAnswer": 2,
+          "explanation": "Nodes validate transactions and maintain ledger copies."
+        },
+        {
+          "question": "What are consensus algorithms?",
+          "options": ["Methods for nodes to agree on blockchain state", "Database algorithms", "CSS algorithms", "Sorting algorithms"],
+          "correctAnswer": 0,
+          "explanation": "Consensus prevents double-spending and ensures agreement."
+        },
+        {
+          "question": "What is a Merkle tree?",
+          "options": ["Database tree", "CSS tree", "Data structure efficiently verifying transaction integrity", "Binary search tree"],
+          "correctAnswer": 2,
+          "explanation": "Merkle trees enable lightweight blockchain verification."
+        },
+        {
+          "question": "What is a public key?",
+          "options": ["Cryptographic address shared publicly for receiving funds", "Database key", "CSS key", "Password"],
+          "correctAnswer": 0,
+          "explanation": "Public keys derive from private keys via elliptic curves."
+        },
+        {
+          "question": "What is a digital signature?",
+          "options": ["CSS signature", "Cryptographic proof of transaction authenticity", "Database signature", "Handwritten signature"],
+          "correctAnswer": 1,
+          "explanation": "Digital signatures prove ownership without revealing private key."
+        },
+        {
+          "question": "What is Byzantine Fault Tolerance?",
+          "options": ["System functioning despite malicious nodes", "Database tolerance", "CSS tolerance", "Network tolerance"],
+          "correctAnswer": 0,
+          "explanation": "BFT enables consensus with up to 1/3 faulty nodes."
+        },
+        {
+          "question": "What is a 51% attack?",
+          "options": ["Database attack", "CSS attack", "Controlling majority hash power to manipulate blockchain", "Phishing attack"],
+          "correctAnswer": 2,
+          "explanation": "51% attack allows double-spending and transaction censorship."
+        },
+        {
+          "question": "What is a hard fork?",
+          "options": ["Protocol change creating incompatible blockchain", "Database fork", "CSS fork", "Soft update"],
+          "correctAnswer": 0,
+          "explanation": "Hard forks require all nodes to upgrade (Ethereum Classic)."
+        },
+        {
+          "question": "What is a soft fork?",
+          "options": ["CSS fork", "Backward-compatible protocol upgrade", "Database fork", "Hard fork"],
+          "correctAnswer": 1,
+          "explanation": "Soft forks tighten rules without splitting blockchain."
+        }
+      ]
+    },
+    {
+      "id": "programming-prerequisites",
+      "title": "Programming Prerequisites (4-6 weeks)",
+      "description": "Master JavaScript/TypeScript and async programming for Web3 development. Python optional for blockchain scripting.",
+      "resources": [
+        {
+          "title": "JavaScript Full Course - freeCodeCamp",
+          "url": "https://www.youtube.com/embed/PkZNo7MFNFg",
+          "type": "Video",
+          "duration": "3 hours"
+        },
+        {
+          "title": "TypeScript Tutorial",
+          "url": "https://www.typescriptlang.org/docs/handbook/intro.html",
+          "type": "Article"
+        },
+        {
+          "title": "Node.js Fundamentals",
+          "url": "https://nodejs.dev/en/learn/",
+          "type": "Article"
+        },
+        {
+          "title": "Python for Blockchain",
+          "url": "https://www.youtube.com/embed/pZSegEXtgAE",
+          "type": "Video"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is JavaScript?",
+          "options": ["Programming language for Web3 frontend", "Database", "CSS framework", "Operating system"],
+          "correctAnswer": 0,
+          "explanation": "JavaScript interacts with blockchain via libraries."
+        },
+        {
+          "question": "What is TypeScript?",
+          "options": ["Database type", "JavaScript with static typing", "CSS type", "Blockchain"],
+          "correctAnswer": 1,
+          "explanation": "TypeScript adds type safety for Web3 development."
+        },
+        {
+          "question": "What is async/await?",
+          "options": ["Handling asynchronous operations", "Database await", "CSS await", "Synchronous code"],
+          "correctAnswer": 0,
+          "explanation": "Async/await manages blockchain transaction promises."
+        },
+        {
+          "question": "What is Node.js?",
+          "options": ["CSS node", "JavaScript runtime for server-side", "Database node", "Blockchain node"],
+          "correctAnswer": 1,
+          "explanation": "Node.js runs scripts for smart contract deployment."
+        },
+        {
+          "question": "What is a Promise?",
+          "options": ["Object representing async operation result", "Database promise", "CSS promise", "Sync operation"],
+          "correctAnswer": 0,
+          "explanation": "Promises handle blockchain RPC calls asynchronously."
+        },
+        {
+          "question": "What is npm?",
+          "options": ["Database manager", "Node Package Manager for libraries", "CSS manager", "Blockchain manager"],
+          "correctAnswer": 1,
+          "explanation": "npm installs Web3 packages like ethers.js."
+        },
+        {
+          "question": "What is JSON?",
+          "options": ["JavaScript Object Notation for data", "Database JSON", "CSS JSON", "Blockchain JSON"],
+          "correctAnswer": 0,
+          "explanation": "JSON formats blockchain data and ABIs."
+        },
+        {
+          "question": "What is ES6?",
+          "options": ["CSS version", "Modern JavaScript with arrow functions, modules", "Database version", "Blockchain version"],
+          "correctAnswer": 1,
+          "explanation": "ES6 features improve Web3 development efficiency."
+        },
+        {
+          "question": "What is Python used for in blockchain?",
+          "options": ["Scripting, testing, and backend services", "CSS styling", "Database only", "Frontend only"],
+          "correctAnswer": 0,
+          "explanation": "Python builds blockchain tools and automation scripts."
+        },
+        {
+          "question": "What is destructuring?",
+          "options": ["Database destruction", "Extracting values from objects/arrays", "CSS destruction", "Blockchain destruction"],
+          "correctAnswer": 1,
+          "explanation": "Destructuring simplifies working with blockchain responses."
+        },
+        {
+          "question": "What are callbacks?",
+          "options": ["Functions passed as arguments to other functions", "Database callbacks", "CSS callbacks", "Return values"],
+          "correctAnswer": 0,
+          "explanation": "Callbacks handle asynchronous blockchain operations."
+        },
+        {
+          "question": "What are arrow functions?",
+          "options": ["CSS functions", "Database functions", "Concise function syntax in JavaScript", "Named functions"],
+          "correctAnswer": 2,
+          "explanation": "Arrow functions: (params) => expression for cleaner code."
+        },
+        {
+          "question": "What are modules?",
+          "options": ["Reusable code organized in separate files", "Database modules", "CSS modules", "Functions only"],
+          "correctAnswer": 0,
+          "explanation": "Modules use import/export for code organization."
+        },
+        {
+          "question": "What is package.json?",
+          "options": ["Database package", "CSS package", "File managing project dependencies and metadata", "Smart contract"],
+          "correctAnswer": 2,
+          "explanation": "package.json lists Web3 libraries like ethers.js."
+        },
+        {
+          "question": "What is an API?",
+          "options": ["Application Programming Interface for communication", "Database API", "CSS API", "Smart contract"],
+          "correctAnswer": 0,
+          "explanation": "APIs enable interaction with blockchain nodes."
+        },
+        {
+          "question": "What is REST?",
+          "options": ["CSS REST", "Database REST", "REpresentational State Transfer architecture", "Sleep mode"],
+          "correctAnswer": 2,
+          "explanation": "REST APIs use HTTP methods for blockchain data."
+        },
+        {
+          "question": "What are HTTP requests?",
+          "options": ["Methods for client-server communication", "Database requests", "CSS requests", "Smart contracts"],
+          "correctAnswer": 0,
+          "explanation": "HTTP requests query blockchain via RPC endpoints."
+        },
+        {
+          "question": "What are environment variables?",
+          "options": ["Database variables", "CSS variables", "Configuration values stored outside code", "Smart contract variables"],
+          "correctAnswer": 2,
+          "explanation": "Environment variables store private keys securely."
+        },
+        {
+          "question": "What is Git?",
+          "options": ["Version control system for code management", "Database Git", "CSS Git", "Blockchain"],
+          "correctAnswer": 0,
+          "explanation": "Git tracks smart contract changes and collaboration."
+        },
+        {
+          "question": "What is version control?",
+          "options": ["CSS control", "System tracking code history and changes", "Database control", "Blockchain control"],
+          "correctAnswer": 1,
+          "explanation": "Version control enables team collaboration on dApps."
+        }
+      ]
+    },
+    {
+      "id": "web3-concepts",
+      "title": "Web3 Concepts (2-3 weeks)",
+      "description": "Learn decentralization, DeFi basics, NFTs, DAOs, and the difference between Web2 and Web3.",
+      "resources": [
+        {
+          "title": "What is Web3?",
+          "url": "https://www.youtube.com/embed/nHhAEkG1y2U?si=1-Wc6txl-wi65pCN",
+          "type": "Video"
+        },
+        {
+          "title": "DeFi (Decentralized Finance) Basics",
+          "url": "https://www.youtube.com/embed/mg7NTX_3_2o?si=0dz00kxDh4a7oQiO",
+          "type": "Video"
+        },
+        {
+          "title": "NFTs Explained",
+          "url": "https://www.youtube.com/embed/NNQLJcJEzv0?si=0xHdiFn_D1Ayixt3",
+          "type": "Video"
+        },
+        {
+          "title": "DAOs Explained",
+          "url": "https://www.youtube.com/embed/tbO-tfZX3sc?si=ASUs7JMF3jXZOxCy",
+          "type": "Video"
+        },
+        {
+          "title": "Web3 vs Web2 - Comparison",
+          "url": "https://www.youtube.com/embed/7BKeMRzpjlM?si=2FnHzGGrk8MW85pq",
+          "type": "Video"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is Web3?",
+          "options": ["Decentralized internet built on blockchain", "Database", "CSS framework", "Web2 upgrade"],
+          "correctAnswer": 0,
+          "explanation": "Web3 eliminates intermediaries with blockchain technology."
+        },
+        {
+          "question": "What is DeFi?",
+          "options": ["Database finance", "Decentralized Finance without banks", "CSS finance", "Traditional finance"],
+          "correctAnswer": 1,
+          "explanation": "DeFi offers lending, trading, and yield farming on blockchain."
+        },
+        {
+          "question": "What is an NFT?",
+          "options": ["Non-Fungible Token representing unique asset", "Database token", "CSS token", "Currency"],
+          "correctAnswer": 0,
+          "explanation": "NFTs prove ownership of digital art, collectibles, etc."
+        },
+        {
+          "question": "What is a DAO?",
+          "options": ["CSS organization", "Decentralized Autonomous Organization", "Database organization", "Traditional company"],
+          "correctAnswer": 1,
+          "explanation": "DAOs are community-governed organizations on blockchain."
+        },
+        {
+          "question": "What is the difference between Web2 and Web3?",
+          "options": ["Web3 is decentralized, Web2 is centralized", "No difference", "Web2 is newer", "Web3 uses databases"],
+          "correctAnswer": 0,
+          "explanation": "Web3 gives users ownership and control of their data."
+        },
+        {
+          "question": "What is a smart contract?",
+          "options": ["Self-executing contract on blockchain", "Database contract", "CSS contract", "Legal document"],
+          "correctAnswer": 0,
+          "explanation": "Smart contracts automate agreements without intermediaries."
+        },
+        {
+          "question": "What is a dApp?",
+          "options": ["Database app", "Decentralized Application on blockchain", "CSS app", "Mobile app"],
+          "correctAnswer": 1,
+          "explanation": "dApps run on blockchain instead of centralized servers."
+        },
+        {
+          "question": "What is a wallet?",
+          "options": ["Software storing private keys and tokens", "Physical wallet", "Database wallet", "CSS wallet"],
+          "correctAnswer": 0,
+          "explanation": "Wallets (MetaMask) manage crypto and interact with dApps."
+        },
+        {
+          "question": "What is gas?",
+          "options": ["CSS gas", "Fee paid for blockchain transactions", "Database gas", "Physical fuel"],
+          "correctAnswer": 1,
+          "explanation": "Gas compensates miners/validators for computation."
+        },
+        {
+          "question": "What is tokenization?",
+          "options": ["Converting assets into blockchain tokens", "Database tokenization", "CSS tokenization", "Authentication"],
+          "correctAnswer": 0,
+          "explanation": "Tokenization enables fractional ownership of real assets."
+        },
+        {
+          "question": "What is cryptocurrency?",
+          "options": ["CSS cryptocurrency", "Digital currency secured by cryptography", "Database currency", "Fiat currency"],
+          "correctAnswer": 1,
+          "explanation": "Cryptocurrency operates on decentralized blockchain networks."
+        },
+        {
+          "question": "What is a token?",
+          "options": ["Digital asset created on existing blockchain", "Database token", "CSS token", "Mining reward"],
+          "correctAnswer": 0,
+          "explanation": "Tokens represent utility, governance, or assets."
+        },
+        {
+          "question": "What is a blockchain explorer?",
+          "options": ["Database explorer", "CSS explorer", "Tool for viewing blockchain transactions and addresses", "Web browser"],
+          "correctAnswer": 2,
+          "explanation": "Explorers (Etherscan) provide transaction transparency."
+        },
+        {
+          "question": "What is a transaction hash?",
+          "options": ["Unique identifier for blockchain transaction", "Database hash", "CSS hash", "Password hash"],
+          "correctAnswer": 0,
+          "explanation": "Transaction hash (txHash) tracks transaction status."
+        },
+        {
+          "question": "What is a consensus mechanism?",
+          "options": ["CSS mechanism", "Protocol for network agreement on state", "Database mechanism", "Mining only"],
+          "correctAnswer": 1,
+          "explanation": "Consensus ensures all nodes agree on transaction order."
+        },
+        {
+          "question": "What is peer-to-peer?",
+          "options": ["Network where participants interact directly", "Database network", "CSS network", "Client-server"],
+          "correctAnswer": 0,
+          "explanation": "P2P eliminates central intermediaries."
+        },
+        {
+          "question": "What is permissionless?",
+          "options": ["Database permission", "CSS permission", "Anyone can participate without approval", "Restricted access"],
+          "correctAnswer": 2,
+          "explanation": "Permissionless blockchains are open to all."
+        },
+        {
+          "question": "What is trustless?",
+          "options": ["System relying on code instead of trust", "Database trustless", "CSS trustless", "Requiring trust"],
+          "correctAnswer": 0,
+          "explanation": "Trustless means cryptography validates, not intermediaries."
+        },
+        {
+          "question": "What is interoperability?",
+          "options": ["CSS interoperability", "Blockchains communicating with each other", "Database interoperability", "Single blockchain"],
+          "correctAnswer": 1,
+          "explanation": "Interoperability enables cross-chain asset transfers."
+        },
+        {
+          "question": "What is Layer 1?",
+          "options": ["Base blockchain protocol", "Database layer", "CSS layer", "Layer 2 solution"],
+          "correctAnswer": 0,
+          "explanation": "Layer 1 includes Bitcoin, Ethereum mainnet."
+        }
+      ]
+    },
+    {
+      "id": "solidity-fundamentals",
+      "title": "Solidity Fundamentals (6-8 weeks)",
+      "description": "Master Solidity programming including variables, functions, mappings, events, inheritance, and smart contract development.",
+      "resources": [
+        {
+          "title": "Solidity Documentation (Official)",
+          "url": "https://docs.soliditylang.org/",
+          "type": "Article",
+          "note": "BEST resource"
+        },
+        {
+          "title": "Solidity by Example",
+          "url": "https://solidity-by-example.org/",
+          "type": "Interactive"
+        },
+        {
+          "title": "CryptoZombies - Interactive Tutorial",
+          "url": "https://cryptozombies.io/",
+          "type": "Interactive",
+          "note": "BEST for beginners"
+        },
+        {
+          "title": "Solidity Full Course - freeCodeCamp",
+          "url": "https://www.youtube.com/embed/M576WGiDBdQ",
+          "type": "Video",
+          "duration": "16 hours"
+        },
+        {
+          "title": "Learn Solidity - Alchemy University",
+          "url": "https://university.alchemy.com/",
+          "type": "Interactive"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is Solidity?",
+          "options": ["Programming language for Ethereum smart contracts", "Database", "CSS language", "Web framework"],
+          "correctAnswer": 0,
+          "explanation": "Solidity is statically-typed language for EVM."
+        },
+        {
+          "question": "What is a contract in Solidity?",
+          "options": ["Database contract", "Class-like structure containing code and data", "CSS contract", "Legal document"],
+          "correctAnswer": 1,
+          "explanation": "Contracts are deployed to blockchain at specific addresses."
+        },
+        {
+          "question": "What is a function in Solidity?",
+          "options": ["Executable unit of code in contract", "Database function", "CSS function", "HTML function"],
+          "correctAnswer": 0,
+          "explanation": "Functions can be public, private, internal, or external."
+        },
+        {
+          "question": "What is a mapping?",
+          "options": ["CSS mapping", "Key-value storage structure", "Database mapping", "Array"],
+          "correctAnswer": 1,
+          "explanation": "Mappings: mapping(address => uint256) balances;"
+        },
+        {
+          "question": "What is an event?",
+          "options": ["Logging mechanism for blockchain transactions", "Database event", "CSS event", "User action"],
+          "correctAnswer": 0,
+          "explanation": "Events emit logs that frontends can listen to."
+        },
+        {
+          "question": "What is inheritance in Solidity?",
+          "options": ["Database inheritance", "Contract deriving from parent contract", "CSS inheritance", "Token transfer"],
+          "correctAnswer": 1,
+          "explanation": "Inheritance enables code reuse: contract B is A."
+        },
+        {
+          "question": "What is msg.sender?",
+          "options": ["Address calling the current function", "Database sender", "CSS sender", "Email sender"],
+          "correctAnswer": 0,
+          "explanation": "msg.sender identifies transaction initiator."
+        },
+        {
+          "question": "What is a modifier?",
+          "options": ["CSS modifier", "Function decorator for access control", "Database modifier", "Variable type"],
+          "correctAnswer": 1,
+          "explanation": "Modifiers like onlyOwner restrict function access."
+        },
+        {
+          "question": "What is uint?",
+          "options": ["Unsigned integer type in Solidity", "Database type", "CSS type", "String type"],
+          "correctAnswer": 0,
+          "explanation": "uint256 stores non-negative numbers (0 to 2^256-1)."
+        },
+        {
+          "question": "What is payable?",
+          "options": ["Database payable", "Function that can receive Ether", "CSS payable", "Free function"],
+          "correctAnswer": 1,
+          "explanation": "Payable functions accept cryptocurrency payments."
+        },
+        {
+          "question": "What is a constructor?",
+          "options": ["Special function executed once at deployment", "Database constructor", "CSS constructor", "Regular function"],
+          "correctAnswer": 0,
+          "explanation": "Constructor initializes contract state variables."
+        },
+        {
+          "question": "What are state variables?",
+          "options": ["CSS variables", "Database variables", "Variables stored permanently on blockchain", "Temporary variables"],
+          "correctAnswer": 2,
+          "explanation": "State variables persist in contract storage."
+        },
+        {
+          "question": "What is memory vs storage?",
+          "options": ["memory is temporary, storage is permanent", "Database storage", "CSS storage", "Same thing"],
+          "correctAnswer": 0,
+          "explanation": "Memory clears after function, storage persists."
+        },
+        {
+          "question": "What is require()?",
+          "options": ["Validation function reverting on false condition", "Database require", "CSS require", "Import statement"],
+          "correctAnswer": 0,
+          "explanation": "require() validates inputs and reverts transactions."
+        },
+        {
+          "question": "What is the address type?",
+          "options": ["Database address", "CSS address", "Type holding Ethereum addresses", "String type"],
+          "correctAnswer": 2,
+          "explanation": "address type stores 20-byte Ethereum addresses."
+        },
+        {
+          "question": "What is a fallback function?",
+          "options": ["Function called when no other matches", "Database fallback", "CSS fallback", "Constructor"],
+          "correctAnswer": 0,
+          "explanation": "Fallback handles unexpected calls to contract."
+        },
+        {
+          "question": "What is receive function?",
+          "options": ["CSS receive", "Special function for receiving plain Ether", "Database receive", "Regular function"],
+          "correctAnswer": 1,
+          "explanation": "receive() external payable {} handles Ether transfers."
+        },
+        {
+          "question": "What is function visibility?",
+          "options": ["Control: public, private, internal, external", "Database visibility", "CSS visibility", "No visibility"],
+          "correctAnswer": 0,
+          "explanation": "Visibility determines function accessibility."
+        },
+        {
+          "question": "What is pure vs view?",
+          "options": ["Database pure", "CSS pure", "pure doesn't read state, view reads but doesn't modify", "Same thing"],
+          "correctAnswer": 2,
+          "explanation": "Pure/view functions don't change blockchain state."
+        },
+        {
+          "question": "What is a struct?",
+          "options": ["Custom data type grouping related variables", "Database struct", "CSS struct", "Array"],
+          "correctAnswer": 0,
+          "explanation": "Structs organize complex data structures."
+        }
+      ]
+    },
+    {
+      "id": "development-tools",
+      "title": "Smart Contract Development Tools (3-4 weeks)",
+      "description": "Learn Hardhat framework, Foundry, Remix IDE, and MetaMask for smart contract development, testing, and deployment.",
+      "resources": [
+        {
+          "title": "Hardhat Getting Started",
+          "url": "https://hardhat.org/hardhat-runner/docs/getting-started",
+          "type": "Article"
+        },
+        {
+          "title": "Hardhat Tutorial",
+          "url": "https://hardhat.org/tutorial",
+          "type": "Interactive"
+        },
+        {
+          "title": "Foundry Book (Official)",
+          "url": "https://book.getfoundry.sh/",
+          "type": "Article"
+        },
+        {
+          "title": "Remix IDE - Online Solidity Editor",
+          "url": "https://remix.ethereum.org/",
+          "type": "Interactive"
+        },
+        {
+          "title": "MetaMask",
+          "url": "https://www.youtube.com/embed/MFodclymGNY?si=gsoecAYYcGdtBVI5",
+          "type": "Video"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is Hardhat?",
+          "options": ["Ethereum development framework", "Database", "CSS framework", "Wallet"],
+          "correctAnswer": 0,
+          "explanation": "Hardhat compiles, tests, and deploys smart contracts."
+        },
+        {
+          "question": "What is Foundry?",
+          "options": ["CSS foundry", "Fast Solidity testing framework in Rust", "Database foundry", "Wallet foundry"],
+          "correctAnswer": 1,
+          "explanation": "Foundry offers blazing-fast smart contract testing."
+        },
+        {
+          "question": "What is Remix IDE?",
+          "options": ["Browser-based Solidity development environment", "Database IDE", "CSS IDE", "Text editor"],
+          "correctAnswer": 0,
+          "explanation": "Remix enables quick contract prototyping online."
+        },
+        {
+          "question": "What is MetaMask?",
+          "options": ["Database mask", "Browser wallet for Ethereum", "CSS mask", "Testing tool"],
+          "correctAnswer": 1,
+          "explanation": "MetaMask manages accounts and signs transactions."
+        },
+        {
+          "question": "What is a testnet?",
+          "options": ["Test blockchain network for development", "Database test", "CSS test", "Production network"],
+          "correctAnswer": 0,
+          "explanation": "Testnets (Sepolia, Goerli) use free test Ether."
+        },
+        {
+          "question": "What is deployment?",
+          "options": ["CSS deployment", "Publishing contract to blockchain", "Database deployment", "Testing"],
+          "correctAnswer": 1,
+          "explanation": "Deployment costs gas and creates contract address."
+        },
+        {
+          "question": "What is an ABI?",
+          "options": ["Application Binary Interface for contract interaction", "Database ABI", "CSS ABI", "Wallet ABI"],
+          "correctAnswer": 0,
+          "explanation": "ABI defines function signatures for calling contracts."
+        },
+        {
+          "question": "What is a local blockchain?",
+          "options": ["Database blockchain", "Development blockchain on your machine", "CSS blockchain", "Mainnet"],
+          "correctAnswer": 1,
+          "explanation": "Local networks (Hardhat Network) enable fast testing."
+        },
+        {
+          "question": "What is compilation?",
+          "options": ["Converting Solidity to bytecode", "Database compilation", "CSS compilation", "Deployment"],
+          "correctAnswer": 0,
+          "explanation": "Compilation produces bytecode for EVM execution."
+        },
+        {
+          "question": "What is a private key?",
+          "options": ["CSS key", "Secret key controlling wallet funds", "Database key", "Public identifier"],
+          "correctAnswer": 1,
+          "explanation": "Private keys must be kept secret to prevent theft."
+        },
+        {
+          "question": "What are deployment scripts?",
+          "options": ["Automated code deploying contracts to blockchain", "Database scripts", "CSS scripts", "Test scripts"],
+          "correctAnswer": 0,
+          "explanation": "Scripts use ethers.js to deploy and verify contracts."
+        },
+        {
+          "question": "What is ethers.js?",
+          "options": ["CSS library", "JavaScript library for Ethereum interaction", "Database library", "Testing library"],
+          "correctAnswer": 1,
+          "explanation": "ethers.js provides contract abstraction and utilities."
+        },
+        {
+          "question": "What is web3.js?",
+          "options": ["Alternative JavaScript library for Ethereum", "Database library", "CSS library", "Web framework"],
+          "correctAnswer": 0,
+          "explanation": "web3.js was first Ethereum JavaScript library."
+        },
+        {
+          "question": "What is contract testing?",
+          "options": ["Database testing", "CSS testing", "Verifying contract behavior with automated tests", "Manual testing"],
+          "correctAnswer": 2,
+          "explanation": "Testing uses Mocha, Chai, or Foundry for validation."
+        },
+        {
+          "question": "What is console.log in Solidity?",
+          "options": ["Debugging tool printing values during tests", "Database console", "CSS console", "Production logging"],
+          "correctAnswer": 0,
+          "explanation": "console.log from Hardhat aids development debugging."
+        },
+        {
+          "question": "What is a debugger?",
+          "options": ["CSS debugger", "Tool stepping through code execution", "Database debugger", "Compiler"],
+          "correctAnswer": 1,
+          "explanation": "Debuggers help identify transaction failures."
+        },
+        {
+          "question": "What is contract verification?",
+          "options": ["Publishing source code to match bytecode", "Database verification", "CSS verification", "Testing"],
+          "correctAnswer": 0,
+          "explanation": "Verification on Etherscan proves contract authenticity."
+        },
+        {
+          "question": "What is mainnet?",
+          "options": ["Database mainnet", "CSS mainnet", "Production blockchain with real value", "Test network"],
+          "correctAnswer": 2,
+          "explanation": "Mainnet deployment costs real Ether for gas."
+        },
+        {
+          "question": "What is a faucet?",
+          "options": ["Service providing free testnet cryptocurrency", "Database faucet", "CSS faucet", "Mainnet tool"],
+          "correctAnswer": 0,
+          "explanation": "Faucets enable testing without spending real money."
+        },
+        {
+          "question": "What is a transaction receipt?",
+          "options": ["CSS receipt", "Confirmation of transaction execution with logs", "Database receipt", "Payment receipt"],
+          "correctAnswer": 1,
+          "explanation": "Receipt contains gas used, status, and events."
+        }
+      ]
+    },
+    {
+      "id": "advanced-solidity",
+      "title": "Advanced Solidity & Security (4-6 weeks)",
+      "description": "Master smart contract security best practices, common vulnerabilities, OpenZeppelin contracts, design patterns, and gas optimization.",
+      "resources": [
+        {
+          "title": "Smart Contract Security Best Practices",
+          "url": "https://consensys.github.io/smart-contract-best-practices/",
+          "type": "Article"
+        },
+        {
+          "title": "Common Vulnerabilities (SWC Registry)",
+          "url": "https://swcregistry.io/",
+          "type": "Article"
+        },
+        {
+          "title": "OpenZeppelin Contracts",
+          "url": "https://docs.openzeppelin.com/contracts/",
+          "type": "Article"
+        },
+        {
+          "title": "Ethernaut - Security Challenges",
+          "url": "https://ethernaut.openzeppelin.com/",
+          "type": "Interactive",
+          "note": "BEST practice"
+        },
+        {
+          "title": "Damn Vulnerable DeFi",
+          "url": "https://www.damnvulnerabledefi.xyz/",
+          "type": "Interactive"
+        },
+        {
+          "title": "Solidity Patterns",
+          "url": "https://fravoll.github.io/solidity-patterns/",
+          "type": "Article"
+        },
+        {
+          "title": "Gas Optimization Techniques",
+          "url": "https://www.youtube.com/embed/Q3I5EnPZOYw?si=0JGt1oQuZCAs07mW",
+          "type": "Video"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is reentrancy attack?",
+          "options": ["Exploit calling function recursively before state update", "Database attack", "CSS attack", "Phishing"],
+          "correctAnswer": 0,
+          "explanation": "Reentrancy drains funds; use checks-effects-interactions pattern."
+        },
+        {
+          "question": "What is OpenZeppelin?",
+          "options": ["Database library", "Audited smart contract library", "CSS library", "Wallet"],
+          "correctAnswer": 1,
+          "explanation": "OpenZeppelin provides secure, reusable contract templates."
+        },
+        {
+          "question": "What is access control?",
+          "options": ["Restricting function calls to authorized addresses", "Database control", "CSS control", "Network control"],
+          "correctAnswer": 0,
+          "explanation": "Access control uses modifiers like onlyOwner."
+        },
+        {
+          "question": "What is gas optimization?",
+          "options": ["CSS optimization", "Reducing transaction costs", "Database optimization", "Network optimization"],
+          "correctAnswer": 1,
+          "explanation": "Optimization uses packed variables, calldata, loops efficiently."
+        },
+        {
+          "question": "What is integer overflow?",
+          "options": ["Number exceeding maximum value wrapping around", "Database overflow", "CSS overflow", "Stack overflow"],
+          "correctAnswer": 0,
+          "explanation": "Solidity 0.8+ has built-in overflow checks."
+        },
+        {
+          "question": "What is a security audit?",
+          "options": ["Database audit", "Professional review of smart contract security", "CSS audit", "Performance audit"],
+          "correctAnswer": 1,
+          "explanation": "Audits identify vulnerabilities before deployment."
+        },
+        {
+          "question": "What is the checks-effects-interactions pattern?",
+          "options": ["Security pattern: validate, update state, then external calls", "Database pattern", "CSS pattern", "Design pattern"],
+          "correctAnswer": 0,
+          "explanation": "Pattern prevents reentrancy attacks."
+        },
+        {
+          "question": "What is front-running?",
+          "options": ["CSS running", "Exploiting pending transactions for profit", "Database running", "Testing"],
+          "correctAnswer": 1,
+          "explanation": "Front-running sees pending tx and submits higher gas."
+        },
+        {
+          "question": "What is unchecked block?",
+          "options": ["Code bypassing overflow/underflow checks for gas savings", "Database block", "CSS block", "Network block"],
+          "correctAnswer": 0,
+          "explanation": "Unchecked saves gas when overflow impossible."
+        },
+        {
+          "question": "What is a design pattern?",
+          "options": ["Database pattern", "Reusable solution to common problems", "CSS pattern", "Visual pattern"],
+          "correctAnswer": 1,
+          "explanation": "Patterns include factory, proxy, upgrade patterns."
+        },
+        {
+          "question": "What is the proxy pattern?",
+          "options": ["Pattern separating logic and storage for upgrades", "Database proxy", "CSS proxy", "Network proxy"],
+          "correctAnswer": 0,
+          "explanation": "Proxy pattern enables upgradeable smart contracts."
+        },
+        {
+          "question": "What are upgradeable contracts?",
+          "options": ["CSS contracts", "Database contracts", "Contracts with modifiable logic via proxy", "Immutable contracts"],
+          "correctAnswer": 2,
+          "explanation": "Upgradeability uses delegatecall to implementation."
+        },
+        {
+          "question": "What is delegatecall?",
+          "options": ["Low-level call executing code in caller's context", "Database call", "CSS call", "Regular call"],
+          "correctAnswer": 0,
+          "explanation": "delegatecall preserves msg.sender and storage."
+        },
+        {
+          "question": "What is assembly in Solidity?",
+          "options": ["Database assembly", "CSS assembly", "Low-level EVM bytecode for optimization", "High-level code"],
+          "correctAnswer": 2,
+          "explanation": "Assembly provides fine-grained control for gas savings."
+        },
+        {
+          "question": "What is an EIP?",
+          "options": ["Ethereum Improvement Proposal for standards", "Database EIP", "CSS EIP", "Error code"],
+          "correctAnswer": 0,
+          "explanation": "EIPs define token standards like ERC-20, ERC-721."
+        },
+        {
+          "question": "What is SafeMath?",
+          "options": ["CSS math", "Library preventing overflow/underflow", "Database math", "Regular math"],
+          "correctAnswer": 1,
+          "explanation": "SafeMath obsolete in Solidity 0.8+ (built-in checks)."
+        },
+        {
+          "question": "What are libraries?",
+          "options": ["Reusable code deployed once and linked", "Database libraries", "CSS libraries", "Contracts"],
+          "correctAnswer": 0,
+          "explanation": "Libraries save gas by code reuse."
+        },
+        {
+          "question": "What is an interface?",
+          "options": ["Database interface", "CSS interface", "Contract definition without implementation", "Full contract"],
+          "correctAnswer": 2,
+          "explanation": "Interfaces define external contract functions."
+        },
+        {
+          "question": "What is an abstract contract?",
+          "options": ["Contract with unimplemented functions", "Database contract", "CSS contract", "Deployed contract"],
+          "correctAnswer": 0,
+          "explanation": "Abstract contracts serve as base for inheritance."
+        },
+        {
+          "question": "What is selfdestruct?",
+          "options": ["CSS selfdestruct", "Function destroying contract and sending Ether", "Database selfdestruct", "Update function"],
+          "correctAnswer": 1,
+          "explanation": "selfdestruct is dangerous and being deprecated."
+        }
+      ]
+    },
+    {
+      "id": "defi-protocols",
+      "title": "DeFi Protocols (6-8 weeks)",
+      "description": "Learn to build DeFi primitives including ERC-20 tokens, DEXs, staking contracts, lending protocols, and NFT marketplaces.",
+      "resources": [
+        {
+          "title": "Uniswap V3 Documentation",
+          "url": "https://docs.uniswap.org/",
+          "type": "Article"
+        },
+        {
+          "title": "Automated Market Makers (AMM)",
+          "url": "https://www.youtube.com/embed/1PbZMudPP5E",
+          "type": "Video"
+        },
+        {
+          "title": "Aave Documentation",
+          "url": "https://docs.aave.com/hub/",
+          "type": "Article"
+        },
+        {
+          "title": "ERC-20 Token",
+          "url": "https://www.youtube.com/embed/cqZhNzZoMh8?si=Tn9vRGMp3LiWLqIy",
+          "type": "Video"
+        },
+        {
+          "title": "Build a DEX Tutorial",
+          "url": "https://www.youtube.com/embed/99pYGpTWcXM",
+          "type": "Video"
+        },
+        {
+          "title": "NFT Marketplace Tutorial",
+          "url": "https://www.youtube.com/embed/GKJBEEXUha0",
+          "type": "Video"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is ERC-20?",
+          "options": ["Token standard for fungible tokens", "Database standard", "CSS standard", "NFT standard"],
+          "correctAnswer": 0,
+          "explanation": "ERC-20 defines transfer, approve, balanceOf functions."
+        },
+        {
+          "question": "What is a DEX?",
+          "options": ["CSS dex", "Decentralized Exchange for token swapping", "Database dex", "Centralized exchange"],
+          "correctAnswer": 1,
+          "explanation": "DEXs (Uniswap, SushiSwap) use AMM algorithms."
+        },
+        {
+          "question": "What is an AMM?",
+          "options": ["Automated Market Maker using liquidity pools", "Database AMM", "CSS AMM", "Manual trading"],
+          "correctAnswer": 0,
+          "explanation": "AMMs price assets via x*y=k constant product formula."
+        },
+        {
+          "question": "What is liquidity pool?",
+          "options": ["Database pool", "Token reserves enabling trading", "CSS pool", "Mining pool"],
+          "correctAnswer": 1,
+          "explanation": "Liquidity providers earn fees from trades."
+        },
+        {
+          "question": "What is staking?",
+          "options": ["Locking tokens to earn rewards", "Database staking", "CSS staking", "Selling tokens"],
+          "correctAnswer": 0,
+          "explanation": "Staking secures PoS networks or earns yield."
+        },
+        {
+          "question": "What is a lending protocol?",
+          "options": ["CSS protocol", "Platform for borrowing/lending crypto", "Database protocol", "Trading protocol"],
+          "correctAnswer": 1,
+          "explanation": "Lending protocols (Aave, Compound) use collateral."
+        },
+        {
+          "question": "What is ERC-721?",
+          "options": ["NFT standard for unique tokens", "Database standard", "CSS standard", "Fungible token"],
+          "correctAnswer": 0,
+          "explanation": "ERC-721 represents unique assets like art, collectibles."
+        },
+        {
+          "question": "What is ERC-1155?",
+          "options": ["Database standard", "Multi-token standard for fungible and NFTs", "CSS standard", "Single token"],
+          "correctAnswer": 1,
+          "explanation": "ERC-1155 reduces gas by batching transfers."
+        },
+        {
+          "question": "What is yield farming?",
+          "options": ["Earning rewards by providing liquidity", "Database farming", "CSS farming", "Mining"],
+          "correctAnswer": 0,
+          "explanation": "Yield farming maximizes returns across protocols."
+        },
+        {
+          "question": "What is impermanent loss?",
+          "options": ["CSS loss", "Loss from price divergence in liquidity pools", "Database loss", "Permanent loss"],
+          "correctAnswer": 1,
+          "explanation": "Impermanent loss occurs when token prices change."
+        },
+        {
+          "question": "What is a token swap?",
+          "options": ["Exchanging one token for another via DEX", "Database swap", "CSS swap", "Manual exchange"],
+          "correctAnswer": 0,
+          "explanation": "Swaps use smart contracts for trustless exchange."
+        },
+        {
+          "question": "What is slippage?",
+          "options": ["CSS slippage", "Database slippage", "Price change between order and execution", "Fixed price"],
+          "correctAnswer": 2,
+          "explanation": "Slippage tolerance prevents unfavorable trades."
+        },
+        {
+          "question": "What is Total Value Locked (TVL)?",
+          "options": ["Total assets deposited in DeFi protocol", "Database TVL", "CSS TVL", "User count"],
+          "correctAnswer": 0,
+          "explanation": "TVL measures protocol size and popularity."
+        },
+        {
+          "question": "What are flash loans?",
+          "options": ["Database loans", "CSS loans", "Uncollateralized loans repaid in same transaction", "Traditional loans"],
+          "correctAnswer": 2,
+          "explanation": "Flash loans enable arbitrage and liquidations."
+        },
+        {
+          "question": "What is collateral ratio?",
+          "options": ["Percentage of collateral vs borrowed amount", "Database ratio", "CSS ratio", "Interest rate"],
+          "correctAnswer": 0,
+          "explanation": "Collateral ratio determines borrowing capacity."
+        },
+        {
+          "question": "What is liquidation?",
+          "options": ["CSS liquidation", "Forced sale of collateral when ratio drops", "Database liquidation", "Voluntary sale"],
+          "correctAnswer": 1,
+          "explanation": "Liquidation protects lenders from bad debt."
+        },
+        {
+          "question": "What is a governance token?",
+          "options": ["Token granting voting rights in DAO", "Database token", "CSS token", "Payment token"],
+          "correctAnswer": 0,
+          "explanation": "Governance tokens control protocol parameters."
+        },
+        {
+          "question": "What are farming rewards?",
+          "options": ["Database rewards", "CSS rewards", "Tokens earned for providing liquidity", "Mining rewards"],
+          "correctAnswer": 2,
+          "explanation": "Yield farming distributes governance tokens."
+        },
+        {
+          "question": "What are LP tokens?",
+          "options": ["Liquidity Provider tokens proving pool ownership", "Database tokens", "CSS tokens", "NFTs"],
+          "correctAnswer": 0,
+          "explanation": "LP tokens represent share of liquidity pool."
+        },
+        {
+          "question": "What are protocol fees?",
+          "options": ["CSS fees", "Charges taken by DeFi protocol from trades", "Database fees", "Gas fees"],
+          "correctAnswer": 1,
+          "explanation": "Protocol fees often distributed to token holders."
+        }
+      ]
+    },
+    {
+      "id": "oracles-external-data",
+      "title": "Oracles & External Data (2-3 weeks)",
+      "description": "Learn to integrate real-world data into smart contracts using Chainlink oracles, price feeds, and VRF for randomness.",
+      "resources": [
+        {
+          "title": "Chainlink Documentation",
+          "url": "https://docs.chain.link/",
+          "type": "Article"
+        },
+        {
+          "title": "Oracle Problem Explained",
+          "url": "https://www.youtube.com/embed/ZJfkNzyO7-U?si=hyt_cKOh9PKQ-hkU",
+          "type": "Video"
+        },
+        {
+          "title": "Price Feeds with Chainlink",
+          "url": "https://docs.chain.link/data-feeds",
+          "type": "Article"
+        },
+        {
+          "title": "Chainlink VRF (Randomness)",
+          "url": "https://docs.chain.link/vrf",
+          "type": "Article"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is an oracle?",
+          "options": ["Bridge connecting blockchain to external data", "Database oracle", "CSS oracle", "Smart contract"],
+          "correctAnswer": 0,
+          "explanation": "Oracles provide real-world data to smart contracts."
+        },
+        {
+          "question": "What is the oracle problem?",
+          "options": ["CSS problem", "Blockchains can't access external data natively", "Database problem", "Network problem"],
+          "correctAnswer": 1,
+          "explanation": "Oracle problem requires trusted data sources."
+        },
+        {
+          "question": "What is Chainlink?",
+          "options": ["Decentralized oracle network", "Database", "CSS framework", "Blockchain"],
+          "correctAnswer": 0,
+          "explanation": "Chainlink aggregates data from multiple sources."
+        },
+        {
+          "question": "What is a price feed?",
+          "options": ["Database feed", "Real-time asset price from oracle", "CSS feed", "News feed"],
+          "correctAnswer": 1,
+          "explanation": "Price feeds power DeFi lending and trading."
+        },
+        {
+          "question": "What is VRF?",
+          "options": ["Verifiable Random Function for provable randomness", "Database VRF", "CSS VRF", "Predictable random"],
+          "correctAnswer": 0,
+          "explanation": "VRF ensures fair, tamper-proof randomness for games, NFTs."
+        },
+        {
+          "question": "What is off-chain data?",
+          "options": ["CSS data", "Data existing outside blockchain", "Database data", "On-chain data"],
+          "correctAnswer": 1,
+          "explanation": "Off-chain data includes APIs, IoT sensors, sports scores."
+        },
+        {
+          "question": "What is data aggregation?",
+          "options": ["Combining multiple oracle sources for accuracy", "Database aggregation", "CSS aggregation", "Single source"],
+          "correctAnswer": 0,
+          "explanation": "Aggregation reduces manipulation risk."
+        },
+        {
+          "question": "What is a Chainlink node?",
+          "options": ["Database node", "Oracle operator providing data", "CSS node", "Blockchain node"],
+          "correctAnswer": 1,
+          "explanation": "Nodes earn LINK tokens for delivering data."
+        },
+        {
+          "question": "What is an API call?",
+          "options": ["Request to external service for data", "Database call", "CSS call", "Function call"],
+          "correctAnswer": 0,
+          "explanation": "Oracles make API calls to fetch external data."
+        },
+        {
+          "question": "What is decentralized oracle?",
+          "options": ["CSS oracle", "Oracle using multiple independent sources", "Database oracle", "Single oracle"],
+          "correctAnswer": 1,
+          "explanation": "Decentralized oracles prevent single points of failure."
+        },
+        {
+          "question": "What is a data feed?",
+          "options": ["Continuously updated data stream from oracle", "Database feed", "CSS feed", "One-time data"],
+          "correctAnswer": 0,
+          "explanation": "Data feeds provide real-time price information."
+        },
+        {
+          "question": "What is request/response model?",
+          "options": ["CSS model", "Database model", "Contract requests data, oracle responds", "Automatic model"],
+          "correctAnswer": 2,
+          "explanation": "Request/response enables custom data queries."
+        },
+        {
+          "question": "What are hybrid smart contracts?",
+          "options": ["Contracts combining on-chain code and off-chain data", "Database contracts", "CSS contracts", "Pure on-chain"],
+          "correctAnswer": 0,
+          "explanation": "Hybrid contracts use oracles for real-world integration."
+        },
+        {
+          "question": "What is Chainlink Keeper?",
+          "options": ["Database keeper", "Automated execution service for contracts", "CSS keeper", "Manual keeper"],
+          "correctAnswer": 1,
+          "explanation": "Keepers trigger time-based or condition-based functions."
+        },
+        {
+          "question": "What is automation?",
+          "options": ["CSS automation", "Database automation", "Executing contract functions based on conditions", "Manual execution"],
+          "correctAnswer": 2,
+          "explanation": "Automation enables self-executing protocols."
+        },
+        {
+          "question": "What is an external adapter?",
+          "options": ["Custom code connecting oracle to API", "Database adapter", "CSS adapter", "Hardware adapter"],
+          "correctAnswer": 0,
+          "explanation": "External adapters fetch data from any API."
+        },
+        {
+          "question": "What is decentralized data?",
+          "options": ["Data aggregated from multiple sources", "Database data", "CSS data", "Single source data"],
+          "correctAnswer": 0,
+          "explanation": "Decentralized data reduces manipulation risk."
+        },
+        {
+          "question": "What is oracle reputation?",
+          "options": ["CSS reputation", "Database reputation", "Reliability score for oracle nodes", "User rating"],
+          "correctAnswer": 2,
+          "explanation": "Reputation incentivizes accurate data provision."
+        },
+        {
+          "question": "What are aggregation rounds?",
+          "options": ["Periods where oracles submit data for averaging", "Database rounds", "CSS rounds", "Mining rounds"],
+          "correctAnswer": 0,
+          "explanation": "Aggregation rounds create consensus on data."
+        },
+        {
+          "question": "What is deviation threshold?",
+          "options": ["Database threshold", "CSS threshold", "Price change triggering oracle update", "Fixed value"],
+          "correctAnswer": 2,
+          "explanation": "Deviation threshold controls update frequency."
+        }
+      ]
+    },
+    {
+      "id": "fullstack-web3",
+      "title": "Full-Stack Web3 Development (4-6 weeks)",
+      "description": "Master frontend integration with ethers.js, wagmi, RainbowKit, IPFS for decentralized storage, and subgraphs for indexing.",
+      "resources": [
+        {
+          "title": "ethers.js Documentation",
+          "url": "https://docs.ethers.org/",
+          "type": "Article",
+          "note": "BEST library"
+        },
+        {
+          "title": "Wagmi Hooks for React",
+          "url": "https://wagmi.sh/",
+          "type": "Article"
+        },
+        {
+          "title": "RainbowKit - Wallet Connection",
+          "url": "https://www.rainbowkit.com/docs/introduction",
+          "type": "Article"
+        },
+        {
+          "title": "IPFS Documentation",
+          "url": "https://docs.ipfs.tech/",
+          "type": "Article"
+        },
+        {
+          "title": "The Graph Protocol",
+          "url": "https://thegraph.com/docs/en/",
+          "type": "Article"
+        },
+        {
+          "title": "Build a Full-Stack dApp",
+          "url": "https://www.youtube.com/embed/gyMwXuJrbJQ",
+          "type": "Video"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is ethers.js?",
+          "options": ["JavaScript library for Ethereum interaction", "Database library", "CSS library", "Web framework"],
+          "correctAnswer": 0,
+          "explanation": "ethers.js connects frontend to smart contracts."
+        },
+        {
+          "question": "What is wagmi?",
+          "options": ["Database wagmi", "React Hooks for Ethereum", "CSS wagmi", "Blockchain wagmi"],
+          "correctAnswer": 1,
+          "explanation": "wagmi simplifies wallet connection and contract calls."
+        },
+        {
+          "question": "What is RainbowKit?",
+          "options": ["Wallet connection UI library", "Database kit", "CSS kit", "Testing kit"],
+          "correctAnswer": 0,
+          "explanation": "RainbowKit provides beautiful wallet connect buttons."
+        },
+        {
+          "question": "What is IPFS?",
+          "options": ["CSS IPFS", "InterPlanetary File System for decentralized storage", "Database IPFS", "Blockchain IPFS"],
+          "correctAnswer": 1,
+          "explanation": "IPFS stores NFT metadata and files off-chain."
+        },
+        {
+          "question": "What is The Graph?",
+          "options": ["Indexing protocol for blockchain data querying", "Database graph", "CSS graph", "Chart library"],
+          "correctAnswer": 0,
+          "explanation": "The Graph uses GraphQL to query blockchain events."
+        },
+        {
+          "question": "What is a subgraph?",
+          "options": ["Database subgraph", "Custom API for blockchain data", "CSS subgraph", "Smart contract"],
+          "correctAnswer": 1,
+          "explanation": "Subgraphs index specific contract events efficiently."
+        },
+        {
+          "question": "What is Next.js for Web3?",
+          "options": ["React framework for building dApp frontends", "Database framework", "CSS framework", "Backend framework"],
+          "correctAnswer": 0,
+          "explanation": "Next.js enables server-side rendering for dApps."
+        },
+        {
+          "question": "What is a provider?",
+          "options": ["CSS provider", "Connection to Ethereum network", "Database provider", "Wallet provider"],
+          "correctAnswer": 1,
+          "explanation": "Providers read blockchain state via RPC endpoints."
+        },
+        {
+          "question": "What is a signer?",
+          "options": ["Object that can sign transactions with private key", "Database signer", "CSS signer", "Viewer"],
+          "correctAnswer": 0,
+          "explanation": "Signers write to blockchain by sending transactions."
+        },
+        {
+          "question": "What is CID?",
+          "options": ["Database CID", "Content Identifier in IPFS", "CSS CID", "Wallet CID"],
+          "correctAnswer": 1,
+          "explanation": "CIDs are cryptographic hashes identifying IPFS content."
+        },
+        {
+          "question": "What is wallet connection?",
+          "options": ["Linking user wallet to dApp for transactions", "Database connection", "CSS connection", "Server connection"],
+          "correctAnswer": 0,
+          "explanation": "Wallet connection uses MetaMask or WalletConnect."
+        },
+        {
+          "question": "What is network switching?",
+          "options": ["CSS switching", "Database switching", "Changing blockchain network in wallet", "Server switching"],
+          "correctAnswer": 2,
+          "explanation": "Network switching allows multi-chain dApp support."
+        },
+        {
+          "question": "What is transaction signing?",
+          "options": ["User approving transaction with private key", "Database signing", "CSS signing", "Automatic signing"],
+          "correctAnswer": 0,
+          "explanation": "Signing proves ownership and intent."
+        },
+        {
+          "question": "What are contract events?",
+          "options": ["Database events", "CSS events", "Logs emitted by smart contracts", "User events"],
+          "correctAnswer": 2,
+          "explanation": "Events enable frontend to react to contract changes."
+        },
+        {
+          "question": "What is useContractRead?",
+          "options": ["wagmi hook for reading contract state", "Database read", "CSS read", "Write hook"],
+          "correctAnswer": 0,
+          "explanation": "useContractRead fetches data without transactions."
+        },
+        {
+          "question": "What is useContractWrite?",
+          "options": ["CSS write", "wagmi hook for sending transactions", "Database write", "Read hook"],
+          "correctAnswer": 1,
+          "explanation": "useContractWrite triggers state-changing functions."
+        },
+        {
+          "question": "What is pinning in IPFS?",
+          "options": ["Ensuring content persists on network", "Database pinning", "CSS pinning", "Deleting content"],
+          "correctAnswer": 0,
+          "explanation": "Pinning services keep NFT data accessible."
+        },
+        {
+          "question": "What is an IPFS gateway?",
+          "options": ["Database gateway", "CSS gateway", "HTTP interface to IPFS content", "Blockchain gateway"],
+          "correctAnswer": 2,
+          "explanation": "Gateways allow browsers to access IPFS."
+        },
+        {
+          "question": "What is NFT metadata?",
+          "options": ["JSON describing NFT properties and image", "Database metadata", "CSS metadata", "Contract code"],
+          "correctAnswer": 0,
+          "explanation": "Metadata stored on IPFS, referenced by token URI."
+        },
+        {
+          "question": "What is GraphQL?",
+          "options": ["CSS query", "Query language for APIs and subgraphs", "Database query", "SQL"],
+          "correctAnswer": 1,
+          "explanation": "GraphQL enables flexible blockchain data queries."
+        }
+      ]
+    },
+    {
+      "id": "advanced-topics",
+      "title": "Advanced Topics (6-10 weeks)",
+      "description": "Explore Layer 2 solutions (Optimistic/ZK Rollups, Polygon, Arbitrum), alternative blockchains (Solana, Polkadot), and security auditing.",
+      "resources": [
+        {
+          "title": "Layer 2 Scaling Solutions",
+          "url": "https://www.youtube.com/embed/lytuYa4CmFQ?si=5-MjUgyknhNR-R0b",
+          "type": "Video"
+        },
+        {
+          "title": "Polygon Documentation",
+          "url": "https://www.quicknode.com/guides/polygon/what-is-polygon-zkevm",
+          "type": "Article"
+        },
+        {
+          "title": "Arbitrum Documentation",
+          "url": "https://docs.arbitrum.io/",
+          "type": "Article"
+        },
+        {
+          "title": "zkSync Documentation",
+          "url": "https://docs.zksync.io/",
+          "type": "Article"
+        },
+        {
+          "title": "Solana Development (Rust)",
+          "url": "https://www.infuy.com/blog/rust-and-solana-development/",
+          "type": "Article"
+        },
+        {
+          "title": "Anchor Framework for Solana",
+          "url": "https://www.anchor-lang.com/",
+          "type": "Article"
+        },
+        {
+          "title": "Slither - Static Analysis Tool",
+          "url": "https://www.youtube.com/embed/1LlEAQgroHw?si=Ubuh7C9XG1SB1GeY",
+          "type": "Video"
+        },
+        {
+          "title": "Alchemy University",
+          "url": "https://university.alchemy.com/",
+          "type": "Interactive"
+        },
+        {
+          "title": "Buildspace",
+          "url": "https://buildspace.so/",
+          "type": "Interactive"
+        },
+        {
+          "title": "LearnWeb3 DAO",
+          "url": "https://www.learnweb3.io/",
+          "type": "Interactive"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is Layer 2?",
+          "options": ["Scaling solution built on top of Ethereum", "Database layer", "CSS layer", "Layer 1"],
+          "correctAnswer": 0,
+          "explanation": "Layer 2 reduces fees and increases throughput."
+        },
+        {
+          "question": "What is an Optimistic Rollup?",
+          "options": ["CSS rollup", "L2 assuming transactions valid unless challenged", "Database rollup", "Pessimistic rollup"],
+          "correctAnswer": 1,
+          "explanation": "Optimistic rollups (Optimism, Arbitrum) have 7-day withdrawal."
+        },
+        {
+          "question": "What is a ZK Rollup?",
+          "options": ["L2 using zero-knowledge proofs for validity", "Database rollup", "CSS rollup", "Optimistic rollup"],
+          "correctAnswer": 0,
+          "explanation": "ZK rollups (zkSync, StarkNet) offer instant finality."
+        },
+        {
+          "question": "What is Polygon?",
+          "options": ["Database polygon", "Ethereum sidechain and scaling platform", "CSS polygon", "Altcoin"],
+          "correctAnswer": 1,
+          "explanation": "Polygon offers fast, cheap transactions compatible with Ethereum."
+        },
+        {
+          "question": "What is Arbitrum?",
+          "options": ["Optimistic rollup L2 solution", "Database arbitrum", "CSS arbitrum", "L1 blockchain"],
+          "correctAnswer": 0,
+          "explanation": "Arbitrum has lower fees than Ethereum mainnet."
+        },
+        {
+          "question": "What is Solana?",
+          "options": ["CSS solana", "High-performance blockchain using Rust", "Database solana", "Ethereum L2"],
+          "correctAnswer": 1,
+          "explanation": "Solana offers fast, low-cost transactions with PoH consensus."
+        },
+        {
+          "question": "What is Rust?",
+          "options": ["Programming language for Solana smart contracts", "Database rust", "CSS rust", "JavaScript framework"],
+          "correctAnswer": 0,
+          "explanation": "Rust provides memory safety for blockchain development."
+        },
+        {
+          "question": "What is Anchor?",
+          "options": ["Database anchor", "Solana smart contract framework", "CSS anchor", "Ethereum framework"],
+          "correctAnswer": 1,
+          "explanation": "Anchor simplifies Solana program development."
+        },
+        {
+          "question": "What is Slither?",
+          "options": ["Static analysis tool for Solidity security", "Database slither", "CSS slither", "Testing tool"],
+          "correctAnswer": 0,
+          "explanation": "Slither detects vulnerabilities automatically."
+        },
+        {
+          "question": "What is a security audit?",
+          "options": ["CSS audit", "Professional review finding contract vulnerabilities", "Database audit", "Performance audit"],
+          "correctAnswer": 1,
+          "explanation": "Audits (Code4rena, Trail of Bits) prevent hacks."
+        },
+        {
+          "question": "What are state channels?",
+          "options": ["Off-chain transaction channels settling on-chain", "Database channels", "CSS channels", "On-chain only"],
+          "correctAnswer": 0,
+          "explanation": "State channels enable instant, low-cost transactions."
+        },
+        {
+          "question": "What is Plasma?",
+          "options": ["CSS plasma", "Database plasma", "L2 framework with child chains", "L1 blockchain"],
+          "correctAnswer": 2,
+          "explanation": "Plasma chains periodically commit to mainnet."
+        },
+        {
+          "question": "What are sidechains?",
+          "options": ["Independent blockchains connected to mainnet", "Database sidechains", "CSS sidechains", "Layer 2"],
+          "correctAnswer": 0,
+          "explanation": "Sidechains have own consensus and security."
+        },
+        {
+          "question": "What is bridge security?",
+          "options": ["Database security", "CSS security", "Protecting cross-chain asset transfers", "No security"],
+          "correctAnswer": 2,
+          "explanation": "Bridge security prevents exploits and theft."
+        },
+        {
+          "question": "What is Substrate?",
+          "options": ["Framework for building custom blockchains", "Database substrate", "CSS substrate", "Ethereum framework"],
+          "correctAnswer": 0,
+          "explanation": "Substrate powers Polkadot parachains."
+        },
+        {
+          "question": "What are Polkadot parachains?",
+          "options": ["CSS parachains", "Independent chains sharing Polkadot security", "Database parachains", "Ethereum L2"],
+          "correctAnswer": 1,
+          "explanation": "Parachains enable cross-chain interoperability."
+        },
+        {
+          "question": "What is Cosmos SDK?",
+          "options": ["Toolkit for building application-specific blockchains", "Database SDK", "CSS SDK", "Ethereum SDK"],
+          "correctAnswer": 0,
+          "explanation": "Cosmos SDK uses Tendermint consensus."
+        },
+        {
+          "question": "What is Move language?",
+          "options": ["Database language", "CSS language", "Smart contract language for Aptos and Sui", "JavaScript"],
+          "correctAnswer": 2,
+          "explanation": "Move emphasizes resource safety and security."
+        },
+        {
+          "question": "What is formal verification?",
+          "options": ["Mathematical proof of contract correctness", "Database verification", "CSS verification", "Manual testing"],
+          "correctAnswer": 0,
+          "explanation": "Formal verification prevents critical bugs."
+        },
+        {
+          "question": "What is invariant testing?",
+          "options": ["CSS testing", "Testing properties that should always hold", "Database testing", "Manual testing"],
+          "correctAnswer": 1,
+          "explanation": "Invariant testing finds edge cases automatically."
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Simple Cryptocurrency Wallet",
+      "description": "Build a basic cryptocurrency wallet application that can generate addresses, check balances, and send transactions on a testnet.",
+      "difficulty": "Beginner",
+      "duration": "2-3 weeks",
+      "skills": ["Blockchain Basics", "Web3.js", "JavaScript", "Cryptography", "Metamask"],
+      "tasks": [
+        "Understand blockchain and wallet concepts",
+        "Generate public/private key pairs",
+        "Connect to Ethereum testnet",
+        "Implement balance checking functionality",
+        "Create transaction signing mechanism",
+        "Build simple UI for wallet operations",
+        "Test on Goerli or Sepolia testnet",
+        "Add QR code generation for addresses"
+      ]
+    },
+    {
+      "title": "NFT Marketplace Smart Contract",
+      "description": "Develop an NFT marketplace with smart contracts for minting, buying, selling, and auctioning NFTs using ERC-721 standard.",
+      "difficulty": "Intermediate",
+      "duration": "3-4 weeks",
+      "skills": ["Solidity", "ERC-721", "Smart Contracts", "OpenZeppelin", "Hardhat"],
+      "tasks": [
+        "Learn Solidity and ERC-721 standard",
+        "Set up Hardhat development environment",
+        "Write NFT minting contract",
+        "Implement marketplace contract for buying/selling",
+        "Add auction functionality",
+        "Write comprehensive tests",
+        "Deploy to testnet",
+        "Create frontend with React and Web3.js",
+        "Integrate with IPFS for metadata storage"
+      ]
+    },
+    {
+      "title": "Decentralized Voting DApp",
+      "description": "Create a decentralized voting application with transparent, tamper-proof voting using smart contracts and a web interface.",
+      "difficulty": "Intermediate",
+      "duration": "4-5 weeks",
+      "skills": ["DApp Development", "Smart Contracts", "Web3", "React", "Security"],
+      "tasks": [
+        "Design voting system architecture",
+        "Write smart contract for voting logic",
+        "Implement voter registration and authentication",
+        "Add proposal creation functionality",
+        "Build voting mechanism with time limits",
+        "Ensure one-vote-per-address constraint",
+        "Create React frontend for user interaction",
+        "Add real-time vote counting",
+        "Test for security vulnerabilities",
+        "Deploy and document the DApp"
+      ]
+    },
+    {
+      "title": "DeFi Yield Farming Protocol",
+      "description": "Build a decentralized finance protocol for yield farming with liquidity pools, staking, rewards distribution, and governance tokens.",
+      "difficulty": "Advanced",
+      "duration": "6-8 weeks",
+      "skills": ["DeFi", "Liquidity Pools", "Token Economics", "Advanced Solidity", "Security Auditing"],
+      "tasks": [
+        "Study DeFi protocols (Uniswap, Compound)",
+        "Design tokenomics and reward mechanism",
+        "Create ERC-20 governance token",
+        "Implement liquidity pool contract",
+        "Build staking mechanism",
+        "Add automated reward distribution",
+        "Implement time-locked vesting",
+        "Create frontend for protocol interaction",
+        "Write comprehensive security tests",
+        "Perform gas optimization",
+        "Conduct security audit",
+        "Deploy to mainnet with multisig"
+      ]
+    },
+    {
+      "title": "Cross-Chain Bridge Protocol",
+      "description": "Develop a sophisticated cross-chain bridge for transferring assets between different blockchains with validation and security mechanisms.",
+      "difficulty": "Advanced",
+      "duration": "8-10 weeks",
+      "skills": ["Cross-Chain", "Bridge Architecture", "Validators", "Advanced Security", "Multiple Blockchains"],
+      "tasks": [
+        "Study existing bridge protocols",
+        "Design bridge architecture and security model",
+        "Implement lock-and-mint mechanism",
+        "Create validator network",
+        "Build smart contracts for both chains",
+        "Implement signature verification system",
+        "Add slashing mechanism for malicious validators",
+        "Create relayer service for message passing",
+        "Build monitoring and alerting system",
+        "Implement emergency pause functionality",
+        "Conduct extensive security testing",
+        "Add MEV protection mechanisms",
+        "Create comprehensive documentation"
+      ]
+    }
+  ]
+}

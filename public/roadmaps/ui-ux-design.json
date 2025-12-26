@@ -1,0 +1,1800 @@
+{
+  "slug": "ui-ux-design",
+  "title": "UI/UX Design",
+  "summary": "Create intuitive, beautiful, and user-centered digital experiences focusing on visual design and overall user experience.",
+  "timeline": "8-12 months",
+  "difficulty": "Beginner to Moderate",
+  "steps": [
+    {
+      "id": "design-principles",
+      "title": "Design Principles & Theory (3-4 weeks)",
+      "description": "Learn fundamental design principles, visual hierarchy, color theory, typography, gestalt principles, and Laws of UX.",
+      "resources": [
+        {
+          "title": "Design Principles",
+          "url": "https://www.youtube.com/embed/9EPTM91TBDU?si=iF1GGx0bvR0kF3f7",
+          "type": "Video"
+        },
+        {
+          "title": "Laws of UX",
+          "url": "https://www.youtube.com/embed/videoseries?si=quc5o2hW5EPQp3rF&amp;list=PLspW40rZgNek_9PwVlb32IEj9AuEo3UTT",
+          "type": "Video"
+        },
+        {
+          "title": "The Design of Everyday Things - Summary",
+          "url": "https://www.youtube.com/embed/9BdtGjoIN4E",
+          "type": "Video"
+        },
+        {
+          "title": "Visual Hierarchy Principles",
+          "url": "https://www.youtube.com/embed/WwroSqXjrLM?si=_ykwpH2eRdiB2IJL",
+          "type": "Video"
+        },
+        {
+          "title": "Color Theory Basics - Adobe",
+          "url": "https://www.youtube.com/embed/2QTHs7QSR9o?si=juSDgN8MvrRenr-6",
+          "type": "Video"
+        },
+        {
+          "title": "Typography Fundamentals",
+          "url": "https://www.youtube.com/embed/QrNi9FmdlxY",
+          "type": "Video"
+        },
+        {
+          "title": "Gestalt Principles",
+          "url": "https://www.youtube.com/embed/FryaH599ec0?si=Vw_20RqLephXrIK2",
+          "type": "Video"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is visual hierarchy?",
+          "options": ["Organizing elements by importance", "Database hierarchy", "CSS hierarchy", "Random placement"],
+          "correctAnswer": 0,
+          "explanation": "Visual hierarchy guides user attention."
+        },
+        {
+          "question": "What is color theory?",
+          "options": ["CSS theory", "Study of color relationships and psychology", "Database theory", "Testing theory"],
+          "correctAnswer": 1,
+          "explanation": "Color theory informs effective color choices."
+        },
+        {
+          "question": "What is typography?",
+          "options": ["Art and technique of arranging type", "Database typography", "CSS typography", "Image design"],
+          "correctAnswer": 0,
+          "explanation": "Typography impacts readability and aesthetics."
+        },
+        {
+          "question": "What are Gestalt principles?",
+          "options": ["Database principles", "How humans perceive visual elements", "CSS principles", "Testing principles"],
+          "correctAnswer": 1,
+          "explanation": "Gestalt explains pattern recognition and grouping."
+        },
+        {
+          "question": "What is the law of proximity?",
+          "options": ["Close elements are perceived as related", "Database proximity", "CSS proximity", "Random placement"],
+          "correctAnswer": 0,
+          "explanation": "Proximity creates visual grouping."
+        },
+        {
+          "question": "What is whitespace?",
+          "options": ["CSS space", "Empty space between elements", "Database space", "White color"],
+          "correctAnswer": 1,
+          "explanation": "Whitespace improves readability and focus."
+        },
+        {
+          "question": "What is contrast?",
+          "options": ["Difference between elements for emphasis", "Database contrast", "CSS contrast", "Same color"],
+          "correctAnswer": 0,
+          "explanation": "Contrast highlights important elements."
+        },
+        {
+          "question": "What is alignment?",
+          "options": ["Database alignment", "Organizing elements along edges", "CSS alignment", "Random placement"],
+          "correctAnswer": 1,
+          "explanation": "Alignment creates order and cohesion."
+        },
+        {
+          "question": "What is balance?",
+          "options": ["Even distribution of visual weight", "Database balance", "CSS balance", "Imbalance"],
+          "correctAnswer": 0,
+          "explanation": "Balance creates stability and harmony."
+        },
+        {
+          "question": "What is repetition?",
+          "options": ["CSS repetition", "Consistent use of design elements", "Database repetition", "Random elements"],
+          "correctAnswer": 1,
+          "explanation": "Repetition creates unity and consistency."
+        },
+        {
+          "question": "What is the golden ratio?",
+          "options": ["Database ratio", "CSS ratio", "Mathematical proportion (1:1.618) for harmony", "Random ratio"],
+          "correctAnswer": 2,
+          "explanation": "Golden ratio creates aesthetically pleasing layouts."
+        },
+        {
+          "question": "What is rule of thirds?",
+          "options": ["CSS rule", "Database rule", "Dividing layout into 3x3 grid for balance", "Random rule"],
+          "correctAnswer": 2,
+          "explanation": "Rule of thirds guides focal point placement."
+        },
+        {
+          "question": "What is emphasis?",
+          "options": ["Database emphasis", "CSS emphasis", "Equal elements", "Making key elements stand out"],
+          "correctAnswer": 3,
+          "explanation": "Emphasis directs user attention."
+        },
+        {
+          "question": "What is proportion?",
+          "options": ["Database proportion", "CSS proportion", "Relative size relationships between elements", "Same sizes"],
+          "correctAnswer": 2,
+          "explanation": "Proportion creates visual harmony."
+        },
+        {
+          "question": "What is scale?",
+          "options": ["Database scale", "CSS scale", "Fixed size", "Size of elements relative to each other"],
+          "correctAnswer": 3,
+          "explanation": "Scale establishes hierarchy."
+        },
+        {
+          "question": "What is unity?",
+          "options": ["CSS unity", "Database unity", "Cohesion of all design elements", "Random elements"],
+          "correctAnswer": 2,
+          "explanation": "Unity creates harmonious whole."
+        },
+        {
+          "question": "What is variety?",
+          "options": ["Database variety", "CSS variety", "Same elements", "Diverse elements preventing monotony"],
+          "correctAnswer": 3,
+          "explanation": "Variety adds visual interest."
+        },
+        {
+          "question": "What is movement?",
+          "options": ["Database movement", "CSS movement", "Guiding eye through design", "Static design"],
+          "correctAnswer": 2,
+          "explanation": "Movement creates visual flow."
+        },
+        {
+          "question": "What is rhythm?",
+          "options": ["Database rhythm", "CSS rhythm", "Random placement", "Pattern created by repeated elements"],
+          "correctAnswer": 3,
+          "explanation": "Rhythm creates visual consistency."
+        },
+        {
+          "question": "What are hierarchy levels?",
+          "options": ["CSS levels", "Database levels", "Primary, secondary, tertiary importance", "No levels"],
+          "correctAnswer": 2,
+          "explanation": "Hierarchy levels organize information."
+        }
+      ]
+    },
+    {
+      "id": "ux-research",
+      "title": "UX Research Fundamentals (3-4 weeks)",
+      "description": "Master user research methods, user interviews, persona creation, journey mapping, usability testing, and A/B testing fundamentals.",
+      "resources": [
+        {
+          "title": "User Research Basics",
+          "url": "https://www.youtube.com/embed/kQ_6faxhyIw?si=AmxHlq87cXe5QLgG",
+          "type": "Video"
+        },
+        {
+          "title": "How to Conduct User Interviews",
+          "url": "https://www.youtube.com/embed/Q_m1-3mCyiI?si=F11PZc39hoUnPyHo",
+          "type": "Video"
+        },
+        {
+          "title": "Creating User Personas",
+          "url": "https://www.youtube.com/embed/UnAuwhu2C9Q?si=cS6KRzq0x5uNYF3N",
+          "type": "Video"
+        },
+        {
+          "title": "Journey Mapping Guide",
+          "url": "https://www.youtube.com/embed/L4E1yupkISI?si=tXJKM6lC7POAzWGk",
+          "type": "Video"
+        },
+        {
+          "title": "Usability Testing Methods",
+          "url": "https://www.youtube.com/embed/videoseries?si=eVZ6m7ie3uMrmEMM&amp;list=PLJOFJ3Ok_idtiMTz8fAiF1ElcKJM7Rncj" ,
+          "type": "Video"
+        },
+        {
+          "title": "A/B Testing Fundamentals",
+          "url": "https://www.optimizely.com/optimization-glossary/ab-testing/",
+          "type": "Article"
+        },
+        {
+          "title": "Google UX Design Certificate - Youtube",
+          "url": "https://www.youtube.com/embed/videoseries?si=fkJpJJ0r4micCitP&amp;list=PLTZYG7bZ1u6oHnGp4Ib3n0y-CmFQdTW6r",
+          "type": "Course",
+          "note": "FREE to audit"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is UX research?",
+          "options": ["Understanding user needs and behaviors", "Database research", "CSS research", "Code research"],
+          "correctAnswer": 0,
+          "explanation": "UX research informs design decisions."
+        },
+        {
+          "question": "What is a user persona?",
+          "options": ["CSS persona", "Fictional representation of target user", "Database persona", "Real user"],
+          "correctAnswer": 1,
+          "explanation": "Personas embody user goals and pain points."
+        },
+        {
+          "question": "What is a user interview?",
+          "options": ["Conversation to understand user needs", "Database interview", "CSS interview", "Job interview"],
+          "correctAnswer": 0,
+          "explanation": "Interviews reveal qualitative insights."
+        },
+        {
+          "question": "What is a journey map?",
+          "options": ["Database map", "Visualization of user experience over time", "CSS map", "Site map"],
+          "correctAnswer": 1,
+          "explanation": "Journey maps show user touchpoints and emotions."
+        },
+        {
+          "question": "What is usability testing?",
+          "options": ["Observing users interact with design", "Database testing", "CSS testing", "Code testing"],
+          "correctAnswer": 0,
+          "explanation": "Usability testing identifies friction points."
+        },
+        {
+          "question": "What is A/B testing?",
+          "options": ["CSS testing", "Comparing two versions to see which performs better", "Database testing", "Code testing"],
+          "correctAnswer": 1,
+          "explanation": "A/B testing uses data to optimize design."
+        },
+        {
+          "question": "What is empathy in UX?",
+          "options": ["Understanding user feelings and perspectives", "Database empathy", "CSS empathy", "Code empathy"],
+          "correctAnswer": 0,
+          "explanation": "Empathy drives user-centered design."
+        },
+        {
+          "question": "What is a pain point?",
+          "options": ["Database pain", "User frustration or problem", "CSS pain", "Code error"],
+          "correctAnswer": 1,
+          "explanation": "Identifying pain points guides improvements."
+        },
+        {
+          "question": "What is card sorting?",
+          "options": ["Method to understand information organization", "Database sorting", "CSS sorting", "Code sorting"],
+          "correctAnswer": 0,
+          "explanation": "Card sorting reveals user mental models."
+        },
+        {
+          "question": "What is a prototype?",
+          "options": ["CSS prototype", "Interactive mockup for testing", "Database prototype", "Final product"],
+          "correctAnswer": 1,
+          "explanation": "Prototypes validate ideas before development."
+        },
+        {
+          "question": "What is qualitative research?",
+          "options": ["Database research", "CSS research", "Understanding why users behave", "Numbers only"],
+          "correctAnswer": 2,
+          "explanation": "Qualitative research explores motivations."
+        },
+        {
+          "question": "What is quantitative research?",
+          "options": ["CSS research", "Database research", "Why users behave", "Measuring user behavior with numbers"],
+          "correctAnswer": 3,
+          "explanation": "Quantitative research provides statistical data."
+        },
+        {
+          "question": "What is an affinity diagram?",
+          "options": ["Database diagram", "CSS diagram", "Organizing research insights into themes", "Random notes"],
+          "correctAnswer": 2,
+          "explanation": "Affinity diagrams group related findings."
+        },
+        {
+          "question": "What is an empathy map?",
+          "options": ["Database map", "CSS map", "Site map", "Tool showing what users think, feel, say, do"],
+          "correctAnswer": 3,
+          "explanation": "Empathy maps build user understanding."
+        },
+        {
+          "question": "What is competitive analysis?",
+          "options": ["Database analysis", "CSS analysis", "Studying competitor products", "No analysis"],
+          "correctAnswer": 2,
+          "explanation": "Competitive analysis reveals opportunities."
+        },
+        {
+          "question": "What are user scenarios?",
+          "options": ["CSS scenarios", "Database scenarios", "Random stories", "Stories describing user interactions"],
+          "correctAnswer": 3,
+          "explanation": "Scenarios guide design decisions."
+        },
+        {
+          "question": "What is contextual inquiry?",
+          "options": ["Database inquiry", "CSS inquiry", "Observing users in natural environment", "Lab observation"],
+          "correctAnswer": 2,
+          "explanation": "Contextual inquiry reveals real usage."
+        },
+        {
+          "question": "What is ethnographic research?",
+          "options": ["Database research", "CSS research", "Quick survey", "Studying users in cultural context"],
+          "correctAnswer": 3,
+          "explanation": "Ethnography provides deep insights."
+        },
+        {
+          "question": "What are surveys?",
+          "options": ["Database surveys", "CSS surveys", "Questionnaires gathering user feedback", "Interviews"],
+          "correctAnswer": 2,
+          "explanation": "Surveys collect quantitative data."
+        },
+        {
+          "question": "What is task analysis?",
+          "options": ["CSS analysis", "Database analysis", "Random tasks", "Breaking down user actions into steps"],
+          "correctAnswer": 3,
+          "explanation": "Task analysis optimizes workflows."
+        },
+        {
+          "question": "What are mental models?",
+          "options": ["Database models", "CSS models", "How users think systems work", "Physical models"],
+          "correctAnswer": 2,
+          "explanation": "Mental models guide intuitive design."
+        }
+      ]
+    },
+    {
+      "id": "ui-design-basics",
+      "title": "UI Design Basics (4-6 weeks)",
+      "description": "Learn UI fundamentals including layout, composition, grid systems, spacing, alignment, button design, and form design best practices.",
+      "resources": [
+        {
+          "title": "UI Design Fundamentals - Scrimba",
+          "url": "https://scrimba.com/learn/design",
+          "type": "Interactive"
+        },
+        {
+          "title": "Figma UI Design Tutorial",
+          "url": "https://www.youtube.com/embed/FTFaQWZBqQ8",
+          "type": "Video",
+          "duration": "2 hours",
+          "note": "BEST tutorial"
+        },
+        {
+          "title": "Layout & Composition Principles",
+          "url": "https://www.youtube.com/embed/a5KYlHNKQB8",
+          "type": "Video"
+        },
+        {
+          "title": "Grid Systems Explained",
+          "url": "https://www.youtube.com/embed/n_V_aLqYPI0?si=KNrFxSDeCsc-2yR1",
+          "type": "Video"
+        },
+        {
+          "title": "Spacing & Alignment",
+          "url": "https://www.youtube.com/embed/ZXItTIjC0Wk",
+          "type": "Video"
+        },
+        {
+          "title": "Button Design Best Practices",
+          "url": "https://www.youtube.com/embed/BB6HiXvtcMQ?si=8qj1C82gvy8T41Dx",
+          "type": "Article"
+        },
+        {
+          "title": "Form Design Guidelines",
+          "url": "https://www.youtube.com/embed/EKjCC4PwjFo?si=QUfp9ps1nGmrSI1a",
+          "type": "Video"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is a grid system?",
+          "options": ["Framework for organizing content", "Database grid", "CSS grid", "Random placement"],
+          "correctAnswer": 0,
+          "explanation": "Grids create structure and alignment."
+        },
+        {
+          "question": "What is spacing?",
+          "options": ["CSS spacing", "Distance between elements", "Database spacing", "No distance"],
+          "correctAnswer": 1,
+          "explanation": "Consistent spacing improves readability."
+        },
+        {
+          "question": "What is UI composition?",
+          "options": ["Arranging visual elements effectively", "Database composition", "CSS composition", "Random arrangement"],
+          "correctAnswer": 0,
+          "explanation": "Composition guides user flow."
+        },
+        {
+          "question": "What is a button state?",
+          "options": ["Database state", "Visual feedback for user interaction", "CSS state", "Static button"],
+          "correctAnswer": 1,
+          "explanation": "States include default, hover, active, disabled."
+        },
+        {
+          "question": "What is form validation?",
+          "options": ["Checking user input correctness", "Database validation", "CSS validation", "No checking"],
+          "correctAnswer": 0,
+          "explanation": "Validation prevents errors and guides users."
+        },
+        {
+          "question": "What is an 8pt grid?",
+          "options": ["CSS grid", "Design system using 8-pixel increments", "Database grid", "Random grid"],
+          "correctAnswer": 1,
+          "explanation": "8pt grids ensure consistent spacing."
+        },
+        {
+          "question": "What is a layout?",
+          "options": ["Structure organizing page content", "Database layout", "CSS layout", "Random content"],
+          "correctAnswer": 0,
+          "explanation": "Layouts define content hierarchy and flow."
+        },
+        {
+          "question": "What is visual weight?",
+          "options": ["Database weight", "Perceived prominence of element", "CSS weight", "Physical weight"],
+          "correctAnswer": 1,
+          "explanation": "Visual weight draws attention."
+        },
+        {
+          "question": "What is a call-to-action?",
+          "options": ["Button prompting user action", "Database action", "CSS action", "Static text"],
+          "correctAnswer": 0,
+          "explanation": "CTAs drive conversions and engagement."
+        },
+        {
+          "question": "What is padding?",
+          "options": ["CSS padding", "Space inside element border", "Database padding", "Outside space"],
+          "correctAnswer": 1,
+          "explanation": "Padding creates breathing room."
+        },
+        {
+          "question": "What is margin?",
+          "options": ["Database margin", "CSS margin", "Space outside element border", "Inside space"],
+          "correctAnswer": 2,
+          "explanation": "Margin separates elements."
+        },
+        {
+          "question": "What are gutters?",
+          "options": ["CSS gutters", "Database gutters", "No space", "Space between grid columns"],
+          "correctAnswer": 3,
+          "explanation": "Gutters improve readability."
+        },
+        {
+          "question": "What are columns?",
+          "options": ["Database columns", "CSS columns", "Vertical divisions in grid system", "Horizontal divisions"],
+          "correctAnswer": 2,
+          "explanation": "Columns structure content."
+        },
+        {
+          "question": "What is F-pattern?",
+          "options": ["Database pattern", "CSS pattern", "Random pattern", "Eye tracking pattern for reading"],
+          "correctAnswer": 3,
+          "explanation": "F-pattern guides content placement."
+        },
+        {
+          "question": "What is Z-pattern?",
+          "options": ["Database pattern", "CSS pattern", "Eye movement pattern for visual scanning", "Random pattern"],
+          "correctAnswer": 2,
+          "explanation": "Z-pattern guides visual hierarchy."
+        },
+        {
+          "question": "What is above the fold?",
+          "options": ["CSS fold", "Database fold", "Bottom content", "Content visible without scrolling"],
+          "correctAnswer": 3,
+          "explanation": "Above the fold captures attention."
+        },
+        {
+          "question": "What is progressive disclosure?",
+          "options": ["Database disclosure", "CSS disclosure", "Revealing information gradually", "Show all"],
+          "correctAnswer": 2,
+          "explanation": "Progressive disclosure reduces overwhelm."
+        },
+        {
+          "question": "What is affordance?",
+          "options": ["Database affordance", "CSS affordance", "Random design", "Property suggesting how to use element"],
+          "correctAnswer": 3,
+          "explanation": "Affordance makes interactions obvious."
+        },
+        {
+          "question": "What are signifiers?",
+          "options": ["Database signifiers", "CSS signifiers", "Visual cues indicating actions", "No cues"],
+          "correctAnswer": 2,
+          "explanation": "Signifiers guide user behavior."
+        },
+        {
+          "question": "What is feedback?",
+          "options": ["CSS feedback", "Database feedback", "No response", "System response to user action"],
+          "correctAnswer": 3,
+          "explanation": "Feedback confirms user actions."
+        }
+      ]
+    },
+    {
+      "id": "figma-mastery",
+      "title": "Figma Mastery (6-8 weeks)",
+      "description": "Master Figma including basics, Auto Layout, components & variants, prototyping, design systems, and essential plugins.",
+      "resources": [
+        {
+          "title": "Figma Official Tutorial - Beginner",
+          "url": "https://www.youtube.com/embed/videoseries?si=dODoSpfaV582j8Wm&amp;list=PLXDU_eVOJTx5IuSrbtanZHnDuPB3Hx0hq",
+          "type": "Video"
+        },
+        {
+          "title": "Figma Full Course - freeCodeCamp",
+          "url": "https://www.youtube.com/embed/jwCmIBJ8Jtc",
+          "type": "Video",
+          "duration": "2 hours",
+          "note": "BEST Figma Course"
+        },
+        {
+          "title": "Figma Basics - DesignCourse",
+          "url": "https://www.youtube.com/embed/videoseries?si=ZQUhrVQaC3y_KiNB&amp;list=PLXDU_eVOJTx7QHLShNqIXL1Cgbxj7HlN4",
+          "type": "Video",
+          "duration": "1 hour"
+        },
+        {
+          "title": "Auto Layout in Figma",
+          "url": "https://www.youtube.com/embed/gJ6cvzZ0ewQ?si=np6R1QsMir6G3Lyg",
+          "type": "Video"
+        },
+        {
+          "title": "Components & Variants",
+          "url": "https://www.youtube.com/embed/bnoPAezI6cw?si=9agM5C61E5czMexY",
+          "type": "Video"
+        },
+        {
+          "title": "Figma Prototyping",
+          "url": "https://www.youtube.com/embed/1ucLq6JTxac?si=YEpTvw-9keHMjUcy",
+          "type": "Video"
+        },
+        {
+          "title": "Design Systems in Figma",
+          "url": "https://www.youtube.com/embed/videoseries?si=qfyjOd6fxMNucNaq&amp;list=PLXDU_eVOJTx6vqOWJSWH87Zb5-riiG63A",
+          "type": "Video"
+        },
+        {
+          "title": "Figma Plugins Essentials",
+          "url": "https://www.youtube.com/embed/rfa-luck_Ns?si=Y1KwmbNQ1YtfU4IX",
+          "type": "Video"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is Figma?",
+          "options": ["Cloud-based design and prototyping tool", "Database figma", "CSS figma", "Code editor"],
+          "correctAnswer": 0,
+          "explanation": "Figma enables collaborative design."
+        },
+        {
+          "question": "What is Auto Layout?",
+          "options": ["CSS layout", "Feature for responsive component design", "Database layout", "Manual layout"],
+          "correctAnswer": 1,
+          "explanation": "Auto Layout adapts to content changes."
+        },
+        {
+          "question": "What is a component?",
+          "options": ["Reusable design element", "Database component", "CSS component", "One-time element"],
+          "correctAnswer": 0,
+          "explanation": "Components ensure consistency and efficiency."
+        },
+        {
+          "question": "What are variants?",
+          "options": ["Database variants", "Different states of a component", "CSS variants", "Random designs"],
+          "correctAnswer": 1,
+          "explanation": "Variants manage component variations."
+        },
+        {
+          "question": "What is prototyping?",
+          "options": ["Creating Interactive clickable mockups", "Database prototyping", "CSS prototyping", "Static design"],
+          "correctAnswer": 0,
+          "explanation": "Prototyping demonstrates user flows."
+        },
+        {
+          "question": "What is a frame?",
+          "options": ["CSS frame", "Container for design content", "Database frame", "Random box"],
+          "correctAnswer": 1,
+          "explanation": "Frames define artboards and components."
+        },
+        {
+          "question": "What is a design system?",
+          "options": ["Collection of reusable components and guidelines", "Database system", "CSS system", "Random designs"],
+          "correctAnswer": 0,
+          "explanation": "Design systems ensure brand consistency."
+        },
+        {
+          "question": "What is a plugin?",
+          "options": ["Database plugin", "Extension adding Figma functionality", "CSS plugin", "Core feature"],
+          "correctAnswer": 1,
+          "explanation": "Plugins automate tasks and enhance workflows."
+        },
+        {
+          "question": "What is vector editing?",
+          "options": ["Creating scalable graphics", "Database editing", "CSS editing", "Raster editing"],
+          "correctAnswer": 0,
+          "explanation": "Vectors maintain quality at any size."
+        },
+        {
+          "question": "What is collaboration in Figma?",
+          "options": ["CSS collaboration", "Real-time multi-user design editing", "Database collaboration", "Solo work"],
+          "correctAnswer": 1,
+          "explanation": "Figma enables team collaboration."
+        },
+        {
+          "question": "What are constraints?",
+          "options": ["Database constraints", "CSS constraints", "Rules defining element positioning", "No rules"],
+          "correctAnswer": 2,
+          "explanation": "Constraints enable responsive designs."
+        },
+        {
+          "question": "What are boolean operations?",
+          "options": ["CSS operations", "Database operations", "No operations", "Combining shapes (union, subtract, intersect)"],
+          "correctAnswer": 3,
+          "explanation": "Boolean operations create complex shapes."
+        },
+        {
+          "question": "What are masks?",
+          "options": ["Database masks", "CSS masks", "Hiding parts of layers", "No hiding"],
+          "correctAnswer": 2,
+          "explanation": "Masks control visibility."
+        },
+        {
+          "question": "What are effects?",
+          "options": ["Database effects", "CSS effects", "No enhancements", "Shadows, blurs, and visual enhancements"],
+          "correctAnswer": 3,
+          "explanation": "Effects add depth and polish."
+        },
+        {
+          "question": "What are styles?",
+          "options": ["Database styles", "CSS styles", "Reusable color, text, and effect settings", "One-time settings"],
+          "correctAnswer": 2,
+          "explanation": "Styles ensure consistency."
+        },
+        {
+          "question": "What are libraries?",
+          "options": ["CSS libraries", "Database libraries", "Local files", "Shared component and style collections"],
+          "correctAnswer": 3,
+          "explanation": "Libraries enable team-wide consistency."
+        },
+        {
+          "question": "What is branching?",
+          "options": ["Database branching", "CSS branching", "Creating design file versions for exploration", "No versions"],
+          "correctAnswer": 2,
+          "explanation": "Branching allows safe experimentation."
+        },
+        {
+          "question": "What is version history?",
+          "options": ["Database history", "CSS history", "No record", "Record of file changes over time"],
+          "correctAnswer": 3,
+          "explanation": "Version history enables rollback."
+        },
+        {
+          "question": "What is inspect panel?",
+          "options": ["Database panel", "CSS panel", "Tool showing design specs for developers", "No specs"],
+          "correctAnswer": 2,
+          "explanation": "Inspect panel aids handoff."
+        },
+        {
+          "question": "What are export settings?",
+          "options": ["CSS settings", "Database settings", "No export", "Configuration for exporting assets"],
+          "correctAnswer": 3,
+          "explanation": "Export settings control asset output."
+        }
+      ]
+    },
+    {
+      "id": "alternative-tools",
+      "title": "Other Design Tools (2-3 weeks)",
+      "description": "Explore Adobe XD, Sketch, and prototyping tools like ProtoPie, Principle, and Framer.",
+      "resources": [
+        {
+          "title": "Adobe XD Tutorial",
+          "url": "https://www.youtube.com/embed/videoseries?si=OOqaD5DuLwOjOilH&amp;list=PLW-zSkCnZ-gD5TDfs1eL5EnH2mQ0f9g6B",
+          "type": "Video"
+        },
+        {
+          "title": "XD UI Design Course",
+          "url": "https://www.youtube.com/embed/68w2VwalD5w",
+          "type": "Video",
+          "duration": "1 hour"
+        },
+        {
+          "title": "Sketch Tutorial",
+          "url": "https://www.youtube.com/embed/videoseries?si=aN4BanMGG1CPz9a6&amp;list=PLgwNtYvZGv9Q_rH5RVWYE20dcp4_MLhX_",
+          "type": "Video"
+        },
+        {
+          "title": "ProtoPie (Advanced Interactions)",
+          "url": "https://www.youtube.com/embed/lCxwJYl8Vpc?si=xD6vhYORTnHCXJnB",
+          "type": "Video"
+        },
+        {
+          "title": "Framer (Code-based)",
+          "url": "https://www.youtube.com/embed/B6_qlIv6Qtk?si=OpXkdwe8UDYb7yHP",
+          "type": "Video"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is Adobe XD?",
+          "options": ["Design and prototyping tool by Adobe", "Database XD", "CSS XD", "Code editor"],
+          "correctAnswer": 0,
+          "explanation": "XD integrates with Adobe Creative Cloud."
+        },
+        {
+          "question": "What is Sketch?",
+          "options": ["CSS sketch", "macOS vector design tool", "Database sketch", "Windows tool"],
+          "correctAnswer": 1,
+          "explanation": "Sketch is popular for UI/UX design."
+        },
+        {
+          "question": "What is ProtoPie?",
+          "options": ["Advanced interaction prototyping tool", "Database protopie", "CSS protopie", "Code editor"],
+          "correctAnswer": 0,
+          "explanation": "ProtoPie creates complex animations."
+        },
+        {
+          "question": "What is Framer?",
+          "options": ["Database framer", "Code-based design and prototyping tool", "CSS framer", "Static tool"],
+          "correctAnswer": 1,
+          "explanation": "Framer uses React for advanced prototypes."
+        },
+        {
+          "question": "What is InVision?",
+          "options": ["Prototyping and collaboration platform", "Database invision", "CSS invision", "Code editor"],
+          "correctAnswer": 0,
+          "explanation": "InVision supports design handoff."
+        },
+        {
+          "question": "What is Principle?",
+          "options": ["CSS principle", "macOS animation and prototyping tool", "Database principle", "Windows tool"],
+          "correctAnswer": 1,
+          "explanation": "Principle creates Interactive animations."
+        },
+        {
+          "question": "What is Zeplin?",
+          "options": ["Design handoff and collaboration tool", "Database zeplin", "CSS zeplin", "Code editor"],
+          "correctAnswer": 0,
+          "explanation": "Zeplin bridges design and development."
+        },
+        {
+          "question": "What is Marvel?",
+          "options": ["Database marvel", "Simple prototyping and testing platform", "CSS marvel", "Complex tool"],
+          "correctAnswer": 1,
+          "explanation": "Marvel is beginner-friendly for prototyping."
+        },
+        {
+          "question": "What is Axure?",
+          "options": ["Advanced wireframing and prototyping tool", "Database axure", "CSS axure", "Simple tool"],
+          "correctAnswer": 0,
+          "explanation": "Axure supports complex interactions."
+        },
+        {
+          "question": "What is Balsamiq?",
+          "options": ["CSS balsamiq", "Low-fidelity wireframing tool", "Database balsamiq", "High-fidelity tool"],
+          "correctAnswer": 1,
+          "explanation": "Balsamiq creates quick sketchy wireframes."
+        },
+        {
+          "question": "What are artboards?",
+          "options": ["Database artboards", "CSS artboards", "Canvas areas for different screens", "Single canvas"],
+          "correctAnswer": 2,
+          "explanation": "Artboards organize multiple designs."
+        },
+        {
+          "question": "What are symbols?",
+          "options": ["CSS symbols", "Database symbols", "One-time elements", "Reusable design elements in Sketch"],
+          "correctAnswer": 3,
+          "explanation": "Symbols ensure consistency in Sketch."
+        },
+        {
+          "question": "What are plugins?",
+          "options": ["Database plugins", "CSS plugins", "Extensions adding tool functionality", "Core features"],
+          "correctAnswer": 2,
+          "explanation": "Plugins enhance design workflows."
+        },
+        {
+          "question": "What are cloud documents?",
+          "options": ["Database documents", "CSS documents", "Local files", "Files stored online for collaboration"],
+          "correctAnswer": 3,
+          "explanation": "Cloud documents enable sharing."
+        },
+        {
+          "question": "What are design specs?",
+          "options": ["Database specs", "CSS specs", "Measurements and properties for developers", "No measurements"],
+          "correctAnswer": 2,
+          "explanation": "Specs guide implementation."
+        },
+        {
+          "question": "What are animations?",
+          "options": ["CSS animations", "Database animations", "Static designs", "Motion effects showing transitions"],
+          "correctAnswer": 3,
+          "explanation": "Animations demonstrate interactions."
+        },
+        {
+          "question": "What are overlays?",
+          "options": ["Database overlays", "CSS overlays", "Layers appearing over content", "Background layers"],
+          "correctAnswer": 2,
+          "explanation": "Overlays show modals and menus."
+        },
+        {
+          "question": "What are hotspots?",
+          "options": ["Database hotspots", "CSS hotspots", "No interactions", "Clickable areas in prototypes"],
+          "correctAnswer": 3,
+          "explanation": "Hotspots enable prototype navigation."
+        },
+        {
+          "question": "What are transitions?",
+          "options": ["Database transitions", "CSS transitions", "Animations between screens", "Instant changes"],
+          "correctAnswer": 2,
+          "explanation": "Transitions show flow."
+        },
+        {
+          "question": "What are collaboration features?",
+          "options": ["CSS features", "Database features", "Solo features", "Tools for team design work"],
+          "correctAnswer": 3,
+          "explanation": "Collaboration features enable teamwork."
+        }
+      ]
+    },
+    {
+      "id": "ux-design-advanced",
+      "title": "User Experience Design (6-8 weeks)",
+      "description": "Master information architecture, card sorting, wireframing, prototyping, usability testing, and accessibility (WCAG guidelines).",
+      "resources": [
+        {
+          "title": "Information Architecture Basics",
+          "url": "https://www.youtube.com/embed/videoseries?si=RLEVAB01BuE1u2LS&amp;list=PLJOFJ3Ok_idv3UGVmUktgRrVbl0X45RTY",
+          "type": "Video"
+        },
+        {
+          "title": "Card Sorting Method",
+          "url": "https://www.youtube.com/embed/25RqpGJ4tJ8?si=YC6t63yw0IMYzUDN",
+          "type": "Video"
+        },
+        {
+          "title": "Sitemaps",
+          "url": "https://www.youtube.com/embed/GjEIuy9s4is?si=sw1wLznO8cJlY5VC",
+          "type": "Video"
+        },
+        {
+          "title": "User Flows",
+          "url": "https://www.youtube.com/embed/Zt2GmDOEHM0?si=K2eD4zsQHoBpurhM",
+          "type": "Video"
+        },
+        {
+          "title": "Wireframing Best Practices",
+          "url": "https://www.youtube.com/embed/iyrEStiTZh0?si=S2r66nrGIlYV_nT4",
+          "type": "Video"
+        },
+        {
+          "title": "Low-Fidelity vs High-Fidelity Prototypes",
+          "url": "https://www.youtube.com/embed/UU_eyUGWIEI?si=i7sgscJS21i43HYm",
+          "type": "Video"
+        },
+        {
+          "title": "Web Accessibility (WCAG) Guidelines",
+          "url": "https://www.youtube.com/embed/Hi3tQ_HzOgo?si=8ToIDhMPVO3J3ZoX",
+          "type": "Video"
+        },
+        {
+          "title": "Accessibility Fundamentals - Google",
+          "url": "https://www.youtube.com/embed/e2nkq3h1P68?si=jE_drUcc_QcGLi5q",
+          "type": "Video"
+        },
+        {
+          "title": "Color Contrast Checker",
+          "url": "https://www.youtube.com/embed/D8TPUqbhRmA?si=2gRpRA-azYMvAAEp",
+          "type": "Video"
+        },
+        {
+          "title": "Inclusive Design Principles",
+          "url": "https://www.youtube.com/embed/cY6-j7901Oc?si=D_ADL9VxEzehlls4",
+          "type": "Video"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is information architecture?",
+          "options": ["Organizing and structuring content", "Database architecture", "CSS architecture", "Code architecture"],
+          "correctAnswer": 0,
+          "explanation": "IA helps users find information easily."
+        },
+        {
+          "question": "What is a sitemap?",
+          "options": ["CSS sitemap", "Visual representation of website structure", "Database sitemap", "Random pages"],
+          "correctAnswer": 1,
+          "explanation": "Sitemaps show page hierarchy."
+        },
+        {
+          "question": "What is a user flow?",
+          "options": ["Path users take to complete task", "Database flow", "CSS flow", "Random clicks"],
+          "correctAnswer": 0,
+          "explanation": "User flows map user journeys."
+        },
+        {
+          "question": "What is wireframing?",
+          "options": ["Database wireframing", "Creating low-fidelity layout sketches", "CSS wireframing", "Final design"],
+          "correctAnswer": 1,
+          "explanation": "Wireframes focus on structure, not visuals."
+        },
+        {
+          "question": "What is accessibility?",
+          "options": ["Designing for all users including disabilities", "Database accessibility", "CSS accessibility", "Elite users only"],
+          "correctAnswer": 0,
+          "explanation": "Accessibility ensures inclusive design."
+        },
+        {
+          "question": "What is WCAG?",
+          "options": ["CSS WCAG", "Web Content Accessibility Guidelines", "Database WCAG", "Code WCAG"],
+          "correctAnswer": 1,
+          "explanation": "WCAG provides accessibility standards."
+        },
+        {
+          "question": "What is color contrast?",
+          "options": ["Difference between text and background colors", "Database contrast", "CSS contrast", "Same colors"],
+          "correctAnswer": 0,
+          "explanation": "Contrast ensures readability."
+        },
+        {
+          "question": "What is screen reader?",
+          "options": ["Database reader", "Tool that reads content aloud for blind users", "CSS reader", "Visual tool"],
+          "correctAnswer": 1,
+          "explanation": "Screen readers enable blind users to navigate."
+        },
+        {
+          "question": "What is alt text?",
+          "options": ["Text description of images", "Database text", "CSS text", "No description"],
+          "correctAnswer": 0,
+          "explanation": "Alt text helps screen reader users."
+        },
+        {
+          "question": "What is keyboard navigation?",
+          "options": ["CSS navigation", "Using keyboard instead of mouse", "Database navigation", "Touch navigation"],
+          "correctAnswer": 1,
+          "explanation": "Keyboard access is essential for accessibility."
+        },
+        {
+          "question": "What are navigation patterns?",
+          "options": ["Database patterns", "CSS patterns", "Common ways users move through sites", "Random clicks"],
+          "correctAnswer": 2,
+          "explanation": "Navigation patterns guide design."
+        },
+        {
+          "question": "What are IA principles?",
+          "options": ["CSS principles", "Database principles", "Random organization", "Guidelines for organizing information"],
+          "correctAnswer": 3,
+          "explanation": "IA principles improve findability."
+        },
+        {
+          "question": "What are breadcrumbs?",
+          "options": ["Database breadcrumbs", "CSS breadcrumbs", "Navigation showing user location", "No navigation"],
+          "correctAnswer": 2,
+          "explanation": "Breadcrumbs aid navigation."
+        },
+        {
+          "question": "What is a mega menu?",
+          "options": ["Database menu", "CSS menu", "Simple menu", "Large dropdown with multiple sections"],
+          "correctAnswer": 3,
+          "explanation": "Mega menus display many options."
+        },
+        {
+          "question": "What is search functionality?",
+          "options": ["Database search", "CSS search", "Feature allowing users to find content", "No search"],
+          "correctAnswer": 2,
+          "explanation": "Search improves content discovery."
+        },
+        {
+          "question": "What is filtering?",
+          "options": ["CSS filtering", "Database filtering", "No narrowing", "Narrowing results by criteria"],
+          "correctAnswer": 3,
+          "explanation": "Filtering helps users find relevant items."
+        },
+        {
+          "question": "What is sorting?",
+          "options": ["Database sorting", "CSS sorting", "Arranging items by attribute", "Random order"],
+          "correctAnswer": 2,
+          "explanation": "Sorting organizes content."
+        },
+        {
+          "question": "What are focus states?",
+          "options": ["Database states", "CSS states", "No indication", "Visual indication of keyboard selection"],
+          "correctAnswer": 3,
+          "explanation": "Focus states aid keyboard users."
+        },
+        {
+          "question": "What are ARIA labels?",
+          "options": ["Database labels", "CSS labels", "Accessibility attributes for assistive tech", "No labels"],
+          "correctAnswer": 2,
+          "explanation": "ARIA labels improve screen reader support."
+        },
+        {
+          "question": "What is semantic HTML?",
+          "options": ["CSS HTML", "Database HTML", "Random tags", "Meaningful markup for accessibility"],
+          "correctAnswer": 3,
+          "explanation": "Semantic HTML aids understanding."
+        }
+      ]
+    },
+    {
+      "id": "visual-design-branding",
+      "title": "Visual Design & Branding (4-6 weeks)",
+      "description": "Learn color psychology, palette generation, typography pairing, logo design, brand identity, and design systems.",
+      "resources": [
+        {
+          "title": "Color Psychology",
+          "url": "https://www.colorpsychology.org/",
+          "type": "Article"
+        },
+        {
+          "title": "Color Palette Generation",
+          "url": "https://coolors.co/",
+          "type": "Interactive"
+        },
+        {
+          "title": "Typography Pairing",
+          "url": "https://fontpair.co/",
+          "type": "Interactive"
+        },
+        {
+          "title": "Logo Design Basics",
+          "url": "https://www.youtube.com/embed/RBTiTcHm_ac",
+          "type": "Video"
+        },
+        {
+          "title": "Brand Identity Design",
+          "url": "https://www.youtube.com/embed/l-S2Y3SF3mM",
+          "type": "Video"
+        },
+        {
+          "title": "Material Design System",
+          "url": "https://www.youtube.com/embed/KxOppFIYBoo?si=xnaJrmwgH6m0g4-h",
+          "type": "Video"
+        },
+        {
+          "title": "Apple Human Interface Guidelines",
+          "url": "https://www.youtube.com/embed/Abj65tkSblQ?si=ZIGr9CDKEHbMPnui",
+          "type": "Article"
+        },
+        {
+          "title": "IBM Carbon Design System",
+          "url": "https://carbondesignsystem.com/",
+          "type": "Article"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is visual design?",
+          "options": ["Aesthetic styling of interfaces", "Database design", "CSS design", "Code design"],
+          "correctAnswer": 0,
+          "explanation": "Visual design creates appealing experiences."
+        },
+        {
+          "question": "What is branding?",
+          "options": ["CSS branding", "Creating unique brand identity", "Database branding", "Random colors"],
+          "correctAnswer": 1,
+          "explanation": "Branding builds recognition and trust."
+        },
+        {
+          "question": "What is a logo?",
+          "options": ["Visual symbol representing brand", "Database logo", "CSS logo", "Random icon"],
+          "correctAnswer": 0,
+          "explanation": "Logos are core brand elements."
+        },
+        {
+          "question": "What is a design system?",
+          "options": ["Database system", "Comprehensive guide for consistent design", "CSS system", "Random designs"],
+          "correctAnswer": 1,
+          "explanation": "Design systems ensure brand consistency."
+        },
+        {
+          "question": "What is Material Design?",
+          "options": ["Google's design system", "Database design", "CSS design", "Apple's design"],
+          "correctAnswer": 0,
+          "explanation": "Material Design guides Android and web design."
+        },
+        {
+          "question": "What is HIG?",
+          "options": ["CSS HIG", "Apple's Human Interface Guidelines", "Database HIG", "Google guidelines"],
+          "correctAnswer": 1,
+          "explanation": "HIG defines iOS and macOS design standards."
+        },
+        {
+          "question": "What is a style guide?",
+          "options": ["Document defining design standards", "Database guide", "CSS guide", "Code guide"],
+          "correctAnswer": 0,
+          "explanation": "Style guides maintain visual consistency."
+        },
+        {
+          "question": "What is a color palette?",
+          "options": ["Database palette", "Selected colors for brand or design", "CSS palette", "Random colors"],
+          "correctAnswer": 1,
+          "explanation": "Palettes define brand colors."
+        },
+        {
+          "question": "What is iconography?",
+          "options": ["Visual symbols representing actions or concepts", "Database iconography", "CSS iconography", "Text only"],
+          "correctAnswer": 0,
+          "explanation": "Icons improve navigation and understanding."
+        },
+        {
+          "question": "What is illustration?",
+          "options": ["CSS illustration", "Custom artwork enhancing design", "Database illustration", "Stock photo"],
+          "correctAnswer": 1,
+          "explanation": "Illustrations add personality to designs."
+        },
+        {
+          "question": "What is brand voice?",
+          "options": ["Database voice", "CSS voice", "Tone and style of brand communication", "Random tone"],
+          "correctAnswer": 2,
+          "explanation": "Brand voice creates personality."
+        },
+        {
+          "question": "What is brand personality?",
+          "options": ["CSS personality", "Database personality", "No personality", "Human characteristics of brand"],
+          "correctAnswer": 3,
+          "explanation": "Personality differentiates brands."
+        },
+        {
+          "question": "What is a mood board?",
+          "options": ["Database board", "CSS board", "Visual collection of inspiration", "Random images"],
+          "correctAnswer": 2,
+          "explanation": "Mood boards guide design direction."
+        },
+        {
+          "question": "What is color harmony?",
+          "options": ["Database harmony", "CSS harmony", "Random colors", "Pleasing color combinations"],
+          "correctAnswer": 3,
+          "explanation": "Color harmony creates visual appeal."
+        },
+        {
+          "question": "What is monochromatic?",
+          "options": ["Database monochromatic", "CSS monochromatic", "Color scheme using shades of one color", "Many colors"],
+          "correctAnswer": 2,
+          "explanation": "Monochromatic schemes are cohesive."
+        },
+        {
+          "question": "What are complementary colors?",
+          "options": ["CSS colors", "Database colors", "Same colors", "Opposite colors on color wheel"],
+          "correctAnswer": 3,
+          "explanation": "Complementary colors create contrast."
+        },
+        {
+          "question": "What are analogous colors?",
+          "options": ["Database colors", "CSS colors", "Adjacent colors on color wheel", "Opposite colors"],
+          "correctAnswer": 2,
+          "explanation": "Analogous colors harmonize."
+        },
+        {
+          "question": "What are triadic colors?",
+          "options": ["Database colors", "CSS colors", "Two colors", "Three evenly spaced colors on wheel"],
+          "correctAnswer": 3,
+          "explanation": "Triadic schemes are vibrant."
+        },
+        {
+          "question": "What is font pairing?",
+          "options": ["Database pairing", "CSS pairing", "Combining complementary typefaces", "Single font"],
+          "correctAnswer": 2,
+          "explanation": "Font pairing creates hierarchy."
+        },
+        {
+          "question": "What is kerning?",
+          "options": ["CSS kerning", "Database kerning", "Line spacing", "Space between individual letters"],
+          "correctAnswer": 3,
+          "explanation": "Kerning improves readability."
+        }
+      ]
+    },
+    {
+      "id": "micro-interactions",
+      "title": "Micro-interactions & Animation (3-4 weeks)",
+      "description": "Master micro-interactions, animation principles, motion design, Lottie animations, and Smart Animate in Figma.",
+      "resources": [
+        {
+          "title": "Micro-interactions Explained",
+          "url": "https://www.youtube.com/embed/2_Tj8YySEbA?si=opiZgnWklaAcVwTr",
+          "type": "Video"
+        },
+        {
+          "title": "Animation Principles (12 Principles)",
+          "url": "https://www.youtube.com/embed/uDqjIdI4bF4",
+          "type": "Video"
+        },
+        {
+          "title": "Motion Design in UI",
+          "url": "https://www.youtube.com/embed/videoseries?si=nLbS9UXh6sNxfhcD&amp;list=PLg0POUeqjw-LCu5tS3tduEU-0oWA7thgn",
+          "type": "Article"
+        },
+        {
+          "title": "Lottie Animations",
+          "url": "https://www.youtube.com/embed/j9KP44kj0gU?si=LIbKr_7sMRT4R692",
+          "type": "Article"
+        },
+        {
+          "title": "After Effects for UI Animation",
+          "url": "https://www.youtube.com/embed/HhvSDldcqTs?si=37foR3f2PoHIbqnA",
+          "type": "Video"
+        },
+        {
+          "title": "Figma Smart Animate Tutorial",
+          "url": "https://www.youtube.com/embed/thplNeqE9Tg?si=T2lun5f8oMLoMbl0",
+          "type": "Video"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What are micro-interactions?",
+          "options": ["Small animations providing feedback", "Database interactions", "CSS interactions", "Large animations"],
+          "correctAnswer": 0,
+          "explanation": "Micro-interactions enhance user engagement."
+        },
+        {
+          "question": "What is motion design?",
+          "options": ["CSS motion", "Using animation to guide users", "Database motion", "Static design"],
+          "correctAnswer": 1,
+          "explanation": "Motion creates intuitive transitions."
+        },
+        {
+          "question": "What is easing?",
+          "options": ["Animation acceleration and deceleration", "Database easing", "CSS easing", "Instant motion"],
+          "correctAnswer": 0,
+          "explanation": "Easing makes animations feel natural."
+        },
+        {
+          "question": "What is Lottie?",
+          "options": ["Database lottie", "JSON-based animation format", "CSS lottie", "Video format"],
+          "correctAnswer": 1,
+          "explanation": "Lottie enables lightweight animations."
+        },
+        {
+          "question": "What is After Effects?",
+          "options": ["Animation and motion graphics software", "Database effects", "CSS effects", "Code editor"],
+          "correctAnswer": 0,
+          "explanation": "After Effects creates complex animations."
+        },
+        {
+          "question": "What is Smart Animate?",
+          "options": ["CSS animate", "Figma feature for smooth transitions", "Database animate", "Manual animation"],
+          "correctAnswer": 1,
+          "explanation": "Smart Animate automates prototype transitions."
+        },
+        {
+          "question": "What is a loading animation?",
+          "options": ["Visual feedback during wait time", "Database loading", "CSS loading", "No feedback"],
+          "correctAnswer": 0,
+          "explanation": "Loading animations reduce perceived wait."
+        },
+        {
+          "question": "What is a hover state?",
+          "options": ["Database state", "Visual change when cursor over element", "CSS state", "Click state"],
+          "correctAnswer": 1,
+          "explanation": "Hover states indicate interactivity."
+        },
+        {
+          "question": "What is parallax scrolling?",
+          "options": ["Layers moving at different speeds", "Database scrolling", "CSS scrolling", "Static scrolling"],
+          "correctAnswer": 0,
+          "explanation": "Parallax adds depth and interest."
+        },
+        {
+          "question": "What is transition timing?",
+          "options": ["CSS timing", "Duration of animation effect", "Database timing", "Instant change"],
+          "correctAnswer": 1,
+          "explanation": "Timing affects user perception."
+        },
+        {
+          "question": "What is duration?",
+          "options": ["Database duration", "CSS duration", "Length of time animation runs", "Instant"],
+          "correctAnswer": 2,
+          "explanation": "Duration balances speed and clarity."
+        },
+        {
+          "question": "What is delay?",
+          "options": ["CSS delay", "Database delay", "Instant start", "Time before animation starts"],
+          "correctAnswer": 3,
+          "explanation": "Delay sequences animations."
+        },
+        {
+          "question": "What are bezier curves?",
+          "options": ["Database curves", "CSS curves", "Mathematical curves defining easing", "Straight lines"],
+          "correctAnswer": 2,
+          "explanation": "Bezier curves create custom easing."
+        },
+        {
+          "question": "What are spring animations?",
+          "options": ["Database animations", "CSS animations", "Linear motion", "Physics-based bouncy motion"],
+          "correctAnswer": 3,
+          "explanation": "Spring animations feel natural."
+        },
+        {
+          "question": "What are entrance animations?",
+          "options": ["Database animations", "CSS animations", "Effects when elements appear", "Exit effects"],
+          "correctAnswer": 2,
+          "explanation": "Entrance animations draw attention."
+        },
+        {
+          "question": "What are exit animations?",
+          "options": ["CSS animations", "Database animations", "Entrance effects", "Effects when elements disappear"],
+          "correctAnswer": 3,
+          "explanation": "Exit animations provide closure."
+        },
+        {
+          "question": "What are state transitions?",
+          "options": ["Database transitions", "CSS transitions", "Animations between UI states", "No transitions"],
+          "correctAnswer": 2,
+          "explanation": "State transitions show changes."
+        },
+        {
+          "question": "What are skeleton screens?",
+          "options": ["Database screens", "CSS screens", "Empty screens", "Loading placeholders showing structure"],
+          "correctAnswer": 3,
+          "explanation": "Skeleton screens reduce perceived wait."
+        },
+        {
+          "question": "What are progress indicators?",
+          "options": ["Database indicators", "CSS indicators", "Visual feedback showing loading progress", "No feedback"],
+          "correctAnswer": 2,
+          "explanation": "Progress indicators manage expectations."
+        },
+        {
+          "question": "What are button animations?",
+          "options": ["CSS animations", "Database animations", "No effects", "Effects on button interaction"],
+          "correctAnswer": 3,
+          "explanation": "Button animations confirm clicks."
+        },
+        {
+          "question": "What is form feedback?",
+          "options": ["Database feedback", "CSS feedback", "Visual response to form input", "No response"],
+          "correctAnswer": 2,
+          "explanation": "Form feedback guides users."
+        }
+      ]
+    },
+    {
+      "id": "responsive-mobile",
+      "title": "Responsive & Mobile Design (3-4 weeks)",
+      "description": "Learn responsive web design, mobile-first approach, breakpoints, touch targets, and mobile app design patterns.",
+      "resources": [
+        {
+          "title": "Responsive Web Design Basics",
+          "url": "https://www.youtube.com/embed/videoseries?si=rX1XIzLNzhf_IjPv&amp;list=PL4cUxeGkcC9g9Vh9MAA-XKnfJsWZnPZFw",
+          "type": "Video"
+        },
+        {
+          "title": "Mobile-First Design Approach",
+          "url": "https://www.youtube.com/embed/videoseries?si=au-53mYq3JKwWjCQ&amp;list=PL4cUxeGkcC9hH1tAjyUPZPjbj-7s200a4" ,
+          "type": "Video"
+        },
+        {
+          "title": "Breakpoints & Grid Systems",
+          "url": "https://www.youtube.com/embed/ag8opfDxxUk?si=nVizj2LFd1QPHcXL",
+          "type": "Video"
+        },
+        {
+          "title": "Touch Target Sizes",
+          "url": "https://www.youtube.com/embed/FaryTakQdZU?si=wqytlSkLJLDRddcX",
+          "type": "Video"
+        },
+        {
+          "title": "Mobile App Design Patterns",
+          "url": "https://www.youtube.com/embed/N-Qn0jtSQ8o?si=iI9cByNN3FEJQYDz",
+          "type": "Video"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is responsive design?",
+          "options": ["Design adapting to different screen sizes", "Database design", "CSS design", "Fixed design"],
+          "correctAnswer": 0,
+          "explanation": "Responsive design works on all devices."
+        },
+        {
+          "question": "What is mobile-first?",
+          "options": ["CSS first", "Designing for mobile before desktop", "Database first", "Desktop-first"],
+          "correctAnswer": 1,
+          "explanation": "Mobile-first prioritizes smaller screens."
+        },
+        {
+          "question": "What are breakpoints?",
+          "options": ["Screen widths where layout changes", "Database breakpoints", "CSS breakpoints", "No changes"],
+          "correctAnswer": 0,
+          "explanation": "Breakpoints define responsive behavior."
+        },
+        {
+          "question": "What is a touch target?",
+          "options": ["Database target", "Clickable area for finger taps", "CSS target", "Mouse target"],
+          "correctAnswer": 1,
+          "explanation": "Touch targets must be large enough for fingers."
+        },
+        {
+          "question": "What is viewport?",
+          "options": ["Visible area of webpage", "Database viewport", "CSS viewport", "Fixed area"],
+          "correctAnswer": 0,
+          "explanation": "Viewport determines available screen space."
+        },
+        {
+          "question": "What is a hamburger menu?",
+          "options": ["CSS menu", "Three-line icon revealing navigation", "Database menu", "Desktop menu"],
+          "correctAnswer": 1,
+          "explanation": "Hamburger menus save mobile screen space."
+        },
+        {
+          "question": "What is fluid grid?",
+          "options": ["Layout using relative units", "Database grid", "CSS grid", "Fixed grid"],
+          "correctAnswer": 0,
+          "explanation": "Fluid grids scale proportionally."
+        },
+        {
+          "question": "What is thumb zone?",
+          "options": ["Database zone", "Easily reachable area on mobile screen", "CSS zone", "Desktop zone"],
+          "correctAnswer": 1,
+          "explanation": "Thumb zone guides mobile UI placement."
+        },
+        {
+          "question": "What is portrait mode?",
+          "options": ["Vertical screen orientation", "Database mode", "CSS mode", "Horizontal mode"],
+          "correctAnswer": 0,
+          "explanation": "Portrait is typical mobile orientation."
+        },
+        {
+          "question": "What is landscape mode?",
+          "options": ["CSS mode", "Horizontal screen orientation", "Database mode", "Vertical mode"],
+          "correctAnswer": 1,
+          "explanation": "Landscape offers wider viewing area."
+        },
+        {
+          "question": "What are media queries?",
+          "options": ["Database queries", "CSS queries", "CSS rules for different screen sizes", "No rules"],
+          "correctAnswer": 2,
+          "explanation": "Media queries enable responsive design."
+        },
+        {
+          "question": "What are flexible images?",
+          "options": ["Database images", "CSS images", "Fixed images", "Images scaling to container size"],
+          "correctAnswer": 3,
+          "explanation": "Flexible images adapt to layouts."
+        },
+        {
+          "question": "What are mobile gestures?",
+          "options": ["Database gestures", "CSS gestures", "Touch interactions like swipe, pinch", "Mouse clicks"],
+          "correctAnswer": 2,
+          "explanation": "Gestures enhance mobile UX."
+        },
+        {
+          "question": "What's difference between tap and click?",
+          "options": ["CSS difference", "Database difference", "Same thing", "Tap is touch, click is mouse"],
+          "correctAnswer": 3,
+          "explanation": "Tap and click require different design."
+        },
+        {
+          "question": "What are swipe actions?",
+          "options": ["Database actions", "CSS actions", "Horizontal gestures revealing options", "No gestures"],
+          "correctAnswer": 2,
+          "explanation": "Swipe actions provide shortcuts."
+        },
+        {
+          "question": "What is pull to refresh?",
+          "options": ["Database refresh", "CSS refresh", "Button refresh", "Gesture updating content"],
+          "correctAnswer": 3,
+          "explanation": "Pull to refresh is mobile pattern."
+        },
+        {
+          "question": "What is bottom navigation?",
+          "options": ["Database navigation", "CSS navigation", "Menu at screen bottom for thumb access", "Top navigation"],
+          "correctAnswer": 2,
+          "explanation": "Bottom navigation aids mobile usability."
+        },
+        {
+          "question": "What is card design?",
+          "options": ["CSS design", "Database design", "Random layout", "Container grouping related information"],
+          "correctAnswer": 3,
+          "explanation": "Cards organize mobile content."
+        },
+        {
+          "question": "What is adaptive design?",
+          "options": ["Database design", "CSS design", "Multiple fixed layouts for devices", "Single layout"],
+          "correctAnswer": 2,
+          "explanation": "Adaptive design uses predefined layouts."
+        },
+        {
+          "question": "What is progressive enhancement?",
+          "options": ["Database enhancement", "CSS enhancement", "No enhancement", "Building base, adding advanced features"],
+          "correctAnswer": 3,
+          "explanation": "Progressive enhancement ensures accessibility."
+        }
+      ]
+    },
+    {
+      "id": "specialized-skills",
+      "title": "Design Systems & Testing (6-8 weeks)",
+      "description": "Master building design systems, component libraries, design tokens, user testing methods, analytics, and design handoff to developers.",
+      "resources": [
+        {
+          "title": "Design Systems 101",
+          "url": "https://www.youtube.com/embed/wc5krC28ynQ?si=FFY9-qpHMC_-1Qma",
+          "type": "Video"
+        },
+        {
+          "title": "Building a Design System - Figma",
+          "url": "https://www.youtube.com/embed/EK-pHkc5EL4",
+          "type": "Video"
+        },
+        {
+          "title": "Component Libraries",
+          "url": "https://www.youtube.com/embed/videoseries?si=KXALyvLzZRJfAYPr&amp;list=PLmsBpw69UXdbWpayEB2CkkL2IK7F-fuUs",
+          "type": "Video"
+        },
+        {
+          "title": "Atomic Design Methodology",
+          "url": "https://bradfrost.com/blog/post/atomic-web-design/",
+          "type": "Article"
+        },
+        {
+          "title": "User Testing Methods",
+          "url": "https://www.youtube.com/embed/nITC1XNOyyQ?si=RapqCZWZSm_BeM0N",
+          "type": "Video"
+        },
+        {
+          "title": "Data & Analytics for Designers",
+          "url": "https://www.youtube.com/embed/lV3C0rMlYmw?si=DDBP5vfQb1Q9BFrE",
+          "type": "Video"
+        },
+        {
+          "title": "Hotjar Heatmaps & Recordings",
+          "url": "https://www.youtube.com/embed/qCHlwHe0_Wo?si=j9uBsYTbWwYZz-pf",
+          "type": "Video"
+        },
+        {
+          "title": "Design Handoff Best Practices",
+          "url": "https://www.youtube.com/embed/EoS30ZEJZ5s?si=eDnZYWAbRJ0KSZas",
+          "type": "Video"
+        },
+        {
+          "title": "Figma Dev Mode",
+          "url": "https://www.youtube.com/embed/__ABPkb0aF8?si=NU9-p26cWWNSYOw_",
+          "type": "Video"
+        },
+        {
+          "title": "Dribbble - Design Inspiration",
+          "url": "https://www.youtube.com/embed/RPY-Fm530gk?si=cTpVV9lvGb5wwTUL",
+          "type": "Video"
+        },
+        {
+          "title": "Behance - Portfolio Showcase",
+          "url": "https://www.youtube.com/embed/mcbAB1mNU7c?si=tGoaDUFMUK2hL58U",
+          "type": "Video"
+        },
+        {
+          "title": "Daily UI Challenge",
+          "url": "https://www.youtube.com/embed/videoseries?si=X7NZ5d5UEpEcmXvM&amp;list=PLvWr3S1d3hmWdV1W1HzJwfgnJGbEX4btK",
+          "type": "Video"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is a design system?",
+          "options": ["Collection of reusable components and standards", "Database system", "CSS system", "Random components"],
+          "correctAnswer": 0,
+          "explanation": "Design systems ensure consistency at scale."
+        },
+        {
+          "question": "What are design tokens?",
+          "options": ["CSS tokens", "Variables storing design values", "Database tokens", "Code tokens"],
+          "correctAnswer": 1,
+          "explanation": "Tokens centralize colors, spacing, typography."
+        },
+        {
+          "question": "What is a component library?",
+          "options": ["Collection of reusable UI components", "Database library", "CSS library", "Code library"],
+          "correctAnswer": 0,
+          "explanation": "Component libraries speed up design."
+        },
+        {
+          "question": "What is user testing?",
+          "options": ["Database testing", "Observing real users using product", "CSS testing", "Code testing"],
+          "correctAnswer": 1,
+          "explanation": "User testing validates design decisions."
+        },
+        {
+          "question": "What is a heatmap?",
+          "options": ["Visual showing where users click", "Database heatmap", "CSS heatmap", "Color palette"],
+          "correctAnswer": 0,
+          "explanation": "Heatmaps reveal user behavior patterns."
+        },
+        {
+          "question": "What is design handoff?",
+          "options": ["CSS handoff", "Transferring designs to developers", "Database handoff", "Design completion"],
+          "correctAnswer": 1,
+          "explanation": "Handoff ensures accurate implementation."
+        },
+        {
+          "question": "What is Figma Dev Mode?",
+          "options": ["Feature for developer collaboration", "Database mode", "CSS mode", "Design mode"],
+          "correctAnswer": 0,
+          "explanation": "Dev Mode provides specs and code."
+        },
+        {
+          "question": "What is analytics in design?",
+          "options": ["Database analytics", "Data tracking user behavior", "CSS analytics", "Random data"],
+          "correctAnswer": 1,
+          "explanation": "Analytics inform design improvements."
+        },
+        {
+          "question": "What is A/B testing?",
+          "options": ["Comparing two design versions", "Database testing", "CSS testing", "Code testing"],
+          "correctAnswer": 0,
+          "explanation": "A/B testing optimizes based on data."
+        },
+        {
+          "question": "What is a design portfolio?",
+          "options": ["CSS portfolio", "Showcase of design work", "Database portfolio", "Code portfolio"],
+          "correctAnswer": 1,
+          "explanation": "Portfolios demonstrate skills to employers."
+        },
+        {
+          "question": "What is atomic design?",
+          "options": ["Database design", "CSS design", "Methodology building from atoms to pages", "Random design"],
+          "correctAnswer": 2,
+          "explanation": "Atomic design structures component systems."
+        },
+        {
+          "question": "What is design documentation?",
+          "options": ["CSS documentation", "Database documentation", "No documentation", "Recording design decisions and rationale"],
+          "correctAnswer": 3,
+          "explanation": "Documentation aids team understanding."
+        },
+        {
+          "question": "What are style tiles?",
+          "options": ["Database tiles", "CSS tiles", "Visual samples of design direction", "Random samples"],
+          "correctAnswer": 2,
+          "explanation": "Style tiles explore visual options."
+        },
+        {
+          "question": "What is stakeholder presentation?",
+          "options": ["Database presentation", "CSS presentation", "No sharing", "Sharing designs with decision makers"],
+          "correctAnswer": 3,
+          "explanation": "Presentations communicate design value."
+        },
+        {
+          "question": "What is design critique?",
+          "options": ["Database critique", "CSS critique", "Feedback session improving designs", "No feedback"],
+          "correctAnswer": 2,
+          "explanation": "Critique strengthens design quality."
+        },
+        {
+          "question": "What is iteration?",
+          "options": ["CSS iteration", "Database iteration", "Single version", "Refining design based on feedback"],
+          "correctAnswer": 3,
+          "explanation": "Iteration improves solutions."
+        },
+        {
+          "question": "What are usability metrics?",
+          "options": ["Database metrics", "CSS metrics", "Measurements of user experience quality", "No measurements"],
+          "correctAnswer": 2,
+          "explanation": "Metrics quantify UX improvements."
+        },
+        {
+          "question": "What is conversion rate?",
+          "options": ["Database rate", "CSS rate", "Random rate", "Percentage completing desired action"],
+          "correctAnswer": 3,
+          "explanation": "Conversion rate measures effectiveness."
+        },
+        {
+          "question": "What is bounce rate?",
+          "options": ["Database rate", "CSS rate", "Percentage leaving after one page", "Stay rate"],
+          "correctAnswer": 2,
+          "explanation": "Bounce rate indicates engagement."
+        },
+        {
+          "question": "What is design thinking?",
+          "options": ["CSS thinking", "Database thinking", "Random thinking", "Problem-solving approach focusing on users"],
+          "correctAnswer": 3,
+          "explanation": "Design thinking drives innovation."
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Mobile App Landing Page Redesign",
+      "description": "Redesign a landing page for a mobile app focusing on clear value proposition, user-friendly layout, and conversion optimization.",
+      "difficulty": "Beginner",
+      "duration": "2-3 weeks",
+      "skills": ["Figma", "Visual Design", "Typography", "Color Theory", "Layout Design"],
+      "tasks": [
+        "Research existing landing page designs",
+        "Create user personas",
+        "Sketch initial wireframes",
+        "Design high-fidelity mockups in Figma",
+        "Choose appropriate typography and colors",
+        "Add compelling CTAs and hero section",
+        "Create responsive designs for mobile/desktop",
+        "Present design with rationale",
+        "Iterate based on feedback"
+      ]
+    },
+    {
+      "title": "E-Commerce Checkout Flow",
+      "description": "Design a seamless checkout experience for an e-commerce website with user research, wireframes, prototypes, and usability testing.",
+      "difficulty": "Intermediate",
+      "duration": "3-4 weeks",
+      "skills": ["UX Research", "User Flows", "Prototyping", "Usability Testing", "Interaction Design"],
+      "tasks": [
+        "Conduct user research and interviews",
+        "Analyze existing checkout flows",
+        "Create user journey maps",
+        "Design information architecture",
+        "Build low-fidelity wireframes",
+        "Create high-fidelity designs",
+        "Design micro-interactions and animations",
+        "Build Interactive prototype",
+        "Conduct usability testing with 5-10 users",
+        "Iterate design based on findings",
+        "Create design system components"
+      ]
+    },
+    {
+      "title": "SaaS Dashboard Redesign",
+      "description": "Redesign a complex SaaS dashboard with focus on data visualization, information hierarchy, and user workflows.",
+      "difficulty": "Intermediate",
+      "duration": "4-5 weeks",
+      "skills": ["Dashboard Design", "Data Visualization", "Information Architecture", "Component Design", "User Testing"],
+      "tasks": [
+        "Audit existing dashboard and identify pain points",
+        "Conduct stakeholder and user interviews",
+        "Define key metrics and user goals",
+        "Create information architecture",
+        "Design data visualization components",
+        "Build component library in Figma",
+        "Design responsive dashboard layouts",
+        "Add filters and Interactive elements",
+        "Create dark mode variant",
+        "Build clickable prototype",
+        "Conduct A/B testing",
+        "Document design decisions"
+      ]
+    },
+    {
+      "title": "Mobile Banking App",
+      "description": "Design a complete mobile banking application with user research, accessibility considerations, secure authentication, and comprehensive features.",
+      "difficulty": "Advanced",
+      "duration": "6-7 weeks",
+      "skills": ["Mobile UX", "Accessibility", "Security UX", "Complex Flows", "Design Systems"],
+      "tasks": [
+        "Conduct competitive analysis of banking apps",
+        "Perform user research and create personas",
+        "Map out user journeys for key features",
+        "Design secure login with biometrics",
+        "Create account overview and transaction history",
+        "Design money transfer flows",
+        "Add bill payment features",
+        "Design card management section",
+        "Implement accessibility guidelines (WCAG)",
+        "Create comprehensive design system",
+        "Build Interactive prototype",
+        "Conduct usability and security testing",
+        "Add animations and micro-interactions",
+        "Create handoff documentation for developers"
+      ]
+    },
+    {
+      "title": "Cross-Platform Design System",
+      "description": "Create a comprehensive, scalable design system for web and mobile applications with components, patterns, guidelines, and developer documentation.",
+      "difficulty": "Advanced",
+      "duration": "8-10 weeks",
+      "skills": ["Design Systems", "Component Design", "Tokens", "Documentation", "Developer Handoff"],
+      "tasks": [
+        "Research and audit existing UI components",
+        "Define design principles and guidelines",
+        "Create design tokens (colors, spacing, typography)",
+        "Design atomic components (buttons, inputs, etc.)",
+        "Build complex components (modals, cards, navigation)",
+        "Create patterns for common use cases",
+        "Design for multiple platforms (web, iOS, Android)",
+        "Add accessibility annotations",
+        "Create comprehensive documentation site",
+        "Add usage guidelines and do's/don'ts",
+        "Include code snippets for developers",
+        "Set up version control for design system",
+        "Create Figma component library",
+        "Train team on design system usage"
+      ]
+    }
+  ]
+}

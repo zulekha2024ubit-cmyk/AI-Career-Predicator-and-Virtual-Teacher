@@ -1,0 +1,1572 @@
+{
+  "slug": "game-development",
+  "title": "Game Development",
+  "summary": "Create Interactive entertainment experiences across PC, consoles, mobile, and VR/AR platforms using Unity or Unreal Engine.",
+  "timeline": "10-14 months",
+  "difficulty": "Moderate to Advanced",
+  "steps": [
+    {
+      "id": "programming-basics",
+      "title": "Programming Basics - C# or C++ (6-8 weeks)",
+      "description": "Master C# for Unity or C++ for Unreal Engine. Learn object-oriented programming, data structures, and game-specific programming patterns.",
+      "resources": [
+        {
+          "title": "C# Fundamentals",
+          "url": "https://www.youtube.com/embed/hH_yQq7R-aU?si=cq2Q0QIFlImpQFOH",
+          "type": "Video"
+        },
+        {
+          "title": "C# for Beginners - freeCodeCamp",
+          "url": "https://www.youtube.com/embed/GhQdlIFylQ8",
+          "type": "Video",
+          "duration": "4 hours"
+        },
+        {
+          "title": "C++ Tutorial for Beginners - freeCodeCamp",
+          "url": "https://www.youtube.com/embed/vLnPwxZdW4Y",
+          "type": "Video",
+          "duration": "4 hours"
+        },
+        {
+          "title": "Learn C++",
+          "url": "https://www.learncpp.com/",
+          "type": "Article"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is C#?",
+          "options": ["Object-oriented language for Unity", "Database", "CSS framework", "Web server"],
+          "correctAnswer": 0,
+          "explanation": "C# is primary scripting language for Unity games."
+        },
+        {
+          "question": "What is C++?",
+          "options": ["Database", "High-performance language for Unreal Engine", "CSS language", "Markup language"],
+          "correctAnswer": 1,
+          "explanation": "C++ offers low-level control for game performance."
+        },
+        {
+          "question": "What is OOP?",
+          "options": ["Object-Oriented Programming with classes and objects", "Database operation", "CSS operation", "Network protocol"],
+          "correctAnswer": 0,
+          "explanation": "OOP organizes code into reusable classes and objects."
+        },
+        {
+          "question": "What is a class?",
+          "options": ["Blueprint for creating objects", "Database class", "CSS class", "HTML tag"],
+          "correctAnswer": 0,
+          "explanation": "Classes define properties and methods for objects."
+        },
+        {
+          "question": "What is inheritance?",
+          "options": ["CSS inheritance", "Class deriving from parent class", "Database inheritance", "Memory management"],
+          "correctAnswer": 1,
+          "explanation": "Inheritance enables code reuse and hierarchy."
+        },
+        {
+          "question": "What is polymorphism?",
+          "options": ["Database type", "Objects taking multiple forms through inheritance", "CSS property", "Network protocol"],
+          "correctAnswer": 1,
+          "explanation": "Polymorphism allows method overriding and interfaces."
+        },
+        {
+          "question": "What is a data structure?",
+          "options": ["Way to organize and store data", "Database", "CSS structure", "HTML structure"],
+          "correctAnswer": 0,
+          "explanation": "Data structures include arrays, lists, stacks, queues, trees."
+        },
+        {
+          "question": "What is an array?",
+          "options": ["Collection of elements of same type", "Database array", "CSS array", "Function"],
+          "correctAnswer": 0,
+          "explanation": "Arrays store multiple values with indexed access."
+        },
+        {
+          "question": "What is a loop?",
+          "options": ["CSS loop", "Repeating code block until condition met", "Database loop", "Network loop"],
+          "correctAnswer": 1,
+          "explanation": "Loops include for, while, and foreach for iteration."
+        },
+        {
+          "question": "What is debugging?",
+          "options": ["Finding and fixing code errors", "Database operation", "CSS debugging", "Design process"],
+          "correctAnswer": 0,
+          "explanation": "Debugging uses breakpoints, logs, and step-through."
+        },
+        {
+          "question": "What is encapsulation?",
+          "options": ["Database encapsulation", "CSS encapsulation", "Hiding internal details using access modifiers", "Graphics technique"],
+          "correctAnswer": 2,
+          "explanation": "Encapsulation uses private/public to protect data."
+        },
+        {
+          "question": "What is a method?",
+          "options": ["Function inside a class defining behavior", "Database method", "CSS method", "Variable"],
+          "correctAnswer": 0,
+          "explanation": "Methods perform actions and can return values."
+        },
+        {
+          "question": "What is a variable?",
+          "options": ["CSS variable", "Database variable", "Named storage for data values", "Function"],
+          "correctAnswer": 2,
+          "explanation": "Variables have types: int, float, string, bool."
+        },
+        {
+          "question": "What are conditional statements?",
+          "options": ["Statements controlling flow based on conditions", "Database statements", "CSS statements", "Loops"],
+          "correctAnswer": 0,
+          "explanation": "Conditionals include if, else if, else, switch."
+        },
+        {
+          "question": "What is a function?",
+          "options": ["Database function", "Reusable block of code performing task", "CSS function", "Variable"],
+          "correctAnswer": 1,
+          "explanation": "Functions take parameters and return values."
+        },
+        {
+          "question": "What is a string?",
+          "options": ["Sequence of characters for text", "Database string", "CSS string", "Number"],
+          "correctAnswer": 0,
+          "explanation": "Strings support concatenation, formatting, manipulation."
+        },
+        {
+          "question": "What is a list?",
+          "options": ["CSS list", "Dynamic collection of elements", "Database list", "Fixed array"],
+          "correctAnswer": 1,
+          "explanation": "Lists can grow/shrink with Add(), Remove() methods."
+        },
+        {
+          "question": "What is a dictionary/map?",
+          "options": ["Key-value pair collection for fast lookup", "Database map", "CSS map", "Array"],
+          "correctAnswer": 0,
+          "explanation": "Dictionaries map keys to values for efficient access."
+        },
+        {
+          "question": "What is exception handling?",
+          "options": ["Managing runtime errors with try-catch", "Database handling", "CSS handling", "Compilation"],
+          "correctAnswer": 0,
+          "explanation": "Exception handling prevents crashes from errors."
+        },
+        {
+          "question": "What is static vs instance?",
+          "options": ["Database static", "CSS static", "Static belongs to class, instance to object", "Animation type"],
+          "correctAnswer": 2,
+          "explanation": "Static members shared across all instances."
+        }
+      ]
+    },
+    {
+      "id": "game-design-fundamentals",
+      "title": "Game Design Fundamentals (2-3 weeks)",
+      "description": "Learn game design principles, level design, game mechanics, balancing, and the MDA framework (Mechanics, Dynamics, Aesthetics).",
+      "resources": [
+        {
+          "title": "Game Design Tutorial - Complete Guide",
+          "url": "https://www.youtube.com/embed/z06QR-tz1_o",
+          "type": "Video",
+          "duration": "1 hour"
+        },
+        {
+          "title": "Game Design Principles - Extra Credits",
+          "url": "https://www.youtube.com/embed/videoseries?si=SOOq4PR38QG1UIDw&amp;list=PLhyKYa0YJ_5BkTruCmaBBZ8z6cP9KzPiX",
+          "type": "Video"
+        },
+        {
+          "title": "The Art of Game Design Book",
+          "url": "https://www.youtube.com/embed/-RuVVHV8xqg?si=yW9644BjBYlriotw",
+          "type": "Book",
+          "note": "Short Explanation of Book"
+        },
+        {
+          "title": "Level Design Principles",
+          "url": "https://www.youtube.com/embed/LBtucVc8l0M?si=mmm6xPCYs0JOxWre",
+          "type": "Video"
+        },
+        {
+          "title": "Game Mechanics & Balancing",
+          "url": "https://www.youtube.com/embed/jVL4st0blGU",
+          "type": "Video"
+        },
+        {
+          "title": "MDA Framework",
+          "url": "https://www.youtube.com/embed/NxiGduvDJ8s?si=XXA98q3lIIsOE7ei",
+          "type": "Video"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is game design?",
+          "options": ["Creating rules, mechanics, and experiences", "Graphics design", "Database design", "Network design"],
+          "correctAnswer": 0,
+          "explanation": "Game design defines how players interact with the game."
+        },
+        {
+          "question": "What are game mechanics?",
+          "options": ["Database mechanics", "Rules and systems defining gameplay", "Graphics rendering", "Sound design"],
+          "correctAnswer": 1,
+          "explanation": "Mechanics include movement, combat, inventory, progression."
+        },
+        {
+          "question": "What is level design?",
+          "options": ["Database level", "Creating environments and challenges for players", "Graphics design", "Sound design"],
+          "correctAnswer": 1,
+          "explanation": "Level design guides player flow and pacing."
+        },
+        {
+          "question": "What is the MDA framework?",
+          "options": ["Mechanics, Dynamics, Aesthetics design model", "Database framework", "CSS framework", "Network framework"],
+          "correctAnswer": 0,
+          "explanation": "MDA analyzes game design from different perspectives."
+        },
+        {
+          "question": "What is game balancing?",
+          "options": ["Adjusting difficulty and fairness", "Graphics balancing", "Database balancing", "Network balancing"],
+          "correctAnswer": 0,
+          "explanation": "Balancing ensures fun, fair, and engaging gameplay."
+        },
+        {
+          "question": "What is a game loop?",
+          "options": ["Code loop", "Core cycle of input, update, render", "Database loop", "Network loop"],
+          "correctAnswer": 1,
+          "explanation": "Game loop runs continuously during gameplay."
+        },
+        {
+          "question": "What is player feedback?",
+          "options": ["Visual/audio responses to player actions", "Database feedback", "Network feedback", "Bug reports"],
+          "correctAnswer": 0,
+          "explanation": "Feedback makes actions feel responsive and satisfying."
+        },
+        {
+          "question": "What is progression system?",
+          "options": ["Database progression", "Mechanics for player advancement and rewards", "Graphics progression", "Sound progression"],
+          "correctAnswer": 1,
+          "explanation": "Progression includes XP, levels, unlocks, achievements."
+        },
+        {
+          "question": "What is difficulty curve?",
+          "options": ["CSS curve", "Gradual increase in challenge over time", "Database curve", "Graphics curve"],
+          "correctAnswer": 1,
+          "explanation": "Good curve matches player skill growth."
+        },
+        {
+          "question": "What is playtesting?",
+          "options": ["Testing game with real players for feedback", "Database testing", "Graphics testing", "Network testing"],
+          "correctAnswer": 0,
+          "explanation": "Playtesting reveals issues and guides improvements."
+        },
+        {
+          "question": "What is the fun factor?",
+          "options": ["Database factor", "CSS factor", "Elements making game enjoyable and engaging", "Difficulty level"],
+          "correctAnswer": 2,
+          "explanation": "Fun comes from challenge, discovery, mastery, social."
+        },
+        {
+          "question": "What is challenge vs skill balance?",
+          "options": ["Matching game difficulty to player ability", "Database balance", "CSS balance", "Graphics balance"],
+          "correctAnswer": 0,
+          "explanation": "Balance creates flow state, avoiding boredom/frustration."
+        },
+        {
+          "question": "What is a core loop?",
+          "options": ["CSS loop", "Repeating cycle of actions players perform", "Database loop", "Graphics loop"],
+          "correctAnswer": 1,
+          "explanation": "Core loop: shoot enemies → earn points → upgrade → repeat."
+        },
+        {
+          "question": "What is emergent gameplay?",
+          "options": ["Unexpected behaviors from simple rules interaction", "Database gameplay", "CSS gameplay", "Scripted events"],
+          "correctAnswer": 0,
+          "explanation": "Emergent gameplay creates player-driven stories."
+        },
+        {
+          "question": "What are game genres?",
+          "options": ["Database genres", "Categories: FPS, RPG, platformer, puzzle, strategy", "CSS genres", "Programming types"],
+          "correctAnswer": 1,
+          "explanation": "Genres define gameplay style and expectations."
+        },
+        {
+          "question": "What is a tutorial?",
+          "options": ["Instructional section teaching game mechanics", "Database tutorial", "CSS tutorial", "Final level"],
+          "correctAnswer": 0,
+          "explanation": "Good tutorials integrate teaching into gameplay."
+        },
+        {
+          "question": "What is onboarding?",
+          "options": ["CSS onboarding", "Database onboarding", "Process introducing new players to game", "Exit process"],
+          "correctAnswer": 2,
+          "explanation": "Onboarding gradually reveals mechanics to avoid overwhelm."
+        },
+        {
+          "question": "What is player motivation?",
+          "options": ["Reasons players engage: achievement, social, exploration", "Database motivation", "CSS motivation", "Graphics quality"],
+          "correctAnswer": 0,
+          "explanation": "Understanding motivation drives design decisions."
+        },
+        {
+          "question": "What is a game economy?",
+          "options": ["Database economy", "System managing resources, currency, trading", "CSS economy", "Graphics system"],
+          "correctAnswer": 1,
+          "explanation": "Economy balances earning, spending, progression."
+        },
+        {
+          "question": "What are reward systems?",
+          "options": ["Mechanisms providing incentives: XP, loot, achievements", "Database rewards", "CSS rewards", "Penalties"],
+          "correctAnswer": 0,
+          "explanation": "Rewards create satisfaction and drive progression."
+        }
+      ]
+    },
+    {
+      "id": "math-for-games",
+      "title": "Math for Games (2-3 weeks)",
+      "description": "Master vectors, matrices, transformations, quaternions, and collision detection - essential math concepts for game development.",
+      "resources": [
+        {
+          "title": "Math for Game Developers - YouTube Series",
+          "url": "https://www.youtube.com/embed/videoseries?si=34H8k8Zq8qBMHX0Q&amp;list=PLW3Zl3wyJwWOpdhYedlD-yCB7WQoHf-My",
+          "type": "Video",
+          "note": "BEST math Course"
+        },
+        {
+          "title": "Vectors & Vector Math Explained",
+          "url": "https://www.youtube.com/embed/fNk_zzaMoSs",
+          "type": "Video"
+        },
+        {
+          "title": "Matrices & Transformations",
+          "url": "https://www.youtube.com/embed/kYB8IZa5AuE",
+          "type": "Video"
+        },
+        {
+          "title": "Quaternions & Rotations",
+          "url": "https://www.youtube.com/embed/zjMuIxRvygQ",
+          "type": "Video"
+        },
+        {
+          "title": "Linear Algebra - 3Blue1Brown",
+          "url": "https://www.youtube.com/embed/videoseries?si=3ZmkkFvrfikLixbb&amp;list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab",
+          "type": "Video"
+        },
+        {
+          "title": "Collision Detection",
+          "url": "https://www.youtube.com/embed/oOEnWQZIePs?si=Fz9D-SACo8RKj7c1",
+          "type": "Video"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is a vector?",
+          "options": ["Quantity with magnitude and direction", "Database vector", "CSS vector", "Scalar value"],
+          "correctAnswer": 0,
+          "explanation": "Vectors represent position, velocity, force in games."
+        },
+        {
+          "question": "What is dot product?",
+          "options": ["Database product", "Operation measuring angle between vectors", "CSS product", "Multiplication"],
+          "correctAnswer": 1,
+          "explanation": "Dot product: A · B = |A||B|cos(θ), used for angles."
+        },
+        {
+          "question": "What is cross product?",
+          "options": ["Operation producing perpendicular vector", "Database operation", "CSS operation", "Addition"],
+          "correctAnswer": 0,
+          "explanation": "Cross product finds normal vectors and rotation axes."
+        },
+        {
+          "question": "What is a matrix?",
+          "options": ["Database matrix", "2D array for transformations", "CSS matrix", "Vector"],
+          "correctAnswer": 1,
+          "explanation": "Matrices perform rotation, scaling, translation."
+        },
+        {
+          "question": "What is a transformation?",
+          "options": ["CSS transformation", "Operation changing object position/rotation/scale", "Database transformation", "Color change"],
+          "correctAnswer": 1,
+          "explanation": "Transformations include translate, rotate, scale."
+        },
+        {
+          "question": "What is a quaternion?",
+          "options": ["4D number representing rotation", "Database quaternion", "CSS quaternion", "Vector"],
+          "correctAnswer": 0,
+          "explanation": "Quaternions avoid gimbal lock in 3D rotations."
+        },
+        {
+          "question": "What is linear interpolation (lerp)?",
+          "options": ["Database interpolation", "Smoothly transitioning between two values", "CSS interpolation", "Random value"],
+          "correctAnswer": 1,
+          "explanation": "Lerp: value = start + (end - start) * t for smooth movement."
+        },
+        {
+          "question": "What is collision detection?",
+          "options": ["Determining if objects overlap or intersect", "Database collision", "CSS collision", "Network collision"],
+          "correctAnswer": 0,
+          "explanation": "Collision uses bounding boxes, spheres, raycasts."
+        },
+        {
+          "question": "What is a normal vector?",
+          "options": ["Vector perpendicular to surface", "Regular vector", "Database normal", "CSS normal"],
+          "correctAnswer": 0,
+          "explanation": "Normals are used for lighting and reflections."
+        },
+        {
+          "question": "What is magnitude?",
+          "options": ["CSS magnitude", "Length of a vector", "Database magnitude", "Direction"],
+          "correctAnswer": 1,
+          "explanation": "Magnitude: |v| = √(x² + y² + z²) measures distance."
+        },
+        {
+          "question": "What is a unit vector?",
+          "options": ["Vector with magnitude of 1", "Database unit", "CSS unit", "Zero vector"],
+          "correctAnswer": 0,
+          "explanation": "Unit vectors indicate direction without distance."
+        },
+        {
+          "question": "What is vector normalization?",
+          "options": ["CSS normalization", "Database normalization", "Converting vector to unit vector", "Vector addition"],
+          "correctAnswer": 2,
+          "explanation": "Normalize: v_normalized = v / |v| creates unit vector."
+        },
+        {
+          "question": "What is scalar multiplication?",
+          "options": ["Multiplying vector by number to scale", "Database multiplication", "CSS multiplication", "Vector division"],
+          "correctAnswer": 0,
+          "explanation": "Scalar multiplication changes vector magnitude."
+        },
+        {
+          "question": "What is matrix multiplication?",
+          "options": ["Database multiplication", "Combining transformations through matrix product", "CSS multiplication", "Vector addition"],
+          "correctAnswer": 1,
+          "explanation": "Matrix multiplication chains multiple transformations."
+        },
+        {
+          "question": "What is translation?",
+          "options": ["Moving object in space", "Database translation", "CSS translation", "Rotation"],
+          "correctAnswer": 0,
+          "explanation": "Translation adds offset to position vector."
+        },
+        {
+          "question": "What is rotation?",
+          "options": ["CSS rotation", "Database rotation", "Turning object around axis", "Movement"],
+          "correctAnswer": 2,
+          "explanation": "Rotation uses angles or quaternions for orientation."
+        },
+        {
+          "question": "What is scale?",
+          "options": ["Changing object size uniformly or non-uniformly", "Database scale", "CSS scale", "Position"],
+          "correctAnswer": 0,
+          "explanation": "Scale multiplies vertex positions from origin."
+        },
+        {
+          "question": "What is raycasting?",
+          "options": ["Database raycasting", "CSS raycasting", "Shooting ray to detect intersections", "Lighting technique"],
+          "correctAnswer": 2,
+          "explanation": "Raycasting finds hit points for shooting, clicking."
+        },
+        {
+          "question": "What are bounding boxes?",
+          "options": ["Simple shapes approximating object volume", "Database boxes", "CSS boxes", "Graphics boxes"],
+          "correctAnswer": 0,
+          "explanation": "Bounding boxes optimize collision detection."
+        },
+        {
+          "question": "What is trigonometry in games?",
+          "options": ["Using sin, cos, tan for angles and circles", "Database trigonometry", "CSS trigonometry", "Physics only"],
+          "correctAnswer": 0,
+          "explanation": "Trigonometry calculates trajectories, rotations, waves."
+        }
+      ]
+    },
+    {
+      "id": "unity-basics",
+      "title": "Unity Basics (4-6 weeks)",
+      "description": "Learn Unity interface, GameObjects, components, prefabs, scripting API, physics, and 2D/3D game development fundamentals.",
+      "resources": [
+        {
+          "title": "Unity Learn - Official Beginner Tutorials",
+          "url": "https://learn.unity.com/course/create-with-code",
+          "type": "Interactive"
+        },
+        {
+          "title": "Unity Essentials Pathway",
+          "url": "https://learn.unity.com/pathway/unity-essentials",
+          "type": "Course"
+        },
+        {
+          "title": "GameObjects & Components",
+          "url": "https://docs.unity3d.com/Manual/GameObjects.html",
+          "type": "Article"
+        },
+        {
+          "title": "Unity Scripting API",
+          "url": "https://docs.unity3d.com/ScriptReference/",
+          "type": "Article"
+        },
+        {
+          "title": "Unity Complete Beginner Course - Brackeys",
+          "url": "https://www.youtube.com/embed/videoseries?si=w_BQWSg9PDQ7Bqcg&amp;list=PLPV2KyIb3jR5QFsefuO2RlAgWEz6EvVi6",
+          "type": "Video"
+        },
+        {
+          "title": "Unity 2D Game Tutorial - freeCodeCamp",
+          "url": "https://www.youtube.com/embed/ZEtKg9AyEJc?si=j1EKDlsawTf_uBlT",
+          "type": "Video",
+          "duration": "6 hours"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is Unity?",
+          "options": ["Game engine for 2D and 3D development", "Database", "CSS framework", "Text editor"],
+          "correctAnswer": 0,
+          "explanation": "Unity supports cross-platform game development."
+        },
+        {
+          "question": "What is a GameObject?",
+          "options": ["Database object", "Fundamental object in Unity scenes", "CSS object", "Script"],
+          "correctAnswer": 1,
+          "explanation": "GameObjects hold components defining behavior."
+        },
+        {
+          "question": "What is a component?",
+          "options": ["Modular functionality attached to GameObject", "Database component", "CSS component", "Asset"],
+          "correctAnswer": 0,
+          "explanation": "Components include Transform, Rigidbody, Collider, scripts."
+        },
+        {
+          "question": "What is a prefab?",
+          "options": ["Database prefab", "Reusable GameObject template", "CSS prefab", "Scene"],
+          "correctAnswer": 1,
+          "explanation": "Prefabs enable instantiating identical objects."
+        },
+        {
+          "question": "What is the Transform component?",
+          "options": ["Stores position, rotation, and scale", "Database transform", "CSS transform", "Script"],
+          "correctAnswer": 0,
+          "explanation": "Every GameObject has a Transform component."
+        },
+        {
+          "question": "What is a Rigidbody?",
+          "options": ["Component enabling physics simulation", "Database body", "CSS body", "Visual component"],
+          "correctAnswer": 0,
+          "explanation": "Rigidbody adds gravity, velocity, and forces."
+        },
+        {
+          "question": "What is a Collider?",
+          "options": ["CSS collider", "Component defining physical shape for collisions", "Database collider", "Script"],
+          "correctAnswer": 1,
+          "explanation": "Colliders include BoxCollider, SphereCollider, MeshCollider."
+        },
+        {
+          "question": "What is the Unity scripting API?",
+          "options": ["Interface for programming Unity with C#", "Database API", "CSS API", "Network API"],
+          "correctAnswer": 0,
+          "explanation": "API provides MonoBehaviour, Input, Physics classes."
+        },
+        {
+          "question": "What is MonoBehaviour?",
+          "options": ["Database behaviour", "Base class for Unity scripts", "CSS behaviour", "Asset type"],
+          "correctAnswer": 1,
+          "explanation": "MonoBehaviour provides Start(), Update(), and event methods."
+        },
+        {
+          "question": "What is the Update() method?",
+          "options": ["Called every frame for game logic", "Database update", "CSS update", "Installation update"],
+          "correctAnswer": 0,
+          "explanation": "Update() runs continuously for input and movement."
+        },
+        {
+          "question": "What is a scene?",
+          "options": ["Container for game levels and menus", "Database scene", "CSS scene", "Script"],
+          "correctAnswer": 0,
+          "explanation": "Scenes hold GameObjects for different game areas."
+        },
+        {
+          "question": "What is the Start() method?",
+          "options": ["CSS start", "Database start", "Called once when script initializes", "Called every frame"],
+          "correctAnswer": 2,
+          "explanation": "Start() runs before first frame for initialization."
+        },
+        {
+          "question": "What is FixedUpdate()?",
+          "options": ["Called at fixed time intervals for physics", "Database update", "CSS update", "Random timing"],
+          "correctAnswer": 0,
+          "explanation": "FixedUpdate() ensures consistent physics simulation."
+        },
+        {
+          "question": "What is OnCollisionEnter()?",
+          "options": ["Database collision", "CSS collision", "Called when collider touches another", "Update method"],
+          "correctAnswer": 2,
+          "explanation": "OnCollisionEnter() detects physical collisions."
+        },
+        {
+          "question": "What is the Input system?",
+          "options": ["Handles keyboard, mouse, gamepad input", "Database input", "CSS input", "Graphics input"],
+          "correctAnswer": 0,
+          "explanation": "Input.GetKey(), GetAxis() read player controls."
+        },
+        {
+          "question": "What is Instantiate()?",
+          "options": ["CSS instantiate", "Creates copy of GameObject at runtime", "Database instantiate", "Deletes object"],
+          "correctAnswer": 1,
+          "explanation": "Instantiate() spawns prefabs for bullets, enemies."
+        },
+        {
+          "question": "What is Destroy()?",
+          "options": ["Removes GameObject from scene", "Database destroy", "CSS destroy", "Creates object"],
+          "correctAnswer": 0,
+          "explanation": "Destroy() cleans up objects to free memory."
+        },
+        {
+          "question": "What are tags?",
+          "options": ["Database tags", "CSS tags", "Labels for identifying GameObjects", "Scripts"],
+          "correctAnswer": 2,
+          "explanation": "Tags enable finding objects: Player, Enemy, Ground."
+        },
+        {
+          "question": "What are layers?",
+          "options": ["Groups for collision, rendering, raycasting", "Database layers", "CSS layers", "Scripts"],
+          "correctAnswer": 0,
+          "explanation": "Layers control what objects interact with each other."
+        },
+        {
+          "question": "What is a physics material?",
+          "options": ["Defines friction and bounciness for colliders", "Database material", "CSS material", "Visual material"],
+          "correctAnswer": 0,
+          "explanation": "Physics materials control surface properties."
+        }
+      ]
+    },
+    {
+      "id": "unity-2d-3d",
+      "title": "Unity 2D & 3D Development (7-10 weeks)",
+      "description": "Master 2D sprites, animations, tilemaps, and 3D modeling, lighting, materials, camera controls, NavMesh AI, and pArticle systems.",
+      "resources": [
+        {
+          "title": "Unity 2D Tutorial - Complete Course",
+          "url": "https://learn.unity.com/project/2d-game-kit",
+          "type": "Interactive"
+        },
+        {
+          "title": "Build a Platformer - Full Tutorial",
+          "url": "https://www.youtube.com/embed/UbPiCgCkHTE",
+          "type": "Video"
+        },
+        {
+          "title": "Unity 3D Beginner Tutorial",
+          "url": "https://learn.unity.com/project/john-lemon-s-haunted-jaunt-3d-beginner",
+          "type": "Interactive"
+        },
+        {
+          "title": "Lighting & Rendering",
+          "url": "https://docs.unity3d.com/Manual/Lighting.html",
+          "type": "Article"
+        },
+        {
+          "title": "NavMesh & AI Navigation",
+          "url": "https://www.youtube.com/embed/SMWxCpLvrcc?si=oKydwGKr29qKJ-8Y" ,
+          "type": "Video"
+        },
+        {
+          "title": "Build an FPS Game - Tutorial",
+          "url": "https://www.youtube.com/embed/_QajrabyTJc",
+          "type": "Video"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is a sprite?",
+          "options": ["2D graphic image for games", "Database sprite", "CSS sprite", "3D model"],
+          "correctAnswer": 0,
+          "explanation": "Sprites are used for characters, backgrounds, UI."
+        },
+        {
+          "question": "What is an animation?",
+          "options": ["Database animation", "Sequence of frames creating movement", "CSS animation", "Sound effect"],
+          "correctAnswer": 1,
+          "explanation": "Animation uses Animator and keyframes."
+        },
+        {
+          "question": "What is a tilemap?",
+          "options": ["CSS tilemap", "Grid-based system for 2D levels", "Database tilemap", "3D terrain"],
+          "correctAnswer": 1,
+          "explanation": "Tilemaps efficiently create platformer levels."
+        },
+        {
+          "question": "What is 3D modeling?",
+          "options": ["Creating 3D objects with vertices and faces", "Database modeling", "CSS modeling", "2D graphics"],
+          "correctAnswer": 0,
+          "explanation": "3D models use Blender, Maya, or Unity ProBuilder."
+        },
+        {
+          "question": "What is lighting?",
+          "options": ["Database lighting", "Illuminating scenes for realism", "CSS lighting", "Sound"],
+          "correctAnswer": 1,
+          "explanation": "Lighting includes directional, point, spot lights."
+        },
+        {
+          "question": "What is a material?",
+          "options": ["Defines surface appearance (color, texture, shader)", "Database material", "CSS material", "Script"],
+          "correctAnswer": 0,
+          "explanation": "Materials use shaders for rendering effects."
+        },
+        {
+          "question": "What is a camera?",
+          "options": ["Database camera", "Component rendering scene from viewpoint", "CSS camera", "Input device"],
+          "correctAnswer": 1,
+          "explanation": "Cameras have perspective or orthographic projection."
+        },
+        {
+          "question": "What is NavMesh?",
+          "options": ["Navigation mesh for AI pathfinding", "Database mesh", "CSS mesh", "Visual mesh"],
+          "correctAnswer": 0,
+          "explanation": "NavMesh enables AI to navigate around obstacles."
+        },
+        {
+          "question": "What is a pArticle system?",
+          "options": ["CSS pArticles", "System emitting pArticles for effects", "Database pArticles", "Sound effect"],
+          "correctAnswer": 1,
+          "explanation": "PArticles create fire, smoke, explosions, magic."
+        },
+        {
+          "question": "What is URP?",
+          "options": ["Universal Render Pipeline for optimized rendering", "Database URP", "CSS URP", "Network protocol"],
+          "correctAnswer": 0,
+          "explanation": "URP improves performance for mobile and lower-end devices."
+        },
+        {
+          "question": "What is a SpriteRenderer?",
+          "options": ["Component displaying 2D sprites", "Database renderer", "CSS renderer", "3D renderer"],
+          "correctAnswer": 0,
+          "explanation": "SpriteRenderer shows sprites with sorting order."
+        },
+        {
+          "question": "What is the Animator component?",
+          "options": ["CSS animator", "Database animator", "Controls animations using animation controller", "Physics component"],
+          "correctAnswer": 2,
+          "explanation": "Animator manages state machines and transitions."
+        },
+        {
+          "question": "What is a tilemap collider?",
+          "options": ["Generates collision shapes for tilemap", "Database collider", "CSS collider", "3D collider"],
+          "correctAnswer": 0,
+          "explanation": "Tilemap collider optimizes 2D level collisions."
+        },
+        {
+          "question": "What is a mesh?",
+          "options": ["Database mesh", "Collection of vertices, edges, faces for 3D", "CSS mesh", "2D sprite"],
+          "correctAnswer": 1,
+          "explanation": "Meshes define 3D object geometry."
+        },
+        {
+          "question": "What is a texture?",
+          "options": ["Image mapped onto 3D surface", "Database texture", "CSS texture", "Sound file"],
+          "correctAnswer": 0,
+          "explanation": "Textures add color and detail to materials."
+        },
+        {
+          "question": "What are normal maps?",
+          "options": ["CSS maps", "Database maps", "Textures simulating surface detail without geometry", "Terrain maps"],
+          "correctAnswer": 2,
+          "explanation": "Normal maps add depth illusion through lighting."
+        },
+        {
+          "question": "What is a skybox?",
+          "options": ["6-sided cube texture for background sky", "Database skybox", "CSS skybox", "UI element"],
+          "correctAnswer": 0,
+          "explanation": "Skybox creates distant environment around scene."
+        },
+        {
+          "question": "What is post-processing?",
+          "options": ["Database processing", "Effects applied after rendering: bloom, blur, color grading", "CSS processing", "Pre-rendering"],
+          "correctAnswer": 1,
+          "explanation": "Post-processing enhances visual quality."
+        },
+        {
+          "question": "What is terrain?",
+          "options": ["System for creating landscapes with height maps", "Database terrain", "CSS terrain", "2D background"],
+          "correctAnswer": 0,
+          "explanation": "Terrain tools sculpt, paint, add trees/grass."
+        },
+        {
+          "question": "What is ragdoll physics?",
+          "options": ["CSS ragdoll", "Database ragdoll", "Physics-based character animation for realistic falls", "Animation clip"],
+          "correctAnswer": 2,
+          "explanation": "Ragdoll uses joints and rigidbodies for death animations."
+        }
+      ]
+    },
+    {
+      "id": "unity-advanced",
+      "title": "Unity Advanced Topics (4-6 weeks)",
+      "description": "Learn animation controllers, UI systems, audio mixing, performance optimization, object pooling, and multiplayer networking.",
+      "resources": [
+        {
+          "title": "Animator Controller & State Machines",
+          "url": "https://docs.unity3d.com/Manual/class-AnimatorController.html",
+          "type": "Article"
+        },
+        {
+          "title": "UI System",
+          "url": "https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/index.html",
+          "type": "Article"
+        },
+        {
+          "title": "Performance Optimization - Unity",
+          "url": "https://www.youtube.com/embed/pTz3LMQpvfA?si=saNmUYPRw3ExzGmq",
+          "type": "Video"
+        },
+        {
+          "title": "Unity Netcode for GameObjects",
+          "url": "https://docs-multiplayer.unity3d.com/",
+          "type": "Article"
+        },
+        {
+          "title": "Photon Networking Tutorial",
+          "url": "https://www.youtube.com/embed/videoseries?si=mT17b6N0k9gbJCg4&amp;list=PLmJfqIDHKVuCmoCf5neiIReBPjd3ThwCE",
+          "type": "Article"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is an Animator Controller?",
+          "options": ["Manages animation states and transitions", "Database controller", "CSS controller", "Input controller"],
+          "correctAnswer": 0,
+          "explanation": "Animator uses state machines for character animations."
+        },
+        {
+          "question": "What is Unity UI?",
+          "options": ["Database UI", "Canvas-based system for menus and HUD", "CSS UI", "3D UI"],
+          "correctAnswer": 1,
+          "explanation": "UI includes Canvas, Button, Text, Image components."
+        },
+        {
+          "question": "What is audio mixing?",
+          "options": ["CSS mixing", "Balancing and processing game sounds", "Database mixing", "Color mixing"],
+          "correctAnswer": 1,
+          "explanation": "Audio Mixer controls volume, effects, and groups."
+        },
+        {
+          "question": "What is performance optimization?",
+          "options": ["Improving game speed and reducing lag", "Database optimization", "CSS optimization", "Graphics design"],
+          "correctAnswer": 0,
+          "explanation": "Optimization includes profiling, LOD, occlusion culling."
+        },
+        {
+          "question": "What is object pooling?",
+          "options": ["Database pooling", "Reusing objects instead of destroying/creating", "CSS pooling", "Network pooling"],
+          "correctAnswer": 1,
+          "explanation": "Pooling reduces garbage collection for bullets, enemies."
+        },
+        {
+          "question": "What is multiplayer networking?",
+          "options": ["Connecting players over network", "Database network", "CSS network", "Single-player"],
+          "correctAnswer": 0,
+          "explanation": "Multiplayer uses client-server or peer-to-peer."
+        },
+        {
+          "question": "What is Netcode for GameObjects?",
+          "options": ["Unity's official multiplayer framework", "Database netcode", "CSS netcode", "AI system"],
+          "correctAnswer": 0,
+          "explanation": "Netcode handles synchronization and RPCs."
+        },
+        {
+          "question": "What is Photon?",
+          "options": ["CSS photon", "Third-party multiplayer networking solution", "Database photon", "PArticle effect"],
+          "correctAnswer": 1,
+          "explanation": "Photon provides cloud-hosted multiplayer services."
+        },
+        {
+          "question": "What is LOD?",
+          "options": ["Level of Detail for optimizing distant objects", "Database LOD", "CSS LOD", "Sound level"],
+          "correctAnswer": 0,
+          "explanation": "LOD reduces polygon count based on distance."
+        },
+        {
+          "question": "What is occlusion culling?",
+          "options": ["Database culling", "Not rendering objects hidden behind others", "CSS culling", "Animation technique"],
+          "correctAnswer": 1,
+          "explanation": "Occlusion culling improves performance by skipping hidden objects."
+        },
+        {
+          "question": "What are blend trees?",
+          "options": ["Smoothly blending multiple animations based on parameters", "Database trees", "CSS trees", "Collision trees"],
+          "correctAnswer": 0,
+          "explanation": "Blend trees create fluid movement transitions."
+        },
+        {
+          "question": "What is the Event System?",
+          "options": ["CSS events", "Database events", "Handles UI interactions and input events", "Physics events"],
+          "correctAnswer": 2,
+          "explanation": "Event System manages button clicks, hover, drag."
+        },
+        {
+          "question": "What is an Audio Source?",
+          "options": ["Component playing sound clips in 3D space", "Database audio", "CSS audio", "Visual component"],
+          "correctAnswer": 0,
+          "explanation": "Audio Source has volume, pitch, spatial blend."
+        },
+        {
+          "question": "What is the Profiler?",
+          "options": ["Database profiler", "Tool analyzing performance bottlenecks", "CSS profiler", "Animation tool"],
+          "correctAnswer": 1,
+          "explanation": "Profiler shows CPU, GPU, memory, rendering usage."
+        },
+        {
+          "question": "What is garbage collection?",
+          "options": ["Automatic memory cleanup causing frame drops", "Database collection", "CSS collection", "Manual deletion"],
+          "correctAnswer": 0,
+          "explanation": "Minimize GC by avoiding frequent allocations."
+        },
+        {
+          "question": "What are coroutines?",
+          "options": ["CSS coroutines", "Functions executing over multiple frames", "Database coroutines", "Physics routines"],
+          "correctAnswer": 1,
+          "explanation": "Coroutines use yield for delayed actions."
+        },
+        {
+          "question": "What are ScriptableObjects?",
+          "options": ["Data containers separate from scene objects", "Database objects", "CSS objects", "UI objects"],
+          "correctAnswer": 0,
+          "explanation": "ScriptableObjects store shared data efficiently."
+        },
+        {
+          "question": "What are Addressables?",
+          "options": ["Database addressables", "CSS addressables", "System for loading assets asynchronously", "Network system"],
+          "correctAnswer": 2,
+          "explanation": "Addressables enable asset streaming and updates."
+        },
+        {
+          "question": "What is server-client model?",
+          "options": ["Architecture where server authorizes actions", "Database model", "CSS model", "Single-player model"],
+          "correctAnswer": 0,
+          "explanation": "Server-client prevents cheating in multiplayer."
+        },
+        {
+          "question": "What is RPC?",
+          "options": ["CSS RPC", "Remote Procedure Call for network communication", "Database RPC", "Rendering technique"],
+          "correctAnswer": 1,
+          "explanation": "RPC invokes methods across network clients."
+        }
+      ]
+    },
+    {
+      "id": "unreal-engine",
+      "title": "Unreal Engine Basics & C++ (8-12 weeks)",
+      "description": "Learn Unreal Engine interface, Blueprint visual scripting, C++ programming for Unreal, materials, Nanite/Lumen, Niagara VFX, and multiplayer.",
+      "resources": [
+        {
+          "title": "Unreal Engine 5 Beginner Tutorial",
+          "url": "https://dev.epicgames.com/community/learning/Courses/ZpX/your-first-hour-in-unreal-engine-5/E7L/introduction-to-unreal-engine-5",
+          "type": "Interactive"
+        },
+        {
+          "title": "Blueprint Visual Scripting Guide",
+          "url": "https://docs.unrealengine.com/5.3/en-US/blueprints-visual-scripting-in-unreal-engine/",
+          "type": "Article"
+        },
+        {
+          "title": "Unreal Engine 5 Tutorial - freeCodeCamp",
+          "url": "https://www.youtube.com/embed/6UlU_FsicK8",
+          "type": "Video",
+          "duration": "5 hours"
+        },
+        {
+          "title": "Unreal C++ Fundamentals",
+          "url": "https://docs.unrealengine.com/5.3/en-US/programming-with-cplusplus-in-unreal-engine/",
+          "type": "Article"
+        },
+        {
+          "title": "Nanite & Lumen (UE5)",
+          "url": "https://docs.unrealengine.com/5.3/en-US/nanite-virtualized-geometry-in-unreal-engine/",
+          "type": "Article"
+        },
+        {
+          "title": "Niagara VFX System",
+          "url": "https://docs.unrealengine.com/5.3/en-US/niagara-effects-in-unreal-engine/",
+          "type": "Article"
+        },
+        {
+          "title": "Behavior Trees",
+          "url": "https://docs.unrealengine.com/5.3/en-US/behavior-trees-in-unreal-engine/",
+          "type": "Article"
+        },
+        {
+          "title": "Unreal Multiplayer Guide",
+          "url": "https://docs.unrealengine.com/5.3/en-US/networking-and-multiplayer-in-unreal-engine/",
+          "type": "Article"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is Unreal Engine?",
+          "options": ["Powerful game engine for AAA games", "Database", "CSS framework", "Text editor"],
+          "correctAnswer": 0,
+          "explanation": "Unreal Engine offers photorealistic graphics and scalability."
+        },
+        {
+          "question": "What is Blueprint?",
+          "options": ["Database blueprint", "Visual scripting system in Unreal", "CSS blueprint", "3D model"],
+          "correctAnswer": 1,
+          "explanation": "Blueprint uses nodes instead of code for logic."
+        },
+        {
+          "question": "What is C++ in Unreal?",
+          "options": ["CSS programming", "Programming language for performance-critical code", "Database language", "Scripting language"],
+          "correctAnswer": 1,
+          "explanation": "C++ provides more control and optimization than Blueprint."
+        },
+        {
+          "question": "What is Nanite?",
+          "options": ["Virtualized geometry for ultra-detailed models", "Database nanite", "CSS nanite", "Animation system"],
+          "correctAnswer": 0,
+          "explanation": "Nanite eliminates need for LODs with massive poly counts."
+        },
+        {
+          "question": "What is Lumen?",
+          "options": ["Database lumen", "Dynamic global illumination system", "CSS lumen", "Sound system"],
+          "correctAnswer": 1,
+          "explanation": "Lumen provides real-time ray-traced lighting."
+        },
+        {
+          "question": "What is Niagara?",
+          "options": ["Visual effects system for pArticles", "Database niagara", "CSS niagara", "Sound system"],
+          "correctAnswer": 0,
+          "explanation": "Niagara creates complex pArticle effects efficiently."
+        },
+        {
+          "question": "What is a Behavior Tree?",
+          "options": ["CSS tree", "AI decision-making system", "Database tree", "Visual tree"],
+          "correctAnswer": 1,
+          "explanation": "Behavior Trees control NPC actions and logic."
+        },
+        {
+          "question": "What is a material in Unreal?",
+          "options": ["Shader defining surface appearance", "Database material", "CSS material", "Script"],
+          "correctAnswer": 0,
+          "explanation": "Materials use Material Editor for complex effects."
+        },
+        {
+          "question": "What is MetaHuman?",
+          "options": ["Database meta", "Tool for creating realistic digital humans", "CSS meta", "AI system"],
+          "correctAnswer": 1,
+          "explanation": "MetaHuman Creator generates photorealistic characters."
+        },
+        {
+          "question": "What is Unreal multiplayer?",
+          "options": ["Network replication system for online games", "Database multiplayer", "CSS multiplayer", "Single-player"],
+          "correctAnswer": 0,
+          "explanation": "Unreal handles server-client architecture with replication."
+        },
+        {
+          "question": "What is the Unreal Editor?",
+          "options": ["CSS editor", "Integrated development environment for creating games", "Database editor", "Text editor"],
+          "correctAnswer": 1,
+          "explanation": "Unreal Editor provides viewport, content browser, details panel."
+        },
+        {
+          "question": "What are actors in Unreal?",
+          "options": ["Base class for objects placed in levels", "Database actors", "CSS actors", "Scripts"],
+          "correctAnswer": 0,
+          "explanation": "Actors include characters, lights, cameras, meshes."
+        },
+        {
+          "question": "What are components in Unreal?",
+          "options": ["Database components", "CSS components", "Modular pieces defining actor functionality", "Levels"],
+          "correctAnswer": 2,
+          "explanation": "Components add mesh, collision, movement to actors."
+        },
+        {
+          "question": "What is GameMode?",
+          "options": ["Defines game rules, win conditions, spawning", "Database mode", "CSS mode", "Graphics mode"],
+          "correctAnswer": 0,
+          "explanation": "GameMode controls match flow and player classes."
+        },
+        {
+          "question": "What is PlayerController?",
+          "options": ["CSS controller", "Database controller", "Interface between player and pawn", "AI controller"],
+          "correctAnswer": 2,
+          "explanation": "PlayerController handles input and possession."
+        },
+        {
+          "question": "What is Character Movement Component?",
+          "options": ["Handles walking, jumping, flying, swimming", "Database movement", "CSS movement", "Camera movement"],
+          "correctAnswer": 0,
+          "explanation": "Character Movement provides built-in locomotion."
+        },
+        {
+          "question": "What is the Landscape system?",
+          "options": ["Database landscape", "CSS landscape", "Tool for creating large terrains", "UI system"],
+          "correctAnswer": 2,
+          "explanation": "Landscape supports sculpting, painting, streaming."
+        },
+        {
+          "question": "What is Chaos Physics?",
+          "options": ["Unreal's destruction and physics system", "Database chaos", "CSS chaos", "Animation system"],
+          "correctAnswer": 0,
+          "explanation": "Chaos enables realistic destruction and fracturing."
+        },
+        {
+          "question": "What is Sequencer?",
+          "options": ["CSS sequencer", "Cinematic editing tool for cutscenes", "Database sequencer", "Physics tool"],
+          "correctAnswer": 1,
+          "explanation": "Sequencer creates in-game cinematics with timeline."
+        },
+        {
+          "question": "What are Data Assets?",
+          "options": ["Blueprint classes storing game data", "Database assets", "CSS assets", "3D models"],
+          "correctAnswer": 0,
+          "explanation": "Data Assets define weapons, items, characters."
+        }
+      ]
+    },
+    {
+      "id": "specialized-topics",
+      "title": "Specialized Topics (6-10 weeks)",
+      "description": "Master mobile game optimization, VR/AR development, game AI (FSM, pathfinding, behavior trees), shaders, and graphics programming.",
+      "resources": [
+        {
+          "title": "Unity Mobile Optimization",
+          "url": "https://www.youtube.com/embed/hGcvEZOUmYo?si=sbaW1gisMDiu1Ltj",
+          "type": "Video"
+        },
+        {
+          "title": "Unity XR Interaction Toolkit",
+          "url": "https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@2.5/manual/index.html",
+          "type": "Article"
+        },
+        {
+          "title": "Meta Quest Development",
+          "url": "https://www.youtube.com/embed/videoseries?si=q7K0Y3YS6HB5B9GX&amp;list=PL6polqxDd8aUb0DNaCbjgRdl5iRevrbFM" ,
+          "type": "Course"
+        },
+        {
+          "title": "Pathfinding Algorithms (A*)",
+          "url": "https://www.redblobgames.com/pathfinding/a-star/introduction.html",
+          "type": "Interactive"
+        },
+        {
+          "title": "Unity ML-Agents",
+          "url": "https://www.youtube.com/embed/videoseries?si=IbFZ_GKebHwnYZKB&amp;list=PLzDRvYVwl53vehwiN_odYJkPBzcqFw110",
+          "type": "Video"
+        },
+        {
+          "title": "Shader Basics - Catlike Coding",
+          "url": "https://catlikecoding.com/unity/tutorials/rendering/",
+          "type": "Article"
+        },
+        {
+          "title": "Unity Shader Graph Tutorial",
+          "url": "https://docs.unity3d.com/Packages/com.unity.shadergraph@16.0/manual/index.html",
+          "type": "Article"
+        },
+        {
+          "title": "The Book of Shaders",
+          "url": "https://theBookofshaders.com/",
+          "type": "Interactive"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is mobile game optimization?",
+          "options": ["Reducing performance for mobile constraints", "Database optimization", "CSS optimization", "Desktop optimization"],
+          "correctAnswer": 0,
+          "explanation": "Mobile optimization reduces draw calls, texture size, complexity."
+        },
+        {
+          "question": "What is VR?",
+          "options": ["Database VR", "Virtual Reality with immersive 3D environments", "CSS VR", "2D graphics"],
+          "correctAnswer": 1,
+          "explanation": "VR uses headsets like Meta Quest, PSVR for immersion."
+        },
+        {
+          "question": "What is AR?",
+          "options": ["Augmented Reality overlaying digital on real world", "Database AR", "CSS AR", "Virtual reality"],
+          "correctAnswer": 0,
+          "explanation": "AR uses phones or glasses (ARKit, ARCore)."
+        },
+        {
+          "question": "What is FSM?",
+          "options": ["CSS state machine", "Finite State Machine for AI behavior", "Database machine", "Network machine"],
+          "correctAnswer": 1,
+          "explanation": "FSM manages AI states: idle, patrol, chase, attack."
+        },
+        {
+          "question": "What is pathfinding?",
+          "options": ["Database finding", "Algorithm for finding optimal path", "CSS finding", "Random movement"],
+          "correctAnswer": 1,
+          "explanation": "Pathfinding uses A* algorithm for AI navigation."
+        },
+        {
+          "question": "What is A* algorithm?",
+          "options": ["Pathfinding algorithm using heuristics", "Database algorithm", "CSS algorithm", "Sorting algorithm"],
+          "correctAnswer": 0,
+          "explanation": "A* finds shortest path considering obstacles."
+        },
+        {
+          "question": "What is a shader?",
+          "options": ["CSS shader", "Program running on GPU for rendering", "Database shader", "Sound effect"],
+          "correctAnswer": 1,
+          "explanation": "Shaders control vertex and fragment processing."
+        },
+        {
+          "question": "What is Shader Graph?",
+          "options": ["Visual shader creation tool in Unity", "Database graph", "CSS graph", "Animation graph"],
+          "correctAnswer": 0,
+          "explanation": "Shader Graph creates shaders without code."
+        },
+        {
+          "question": "What is Unity ML-Agents?",
+          "options": ["Database ML", "Machine learning toolkit for training AI", "CSS ML", "Multiplayer system"],
+          "correctAnswer": 1,
+          "explanation": "ML-Agents uses reinforcement learning for intelligent NPCs."
+        },
+        {
+          "question": "What is a vertex shader?",
+          "options": ["Shader processing 3D vertices", "Database shader", "CSS shader", "Fragment shader"],
+          "correctAnswer": 0,
+          "explanation": "Vertex shaders transform positions and normals."
+        },
+        {
+          "question": "What are draw calls?",
+          "options": ["Database calls", "Commands sending geometry to GPU", "CSS calls", "Physics calls"],
+          "correctAnswer": 1,
+          "explanation": "Reducing draw calls improves mobile performance."
+        },
+        {
+          "question": "What are texture atlases?",
+          "options": ["Combining multiple textures into single image", "Database atlases", "CSS atlases", "3D models"],
+          "correctAnswer": 0,
+          "explanation": "Atlases reduce draw calls and memory usage."
+        },
+        {
+          "question": "What is ARKit/ARCore?",
+          "options": ["CSS ARKit", "Database ARKit", "Apple/Google frameworks for AR development", "VR framework"],
+          "correctAnswer": 2,
+          "explanation": "ARKit/ARCore provide plane detection, tracking."
+        },
+        {
+          "question": "What is VR locomotion?",
+          "options": ["Movement methods: teleport, smooth, arm swing", "Database locomotion", "CSS locomotion", "AI movement"],
+          "correctAnswer": 0,
+          "explanation": "Locomotion minimizes motion sickness in VR."
+        },
+        {
+          "question": "What is hand tracking?",
+          "options": ["Database tracking", "Detecting hand positions and gestures in VR", "CSS tracking", "Eye tracking"],
+          "correctAnswer": 1,
+          "explanation": "Hand tracking enables controller-free interactions."
+        },
+        {
+          "question": "What are decision trees?",
+          "options": ["Tree structures for AI decision-making", "Database trees", "CSS trees", "Visual trees"],
+          "correctAnswer": 0,
+          "explanation": "Decision trees evaluate conditions for NPC actions."
+        },
+        {
+          "question": "What is HLSL/GLSL?",
+          "options": ["CSS languages", "Database languages", "Shader programming languages", "Scripting languages"],
+          "correctAnswer": 2,
+          "explanation": "HLSL (DirectX) and GLSL (OpenGL) write custom shaders."
+        },
+        {
+          "question": "What is a fragment shader?",
+          "options": ["Shader calculating pixel colors", "Database shader", "CSS shader", "Vertex shader"],
+          "correctAnswer": 0,
+          "explanation": "Fragment shaders apply lighting and textures."
+        },
+        {
+          "question": "What is procedural generation?",
+          "options": ["Database generation", "CSS generation", "Algorithmic creation of content", "Manual creation"],
+          "correctAnswer": 2,
+          "explanation": "Procedural generation creates infinite worlds, dungeons."
+        },
+        {
+          "question": "What are neural networks in games?",
+          "options": ["AI models learning from gameplay data", "Database networks", "CSS networks", "Multiplayer networks"],
+          "correctAnswer": 0,
+          "explanation": "Neural networks power adaptive AI opponents."
+        }
+      ]
+    },
+    {
+      "id": "production-publishing",
+      "title": "Production & Publishing (2-3 weeks)",
+      "description": "Learn game polish techniques, monetization strategies, build optimization, and publishing to Steam, Epic Games Store, App Store, and Google Play.",
+      "resources": [
+        {
+          "title": "Build Settings & Optimization",
+          "url": "https://docs.unity3d.com/Manual/BuildSettings.html",
+          "type": "Article"
+        },
+        {
+          "title": "Publishing to Steam",
+          "url": "https://www.youtube.com/embed/gwMPvEFFomE?si=8mzFWYQ2Lqgag78S",
+          "type": "Video"
+        },
+        {
+          "title": "Epic Games Store Publishing",
+          "url": "https://www.youtube.com/embed/gTBOeIzHNMo?si=K_QmnntIB-F7aG9h",
+          "type": "Video"
+        },
+        {
+          "title": "Unity Ads Integration",
+          "url": "https://www.youtube.com/embed/6jQIeZk72cA?si=7FM8eayaYN5ZI0tm",
+          "type": "Video"
+        },
+        {
+          "title": "itch.io for Indie Games",
+          "url": "https://www.youtube.com/embed/videoseries?si=LwcXINtSLBNKDR5D&amp;list=PLW6lg8_rWio-xr1Ds-dsff2m_-HNRfK_5",
+          "type": "Video"
+        },
+        {
+          "title": "Unity Asset Store",
+          "url": "https://www.youtube.com/embed/videoseries?si=VGRDKmdiRDqx_155&amp;list=PLzDRvYVwl53uPh5QV8fCpVIrOPs2JyJxZ",
+          "type": "Video"
+        },
+        {
+          "title": "Unreal Marketplace",
+          "url": "https://www.youtube.com/embed/q5ejxITvEh8?si=IPZerq_G2RQX4Ih_",
+          "type": "Video"
+        },
+        {
+          "title": "Global Game Jam",
+          "url": "https://www.youtube.com/embed/PPJGLTXfH6o?si=WoKWkt2-ocY-Z00K",
+          "type": "Video"
+        },
+        {
+          "title": "Ludum Dare",
+          "url": "https://www.youtube.com/embed/8nnFZrwqLfE?si=ismJXkDoeqre6R4p",
+          "type": "Video"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is game polish?",
+          "options": ["Refining details for quality and feel", "Database polish", "CSS polish", "Initial development"],
+          "correctAnswer": 0,
+          "explanation": "Polish includes animations, pArticles, sound, feedback."
+        },
+        {
+          "question": "What is monetization?",
+          "options": ["CSS monetization", "Strategies to earn revenue from game", "Database monetization", "Game design"],
+          "correctAnswer": 1,
+          "explanation": "Monetization includes ads, in-app purchases, premium."
+        },
+        {
+          "question": "What is build optimization?",
+          "options": ["Reducing game size and improving performance", "Database optimization", "CSS optimization", "Graphics design"],
+          "correctAnswer": 0,
+          "explanation": "Optimization compresses assets, removes unused code."
+        },
+        {
+          "question": "What is Steam?",
+          "options": ["Database steam", "PC game distribution platform", "CSS steam", "Mobile platform"],
+          "correctAnswer": 1,
+          "explanation": "Steam is largest digital PC game store."
+        },
+        {
+          "question": "What is Epic Games Store?",
+          "options": ["Game distribution platform by Epic Games", "Database store", "CSS store", "Testing platform"],
+          "correctAnswer": 0,
+          "explanation": "Epic Store offers competitive revenue split for developers."
+        },
+        {
+          "question": "What is itch.io?",
+          "options": ["CSS itch", "Platform for indie game publishing", "Database itch", "AAA platform"],
+          "correctAnswer": 1,
+          "explanation": "itch.io supports independent developers with flexible pricing."
+        },
+        {
+          "question": "What are Unity Ads?",
+          "options": ["Ad integration system for monetization", "Database ads", "CSS ads", "Desktop ads"],
+          "correctAnswer": 0,
+          "explanation": "Unity Ads displays Video/banner ads in games."
+        },
+        {
+          "question": "What is in-app purchase?",
+          "options": ["Database purchase", "Buying virtual goods within game", "CSS purchase", "Physical purchase"],
+          "correctAnswer": 1,
+          "explanation": "IAP sells coins, skins, power-ups, subscriptions."
+        },
+        {
+          "question": "What is a game jam?",
+          "options": ["Event where developers create game in limited time", "Database jam", "CSS jam", "Music jam"],
+          "correctAnswer": 0,
+          "explanation": "Game jams (Ludum Dare, Global Game Jam) foster creativity."
+        },
+        {
+          "question": "What is Asset Store?",
+          "options": ["CSS store", "Marketplace for game assets and tools", "Database store", "Clothing store"],
+          "correctAnswer": 1,
+          "explanation": "Asset Store sells 3D models, scripts, audio, plugins."
+        },
+        {
+          "question": "What is compression?",
+          "options": ["Reducing file sizes for faster loading", "Database compression", "CSS compression", "Graphics quality"],
+          "correctAnswer": 0,
+          "explanation": "Compression uses texture/audio compression formats."
+        },
+        {
+          "question": "What are platform-specific builds?",
+          "options": ["CSS builds", "Database builds", "Compiling for PC, consoles, mobile separately", "Single build"],
+          "correctAnswer": 2,
+          "explanation": "Each platform has unique requirements and SDKs."
+        },
+        {
+          "question": "What are achievements?",
+          "options": ["Goals rewarding player accomplishments", "Database achievements", "CSS achievements", "Graphics settings"],
+          "correctAnswer": 0,
+          "explanation": "Achievements integrate with Steam, Xbox, PlayStation."
+        },
+        {
+          "question": "What are leaderboards?",
+          "options": ["Database leaderboards", "CSS leaderboards", "Rankings comparing player scores globally", "Local scores only"],
+          "correctAnswer": 2,
+          "explanation": "Leaderboards encourage competition and replayability."
+        },
+        {
+          "question": "What are cloud saves?",
+          "options": ["Saving game progress to cloud storage", "Database saves", "CSS saves", "Local saves only"],
+          "correctAnswer": 0,
+          "explanation": "Cloud saves sync progress across devices."
+        },
+        {
+          "question": "What is DLC?",
+          "options": ["CSS DLC", "Downloadable Content adding features post-launch", "Database DLC", "Bug fix"],
+          "correctAnswer": 1,
+          "explanation": "DLC includes expansions, skins, levels, characters."
+        },
+        {
+          "question": "What are patches?",
+          "options": ["Updates fixing bugs and balancing gameplay", "Database patches", "CSS patches", "Initial release"],
+          "correctAnswer": 0,
+          "explanation": "Patches maintain game quality post-launch."
+        },
+        {
+          "question": "What is version control?",
+          "options": ["Database control", "CSS control", "System tracking code changes over time", "Graphics control"],
+          "correctAnswer": 2,
+          "explanation": "Version control enables collaboration and rollback."
+        },
+        {
+          "question": "What is Git?",
+          "options": ["Popular version control system for developers", "Database Git", "CSS Git", "Game engine"],
+          "correctAnswer": 0,
+          "explanation": "Git uses branches, commits, merges for teamwork."
+        },
+        {
+          "question": "What is game marketing?",
+          "options": ["CSS marketing", "Database marketing", "Promoting game through trailers, social media, press", "Development only"],
+          "correctAnswer": 2,
+          "explanation": "Marketing builds community and drives wishlists/sales."
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "2D Platformer Game",
+      "description": "Create a classic 2D platformer game with player movement, jumping mechanics, collectibles, enemies, and multiple levels.",
+      "difficulty": "Beginner",
+      "duration": "3-4 weeks",
+      "skills": ["Unity", "C#", "2D Physics", "Game Design", "Sprite Animation"],
+      "tasks": [
+        "Set up Unity project with 2D settings",
+        "Implement player movement and jumping",
+        "Create tilemap for level design",
+        "Add collectible items (coins, power-ups)",
+        "Implement simple enemy AI",
+        "Add collision detection and death mechanics",
+        "Create multiple levels",
+        "Add sound effects and background music",
+        "Build start menu and game over screen"
+      ]
+    },
+    {
+      "title": "3D First-Person Shooter",
+      "description": "Develop a 3D FPS game with shooting mechanics, enemy AI, health system, multiple weapons, and level progression.",
+      "difficulty": "Intermediate",
+      "duration": "4-5 weeks",
+      "skills": ["Unity", "3D Graphics", "FPS Mechanics", "AI Programming", "Physics"],
+      "tasks": [
+        "Set up first-person controller",
+        "Implement shooting mechanics with raycasting",
+        "Create weapon system with different guns",
+        "Build enemy AI with pathfinding",
+        "Add health and damage systems",
+        "Implement ammo and reload mechanics",
+        "Create multiple enemy types",
+        "Design 3D levels with ProBuilder",
+        "Add pArticle effects for shooting/explosions",
+        "Implement UI for health, ammo, and score",
+        "Add sound design and music"
+      ]
+    },
+    {
+      "title": "Multiplayer Battle Arena Game",
+      "description": "Build a multiplayer arena game with real-time networking, character selection, abilities, and matchmaking system.",
+      "difficulty": "Intermediate",
+      "duration": "5-6 weeks",
+      "skills": ["Multiplayer Networking", "Photon/Mirror", "Game Balance", "UI/UX", "Server-Client Architecture"],
+      "tasks": [
+        "Set up Photon Unity Networking or Mirror",
+        "Implement player connection and lobby system",
+        "Create character selection screen",
+        "Develop multiple characters with unique abilities",
+        "Synchronize player positions and actions",
+        "Implement combat system with cooldowns",
+        "Add health bars and damage indicators",
+        "Create respawn mechanics",
+        "Build matchmaking system",
+        "Add chat functionality",
+        "Implement leaderboard and statistics",
+        "Test with multiple clients"
+      ]
+    },
+    {
+      "title": "Open World RPG",
+      "description": "Create an ambitious open-world RPG with quest system, inventory, crafting, NPCs, dialogue trees, and procedural terrain generation.",
+      "difficulty": "Advanced",
+      "duration": "8-10 weeks",
+      "skills": ["Advanced Unity", "RPG Systems", "Procedural Generation", "Complex AI", "Quest Design"],
+      "tasks": [
+        "Generate procedural terrain with biomes",
+        "Implement third-person character controller",
+        "Create inventory and equipment system",
+        "Build quest system with objectives",
+        "Develop NPC dialogue system",
+        "Add crafting and resource gathering",
+        "Implement day/night cycle and weather",
+        "Create enemy AI with behavior trees",
+        "Add character progression and skills",
+        "Implement save/load system",
+        "Design multiple quest lines",
+        "Add loot system and shops",
+        "Optimize for performance"
+      ]
+    },
+    {
+      "title": "VR Escape Room Game",
+      "description": "Develop a fully immersive VR escape room game with hand interactions, physics-based puzzles, environmental storytelling, and haptic feedback.",
+      "difficulty": "Advanced",
+      "duration": "7-9 weeks",
+      "skills": ["VR Development", "XR Toolkit", "Physics Interactions", "Puzzle Design", "Optimization"],
+      "tasks": [
+        "Set up Unity XR Toolkit for VR",
+        "Implement VR locomotion (teleport/smooth)",
+        "Create hand tracking and grab mechanics",
+        "Design physics-based puzzles",
+        "Implement object interaction system",
+        "Add inventory for VR",
+        "Create environmental clues and storytelling",
+        "Build multiple interconnected rooms",
+        "Add haptic feedback for interactions",
+        "Implement hint system",
+        "Optimize for VR performance (90+ FPS)",
+        "Add atmospheric audio design",
+        "Test on multiple VR headsets"
+      ]
+    }
+  ]
+}

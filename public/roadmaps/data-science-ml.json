@@ -1,0 +1,3090 @@
+{
+  "slug": "data-science-ml",
+  "title": "Data Science & Machine Learning",
+  "summary": "Master statistics, programming, and machine learning to extract insights from data and build intelligent systems.",
+  "timeline": "10-14 months",
+  "difficulty": "Advanced",
+  "steps": [
+    {
+      "id": "mathematics",
+      "title": "Mathematics Fundamentals (4-6 weeks)",
+      "description": "Master Linear Algebra, Calculus, Probability & Statistics - essential foundations for ML algorithms and data analysis.",
+      "resources": [
+        {
+          "title": "Linear Algebra Tutorial",
+          "url": "https://www.youtube.com/embed/videoseries?si=W2iaDky4zWTjVetH&amp;list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab",
+          "type": "Video"
+        },
+        {
+          "title": "Calculus Tutorial",
+          "url": "https://www.youtube.com/embed/videoseries?si=ddYatESI1PJ9xcaj&amp;list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr",
+          "type": "Video"
+        },
+        {
+          "title": "Statistics Tutorial",
+          "url": "https://www.youtube.com/embed/videoseries?si=x5Dsmn8anjOdKxzc&amp;list=PLblh5JKOoLUK0FLuzwntyYI10UQFUhsY9",
+          "type": "Video"
+        },
+        {
+          "title": "PROBABILITY, STATISTICS AND LINEAR ALGEBRA",
+          "url": "https://docs.google.com/gview?embedded=true&url=https://people.math.harvard.edu/~knill/teaching/math19b_2011/handouts/chapters1-19.pdf",
+          "type": "Notes"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is a scalar in linear algebra?",
+          "options": ["A single number", "A matrix", "A vector", "A tensor"],
+          "correctAnswer": 0,
+          "explanation": "A scalar is a single number, as opposed to a vector (array of numbers) or matrix (2D array)."
+        },
+        {
+          "question": "What does a derivative measure in calculus?",
+          "options": ["Total area", "Rate of change", "Average value", "Maximum value"],
+          "correctAnswer": 1,
+          "explanation": "Derivatives measure the instantaneous rate of change of a function at a point."
+        },
+        {
+          "question": "What is the probability of two independent events A and B both occurring?",
+          "options": ["P(A) + P(B)", "P(A) - P(B)", "P(A) × P(B)", "P(A) / P(B)"],
+          "correctAnswer": 2,
+          "explanation": "For independent events, the probability of both occurring is P(A) × P(B)."
+        },
+        {
+          "question": "What is the mean of the dataset: 2, 4, 6, 8, 10?",
+          "options": ["5", "7", "8", "6"],
+          "correctAnswer": 3,
+          "explanation": "Mean = (2+4+6+8+10)/5 = 30/5 = 6."
+        },
+        {
+          "question": "What is an eigenvector?",
+          "options": ["A vector that only scales when transformed", "A zero vector", "A matrix diagonal", "The transpose of a matrix"],
+          "correctAnswer": 0,
+          "explanation": "An eigenvector is a non-zero vector that only changes by a scalar factor when a linear transformation is applied."
+        },
+        {
+          "question": "What does standard deviation measure?",
+          "options": ["Middle value", "Spread of data around the mean", "Most frequent value", "Total sum"],
+          "correctAnswer": 1,
+          "explanation": "Standard deviation quantifies the amount of variation or dispersion in a dataset."
+        },
+        {
+          "question": "What is the dot product of vectors [1, 2] and [3, 4]?",
+          "options": ["7", "14", "11", "[3, 8]"],
+          "correctAnswer": 2,
+          "explanation": "Dot product = (1×3) + (2×4) = 3 + 8 = 11."
+        },
+        {
+          "question": "What is Bayes' Theorem used for?",
+          "options": ["Calculating derivatives", "Finding eigenvalues", "Matrix multiplication", "Updating probability based on new evidence"],
+          "correctAnswer": 3,
+          "explanation": "Bayes' Theorem updates the probability of a hypothesis based on new evidence."
+        },
+        {
+          "question": "What is a normal distribution characterized by?",
+          "options": ["Mean and standard deviation", "Median only", "Mode only", "Range only"],
+          "correctAnswer": 0,
+          "explanation": "Normal distribution is defined by its mean (center) and standard deviation (spread)."
+        },
+        {
+          "question": "What does the gradient of a function represent?",
+          "options": ["The function's maximum value", "Vector of partial derivatives", "The function's minimum value", "The function's average"],
+          "correctAnswer": 1,
+          "explanation": "The gradient is a vector containing all partial derivatives, pointing in the direction of steepest ascent."
+        },
+        {
+          "question": "What is the transpose of a matrix?",
+          "options": ["Multiplying by -1", "Adding diagonal", "Flipping rows and columns", "Inverse matrix"],
+          "correctAnswer": 2,
+          "explanation": "Transpose swaps rows with columns."
+        },
+        {
+          "question": "Integral calculus measures?",
+          "options": ["Maximum value", "Slope at point", "Derivative", "Area under curve"],
+          "correctAnswer": 3,
+          "explanation": "Integrals compute accumulated area under function."
+        },
+        {
+          "question": "Conditional probability P(A|B) means?",
+          "options": ["Probability of A given B occurred", "P(A) divided by P(B)", "P(A) + P(B)", "P(A) × P(B)"],
+          "correctAnswer": 0,
+          "explanation": "Conditional probability updates likelihood given evidence."
+        },
+        {
+          "question": "Covariance measures?",
+          "options": ["Only variance", "Joint variability of two variables", "Mean of dataset", "Standard deviation squared"],
+          "correctAnswer": 1,
+          "explanation": "Covariance indicates how two variables change together."
+        },
+        {
+          "question": "Identity matrix has?",
+          "options": ["Random values", "All zeros", "Ones on diagonal, zeros elsewhere", "All ones"],
+          "correctAnswer": 2,
+          "explanation": "Identity matrix I has 1s on diagonal, 0s off-diagonal."
+        },
+        {
+          "question": "Expected value is?",
+          "options": ["Maximum possible value", "Most frequent value", "Range", "Weighted average of outcomes"],
+          "correctAnswer": 3,
+          "explanation": "Expected value is probability-weighted mean."
+        },
+        {
+          "question": "Matrix determinant zero indicates?",
+          "options": ["Matrix is singular (not invertible)", "Matrix is identity", "Positive definite", "Symmetric"],
+          "correctAnswer": 0,
+          "explanation": "Zero determinant means no unique inverse exists."
+        },
+        {
+          "question": "Chain rule in calculus used for?",
+          "options": ["Adding functions", "Differentiating composite functions", "Integrating polynomials", "Finding limits"],
+          "correctAnswer": 1,
+          "explanation": "Chain rule computes derivative of nested functions."
+        },
+        {
+          "question": "Law of large numbers states?",
+          "options": ["Samples always equal population", "All events equally likely", "Sample mean converges to expected value as n increases", "Variance increases"],
+          "correctAnswer": 2,
+          "explanation": "LLN: larger samples better estimate true mean."
+        },
+        {
+          "question": "Correlation coefficient range?",
+          "options": ["0 to 1", "[0, ∞)", "Any real number", "[-1, 1]"],
+          "correctAnswer": 3,
+          "explanation": "Correlation ranges from -1 (negative) to +1 (positive)."
+        }
+      ]
+    },
+    {
+      "id": "python-programming",
+      "title": "Python Programming (4-6 weeks)",
+      "description": "Learn Python fundamentals, OOP, and coding practice. Build strong programming foundations for data manipulation and algorithm implementation.",
+      "resources": [
+        {
+          "title": "Python Full Course",
+          "url": "https://www.youtube.com/embed/rfscVS0vtbw?si=iFQSxQ6m4GOsq74a",
+          "type": "Video",
+          "duration": "4.5 hours"
+        },
+        {
+          "title": "Python Official Tutorial",
+          "url": "https://docs.python.org/3/tutorial/",
+          "type": "Article"
+        },
+        {
+          "title": "Automate the Boring Stuff",
+          "url": "https://automatetheboringstuff.com/",
+          "type": "Book"
+        },
+        {
+          "title": "Python OOP",
+          "url": "https://www.youtube.com/embed/videoseries?si=EpPsaSoB9cW8IpnY&amp;list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc",
+          "type": "Video",
+          "note": "Corey Schafer"
+        },
+        {
+          "title": "Python Exercises",
+          "url": "https://www.w3resource.com/python-exercises/",
+          "type": "Interactive"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which data structure in Python is mutable and ordered?",
+          "options": [
+            "List",
+            "Tuple",
+            "String",
+            "Set"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Lists are mutable (can be changed) and maintain order of elements."
+        },
+        {
+          "question": "What does the 'self' parameter represent in a Python class?",
+          "options": [
+            "The class itself",
+            "The instance of the class",
+            "A global variable",
+            "A module"
+          ],
+          "correctAnswer": 1,
+          "explanation": "'self' refers to the instance of the class, allowing access to instance attributes and methods."
+        },
+        {
+          "question": "What is a lambda function in Python?",
+          "options": [
+            "A built-in function",
+            "A class method",
+            "Anonymous single-expression function",
+            "A module"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Lambda functions are small anonymous functions defined with the 'lambda' keyword."
+        },
+        {
+          "question": "Which method is used to add an element to the end of a list?",
+          "options": [
+            "add()",
+            "insert()",
+            "push()",
+            "append()"
+          ],
+          "correctAnswer": 3,
+          "explanation": "The append() method adds a single element to the end of a list."
+        },
+        {
+          "question": "What is the output of: len([1, [2, 3], 4])?",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "2"
+          ],
+          "correctAnswer": 0,
+          "explanation": "The list has 3 elements: 1, [2, 3], and 4. Nested list counts as one element."
+        },
+        {
+          "question": "What is list comprehension used for?",
+          "options": [
+            "Deleting lists",
+            "Creating lists concisely",
+            "Sorting lists",
+            "Copying lists"
+          ],
+          "correctAnswer": 1,
+          "explanation": "List comprehension provides a concise way to create lists based on existing iterables."
+        },
+        {
+          "question": "What does the 'with' statement do in Python?",
+          "options": [
+            "Loops through items",
+            "Creates variables",
+            "Ensures proper resource cleanup",
+            "Defines functions"
+          ],
+          "correctAnswer": 2,
+          "explanation": "The 'with' statement ensures proper acquisition and release of resources (like files)."
+        },
+        {
+          "question": "What is the difference between '==' and 'is' in Python?",
+          "options": [
+            "No difference",
+            "'is' is faster",
+            "'==' checks types",
+            "'==' compares values, 'is' compares identity"
+          ],
+          "correctAnswer": 3,
+          "explanation": "'==' checks if values are equal, 'is' checks if they're the same object in memory."
+        },
+        {
+          "question": "What is a decorator in Python?",
+          "options": [
+            "Function that modifies another function",
+            "A design pattern",
+            "A data type",
+            "A module"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Decorators are functions that take another function and extend its behavior without modifying it."
+        },
+        {
+          "question": "Which Python data structure doesn't allow duplicate elements?",
+          "options": [
+            "List",
+            "Set",
+            "Tuple",
+            "Dictionary"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Sets are unordered collections that automatically remove duplicates."
+        },
+        {
+          "question": "What is *args in Python functions?",
+          "options": [
+            "Keyword arguments",
+            "Class method",
+            "Variable number of positional arguments",
+            "Import statement"
+          ],
+          "correctAnswer": 2,
+          "explanation": "*args collects arbitrary positional arguments into tuple."
+        },
+        {
+          "question": "Dictionary method to get value without KeyError?",
+          "options": [
+            "dict[key]",
+            "dict.find(key)",
+            "dict.retrieve(key)",
+            "dict.get(key)"
+          ],
+          "correctAnswer": 3,
+          "explanation": "get() returns None or default if key missing."
+        },
+        {
+          "question": "Global keyword does what?",
+          "options": [
+            "Accesses/modifies global variable",
+            "Creates constant",
+            "Deletes variables",
+            "Imports modules"
+          ],
+          "correctAnswer": 0,
+          "explanation": "global allows function to modify global scope variable."
+        },
+        {
+          "question": "List slicing [1:5] returns?",
+          "options": [
+            "Index 1 to 5 inclusive",
+            "Elements at index 1,2,3,4",
+            "Only index 1",
+            "Last 5 elements"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Slice [start:stop] is inclusive of start, exclusive of stop."
+        },
+        {
+          "question": "What does enumerate() provide?",
+          "options": [
+            "Count of items",
+            "Only indices",
+            "Index and value pairs",
+            "Sorted list"
+          ],
+          "correctAnswer": 2,
+          "explanation": "enumerate() yields (index, value) tuples."
+        },
+        {
+          "question": "Exception handling uses which keywords?",
+          "options": [
+            "if/else",
+            "switch/case",
+            "loop/break",
+            "try/except"
+          ],
+          "correctAnswer": 3,
+          "explanation": "try/except blocks handle runtime errors gracefully."
+        },
+        {
+          "question": "Difference between shallow and deep copy?",
+          "options": [
+            "Shallow copies nested objects by reference; deep copies recursively",
+            "No difference",
+            "Deep is faster",
+            "Shallow copies everything"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Deep copy duplicates nested structures; shallow shares references."
+        },
+        {
+          "question": "Python generator uses which keyword?",
+          "options": [
+            "return",
+            "yield",
+            "pass",
+            "break"
+          ],
+          "correctAnswer": 1,
+          "explanation": "yield produces values lazily in generator functions."
+        },
+        {
+          "question": "What is __init__ method?",
+          "options": [
+            "Destructor",
+            "Static method",
+            "Constructor initializing instance",
+            "Class variable"
+          ],
+          "correctAnswer": 2,
+          "explanation": "__init__ is called when creating new instance."
+        },
+        {
+          "question": "map() function returns?",
+          "options": [
+            "Modified original list",
+            "Dictionary",
+            "Set",
+            "Iterator applying function to items"
+          ],
+          "correctAnswer": 3,
+          "explanation": "map() returns iterator of transformed elements."
+        }
+      ]
+    },
+    {
+      "id": "numpy-pandas",
+      "title": "NumPy & Pandas (3-4 weeks)",
+      "description": "Master array operations with NumPy and data manipulation with Pandas. Essential tools for data cleaning, preprocessing, and analysis.",
+      "resources": [
+        {
+          "title": "NumPy Complete Course",
+          "url": "https://www.youtube.com/embed/QUT1VHiLmmI?si=-gLDXcAEFItwjFlS",
+          "type": "Video",
+          "duration": "1 hour"
+        },
+        {
+          "title": "NumPy Quickstart",
+          "url": "https://numpy.org/doc/stable/user/quickstart.html",
+          "type": "Article"
+        },
+        {
+          "title": "Pandas Full Course",
+          "url": "https://www.youtube.com/embed/vmEHCJofslg?si=VwccL7Vfm2vW-2Ij",
+          "type": "Video",
+          "duration": "1 hour"
+        },
+        {
+          "title": "Pandas Official Tutorial",
+          "url": "https://pandas.pydata.org/docs/getting_started/intro_tutorials/",
+          "type": "Article"
+        },
+        {
+          "title": "10 Minutes to Pandas",
+          "url": "https://pandas.pydata.org/docs/user_guide/10min.html",
+          "type": "Article"
+        },
+        {
+          "title": "Data Cleaning with Pandas",
+          "url": "https://www.youtube.com/embed/bDhvCp3_lYw?si=s5yYwlZvIyGiL08Y",
+          "type": "Video"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the main advantage of NumPy arrays over Python lists?",
+          "options": [
+            "Faster computation and vectorized operations",
+            "Easier syntax",
+            "More storage",
+            "Better for strings"
+          ],
+          "correctAnswer": 0,
+          "explanation": "NumPy arrays are optimized for numerical operations and support vectorization for better performance."
+        },
+        {
+          "question": "What is a Pandas DataFrame?",
+          "options": [
+            "1D array",
+            "2D labeled data structure",
+            "Dictionary",
+            "NumPy array"
+          ],
+          "correctAnswer": 1,
+          "explanation": "A DataFrame is a 2-dimensional labeled data structure with columns that can be of different types."
+        },
+        {
+          "question": "How do you select a column 'age' from DataFrame df?",
+          "options": [
+            "df.get('age')",
+            "df.select('age')",
+            "df['age'] or df.age",
+            "df.column('age')"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Columns can be accessed using bracket notation df['age'] or dot notation df.age."
+        },
+        {
+          "question": "What does np.arange(0, 10, 2) create?",
+          "options": [
+            "[2, 4, 6, 8, 10]",
+            "[0, 1, 2, 3, 4]",
+            "[0, 10, 20]",
+            "[0, 2, 4, 6, 8]"
+          ],
+          "correctAnswer": 3,
+          "explanation": "np.arange(start, stop, step) creates array from 0 to 10 (exclusive) with step 2: [0, 2, 4, 6, 8]."
+        },
+        {
+          "question": "What method removes rows with missing values in Pandas?",
+          "options": [
+            "dropna()",
+            "remove_na()",
+            "delete_null()",
+            "clean()"
+          ],
+          "correctAnswer": 0,
+          "explanation": "dropna() removes rows (or columns) containing missing values from a DataFrame."
+        },
+        {
+          "question": "What is broadcasting in NumPy?",
+          "options": [
+            "Deleting arrays",
+            "Automatic expansion of arrays for operations",
+            "Printing arrays",
+            "Sorting arrays"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Broadcasting allows NumPy to perform operations on arrays of different shapes by automatically expanding them."
+        },
+        {
+          "question": "How do you filter DataFrame rows where column 'age' > 30?",
+          "options": [
+            "df.filter(age > 30)",
+            "df.where(age > 30)",
+            "df[df['age'] > 30]",
+            "df.select(age > 30)"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Boolean indexing df[df['age'] > 30] filters rows based on a condition."
+        },
+        {
+          "question": "What does df.groupby('category').mean() do?",
+          "options": [
+            "Sorts by category",
+            "Filters categories",
+            "Deletes categories",
+            "Groups by category and calculates mean"
+          ],
+          "correctAnswer": 3,
+          "explanation": "groupby() groups data by specified column(s) and applies aggregation function like mean()."
+        },
+        {
+          "question": "What is the shape of a NumPy array created by np.zeros((3, 4))?",
+          "options": [
+            "(3, 4)",
+            "(4, 3)",
+            "(12,)",
+            "(7,)"
+          ],
+          "correctAnswer": 0,
+          "explanation": "np.zeros((3, 4)) creates a 3-row by 4-column array of zeros."
+        },
+        {
+          "question": "What does pd.merge() do?",
+          "options": [
+            "Concatenates DataFrames",
+            "Joins DataFrames on common columns",
+            "Deletes columns",
+            "Sorts DataFrames"
+          ],
+          "correctAnswer": 1,
+          "explanation": "pd.merge() combines DataFrames based on common column(s), similar to SQL joins."
+        },
+        {
+          "question": "NumPy universal functions (ufuncs) enable?",
+          "options": [
+            "Only aggregations",
+            "File I/O",
+            "Element-wise operations on arrays",
+            "Network requests"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Ufuncs perform vectorized element-wise operations."
+        },
+        {
+          "question": "pd.concat() does what?",
+          "options": [
+            "Merges on keys",
+            "Deletes rows",
+            "Sorts data",
+            "Concatenates DataFrames along axis"
+          ],
+          "correctAnswer": 3,
+          "explanation": "concat() joins DataFrames vertically or horizontally."
+        },
+        {
+          "question": "NumPy np.where(condition) returns?",
+          "options": [
+            "Indices where condition is True",
+            "Boolean mask",
+            "Count of True values",
+            "Modified array"
+          ],
+          "correctAnswer": 0,
+          "explanation": "np.where() returns indices satisfying condition."
+        },
+        {
+          "question": "df.apply() method used for?",
+          "options": [
+            "Filtering rows",
+            "Applying function along axis",
+            "Sorting",
+            "Merging"
+          ],
+          "correctAnswer": 1,
+          "explanation": "apply() applies function to rows or columns."
+        },
+        {
+          "question": "NumPy reshape() does what?",
+          "options": [
+            "Deletes elements",
+            "Sorts array",
+            "Changes array shape without data copy if possible",
+            "Flattens always"
+          ],
+          "correctAnswer": 2,
+          "explanation": "reshape() changes dimensions while preserving elements."
+        },
+        {
+          "question": "Pandas pivot_table() creates?",
+          "options": [
+            "Sorted DataFrame",
+            "Filtered view",
+            "Copied data",
+            "Aggregated cross-tabulation"
+          ],
+          "correctAnswer": 3,
+          "explanation": "pivot_table() reshapes and aggregates data."
+        },
+        {
+          "question": "np.random.seed() purpose?",
+          "options": [
+            "Sets reproducible random state",
+            "Generates random numbers",
+            "Deletes seed",
+            "Encrypts data"
+          ],
+          "correctAnswer": 0,
+          "explanation": "seed() ensures reproducible random sequences."
+        },
+        {
+          "question": "df.describe() provides?",
+          "options": [
+            "Schema only",
+            "Summary statistics",
+            "Data types",
+            "Column names"
+          ],
+          "correctAnswer": 1,
+          "explanation": "describe() computes count, mean, std, min, quartiles, max."
+        },
+        {
+          "question": "NumPy dot product for matrices is?",
+          "options": [
+            "Element-wise multiplication",
+            "Addition",
+            "Matrix multiplication",
+            "Transpose"
+          ],
+          "correctAnswer": 2,
+          "explanation": "np.dot() performs matrix/dot product."
+        },
+        {
+          "question": "Pandas loc vs iloc?",
+          "options": [
+            "No difference",
+            "loc is faster",
+            "iloc is deprecated",
+            "loc uses labels; iloc uses integer positions"
+          ],
+          "correctAnswer": 3,
+          "explanation": "loc selects by label/boolean; iloc by integer index."
+        }
+      ]
+    },
+    {
+      "id": "data-visualization",
+      "title": "Data Visualization (2-3 weeks)",
+      "description": "Create meaningful visualizations with Matplotlib, Seaborn, and Plotly. Learn to communicate insights effectively through charts and dashboards.",
+      "resources": [
+        {
+          "title": "Matplotlib Tutorial",
+          "url": "https://aaronnotes.com/data-science-notes/c08-data-visualization-with-python/",
+          "type": "Article"
+        },
+        {
+          "title": "Matplotlib Crash Course",
+          "url": "https://www.youtube.com/embed/3Xc3CA655Y4?si=_zJMP6YUc9OMks9M",
+          "type": "Video",
+          "duration": "1 hour"
+        },
+        {
+          "title": "Seaborn Tutorial",
+          "url": "https://seaborn.pydata.org/tutorial.html",
+          "type": "Article"
+        },
+        {
+          "title": "Seaborn Crash Course",
+          "url": "https://www.youtube.com/embed/6GUZXDef2U0?si=NCxbjN0sVsSgFcQc",
+          "type": "Video",
+          "duration": "1 hour"
+        },
+        {
+          "title": "Plotly Python Tutorial",
+          "url": "https://plotly.com/python/",
+          "type": "Article"
+        },
+        {
+          "title": "Plotly Dash Tutorial",
+          "url": "https://www.youtube.com/embed/hSPmj7mK6ng?si=BqGkUjkMK7gdfdwR",
+          "type": "Video"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which library is best for creating interactive web-based visualizations?",
+          "options": [
+            "Plotly",
+            "Matplotlib",
+            "Seaborn",
+            "Pandas"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Plotly specializes in interactive, web-ready visualizations with hover effects and zoom capabilities."
+        },
+        {
+          "question": "What type of plot is best for showing distribution of a single variable?",
+          "options": [
+            "Line plot",
+            "Histogram",
+            "Pie chart",
+            "Heatmap"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Histograms display the distribution of numerical data by grouping values into bins."
+        },
+        {
+          "question": "What does a box plot show?",
+          "options": [
+            "Only mean",
+            "Only maximum",
+            "Median, quartiles, and outliers",
+            "Correlation"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Box plots display median, quartiles (25th, 75th percentiles), and outliers in the data."
+        },
+        {
+          "question": "Which Seaborn function creates a correlation matrix heatmap?",
+          "options": [
+            "sns.boxplot()",
+            "sns.lineplot()",
+            "sns.scatterplot()",
+            "sns.heatmap()"
+          ],
+          "correctAnswer": 3,
+          "explanation": "sns.heatmap() visualizes correlation matrices or any 2D data with color intensity."
+        },
+        {
+          "question": "What is the purpose of plt.figure(figsize=(10, 6))?",
+          "options": [
+            "Set figure size to 10x6 inches",
+            "Create 10 plots",
+            "Set resolution",
+            "Change colors"
+          ],
+          "correctAnswer": 0,
+          "explanation": "figsize parameter sets the width and height of the figure in inches."
+        },
+        {
+          "question": "Which plot type best shows relationship between two continuous variables?",
+          "options": [
+            "Bar chart",
+            "Scatter plot",
+            "Pie chart",
+            "Histogram"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Scatter plots display the relationship between two continuous variables as points on a 2D plane."
+        },
+        {
+          "question": "What does sns.pairplot() do?",
+          "options": [
+            "Creates pair of plots",
+            "Compares two datasets",
+            "Plots all variable pairs in a dataset",
+            "Creates pie charts"
+          ],
+          "correctAnswer": 2,
+          "explanation": "pairplot() creates a grid of scatter plots for all pairs of variables in a DataFrame."
+        },
+        {
+          "question": "Which parameter controls transparency in Matplotlib?",
+          "options": [
+            "color",
+            "size",
+            "opacity",
+            "alpha"
+          ],
+          "correctAnswer": 3,
+          "explanation": "The 'alpha' parameter controls transparency, ranging from 0 (transparent) to 1 (opaque)."
+        },
+        {
+          "question": "What is the purpose of plt.legend()?",
+          "options": [
+            "Add legend to identify plot elements",
+            "Create title",
+            "Set axis labels",
+            "Save figure"
+          ],
+          "correctAnswer": 0,
+          "explanation": "plt.legend() displays a legend that identifies different elements in the plot."
+        },
+        {
+          "question": "Which plot is best for showing parts of a whole?",
+          "options": [
+            "Line plot",
+            "Pie chart",
+            "Scatter plot",
+            "Box plot"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Pie charts show proportions of a whole by dividing a circle into slices."
+        },
+        {
+          "question": "Which plot shows distribution and outliers together?",
+          "options": [
+            "Line plot",
+            "Pie chart",
+            "Violin plot",
+            "Area chart"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Violin plot combines box plot with kernel density."
+        },
+        {
+          "question": "Subplots in Matplotlib created with?",
+          "options": [
+            "plt.figure()",
+            "plt.plot()",
+            "plt.show()",
+            "plt.subplot() or plt.subplots()"
+          ],
+          "correctAnswer": 3,
+          "explanation": "subplots() creates grid of axes; subplot() adds one."
+        },
+        {
+          "question": "Seaborn style theme changes via?",
+          "options": [
+            "sns.set_style()",
+            "sns.style()",
+            "sns.theme()",
+            "sns.config()"
+          ],
+          "correctAnswer": 0,
+          "explanation": "set_style() applies themes like darkgrid, whitegrid."
+        },
+        {
+          "question": "What does plt.savefig() do?",
+          "options": [
+            "Displays plot",
+            "Saves plot to file",
+            "Closes figure",
+            "Creates subplot"
+          ],
+          "correctAnswer": 1,
+          "explanation": "savefig() exports figure to image file (png, pdf, svg)."
+        },
+        {
+          "question": "Which plot type for time series trends?",
+          "options": [
+            "Bar chart",
+            "Pie chart",
+            "Line plot",
+            "Box plot"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Line plots show trends over continuous time."
+        },
+        {
+          "question": "Plotly advantage over Matplotlib?",
+          "options": [
+            "Faster rendering",
+            "Smaller files",
+            "No dependencies",
+            "Interactive zoom/hover"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Plotly generates interactive web-based visualizations."
+        },
+        {
+          "question": "sns.catplot() handles?",
+          "options": [
+            "Categorical variables with various plot types",
+            "Continuous only",
+            "Time series",
+            "3D plots"
+          ],
+          "correctAnswer": 0,
+          "explanation": "catplot() is figure-level interface for categorical plots."
+        },
+        {
+          "question": "Color palette customization in Seaborn?",
+          "options": [
+            "sns.palette()",
+            "sns.set_palette()",
+            "sns.color()",
+            "sns.theme()"
+          ],
+          "correctAnswer": 1,
+          "explanation": "set_palette() defines custom color schemes."
+        },
+        {
+          "question": "What does plt.xlabel() do?",
+          "options": [
+            "Sets title",
+            "Creates legend",
+            "Labels x-axis",
+            "Adds grid"
+          ],
+          "correctAnswer": 2,
+          "explanation": "xlabel() sets label text for x-axis."
+        },
+        {
+          "question": "Heatmap annotation parameter?",
+          "options": [
+            "label",
+            "text",
+            "show",
+            "annot"
+          ],
+          "correctAnswer": 3,
+          "explanation": "annot=True displays values in heatmap cells."
+        }
+      ]
+    },
+    {
+      "id": "sql-databases",
+      "title": "SQL & Databases (2-3 weeks)",
+      "description": "Master SQL queries, joins, aggregations, and window functions. Learn to extract and analyze data from relational databases.",
+      "resources": [
+        {
+          "title": "SQL Tutorial",
+          "url": "https://www.codewithharry.com/blogpost/the-ultimate-sql-course",
+          "type": "Interactive",
+          "note": "BEST Interactive"
+        },
+        {
+          "title": "SQL Full Course",
+          "url": "https://www.youtube.com/embed/HXV3zeQKqGY?si=H03ViZOk6MYX3h9t",
+          "type": "Video",
+          "duration": "4 hours"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which SQL command retrieves data from a database?",
+          "options": [
+            "SELECT",
+            "GET",
+            "FETCH",
+            "RETRIEVE"
+          ],
+          "correctAnswer": 0,
+          "explanation": "SELECT is the SQL command used to query and retrieve data from database tables."
+        },
+        {
+          "question": "What does the WHERE clause do in SQL?",
+          "options": [
+            "Sorts results",
+            "Filters rows based on conditions",
+            "Groups data",
+            "Joins tables"
+          ],
+          "correctAnswer": 1,
+          "explanation": "WHERE clause filters rows that meet specified conditions in a SQL query."
+        },
+        {
+          "question": "Which JOIN returns all rows when there's a match in either table?",
+          "options": [
+            "INNER JOIN",
+            "LEFT JOIN",
+            "FULL OUTER JOIN",
+            "RIGHT JOIN"
+          ],
+          "correctAnswer": 2,
+          "explanation": "FULL OUTER JOIN returns all rows from both tables, filling NULLs where there's no match."
+        },
+        {
+          "question": "What does GROUP BY do?",
+          "options": [
+            "Sorts alphabetically",
+            "Filters data",
+            "Joins tables",
+            "Groups rows with same values for aggregation"
+          ],
+          "correctAnswer": 3,
+          "explanation": "GROUP BY groups rows that have the same values in specified columns for aggregate functions."
+        },
+        {
+          "question": "Which aggregate function counts the number of rows?",
+          "options": [
+            "COUNT()",
+            "SUM()",
+            "AVG()",
+            "MAX()"
+          ],
+          "correctAnswer": 0,
+          "explanation": "COUNT() returns the number of rows that match the specified criteria."
+        },
+        {
+          "question": "What is the purpose of the HAVING clause?",
+          "options": [
+            "Sort results",
+            "Filter groups after aggregation",
+            "Join tables",
+            "Create tables"
+          ],
+          "correctAnswer": 1,
+          "explanation": "HAVING filters groups created by GROUP BY, unlike WHERE which filters individual rows."
+        },
+        {
+          "question": "Which SQL clause sorts query results?",
+          "options": [
+            "SORT BY",
+            "ARRANGE",
+            "ORDER BY",
+            "GROUP BY"
+          ],
+          "correctAnswer": 2,
+          "explanation": "ORDER BY sorts the result set by one or more columns in ascending or descending order."
+        },
+        {
+          "question": "What does INNER JOIN return?",
+          "options": [
+            "All rows from left table",
+            "All rows from right table",
+            "All rows from both tables",
+            "Only matching rows from both tables"
+          ],
+          "correctAnswer": 3,
+          "explanation": "INNER JOIN returns only rows that have matching values in both tables."
+        },
+        {
+          "question": "What is a window function in SQL?",
+          "options": [
+            "Function that performs calculations across row sets",
+            "Opens database window",
+            "Deletes windows",
+            "Creates views"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Window functions perform calculations across a set of rows related to the current row without grouping."
+        },
+        {
+          "question": "Which keyword removes duplicate rows from results?",
+          "options": [
+            "UNIQUE",
+            "DISTINCT",
+            "REMOVE",
+            "FILTER"
+          ],
+          "correctAnswer": 1,
+          "explanation": "DISTINCT eliminates duplicate rows from the query result set."
+        },
+        {
+          "question": "Which aggregate ignores NULL values?",
+          "options": [
+            "None ignore NULL",
+            "Only COUNT(*)",
+            "All aggregates ignore NULL",
+            "Only SUM"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Aggregates like SUM, AVG skip NULLs; COUNT(*) counts rows."
+        },
+        {
+          "question": "Subquery in SELECT clause returns?",
+          "options": [
+            "Multiple rows always",
+            "Entire table",
+            "NULL only",
+            "Single value typically"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Scalar subquery in SELECT must return single value."
+        },
+        {
+          "question": "CREATE INDEX purpose?",
+          "options": [
+            "Speed up query retrieval",
+            "Delete data",
+            "Encrypt columns",
+            "Create backups"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Indexes accelerate search/join operations."
+        },
+        {
+          "question": "UNION vs UNION ALL?",
+          "options": [
+            "No difference",
+            "UNION removes duplicates; UNION ALL keeps all",
+            "UNION is faster always",
+            "UNION ALL sorts"
+          ],
+          "correctAnswer": 1,
+          "explanation": "UNION deduplicates; UNION ALL faster, keeps duplicates."
+        },
+        {
+          "question": "CASE statement provides?",
+          "options": [
+            "Loop structure",
+            "Error handling",
+            "Conditional logic in queries",
+            "Index creation"
+          ],
+          "correctAnswer": 2,
+          "explanation": "CASE implements if-then-else logic in SQL."
+        },
+        {
+          "question": "Primary vs foreign key?",
+          "options": [
+            "Same thing",
+            "Foreign is faster",
+            "Primary allows NULLs",
+            "Primary uniquely identifies row; foreign references another table's primary"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Primary key unique identifier; foreign key enforces referential integrity."
+        },
+        {
+          "question": "Which JOIN keeps all left table rows?",
+          "options": [
+            "LEFT",
+            "INNER",
+            "RIGHT",
+            "CROSS"
+          ],
+          "correctAnswer": 0,
+          "explanation": "LEFT JOIN retains all rows from left table."
+        },
+        {
+          "question": "What does LIMIT clause do?",
+          "options": [
+            "Filters rows by condition",
+            "Restricts number of returned rows",
+            "Sorts results",
+            "Groups data"
+          ],
+          "correctAnswer": 1,
+          "explanation": "LIMIT caps result set size."
+        },
+        {
+          "question": "Nested SELECT also called?",
+          "options": [
+            "JOIN",
+            "View",
+            "Subquery",
+            "Index"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Subquery is query nested inside another query."
+        },
+        {
+          "question": "COALESCE() function returns?",
+          "options": [
+            "NULL always",
+            "Concatenated string",
+            "Sum of values",
+            "First non-NULL value in list"
+          ],
+          "correctAnswer": 3,
+          "explanation": "COALESCE returns first non-NULL argument."
+        }
+      ]
+    },
+    {
+      "id": "statistical-analysis",
+      "title": "Statistical Analysis (4-6 weeks)",
+      "description": "Learn hypothesis testing, p-values, confidence intervals, A/B testing, and experimental design for data-driven decision making.",
+      "resources": [
+        {
+          "title": "StatQuest - Statistics",
+          "url": "https://www.youtube.com/embed/videoseries?si=GJRX86YYqTndEJt-&amp;list=PLblh5JKOoLUK0FLuzwntyYI10UQFUhsY9",
+          "type": "Video",
+          "note": "BEST Playlist"
+        },
+        {
+          "title": "Confidence Intervals",
+          "url": "https://www.youtube.com/embed/TqOeMYtOc1w?si=etgCZ_qmUKAUE2qy",
+          "type": "Video",
+          "note": "StatQuest"
+        },
+        {
+          "title": "p-values and t-tests",
+          "url": "https://www.youtube.com/embed/JQc3yx0-Q9E?si=hvGB4_QFaH1iO-LH",
+          "type": "Video",
+          "note": "StatQuest"
+        },
+        {
+          "title": "Introduction to Statistics",
+          "url": "https://drive.uqu.edu.sa/_/mskhayat/files/MySubjects/20178FS%20Elementary%20Statistics/Introductory%20Statistics%20(7th%20Ed).pdf",
+          "type": "Book"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is a p-value?",
+          "options": [
+            "Probability of observing data if null hypothesis is true",
+            "The mean value",
+            "The median",
+            "Sample size"
+          ],
+          "correctAnswer": 0,
+          "explanation": "P-value measures the probability of obtaining results at least as extreme as observed, assuming the null hypothesis is true."
+        },
+        {
+          "question": "What is the null hypothesis?",
+          "options": [
+            "The research hypothesis",
+            "Assumption of no effect or difference",
+            "Alternative hypothesis",
+            "The mean equals zero"
+          ],
+          "correctAnswer": 1,
+          "explanation": "The null hypothesis assumes there is no significant effect or difference between groups."
+        },
+        {
+          "question": "What does a 95% confidence interval mean?",
+          "options": [
+            "95% of data falls in range",
+            "Mean is 95%",
+            "95% confident true parameter is in interval",
+            "Error is 95%"
+          ],
+          "correctAnswer": 2,
+          "explanation": "A 95% CI means we're 95% confident the true population parameter lies within that interval."
+        },
+        {
+          "question": "What is Type I error?",
+          "options": [
+            "Failing to reject false null hypothesis",
+            "Calculation error",
+            "Sample too small",
+            "Rejecting true null hypothesis (false positive)"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Type I error is rejecting the null hypothesis when it's actually true (false positive)."
+        },
+        {
+          "question": "What test compares means of two independent groups?",
+          "options": [
+            "t-test",
+            "Chi-square test",
+            "ANOVA",
+            "Correlation test"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Independent samples t-test compares means between two unrelated groups."
+        },
+        {
+          "question": "What does ANOVA test?",
+          "options": [
+            "Correlation",
+            "Mean differences across 3+ groups",
+            "Variance",
+            "Median"
+          ],
+          "correctAnswer": 1,
+          "explanation": "ANOVA (Analysis of Variance) tests whether means of three or more groups differ significantly."
+        },
+        {
+          "question": "What is the significance level (alpha) commonly set to?",
+          "options": [
+            "0.5",
+            "0.95",
+            "0.05",
+            "1.0"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Alpha is commonly set to 0.05, meaning a 5% risk of Type I error."
+        },
+        {
+          "question": "What does correlation measure?",
+          "options": [
+            "Causation",
+            "Mean difference",
+            "Variance",
+            "Strength of linear relationship between variables"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Correlation measures the strength and direction of linear relationship between two variables."
+        },
+        {
+          "question": "What is the central limit theorem?",
+          "options": [
+            "Sample means approach normal distribution with large n",
+            "All data is normal",
+            "Median equals mean",
+            "Variance is constant"
+          ],
+          "correctAnswer": 0,
+          "explanation": "CLT states that sampling distribution of the mean approaches normal distribution as sample size increases."
+        },
+        {
+          "question": "What is A/B testing?",
+          "options": [
+            "Alphabetical testing",
+            "Comparing two versions to determine which performs better",
+            "Testing accuracy",
+            "Binary classification"
+          ],
+          "correctAnswer": 1,
+          "explanation": "A/B testing is an experiment comparing two versions to determine which performs better."
+        },
+        {
+          "question": "Chi-square test used for?",
+          "options": [
+            "Comparing means",
+            "Regression analysis",
+            "Testing independence of categorical variables",
+            "Time series"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Chi-square tests association between categorical variables."
+        },
+        {
+          "question": "What is statistical power?",
+          "options": [
+            "Sample size",
+            "Type I error rate",
+            "Mean value",
+            "Probability of detecting true effect"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Power = 1 - β; probability of rejecting false null."
+        },
+        {
+          "question": "One-tailed vs two-tailed test?",
+          "options": [
+            "One-tailed tests direction; two-tailed tests any difference",
+            "No difference",
+            "One is always better",
+            "Two-tailed is faster"
+          ],
+          "correctAnswer": 0,
+          "explanation": "One-tailed tests specific direction; two-tailed tests any deviation."
+        },
+        {
+          "question": "What is effect size?",
+          "options": [
+            "Sample size",
+            "Magnitude of difference/relationship",
+            "p-value",
+            "Confidence level"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Effect size quantifies practical significance beyond p-value."
+        },
+        {
+          "question": "Bootstrapping is?",
+          "options": [
+            "Database setup",
+            "Hypothesis test",
+            "Resampling method to estimate sampling distribution",
+            "Data cleaning"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Bootstrap resamples data to estimate variability."
+        },
+        {
+          "question": "Type II error is?",
+          "options": [
+            "Rejecting true null",
+            "Correct decision",
+            "Sample bias",
+            "Failing to reject false null (false negative)"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Type II error misses real effect."
+        },
+        {
+          "question": "Bonferroni correction addresses?",
+          "options": [
+            "Multiple comparison problem",
+            "Sample size",
+            "Outliers",
+            "Missing data"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Bonferroni adjusts alpha to control family-wise error rate."
+        },
+        {
+          "question": "Regression coefficient represents?",
+          "options": [
+            "Correlation only",
+            "Change in Y per unit change in X",
+            "Mean of Y",
+            "Variance"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Coefficient indicates slope/marginal effect."
+        },
+        {
+          "question": "Residuals in regression are?",
+          "options": [
+            "Predicted values",
+            "Independent variables",
+            "Differences between observed and predicted values",
+            "Correlation values"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Residuals measure prediction errors."
+        },
+        {
+          "question": "What assumption does t-test require?",
+          "options": [
+            "Categorical data",
+            "Infinite sample",
+            "No variance",
+            "Approximately normal distribution"
+          ],
+          "correctAnswer": 3,
+          "explanation": "t-test assumes normality (or large n via CLT)."
+        }
+      ]
+    },
+    {
+      "id": "classical-ml",
+      "title": "Classical Machine Learning (6-8 weeks)",
+      "description": "Master supervised and unsupervised learning algorithms: regression, classification, clustering, dimensionality reduction, model evaluation, and validation techniques.",
+      "resources": [
+        {
+          "title": "Machine Learning Course",
+          "url": "https://www.youtube.com/embed/videoseries?si=gZmF73KdtaHMfS2r&amp;list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T",
+          "type": "Video",
+          "note": "Gate Smashers"
+        },
+        {
+          "title": "Scikit-learn Machine Learning Guide",
+          "url": "https://scikit-learn.org/stable/user_guide.html",
+          "type": "Article"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which algorithm is best for linear relationships?",
+          "options": [
+            "Linear Regression",
+            "Decision Tree",
+            "K-Means",
+            "SVM"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Linear Regression models linear relationships between features and target variable."
+        },
+        {
+          "question": "What type of learning is K-Means clustering?",
+          "options": [
+            "Supervised",
+            "Unsupervised",
+            "Reinforcement",
+            "Semi-supervised"
+          ],
+          "correctAnswer": 1,
+          "explanation": "K-Means is an unsupervised learning algorithm that groups data without labeled targets."
+        },
+        {
+          "question": "What does a Decision Tree split on?",
+          "options": [
+            "Random features",
+            "First feature",
+            "Features that maximize information gain",
+            "Last feature"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Decision Trees split on features that provide maximum information gain or reduce impurity most."
+        },
+        {
+          "question": "Which algorithm uses support vectors?",
+          "options": [
+            "Logistic Regression",
+            "Random Forest",
+            "K-Means",
+            "SVM (Support Vector Machine)"
+          ],
+          "correctAnswer": 3,
+          "explanation": "SVM finds the optimal hyperplane using support vectors (data points closest to decision boundary)."
+        },
+        {
+          "question": "What is the purpose of Random Forest?",
+          "options": [
+            "Ensemble of decision trees for better predictions",
+            "Single tree",
+            "Clustering",
+            "Dimensionality reduction"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Random Forest combines multiple decision trees to improve accuracy and reduce overfitting."
+        },
+        {
+          "question": "Which metric is used for classification accuracy?",
+          "options": [
+            "MSE",
+            "F1-score",
+            "R-squared",
+            "MAE"
+          ],
+          "correctAnswer": 1,
+          "explanation": "F1-score is the harmonic mean of precision and recall, ideal for classification evaluation."
+        },
+        {
+          "question": "What does regularization prevent?",
+          "options": [
+            "Underfitting",
+            "Data loss",
+            "Overfitting",
+            "Slow training"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Regularization adds penalty terms to prevent models from overfitting training data."
+        },
+        {
+          "question": "Which algorithm is best for non-linear decision boundaries?",
+          "options": [
+            "Linear Regression",
+            "Logistic Regression",
+            "Linear SVM",
+            "SVM with kernel"
+          ],
+          "correctAnswer": 3,
+          "explanation": "SVM with kernel trick (e.g., RBF) can handle complex non-linear decision boundaries."
+        },
+        {
+          "question": "What is the purpose of cross-validation?",
+          "options": [
+            "Validate model on multiple train/test splits",
+            "Clean data",
+            "Feature selection",
+            "Speed up training"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Cross-validation assesses model performance by training on multiple different train/test splits."
+        },
+        {
+          "question": "What does the 'K' in K-Nearest Neighbors represent?",
+          "options": [
+            "Number of features",
+            "Number of nearest neighbors to consider",
+            "Number of clusters",
+            "Kernel type"
+          ],
+          "correctAnswer": 1,
+          "explanation": "K represents the number of nearest neighbors used to make predictions in KNN algorithm."
+        },
+        {
+          "question": "Precision vs Recall?",
+          "options": [
+            "Same metric",
+            "Precision is always higher",
+            "Precision: TP/(TP+FP); Recall: TP/(TP+FN)",
+            "Recall measures speed"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Precision measures accuracy of positives; recall measures coverage."
+        },
+        {
+          "question": "What is overfitting?",
+          "options": [
+            "Model too simple",
+            "Perfect model",
+            "Fast training",
+            "Model memorizes training data, poor generalization"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Overfitting: high training accuracy, low test accuracy."
+        },
+        {
+          "question": "Lasso vs Ridge regularization?",
+          "options": [
+            "Lasso uses L1 (sparse); Ridge uses L2 (shrinkage)",
+            "Same penalty",
+            "Lasso is always better",
+            "Ridge removes features"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Lasso can zero coefficients; Ridge shrinks uniformly."
+        },
+        {
+          "question": "What is ensemble learning?",
+          "options": [
+            "Single model",
+            "Combining multiple models for better predictions",
+            "Data preprocessing",
+            "Feature selection"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Ensemble aggregates predictions from multiple models."
+        },
+        {
+          "question": "Bagging vs Boosting?",
+          "options": [
+            "Identical",
+            "Bagging is supervised only",
+            "Bagging parallel; Boosting sequential with error correction",
+            "Boosting ignores errors"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Bagging reduces variance; boosting reduces bias iteratively."
+        },
+        {
+          "question": "Gradient Descent updates?",
+          "options": [
+            "Random weights",
+            "All weights to zero",
+            "Fixed weights",
+            "Weights in direction reducing loss"
+          ],
+          "correctAnswer": 3,
+          "explanation": "GD follows negative gradient to minimize loss."
+        },
+        {
+          "question": "Elbow method determines?",
+          "options": [
+            "Optimal number of clusters",
+            "Learning rate",
+            "Regularization strength",
+            "Sample size"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Elbow identifies K where inertia reduction slows."
+        },
+        {
+          "question": "What is cross-entropy loss?",
+          "options": [
+            "Regression metric",
+            "Classification loss measuring predicted vs true distribution",
+            "Clustering metric",
+            "Dimensionality reduction"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Cross-entropy quantifies classification error probability."
+        },
+        {
+          "question": "Silhouette score measures?",
+          "options": [
+            "Classification accuracy",
+            "Regression error",
+            "Cluster quality and separation",
+            "Feature importance"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Silhouette assesses cohesion and separation in clustering."
+        },
+        {
+          "question": "Learning rate controls?",
+          "options": [
+            "Sample size",
+            "Number of features",
+            "Batch size",
+            "Step size in gradient descent"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Learning rate scales weight updates during optimization."
+        }
+      ]
+    },
+    {
+      "id": "feature-engineering",
+      "title": "Feature Engineering (2-3 weeks)",
+      "description": "Learn feature scaling, encoding categorical variables, feature selection, handling imbalanced data, and dimensionality reduction techniques.",
+      "resources": [
+        {
+          "title": "scikit-learn Preprocessing",
+          "url": "https://scikit-learn.org/stable/modules/preprocessing.html",
+          "type": "Article",
+          "note": "Scaling & Normalization"
+        },
+        {
+          "title": "OneHotEncoder",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html",
+          "type": "Article"
+        },
+        {
+          "title": "Feature Selection",
+          "url": "https://scikit-learn.org/stable/modules/feature_selection.html",
+          "type": "Article"
+        },
+        {
+          "title": "Imbalanced Data",
+          "url": "https://imbalanced-learn.org/stable/",
+          "type": "Article",
+          "note": "imbalanced-learn"
+        },
+        {
+          "title": "Dimensionality Reduction",
+          "url": "https://scikit-learn.org/stable/modules/decomposition.html",
+          "type": "Article"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is feature scaling?",
+          "options": [
+            "Transforming features to similar scale",
+            "Deleting features",
+            "Adding features",
+            "Renaming features"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Feature scaling normalizes or standardizes features to similar ranges for better model performance."
+        },
+        {
+          "question": "What does one-hot encoding do?",
+          "options": [
+            "Scales numbers",
+            "Converts categorical variables to binary vectors",
+            "Removes outliers",
+            "Fills missing values"
+          ],
+          "correctAnswer": 1,
+          "explanation": "One-hot encoding converts categorical variables into binary (0/1) columns for each category."
+        },
+        {
+          "question": "Which scaling method normalizes to range [0, 1]?",
+          "options": [
+            "StandardScaler",
+            "RobustScaler",
+            "MinMaxScaler",
+            "Normalizer"
+          ],
+          "correctAnswer": 2,
+          "explanation": "MinMaxScaler transforms features to a fixed range, typically [0, 1]."
+        },
+        {
+          "question": "What is label encoding?",
+          "options": [
+            "Scaling features",
+            "Deleting labels",
+            "Adding labels",
+            "Converting categories to numbers"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Label encoding assigns a unique integer to each category in a categorical variable."
+        },
+        {
+          "question": "What does StandardScaler do?",
+          "options": [
+            "Mean=0, std=1",
+            "Range [0,1]",
+            "Removes outliers",
+            "Encodes categories"
+          ],
+          "correctAnswer": 0,
+          "explanation": "StandardScaler transforms features to have mean 0 and standard deviation 1."
+        },
+        {
+          "question": "What is feature selection?",
+          "options": [
+            "Creating new features",
+            "Choosing most relevant features",
+            "Deleting all features",
+            "Scaling features"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Feature selection identifies and keeps only the most relevant features for the model."
+        },
+        {
+          "question": "Which technique creates new features from existing ones?",
+          "options": [
+            "Feature deletion",
+            "Feature scaling",
+            "Feature extraction",
+            "Feature encoding"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Feature extraction creates new features by transforming or combining existing features (e.g., PCA)."
+        },
+        {
+          "question": "What is the curse of dimensionality?",
+          "options": [
+            "Too few features",
+            "Data is clean",
+            "Model is simple",
+            "Performance degradation with too many features"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Curse of dimensionality: as features increase, data becomes sparse and models perform poorly."
+        },
+        {
+          "question": "What does PCA (Principal Component Analysis) do?",
+          "options": [
+            "Reduces dimensionality while preserving variance",
+            "Adds features",
+            "Encodes categories",
+            "Scales data"
+          ],
+          "correctAnswer": 0,
+          "explanation": "PCA reduces the number of features by projecting data onto principal components that capture maximum variance."
+        },
+        {
+          "question": "What is the purpose of handling missing values?",
+          "options": [
+            "Slow down model",
+            "Improve data quality and model performance",
+            "Add complexity",
+            "Delete dataset"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Handling missing values (imputation or removal) prevents errors and improves model accuracy."
+        },
+        {
+          "question": "Target encoding is?",
+          "options": [
+            "Scaling features",
+            "Deleting features",
+            "Encoding categories by target mean",
+            "Normalizing"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Target encoding replaces category with aggregated target statistic."
+        },
+        {
+          "question": "Polynomial features create?",
+          "options": [
+            "Linear combinations",
+            "Scaled values",
+            "Encoded categories",
+            "Interaction and higher-degree terms"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Polynomial features add x², x³, x₁x₂, etc."
+        },
+        {
+          "question": "Feature hashing does?",
+          "options": [
+            "Maps features to fixed-size vector via hash function",
+            "Encrypts data",
+            "Deletes features",
+            "Scales values"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Hashing handles high-cardinality categories efficiently."
+        },
+        {
+          "question": "Binning (discretization) groups?",
+          "options": [
+            "Categories into numbers",
+            "Continuous values into discrete bins",
+            "Features into clusters",
+            "Outliers only"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Binning converts continuous to categorical ranges."
+        },
+        {
+          "question": "Log transformation reduces?",
+          "options": [
+            "Number of features",
+            "Sample size",
+            "Skewness in distribution",
+            "Categorical levels"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Log transform makes right-skewed data more symmetric."
+        },
+        {
+          "question": "Variance threshold removes?",
+          "options": [
+            "High variance features",
+            "All features",
+            "Outliers",
+            "Low or zero variance features"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Low variance features provide little information."
+        },
+        {
+          "question": "SMOTE technique addresses?",
+          "options": [
+            "Class imbalance by synthetic oversampling",
+            "Overfitting",
+            "Missing values",
+            "Dimensionality"
+          ],
+          "correctAnswer": 0,
+          "explanation": "SMOTE generates synthetic minority class samples."
+        },
+        {
+          "question": "Interaction features capture?",
+          "options": [
+            "Individual effects only",
+            "Combined effect of multiple features",
+            "Target variable",
+            "Noise"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Interaction terms (e.g., x₁×x₂) model joint effects."
+        },
+        {
+          "question": "IQR method detects?",
+          "options": [
+            "Missing values",
+            "Categorical levels",
+            "Outliers beyond Q1-1.5×IQR and Q3+1.5×IQR",
+            "Correlation"
+          ],
+          "correctAnswer": 2,
+          "explanation": "IQR identifies values outside whisker range as outliers."
+        },
+        {
+          "question": "Why apply same scaler to train and test?",
+          "options": [
+            "No reason",
+            "Faster computation",
+            "Better accuracy always",
+            "Prevent data leakage and ensure consistency"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Fit scaler on train, transform both to avoid leakage."
+        }
+      ]
+    },
+    {
+      "id": "deep-learning",
+      "title": "Neural Networks & Deep Learning (6-8 weeks)",
+      "description": "Master neural network fundamentals, backpropagation, CNNs, RNNs, LSTMs, Transformers. Learn PyTorch and TensorFlow frameworks.",
+      "resources": [
+        {
+          "title": "Neural Networks by 3Blue1Brown",
+          "url": "https://www.youtube.com/embed/videoseries?si=oOkweL4Mupe4pjDz&amp;list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi",
+          "type": "Video",
+          "note": "BEST Intuition"
+        },
+        {
+          "title": "PyTorch Official Tutorials",
+          "url": "https://pytorch.org/tutorials/",
+          "type": "Article"
+        },
+        {
+          "title": "TensorFlow Official Tutorials",
+          "url": "https://www.tensorflow.org/tutorials",
+          "type": "Article"
+        },
+        {
+          "title": "Understanding LSTMs",
+          "url": "https://colah.github.io/posts/2015-08-Understanding-LSTMs/",
+          "type": "Article"
+        },
+        {
+          "title": "Illustrated Transformer",
+          "url": "https://jalammar.github.io/illustrated-transformer/",
+          "type": "Article"
+        },
+        {
+          "title": "Deep Learning Book",
+          "url": "https://www.deeplearningbook.org/",
+          "type": "Book",
+          "note": "Free"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is a neural network?",
+          "options": [
+            "Network of interconnected neurons/nodes that learn patterns",
+            "Database structure",
+            "Cloud network",
+            "Decision tree"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Neural networks are computational models inspired by biological neurons that learn patterns from data."
+        },
+        {
+          "question": "What is backpropagation?",
+          "options": [
+            "Moving forward through network",
+            "Algorithm to calculate gradients and update weights",
+            "Data preprocessing",
+            "Feature selection"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Backpropagation computes gradients of loss with respect to weights and propagates errors backward."
+        },
+        {
+          "question": "Which activation function is commonly used in hidden layers?",
+          "options": [
+            "Sigmoid",
+            "Softmax",
+            "ReLU",
+            "Linear"
+          ],
+          "correctAnswer": 2,
+          "explanation": "ReLU (Rectified Linear Unit) is widely used in hidden layers due to its computational efficiency."
+        },
+        {
+          "question": "What is a CNN (Convolutional Neural Network) best for?",
+          "options": [
+            "Time series",
+            "Text processing",
+            "Tabular data",
+            "Image processing"
+          ],
+          "correctAnswer": 3,
+          "explanation": "CNNs excel at image processing through convolutional layers that detect spatial patterns."
+        },
+        {
+          "question": "What does an RNN (Recurrent Neural Network) handle?",
+          "options": [
+            "Sequential data like text or time series",
+            "Images",
+            "Static data",
+            "Clustering"
+          ],
+          "correctAnswer": 0,
+          "explanation": "RNNs process sequential data by maintaining hidden states that capture temporal dependencies."
+        },
+        {
+          "question": "What is dropout in neural networks?",
+          "options": [
+            "Data loss",
+            "Regularization technique that randomly deactivates neurons",
+            "Optimizer",
+            "Activation function"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Dropout randomly deactivates neurons during training to prevent overfitting."
+        },
+        {
+          "question": "What optimizer is commonly used in deep learning?",
+          "options": [
+            "SGD",
+            "Adam",
+            "All of the above",
+            "RMSprop"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Adam, SGD, and RMSprop are all popular optimizers, with Adam being widely used for its efficiency."
+        },
+        {
+          "question": "What is the vanishing gradient problem?",
+          "options": [
+            "Gradients too large",
+            "No gradients",
+            "Perfect gradients",
+            "Gradients become too small during backpropagation"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Vanishing gradients occur when gradients become too small, preventing deep layers from learning."
+        },
+        {
+          "question": "What architecture revolutionized NLP?",
+          "options": [
+            "Transformers",
+            "CNN",
+            "RNN",
+            "Autoencoders"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Transformers with attention mechanisms revolutionized NLP, enabling models like GPT and BERT."
+        },
+        {
+          "question": "What is transfer learning?",
+          "options": [
+            "Training from scratch",
+            "Using pretrained models for new tasks",
+            "Data transfer",
+            "Feature deletion"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Transfer learning leverages pretrained models (e.g., ResNet, BERT) for new related tasks."
+        },
+        {
+          "question": "Batch normalization does?",
+          "options": [
+            "Deletes batches",
+            "Increases batch size",
+            "Normalizes inputs to layers for stable training",
+            "Removes activations"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Batch norm standardizes layer inputs reducing internal covariate shift."
+        },
+        {
+          "question": "What is gradient clipping?",
+          "options": [
+            "Removing gradients",
+            "Increasing gradients",
+            "Gradient descent variant",
+            "Limiting gradient magnitude to prevent exploding gradients"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Clipping caps gradients avoiding numerical instability."
+        },
+        {
+          "question": "Softmax activation used for?",
+          "options": [
+            "Multi-class classification outputting probabilities",
+            "Binary classification",
+            "Regression",
+            "Hidden layers"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Softmax converts logits to probability distribution over classes."
+        },
+        {
+          "question": "What is transfer learning?",
+          "options": [
+            "Training from scratch",
+            "Reusing pretrained model weights for new task",
+            "Data transfer",
+            "Model compression"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Transfer learning leverages learned features from related tasks."
+        },
+        {
+          "question": "Early stopping prevents?",
+          "options": [
+            "Underfitting",
+            "Fast training",
+            "Overfitting by halting when validation loss stops improving",
+            "Data leakage"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Early stopping monitors validation metric to stop before overfitting."
+        },
+        {
+          "question": "ResNet introduced?",
+          "options": [
+            "Dropout",
+            "Softmax",
+            "Pooling",
+            "Skip connections (residual blocks)"
+          ],
+          "correctAnswer": 3,
+          "explanation": "ResNet skip connections ease training of very deep networks."
+        },
+        {
+          "question": "Attention mechanism allows?",
+          "options": [
+            "Focusing on relevant input parts",
+            "Deleting tokens",
+            "Encrypting data",
+            "Removing layers"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Attention weights input importance dynamically."
+        },
+        {
+          "question": "Embedding layer converts?",
+          "options": [
+            "Images to vectors",
+            "Categorical tokens to dense vectors",
+            "Vectors to images",
+            "Numbers to categories"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Embeddings map discrete tokens to continuous representations."
+        },
+        {
+          "question": "GAN consists of?",
+          "options": [
+            "One network",
+            "Encoder only",
+            "Generator and discriminator competing",
+            "Clustering algorithm"
+          ],
+          "correctAnswer": 2,
+          "explanation": "GAN trains generator vs discriminator in adversarial setup."
+        },
+        {
+          "question": "What is learning rate decay?",
+          "options": [
+            "Constant rate",
+            "Increasing rate",
+            "Removing optimizer",
+            "Gradually reducing learning rate during training"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Decay refines convergence by smaller steps over time."
+        }
+      ]
+    },
+    {
+      "id": "specialized-topics",
+      "title": "Specialized Topics: CV & NLP (4-6 weeks)",
+      "description": "Dive into Computer Vision with CNNs and transfer learning, or Natural Language Processing with Transformers, BERT, and Hugging Face.",
+      "resources": [
+        {
+          "title": "CNNs (Convolutional Neural Networks)",
+          "url": "https://www.youtube.com/embed/YRhxdVk_sIs?si=2ua63qd-kwknOqhk",
+          "type": "Video"
+        },
+        {
+          "title": "Transfer Learning Tutorial",
+          "url": "https://pytorch.org/tutorials/beginner/transfer_learning_tutorial.html",
+          "type": "Article"
+        },
+        {
+          "title": "PyImageSearch",
+          "url": "https://www.youtube.com/embed/01sAkU_NvOY?si=yW_zC_fCC8CCkS8p",
+          "type": "Video",
+          "note": "CV Tutorials"
+        },
+        {
+          "title": "Natural Language Processing (NLP)",
+          "url": "https://www.youtube.com/embed/XSSTuhyAmnI?si=2gEWlJCNlkb731Tp",
+          "type": "Video"
+        },
+        {
+          "title": "Hugging Face ",
+          "url": "https://www.youtube.com/embed/QEaBAZQCtwE?si=iiCxT--OGGfXr1Iy",
+          "type": "Video",
+          "note": "Transformers"
+        },
+        {
+          "title": "spaCy Official Course",
+          "url": "https://course.spacy.io/en/",
+          "type": "Course"
+        },
+        {
+          "title": "Text Classification",
+          "url": "https://www.youtube.com/embed/UJGxCsZgalA?si=FzfAGhJ2yJzKDbTJ",
+          "type": "Video"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does a convolutional layer in CNN do?",
+          "options": [
+            "Extracts spatial features using filters",
+            "Classifies images",
+            "Reduces dimensions only",
+            "Normalizes data"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Convolutional layers apply filters to extract spatial features like edges and patterns from images."
+        },
+        {
+          "question": "What is transfer learning in Computer Vision?",
+          "options": [
+            "Training from scratch",
+            "Using pretrained models like ResNet or VGG",
+            "Transferring images",
+            "Data augmentation"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Transfer learning uses models pretrained on large datasets (e.g., ImageNet) for new CV tasks."
+        },
+        {
+          "question": "What is tokenization in NLP?",
+          "options": [
+            "Encrypting text",
+            "Deleting words",
+            "Breaking text into smaller units (tokens)",
+            "Translating text"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Tokenization splits text into smaller units like words, subwords, or characters for processing."
+        },
+        {
+          "question": "What model architecture is BERT based on?",
+          "options": [
+            "CNN",
+            "RNN",
+            "LSTM",
+            "Transformer"
+          ],
+          "correctAnswer": 3,
+          "explanation": "BERT (Bidirectional Encoder Representations from Transformers) is based on Transformer architecture."
+        },
+        {
+          "question": "What is the purpose of max pooling in CNNs?",
+          "options": [
+            "Reduce spatial dimensions and retain important features",
+            "Increase image size",
+            "Add colors",
+            "Encrypt data"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Max pooling reduces spatial dimensions by keeping maximum values, making model more efficient."
+        },
+        {
+          "question": "What is word embedding?",
+          "options": [
+            "Deleting words",
+            "Vector representation of words capturing semantic meaning",
+            "Counting words",
+            "Translating words"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Word embeddings (e.g., Word2Vec, GloVe) represent words as dense vectors capturing semantic relationships."
+        },
+        {
+          "question": "What is data augmentation in Computer Vision?",
+          "options": [
+            "Deleting images",
+            "Compressing images",
+            "Increasing dataset by applying transformations",
+            "Converting to grayscale"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Data augmentation artificially increases training data through rotations, flips, crops, etc."
+        },
+        {
+          "question": "What does attention mechanism in Transformers do?",
+          "options": [
+            "Deletes tokens",
+            "Encrypts text",
+            "Counts words",
+            "Weighs importance of different tokens"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Attention mechanism allows models to focus on relevant parts of input when processing sequences."
+        },
+        {
+          "question": "What library is commonly used for NLP in Python?",
+          "options": [
+            "Hugging Face Transformers",
+            "NumPy",
+            "Pandas",
+            "Matplotlib"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Hugging Face Transformers provides pretrained NLP models like BERT, GPT, and easy-to-use APIs."
+        },
+        {
+          "question": "What is object detection?",
+          "options": [
+            "Classifying entire image",
+            "Locating and classifying multiple objects in image",
+            "Removing objects",
+            "Compressing images"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Object detection identifies and localizes multiple objects in images using bounding boxes."
+        },
+        {
+          "question": "YOLO algorithm is for?",
+          "options": [
+            "Text classification",
+            "Image generation",
+            "Real-time object detection",
+            "Clustering"
+          ],
+          "correctAnswer": 2,
+          "explanation": "YOLO (You Only Look Once) detects objects in single pass."
+        },
+        {
+          "question": "Data augmentation in CV includes?",
+          "options": [
+            "Only cropping",
+            "Deleting images",
+            "Encrypting pixels",
+            "Rotation, flip, crop, color jitter"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Augmentation artificially expands dataset with transformations."
+        },
+        {
+          "question": "BERT pre-training tasks?",
+          "options": [
+            "Masked language model and next sentence prediction",
+            "Only classification",
+            "Image captioning",
+            "Clustering"
+          ],
+          "correctAnswer": 0,
+          "explanation": "BERT learns via MLM and NSP objectives."
+        },
+        {
+          "question": "Named Entity Recognition (NER) identifies?",
+          "options": [
+            "Sentiment",
+            "Entities like person, location, organization",
+            "Grammar errors",
+            "Language"
+          ],
+          "correctAnswer": 1,
+          "explanation": "NER extracts and classifies named entities from text."
+        },
+        {
+          "question": "Semantic segmentation does?",
+          "options": [
+            "Classifies entire image",
+            "Detects bounding boxes",
+            "Assigns class to each pixel",
+            "Generates images"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Semantic segmentation labels every pixel with class."
+        },
+        {
+          "question": "What is fine-tuning?",
+          "options": [
+            "Training from scratch",
+            "Data cleaning",
+            "Feature selection",
+            "Adjusting pretrained model on specific task"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Fine-tuning adapts pretrained weights to new domain/task."
+        },
+        {
+          "question": "TF-IDF measures?",
+          "options": [
+            "Term frequency × inverse document frequency",
+            "Time series frequency",
+            "Image filter",
+            "Network traffic"
+          ],
+          "correctAnswer": 0,
+          "explanation": "TF-IDF weights term importance in document corpus."
+        },
+        {
+          "question": "U-Net architecture used for?",
+          "options": [
+            "Text generation",
+            "Image segmentation",
+            "Time series",
+            "Clustering"
+          ],
+          "correctAnswer": 1,
+          "explanation": "U-Net symmetric encoder-decoder for precise segmentation."
+        },
+        {
+          "question": "What does GPT stand for?",
+          "options": [
+            "General Purpose Transformer",
+            "Graph Processing Tool",
+            "Generative Pre-trained Transformer",
+            "Global Pooling Technique"
+          ],
+          "correctAnswer": 2,
+          "explanation": "GPT models generate text via autoregressive transformer."
+        },
+        {
+          "question": "Stemming vs Lemmatization?",
+          "options": [
+            "Same process",
+            "Stemming is always better",
+            "Lemmatization faster",
+            "Stemming chops suffix; lemmatization finds dictionary root"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Stemming cruder; lemmatization context-aware reduction."
+        }
+      ]
+    },
+    {
+      "id": "mlops-deployment",
+      "title": "MLOps & Model Deployment (3-4 weeks)",
+      "description": "Learn to deploy ML models with FastAPI/Flask, containerize with Docker, deploy to cloud (AWS/Render), and implement MLOps practices with MLflow.",
+      "resources": [
+        {
+          "title": "FastAPI Official Docs",
+          "url": "https://fastapi.tiangolo.com/",
+          "type": "Article",
+          "note": "Production APIs"
+        },
+        {
+          "title": "Flask REST API Tutorial",
+          "url": "https://flask.palletsprojects.com/en/3.0.x/tutorial/",
+          "type": "Article"
+        },
+        {
+          "title": "Model Persistence",
+          "url": "https://scikit-learn.org/stable/model_persistence.html",
+          "type": "Article",
+          "note": "joblib/pickle"
+        },
+        {
+          "title": "Docker Get Started",
+          "url": "https://www.youtube.com/embed/pTFZFxd4hOI?si=UADurY5SWftTcHBG",
+          "type": "Video"
+        },
+        {
+          "title": "Made With ML - MLOps",
+          "url": "https://madewithml.com/",
+          "type": "Article",
+          "note": "BEST"
+        },
+        {
+          "title": "Full Stack Deep Learning",
+          "url": "https://fullstackdeeplearning.com/",
+          "type": "course"
+        },
+        {
+          "title": "MLflow Tracking",
+          "url": "https://mlflow.org/docs/latest/index.html",
+          "type": "Article"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is MLOps?",
+          "options": [
+            "Practices for deploying and maintaining ML models in production",
+            "Machine learning only",
+            "Data collection",
+            "Model training only"
+          ],
+          "correctAnswer": 0,
+          "explanation": "MLOps combines ML, DevOps, and data engineering to deploy, monitor, and maintain models reliably."
+        },
+        {
+          "question": "What does Docker provide for ML deployment?",
+          "options": [
+            "Data storage",
+            "Containerization for consistent environments",
+            "Model training",
+            "Feature engineering"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Docker creates containers that package models with dependencies for consistent deployment across environments."
+        },
+        {
+          "question": "What is model versioning?",
+          "options": [
+            "Deleting models",
+            "Renaming models",
+            "Tracking different model versions and experiments",
+            "Training models"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Model versioning tracks model iterations, enabling rollbacks and experiment comparison."
+        },
+        {
+          "question": "What is FastAPI used for?",
+          "options": [
+            "Training models",
+            "Data visualization",
+            "Feature engineering",
+            "Building high-performance APIs for ML models"
+          ],
+          "correctAnswer": 3,
+          "explanation": "FastAPI is a modern Python framework for building fast APIs to serve ML model predictions."
+        },
+        {
+          "question": "What does model monitoring track in production?",
+          "options": [
+            "Performance degradation and data drift",
+            "Training speed",
+            "Code quality only",
+            "Developer activity"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Model monitoring tracks metrics like accuracy, latency, and data drift to ensure production reliability."
+        },
+        {
+          "question": "What is CI/CD in MLOps?",
+          "options": [
+            "Data collection",
+            "Continuous Integration and Deployment for automated model updates",
+            "Model training",
+            "Feature selection"
+          ],
+          "correctAnswer": 1,
+          "explanation": "CI/CD automates testing, validation, and deployment of ML models when code or data changes."
+        },
+        {
+          "question": "What is MLflow?",
+          "options": [
+            "Database",
+            "Web framework",
+            "Platform for managing ML lifecycle (tracking, deployment)",
+            "Data visualization tool"
+          ],
+          "correctAnswer": 2,
+          "explanation": "MLflow is an open-source platform for managing the ML lifecycle including experiments and deployments."
+        },
+        {
+          "question": "What is A/B testing in ML deployment?",
+          "options": [
+            "Testing accuracy only",
+            "Data cleaning",
+            "Feature engineering",
+            "Comparing two model versions in production"
+          ],
+          "correctAnswer": 3,
+          "explanation": "A/B testing compares two model versions by routing traffic to each and measuring performance."
+        },
+        {
+          "question": "What is feature store?",
+          "options": [
+            "Centralized repository for storing and serving features",
+            "Model storage",
+            "Data warehouse",
+            "Code repository"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Feature stores centralize feature engineering, ensuring consistency between training and serving."
+        },
+        {
+          "question": "What is model drift?",
+          "options": [
+            "Model moving locations",
+            "Performance degradation over time due to data changes",
+            "Training error",
+            "Code bugs"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Model drift occurs when production data distribution changes, degrading model performance over time."
+        },
+        {
+          "question": "What is blue-green deployment?",
+          "options": [
+            "Color coding",
+            "Data coloring",
+            "Two environments for zero-downtime switch",
+            "Model training"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Blue-green maintains parallel environments for safe rollover."
+        },
+        {
+          "question": "Canary deployment tests?",
+          "options": [
+            "All users immediately",
+            "No users",
+            "Random models",
+            "Small user subset before full rollout"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Canary limits exposure to new version initially."
+        },
+        {
+          "question": "Model registry stores?",
+          "options": [
+            "Versioned models with metadata",
+            "Only code",
+            "Data only",
+            "Logs"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Registry catalogs model artifacts, lineage, metrics."
+        },
+        {
+          "question": "Data drift means?",
+          "options": [
+            "Model accuracy drop",
+            "Input data distribution changes over time",
+            "Code bugs",
+            "Network latency"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Data drift degrades model relevance if unchecked."
+        },
+        {
+          "question": "What does Kubernetes provide?",
+          "options": [
+            "Database",
+            "Model training",
+            "Container orchestration at scale",
+            "Data storage"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Kubernetes automates deployment, scaling, management of containers."
+        },
+        {
+          "question": "SLA in ML services defines?",
+          "options": [
+            "Code standards",
+            "Data schema",
+            "Model architecture",
+            "Service Level Agreement (uptime, latency)"
+          ],
+          "correctAnswer": 3,
+          "explanation": "SLA contractually specifies performance guarantees."
+        },
+        {
+          "question": "Inference latency is?",
+          "options": [
+            "Time to generate prediction",
+            "Training time",
+            "Data loading time",
+            "Deployment duration"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Latency measures response time from request to prediction."
+        },
+        {
+          "question": "Model explainability tools include?",
+          "options": [
+            "Docker, Kubernetes",
+            "SHAP, LIME",
+            "NumPy, Pandas",
+            "Git, CI/CD"
+          ],
+          "correctAnswer": 1,
+          "explanation": "SHAP and LIME interpret model predictions locally/globally."
+        },
+        {
+          "question": "What is shadow mode deployment?",
+          "options": [
+            "Deleting models",
+            "Encryption",
+            "Running new model alongside old without serving predictions",
+            "Backup only"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Shadow mode logs new model outputs for comparison without risk."
+        },
+        {
+          "question": "Prometheus and Grafana used for?",
+          "options": [
+            "Model training",
+            "Data cleaning",
+            "Feature engineering",
+            "Monitoring metrics and visualization"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Prometheus collects metrics; Grafana visualizes dashboards."
+        }
+      ]
+    },
+    {
+      "id": "big-data-tools",
+      "title": "Big Data Tools - Spark (2-3 weeks, Optional)",
+      "description": "Learn Apache Spark with PySpark for large-scale data processing and distributed computing.",
+      "resources": [
+        {
+          "title": "PySpark Tutorial",
+          "url": "https://www.youtube.com/embed/_C8kWso4ne4?si=7Hl77GPvMzBQBCNi",
+          "type": "Video"
+        },
+        {
+          "title": "Spark Programming Guide",
+          "url": "https://spark.apache.org/docs/latest/rdd-programming-guide.html",
+          "type": "Article"
+        },
+        {
+          "title": "Databricks Community",
+          "url": "https://community.cloud.databricks.com/",
+          "type": "Article",
+          "note": "FREE"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is Apache Spark?",
+          "options": [
+            "Distributed computing framework for big data processing",
+            "Database",
+            "Web framework",
+            "Machine learning algorithm"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Apache Spark is an open-source distributed computing engine for processing large-scale data."
+        },
+        {
+          "question": "What is an RDD in Spark?",
+          "options": [
+            "Random Data Distribution",
+            "Resilient Distributed Dataset",
+            "Relational Database Design",
+            "Rapid Data Delivery"
+          ],
+          "correctAnswer": 1,
+          "explanation": "RDD (Resilient Distributed Dataset) is Spark's fundamental data structure, distributed across cluster."
+        },
+        {
+          "question": "What is PySpark?",
+          "options": [
+            "Python database",
+            "Python library for machine learning",
+            "Python API for Apache Spark",
+            "Python web framework"
+          ],
+          "correctAnswer": 2,
+          "explanation": "PySpark is the Python API for Apache Spark, enabling big data processing with Python."
+        },
+        {
+          "question": "What is lazy evaluation in Spark?",
+          "options": [
+            "Slow processing",
+            "Error in code",
+            "Immediate execution",
+            "Delaying computation until action is called"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Lazy evaluation delays execution of transformations until an action triggers computation."
+        },
+        {
+          "question": "What is a DataFrame in Spark?",
+          "options": [
+            "Distributed collection of data organized into named columns",
+            "Python list",
+            "SQL database",
+            "JSON file"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Spark DataFrame is a distributed collection organized into named columns, similar to database table."
+        },
+        {
+          "question": "What does map() transformation do in Spark?",
+          "options": [
+            "Filters data",
+            "Applies function to each element",
+            "Sorts data",
+            "Deletes elements"
+          ],
+          "correctAnswer": 1,
+          "explanation": "map() applies a function to each element in RDD, returning a new RDD with transformed elements."
+        },
+        {
+          "question": "What is the difference between transformation and action in Spark?",
+          "options": [
+            "No difference",
+            "Transformations are faster",
+            "Actions return results, transformations return new RDDs",
+            "Actions are deprecated"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Transformations (map, filter) are lazy and return RDDs; actions (collect, count) trigger execution."
+        },
+        {
+          "question": "What does reduce() action do?",
+          "options": [
+            "Deletes data",
+            "Filters data",
+            "Sorts data",
+            "Aggregates elements using a function"
+          ],
+          "correctAnswer": 3,
+          "explanation": "reduce() aggregates RDD elements using an associative and commutative function."
+        },
+        {
+          "question": "What is Spark SQL?",
+          "options": [
+            "Module for working with structured data using SQL",
+            "Database",
+            "Web framework",
+            "Visualization tool"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Spark SQL allows querying structured data using SQL or DataFrame API."
+        },
+        {
+          "question": "What is partitioning in Spark?",
+          "options": [
+            "Deleting data",
+            "Dividing data across cluster nodes for parallel processing",
+            "Sorting data",
+            "Compressing data"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Partitioning distributes data across cluster nodes, enabling parallel processing and scalability."
+        },
+        {
+          "question": "Spark runs on?",
+          "options": [
+            "Single machine only",
+            "Browser",
+            "Distributed cluster of machines",
+            "Database server"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Spark scales across cluster nodes for parallel processing."
+        },
+        {
+          "question": "What is Spark DAG?",
+          "options": [
+            "Database",
+            "Data format",
+            "Machine learning model",
+            "Directed Acyclic Graph of transformations"
+          ],
+          "correctAnswer": 3,
+          "explanation": "DAG represents execution plan optimized by Spark."
+        },
+        {
+          "question": "Spark broadcast variable?",
+          "options": [
+            "Efficiently shares read-only variable across nodes",
+            "Deletes data",
+            "Network protocol",
+            "Index type"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Broadcast caches large read-only data on each worker."
+        },
+        {
+          "question": "collect() action does?",
+          "options": [
+            "Deletes RDD",
+            "Sends all RDD data to driver",
+            "Saves to disk",
+            "Transforms RDD"
+          ],
+          "correctAnswer": 1,
+          "explanation": "collect() retrieves entire RDD to driver memory (use cautiously)."
+        },
+        {
+          "question": "Spark MLlib is?",
+          "options": [
+            "Web framework",
+            "Database",
+            "Machine learning library for Spark",
+            "Visualization tool"
+          ],
+          "correctAnswer": 2,
+          "explanation": "MLlib provides scalable ML algorithms on Spark."
+        },
+        {
+          "question": "Difference between cache() and persist()?",
+          "options": [
+            "No difference",
+            "cache() is deprecated",
+            "persist() slower",
+            "persist() allows storage level choice; cache() defaults to memory"
+          ],
+          "correctAnswer": 3,
+          "explanation": "persist() offers storage levels (memory, disk, both); cache() is shortcut."
+        },
+        {
+          "question": "Spark Streaming processes?",
+          "options": [
+            "Real-time data streams",
+            "Batch data only",
+            "Static files",
+            "Images"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Spark Streaming handles continuous data flows."
+        },
+        {
+          "question": "Narrow vs wide transformations?",
+          "options": [
+            "Same thing",
+            "Narrow: no shuffle; Wide: requires shuffle across partitions",
+            "Narrow is slower",
+            "Wide is deprecated"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Narrow ops stay within partition; wide ops shuffle data."
+        },
+        {
+          "question": "Spark executor is?",
+          "options": [
+            "Master node",
+            "Driver program",
+            "Worker process running tasks on cluster node",
+            "Database"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Executors run tasks and store RDD partitions."
+        },
+        {
+          "question": "filter() in Spark is?",
+          "options": [
+            "Action",
+            "Aggregation",
+            "Shuffle operation",
+            "Transformation returning subset"
+          ],
+          "correctAnswer": 3,
+          "explanation": "filter() is lazy transformation selecting matching elements."
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Customer Churn Prediction",
+      "description": "Build a machine learning model to predict customer churn using classification algorithms and feature engineering.",
+      "difficulty": "Beginner",
+      "duration": "2-3 weeks",
+      "skills": [
+        "Python",
+        "Pandas",
+        "Scikit-learn",
+        "Data Visualization",
+        "Logistic Regression"
+      ],
+      "tasks": [
+        "Perform exploratory data analysis on customer dataset",
+        "Handle missing values and outliers",
+        "Create new features from existing data",
+        "Train logistic regression and decision tree models",
+        "Evaluate models using accuracy, precision, and recall",
+        "Visualize feature importance and model results",
+        "Create a simple prediction interface"
+      ]
+    },
+    {
+      "title": "Movie Recommendation System",
+      "description": "Develop a collaborative filtering recommendation engine using user ratings and item similarities.",
+      "difficulty": "Intermediate",
+      "duration": "3-4 weeks",
+      "skills": [
+        "Python",
+        "NumPy",
+        "Pandas",
+        "Collaborative Filtering",
+        "Matrix Factorization",
+        "Surprise Library"
+      ],
+      "tasks": [
+        "Load and preprocess MovieLens dataset",
+        "Implement user-based collaborative filtering",
+        "Build item-based collaborative filtering",
+        "Apply matrix factorization (SVD)",
+        "Compare different recommendation algorithms",
+        "Evaluate using RMSE and MAE metrics",
+        "Build interactive recommendation dashboard",
+        "Deploy as Flask API"
+      ]
+    },
+    {
+      "title": "Sentiment Analysis on Social Media",
+      "description": "Create an NLP pipeline to analyze sentiment from tweets and classify them as positive, negative, or neutral.",
+      "difficulty": "Intermediate",
+      "duration": "3-4 weeks",
+      "skills": [
+        "Python",
+        "NLP",
+        "NLTK",
+        "spaCy",
+        "Transformers",
+        "Deep Learning",
+        "BERT"
+      ],
+      "tasks": [
+        "Collect tweets using Twitter API or dataset",
+        "Clean and preprocess text data",
+        "Perform tokenization and vectorization",
+        "Train traditional ML models (Naive Bayes, SVM)",
+        "Fine-tune pre-trained BERT model",
+        "Compare model performances",
+        "Visualize sentiment trends over time",
+        "Create real-time sentiment analysis dashboard"
+      ]
+    },
+    {
+      "title": "Image Classification with CNN",
+      "description": "Build a convolutional neural network to classify images into multiple categories with high accuracy.",
+      "difficulty": "Advanced",
+      "duration": "4-5 weeks",
+      "skills": [
+        "Python",
+        "TensorFlow/PyTorch",
+        "CNN",
+        "Transfer Learning",
+        "Data Augmentation",
+        "Model Deployment"
+      ],
+      "tasks": [
+        "Prepare and augment image dataset",
+        "Build CNN architecture from scratch",
+        "Implement transfer learning with ResNet/VGG",
+        "Apply data augmentation techniques",
+        "Use learning rate scheduling and regularization",
+        "Evaluate model with confusion matrix",
+        "Optimize model for inference speed",
+        "Deploy model using TensorFlow Serving or FastAPI",
+        "Create web interface for image upload and prediction"
+      ]
+    },
+    {
+      "title": "Time Series Forecasting System",
+      "description": "Develop a comprehensive forecasting system for sales prediction using ARIMA, Prophet, and LSTM models.",
+      "difficulty": "Advanced",
+      "duration": "5-6 weeks",
+      "skills": [
+        "Python",
+        "Time Series",
+        "ARIMA",
+        "Prophet",
+        "LSTM",
+        "Feature Engineering",
+        "Model Deployment"
+      ],
+      "tasks": [
+        "Perform time series decomposition and stationarity tests",
+        "Handle seasonality and trend components",
+        "Build ARIMA and SARIMA models",
+        "Implement Facebook Prophet for forecasting",
+        "Create LSTM model for sequence prediction",
+        "Compare model performances with cross-validation",
+        "Implement ensemble forecasting",
+        "Build confidence intervals for predictions",
+        "Create interactive dashboard with Plotly",
+        "Deploy as automated forecasting pipeline",
+        "Set up monitoring and alerting system"
+      ]
+    }
+  ]
+}

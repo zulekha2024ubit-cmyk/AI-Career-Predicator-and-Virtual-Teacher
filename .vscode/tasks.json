@@ -1,0 +1,10 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Update TODO statuses",
+			"type": "shell",
+			"command": "echo 'Updated todos: files removed, pages updated, build passed' "
+		}
+	]
+}

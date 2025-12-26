@@ -1,0 +1,1471 @@
+{
+  "slug": "full-stack-web-development",
+  "title": "Full Stack Web Development",
+  "summary": "Master both frontend and backend development, databases, APIs, and deployment to build complete web applications.",
+  "timeline": "8-12 months",
+  "difficulty": "Moderate to Advanced",
+  "steps": [
+    {
+      "id": "html-css",
+      "title": "HTML & CSS (3-4 weeks)",
+      "description": "Learn semantic HTML5, CSS Grid, Flexbox, responsive design, and CSS animations. Build 3+ practice projects including portfolio, landing page, and blog layout.",
+      "resources": [
+        { "title": "HTML Full Course", "url": "https://www.youtube.com/embed/kUMe1FH4CHE?si=3F-lLNr4EkfNheFk", "type": "Video"},
+        { "title": "CSS Complete Full Course", "url": "https://www.youtube.com/embed/OXGznpKZ_sA?si=oDUXc8CnbJGST5Yk", "type": "Video"},
+        { "title": "Flexbox Froggy", "url": "https://flexboxfroggy.com/", "type": "Interactive", "duration": "1 hour", "note": "Game-based Learning" },
+        { "title": "Grid Garden", "url": "https://cssgridgarden.com/", "type": "Interactive", "duration": "1 hour", "note": "Game-based Learning" },
+        { "title": "HTML Dog Tutorials", "url": "https://htmldog.com/", "type": "Article" }
+      ],
+      "quiz": [
+        {
+          "question": "What does HTML stand for?",
+          "options": ["HyperText Markup Language", "HighTech Modern Language", "HyperTool Media Language", "HomePage Text Markup Language"],
+          "correctAnswer": 0,
+          "explanation": "HTML (HyperText Markup Language) is the standard markup language for creating web pages."
+        },
+        {
+          "question": "Which HTML5 element is used for the main content of a document?",
+          "options": ["<section>", "<div>", "<article>", "<main>"],
+          "correctAnswer": 3,
+          "explanation": "The <main> element represents the dominant content of the body of a document."
+        },
+        {
+          "question": "What is the purpose of semantic HTML?",
+          "options": ["To make pages load faster", "To provide meaningful structure and improve accessibility", "To add animations", "To style elements"],
+          "correctAnswer": 1,
+          "explanation": "Semantic HTML uses meaningful tags that clearly describe their purpose, improving accessibility and SEO."
+        },
+        {
+          "question": "Which CSS property is used to change text color?",
+          "options": ["font-color", "text-color", "color", "foreground-color"],
+          "correctAnswer": 2,
+          "explanation": "The 'color' property sets the foreground color (usually text) of an element."
+        },
+        {
+          "question": "What does CSS stand for?",
+          "options": ["Computer Style Sheets", "Creative Style System", "Cascading Style Sheets", "Colorful Style Sheets"],
+          "correctAnswer": 2,
+          "explanation": "CSS stands for Cascading Style Sheets, used to style and layout web pages."
+        },
+        {
+          "question": "Which Flexbox property controls the direction of flex items?",
+          "options": ["flex-direction", "flex-flow", "flex-align", "direction"],
+          "correctAnswer": 0,
+          "explanation": "The flex-direction property defines the main axis direction: row, row-reverse, column, or column-reverse."
+        },
+        {
+          "question": "In CSS Grid, what does 'fr' unit represent?",
+          "options": ["Frame rate", "Fraction of available space", "Fixed ratio", "Font ratio"],
+          "correctAnswer": 1,
+          "explanation": "The 'fr' unit represents a fraction of the available space in the grid container."
+        },
+        {
+          "question": "Which property is used to align items along the cross axis in Flexbox?",
+          "options": ["justify-content", "align-content", "align-items", "cross-align"],
+          "correctAnswer": 2,
+          "explanation": "The align-items property aligns flex items along the cross axis of the flex container."
+        },
+        {
+          "question": "What is the correct syntax for a CSS media query for screens smaller than 768px?",
+          "options": ["@media screen and (min-width: 768px)", "@media (width < 768px)", "@media screen and (max-width: 768px)", "@media mobile"],
+          "correctAnswer": 2,
+          "explanation": "Media queries use max-width for upper bounds: @media screen and (max-width: 768px)."
+        },
+        {
+          "question": "Which CSS Box Model layer is between padding and margin?",
+          "options": ["Content", "Border", "Outline", "Background"],
+          "correctAnswer": 1,
+          "explanation": "The Box Model order from inside out is: content, padding, border, margin."
+        },
+        {
+          "question": "What is the default value of the position property in CSS?",
+          "options": ["relative", "absolute", "fixed", "static"],
+          "correctAnswer": 3,
+          "explanation": "The default position value is 'static', which follows the normal document flow."
+        },
+        {
+          "question": "Which CSS property creates rounded corners?",
+          "options": ["corner-radius", "border-radius", "round-corner", "edge-radius"],
+          "correctAnswer": 1,
+          "explanation": "The border-radius property creates rounded corners on elements."
+        },
+        {
+          "question": "What does the 'z-index' property control?",
+          "options": ["Font size", "Element opacity", "Stacking order of positioned elements", "Animation speed"],
+          "correctAnswer": 2,
+          "explanation": "The z-index property controls the stacking order of overlapping elements."
+        },
+        {
+          "question": "Which unit is relative to the viewport width?",
+          "options": ["em", "rem", "vw", "px"],
+          "correctAnswer": 2,
+          "explanation": "The 'vw' (viewport width) unit is 1% of the viewport's width."
+        },
+        {
+          "question": "What is the purpose of the 'alt' attribute in <img> tags?",
+          "options": ["To add alternative styling", "To provide alternative text for accessibility", "To set image alignment", "To enable image animations"],
+          "correctAnswer": 1,
+          "explanation": "The alt attribute provides alternative text when images cannot be displayed and for screen readers."
+        },
+        {
+          "question": "Which CSS property controls the space between lines of text?",
+          "options": ["line-height", "text-spacing", "letter-spacing", "word-spacing"],
+          "correctAnswer": 0,
+          "explanation": "The line-height property sets the amount of space between lines of text."
+        },
+        {
+          "question": "What does the CSS 'display: none' property do?",
+          "options": ["Makes element transparent", "Hides element but reserves space", "Completely removes element from layout", "Minimizes element size"],
+          "correctAnswer": 2,
+          "explanation": "display: none completely removes the element from the document flow, taking up no space."
+        },
+        {
+          "question": "Which HTML element creates an unordered list?",
+          "options": ["<list>", "<ol>", "<ul>", "<li>"],
+          "correctAnswer": 2,
+          "explanation": "The <ul> element creates an unordered (bulleted) list."
+        },
+        {
+          "question": "What is the correct way to link an external CSS file?",
+          "options": ["<style src='style.css'>", "<link rel='stylesheet' href='style.css'>", "<css>style.css</css>", "<stylesheet>style.css</stylesheet>"],
+          "correctAnswer": 1,
+          "explanation": "Use <link rel='stylesheet' href='style.css'> in the <head> section to link external CSS."
+        },
+        {
+          "question": "Which CSS pseudo-class targets an element on mouse hover?",
+          "options": [":active", ":focus", ":visited", ":hover"],
+          "correctAnswer": 3,
+          "explanation": "The :hover pseudo-class applies styles when the user hovers over an element with the mouse."
+        }
+      ]
+    },
+    {
+      "id": "javascript-fundamentals",
+      "title": "JavaScript Fundamentals (4-6 weeks)",
+      "description": "Master variables, functions, arrays, objects, DOM manipulation, ES6+, async/await, and Fetch API. Build to-do list, calculator, weather app, and quiz application.",
+      "resources": [
+ { "title": "JavaScript Full Course", "url": "https://www.youtube.com/embed/8dWL3wF_OMw", "type": "Video", "duration": "8 hours", "note": "BEST - Complete Course" },
+        { "title": "Eloquent JavaScript", "url": "https://eloquentjavascript.net/", "type": "Book", "note": "Free Book" },
+        { "title": "JavaScript30", "url": "https://javascript30.com/", "type": "Interactive", "duration": "30 days", "note": "30 Projects Challenge" }      ],
+      "quiz": [
+        {
+          "question": "What is JavaScript primarily used for?",
+          "options": ["Database management", "Adding interactivity to web pages", "Styling web pages", "Server hardware configuration"],
+          "correctAnswer": 1,
+          "explanation": "JavaScript is a programming language that enables interactive and dynamic behavior on websites."
+        },
+        {
+          "question": "Which keyword is used to declare a block-scoped variable in JavaScript?",
+          "options": ["var", "let", "const", "function"],
+          "correctAnswer": 1,
+          "explanation": "'let' declares a block-scoped variable that can be reassigned."
+        },
+        {
+          "question": "What is the difference between '==' and '===' in JavaScript?",
+          "options": ["No difference", "=== checks type and value, == only checks value", "== is faster", "=== is deprecated"],
+          "correctAnswer": 1,
+          "explanation": "'===' (strict equality) checks both value and type, while '==' performs type coercion."
+        },
+        {
+          "question": "Which method adds an element to the end of an array?",
+          "options": ["unshift()", "shift()", "pop()", "push()"],
+          "correctAnswer": 3,
+          "explanation": "The push() method adds one or more elements to the end of an array."
+        },
+        {
+          "question": "What does the DOM stand for?",
+          "options": ["Data Object Model", "Document Object Model", "Digital Optimization Method", "Dynamic Output Module"],
+          "correctAnswer": 1,
+          "explanation": "DOM (Document Object Model) is a programming interface for HTML documents."
+        },
+        {
+          "question": "Which ES6 feature allows you to extract values from arrays or objects?",
+          "options": ["Spreading", "Mapping", "Destructuring", "Filtering"],
+          "correctAnswer": 2,
+          "explanation": "Destructuring allows unpacking values from arrays or properties from objects into distinct variables."
+        },
+        {
+          "question": "What does 'async/await' simplify in JavaScript?",
+          "options": ["Working with asynchronous code and Promises", "Array manipulation", "DOM manipulation", "Variable declaration"],
+          "correctAnswer": 0,
+          "explanation": "async/await provides a cleaner syntax for working with asynchronous operations and Promises."
+        },
+        {
+          "question": "Which method is used to make HTTP requests in modern JavaScript?",
+          "options": ["XMLHttpRequest", "ajax()", "http.get()", "fetch()"],
+          "correctAnswer": 3,
+          "explanation": "The fetch() API provides a modern interface for making HTTP requests."
+        },
+        {
+          "question": "What is a closure in JavaScript?",
+          "options": ["A function that has access to variables in its outer scope", "A closed loop", "A syntax error", "A type of array"],
+          "correctAnswer": 0,
+          "explanation": "A closure is a function that retains access to variables from its containing scope."
+        },
+        {
+          "question": "Which array method creates a new array with results of calling a function on every element?",
+          "options": ["forEach()", "map()", "filter()", "reduce()"],
+          "correctAnswer": 1,
+          "explanation": "The map() method creates a new array by transforming each element with a callback function."
+        },
+        {
+          "question": "What does 'this' keyword refer to in JavaScript?",
+          "options": ["The current function", "The previous object", "The global window object by default", "The context in which it is called"],
+          "correctAnswer": 3,
+          "explanation": "'this' refers to the object that is executing the current function, depending on how the function is called."
+        },
+        {
+          "question": "Which operator is used to spread array elements or object properties?",
+          "options": ["...", "***", ">>", "<<<"],
+          "correctAnswer": 0,
+          "explanation": "The spread operator (...) expands iterable elements or object properties."
+        },
+        {
+          "question": "What is the purpose of 'event.preventDefault()'?",
+          "options": ["Delete an event", "Stop event propagation", "Prevent the default action of an event", "Prevent event creation"],
+          "correctAnswer": 2,
+          "explanation": "event.preventDefault() stops the browser's default behavior for an event (e.g., form submission)."
+        },
+        {
+          "question": "Which method removes the last element from an array?",
+          "options": ["pop()", "shift()", "slice()", "splice()"],
+          "correctAnswer": 0,
+          "explanation": "The pop() method removes and returns the last element of an array."
+        },
+        {
+          "question": "What is a Promise in JavaScript?",
+          "options": ["A callback function", "A loop structure", "An object representing eventual completion or failure of an async operation", "A type of variable"],
+          "correctAnswer": 2,
+          "explanation": "A Promise represents a value that may be available now, later, or never."
+        },
+        {
+          "question": "Which statement is used to handle errors in JavaScript?",
+          "options": ["if-else", "switch-case", "try-catch", "for-loop"],
+          "correctAnswer": 2,
+          "explanation": "The try-catch block is used to handle runtime errors gracefully."
+        },
+        {
+          "question": "What does JSON stand for?",
+          "options": ["JavaScript Object Notation", "Java Serialized Object Network", "JavaScript Online Network", "Java Standard Object Notation"],
+          "correctAnswer": 0,
+          "explanation": "JSON (JavaScript Object Notation) is a lightweight data interchange format."
+        },
+        {
+          "question": "Which method converts a JSON string to a JavaScript object?",
+          "options": ["JSON.parse()", "JSON.stringify()", "JSON.convert()", "JSON.toObject()"],
+          "correctAnswer": 0,
+          "explanation": "JSON.parse() parses a JSON string and returns a JavaScript object."
+        },
+        {
+          "question": "What is the output of: typeof null?",
+          "options": ["'null'", "'object'", "'undefined'", "'number'"],
+          "correctAnswer": 1,
+          "explanation": "typeof null returns 'object', which is a known JavaScript quirk."
+        },
+        {
+          "question": "Which loop is best for iterating over array elements in modern JavaScript?",
+          "options": ["while", "do-while", "for", "for...of"],
+          "correctAnswer": 3,
+          "explanation": "The for...of loop provides a clean syntax for iterating over iterable objects like arrays."
+        }
+      ]
+    },
+    {
+      "id": "version-control",
+      "title": "Git & GitHub (1 week)",
+      "description": "Learn Git basics, branching, merging, pull requests, and GitHub workflows.",
+      "resources": [
+        { "title": "Git Tutorial for Beginners", "url": "https://www.youtube.com/embed/8JJ101D3knE", "type": "Video", "duration": "30 minutes" },
+        { "title": "Git & GitHub Full Course", "url": "https://www.youtube.com/embed/zTjRZNkhiEU?si=jeN79Q_C2cNaPDpn", "type": "Video", "duration": "1 hour", "note": "freeCodeCamp - BEST" },
+        { "title": "Pro Git Book", "url": "https://git-scm.com/Bookook/en/v2", "type": "Book", "note": "Free & Complete" },
+        { "title": "Learn Git Branching", "url": "https://learngitbranching.js.org/", "type": "Interactive", "note": "Interactive Game" },
+        { "title": "Git Branching Strategies", "url": "https://www.youtube.com/embed/U_IFGpJDbeU?si=RcKlySb0RPcGUwCI", "type": "Video" },
+        { "title": "Git Flow vs GitHub Flow", "url": "https://www.youtube.com/embed/gW6dFpTMk8s", "type": "Video" },
+        { "title": "Git Merge vs Rebase", "url": "https://www.youtube.com/embed/CRlGDDprdOQ", "type": "Video" },
+        { "title": "Resolving Merge Conflicts", "url": "https://www.youtube.com/embed/xNVM5UxlFSA", "type": "Video" },
+        { "title": "Git Hooks Tutorial", "url": "https://www.youtube.com/embed/ObksvAZyWdo?si=qwD8t7BAEclWVJ0l", "type": "Video" },
+        { "title": "GitHub Actions Tutorial", "url": "https://www.youtube.com/embed/R8_veQiYBjI", "type": "Video", "duration": "40 minutes" },
+        { "title": "GitHub Skills", "url": "https://skills.github.com/", "type": "Interactive" }
+      ],
+      "quiz": [
+        {
+          "question": "What is Git?",
+          "options": ["A distributed version control system", "A programming language", "A code editor", "A database system"],
+          "correctAnswer": 0,
+          "explanation": "Git is a distributed version control system that tracks changes in source code during development."
+        },
+        {
+          "question": "Which command initializes a new Git repository?",
+          "options": ["git start", "git init", "git create", "git new"],
+          "correctAnswer": 1,
+          "explanation": "'git init' creates a new Git repository in the current directory."
+        },
+        {
+          "question": "What is the purpose of 'git clone'?",
+          "options": ["To delete a repository", "To rename a repository", "To copy a remote repository to your local machine", "To upload files"],
+          "correctAnswer": 2,
+          "explanation": "'git clone' creates a local copy of a remote repository."
+        },
+        {
+          "question": "Which command stages files for commit?",
+          "options": ["git commit", "git stage", "git push", "git add"],
+          "correctAnswer": 3,
+          "explanation": "'git add' stages changes to be included in the next commit."
+        },
+        {
+          "question": "What does 'git commit -m \"message\"' do?",
+          "options": ["Creates a snapshot with a descriptive message", "Deletes files", "Uploads to remote", "Creates a new branch"],
+          "correctAnswer": 0,
+          "explanation": "'git commit' saves staged changes with a commit message describing the changes."
+        },
+        {
+          "question": "Which command shows the status of working directory and staging area?",
+          "options": ["git log", "git status", "git show", "git info"],
+          "correctAnswer": 1,
+          "explanation": "'git status' displays which files are staged, unstaged, or untracked."
+        },
+        {
+          "question": "What is a branch in Git?",
+          "options": ["A tree structure", "An independent line of development", "A type of commit", "A remote server"],
+          "correctAnswer": 1,
+          "explanation": "A branch allows you to develop features or fixes in isolation from the main codebase."
+        },
+        {
+          "question": "Which command creates and switches to a new branch?",
+          "options": ["git branch new-branch", "git new new-branch", "git checkout -b new-branch", "git create new-branch"],
+          "correctAnswer": 2,
+          "explanation": "'git checkout -b branch-name' creates a new branch and switches to it in one command."
+        },
+        {
+          "question": "What does 'git merge' do?",
+          "options": ["Deletes a branch", "Combines changes from different branches", "Creates a backup", "Reverts commits"],
+          "correctAnswer": 1,
+          "explanation": "'git merge' integrates changes from one branch into another."
+        },
+        {
+          "question": "Which command uploads local commits to a remote repository?",
+          "options": ["git upload", "git send", "git pull", "git push"],
+          "correctAnswer": 3,
+          "explanation": "'git push' sends your local commits to the remote repository."
+        },
+        {
+          "question": "What is the purpose of 'git pull'?",
+          "options": ["To delete remote changes", "To fetch and merge changes from remote", "To create a branch", "To stage files"],
+          "correctAnswer": 1,
+          "explanation": "'git pull' fetches changes from the remote and merges them into your current branch."
+        },
+        {
+          "question": "What is a merge conflict?",
+          "options": ["A server error", "A syntax error in code", "When Git can't automatically merge changes", "A deleted file"],
+          "correctAnswer": 2,
+          "explanation": "A merge conflict occurs when Git can't automatically reconcile differences between branches."
+        },
+        {
+          "question": "Which file tells Git which files to ignore?",
+          "options": [".gitconfig", ".gitexclude", ".gitignore", ".gitskip"],
+          "correctAnswer": 2,
+          "explanation": "The .gitignore file specifies which files and directories Git should ignore."
+        },
+        {
+          "question": "What is GitHub?",
+          "options": ["A version control system", "A code editor", "A cloud-based Git repository hosting service", "A programming language"],
+          "correctAnswer": 2,
+          "explanation": "GitHub is a platform for hosting Git repositories and collaborating on code."
+        },
+        {
+          "question": "What is a Pull Request (PR)?",
+          "options": ["Downloading code", "A request to merge code changes", "Deleting a branch", "Creating a repository"],
+          "correctAnswer": 1,
+          "explanation": "A Pull Request proposes changes and requests code review before merging."
+        },
+        {
+          "question": "Which command shows commit history?",
+          "options": ["git history", "git commits", "git log", "git show"],
+          "correctAnswer": 2,
+          "explanation": "'git log' displays the commit history of the repository."
+        },
+        {
+          "question": "What does 'git reset' do?",
+          "options": ["Creates a new commit", "Unstages or moves HEAD to a different commit", "Deletes the repository", "Merges branches"],
+          "correctAnswer": 1,
+          "explanation": "'git reset' can unstage files or move the current branch to a different commit."
+        },
+        {
+          "question": "What is the default branch name in a new Git repository?",
+          "options": ["master or main", "default", "primary", "trunk"],
+          "correctAnswer": 0,
+          "explanation": "The default branch is traditionally 'master' but many systems now use 'main'."
+        },
+        {
+          "question": "Which command shows differences between commits, branches, or working directory?",
+          "options": ["git compare", "git diff", "git show", "git change"],
+          "correctAnswer": 1,
+          "explanation": "'git diff' displays changes between various Git states."
+        },
+        {
+          "question": "What is 'git stash' used for?",
+          "options": ["To permanently delete changes", "To temporarily save uncommitted changes", "To create a backup", "To merge branches"],
+          "correctAnswer": 1,
+          "explanation": "'git stash' temporarily stores uncommitted changes so you can switch branches cleanly."
+        }
+      ]
+    },
+    {
+      "id": "react-framework",
+      "title": "React.js (6-8 weeks)",
+      "description": "Master React components, props, state, hooks, Router, Context API, and state management. Build e-commerce catalog, social dashboard, movie search, and recipe app.",
+      "resources": [
+        { "title": "React Official Tutorial", "url": "https://react.dev/learn", "type": "Article", "note": "Official Documentation - BEST" },
+        { "title": "React Full Course - freeCodeCamp", "url": "https://www.youtube.com/embed/bMknfKXIFA8", "type": "Video", "duration": "8 hours" },
+        { "title": "React Interactive Course - Scrimba", "url": "https://scrimba.com/learn/learnreact", "type": "Course", "note": "Interactive" },
+        { "title": "React Router v6 Tutorial", "url": "https://reactrouter.com/en/main/start/tutorial", "type": "Article" },
+        { "title": "React Interactive - Scrimba", "url": "https://scrimba.com/learn/learnreact", "type": "course" },
+        { "title": "Tailwind CSS", "url": "https://tailwindcss.com/docs/installation", "type": "article" },
+        { "title": "Material-UI", "url": "https://mui.com/material-ui/getting-started/", "type": "article" },
+        { "title": "Redux Toolkit", "url": "https://redux-toolkit.js.org/tutorials/quick-start", "type": "article" },
+        { "title": "Zustand", "url": "https://docs.pmnd.rs/zustand/getting-started/introduction", "type": "article" },
+        { "title": "React Query", "url": "https://tanstack.com/query/latest/docs/framework/react/overview", "type": "article" }
+      ],
+      "quiz": [
+        {
+          "question": "What is React?",
+          "options": ["A JavaScript library for building user interfaces", "A database system", "A CSS framework", "A backend framework"],
+          "correctAnswer": 0,
+          "explanation": "React is a JavaScript library developed by Facebook for creating interactive UIs."
+        },
+        {
+          "question": "What is JSX?",
+          "options": ["A database query language", "JavaScript XML syntax extension", "A CSS preprocessor", "A testing framework"],
+          "correctAnswer": 1,
+          "explanation": "JSX is a syntax extension that allows writing HTML-like code in JavaScript."
+        },
+        {
+          "question": "What is a React component?",
+          "options": ["A CSS class", "A reusable piece of UI", "A database table", "A server endpoint"],
+          "correctAnswer": 1,
+          "explanation": "Components are independent, reusable pieces that make up a React application."
+        },
+        {
+          "question": "Which hook is used to manage state in functional components?",
+          "options": ["useEffect", "useContext", "useState", "useRef"],
+          "correctAnswer": 2,
+          "explanation": "useState is a React Hook that adds state to functional components."
+        },
+        {
+          "question": "What is the purpose of useEffect?",
+          "options": ["To style components", "To perform side effects like data fetching", "To create state variables", "To define routes"],
+          "correctAnswer": 1,
+          "explanation": "useEffect handles side effects such as API calls, subscriptions, or manual DOM manipulation."
+        },
+        {
+          "question": "How do you pass data from parent to child component?",
+          "options": ["Using global variables", "Using cookies", "Using props", "Using localStorage"],
+          "correctAnswer": 2,
+          "explanation": "Props (properties) are used to pass data from parent to child components."
+        },
+        {
+          "question": "What is the Virtual DOM?",
+          "options": ["The actual browser DOM", "A lightweight copy of the real DOM", "A database structure", "A CSS concept"],
+          "correctAnswer": 1,
+          "explanation": "The Virtual DOM is an in-memory representation that React uses for efficient updates."
+        },
+        {
+          "question": "Which method is called when a component is first rendered?",
+          "options": ["componentWillMount", "componentDidUpdate", "componentDidMount", "componentWillUnmount"],
+          "correctAnswer": 2,
+          "explanation": "componentDidMount is called after the component is inserted into the DOM (for class components)."
+        },
+        {
+          "question": "What is the purpose of React Router?",
+          "options": ["To manage state", "To handle navigation and routing", "To make API calls", "To style components"],
+          "correctAnswer": 1,
+          "explanation": "React Router enables client-side routing for single-page applications."
+        },
+        {
+          "question": "What is the correct way to update state in React?",
+          "options": ["this.state = newValue", "Directly modifying state object", "Using setState or state setter function", "Using global variables"],
+          "correctAnswer": 2,
+          "explanation": "State should be updated using setState (class) or the setter function from useState (functional)."
+        },
+        {
+          "question": "What is lifting state up in React?",
+          "options": ["Moving state to a higher position on screen", "Moving state to a common ancestor component", "Removing state entirely", "Creating global state"],
+          "correctAnswer": 1,
+          "explanation": "Lifting state up means moving state to the closest common ancestor to share it between components."
+        },
+        {
+          "question": "What is the Context API used for?",
+          "options": ["Making HTTP requests", "Styling components", "Sharing data without prop drilling", "Routing"],
+          "correctAnswer": 2,
+          "explanation": "Context API provides a way to pass data through the component tree without manually passing props."
+        },
+        {
+          "question": "What is a key prop used for in React lists?",
+          "options": ["Styling list items", "Helping React identify which items changed", "Sorting the list", "Filtering the list"],
+          "correctAnswer": 1,
+          "explanation": "Keys help React identify which items have changed, been added, or removed for efficient updates."
+        },
+        {
+          "question": "What is the purpose of useRef?",
+          "options": ["To create references to DOM elements or mutable values", "To manage state", "To handle side effects", "To create context"],
+          "correctAnswer": 0,
+          "explanation": "useRef returns a mutable ref object that persists across re-renders, useful for DOM access."
+        },
+        {
+          "question": "Which is the correct way to handle events in React?",
+          "options": ["onclick=\"handleClick()\"", "onClick={handleClick}", "onClick=\"handleClick\"", "on-click={handleClick}"],
+          "correctAnswer": 1,
+          "explanation": "React uses camelCase event handlers passed as functions: onClick={handleClick}."
+        },
+        {
+          "question": "What is Redux?",
+          "options": ["A routing library", "A state management library", "A CSS framework", "A testing tool"],
+          "correctAnswer": 1,
+          "explanation": "Redux is a predictable state container for managing global application state."
+        },
+        {
+          "question": "What is a Higher-Order Component (HOC)?",
+          "options": ["A component with high complexity", "A component that renders other components", "A function that takes a component and returns a new component", "A top-level component"],
+          "correctAnswer": 2,
+          "explanation": "An HOC is an advanced pattern for reusing component logic by wrapping components."
+        },
+        {
+          "question": "What is the purpose of useMemo?",
+          "options": ["To memoize expensive computations", "To create state", "To handle side effects", "To create refs"],
+          "correctAnswer": 0,
+          "explanation": "useMemo memoizes computed values to avoid expensive recalculations on every render."
+        },
+        {
+          "question": "What is conditional rendering in React?",
+          "options": ["Rendering based on CSS media queries", "Rendering components based on conditions", "Rendering at specific times", "Rendering in order"],
+          "correctAnswer": 1,
+          "explanation": "Conditional rendering displays different UI based on application state or props."
+        },
+        {
+          "question": "What is the purpose of useCallback?",
+          "options": ["To call a function multiple times", "To memoize callback functions", "To create asynchronous functions", "To handle errors"],
+          "correctAnswer": 1,
+          "explanation": "useCallback returns a memoized callback to prevent unnecessary re-creation of functions."
+        }
+      ]
+    },
+    {
+      "id": "nodejs-express",
+      "title": "Node.js & Express.js (4-6 weeks)",
+      "description": "Backend development with Node.js, Express routing, middleware, REST APIs, authentication, error handling, and security.",
+      "resources": [
+        { "title": "Node.js Getting Started", "url": "https://nodejs.org/en/docs/guides/getting-started-guide", "type": "article" },
+        { "title": "Node.js Full Course", "url": "https://www.youtube.com/embed/Oe421EPjeBE", "type": "Video", "duration": "8 hours" },
+        { "title": "NPM Package Management", "url": "https://docs.npmjs.com/about-npm", "type": "article" },
+        { "title": "Express.js Getting Started", "url": "https://expressjs.com/en/starter/installing.html", "type": "article" },
+        { "title": "Express Routing", "url": "https://expressjs.com/en/guide/routing.html", "type": "article" },
+        { "title": "Express Middleware", "url": "https://expressjs.com/en/guide/using-middleware.html", "type": "article" },
+        { "title": "Building REST APIs", "url": "https://www.youtube.com/embed/pKd0Rpw7O48", "type": "video" },
+        { "title": "Session Auth", "url": "https://expressjs.com/en/resources/middleware/session.html", "type": "article" },
+        { "title": "Error Handling", "url": "https://expressjs.com/en/guide/error-handling.html", "type": "article" },
+        { "title": "Security Best Practices", "url": "https://nodejs.org/en/docs/guides/security/", "type": "article" }
+      ],
+      "quiz": [
+        {
+          "question": "What is Node.js?",
+          "options": ["A JavaScript runtime built on Chrome's V8 engine", "A database system", "A frontend framework", "A CSS preprocessor"],
+          "correctAnswer": 0,
+          "explanation": "Node.js allows JavaScript to run on the server side, outside of a browser."
+        },
+        {
+          "question": "Which module system does Node.js use by default?",
+          "options": ["AMD", "CommonJS", "ES6 Modules", "RequireJS"],
+          "correctAnswer": 1,
+          "explanation": "Node.js uses CommonJS module system with require() and module.exports."
+        },
+        {
+          "question": "What is Express.js?",
+          "options": ["A database", "A minimal and flexible Node.js web framework", "A testing library", "A frontend framework"],
+          "correctAnswer": 1,
+          "explanation": "Express.js is a popular web application framework for Node.js."
+        },
+        {
+          "question": "What is middleware in Express?",
+          "options": ["A database layer", "Functions that execute during request-response cycle", "CSS preprocessor", "Frontend component"],
+          "correctAnswer": 1,
+          "explanation": "Middleware functions have access to request, response objects and can modify them or end the cycle."
+        },
+        {
+          "question": "Which HTTP method is used to retrieve data?",
+          "options": ["POST", "PUT", "GET", "DELETE"],
+          "correctAnswer": 2,
+          "explanation": "GET requests are used to retrieve data from a server."
+        },
+        {
+          "question": "Which HTTP method creates a new resource?",
+          "options": ["GET", "POST", "PUT", "PATCH"],
+          "correctAnswer": 1,
+          "explanation": "POST requests are typically used to create new resources on the server."
+        },
+        {
+          "question": "What is REST API?",
+          "options": ["A database system", "Representational State Transfer architectural style", "A programming language", "A CSS framework"],
+          "correctAnswer": 1,
+          "explanation": "REST is an architectural style for designing networked applications using HTTP methods."
+        },
+        {
+          "question": "What does JWT stand for?",
+          "options": ["Java Web Token", "JSON Web Token", "JavaScript Web Tool", "Joint Web Technology"],
+          "correctAnswer": 1,
+          "explanation": "JWT (JSON Web Token) is a compact way to securely transmit information between parties."
+        },
+        {
+          "question": "Which method is used to define a route in Express?",
+          "options": ["app.route()", "app.get(), app.post(), etc.", "app.define()", "app.path()"],
+          "correctAnswer": 1,
+          "explanation": "Express uses methods like app.get(), app.post(), app.put() to define routes."
+        },
+        {
+          "question": "What is NPM?",
+          "options": ["Node Package Manager", "New Programming Method", "Network Protocol Manager", "Node Project Module"],
+          "correctAnswer": 0,
+          "explanation": "NPM is the default package manager for Node.js, used to install and manage dependencies."
+        },
+        {
+          "question": "How do you handle errors in Express?",
+          "options": ["Using try-catch only", "Using error-handling middleware with 4 parameters", "Ignoring them", "Using console.log"],
+          "correctAnswer": 1,
+          "explanation": "Express error-handling middleware takes 4 parameters: (err, req, res, next)."
+        },
+        {
+          "question": "What is CORS?",
+          "options": ["Core Object Rendering System", "Cross-Origin Resource Sharing", "Centralized Object Repository Service", "Client-Origin Request Sharing"],
+          "correctAnswer": 1,
+          "explanation": "CORS is a mechanism that allows restricted resources to be requested from another domain."
+        },
+        {
+          "question": "Which module parses incoming JSON request bodies in Express?",
+          "options": ["body-parser or express.json()", "json-parser", "request-parser", "data-parser"],
+          "correctAnswer": 0,
+          "explanation": "express.json() middleware parses incoming JSON payloads."
+        },
+        {
+          "question": "What is the purpose of app.use() in Express?",
+          "options": ["To delete middleware", "To mount middleware functions", "To create routes", "To start the server"],
+          "correctAnswer": 1,
+          "explanation": "app.use() mounts middleware functions that execute for all or specific routes."
+        },
+        {
+          "question": "Which status code indicates a successful request?",
+          "options": ["404", "500", "200", "301"],
+          "correctAnswer": 2,
+          "explanation": "HTTP status code 200 indicates a successful OK response."
+        },
+        {
+          "question": "What is environment variable in Node.js?",
+          "options": ["A global constant", "Configuration value stored outside code", "A function parameter", "A loop variable"],
+          "correctAnswer": 1,
+          "explanation": "Environment variables store configuration and sensitive data outside the codebase."
+        },
+        {
+          "question": "How do you access environment variables in Node.js?",
+          "options": ["process.env", "env.get()", "system.env", "config.env"],
+          "correctAnswer": 0,
+          "explanation": "process.env object contains environment variables in Node.js."
+        },
+        {
+          "question": "What is the purpose of next() in Express middleware?",
+          "options": ["To end the response", "To pass control to the next middleware", "To restart the server", "To throw an error"],
+          "correctAnswer": 1,
+          "explanation": "Calling next() passes control to the next middleware function in the stack."
+        },
+        {
+          "question": "Which HTTP method updates an entire resource?",
+          "options": ["POST", "PATCH", "GET", "PUT"],
+          "correctAnswer": 3,
+          "explanation": "PUT requests replace an entire resource with new data."
+        },
+        {
+          "question": "What is the purpose of bcrypt in Node.js?",
+          "options": ["To make HTTP requests", "To hash passwords securely", "To parse JSON", "To handle routing"],
+          "correctAnswer": 1,
+          "explanation": "bcrypt is used to hash and securely store passwords."
+        }
+      ]
+    },
+    {
+      "id": "databases",
+      "title": "Databases (3-4 weeks)",
+      "description": "SQL (PostgreSQL/MySQL) and NoSQL (MongoDB) databases, CRUD operations, joins, relationships, indexing, and optimization.",
+      "resources": [
+        { "title": "PostgreSQL Tutorial", "url": "https://www.postgresqltutorial.com/", "type": "Article", "note": "Recommended SQL" },
+        { "title": "SQL Basics Interactive", "url": "https://www.sqlCourse.com/", "type": "Course" },
+        { "title": "SQL Joins Visualized", "url": "https://joins.spathon.com/", "type": "Interactive" },
+        { "title": "Database Design Tutorial", "url": "https://www.guru99.com/database-design.html", "type": "Article" },
+        { "title": "PostgreSQL Performance Tips", "url": "https://wiki.postgresql.org/wiki/Performance_Optimization", "type": "Article" },
+        { "title": "MySQL Tutorial", "url": "https://www.mysqltutorial.org/", "type": "Article" },
+        { "title": "MySQL Crash Course", "url": "https://www.youtube.com/embed/7S_tz1z_5bA", "type": "Video" },
+        { "title": "MongoDB University", "url": "https://university.mongodb.com/Courses/M001/about", "type": "Course", "note": "Free" },
+        { "title": "MongoDB CRUD", "url": "https://www.mongodb.com/docs/manual/crud/", "type": "Article" },
+        { "title": "Mongoose ODM", "url": "https://mongoosejs.com/docs/guide.html", "type": "Article" },
+        { "title": "MongoDB Aggregation", "url": "https://www.mongodb.com/docs/manual/aggregation/", "type": "Article" },
+        { "title": "Redis Crash Course", "url": "https://www.youtube.com/embed/jgpVdJB2sKQ", "type": "Video" },
+        { "title": "Caching Strategies", "url": "https://www.youtube.com/embed/TV-xsNjbx_g?si=WCBABubAgCps4xr6" , "type": "Video" }
+      ],
+      "quiz": [
+        {
+          "question": "What is a database?",
+          "options": ["An organized collection of structured data", "A programming language", "A web server", "A CSS framework"],
+          "correctAnswer": 0,
+          "explanation": "A database is an organized system for storing, managing, and retrieving data."
+        },
+        {
+          "question": "What does SQL stand for?",
+          "options": ["Simple Query Language", "Structured Query Language", "System Query Logic", "Standard Quality Level"],
+          "correctAnswer": 1,
+          "explanation": "SQL (Structured Query Language) is used to communicate with relational databases."
+        },
+        {
+          "question": "Which SQL command retrieves data from a database?",
+          "options": ["GET", "FETCH", "RETRIEVE", "SELECT"],
+          "correctAnswer": 3,
+          "explanation": "The SELECT statement is used to query and retrieve data from database tables."
+        },
+        {
+          "question": "What does CRUD stand for?",
+          "options": ["Create, Read, Update, Delete", "Connect, Run, Upload, Download", "Copy, Remove, Use, Deploy", "Configure, Reset, Undo, Debug"],
+          "correctAnswer": 0,
+          "explanation": "CRUD represents the four basic database operations: Create, Read, Update, and Delete."
+        },
+        {
+          "question": "What is a primary key?",
+          "options": ["The first column in a table", "A password for database access", "A unique identifier for each record", "The most important data field"],
+          "correctAnswer": 2,
+          "explanation": "A primary key uniquely identifies each record in a database table."
+        },
+        {
+          "question": "What is a foreign key?",
+          "options": ["A key from another database", "A field that links two tables together", "An encrypted key", "A backup key"],
+          "correctAnswer": 1,
+          "explanation": "A foreign key establishes a relationship between two tables by referencing a primary key."
+        },
+        {
+          "question": "Which type of JOIN returns all rows from both tables?",
+          "options": ["INNER JOIN", "LEFT JOIN", "RIGHT JOIN", "FULL OUTER JOIN"],
+          "correctAnswer": 3,
+          "explanation": "FULL OUTER JOIN returns all rows from both tables, with NULL values where no match exists."
+        },
+        {
+          "question": "What is MongoDB?",
+          "options": ["A relational database", "A NoSQL document database", "A programming language", "A web server"],
+          "correctAnswer": 1,
+          "explanation": "MongoDB is a NoSQL database that stores data in flexible JSON-like documents."
+        },
+        {
+          "question": "What is a collection in MongoDB?",
+          "options": ["A set of users", "A group of documents", "A database instance", "A query result"],
+          "correctAnswer": 1,
+          "explanation": "In MongoDB, a collection is a group of documents, similar to a table in relational databases."
+        },
+        {
+          "question": "What is indexing in databases?",
+          "options": ["Sorting data alphabetically", "A technique to speed up query performance", "Backing up data", "Deleting old records"],
+          "correctAnswer": 1,
+          "explanation": "Indexing creates data structures that improve the speed of data retrieval operations."
+        },
+        {
+          "question": "Which SQL command adds new data to a table?",
+          "options": ["ADD", "INSERT", "CREATE", "APPEND"],
+          "correctAnswer": 1,
+          "explanation": "The INSERT statement adds new rows of data to a database table."
+        },
+        {
+          "question": "What does normalization in databases mean?",
+          "options": ["Making data normal-sized", "Organizing data to reduce redundancy", "Converting to standard format", "Normalizing data types"],
+          "correctAnswer": 1,
+          "explanation": "Normalization organizes database structure to minimize data redundancy and improve integrity."
+        },
+        {
+          "question": "What is Mongoose?",
+          "options": ["A database system", "An ODM library for MongoDB and Node.js", "A SQL library", "A testing framework"],
+          "correctAnswer": 1,
+          "explanation": "Mongoose is an Object Data Modeling (ODM) library that provides schema-based modeling for MongoDB."
+        },
+        {
+          "question": "Which SQL command modifies existing data?",
+          "options": ["MODIFY", "CHANGE", "UPDATE", "ALTER"],
+          "correctAnswer": 2,
+          "explanation": "The UPDATE statement modifies existing records in a database table."
+        },
+        {
+          "question": "What is a schema in databases?",
+          "options": ["A backup plan", "The structure and organization of data", "A query template", "A user permission"],
+          "correctAnswer": 1,
+          "explanation": "A schema defines the structure, organization, and constraints of data in a database."
+        },
+        {
+          "question": "What does ACID stand for in database transactions?",
+          "options": ["Atomicity, Consistency, Isolation, Durability", "Access, Control, Identity, Data", "Automatic, Consistent, Indexed, Distributed", "Advanced, Cached, Integrated, Documented"],
+          "correctAnswer": 0,
+          "explanation": "ACID properties ensure reliable processing of database transactions."
+        },
+        {
+          "question": "Which SQL clause filters query results?",
+          "options": ["FILTER", "WHERE", "IF", "CONDITION"],
+          "correctAnswer": 1,
+          "explanation": "The WHERE clause filters records based on specified conditions."
+        },
+        {
+          "question": "What is a NoSQL database advantage?",
+          "options": ["Always faster than SQL", "Better for complex joins", "Flexible schema and horizontal scaling", "Requires less storage"],
+          "correctAnswer": 2,
+          "explanation": "NoSQL databases offer flexible schemas and scale horizontally across multiple servers."
+        },
+        {
+          "question": "Which command removes data from a table?",
+          "options": ["REMOVE", "DROP", "DELETE", "CLEAR"],
+          "correctAnswer": 2,
+          "explanation": "The DELETE statement removes rows from a database table based on conditions."
+        },
+        {
+          "question": "What is a transaction in databases?",
+          "options": ["A purchase record", "A sequence of operations treated as a single unit", "A data transfer", "A backup operation"],
+          "correctAnswer": 1,
+          "explanation": "A transaction is a sequence of database operations that execute as a single logical unit of work."
+        }
+      ]
+    },
+    {
+      "id": "api-development",
+      "title": "API Development (3-4 weeks)",
+      "description": "Build RESTful and GraphQL APIs. Learn HTTP methods, versioning, documentation with Swagger, and API security best practices.",
+      "resources": [
+        { "title": "REST API Best Practices", "url":"https://www.youtube.com/embed/1Wl-rtew1_E?si=3pqdZUevXQS03xcm", "type": "Video", "note": "BEST" },
+        { "title": "HTTP Methods", "url": "https://www.youtube.com/embed/KF-3jtGH6Yk?si=Ks32Tr9czev7SqQN", "type": "Video" },
+        { "title": "API Versioning", "url": "https://www.youtube.com/embed/vsb4ZkUytrU?si=Lv7duO84YPZFguqQ" , "type": "Video" },
+        { "title": "Swagger Documentation", "url": "https://swagger.io/docs/specification/about/", "type": "Article" },
+        { "title": "GraphQL Official", "url": "https://graphql.org/learn/", "type": "Article" },
+        { "title": "GraphQL vs REST", "url": "https://www.youtube.com/embed/yWzKJPw_VzM", "type": "Video" },
+        { "title": "Apollo Server Tutorial", "url": "https://www.apollographql.com/docs/apollo-server/getting-started/", "type": "Article" },
+        { "title": "GraphQL Full Course", "url": "https://www.youtube.com/embed/ed8SzALpx1Q", "type": "Video" }
+      ],
+      "quiz": [
+        {
+          "question": "What does API stand for?",
+          "options": ["Application Programming Interface", "Advanced Program Integration", "Automated Process Interaction", "Application Protocol Implementation"],
+          "correctAnswer": 0,
+          "explanation": "API (Application Programming Interface) enables communication between different software systems."
+        },
+        {
+          "question": "What is REST?",
+          "options": ["Remote Execution Service Technology", "Representational State Transfer", "Rapid Execution System Tool", "Resource Extraction Service Type"],
+          "correctAnswer": 1,
+          "explanation": "REST is an architectural style for designing networked applications using stateless communication."
+        },
+        {
+          "question": "Which HTTP status code indicates a resource was successfully created?",
+          "options": ["200 OK", "201 Created", "204 No Content", "301 Moved Permanently"],
+          "correctAnswer": 1,
+          "explanation": "HTTP status code 201 indicates successful resource creation."
+        },
+        {
+          "question": "What is JSON?",
+          "options": ["JavaScript Object Notation", "Java Serialized Object Network", "Joint Service Object Naming", "JavaScript Online Notation"],
+          "correctAnswer": 0,
+          "explanation": "JSON is a lightweight data format commonly used for API communication."
+        },
+        {
+          "question": "What is an endpoint in an API?",
+          "options": ["The final line of code", "A URL where an API can access resources", "The API documentation", "The server location"],
+          "correctAnswer": 1,
+          "explanation": "An endpoint is a specific URL path where an API receives requests for particular resources."
+        },
+        {
+          "question": "What is GraphQL?",
+          "options": ["A database system", "A CSS framework", "A query language for APIs", "A testing tool"],
+          "correctAnswer": 2,
+          "explanation": "GraphQL is a query language that allows clients to request exactly the data they need."
+        },
+        {
+          "question": "Which HTTP method is idempotent and used for full updates?",
+          "options": ["POST", "GET", "PATCH", "PUT"],
+          "correctAnswer": 3,
+          "explanation": "PUT is idempotent and replaces an entire resource with new data."
+        },
+        {
+          "question": "What is API versioning?",
+          "options": ["Tracking API bugs", "Managing different API versions for backward compatibility", "Updating server versions", "Documenting code changes"],
+          "correctAnswer": 1,
+          "explanation": "API versioning allows maintaining multiple versions to prevent breaking existing clients."
+        },
+        {
+          "question": "What is the purpose of API documentation?",
+          "options": ["To make code longer", "To explain how to use the API endpoints", "To slow down development", "To replace testing"],
+          "correctAnswer": 1,
+          "explanation": "API documentation provides clear instructions on how to interact with API endpoints."
+        },
+        {
+          "question": "What is Swagger/OpenAPI?",
+          "options": ["A database tool", "A specification for documenting REST APIs", "A frontend framework", "A testing library"],
+          "correctAnswer": 1,
+          "explanation": "Swagger/OpenAPI is a standard for describing and documenting RESTful APIs."
+        },
+        {
+          "question": "What is rate limiting in APIs?",
+          "options": ["Slowing down servers", "Restricting number of requests in a time period", "Limiting data size", "Reducing code complexity"],
+          "correctAnswer": 1,
+          "explanation": "Rate limiting prevents abuse by limiting the number of API requests per user/IP."
+        },
+        {
+          "question": "Which status code indicates 'Resource Not Found'?",
+          "options": ["400", "401", "403", "404"],
+          "correctAnswer": 3,
+          "explanation": "HTTP status code 404 indicates the requested resource was not found."
+        },
+        {
+          "question": "What is WebSocket?",
+          "options": ["A type of web server", "A database connection", "A protocol for full-duplex communication", "An HTTP replacement"],
+          "correctAnswer": 2,
+          "explanation": "WebSocket enables real-time, bidirectional communication between client and server."
+        },
+        {
+          "question": "What is API authentication?",
+          "options": ["Styling the API", "Verifying the identity of API users", "Testing API endpoints", "Documenting API usage"],
+          "correctAnswer": 1,
+          "explanation": "API authentication ensures only authorized users can access protected endpoints."
+        },
+        {
+          "question": "What does HATEOAS stand for in REST?",
+          "options": ["HTTP And The End Of API Services", "Hypermedia As The Engine Of Application State", "Handling All Types Of API States", "Hypertext Access To External Online API Services"],
+          "correctAnswer": 1,
+          "explanation": "HATEOAS is a REST constraint where API responses include links to related actions."
+        },
+        {
+          "question": "Which HTTP header specifies the media type of the resource?",
+          "options": ["Authorization", "Accept", "Content-Type", "Cache-Control"],
+          "correctAnswer": 2,
+          "explanation": "Content-Type header indicates the media type (e.g., application/json) of the request or response body."
+        },
+        {
+          "question": "What is the purpose of PATCH HTTP method?",
+          "options": ["To delete resources", "To partially update resources", "To create resources", "To retrieve resources"],
+          "correctAnswer": 1,
+          "explanation": "PATCH is used to apply partial modifications to a resource."
+        },
+        {
+          "question": "What is API gateway?",
+          "options": ["A database connection", "A single entry point that routes requests to microservices", "A frontend framework", "A testing tool"],
+          "correctAnswer": 1,
+          "explanation": "An API gateway manages, routes, and secures requests to backend microservices."
+        },
+        {
+          "question": "Which status code indicates unauthorized access?",
+          "options": ["400", "401", "404", "500"],
+          "correctAnswer": 1,
+          "explanation": "HTTP status code 401 indicates authentication is required or has failed."
+        },
+        {
+          "question": "What is the advantage of GraphQL over REST?",
+          "options": ["Always faster", "Clients can request exactly the data they need", "Simpler to implement", "Better security"],
+          "correctAnswer": 1,
+          "explanation": "GraphQL allows clients to specify exactly what data they need, avoiding over-fetching or under-fetching."
+        }
+      ]
+    },
+    {
+      "id": "testing",
+      "title": "Testing (2-3 weeks)",
+      "description": "Unit testing with Jest/Vitest, React Testing Library, E2E testing with Cypress/Playwright, TDD methodology.",
+      "resources": [
+        { "title": "Jest Documentation", "url": "https://jestjs.io/docs/getting-started", "type": "article" },
+        { "title": "Vitest Documentation", "url": "https://betterstack.com/community/guides/testing/vitest-explained/", "type": "article" },
+        { "title": "React Testing Library", "url": "https://testing-library.com/docs/react-testing-library/intro/", "type": "article" },
+        { "title": "Cypress Documentation", "url": "https://docs.cypress.io/", "type": "article" },
+        { "title": "Playwright Documentation", "url": "https://playwright.dev/docs/intro", "type": "article" },
+        { "title": "TDD Crash Course", "url": "https://www.youtube.com/embed/Jv2uxzhPFl4", "type": "video" }
+      ],
+      "quiz": [
+        {
+          "question": "What is unit testing?",
+          "options": ["Testing individual units or components of code", "Testing the entire application", "Testing user interface only", "Testing databases"],
+          "correctAnswer": 0,
+          "explanation": "Unit testing verifies that individual functions or components work correctly in isolation."
+        },
+        {
+          "question": "What is Jest?",
+          "options": ["A build tool", "A JavaScript testing framework", "A CSS framework", "A database system"],
+          "correctAnswer": 1,
+          "explanation": "Jest is a popular JavaScript testing framework developed by Facebook."
+        },
+        {
+          "question": "What does TDD stand for?",
+          "options": ["Test Data Development", "Total Development Design", "Test-Driven Development", "Technical Documentation Design"],
+          "correctAnswer": 2,
+          "explanation": "TDD is a methodology where tests are written before the actual code implementation."
+        },
+        {
+          "question": "What is an assertion in testing?",
+          "options": ["A test file name", "A statement that checks if a condition is true", "A database query", "A function call"],
+          "correctAnswer": 1,
+          "explanation": "Assertions verify that the actual output matches expected output in tests."
+        },
+        {
+          "question": "What is React Testing Library used for?",
+          "options": ["Testing React components from user perspective", "Styling React components", "Building React apps", "Managing state"],
+          "correctAnswer": 0,
+          "explanation": "React Testing Library tests components by simulating user interactions."
+        },
+        {
+          "question": "What does E2E testing mean?",
+          "options": ["Error to Error", "Element to Element", "End-to-End", "Execution to Evaluation"],
+          "correctAnswer": 2,
+          "explanation": "End-to-End testing validates complete user workflows from start to finish."
+        },
+        {
+          "question": "What is Cypress?",
+          "options": ["A database", "An E2E testing framework for web applications", "A CSS preprocessor", "A state management library"],
+          "correctAnswer": 1,
+          "explanation": "Cypress is a popular end-to-end testing framework that runs tests in the browser."
+        },
+        {
+          "question": "What is code coverage?",
+          "options": ["The number of test files", "Percentage of code executed by tests", "Lines of code written", "Number of bugs found"],
+          "correctAnswer": 1,
+          "explanation": "Code coverage measures the percentage of code that is executed during testing."
+        },
+        {
+          "question": "What is mocking in tests?",
+          "options": ["Making fun of code", "Creating fake implementations of dependencies", "Deleting test data", "Copying production data"],
+          "correctAnswer": 1,
+          "explanation": "Mocking replaces real dependencies with controlled fake versions for testing purposes."
+        },
+        {
+          "question": "What is integration testing?",
+          "options": ["Testing individual functions", "Testing how multiple modules work together", "Testing UI only", "Testing databases only"],
+          "correctAnswer": 1,
+          "explanation": "Integration testing verifies that different parts of the application work correctly together."
+        },
+        {
+          "question": "Which test type is fastest to run?",
+          "options": ["End-to-End tests", "Integration tests", "Unit tests", "Manual tests"],
+          "correctAnswer": 2,
+          "explanation": "Unit tests are typically the fastest because they test small, isolated pieces of code."
+        },
+        {
+          "question": "What is a test suite?",
+          "options": ["A collection of related test cases", "A testing tool", "A test result", "A bug report"],
+          "correctAnswer": 0,
+          "explanation": "A test suite is a collection of test cases that are grouped together."
+        },
+        {
+          "question": "What is Playwright?",
+          "options": ["A drama framework", "A modern E2E testing framework for web apps", "A database tool", "A CSS library"],
+          "correctAnswer": 1,
+          "explanation": "Playwright is a framework for end-to-end testing that supports multiple browsers."
+        },
+        {
+          "question": "What is the purpose of beforeEach() in testing?",
+          "options": ["To run code after each test", "To run setup code before each test", "To skip tests", "To group tests"],
+          "correctAnswer": 1,
+          "explanation": "beforeEach() executes setup code before each test case runs."
+        },
+        {
+          "question": "What is snapshot testing?",
+          "options": ["Testing database backups", "Comparing component output against saved snapshots", "Taking screenshots", "Testing at midnight"],
+          "correctAnswer": 1,
+          "explanation": "Snapshot testing compares current component output with previously saved output."
+        },
+        {
+          "question": "What is a test double?",
+          "options": ["Running tests twice", "A generic term for mocks, stubs, and spies", "Two identical tests", "Double coverage"],
+          "correctAnswer": 1,
+          "explanation": "Test double is an umbrella term for objects that replace real dependencies in tests."
+        },
+        {
+          "question": "What is continuous testing?",
+          "options": ["Testing 24/7", "Automated testing in CI/CD pipeline", "Manual testing", "Testing in production"],
+          "correctAnswer": 1,
+          "explanation": "Continuous testing automatically runs tests as part of the development pipeline."
+        },
+        {
+          "question": "What is AAA pattern in testing?",
+          "options": ["Always Add Assertions", "Arrange, Act, Assert", "Automatic API Analysis", "Advanced Async Actions"],
+          "correctAnswer": 1,
+          "explanation": "AAA pattern structures tests: Arrange setup, Act on the code, Assert the result."
+        },
+        {
+          "question": "What is regression testing?",
+          "options": ["Testing old features after changes to ensure they still work", "Testing in reverse order", "Testing performance", "Testing security"],
+          "correctAnswer": 0,
+          "explanation": "Regression testing ensures new changes don't break existing functionality."
+        },
+        {
+          "question": "What is Vitest?",
+          "options": ["A video testing tool", "A fast unit test framework for Vite projects", "A database tester", "A CSS testing framework"],
+          "correctAnswer": 1,
+          "explanation": "Vitest is a blazing fast unit testing framework powered by Vite."
+        }
+      ]
+    },
+    {
+      "id": "devops-deployment",
+      "title": "DevOps & Deployment (3-4 weeks)",
+      "description": "Master Docker containerization, CI/CD with GitHub Actions, cloud deployment (AWS/Heroku), Kubernetes basics, and monitoring with Prometheus.",
+      "resources": [
+        { "title": "Docker Tutorial", "url": "https://docker-curriculum.com/", "type": "Article" },
+        { "title": "Docker Compose", "url": "https://www.youtube.com/embed/HG6yIjZapSA?si=il1Ou4YchSWYReMb", "type": "Video" },
+        { "title": "Dockerfile Best Practices", "url": "https://www.youtube.com/embed/JofsaZ3H1qM?si=aEbab1GIWvCy1ay0", "type": "Video" },
+        { "title": "GitHub Actions", "url": "https://www.youtube.com/embed/Xwpi0ITkL3U?si=aeo1_FXL6Cr5D5dj", "type": "Video" },
+        { "title": "GitLab CI/CD", "url": "https://docs.gitlab.com/ee/ci/quick_start/", "type": "Article" },
+        { "title": "Jenkins Pipeline", "url": "https://www.youtube.com/embed/videoseries?si=2eQ2S_0atI_14n53&amp;list=PL1R_HJw0CDYJul95sHEhRIGJqGJnmlGgS" , "type": "Course" },
+        { "title": "Deploy Node.js to AWS", "url": "https://www.youtube.com/embed/_U0pTlpyMGg?si=TR3IUAoqLBKyISwI", "type": "Video" },
+        { "title": "Deploy Python to Heroku", "url": "https://www.youtube.com/embed/vlnzweFFTwY?si=_JdnkleX5TepJlGg", "type": "Video" },
+        { "title": "Kubernetes Basics", "url": "https://kubernetes.io/docs/tutorials/kubernetes-basics/", "type": "Article" },
+        { "title": "Logging Best Practices", "url": "https://www.youtube.com/embed/53qCLRFcBSs?si=e563lb7XhDbm_41Z", "type": "Video" },
+        { "title": "Prometheus Monitoring", "url": "https://prometheus.io/docs/introduction/first_steps/", "type": "Article" },
+        { "title": "ELK Stack Tutorial", "url": "https://www.elastic.co/guide/en/elasticsearch/reference/current/getting-started.html", "type": "Article" }
+      ],
+      "quiz": [
+        {
+          "question": "What is Docker?",
+          "options": ["A containerization platform for packaging applications", "A database system", "A programming language", "A code editor"],
+          "correctAnswer": 0,
+          "explanation": "Docker packages applications and dependencies into portable containers."
+        },
+        {
+          "question": "What is a container?",
+          "options": ["A data structure", "A storage device", "A lightweight, isolated runtime environment", "A database table"],
+          "correctAnswer": 2,
+          "explanation": "Containers package software with all dependencies for consistent execution across environments."
+        },
+        {
+          "question": "What does CI/CD stand for?",
+          "options": ["Code Integration/Code Deployment", "Continuous Integration/Continuous Deployment", "Central Intelligence/Central Database", "Container Integration/Container Distribution"],
+          "correctAnswer": 1,
+          "explanation": "CI/CD automates the process of integrating code changes and deploying to production."
+        },
+        {
+          "question": "What is a Dockerfile?",
+          "options": ["A text file with instructions to build a Docker image", "A database configuration", "A JavaScript file", "A CSS stylesheet"],
+          "correctAnswer": 0,
+          "explanation": "A Dockerfile contains commands to assemble a Docker image layer by layer."
+        },
+        {
+          "question": "What is Kubernetes?",
+          "options": ["A database", "An orchestration platform for managing containers", "A programming language", "A testing framework"],
+          "correctAnswer": 1,
+          "explanation": "Kubernetes automates deployment, scaling, and management of containerized applications."
+        },
+        {
+          "question": "What is GitHub Actions?",
+          "options": ["A social network feature", "A CI/CD automation platform integrated with GitHub", "A code editor", "A database tool"],
+          "correctAnswer": 1,
+          "explanation": "GitHub Actions automates workflows including testing, building, and deployment."
+        },
+        {
+          "question": "What is the purpose of environment variables in deployment?",
+          "options": ["To style applications", "To store configuration and secrets separately from code", "To speed up deployment", "To test code"],
+          "correctAnswer": 1,
+          "explanation": "Environment variables manage configuration without hardcoding sensitive data."
+        },
+        {
+          "question": "What is Vercel?",
+          "options": ["A database", "A platform for deploying frontend applications", "A testing tool", "A version control system"],
+          "correctAnswer": 1,
+          "explanation": "Vercel is a cloud platform optimized for deploying frontend frameworks like Next.js."
+        },
+        {
+          "question": "What is a build pipeline?",
+          "options": ["A water system", "An automated sequence of steps to build and deploy code", "A data structure", "A network protocol"],
+          "correctAnswer": 1,
+          "explanation": "A build pipeline automates compiling, testing, and deploying applications."
+        },
+        {
+          "question": "What is monitoring in DevOps?",
+          "options": ["Watching developers work", "Tracking application performance and errors in production", "Counting lines of code", "Reading documentation"],
+          "correctAnswer": 1,
+          "explanation": "Monitoring tracks system health, performance metrics, and detects issues in real-time."
+        },
+        {
+          "question": "What is HTTPS?",
+          "options": ["A programming language", "Hypertext Transfer Protocol Secure", "A database protocol", "A testing framework"],
+          "correctAnswer": 1,
+          "explanation": "HTTPS encrypts data transmission between client and server for security."
+        },
+        {
+          "question": "What is Docker Compose?",
+          "options": ["A music tool", "A tool for defining multi-container applications", "A text editor", "A database"],
+          "correctAnswer": 1,
+          "explanation": "Docker Compose defines and runs multi-container Docker applications using YAML files."
+        },
+        {
+          "question": "What is a CDN?",
+          "options": ["Code Distribution Network", "Content Delivery Network", "Central Database Node", "Container Deployment Namespace"],
+          "correctAnswer": 1,
+          "explanation": "CDN is a distributed network that delivers content quickly from servers closest to users."
+        },
+        {
+          "question": "What is load balancing?",
+          "options": ["Weighing servers", "Distributing traffic across multiple servers", "Reducing code size", "Testing performance"],
+          "correctAnswer": 1,
+          "explanation": "Load balancing distributes network traffic to prevent server overload."
+        },
+        {
+          "question": "What is Nginx?",
+          "options": ["A programming language", "A web server and reverse proxy", "A database", "A testing framework"],
+          "correctAnswer": 1,
+          "explanation": "Nginx is a high-performance web server, reverse proxy, and load balancer."
+        },
+        {
+          "question": "What is blue-green deployment?",
+          "options": ["Deploying with blue and green colors", "A strategy with two identical production environments", "A testing method", "A database backup"],
+          "correctAnswer": 1,
+          "explanation": "Blue-green deployment reduces downtime by switching between two production environments."
+        },
+        {
+          "question": "What is Prometheus?",
+          "options": ["A Greek god", "A monitoring and alerting toolkit", "A database", "A frontend framework"],
+          "correctAnswer": 1,
+          "explanation": "Prometheus collects and stores metrics for monitoring system performance."
+        },
+        {
+          "question": "What is Infrastructure as Code (IaC)?",
+          "options": ["Writing code in infrastructure", "Managing infrastructure through code rather than manual processes", "Building infrastructure", "Coding on servers"],
+          "correctAnswer": 1,
+          "explanation": "IaC uses code to provision and manage infrastructure automatically and consistently."
+        },
+        {
+          "question": "What is the purpose of SSL certificates?",
+          "options": ["To speed up websites", "To encrypt data and verify website identity", "To compress files", "To cache content"],
+          "correctAnswer": 1,
+          "explanation": "SSL certificates enable HTTPS encryption and authenticate website identity."
+        },
+        {
+          "question": "What is auto-scaling?",
+          "options": ["Automatic code formatting", "Automatically adjusting resources based on demand", "Scaling images", "Resizing databases"],
+          "correctAnswer": 1,
+          "explanation": "Auto-scaling dynamically adjusts computing resources based on application load."
+        }
+      ]
+    },
+    {
+      "id": "best-practices",
+      "title": "Best Practices (Ongoing)",
+      "description": "Clean code, design patterns, system design, code review, Agile/Scrum methodology.",
+      "resources": [
+        { "title": "Clean Code JavaScript", "url": "https://www.youtube.com/embed/videoseries?si=T9q2iCpa68HzJPrI&amp;list=PLWKjhJtqVAbkK24EaPurzMq0-kw5U9pJh", "type": "video", "note": "BEST" },
+        { "title": "Design Patterns", "url": "https://www.youtube.com/embed/NU_1StN5Tkk?si=S7JisPbQWqjahZAq", "type": "video" },
+        { "title": "System Design Primer", "url": "https://www.youtube.com/embed/m8Icp_Cid5o?si=kVNnbBut_F9Sdrwu", "type": "video" },
+        { "title": "Agile/Scrum Guide", "url": "https://scrumguides.org/scrum-guide.html", "type": "article" },
+        { "title": "Code Review Guide", "url": "https://google.github.io/eng-practices/review/", "type": "article" }
+      ],
+      "quiz": [
+        {
+          "question": "What is clean code?",
+          "options": ["Code that is easy to read, understand, and maintain", "Code without bugs", "Short code", "Code with comments"],
+          "correctAnswer": 0,
+          "explanation": "Clean code emphasizes clarity, simplicity, and maintainability for other developers."
+        },
+        {
+          "question": "What does DRY principle stand for?",
+          "options": ["Do Review Yourself", "Don't Repeat Yourself", "Data Repository Yield", "Debug Rapidly Yesterday"],
+          "correctAnswer": 1,
+          "explanation": "DRY principle advocates avoiding code duplication by reusing logic."
+        },
+        {
+          "question": "What is a design pattern?",
+          "options": ["A UI template", "A reusable solution to common software problems", "A database schema", "A testing strategy"],
+          "correctAnswer": 1,
+          "explanation": "Design patterns are proven solutions to recurring design problems in software."
+        },
+        {
+          "question": "What is refactoring?",
+          "options": ["Rewriting entire codebase", "Improving code structure without changing behavior", "Adding new features", "Deleting code"],
+          "correctAnswer": 1,
+          "explanation": "Refactoring restructures code to improve readability and maintainability without altering functionality."
+        },
+        {
+          "question": "What does SOLID stand for in OOP?",
+          "options": ["Simple Object Language Interface Design", "Single responsibility, Open-closed, Liskov substitution, Interface segregation, Dependency inversion", "Standard Object Linking Interface Documentation", "Structured Object Level Integration Development"],
+          "correctAnswer": 1,
+          "explanation": "SOLID are five principles for writing maintainable object-oriented code."
+        },
+        {
+          "question": "What is technical debt?",
+          "options": ["Money owed to developers", "Cost of rework caused by choosing quick solutions", "Database storage costs", "Server expenses"],
+          "correctAnswer": 1,
+          "explanation": "Technical debt is the implied cost of additional rework due to choosing suboptimal solutions."
+        },
+        {
+          "question": "What is Agile methodology?",
+          "options": ["A programming language", "An iterative approach to project management", "A database system", "A testing framework"],
+          "correctAnswer": 1,
+          "explanation": "Agile emphasizes iterative development, collaboration, and responding to change."
+        },
+        {
+          "question": "What is a code review?",
+          "options": ["Reading documentation", "Examining code written by others for quality", "Writing tests", "Deploying code"],
+          "correctAnswer": 1,
+          "explanation": "Code reviews involve peers examining code to ensure quality, find bugs, and share knowledge."
+        },
+        {
+          "question": "What is Scrum?",
+          "options": ["A database tool", "An Agile framework with sprints and ceremonies", "A programming language", "A design pattern"],
+          "correctAnswer": 1,
+          "explanation": "Scrum is an Agile framework that organizes work into time-boxed sprints."
+        },
+        {
+          "question": "What is a sprint in Agile?",
+          "options": ["Running fast", "A time-boxed iteration for completing work", "A type of test", "A deployment strategy"],
+          "correctAnswer": 1,
+          "explanation": "A sprint is a fixed time period (usually 1-4 weeks) for completing planned work."
+        },
+        {
+          "question": "What is the Single Responsibility Principle?",
+          "options": ["Only one person codes", "A class should have one reason to change", "Write one function only", "Use one programming language"],
+          "correctAnswer": 1,
+          "explanation": "SRP states that a class should have only one responsibility or reason to change."
+        },
+        {
+          "question": "What is pair programming?",
+          "options": ["Writing code in pairs of lines", "Two developers working together on same code", "Programming twice", "Using two monitors"],
+          "correctAnswer": 1,
+          "explanation": "Pair programming involves two developers collaborating at one workstation."
+        },
+        {
+          "question": "What is a code smell?",
+          "options": ["Bad odor in office", "A surface indication of deeper code problems", "Syntax error", "Compiler warning"],
+          "correctAnswer": 1,
+          "explanation": "Code smells are patterns suggesting potential problems in code design."
+        },
+        {
+          "question": "What is system design?",
+          "options": ["Designing user interfaces", "Architecting scalable and reliable software systems", "Creating databases", "Writing documentation"],
+          "correctAnswer": 1,
+          "explanation": "System design involves planning architecture to meet scalability, reliability, and performance requirements."
+        },
+        {
+          "question": "What is the Open-Closed Principle?",
+          "options": ["Code should be public", "Software entities should be open for extension, closed for modification", "Always keep files open", "Code should be documented"],
+          "correctAnswer": 1,
+          "explanation": "OCP states code should be extendable without modifying existing code."
+        },
+        {
+          "question": "What is a stand-up meeting in Agile?",
+          "options": ["A meeting while standing", "A short daily meeting to sync team progress", "A final meeting", "A meeting with stakeholders"],
+          "correctAnswer": 1,
+          "explanation": "Daily stand-ups are brief meetings where team members share progress and blockers."
+        },
+        {
+          "question": "What is technical documentation?",
+          "options": ["User manuals only", "Written material explaining system architecture and code", "Marketing content", "Legal documents"],
+          "correctAnswer": 1,
+          "explanation": "Technical documentation explains how systems work for developers and maintainers."
+        },
+        {
+          "question": "What is the KISS principle?",
+          "options": ["Keep Iterating System Software", "Keep It Simple, Stupid", "Knowing Integrated System Structure", "Key Integration Security Standard"],
+          "correctAnswer": 1,
+          "explanation": "KISS principle advocates for simplicity in design and avoiding unnecessary complexity."
+        },
+        {
+          "question": "What is separation of concerns?",
+          "options": ["Separating team members", "Dividing program into distinct sections handling specific functionality", "Isolating bugs", "Splitting databases"],
+          "correctAnswer": 1,
+          "explanation": "Separation of concerns means organizing code so each section addresses a specific aspect."
+        },
+        {
+          "question": "What is a retrospective in Agile?",
+          "options": ["Looking back at old code", "A meeting to reflect on the sprint and improve", "Reviewing documentation", "Testing backwards"],
+          "correctAnswer": 1,
+          "explanation": "Retrospectives are meetings where teams discuss what went well and what to improve."
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Social Media Platform",
+      "description": "Build a full-featured social media application with user authentication, posts, comments, likes, and real-time updates.",
+      "difficulty": "Beginner",
+      "duration": "3-4 weeks",
+      "skills": ["React", "Node.js", "MongoDB", "Express", "JWT", "Socket.io"],
+      "tasks": [
+        "Set up React frontend with routing and state management",
+        "Create Node.js/Express backend with REST API",
+        "Implement user authentication with JWT",
+        "Build post creation, editing, and deletion features",
+        "Add comments and likes functionality",
+        "Implement real-time notifications with Socket.io",
+        "Deploy to Heroku and Netlify"
+      ]
+    },
+    {
+      "title": "E-Commerce Store",
+      "description": "Develop a complete online store with product catalog, shopping cart, checkout, and payment integration.",
+      "difficulty": "Intermediate",
+      "duration": "4-5 weeks",
+      "skills": ["Next.js", "Node.js", "PostgreSQL", "Stripe", "Redux", "Tailwind CSS"],
+      "tasks": [
+        "Design and implement product catalog with search and filters",
+        "Build shopping cart with persistent storage",
+        "Create user authentication and profile management",
+        "Integrate Stripe payment gateway",
+        "Implement order management and history",
+        "Add admin dashboard for product management",
+        "Set up email notifications for orders",
+        "Deploy with CI/CD pipeline"
+      ]
+    },
+    {
+      "title": "Project Management Tool",
+      "description": "Create a collaborative project management application with boards, tasks, teams, and progress tracking.",
+      "difficulty": "Intermediate",
+      "duration": "5-6 weeks",
+      "skills": ["React", "TypeScript", "Node.js", "PostgreSQL", "WebSockets", "Redis"],
+      "tasks": [
+        "Build drag-and-drop task board interface",
+        "Implement team and user management",
+        "Create real-time collaboration features",
+        "Add file upload and attachment system",
+        "Build activity timeline and notifications",
+        "Implement role-based access control",
+        "Add analytics and reporting dashboard",
+        "Set up automated testing suite"
+      ]
+    },
+    {
+      "title": "Video Streaming Platform",
+      "description": "Build a video streaming service with upload, transcoding, playback, and subscription features.",
+      "difficulty": "Advanced",
+      "duration": "6-8 weeks",
+      "skills": ["React", "Node.js", "AWS S3", "FFmpeg", "MongoDB", "Redis", "Elasticsearch"],
+      "tasks": [
+        "Implement video upload with chunked transfer",
+        "Set up video transcoding pipeline with FFmpeg",
+        "Build adaptive bitrate streaming (HLS)",
+        "Create video player with custom controls",
+        "Implement search with Elasticsearch",
+        "Add user subscriptions and payments",
+        "Build recommendation system",
+        "Set up CDN for video delivery",
+        "Implement analytics and view tracking",
+        "Deploy with auto-scaling infrastructure"
+      ]
+    },
+    {
+      "title": "Real-Time Collaborative Editor",
+      "description": "Develop a Google Docs-like collaborative text editor with real-time synchronization and rich formatting.",
+      "difficulty": "Advanced",
+      "duration": "7-8 weeks",
+      "skills": ["React", "Node.js", "WebSockets", "CRDT", "MongoDB", "TypeScript", "Docker"],
+      "tasks": [
+        "Build rich text editor with formatting tools",
+        "Implement operational transformation or CRDT",
+        "Create real-time multi-user synchronization",
+        "Add presence indicators and cursors",
+        "Build version history and restore",
+        "Implement commenting and suggestions",
+        "Add document sharing and permissions",
+        "Create offline mode with sync",
+        "Set up containerized deployment",
+        "Implement comprehensive testing"
+      ]
+    }
+  ]
+}

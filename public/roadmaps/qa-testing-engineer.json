@@ -1,0 +1,1847 @@
+{
+  "slug": "qa-testing-engineer",
+  "title": "QA & Software Testing Engineer",
+  "summary": "Ensure software quality, reliability, and user satisfaction through systematic testing, automation, and validation processes.",
+  "timeline": "6-10 months",
+  "difficulty": "Beginner to Moderate",
+  "steps": [
+    {
+      "id": "testing-fundamentals",
+      "title": "Software Testing Basics (3-4 weeks)",
+      "description": "Learn testing principles, SDLC, STLC, defect lifecycle, test case design techniques, and ISTQB Foundation concepts.",
+      "resources": [
+        {
+          "title": "Software Testing Tutorial - Guru99",
+          "url": "https://www.guru99.com/software-testing.html",
+          "type": "Article",
+          "note": "Complete guide"
+        },
+        {
+          "title": "ISTQB Foundation Level Syllabus",
+          "url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+          "type": "Article"
+        },
+        {
+          "title": "Software Testing Fundamentals",
+          "url": "https://www.youtube.com/embed/T3q6QcCQZQg?si=ywFR-Dzwpz4OwcHE",
+          "type": "Video"
+        },
+        {
+          "title": "Test Case Design Techniques",
+          "url": "https://www.guru99.com/test-case.html",
+          "type": "Article"
+        },
+        {
+          "title": "SDLC Tutorial",
+          "url": "https://www.guru99.com/software-development-life-cycle-tutorial.html",
+          "type": "Article"
+        },
+        {
+          "title": "STLC (Software Testing Life Cycle)",
+          "url": "https://www.softwaretestinghelp.com/software-testing-life-cycle/",
+          "type": "Article"
+        },
+        {
+          "title": "Defect/Bug Life Cycle",
+          "url": "https://www.guru99.com/defect-life-cycle.html",
+          "type": "Article"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is software testing?",
+          "options": ["Evaluating software to find defects", "Database testing", "CSS testing", "Writing code"],
+          "correctAnswer": 0,
+          "explanation": "Testing ensures software meets requirements."
+        },
+        {
+          "question": "What is SDLC?",
+          "options": ["CSS lifecycle", "Software Development Life Cycle", "Database lifecycle", "Testing lifecycle"],
+          "correctAnswer": 1,
+          "explanation": "SDLC defines stages from planning to deployment."
+        },
+        {
+          "question": "What is STLC?",
+          "options": ["Software Testing Life Cycle", "Database lifecycle", "CSS lifecycle", "Development lifecycle"],
+          "correctAnswer": 0,
+          "explanation": "STLC covers test planning, design, execution, closure."
+        },
+        {
+          "question": "What is a test case?",
+          "options": ["Database case", "Document with test steps and expected results", "CSS case", "Bug report"],
+          "correctAnswer": 1,
+          "explanation": "Test cases validate specific requirements."
+        },
+        {
+          "question": "What is defect lifecycle?",
+          "options": ["Stages of a bug from detection to closure", "Database lifecycle", "CSS lifecycle", "Development lifecycle"],
+          "correctAnswer": 0,
+          "explanation": "Defect lifecycle tracks bug status changes."
+        },
+        {
+          "question": "What is ISTQB?",
+          "options": ["CSS certification", "International Software Testing Qualifications Board", "Database certification", "Development certification"],
+          "correctAnswer": 1,
+          "explanation": "ISTQB provides industry-standard testing certifications."
+        },
+        {
+          "question": "What is verification?",
+          "options": ["Are we building the product right?", "Database verification", "CSS verification", "Are we building the right product?"],
+          "correctAnswer": 0,
+          "explanation": "Verification checks if product meets specifications."
+        },
+        {
+          "question": "What is validation?",
+          "options": ["Database validation", "Are we building the right product?", "CSS validation", "Are we building the product right?"],
+          "correctAnswer": 1,
+          "explanation": "Validation ensures product meets user needs."
+        },
+        {
+          "question": "What is test plan?",
+          "options": ["Document outlining testing strategy", "Database plan", "CSS plan", "Bug report"],
+          "correctAnswer": 0,
+          "explanation": "Test plans define scope, approach, resources, schedule."
+        },
+        {
+          "question": "What is test coverage?",
+          "options": ["CSS coverage", "Percentage of code/requirements tested", "Database coverage", "Bug count"],
+          "correctAnswer": 1,
+          "explanation": "Coverage measures thoroughness of testing."
+        },
+        {
+          "question": "What is a test scenario?",
+          "options": ["Database scenario", "CSS scenario", "High-level testing approach for feature", "Test case"],
+          "correctAnswer": 2,
+          "explanation": "Scenarios describe what to test, not how."
+        },
+        {
+          "question": "What is test data?",
+          "options": ["CSS data", "Database data", "Bug data", "Input values used during testing"],
+          "correctAnswer": 3,
+          "explanation": "Test data includes valid, invalid, and edge cases."
+        },
+        {
+          "question": "What is test environment?",
+          "options": ["Database environment", "CSS environment", "Setup where testing is performed", "Production"],
+          "correctAnswer": 2,
+          "explanation": "Test environment mimics production setup."
+        },
+        {
+          "question": "What are entry criteria?",
+          "options": ["Database criteria", "CSS criteria", "Exit conditions", "Conditions to start testing"],
+          "correctAnswer": 3,
+          "explanation": "Entry criteria ensure readiness for testing."
+        },
+        {
+          "question": "What are exit criteria?",
+          "options": ["Database criteria", "CSS criteria", "Conditions to stop testing", "Entry conditions"],
+          "correctAnswer": 2,
+          "explanation": "Exit criteria determine testing completion."
+        },
+        {
+          "question": "What are test metrics?",
+          "options": ["CSS metrics", "Database metrics", "Bug count only", "Measurements tracking test progress"],
+          "correctAnswer": 3,
+          "explanation": "Metrics include coverage, defects, pass/fail rates."
+        },
+        {
+          "question": "What is defect severity?",
+          "options": ["Database severity", "CSS severity", "Impact of bug on system functionality", "Bug priority"],
+          "correctAnswer": 2,
+          "explanation": "Severity: critical, major, minor, trivial."
+        },
+        {
+          "question": "What is defect priority?",
+          "options": ["Database priority", "CSS priority", "Bug severity", "Urgency to fix bug"],
+          "correctAnswer": 3,
+          "explanation": "Priority: high, medium, low based on business."
+        },
+        {
+          "question": "What is root cause analysis?",
+          "options": ["Database analysis", "CSS analysis", "Identifying underlying reason for defect", "Bug reporting"],
+          "correctAnswer": 2,
+          "explanation": "Root cause analysis prevents future defects."
+        },
+        {
+          "question": "What is test closure?",
+          "options": ["CSS closure", "Database closure", "Starting testing", "Final testing phase with summary report"],
+          "correctAnswer": 3,
+          "explanation": "Test closure documents lessons learned."
+        },
+        {
+          "question": "What is risk-based testing?",
+          "options": ["Database testing", "CSS testing", "Prioritizing tests based on risk level", "Random testing"],
+          "correctAnswer": 2,
+          "explanation": "Risk-based testing focuses on critical areas."
+        }
+      ]
+    },
+    {
+      "id": "testing-types-techniques",
+      "title": "Testing Types & Techniques (3-4 weeks)",
+      "description": "Master functional vs non-functional testing, black box/white box testing, regression, smoke, sanity, integration, system, and acceptance testing.",
+      "resources": [
+        {
+          "title": "Functional vs Non-Functional Testing",
+          "url": "https://www.guru99.com/functional-testing-vs-non-functional-testing.html",
+          "type": "Article"
+        },
+        {
+          "title": "Black Box Testing Techniques",
+          "url": "https://www.guru99.com/black-box-testing.html",
+          "type": "Article"
+        },
+        {
+          "title": "White Box Testing",
+          "url": "https://www.guru99.com/white-box-testing.html",
+          "type": "Article"
+        },
+        {
+          "title": "Regression Testing",
+          "url": "https://www.guru99.com/regression-testing.html",
+          "type": "Article"
+        },
+        {
+          "title": "Smoke & Sanity Testing",
+          "url": "https://www.guru99.com/smoke-sanity-testing.html",
+          "type": "Article"
+        },
+        {
+          "title": "Integration Testing",
+          "url": "https://www.softwaretestinghelp.com/what-is-integration-testing/",
+          "type": "Article"
+        },
+        {
+          "title": "Acceptance Testing (UAT)",
+          "url": "https://www.guru99.com/user-acceptance-testing.html",
+          "type": "Article"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is functional testing?",
+          "options": ["Testing software functions against requirements", "Database testing", "CSS testing", "Performance testing"],
+          "correctAnswer": 0,
+          "explanation": "Functional testing validates business logic."
+        },
+        {
+          "question": "What is non-functional testing?",
+          "options": ["CSS testing", "Testing performance, security, usability", "Database testing", "Feature testing"],
+          "correctAnswer": 1,
+          "explanation": "Non-functional testing checks quality attributes."
+        },
+        {
+          "question": "What is black box testing?",
+          "options": ["Testing without knowing internal code", "Database testing", "CSS testing", "Code review"],
+          "correctAnswer": 0,
+          "explanation": "Black box focuses on inputs and outputs."
+        },
+        {
+          "question": "What is white box testing?",
+          "options": ["Database testing", "Testing internal code structure", "CSS testing", "UI testing"],
+          "correctAnswer": 1,
+          "explanation": "White box requires code knowledge."
+        },
+        {
+          "question": "What is regression testing?",
+          "options": ["Re-testing after code changes", "Database testing", "CSS testing", "First-time testing"],
+          "correctAnswer": 0,
+          "explanation": "Regression ensures new changes don't break existing features."
+        },
+        {
+          "question": "What is smoke testing?",
+          "options": ["CSS testing", "Quick preliminary test of critical features", "Database testing", "Full testing"],
+          "correctAnswer": 1,
+          "explanation": "Smoke testing verifies build stability."
+        },
+        {
+          "question": "What is sanity testing?",
+          "options": ["Quick check of specific functionality", "Database testing", "CSS testing", "Full testing"],
+          "correctAnswer": 0,
+          "explanation": "Sanity testing validates bug fixes or new features."
+        },
+        {
+          "question": "What is integration testing?",
+          "options": ["Database testing", "Testing combined modules/components", "CSS testing", "Unit testing"],
+          "correctAnswer": 1,
+          "explanation": "Integration testing finds interface defects."
+        },
+        {
+          "question": "What is UAT?",
+          "options": ["User Acceptance Testing by end users", "Database testing", "CSS testing", "Developer testing"],
+          "correctAnswer": 0,
+          "explanation": "UAT validates software meets business needs."
+        },
+        {
+          "question": "What is system testing?",
+          "options": ["CSS testing", "Testing complete integrated system", "Database testing", "Unit testing"],
+          "correctAnswer": 1,
+          "explanation": "System testing validates end-to-end flows."
+        },
+        {
+          "question": "What is positive testing?",
+          "options": ["Database testing", "CSS testing", "Testing with valid inputs", "Error testing"],
+          "correctAnswer": 2,
+          "explanation": "Positive testing checks expected behavior."
+        },
+        {
+          "question": "What is negative testing?",
+          "options": ["CSS testing", "Database testing", "Valid testing", "Testing with invalid inputs"],
+          "correctAnswer": 3,
+          "explanation": "Negative testing validates error handling."
+        },
+        {
+          "question": "What is boundary value analysis?",
+          "options": ["Database analysis", "CSS analysis", "Testing at input boundaries", "Random testing"],
+          "correctAnswer": 2,
+          "explanation": "Boundary testing finds edge case defects."
+        },
+        {
+          "question": "What is equivalence partitioning?",
+          "options": ["Database partitioning", "CSS partitioning", "Random testing", "Dividing inputs into valid/invalid groups"],
+          "correctAnswer": 3,
+          "explanation": "Equivalence partitioning reduces test cases."
+        },
+        {
+          "question": "What is unit testing?",
+          "options": ["Database testing", "CSS testing", "Testing individual code units/functions", "System testing"],
+          "correctAnswer": 2,
+          "explanation": "Unit testing is done by developers."
+        },
+        {
+          "question": "What is alpha testing?",
+          "options": ["CSS testing", "Database testing", "User testing", "Internal testing before release"],
+          "correctAnswer": 3,
+          "explanation": "Alpha testing finds bugs in controlled environment."
+        },
+        {
+          "question": "What is beta testing?",
+          "options": ["Database testing", "CSS testing", "External testing by real users", "Internal testing"],
+          "correctAnswer": 2,
+          "explanation": "Beta testing gathers user feedback."
+        },
+        {
+          "question": "What is usability testing?",
+          "options": ["Database testing", "CSS testing", "Performance testing", "Testing user experience and ease of use"],
+          "correctAnswer": 3,
+          "explanation": "Usability testing ensures intuitive interface."
+        },
+        {
+          "question": "What is compatibility testing?",
+          "options": ["Database testing", "CSS testing", "Testing across browsers, OS, devices", "Single platform"],
+          "correctAnswer": 2,
+          "explanation": "Compatibility ensures broad platform support."
+        },
+        {
+          "question": "What is end-to-end testing?",
+          "options": ["CSS testing", "Database testing", "Unit testing", "Testing complete workflow from start to finish"],
+          "correctAnswer": 3,
+          "explanation": "E2E testing validates entire user journey."
+        },
+        {
+          "question": "What is retesting?",
+          "options": ["Database testing", "CSS testing", "Verifying fixed bugs", "New feature testing"],
+          "correctAnswer": 2,
+          "explanation": "Retesting confirms defect resolution."
+        }
+      ]
+    },
+    {
+      "id": "manual-testing",
+      "title": "Manual Testing & Documentation (5-7 weeks)",
+      "description": "Learn test planning, test case writing, bug reporting with Jira, exploratory testing, and ad-hoc testing techniques.",
+      "resources": [
+        {
+          "title": "Writing Test Plans - IEEE 829",
+          "url": "https://www.guru99.com/what-everybody-ought-to-know-about-test-planing.html",
+          "type": "Article"
+        },
+        {
+          "title": "Test Case Design & Writing",
+          "url": "https://www.softwaretestinghelp.com/test-case-template-examples/",
+          "type": "Article"
+        },
+        {
+          "title": "How to Write Effective Bug Reports",
+          "url": "https://www.softwaretestinghelp.com/how-to-write-good-bug-report/",
+          "type": "Article"
+        },
+        {
+          "title": "Jira Tutorial for Beginners",
+          "url": "https://www.youtube.com/embed/NDVSMlVYxm8?si=vXIpvbqXXwrseRql",
+          "type": "Video",
+          "duration": "1 hour"
+        },
+        {
+          "title": "Exploratory Testing Explained",
+          "url": "https://www.guru99.com/exploratory-testing.html",
+          "type": "Article"
+        },
+        {
+          "title": "Session-Based Test Management",
+          "url": "https://www.satisfice.com/download/session-based-test-management",
+          "type": "Article"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is test planning?",
+          "options": ["Database planning", "CSS planning", "Writing code", "Defining test strategy and resources"],
+          "correctAnswer": 3,
+          "explanation": "Test planning outlines scope, approach, schedule."
+        },
+        {
+          "question": "What is a test case?",
+          "options": ["CSS case", "Step-by-step procedure to verify functionality", "Database case", "Bug report"],
+          "correctAnswer": 1,
+          "explanation": "Test cases include preconditions, steps, expected results."
+        },
+        {
+          "question": "What is Jira?",
+          "options": ["Bug tracking and project management tool", "Database jira", "CSS jira", "Testing framework"],
+          "correctAnswer": 0,
+          "explanation": "Jira manages issues, sprints, and workflows."
+        },
+        {
+          "question": "What is a bug report?",
+          "options": ["Database report", "Document detailing a defect with steps to reproduce", "CSS report", "Test case"],
+          "correctAnswer": 1,
+          "explanation": "Bug reports help developers understand and fix issues."
+        },
+        {
+          "question": "What is exploratory testing?",
+          "options": ["Unscripted testing to discover defects", "Database testing", "CSS testing", "Automated testing"],
+          "correctAnswer": 0,
+          "explanation": "Exploratory testing relies on tester creativity."
+        },
+        {
+          "question": "What is ad-hoc testing?",
+          "options": ["CSS testing", "Informal testing without plan", "Database testing", "Automated testing"],
+          "correctAnswer": 1,
+          "explanation": "Ad-hoc testing is unstructured and random."
+        },
+        {
+          "question": "What is test execution?",
+          "options": ["Running test cases and logging results", "Database execution", "CSS execution", "Writing tests"],
+          "correctAnswer": 0,
+          "explanation": "Execution validates actual vs expected results."
+        },
+        {
+          "question": "What is IEEE 829?",
+          "options": ["Database standard", "Standard for software test documentation", "CSS standard", "Programming standard"],
+          "correctAnswer": 1,
+          "explanation": "IEEE 829 defines test plan templates."
+        },
+        {
+          "question": "What is traceability matrix?",
+          "options": ["Document mapping requirements to test cases", "Database matrix", "CSS matrix", "Bug matrix"],
+          "correctAnswer": 0,
+          "explanation": "Traceability ensures all requirements are tested."
+        },
+        {
+          "question": "What is test summary report?",
+          "options": ["CSS report", "Final report with test metrics and results", "Database report", "Bug report"],
+          "correctAnswer": 1,
+          "explanation": "Summary reports communicate testing outcomes."
+        },
+        {
+          "question": "What is a test suite?",
+          "options": ["Database suite", "CSS suite", "Collection of related test cases", "Single test"],
+          "correctAnswer": 2,
+          "explanation": "Test suites organize tests by feature or module."
+        },
+        {
+          "question": "What is test execution report?",
+          "options": ["CSS report", "Database report", "Bug report", "Document showing pass/fail status"],
+          "correctAnswer": 3,
+          "explanation": "Execution reports track test results."
+        },
+        {
+          "question": "What is defect tracking?",
+          "options": ["Database tracking", "CSS tracking", "Managing bugs through lifecycle", "Test tracking"],
+          "correctAnswer": 2,
+          "explanation": "Defect tracking uses tools like Jira, Bugzilla."
+        },
+        {
+          "question": "What's difference between severity and priority?",
+          "options": ["Database difference", "CSS difference", "Same thing", "Severity is impact, priority is urgency"],
+          "correctAnswer": 3,
+          "explanation": "Severity: technical impact, priority: business urgency."
+        },
+        {
+          "question": "What is test strategy?",
+          "options": ["Database strategy", "CSS strategy", "High-level approach to testing", "Test case"],
+          "correctAnswer": 2,
+          "explanation": "Test strategy defines testing principles and methods."
+        },
+        {
+          "question": "What is session-based testing?",
+          "options": ["CSS testing", "Database testing", "Scripted testing", "Structured exploratory testing in time-boxed sessions"],
+          "correctAnswer": 3,
+          "explanation": "Session-based testing balances exploration and structure."
+        },
+        {
+          "question": "What is a charter?",
+          "options": ["Database charter", "CSS charter", "Goal and scope for exploratory test session", "Bug report"],
+          "correctAnswer": 2,
+          "explanation": "Charters guide focused exploratory testing."
+        },
+        {
+          "question": "What is test oracle?",
+          "options": ["Database oracle", "CSS oracle", "Testing tool", "Mechanism to determine pass/fail"],
+          "correctAnswer": 3,
+          "explanation": "Test oracle provides expected results."
+        },
+        {
+          "question": "What's difference between smoke and sanity?",
+          "options": ["Database difference", "CSS difference", "Smoke tests build stability, sanity tests specific changes", "Same thing"],
+          "correctAnswer": 2,
+          "explanation": "Smoke is broader, sanity is targeted."
+        },
+        {
+          "question": "What are acceptance criteria?",
+          "options": ["Conditions for feature to be accepted", "Database criteria", "CSS criteria", "Bug criteria"],
+          "correctAnswer": 0,
+          "explanation": "Acceptance criteria define done."
+        }
+      ]
+    },
+    {
+      "id": "programming-qa",
+      "title": "Programming for QA (4-6 weeks)",
+      "description": "Master Python or JavaScript for test automation. Learn OOP, data structures, and programming fundamentals for QA engineers.",
+      "resources": [
+        {
+          "title": "Python Full Course - freeCodeCamp",
+          "url": "https://www.youtube.com/embed/rfscVS0vtbw",
+          "type": "Video",
+          "duration": "4 hours"
+        },
+        {
+          "title": "Python Official Tutorial",
+          "url": "https://docs.python.org/3/tutorial/",
+          "type": "Article"
+        },
+        {
+          "title": "Python for QA - Complete Guide",
+          "url": "https://www.softwaretestinghelp.com/python-tutorial/",
+          "type": "Article"
+        },
+        {
+          "title": "OOP in Python",
+          "url": "https://www.youtube.com/embed/Ej_02ICOIgs?si=eFbIwFrQ02h3js62",
+          "type": "Video"
+        },
+        {
+          "title": "JavaScript for QA Engineers",
+          "url": "https://www.youtube.com/embed/8aGhZQkoFbQ",
+          "type": "Video"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why learn programming for QA?",
+          "options": ["For test automation and efficiency", "Database programming", "CSS programming", "Not needed"],
+          "correctAnswer": 0,
+          "explanation": "Programming enables automated testing at scale."
+        },
+        {
+          "question": "What is Python?",
+          "options": ["CSS python", "High-level programming language", "Database python", "Testing tool"],
+          "correctAnswer": 1,
+          "explanation": "Python is popular for test automation."
+        },
+        {
+          "question": "What is OOP?",
+          "options": ["Object-Oriented Programming paradigm", "Database OOP", "CSS OOP", "Testing OOP"],
+          "correctAnswer": 0,
+          "explanation": "OOP uses classes and objects for code organization."
+        },
+        {
+          "question": "What is a list in Python?",
+          "options": ["Database list", "Ordered collection of items", "CSS list", "Test case"],
+          "correctAnswer": 1,
+          "explanation": "Lists store multiple values in order."
+        },
+        {
+          "question": "What is a function?",
+          "options": ["Reusable block of code", "Database function", "CSS function", "Test case"],
+          "correctAnswer": 0,
+          "explanation": "Functions encapsulate logic for reuse."
+        },
+        {
+          "question": "What is JavaScript?",
+          "options": ["CSS javascript", "Programming language for web automation", "Database javascript", "Testing tool"],
+          "correctAnswer": 1,
+          "explanation": "JavaScript is essential for web testing."
+        },
+        {
+          "question": "What is a variable?",
+          "options": ["Container for storing data", "Database variable", "CSS variable", "Test case"],
+          "correctAnswer": 0,
+          "explanation": "Variables hold values that can change."
+        },
+        {
+          "question": "What is a loop?",
+          "options": ["Database loop", "Structure that repeats code", "CSS loop", "Test case"],
+          "correctAnswer": 1,
+          "explanation": "Loops iterate over data or repeat actions."
+        },
+        {
+          "question": "What is an if statement?",
+          "options": ["Conditional logic for decision making", "Database statement", "CSS statement", "Test case"],
+          "correctAnswer": 0,
+          "explanation": "If statements control program flow."
+        },
+        {
+          "question": "What is a class?",
+          "options": ["CSS class", "Blueprint for creating objects", "Database class", "Test case"],
+          "correctAnswer": 1,
+          "explanation": "Classes define object properties and methods."
+        },
+        {
+          "question": "What are data types?",
+          "options": ["Database types", "CSS types", "Categories of data: int, string, bool, float", "Test types"],
+          "correctAnswer": 2,
+          "explanation": "Data types determine value storage."
+        },
+        {
+          "question": "What is exception handling?",
+          "options": ["CSS handling", "Database handling", "No handling", "Managing errors with try-except blocks"],
+          "correctAnswer": 3,
+          "explanation": "Exception handling prevents test crashes."
+        },
+        {
+          "question": "What are modules?",
+          "options": ["Database modules", "CSS modules", "Files containing reusable code", "Test cases"],
+          "correctAnswer": 2,
+          "explanation": "Modules organize code and enable imports."
+        },
+        {
+          "question": "What is file handling?",
+          "options": ["Database handling", "CSS handling", "No files", "Reading/writing data to files"],
+          "correctAnswer": 3,
+          "explanation": "File handling manages test data and logs."
+        },
+        {
+          "question": "What are regular expressions?",
+          "options": ["Database expressions", "CSS expressions", "Patterns for matching text", "Math expressions"],
+          "correctAnswer": 2,
+          "explanation": "Regex validates strings and extracts data."
+        },
+        {
+          "question": "What are assertions?",
+          "options": ["CSS assertions", "Database assertions", "Comments", "Statements verifying expected outcomes"],
+          "correctAnswer": 3,
+          "explanation": "Assertions validate test conditions."
+        },
+        {
+          "question": "What is debugging?",
+          "options": ["Database debugging", "CSS debugging", "Finding and fixing code errors", "Testing"],
+          "correctAnswer": 2,
+          "explanation": "Debugging uses breakpoints and logs."
+        },
+        {
+          "question": "What is an IDE?",
+          "options": ["Database IDE", "CSS IDE", "Testing tool", "Integrated Development Environment"],
+          "correctAnswer": 3,
+          "explanation": "IDEs like PyCharm, VS Code aid development."
+        },
+        {
+          "question": "What is Git?",
+          "options": ["Database git", "CSS git", "Version control system", "Testing framework"],
+          "correctAnswer": 2,
+          "explanation": "Git tracks code changes and collaboration."
+        },
+        {
+          "question": "What is code review?",
+          "options": ["CSS review", "Database review", "Automated testing", "Peer examination of code quality"],
+          "correctAnswer": 3,
+          "explanation": "Code review improves test script quality."
+        }
+      ]
+    },
+    {
+      "id": "selenium-automation",
+      "title": "Selenium WebDriver (6-8 weeks)",
+      "description": "Master web automation with Selenium including locators, WebDriver architecture, Page Object Model, and best practices.",
+      "resources": [
+        {
+          "title": "Selenium Tutorial - Complete Course (Guru99)",
+          "url": "https://www.guru99.com/selenium-tutorial.html",
+          "type": "Article"
+        },
+        {
+          "title": "Selenium with Python - Full Course",
+          "url": "https://www.youtube.com/embed/b5jt2bhSeXs",
+          "type": "Video",
+          "duration": "3 hours"
+        },
+        {
+          "title": "Selenium Official Documentation",
+          "url": "https://www.selenium.dev/documentation/",
+          "type": "Article"
+        },
+        {
+          "title": "Locators in Selenium",
+          "url": "https://www.selenium.dev/documentation/webdriver/elements/locators/",
+          "type": "Article"
+        },
+        {
+          "title": "Page Object Model (POM)",
+          "url": "https://www.guru99.com/page-object-model-pom-page-factory-in-selenium-ultimate-guide.html",
+          "type": "Article"
+        },
+        {
+          "title": "Selenium Best Practices",
+          "url": "https://www.selenium.dev/documentation/test_practices/",
+          "type": "Article"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is Selenium?",
+          "options": ["Database selenium", "CSS selenium", "Web browser automation tool", "API testing"],
+          "correctAnswer": 2,
+          "explanation": "Selenium automates browser interactions."
+        },
+        {
+          "question": "What is WebDriver?",
+          "options": ["CSS driver", "Database driver", "API driver", "Interface for browser automation"],
+          "correctAnswer": 3,
+          "explanation": "WebDriver controls browsers programmatically."
+        },
+        {
+          "question": "What is a locator?",
+          "options": ["Strategy to find web elements", "Database locator", "CSS locator", "API locator"],
+          "correctAnswer": 0,
+          "explanation": "Locators identify elements by ID, class, XPath, etc."
+        },
+        {
+          "question": "What is XPath?",
+          "options": ["Database xpath", "Language for navigating XML/HTML", "CSS xpath", "API xpath"],
+          "correctAnswer": 1,
+          "explanation": "XPath locates elements in DOM tree."
+        },
+        {
+          "question": "What is Page Object Model?",
+          "options": ["Design pattern separating page elements and tests", "Database model", "CSS model", "API model"],
+          "correctAnswer": 0,
+          "explanation": "POM improves test maintainability and reusability."
+        },
+        {
+          "question": "What is TestNG?",
+          "options": ["CSS testng", "Testing framework for Java", "Database testng", "Browser"],
+          "correctAnswer": 1,
+          "explanation": "TestNG provides annotations and assertions."
+        },
+        {
+          "question": "What is implicit wait?",
+          "options": ["Database wait", "Global wait for element presence", "CSS wait", "No wait"],
+          "correctAnswer": 1,
+          "explanation": "Implicit wait applies to all elements."
+        },
+        {
+          "question": "What is explicit wait?",
+          "options": ["Database wait", "Wait for specific condition", "CSS wait", "No wait"],
+          "correctAnswer": 1,
+          "explanation": "Explicit wait targets specific elements or conditions."
+        },
+        {
+          "question": "What is headless browser?",
+          "options": ["Browser without GUI", "Database browser", "CSS browser", "Full browser"],
+          "correctAnswer": 0,
+          "explanation": "Headless mode runs faster in CI/CD."
+        },
+        {
+          "question": "What is Selenium Grid?",
+          "options": ["CSS grid", "Parallel test execution across machines", "Database grid", "Single machine"],
+          "correctAnswer": 1,
+          "explanation": "Grid enables distributed testing."
+        },
+        {
+          "question": "What are CSS selectors?",
+          "options": ["Database selectors", "XPath selectors", "Patterns to select elements by CSS properties", "No selectors"],
+          "correctAnswer": 2,
+          "explanation": "CSS selectors are faster than XPath."
+        },
+        {
+          "question": "What is fluent wait?",
+          "options": ["Database wait", "CSS wait", "No wait", "Wait with polling interval and timeout"],
+          "correctAnswer": 3,
+          "explanation": "Fluent wait checks conditions periodically."
+        },
+        {
+          "question": "How to handle multiple windows?",
+          "options": ["Database windows", "CSS windows", "Switch using window handles", "Cannot handle"],
+          "correctAnswer": 2,
+          "explanation": "Use getWindowHandles() and switchTo()."
+        },
+        {
+          "question": "How to handle alerts?",
+          "options": ["CSS alerts", "Database alerts", "Ignore alerts", "Use switchTo().alert() to accept/dismiss"],
+          "correctAnswer": 3,
+          "explanation": "Alert API handles JavaScript alerts."
+        },
+        {
+          "question": "What are frames?",
+          "options": ["Database frames", "CSS frames", "HTML iframe elements in page", "No frames"],
+          "correctAnswer": 2,
+          "explanation": "Switch to frames with switchTo().frame()."
+        },
+        {
+          "question": "What is Actions class?",
+          "options": ["Database actions", "CSS actions", "Simple clicks", "Handles complex mouse/keyboard interactions"],
+          "correctAnswer": 3,
+          "explanation": "Actions class performs drag-drop, hover."
+        },
+        {
+          "question": "What are expected conditions?",
+          "options": ["Database conditions", "CSS conditions", "Predefined wait conditions in WebDriverWait", "No conditions"],
+          "correctAnswer": 2,
+          "explanation": "Expected conditions like elementToBeClickable."
+        },
+        {
+          "question": "What is stale element?",
+          "options": ["CSS element", "Database element", "Fresh element", "Element no longer attached to DOM"],
+          "correctAnswer": 3,
+          "explanation": "Stale elements cause StaleElementReferenceException."
+        },
+        {
+          "question": "How to manage test data?",
+          "options": ["Use Excel, CSV, JSON files", "Database only", "CSS only", "No data"],
+          "correctAnswer": 0,
+          "explanation": "External files enable data-driven testing."
+        },
+        {
+          "question": "What is parallel execution?",
+          "options": ["Running tests simultaneously", "Database execution", "CSS execution", "Sequential only"],
+          "correctAnswer": 0,
+          "explanation": "Parallel execution reduces test time."
+        }
+      ]
+    },
+    {
+      "id": "modern-frameworks",
+      "title": "Modern Test Automation Frameworks (6-8 weeks)",
+      "description": "Learn Cypress for modern web testing, Playwright for cross-browser testing, and Puppeteer for headless Chrome automation.",
+      "resources": [
+        {
+          "title": "Cypress Official Tutorial",
+          "url": "https://docs.cypress.io/guides/getting-started/writing-your-first-test",
+          "type": "Interactive"
+        },
+        {
+          "title": "Cypress Full Course - freeCodeCamp",
+          "url": "https://www.youtube.com/embed/u8vMu7viCm8",
+          "type": "Video",
+          "duration": "4 hours"
+        },
+        {
+          "title": "Cypress Best Practices",
+          "url": "https://docs.cypress.io/guides/references/best-practices",
+          "type": "Article"
+        },
+        {
+          "title": "Playwright Official Docs",
+          "url": "https://playwright.dev/docs/intro",
+          "type": "Article"
+        },
+        {
+          "title": "Playwright Tutorial - Complete Guide",
+          "url": "https://www.youtube.com/embed/wawbt1cATsk",
+          "type": "Video"
+        },
+        {
+          "title": "Puppeteer Official Docs",
+          "url": "https://pptr.dev/",
+          "type": "Article"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is Cypress?",
+          "options": ["Database cypress", "CSS cypress", "Modern JavaScript testing framework", "API tool"],
+          "correctAnswer": 2,
+          "explanation": "Cypress provides fast, reliable web testing."
+        },
+        {
+          "question": "What is Playwright?",
+          "options": ["CSS playwright", "Cross-browser automation library", "Database playwright", "API tool"],
+          "correctAnswer": 1,
+          "explanation": "Playwright supports Chrome, Firefox, Safari, Edge."
+        },
+        {
+          "question": "What is Puppeteer?",
+          "options": ["Node library for headless Chrome automation", "Database puppeteer", "CSS puppeteer", "API tool"],
+          "correctAnswer": 0,
+          "explanation": "Puppeteer controls Chrome/Chromium."
+        },
+        {
+          "question": "What advantage does Cypress have?",
+          "options": ["Database advantage", "Fast execution with time travel debugging", "CSS advantage", "No advantages"],
+          "correctAnswer": 1,
+          "explanation": "Cypress runs in the browser with excellent DX."
+        },
+        {
+          "question": "What is auto-waiting?",
+          "options": ["Automatic waiting for elements to be ready", "Database waiting", "CSS waiting", "Manual waiting"],
+          "correctAnswer": 0,
+          "explanation": "Auto-waiting reduces flaky tests."
+        },
+        {
+          "question": "What is test retry?",
+          "options": ["CSS retry", "Re-running failed tests automatically", "Database retry", "Manual retry"],
+          "correctAnswer": 1,
+          "explanation": "Retries reduce false negatives from flakiness."
+        },
+        {
+          "question": "What is screenshot on failure?",
+          "options": ["Capturing screenshot when test fails", "Database screenshot", "CSS screenshot", "No screenshot"],
+          "correctAnswer": 0,
+          "explanation": "Screenshots help debug failures."
+        },
+        {
+          "question": "What is Video recording?",
+          "options": ["Database recording", "Recording test execution as Video", "CSS recording", "No recording"],
+          "correctAnswer": 1,
+          "explanation": "Vs provide visual debugging context."
+        },
+        {
+          "question": "What are hooks?",
+          "options": ["Functions running before/after tests (beforeEach, afterEach)", "Database hooks", "CSS hooks", "No hooks"],
+          "correctAnswer": 0,
+          "explanation": "Hooks manage setup and teardown."
+        },
+        {
+          "question": "What are custom commands?",
+          "options": ["Database commands", "User-defined reusable commands", "CSS commands", "No commands"],
+          "correctAnswer": 1,
+          "explanation": "Custom commands reduce duplication."
+        },
+        {
+          "question": "What are plugins?",
+          "options": ["Database plugins", "CSS plugins", "Extensions adding functionality to framework", "No plugins"],
+          "correctAnswer": 2,
+          "explanation": "Plugins extend capabilities like reporting."
+        },
+        {
+          "question": "What is network stubbing?",
+          "options": ["CSS stubbing", "Database stubbing", "Real requests", "Mocking network requests"],
+          "correctAnswer": 3,
+          "explanation": "Stubbing controls API responses."
+        },
+        {
+          "question": "What is intercept?",
+          "options": ["Database intercept", "CSS intercept", "Capturing and modifying network traffic", "No intercept"],
+          "correctAnswer": 2,
+          "explanation": "Intercept enables request/response manipulation."
+        },
+        {
+          "question": "What are fixtures?",
+          "options": ["Database fixtures", "CSS fixtures", "No fixtures", "Test data and setup functions"],
+          "correctAnswer": 3,
+          "explanation": "Fixtures provide consistent test state."
+        },
+        {
+          "question": "What is test isolation?",
+          "options": ["CSS isolation", "Database isolation", "Running tests independently", "Tests depend"],
+          "correctAnswer": 2,
+          "explanation": "Isolation prevents test interdependence."
+        },
+        {
+          "question": "What is visual testing?",
+          "options": ["Database testing", "CSS testing", "No visual", "Comparing screenshots for UI changes"],
+          "correctAnswer": 3,
+          "explanation": "Visual testing detects UI regressions."
+        },
+        {
+          "question": "What debugging tools exist?",
+          "options": ["Database tools", "CSS tools", "Browser DevTools, time-travel debugging", "No tools"],
+          "correctAnswer": 2,
+          "explanation": "Debugging tools inspect test execution."
+        },
+        {
+          "question": "What is test reporting?",
+          "options": ["Generating results dashboards", "Database reporting", "CSS reporting", "No reporting"],
+          "correctAnswer": 0,
+          "explanation": "Reports visualize test outcomes."
+        }
+      ]
+    },
+    {
+      "id": "api-testing",
+      "title": "API Testing (4-6 weeks)",
+      "description": "Master API testing with Postman, REST Assured, and automated API testing. Learn HTTP methods, status codes, and API test automation.",
+      "resources": [
+        {
+          "title": "API Testing Tutorial - Complete Guide",
+          "url": "https://www.guru99.com/api-testing.html",
+          "type": "Article"
+        },
+        {
+          "title": "Postman Complete Tutorial",
+          "url": "https://www.youtube.com/embed/VywxIQ2ZXw4",
+          "type": "Video",
+          "duration": "2 hours"
+        },
+        {
+          "title": "REST API Testing",
+          "url": "https://www.softwaretestinghelp.com/api-testing/",
+          "type": "Article"
+        },
+        {
+          "title": "RestAssured for Java",
+          "url": "https://rest-assured.io/",
+          "type": "Article"
+        },
+        {
+          "title": "Requests Library (Python)",
+          "url": "https://docs.python-requests.org/",
+          "type": "Article"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is API testing?",
+          "options": ["Database testing", "CSS testing", "Testing application programming interfaces", "UI testing"],
+          "correctAnswer": 2,
+          "explanation": "API testing validates backend services."
+        },
+        {
+          "question": "What is REST?",
+          "options": ["CSS rest", "Representational State Transfer architecture", "Database rest", "Testing rest"],
+          "correctAnswer": 1,
+          "explanation": "REST uses HTTP methods for web services."
+        },
+        {
+          "question": "What is Postman?",
+          "options": ["Database postman", "CSS postman", "Browser", "API testing and development platform"],
+          "correctAnswer": 3,
+          "explanation": "Postman simplifies API testing and documentation."
+        },
+        {
+          "question": "What is HTTP GET method?",
+          "options": ["Retrieve data from server", "Database method", "CSS method", "Delete data"],
+          "correctAnswer": 0,
+          "explanation": "GET requests read resources."
+        },
+        {
+          "question": "What is HTTP POST method?",
+          "options": ["Database method", "CSS method", "Send data to create resource", "Retrieve data"],
+          "correctAnswer": 2,
+          "explanation": "POST creates new resources."
+        },
+        {
+          "question": "What is status code 200?",
+          "options": ["CSS status", "OK - successful request", "Database status", "Error"],
+          "correctAnswer": 1,
+          "explanation": "200 indicates successful HTTP request."
+        },
+        {
+          "question": "What is status code 404?",
+          "options": ["Database status", "CSS status", "Success", "Not Found - resource doesn't exist"],
+          "correctAnswer": 3,
+          "explanation": "404 means requested resource not found."
+        },
+        {
+          "question": "What is REST Assured?",
+          "options": ["Database assured", "Java library for API testing", "CSS assured", "Browser"],
+          "correctAnswer": 1,
+          "explanation": "REST Assured automates REST API tests."
+        },
+        {
+          "question": "What is JSON?",
+          "options": ["JavaScript Object Notation data format", "Database JSON", "CSS JSON", "Programming language"],
+          "correctAnswer": 0,
+          "explanation": "JSON is common API data format."
+        },
+        {
+          "question": "What is Newman?",
+          "options": ["CSS newman", "CLI tool for running Postman collections", "Database newman", "Browser"],
+          "correctAnswer": 1,
+          "explanation": "Newman enables CI/CD integration for Postman."
+        },
+        {
+          "question": "What is HTTP PUT method?",
+          "options": ["Update/replace entire resource", "Database method", "CSS method", "Delete data"],
+          "correctAnswer": 0,
+          "explanation": "PUT replaces existing resources completely."
+        },
+        {
+          "question": "What is HTTP PATCH method?",
+          "options": ["CSS method", "Database method", "Partial update of resource", "Create data"],
+          "correctAnswer": 2,
+          "explanation": "PATCH modifies specific fields."
+        },
+        {
+          "question": "What is HTTP DELETE method?",
+          "options": ["Remove resource from server", "Database method", "CSS method", "Retrieve data"],
+          "correctAnswer": 0,
+          "explanation": "DELETE removes resources."
+        },
+        {
+          "question": "What is authentication?",
+          "options": ["Database authentication", "Verifying user identity (Basic, OAuth, JWT)", "CSS authentication", "No authentication"],
+          "correctAnswer": 1,
+          "explanation": "Authentication secures API access."
+        },
+        {
+          "question": "What are headers?",
+          "options": ["Metadata in HTTP requests/responses", "Database headers", "CSS headers", "No headers"],
+          "correctAnswer": 0,
+          "explanation": "Headers carry content-type, authorization."
+        },
+        {
+          "question": "What is response validation?",
+          "options": ["CSS validation", "Database validation", "Verifying status code, body, headers", "No validation"],
+          "correctAnswer": 2,
+          "explanation": "Validation ensures correct API behavior."
+        },
+        {
+          "question": "What are collections?",
+          "options": ["Database collections", "CSS collections", "Single request", "Grouped API requests in Postman"],
+          "correctAnswer": 3,
+          "explanation": "Collections organize related API tests."
+        },
+        {
+          "question": "What are environments?",
+          "options": ["Database environments", "CSS environments", "Variables for different setups (dev, staging, prod)", "No environments"],
+          "correctAnswer": 2,
+          "explanation": "Environments manage configuration variables."
+        },
+        {
+          "question": "What are assertions?",
+          "options": ["Database assertions", "CSS assertions", "No assertions", "Tests validating API responses"],
+          "correctAnswer": 3,
+          "explanation": "Assertions check response correctness."
+        },
+        {
+          "question": "What is request chaining?",
+          "options": ["CSS chaining", "Database chaining", "No chaining", "Using response data in subsequent requests"],
+          "correctAnswer": 3,
+          "explanation": "Chaining links dependent API calls."
+        }
+      ]
+    },
+    {
+      "id": "mobile-testing",
+      "title": "Mobile Testing (3-4 weeks)",
+      "description": "Learn mobile testing basics and Appium for mobile automation on Android and iOS devices.",
+      "resources": [
+        {
+          "title": "Mobile Testing Tutorial",
+          "url": "https://www.guru99.com/mobile-testing.html",
+          "type": "Article"
+        },
+        {
+          "title": "Appium Tutorial - Complete Guide",
+          "url": "https://www.guru99.com/introduction-to-appium.html",
+          "type": "Article"
+        },
+        {
+          "title": "Appium Official Docs",
+          "url": "http://appium.io/docs/en/latest/",
+          "type": "Article"
+        },
+        {
+          "title": "Appium with Python",
+          "url": "https://www.youtube.com/embed/Vseries?si=oNnPANap_uX-6zzE&amp;list=PLQKDzuA2cCjo4YTGPxApQTUBuFttWwysE",
+          "type": "Video"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is mobile testing?",
+          "options": ["Database testing", "CSS testing", "Web testing", "Testing apps on mobile devices"],
+          "correctAnswer": 3,
+          "explanation": "Mobile testing covers iOS and Android apps."
+        },
+        {
+          "question": "What is Appium?",
+          "options": ["CSS appium", "Mobile automation framework", "Database appium", "Web framework"],
+          "correctAnswer": 1,
+          "explanation": "Appium automates native, hybrid, and mobile web apps."
+        },
+        {
+          "question": "What is native app?",
+          "options": ["App built for specific platform (iOS/Android)", "Database app", "CSS app", "Web app"],
+          "correctAnswer": 0,
+          "explanation": "Native apps use platform-specific languages."
+        },
+        {
+          "question": "What is hybrid app?",
+          "options": ["Database app", "App with web and native components", "CSS app", "Pure native"],
+          "correctAnswer": 1,
+          "explanation": "Hybrid apps use web views within native wrapper."
+        },
+        {
+          "question": "What is emulator?",
+          "options": ["Software simulating mobile device", "Database emulator", "CSS emulator", "Real device"],
+          "correctAnswer": 0,
+          "explanation": "Emulators mimic device behavior for testing."
+        },
+        {
+          "question": "What is real device testing?",
+          "options": ["CSS testing", "Testing on physical devices", "Database testing", "Emulator testing"],
+          "correctAnswer": 1,
+          "explanation": "Real devices provide accurate results."
+        },
+        {
+          "question": "What is gesture testing?",
+          "options": ["Testing swipe, tap, pinch actions", "Database testing", "CSS testing", "Click testing"],
+          "correctAnswer": 0,
+          "explanation": "Gestures are unique to mobile interactions."
+        },
+        {
+          "question": "What is device fragmentation?",
+          "options": ["Database fragmentation", "Variety of devices, OS versions, screen sizes", "CSS fragmentation", "Single device"],
+          "correctAnswer": 1,
+          "explanation": "Fragmentation requires broad test coverage."
+        },
+        {
+          "question": "What is APK?",
+          "options": ["Android Package Kit for Android apps", "Database APK", "CSS APK", "iOS app"],
+          "correctAnswer": 0,
+          "explanation": "APK is Android app installation file."
+        },
+        {
+          "question": "What is IPA?",
+          "options": ["CSS IPA", "iOS App Store Package", "Database IPA", "Android app"],
+          "correctAnswer": 1,
+          "explanation": "IPA is iOS app installation file."
+        },
+        {
+          "question": "What are desired capabilities?",
+          "options": ["Database capabilities", "CSS capabilities", "Configuration for Appium session", "No capabilities"],
+          "correctAnswer": 2,
+          "explanation": "Capabilities specify device, platform, app."
+        },
+        {
+          "question": "What is ADB?",
+          "options": ["Database ADB", "CSS ADB", "iOS tool", "Android Debug Bridge tool"],
+          "correctAnswer": 3,
+          "explanation": "ADB communicates with Android devices."
+        },
+        {
+          "question": "What's difference between simulator and emulator?",
+          "options": ["Database difference", "CSS difference", "Simulator mimics, emulator replicates hardware", "Same thing"],
+          "correctAnswer": 2,
+          "explanation": "Simulator (iOS), emulator (Android)."
+        },
+        {
+          "question": "What is app inspector?",
+          "options": ["Database inspector", "CSS inspector", "No inspector", "Tool to inspect app elements"],
+          "correctAnswer": 3,
+          "explanation": "Inspector identifies locators for automation."
+        },
+        {
+          "question": "What are touch actions?",
+          "options": ["CSS actions", "Database actions", "Complex gesture sequences in Appium", "Simple clicks"],
+          "correctAnswer": 2,
+          "explanation": "Touch actions perform multi-touch gestures."
+        },
+        {
+          "question": "What is orientation testing?",
+          "options": ["Database testing", "CSS testing", "No orientation", "Testing portrait and landscape modes"],
+          "correctAnswer": 3,
+          "explanation": "Orientation affects layout and functionality."
+        },
+        {
+          "question": "What are network conditions?",
+          "options": ["Database conditions", "CSS conditions", "Testing on WiFi, 3G, 4G, offline", "Online only"],
+          "correctAnswer": 2,
+          "explanation": "Network conditions impact app behavior."
+        },
+        {
+          "question": "What is battery testing?",
+          "options": ["Database testing", "CSS testing", "No battery", "Checking app power consumption"],
+          "correctAnswer": 3,
+          "explanation": "Battery testing ensures efficiency."
+        },
+        {
+          "question": "What are notifications?",
+          "options": ["CSS notifications", "Database notifications", "Push messages to users", "No notifications"],
+          "correctAnswer": 2,
+          "explanation": "Notifications require testing for delivery."
+        },
+        {
+          "question": "What is deep linking?",
+          "options": ["Opening app from URL", "Database linking", "CSS linking", "No linking"],
+          "correctAnswer": 0,
+          "explanation": "Deep linking navigates to specific app content."
+        }
+      ]
+    },
+    {
+      "id": "performance-testing",
+      "title": "Performance Testing (4-6 weeks)",
+      "description": "Master performance testing with JMeter, Gatling, and k6. Learn load testing, stress testing, and performance optimization.",
+      "resources": [
+        {
+          "title": "JMeter Tutorial - Complete Course",
+          "url": "https://www.guru99.com/jmeter-tutorials.html",
+          "type": "Article"
+        },
+        {
+          "title": "JMeter Full Course",
+          "url": "https://www.youtube.com/embed/SoW2pBak1_Q?si=fuO7VEZ-9Mr6-37y",
+          "type": "Video",
+          "duration": "3 hours"
+        },
+        {
+          "title": "Load Testing vs Stress Testing",
+          "url": "https://www.guru99.com/stress-testing-tutorial.html",
+          "type": "Article"
+        },
+        {
+          "title": "Gatling Official Docs",
+          "url": "https://gatling.io/docs/gatling/",
+          "type": "Article"
+        },
+        {
+          "title": "k6 Load Testing Tutorial",
+          "url": "https://www.youtube.com/embed/Vseries?si=6_q9uAkIjf6GRejG&amp;list=PLUPlX-9QUIrMc8ZoG68SWaC54gEnWFa24",
+          "type": "Video"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is performance testing?",
+          "options": ["Testing speed, scalability, stability under load", "Database testing", "CSS testing", "Functional testing"],
+          "correctAnswer": 0,
+          "explanation": "Performance testing ensures systems handle expected load."
+        },
+        {
+          "question": "What is load testing?",
+          "options": ["CSS testing", "Testing system under expected user load", "Database testing", "Security testing"],
+          "correctAnswer": 1,
+          "explanation": "Load testing validates normal usage conditions."
+        },
+        {
+          "question": "What is stress testing?",
+          "options": ["Database testing", "CSS testing", "Testing beyond normal capacity to find breaking point", "Functional testing"],
+          "correctAnswer": 2,
+          "explanation": "Stress testing identifies system limits."
+        },
+        {
+          "question": "What is JMeter?",
+          "options": ["Database jmeter", "Open-source load testing tool", "CSS jmeter", "Browser"],
+          "correctAnswer": 1,
+          "explanation": "JMeter simulates user load on servers."
+        },
+        {
+          "question": "What is throughput?",
+          "options": ["Database throughput", "CSS throughput", "Error rate", "Requests processed per unit time"],
+          "correctAnswer": 3,
+          "explanation": "Throughput measures system capacity."
+        },
+        {
+          "question": "What is response time?",
+          "options": ["Time taken to respond to request", "CSS time", "Database time", "Load time"],
+          "correctAnswer": 0,
+          "explanation": "Response time impacts user experience."
+        },
+        {
+          "question": "What is Gatling?",
+          "options": ["Database gatling", "CSS gatling", "Scala-based load testing framework", "Browser"],
+          "correctAnswer": 2,
+          "explanation": "Gatling provides detailed performance reports."
+        },
+        {
+          "question": "What is k6?",
+          "options": ["Database k6", "JavaScript load testing tool", "CSS k6", "Browser"],
+          "correctAnswer": 1,
+          "explanation": "k6 is developer-friendly performance testing."
+        },
+        {
+          "question": "What is spike testing?",
+          "options": ["Testing sudden traffic increases", "Database testing", "CSS testing", "Gradual load"],
+          "correctAnswer": 0,
+          "explanation": "Spike testing simulates traffic surges."
+        },
+        {
+          "question": "What is baseline?",
+          "options": ["CSS baseline", "Database baseline", "Error rate", "Normal performance metrics for comparison"],
+          "correctAnswer": 3,
+          "explanation": "Baseline helps detect performance degradation."
+        },
+        {
+          "question": "What are thread groups?",
+          "options": ["Virtual users in JMeter tests", "Database threads", "CSS threads", "Single user"],
+          "correctAnswer": 0,
+          "explanation": "Thread groups simulate concurrent users."
+        },
+        {
+          "question": "What are listeners?",
+          "options": ["Database listeners", "Components collecting test results", "CSS listeners", "No listeners"],
+          "correctAnswer": 1,
+          "explanation": "Listeners display performance data."
+        },
+        {
+          "question": "What are assertions in JMeter?",
+          "options": ["Database assertions", "CSS assertions", "No assertions", "Validation checks for responses"],
+          "correctAnswer": 3,
+          "explanation": "Assertions verify response correctness."
+        },
+        {
+          "question": "What is correlation?",
+          "options": ["Extracting dynamic values from responses", "CSS correlation", "Database correlation", "No correlation"],
+          "correctAnswer": 0,
+          "explanation": "Correlation handles session tokens."
+        },
+        {
+          "question": "What is parameterization?",
+          "options": ["Database parameterization", "CSS parameterization", "Using variable data in tests", "Fixed data"],
+          "correctAnswer": 2,
+          "explanation": "Parameterization enables data-driven load tests."
+        },
+        {
+          "question": "What is ramp-up time?",
+          "options": ["Database time", "Time to start all threads", "CSS time", "Response time"],
+          "correctAnswer": 1,
+          "explanation": "Ramp-up spreads user load gradually."
+        },
+        {
+          "question": "What is concurrency?",
+          "options": ["Database concurrency", "CSS concurrency", "Single user", "Number of simultaneous users"],
+          "correctAnswer": 3,
+          "explanation": "Concurrency tests multi-user scenarios."
+        },
+        {
+          "question": "What are percentiles?",
+          "options": ["CSS percentiles", "Database percentiles", "Statistical measure of response times (90th, 95th)", "Average only"],
+          "correctAnswer": 2,
+          "explanation": "Percentiles show response time distribution."
+        },
+        {
+          "question": "What is SLA?",
+          "options": ["Database SLA", "CSS SLA", "No SLA", "Service Level Agreement for performance"],
+          "correctAnswer": 3,
+          "explanation": "SLA defines acceptable performance thresholds."
+        },
+        {
+          "question": "What is bottleneck identification?",
+          "options": ["Database identification", "CSS identification", "Finding performance constraints", "No bottlenecks"],
+          "correctAnswer": 2,
+          "explanation": "Bottleneck analysis optimizes slow components."
+        }
+      ]
+    },
+    {
+      "id": "security-testing",
+      "title": "Security Testing Basics (3-4 weeks)",
+      "description": "Learn security testing fundamentals, OWASP Top 10 vulnerabilities, Burp Suite, OWASP ZAP, and penetration testing basics.",
+      "resources": [
+        {
+          "title": "Security Testing Tutorial",
+          "url": "https://www.guru99.com/what-is-security-testing.html",
+          "type": "Article"
+        },
+        { "title": "OWASP Top 10 Overview", "url": "https://www.youtube.com/embed/wUaeKEl1RCw?si=Ba8GP5qteBYk6RH0", "type": "Video" },
+        {
+          "title": "Burp Suite Tutorial",
+          "url": "https://portswigger.net/burp/documentation",
+          "type": "Article"
+        },
+        {
+          "title": "OWASP ZAP (FREE)",
+          "url": "https://www.youtube.com/embed/tpZ9muBTAHQ?si=EYuBks9T1gZDltxy",
+          "type": "Video"
+        },
+        {
+          "title": "SQL Injection Testing",
+          "url": "https://www.guru99.com/learn-sql-injection-with-practical-example.html",
+          "type": "Article"
+        },
+        { "title": "SQL Injection", "url": "https://www.youtube.com/embed/fiq59DuhY68?si=TWx4AvHVpMEC_T0n", "type": "Video" }
+      ],
+      "quiz": [
+        {
+          "question": "What is security testing?",
+          "options": ["Finding vulnerabilities in software", "Database testing", "CSS testing", "Performance testing"],
+          "correctAnswer": 0,
+          "explanation": "Security testing protects against threats."
+        },
+        {
+          "question": "What is OWASP?",
+          "options": ["CSS OWASP", "Open Web Application Security Project", "Database OWASP", "Testing tool"],
+          "correctAnswer": 1,
+          "explanation": "OWASP provides security best practices."
+        },
+        {
+          "question": "What is SQL injection?",
+          "options": ["Attack inserting malicious SQL code", "Database injection", "CSS injection", "Safe query"],
+          "correctAnswer": 0,
+          "explanation": "SQL injection exploits database vulnerabilities."
+        },
+        {
+          "question": "What is XSS?",
+          "options": ["Database XSS", "Cross-Site Scripting attack", "CSS XSS", "Safe script"],
+          "correctAnswer": 1,
+          "explanation": "XSS injects malicious scripts in web pages."
+        },
+        {
+          "question": "What is Burp Suite?",
+          "options": ["Web security testing platform", "Database burp", "CSS burp", "Browser"],
+          "correctAnswer": 0,
+          "explanation": "Burp Suite intercepts and analyzes HTTP traffic."
+        },
+        {
+          "question": "What is OWASP ZAP?",
+          "options": ["CSS ZAP", "Free web application security scanner", "Database ZAP", "Browser"],
+          "correctAnswer": 1,
+          "explanation": "ZAP finds security vulnerabilities."
+        },
+        {
+          "question": "What is penetration testing?",
+          "options": ["Simulated attack to find vulnerabilities", "Database testing", "CSS testing", "Functional testing"],
+          "correctAnswer": 0,
+          "explanation": "Pen testing identifies exploitable weaknesses."
+        },
+        {
+          "question": "What is CSRF?",
+          "options": ["Database CSRF", "Cross-Site Request Forgery", "CSS CSRF", "Safe request"],
+          "correctAnswer": 1,
+          "explanation": "CSRF tricks users into unwanted actions."
+        },
+        {
+          "question": "What is authentication testing?",
+          "options": ["Verifying user identity mechanisms", "Database testing", "CSS testing", "API testing"],
+          "correctAnswer": 0,
+          "explanation": "Authentication testing checks login security."
+        },
+        {
+          "question": "What is authorization testing?",
+          "options": ["CSS testing", "Checking user permission enforcement", "Database testing", "Login testing"],
+          "correctAnswer": 1,
+          "explanation": "Authorization ensures proper access control."
+        },
+        {
+          "question": "What is session management testing?",
+          "options": ["Database testing", "CSS testing", "Verifying secure session handling", "No testing"],
+          "correctAnswer": 2,
+          "explanation": "Session testing prevents hijacking."
+        },
+        {
+          "question": "What is encryption testing?",
+          "options": ["Database testing", "CSS testing", "No encryption", "Checking data encryption in transit/rest"],
+          "correctAnswer": 3,
+          "explanation": "Encryption protects sensitive data."
+        },
+        {
+          "question": "What is API security testing?",
+          "options": ["Database testing", "CSS testing", "Testing API authentication, authorization, data validation", "No testing"],
+          "correctAnswer": 2,
+          "explanation": "API security prevents unauthorized access."
+        },
+        {
+          "question": "What are file upload vulnerabilities?",
+          "options": ["CSS vulnerabilities", "Database vulnerabilities", "No vulnerabilities", "Malicious file upload risks"],
+          "correctAnswer": 3,
+          "explanation": "File uploads can execute malware."
+        },
+        {
+          "question": "What is broken access control?",
+          "options": ["Database control", "CSS control", "Users accessing unauthorized resources", "Proper access"],
+          "correctAnswer": 2,
+          "explanation": "Access control prevents privilege escalation."
+        },
+        {
+          "question": "What is security misconfiguration?",
+          "options": ["Database misconfiguration", "CSS misconfiguration", "Proper configuration", "Improperly configured security settings"],
+          "correctAnswer": 3,
+          "explanation": "Misconfiguration exposes systems."
+        },
+        {
+          "question": "What is XML injection?",
+          "options": ["Database injection", "CSS injection", "Injecting malicious XML data", "No injection"],
+          "correctAnswer": 2,
+          "explanation": "XML injection manipulates XML parsers."
+        },
+        {
+          "question": "What is vulnerability assessment?",
+          "options": ["CSS assessment", "Database assessment", "No assessment", "Identifying and ranking security weaknesses"],
+          "correctAnswer": 3,
+          "explanation": "Assessment prioritizes remediation."
+        },
+        {
+          "question": "What is compliance testing?",
+          "options": ["Database testing", "CSS testing", "Verifying adherence to standards (PCI-DSS, GDPR)", "No compliance"],
+          "correctAnswer": 2,
+          "explanation": "Compliance ensures regulatory adherence."
+        },
+        {
+          "question": "What is secure coding?",
+          "options": ["Database coding", "CSS coding", "No security", "Writing code resistant to vulnerabilities"],
+          "correctAnswer": 3,
+          "explanation": "Secure coding prevents exploits."
+        }
+      ]
+    },
+    {
+      "id": "cicd-integration",
+      "title": "CI/CD Integration (4-6 weeks)",
+      "description": "Integrate automated tests with Jenkins, GitHub Actions, GitLab CI/CD, and CircleCI. Learn Docker basics for test environments.",
+      "resources": [
+        {
+          "title": "CI/CD Basics for QA",
+          "url": "https://www.softwaretestinghelp.com/ci-cd-pipeline-tutorial/",
+          "type": "Article"
+        },
+        {
+          "title": "Jenkins Tutorial for Beginners",
+          "url": "https://www.youtube.com/embed/FX322RVNGj4",
+          "type": "Video",
+          "duration": "2 hours"
+        },
+        {
+          "title": "Jenkins Official Docs",
+          "url": "https://www.jenkins.io/doc/",
+          "type": "Article"
+        },
+        { "title": "GitHub Actions Complete Guide", "url": "https://www.youtube.com/embed/R8_veQiYBjI", "type": "Video", "duration": "1 hour" },
+        { "title": "GitHub Actions Full Course", "url": "https://www.youtube.com/embed/TLB5MY9BBa4", "type": "Video" },
+
+        {
+          "title": "GitLab CI/CD Tutorial",
+          "url": "https://docs.gitlab.com/ee/ci/",
+          "type": "Article"
+        },
+        {
+          "title": "Docker for QA Engineers",
+          "url": "https://www.guru99.com/docker-tutorial.html",
+          "type": "Article"
+        },
+        {
+          "title": "Test Automation University (FREE)",
+          "url": "https://testautomationu.applitools.com/",
+          "type": "Interactive"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is CI/CD?",
+          "options": ["Database CI/CD", "CSS CI/CD", "Continuous Integration/Continuous Deployment", "Manual deployment"],
+          "correctAnswer": 2,
+          "explanation": "CI/CD automates build, test, and deployment."
+        },
+        {
+          "question": "What is Jenkins?",
+          "options": ["CSS jenkins", "Open-source automation server", "Database jenkins", "Testing framework"],
+          "correctAnswer": 1,
+          "explanation": "Jenkins orchestrates CI/CD pipelines."
+        },
+        {
+          "question": "What is GitHub Actions?",
+          "options": ["Database actions", "CSS actions", "Testing tool", "CI/CD platform integrated with GitHub"],
+          "correctAnswer": 3,
+          "explanation": "GitHub Actions runs workflows on code events."
+        },
+        {
+          "question": "What is a pipeline?",
+          "options": ["Automated workflow for build/test/deploy", "Database pipeline", "CSS pipeline", "Manual process"],
+          "correctAnswer": 0,
+          "explanation": "Pipelines automate software delivery."
+        },
+        {
+          "question": "What is Docker?",
+          "options": ["Containerization platform", "Database docker", "CSS docker", "Testing tool"],
+          "correctAnswer": 0,
+          "explanation": "Docker packages apps with dependencies."
+        },
+        {
+          "question": "What is a container?",
+          "options": ["CSS container", "Lightweight isolated environment", "Database container", "Virtual machine"],
+          "correctAnswer": 1,
+          "explanation": "Containers ensure consistent test environments."
+        },
+        {
+          "question": "Why integrate tests in CI/CD?",
+          "options": ["Early defect detection and faster feedback", "Database integration", "CSS integration", "Slower testing"],
+          "correctAnswer": 0,
+          "explanation": "CI/CD integration enables continuous testing."
+        },
+        {
+          "question": "What is a build trigger?",
+          "options": ["Database trigger", "Event that starts CI/CD pipeline", "CSS trigger", "Manual trigger"],
+          "correctAnswer": 1,
+          "explanation": "Triggers automate pipeline execution."
+        },
+        {
+          "question": "What is test parallelization?",
+          "options": ["Running tests concurrently", "Database parallelization", "CSS parallelization", "Sequential tests"],
+          "correctAnswer": 0,
+          "explanation": "Parallelization speeds up test execution."
+        },
+        {
+          "question": "What is artifact storage?",
+          "options": ["CSS storage", "Storing build outputs and test reports", "Database storage", "No storage"],
+          "correctAnswer": 1,
+          "explanation": "Artifacts preserve test results and logs."
+        },
+        {
+          "question": "What are webhooks?",
+          "options": ["Database webhooks", "CSS webhooks", "No webhooks", "HTTP callbacks triggering CI/CD events"],
+          "correctAnswer": 3,
+          "explanation": "Webhooks automate pipeline triggers."
+        },
+        {
+          "question": "What is build status?",
+          "options": ["Indicator of pipeline success/failure", "Database status", "CSS status", "No status"],
+          "correctAnswer": 0,
+          "explanation": "Build status shows pipeline health."
+        },
+        {
+          "question": "What are test reports?",
+          "options": ["Database reports", "CSS reports", "Detailed results from test execution", "No reports"],
+          "correctAnswer": 2,
+          "explanation": "Reports provide visibility into test outcomes."
+        },
+        {
+          "question": "What are environment variables?",
+          "options": ["CSS variables", "Database variables", "Configuration values for different environments", "No variables"],
+          "correctAnswer": 2,
+          "explanation": "Environment variables manage settings."
+        },
+        {
+          "question": "What is secrets management?",
+          "options": ["Database management", "CSS management", "No secrets", "Secure storage of credentials/API keys"],
+          "correctAnswer": 3,
+          "explanation": "Secrets management protects sensitive data."
+        },
+        {
+          "question": "What are stages/jobs?",
+          "options": ["Database stages", "Discrete steps in pipeline", "CSS stages", "No stages"],
+          "correctAnswer": 1,
+          "explanation": "Stages organize pipeline workflow."
+        },
+        {
+          "question": "What is caching?",
+          "options": ["CSS caching", "Database caching", "No caching", "Storing dependencies for faster builds"],
+          "correctAnswer": 3,
+          "explanation": "Caching speeds up pipeline execution."
+        },
+        {
+          "question": "What are matrix builds?",
+          "options": ["Database builds", "CSS builds", "Testing across multiple configurations", "Single configuration"],
+          "correctAnswer": 2,
+          "explanation": "Matrix builds test various OS/versions."
+        },
+        {
+          "question": "What are deployment gates?",
+          "options": ["Database gates", "CSS gates", "No gates", "Approval checkpoints before deployment"],
+          "correctAnswer": 3,
+          "explanation": "Gates ensure quality before production."
+        },
+        {
+          "question": "What is rollback strategy?",
+          "options": ["Database strategy", "CSS strategy", "Reverting to previous version on failure", "No rollback"],
+          "correctAnswer": 2,
+          "explanation": "Rollback minimizes production issues."
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Automated UI Test Suite",
+      "description": "Create an automated test suite for a web application using Selenium WebDriver with page object model pattern.",
+      "difficulty": "Beginner",
+      "duration": "2-3 weeks",
+      "skills": ["Selenium", "Python", "Page Object Model", "Web Testing", "Test Reporting"],
+      "tasks": [
+        "Set up Selenium WebDriver with Python",
+        "Understand Page Object Model pattern",
+        "Create page object classes for UI elements",
+        "Write test cases for login functionality",
+        "Add tests for form validation",
+        "Implement data-driven testing",
+        "Generate HTML test reports",
+        "Add screenshot capture on failures"
+      ]
+    },
+    {
+      "title": "API Testing Framework",
+      "description": "Build a comprehensive API testing framework using REST Assured or Postman/Newman with automated test execution and reporting.",
+      "difficulty": "Intermediate",
+      "duration": "3-4 weeks",
+      "skills": ["API Testing", "REST Assured", "Postman", "JSON", "Test Automation"],
+      "tasks": [
+        "Learn REST API concepts and HTTP methods",
+        "Set up REST Assured or Postman collections",
+        "Write tests for GET, POST, PUT, DELETE endpoints",
+        "Validate response status codes and bodies",
+        "Implement schema validation",
+        "Add authentication testing (OAuth, JWT)",
+        "Create negative test cases",
+        "Set up CI integration with Newman",
+        "Generate detailed test reports",
+        "Document API test coverage"
+      ]
+    },
+    {
+      "title": "Mobile App Testing Suite",
+      "description": "Develop an automated testing framework for mobile applications using Appium for both iOS and Android platforms.",
+      "difficulty": "Intermediate",
+      "duration": "4-5 weeks",
+      "skills": ["Appium", "Mobile Testing", "Android", "iOS", "Test Framework Design"],
+      "tasks": [
+        "Set up Appium with Android Studio and Xcode",
+        "Configure desired capabilities for devices",
+        "Write tests for mobile UI interactions",
+        "Implement gestures (swipe, tap, scroll)",
+        "Test app on multiple device resolutions",
+        "Add tests for device rotation",
+        "Test push notifications",
+        "Implement parallel execution on multiple devices",
+        "Add performance testing metrics",
+        "Create cross-platform test suite",
+        "Generate comprehensive test reports"
+      ]
+    },
+    {
+      "title": "Performance Testing Framework",
+      "description": "Build a performance testing solution using JMeter or Gatling to test application scalability, load handling, and identify bottlenecks.",
+      "difficulty": "Advanced",
+      "duration": "5-6 weeks",
+      "skills": ["JMeter", "Performance Testing", "Load Testing", "Monitoring", "Analysis"],
+      "tasks": [
+        "Set up JMeter or Gatling framework",
+        "Create load testing scenarios",
+        "Implement stress and spike testing",
+        "Add database and API performance tests",
+        "Configure distributed testing",
+        "Integrate with monitoring tools (Grafana)",
+        "Analyze response times and throughput",
+        "Identify performance bottlenecks",
+        "Create performance baseline reports",
+        "Set up CI integration for regression testing",
+        "Document performance findings and recommendations"
+      ]
+    },
+    {
+      "title": "End-to-End Test Automation Platform",
+      "description": "Design and implement a complete test automation platform with UI, API, mobile testing, CI/CD integration, reporting dashboard, and test management.",
+      "difficulty": "Advanced",
+      "duration": "8-10 weeks",
+      "skills": ["Test Architecture", "CI/CD", "Docker", "Test Management", "DevOps"],
+      "tasks": [
+        "Design test automation architecture",
+        "Set up framework with Selenium, REST Assured, Appium",
+        "Implement BDD with Cucumber",
+        "Create reusable test libraries",
+        "Set up Docker containers for test execution",
+        "Integrate with Jenkins/GitLab CI",
+        "Implement parallel test execution",
+        "Create custom test reporting dashboard",
+        "Add test data management",
+        "Integrate with TestRail or Jira",
+        "Implement flaky test detection",
+        "Add Slack/email notifications",
+        "Create comprehensive documentation",
+        "Train team on framework usage"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1452 @@
+{
+  "slug": "devops-engineer",
+  "title": "DevOps Engineer",
+  "summary": "Bridge development and operations with automation, CI/CD, containerization, Kubernetes, infrastructure as code, and cloud platforms.",
+  "timeline": "8-12 months",
+  "difficulty": "Moderate to Advanced",
+  "steps": [
+    {
+      "id": "linux-os",
+      "title": "Operating Systems & Linux (4-6 weeks)",
+      "description": "Master Linux fundamentals, file system, permissions, Bash scripting. Essential foundation for DevOps infrastructure management.",
+      "resources": [
+        { "title": "Linux Full Course", "url": "https://www.youtube.com/embed/sWbUDq4S6Y8?si=lpxr1Fsiv5o1pkFZ", "type": "Video", "duration": "5 hours", "note": "freeCodeCamp - BEST" },
+        { "title": "Linux Command Line Basics", "url": "https://www.youtube.com/embed/ZtqBQ68cfJc?si=ilOUmJRk_RGM4CTo", "type": "Video", "duration": "1 hour" },
+        { "title": "The Linux Command Line", "url": "http://linuxcommand.org/tlcl.php", "type": "Book", "note": "Free Book" },
+        { "title": "Bash Scripting Full Course", "url": "https://www.youtube.com/embed/tK9Oc6AEnR4?si=f1xDR7UB3BgTvIPW", "type": "Video", "duration": "3 hours" },
+        { "title": "Bash Scripting Tutorial", "url": "https://linuxconfig.org/bash-scripting-tutorial", "type": "Article" },
+        { "title": "Advanced Bash Guide", "url": "https://tldp.org/LDP/abs/html/", "type": "Article" },
+        { "title": "OverTheWire Bandit", "url": "https://overthewire.org/wargames/bandit/", "type": "Interactive", "note": "Learn Linux Gaming" },
+        { "title": "Linux Exercises", "url": "https://linuxsurvival.com/", "type": "Interactive" }
+      ],
+      "quiz": [
+        {"question": "Which command displays the current working directory in Linux?", "options": ["pwd", "cwd", "dir", "path"], "correctAnswer": 0, "explanation": "'pwd' (Print Working Directory) displays the absolute path of the current directory."},
+        {"question": "What does 'chmod 644' permission mean?", "options": ["All execute", "Owner: rw, Group: r, Others: r", "Everyone full access", "No access"], "correctAnswer": 1, "explanation": "chmod 644 gives owner read/write (6), and group/others read-only (4) permissions."},
+        {"question": "Which command creates a new directory?", "options": ["newdir", "create", "mkdir", "makedir"], "correctAnswer": 2, "explanation": "'mkdir' (Make Directory) creates a new directory in Linux."},
+        {"question": "What does the 'grep' command do?", "options": ["Deletes files", "Copies files", "Moves files", "Searches for patterns in text"], "correctAnswer": 3, "explanation": "'grep' searches for text patterns within files using regular expressions."},
+        {"question": "Which file contains user password hashes in Linux?", "options": ["/etc/shadow", "/etc/users", "/etc/login", "/etc/passwords"], "correctAnswer": 0, "explanation": "/etc/shadow stores encrypted user passwords and is readable only by root."},
+        {"question": "What does 'systemctl' manage?", "options": ["File systems", "System services and the systemd init system", "User accounts", "Network connections"], "correctAnswer": 1, "explanation": "'systemctl' controls the systemd system and service manager."},
+        {"question": "Which command shows disk space usage?", "options": ["space", "disk", "df", "du"], "correctAnswer": 2, "explanation": "'df' (Disk Free) displays disk space usage for file systems."},
+        {"question": "What does 'tail -f' do?", "options": ["Deletes last line", "Displays and follows file updates in real-time", "Shows first lines", "Counts lines"], "correctAnswer": 1, "explanation": "'tail -f' displays the end of a file and continuously updates as new lines are added."},
+        {"question": "Which symbol redirects output to a file (overwriting)?", "options": [">", ">>", "<", "|"], "correctAnswer": 0, "explanation": "'>' redirects output to a file, overwriting existing content; '>>' appends instead."},
+        {"question": "What is cron used for?", "options": ["Compress files", "Schedule recurring tasks", "Monitor network", "Manage users"], "correctAnswer": 1, "explanation": "Cron schedules and automates recurring tasks at specified times or intervals."},
+        {"question": "What does the 'ps' command show?", "options": ["Print screen", "Running processes", "Port status", "Package status"], "correctAnswer": 1, "explanation": "'ps' displays information about active processes."},
+        {"question": "Which command changes file ownership?", "options": ["chown", "chmod", "chgrp", "owner"], "correctAnswer": 0, "explanation": "'chown' changes file owner and group ownership."},
+        {"question": "What does 'ssh' stand for?", "options": ["System Shell", "Secure Socket Handler", "Secure Shell", "Simple Shell"], "correctAnswer": 2, "explanation": "SSH (Secure Shell) provides encrypted remote login and command execution."},
+        {"question": "Which directory contains system logs?", "options": ["/var/log", "/etc/logs", "/home/logs", "/sys/log"], "correctAnswer": 0, "explanation": "/var/log stores system and application log files."},
+        {"question": "What does 'sudo' allow?", "options": ["Switch directories", "Execute commands with superuser privileges", "Shutdown system", "Show disk usage"], "correctAnswer": 1, "explanation": "'sudo' executes commands as another user, typically root/superuser."},
+        {"question": "Which command finds files in Linux?", "options": ["search", "find", "locate", "Both find and locate"], "correctAnswer": 3, "explanation": "Both 'find' (real-time search) and 'locate' (database search) find files."},
+        {"question": "What is /dev/null?", "options": ["Error file", "Special file that discards all data written to it", "System device", "Null pointer"], "correctAnswer": 1, "explanation": "/dev/null is a virtual device that discards data, used to suppress output."},
+        {"question": "What does 'awk' do?", "options": ["Archive files", "Pattern scanning and text processing", "Network analysis", "Kill processes"], "correctAnswer": 1, "explanation": "'awk' is a powerful text processing tool for pattern matching and data extraction."},
+        {"question": "Which command shows network interfaces?", "options": ["ifconfig or ip addr", "netstat", "route", "ping"], "correctAnswer": 0, "explanation": "'ifconfig' (legacy) or 'ip addr' display network interface configuration."},
+        {"question": "What is a symbolic link?", "options": ["Hard link", "Pointer to another file or directory", "Compressed file", "System file"], "correctAnswer": 1, "explanation": "Symbolic links (symlinks) are references pointing to other files/directories, like shortcuts."}
+      ]
+    },
+    {
+      "id": "networking",
+      "title": "Networking Fundamentals (2-3 weeks)",
+      "description": "Learn OSI model, TCP/IP, DNS, HTTP, SSL/TLS, subnetting, and IP addressing for infrastructure management.",
+      "resources": [
+        { "title": "Networking Full Course", "url": "https://www.youtube.com/embed/qiQR5rTSshw?si=j7WfhI21QgIH1CFo", "type": "Video", "duration": "9 hours" },
+        { "title": "OSI Model Explained", "url": "https://www.youtube.com/embed/vv4y_uOneC0?si=vdvmv0qLGkD3LhI8", "type": "Video", "duration": "20 minutes" },
+        { "title": "TCP/IP Protocol Explained", "url": "https://www.youtube.com/embed/PpsEaqJV_A0?si=D8awB0Kz7N33PR1y", "type": "Video" },
+        { "title": "Computer Networking - Coursera", "url": "https://www.coursera.org/learn/computer-networking", "type": "course" },
+        { "title": "Subnetting Made Easy", "url": "https://www.youtube.com/embed/ecCuyq-Wprc?si=hDPbn-zv-W6OIz9X", "type": "Video", "duration": "30 minutes", "note": "BEST" },
+        { "title": "IP Addressing Tutorial", "url": "https://www.youtube.com/embed/5WfiTHiU4x8?si=tk4dKIwAQtrWjQfl", "type": "Video" },
+        { "title": "DNS Explained", "url": "https://www.youtube.com/embed/NiQTs9DbtW4?si=xAw5PxJKjRF1sGpW", "type": "Video", "duration": "15 minutes" },
+        { "title": "SSL, TLS, HTTP, HTTPS Explained", "url": "https://www.youtube.com/embed/hExRDVZHhig?si=A4zXDNLJxh17K7rU", "type": "Video" }
+      ],
+      "quiz": [
+        {"question": "How many layers does the OSI model have?", "options": ["5", "7", "9", "4"], "correctAnswer": 1, "explanation": "The OSI model has 7 layers from Physical (Layer 1) to Application (Layer 7)."},
+        {"question": "What protocol does DNS use primarily?", "options": ["TCP", "UDP", "ICMP", "FTP"], "correctAnswer": 1, "explanation": "DNS primarily uses UDP on port 53 for queries, though it can use TCP for zone transfers."},
+        {"question": "What is a subnet mask used for?", "options": ["Encrypt data", "Identify network and host portions of IP address", "Speed up network", "Block traffic"], "correctAnswer": 1, "explanation": "A subnet mask divides an IP address into network and host portions for routing."},
+        {"question": "Which port does HTTPS use?", "options": ["80", "22", "21", "443"], "correctAnswer": 3, "explanation": "HTTPS uses port 443 for secure HTTP communication over SSL/TLS."},
+        {"question": "What does NAT stand for?", "options": ["Network Address Translation", "Network Access Tool", "New Application Technology", "Network Authentication Token"], "correctAnswer": 0, "explanation": "NAT translates private IP addresses to public IPs for internet communication."},
+        {"question": "What is the loopback IP address?", "options": ["192.168.1.1", "127.0.0.1", "10.0.0.1", "8.8.8.8"], "correctAnswer": 1, "explanation": "127.0.0.1 is the loopback address used for testing network software on local machine."},
+        {"question": "What does a load balancer do?", "options": ["Stores data", "Distributes network traffic across multiple servers", "Encrypts data", "Blocks attacks"], "correctAnswer": 1, "explanation": "Load balancers distribute incoming traffic across multiple servers for high availability."},
+        {"question": "Which command tests network connectivity?", "options": ["ping", "test", "connect", "check"], "correctAnswer": 0, "explanation": "'ping' sends ICMP packets to test reachability and measure round-trip time."},
+        {"question": "What is the difference between TCP and UDP?", "options": ["No difference", "TCP is connection-oriented and reliable, UDP is connectionless and faster", "UDP is slower", "TCP doesn't use ports"], "correctAnswer": 1, "explanation": "TCP provides reliable, ordered delivery with handshakes; UDP is faster but unreliable."},
+        {"question": "What does CIDR notation /24 represent?", "options": ["24 hosts", "24-bit subnet mask (255.255.255.0)", "24 networks", "24 bytes"], "correctAnswer": 1, "explanation": "/24 means the first 24 bits are network address, allowing 256 addresses (254 usable hosts)."},
+        {"question": "What is the default SSH port?", "options": ["21", "22", "23", "25"], "correctAnswer": 1, "explanation": "SSH uses port 22 for secure remote connections."},
+        {"question": "What does TLS provide?", "options": ["File transfer", "Encryption and authentication for network communications", "Load balancing", "DNS resolution"], "correctAnswer": 1, "explanation": "TLS (Transport Layer Security) provides encryption, integrity, and authentication."},
+        {"question": "Which layer of OSI model handles routing?", "options": ["Layer 2 (Data Link)", "Layer 3 (Network)", "Layer 4 (Transport)", "Layer 7 (Application)"], "correctAnswer": 1, "explanation": "Layer 3 (Network) handles IP addressing and routing between networks."},
+        {"question": "What is a VPN?", "options": ["Virtual Private Network - encrypted network tunnel", "Very Public Network", "Virus Protection Network", "Video Processing Node"], "correctAnswer": 0, "explanation": "VPN creates encrypted tunnels for secure communication over public networks."},
+        {"question": "What does traceroute do?", "options": ["Delete routes", "Show path packets take to destination", "Create routes", "Encrypt routes"], "correctAnswer": 1, "explanation": "Traceroute shows each hop packets traverse to reach a destination."},
+        {"question": "What is the difference between HTTP and HTTPS?", "options": ["No difference", "HTTPS adds encryption via SSL/TLS", "HTTP is faster", "HTTPS uses different methods"], "correctAnswer": 1, "explanation": "HTTPS encrypts HTTP traffic using SSL/TLS for secure communication."},
+        {"question": "What is ARP used for?", "options": ["Address Resolution Protocol - maps IP to MAC addresses", "Application Request Protocol", "Automatic Routing Protocol", "Advanced Router Protocol"], "correctAnswer": 0, "explanation": "ARP resolves IP addresses to MAC addresses in local networks."},
+        {"question": "What does netstat show?", "options": ["Network statistics and connections", "Network speed", "Network cables", "Network passwords"], "correctAnswer": 0, "explanation": "Netstat displays network connections, routing tables, and interface statistics."},
+        {"question": "What is a CDN?", "options": ["Content Delivery Network - distributed servers", "Central Data Network", "Cloud Data Node", "Computer Distribution Network"], "correctAnswer": 0, "explanation": "CDN distributes content across geographically dispersed servers for faster delivery."},
+        {"question": "What is MTU?", "options": ["Maximum Transfer Unit", "Maximum Transmission Unit - largest packet size", "Minimum Transfer Unit", "Mean Time Unit"], "correctAnswer": 1, "explanation": "MTU is the largest packet size that can be transmitted over a network."}
+      ]
+    },
+    {
+      "id": "programming",
+      "title": "Programming & Scripting (3-4 weeks)",
+      "description": "Learn Python for DevOps automation, file handling, APIs. Optionally learn Go for infrastructure tools.",
+      "resources": [
+        { "title": "Python Full Course", "url": "https://www.youtube.com/embed/rfscVS0vtbw?si=f1xJfH42mMKxuQeo", "type": "Video", "duration": "4 hours"},
+        { "title": "Python Tutorial for Beginners", "url": "https://www.youtube.com/embed/kqtD5dpn9C8?si=someSignature", "type": "Video", "duration": "1 hour" },
+        { "title": "Python for DevOps", "url": "https://www.youtube.com/embed/Videoseries?si=jX1-5mVHg4roOg_L&amp;list=PLAdTNzDIZj_-3uxvcoF5bsx_MEHXSFgN5", "type": "Video"},
+        { "title": "Python Official Tutorial", "url": "https://docs.python.org/3/tutorial/", "type": "Article" },
+        { "title": "Automate the Boring Stuff", "url": "https://automatetheboringstuff.com/", "type": "Book", "note": "Free Book" },
+        { "title": "Go Full Course", "url": "https://www.youtube.com/embed/YS4e4q9oBaU?si=someSignature", "type": "Video", "duration": "7 hours", "note": "Optional" },
+        { "title": "Go by Example", "url": "https://gobyexample.com/", "type": "Interactive", "note": "Optional" }
+      ],
+      "quiz": [
+        {"question": "Which Python library is commonly used for HTTP requests?", "options": ["requests", "http", "web", "fetch"], "correctAnswer": 0, "explanation": "The 'requests' library is the most popular Python library for making HTTP requests."},
+        {"question": "What does 'with open()' do in Python?", "options": ["Opens browser", "Opens file with automatic resource management", "Opens folder", "Opens database"], "correctAnswer": 1, "explanation": "'with open()' opens files and automatically handles closing, even if errors occur."},
+        {"question": "How do you create a virtual environment in Python?", "options": ["python -m venv env", "create venv", "new env", "make venv"], "correctAnswer": 0, "explanation": "'python -m venv env' creates an isolated Python virtual environment."},
+        {"question": "What is Go primarily used for in DevOps?", "options": ["Web design", "Mobile apps", "Database management", "Building infrastructure tools and CLI applications"], "correctAnswer": 3, "explanation": "Go is popular for DevOps tools (Docker, Kubernetes, Terraform) due to performance and concurrency."},
+        {"question": "What does JSON stand for?", "options": ["JavaScript Object Notation", "Java Serialized Object Network", "JSON Standard Object Name", "Just Some Object Notation"], "correctAnswer": 0, "explanation": "JSON is a lightweight data interchange format based on JavaScript object syntax."},
+        {"question": "Which Python method parses JSON string to dictionary?", "options": ["json.parse()", "json.loads()", "json.decode()", "json.read()"], "correctAnswer": 1, "explanation": "json.loads() converts a JSON string into a Python dictionary."},
+        {"question": "What is a decorator in Python?", "options": ["Visual design element", "Function that modifies another function", "Class variable", "Loop structure"], "correctAnswer": 1, "explanation": "Decorators wrap functions to modify or enhance their behavior without changing the code."},
+        {"question": "What does 'pip' do?", "options": ["Compiles Python", "Package installer for Python", "Debugger", "Text editor"], "correctAnswer": 1, "explanation": "pip is Python's package installer for installing and managing third-party libraries."},
+        {"question": "Which operator is used for string formatting in Python 3.6+?", "options": ["f-strings (f\"text {var}\")", "% formatting", "+ concatenation only", "format() only"], "correctAnswer": 0, "explanation": "f-strings provide a concise way to embed expressions inside string literals."},
+        {"question": "What is a goroutine in Go?", "options": ["Error type", "Lightweight thread managed by Go runtime", "Package manager", "Testing framework"], "correctAnswer": 1, "explanation": "Goroutines are lightweight threads that enable concurrent programming in Go."},
+        {"question": "What is subprocess module in Python?", "options": ["Execute external commands", "Database operations", "GUI creation", "File compression"], "correctAnswer": 0, "explanation": "subprocess spawns new processes and executes system commands from Python."},
+        {"question": "What does YAML stand for?", "options": ["Yet Another Markup Language", "YAML Ain't Markup Language", "Young Applications Markup Language", "York Advanced Markup Language"], "correctAnswer": 1, "explanation": "YAML is a human-readable data serialization format commonly used in DevOps configs."},
+        {"question": "What is list comprehension in Python?", "options": ["Reading lists", "Concise way to create lists from iterables", "List documentation", "List sorting"], "correctAnswer": 1, "explanation": "List comprehensions provide a compact syntax for creating lists: [x for x in iterable]."},
+        {"question": "What is os.path.join() used for?", "options": ["Join strings", "Construct file paths properly across OS", "Join networks", "Merge files"], "correctAnswer": 1, "explanation": "os.path.join() creates file paths using correct separators for the OS."},
+        {"question": "What does 'try-except' handle in Python?", "options": ["Loops", "Exceptions and errors", "File operations", "Network requests"], "correctAnswer": 1, "explanation": "try-except blocks catch and handle exceptions to prevent program crashes."},
+        {"question": "What is argparse used for?", "options": ["Parse JSON", "Parse command-line arguments", "Parse XML", "Parse dates"], "correctAnswer": 1, "explanation": "argparse creates user-friendly command-line interfaces with arguments and options."},
+        {"question": "What does the 'import' statement do?", "options": ["Export modules", "Load modules and libraries", "Delete modules", "Compile modules"], "correctAnswer": 1, "explanation": "'import' loads external modules/libraries to use their functionality."},
+        {"question": "What is a lambda function in Python?", "options": ["Named function", "Anonymous one-line function", "Class method", "Built-in function"], "correctAnswer": 1, "explanation": "Lambda creates small anonymous functions: lambda x: x * 2."},
+        {"question": "What is requirements.txt?", "options": ["Documentation", "File listing Python dependencies", "Configuration file", "Test file"], "correctAnswer": 1, "explanation": "requirements.txt lists all Python package dependencies for a project."},
+        {"question": "What does '__name__ == \"__main__\"' check?", "options": ["User name", "If script is run directly (not imported)", "Main function", "File name"], "correctAnswer": 1, "explanation": "Checks if the Python file is being run directly vs. imported as a module."}
+      ]
+    },
+    {
+      "id": "git-github",
+      "title": "Git & GitHub or GitLab (2-3 weeks)",
+      "description": "Master version control, branching strategies, Git Flow, GitHub Actions, merge conflicts, and Git hooks.",
+      "resources": [
+        { "title": "Git Tutorial for Beginners", "url": "https://www.youtube.com/embed/8JJ101D3knE", "type": "Video", "duration": "30 minutes" },
+        { "title": "Git & GitHub Full Course", "url": "https://www.youtube.com/embed/zTjRZNkhiEU?si=jeN79Q_C2cNaPDpn", "type": "Video", "duration": "1 hour", "note": "freeCodeCamp - BEST" },
+        { "title": "Pro Git Book", "url": "https://git-scm.com/Bookook/en/v2", "type": "Book", "note": "Free & Complete" },
+        { "title": "Learn Git Branching", "url": "https://learngitbranching.js.org/", "type": "Interactive", "note": "Interactive Game" },
+        { "title": "Git Branching Strategies", "url": "https://www.youtube.com/embed/U_IFGpJDbeU?si=RcKlySb0RPcGUwCI", "type": "Video" },
+        { "title": "Git Flow vs GitHub Flow", "url": "https://www.youtube.com/embed/gW6dFpTMk8s", "type": "Video" },
+        { "title": "Git Merge vs Rebase", "url": "https://www.youtube.com/embed/CRlGDDprdOQ", "type": "Video" },
+        { "title": "Resolving Merge Conflicts", "url": "https://www.youtube.com/embed/xNVM5UxlFSA", "type": "Video" },
+        { "title": "Git Hooks Tutorial", "url": "https://www.youtube.com/embed/ObksvAZyWdo?si=qwD8t7BAEclWVJ0l", "type": "Video" },
+        { "title": "GitHub Actions Tutorial", "url": "https://www.youtube.com/embed/R8_veQiYBjI", "type": "Video", "duration": "40 minutes" },
+        { "title": "GitHub Skills", "url": "https://skills.github.com/", "type": "Interactive" }
+      ],
+      "quiz": [
+        {
+          "question": "What does 'git clone' do?",
+          "options": ["Creates a copy of a remote repository locally", "Deletes repository", "Merges branches", "Creates branch"],
+          "correctAnswer": 0,
+          "explanation": "'git clone' creates a local copy of a remote repository with full history."
+        },
+        {
+          "question": "What is the difference between 'git pull' and 'git fetch'?",
+          "options": ["No difference", "pull = fetch + merge, fetch only downloads", "pull is slower", "fetch deletes files"],
+          "correctAnswer": 1,
+          "explanation": "'git fetch' downloads changes without merging; 'git pull' fetches and merges automatically."
+        },
+        {
+          "question": "Which command stages all changes for commit?",
+          "options": ["git commit -a", "git stage all", "git add .", "git push all"],
+          "correctAnswer": 2,
+          "explanation": "'git add .' stages all changes in current directory for the next commit."
+        },
+        {
+          "question": "What is Git Flow?",
+          "options": ["Git command", "Branching strategy with feature, develop, release branches", "CI/CD tool", "Version of Git"],
+          "correctAnswer": 1,
+          "explanation": "Git Flow is a branching model defining specific branch roles for features, releases, and hotfixes."
+        },
+        {
+          "question": "What does 'git rebase' do?",
+          "options": ["Deletes commits", "Moves or combines commits to new base", "Creates repository", "Undoes changes"],
+          "correctAnswer": 1,
+          "explanation": "Rebase moves commits to a new base, creating a linear history instead of merge commits."
+        },
+        {
+          "question": "How do you undo the last commit (keeping changes)?",
+          "options": ["git undo", "git reset --soft HEAD~1", "git delete", "git revert HEAD"],
+          "correctAnswer": 1,
+          "explanation": "'git reset --soft HEAD~1' undoes the last commit but keeps changes staged."
+        },
+        {
+          "question": "What is a merge conflict?",
+          "options": ["When Git can't automatically merge changes from different branches", "Error message", "Network issue", "Permission problem"],
+          "correctAnswer": 0,
+          "explanation": "Merge conflicts occur when changes in different branches affect the same code lines."
+        },
+        {
+          "question": "What are Git hooks?",
+          "options": ["Git commands", "Scripts that run automatically at certain Git events", "Branches", "Remote repositories"],
+          "correctAnswer": 1,
+          "explanation": "Git hooks are scripts triggered by Git events like commits, pushes, or merges."
+        },
+        {
+          "question": "What is GitHub Actions?",
+          "options": ["CI/CD automation platform integrated with GitHub", "Git command", "Code editor", "Version control system"],
+          "correctAnswer": 0,
+          "explanation": "GitHub Actions automates workflows like CI/CD, testing, and deployments directly in GitHub."
+        },
+        {
+          "question": "What does '.gitignore' do?",
+          "options": ["Ignores Git commands", "Specifies files Git should not track", "Deletes files", "Encrypts files"],
+          "correctAnswer": 1,
+          "explanation": ".gitignore lists files and patterns that Git should exclude from version control."
+        },
+        {
+          "question": "What is 'git cherry-pick'?",
+          "options": ["Deletes commits", "Applies specific commits from one branch to another", "Creates branches", "Merges all branches"],
+          "correctAnswer": 1,
+          "explanation": "Cherry-pick allows you to apply specific commits from one branch to your current branch."
+        },
+        {
+          "question": "What's the difference between merge and rebase?",
+          "options": ["No difference", "Rebase creates new commits", "Merge preserves history, rebase creates linear history", "Merge is faster"],
+          "correctAnswer": 2,
+          "explanation": "Merge preserves commit history with merge commits, while rebase rewrites history linearly."
+        },
+        {
+          "question": "What is a pull request?",
+          "options": ["Downloading code", "Request to merge code changes with review process", "Git command", "Push operation"],
+          "correctAnswer": 1,
+          "explanation": "Pull requests enable code review and discussion before merging changes into a branch."
+        },
+        {
+          "question": "What does 'git log' do?",
+          "options": ["Creates logs", "Displays commit history", "Deletes commits", "Logs in to Git"],
+          "correctAnswer": 1,
+          "explanation": "'git log' shows the commit history with author, date, and commit messages."
+        },
+        {
+          "question": "What is 'origin' in Git?",
+          "options": ["First commit", "Default name for remote repository", "Branch name", "Git command"],
+          "correctAnswer": 1,
+          "explanation": "'origin' is the conventional default name for the remote repository you cloned from."
+        },
+        {
+          "question": "What are Git tags used for?",
+          "options": ["Labeling files", "Marking specific commits, typically for releases", "Creating branches", "Deleting commits"],
+          "correctAnswer": 1,
+          "explanation": "Git tags mark specific points in history, commonly used for release versions (v1.0, v2.0)."
+        },
+        {
+          "question": "What is a detached HEAD state?",
+          "options": ["Error condition", "When HEAD points to specific commit instead of branch", "Deleted repository", "Broken Git"],
+          "correctAnswer": 1,
+          "explanation": "Detached HEAD occurs when checking out a specific commit rather than a branch reference."
+        },
+        {
+          "question": "What does 'git blame' do?",
+          "options": ["Reports errors", "Shows who last modified each line of a file", "Deletes files", "Assigns issues"],
+          "correctAnswer": 1,
+          "explanation": "'git blame' displays author and commit information for each line of a file."
+        },
+        {
+          "question": "What is a fast-forward merge?",
+          "options": ["Quick merge command", "Merge without creating merge commit when history is linear", "Forced merge", "Automatic merge"],
+          "correctAnswer": 1,
+          "explanation": "Fast-forward merge moves the branch pointer forward when no divergent changes exist."
+        },
+        {
+          "question": "What is 'git stash pop'?",
+          "options": ["Deletes stash", "Applies most recent stash and removes it from stash list", "Creates stash", "Lists stashes"],
+          "correctAnswer": 1,
+          "explanation": "'git stash pop' reapplies the most recently stashed changes and removes them from the stash."
+        }
+      ]
+    },
+    {
+      "id": "cicd",
+      "title": "CI/CD Pipelines (6-8 weeks)",
+      "description": "Build continuous integration and deployment pipelines with Jenkins, GitHub Actions, GitLab CI. Learn deployment strategies.",
+      "resources": [
+        { "title": "DevOps CI/CD Explained", "url": "https://www.youtube.com/embed/scEDHsr3APg", "type": "Video", "duration": "12 minutes", "note": "BEST" },
+        { "title": "CI/CD Full Course", "url": "https://www.youtube.com/embed/h9K1NnqwUvE?si=qOPpFfEAhIrgDIPy", "type": "Video", "duration": "2 hours" },
+        { "title": "CI/CD Pipeline Tutorial", "url": "https://www.youtube.com/embed/OPwU3UWCxhw", "type": "Video" },
+        { "title": "Jenkins Full Course", "url": "https://www.youtube.com/embed/FX322RVNGj4", "type": "Video", "duration": "4 hours", "note": "BEST" },
+        { "title": "GitHub Actions Complete Guide", "url": "https://www.youtube.com/embed/R8_veQiYBjI", "type": "Video", "duration": "1 hour" },
+        { "title": "GitHub Actions Full Course", "url": "https://www.youtube.com/embed/TLB5MY9BBa4", "type": "Video" },
+        { "title": "GitLab CI/CD Tutorial", "url": "https://www.youtube.com/embed/qP8kir2GUgo", "type": "Video", "duration": "1 hour" },
+        { "title": "GitLab CI/CD Quick Start", "url": "https://docs.gitlab.com/ee/ci/quick_start/", "type": "Article" }
+      ],
+      "quiz": [
+        {
+          "question": "What does CI/CD stand for?",
+          "options": ["Continuous Integration/Continuous Deployment", "Computer Integration/Computer Deployment", "Code Integration/Code Delivery", "Central Integration/Central Distribution"],
+          "correctAnswer": 0,
+          "explanation": "CI/CD automates integration of code changes and deployment to production."
+        },
+        {
+          "question": "What is the main purpose of Continuous Integration?",
+          "options": ["Deploy to production", "Automatically build and test code on every commit", "Monitor applications", "Manage infrastructure"],
+          "correctAnswer": 1,
+          "explanation": "CI automatically builds and tests code with each commit to catch issues early."
+        },
+        {
+          "question": "What is Jenkins?",
+          "options": ["Programming language", "Open-source automation server for CI/CD", "Cloud platform", "Database"],
+          "correctAnswer": 1,
+          "explanation": "Jenkins is an automation server that enables building CI/CD pipelines."
+        },
+        {
+          "question": "What is a Jenkins Pipeline?",
+          "options": ["Hardware component", "Network connection", "Water pipe", "Suite of plugins for implementing CI/CD workflows as code"],
+          "correctAnswer": 3,
+          "explanation": "Jenkins Pipeline defines entire build/test/deploy process as code in Jenkinsfile."
+        },
+        {
+          "question": "What is blue-green deployment?",
+          "options": ["Two identical environments, switch traffic between them", "Color-coded servers", "Testing strategy", "Monitoring technique"],
+          "correctAnswer": 0,
+          "explanation": "Blue-green deployment maintains two identical environments, switching traffic for zero-downtime updates."
+        },
+        {
+          "question": "What is canary deployment?",
+          "options": ["Deploy to all servers at once", "Gradual rollout to subset of users before full deployment", "Delete deployment", "Rollback deployment"],
+          "correctAnswer": 1,
+          "explanation": "Canary deployment gradually rolls out changes to a small subset before full release."
+        },
+        {
+          "question": "What does 'build artifact' mean?",
+          "options": ["Build error", "Compiled/packaged output of build process", "Source code", "Test result"],
+          "correctAnswer": 1,
+          "explanation": "Build artifacts are the compiled/packaged outputs (JARs, containers, binaries) ready for deployment."
+        },
+        {
+          "question": "What is GitHub Actions workflow?",
+          "options": ["Automated process defined in YAML for CI/CD", "Manual process", "Git command", "Code editor"],
+          "correctAnswer": 0,
+          "explanation": "GitHub Actions workflows are automated processes defined in YAML files in .github/workflows/."
+        },
+        {
+          "question": "What is rolling deployment?",
+          "options": ["Gradually updates instances one at a time or in batches", "All at once", "Random deployment", "No deployment"],
+          "correctAnswer": 0,
+          "explanation": "Rolling deployment updates servers gradually, maintaining availability during deployment."
+        },
+        {
+          "question": "What is the purpose of automated testing in CI/CD?",
+          "options": ["Catch bugs early before deployment", "Slow down deployment", "Increase costs", "Delete code"],
+          "correctAnswer": 0,
+          "explanation": "Automated testing validates code changes quickly, catching bugs before they reach production."
+        },
+        {
+          "question": "What is a pipeline stage?",
+          "options": ["Server type", "Distinct phase in CI/CD workflow (build, test, deploy)", "Code file", "Database"],
+          "correctAnswer": 1,
+          "explanation": "Pipeline stages organize CI/CD workflows into sequential or parallel phases."
+        },
+        {
+          "question": "What is GitLab CI/CD?",
+          "options": ["Code editor", "Git command", "Built-in CI/CD platform in GitLab", "Database tool"],
+          "correctAnswer": 2,
+          "explanation": "GitLab CI/CD is integrated into GitLab, configured via .gitlab-ci.yml files."
+        },
+        {
+          "question": "What is continuous delivery vs continuous deployment?",
+          "options": ["No difference", "Delivery requires manual approval, deployment is automatic", "Delivery is faster", "Deployment requires approval"],
+          "correctAnswer": 1,
+          "explanation": "Continuous delivery automates to staging; continuous deployment goes to production automatically."
+        },
+        {
+          "question": "What is a Jenkinsfile?",
+          "options": ["Pipeline definition as code in Jenkins", "Log file", "Config file", "Build artifact"],
+          "correctAnswer": 0,
+          "explanation": "Jenkinsfile defines Jenkins pipeline as code using declarative or scripted syntax."
+        },
+        {
+          "question": "What is integration testing in CI?",
+          "options": ["Tests how components work together", "Unit testing", "Manual testing", "No testing"],
+          "correctAnswer": 0,
+          "explanation": "Integration tests verify that different modules/services work together correctly."
+        },
+        {
+          "question": "What is a deployment rollback?",
+          "options": ["New deployment", "Reverting to previous stable version after failed deployment", "Testing phase", "Build process"],
+          "correctAnswer": 1,
+          "explanation": "Rollback reverts to the last known good version when deployment issues occur."
+        },
+        {
+          "question": "What are environment variables in CI/CD?",
+          "options": ["Configuration values passed to builds/deployments", "Server names", "Code files", "Test results"],
+          "correctAnswer": 0,
+          "explanation": "Environment variables provide configuration (API keys, URLs) to CI/CD pipelines."
+        },
+        {
+          "question": "What is a build trigger?",
+          "options": ["Manual button", "Event that starts CI/CD pipeline (commit, PR, schedule)", "Error message", "Deployment stage"],
+          "correctAnswer": 1,
+          "explanation": "Build triggers automatically start pipelines based on events like code pushes or schedules."
+        },
+        {
+          "question": "What is infrastructure as code in CI/CD?",
+          "options": ["Manual infrastructure setup", "Hardware configuration", "Managing infrastructure through code and version control", "Network cables"],
+          "correctAnswer": 2,
+          "explanation": "IaC manages infrastructure through code files, enabling version control and automation."
+        },
+        {
+          "question": "What is smoke testing in deployments?",
+          "options": ["Fire safety test", "Quick tests to verify critical functionality after deployment", "Load testing", "Security testing"],
+          "correctAnswer": 1,
+          "explanation": "Smoke tests quickly verify that deployed application is functioning at a basic level."
+        }
+      ]
+    },
+    {
+      "id": "docker",
+      "title": "Docker Containerization (3-4 weeks)",
+      "description": "Master Docker containers, images, Dockerfile, Docker Compose, networking, volumes, and security best practices.",
+      "resources": [
+        { "title": "Docker Full Course", "url": "https://www.youtube.com/embed/3c-iBn73dDE", "type": "Video", "duration": "3 hours", "note": "TechWorld with Nana - BEST" },
+        { "title": "Docker Tutorial - freeCodeCamp", "url": "https://www.youtube.com/embed/fqMOX6JJhGo", "type": "Video", "duration": "2 hours" },
+        { "title": "Docker Images vs Containers", "url": "https://www.youtube.com/embed/_dfLOzuIg2o", "type": "Video" },
+        { "title": "Dockerfile Best Practices", "url": "https://www.youtube.com/embed/LQjaJINkQXY", "type": "Video" },
+        { "title": "Docker Compose Tutorial", "url": "https://www.youtube.com/embed/HG6yIjZapSA", "type": "Video", "duration": "30 minutes" },
+        { "title": "Docker Networking Explained", "url": "https://www.youtube.com/embed/bKFMS5C4CG0", "type": "Video" },
+        { "title": "Play with Docker", "url": "https://labs.play-with-docker.com/", "type": "Interactive", "note": "Browser-based Labs" }
+      ],
+      "quiz": [
+        {
+          "question": "What is Docker?",
+          "options": ["Containerization platform for packaging applications", "Virtual machine", "Cloud provider", "Database"],
+          "correctAnswer": 0,
+          "explanation": "Docker packages applications and dependencies into lightweight, portable containers."
+        },
+        {
+          "question": "What is the difference between Docker image and container?",
+          "options": ["No difference", "Image is template, container is running instance", "Container is template", "Image runs applications"],
+          "correctAnswer": 1,
+          "explanation": "Images are read-only templates; containers are running instances created from images."
+        },
+        {
+          "question": "What is a Dockerfile?",
+          "options": ["Container log", "Text file with instructions to build Docker image", "Running container", "Network configuration"],
+          "correctAnswer": 1,
+          "explanation": "Dockerfile contains instructions (FROM, RUN, COPY, CMD) to build a Docker image."
+        },
+        {
+          "question": "Which command builds a Docker image?",
+          "options": ["docker run", "docker create", "docker make", "docker build"],
+          "correctAnswer": 3,
+          "explanation": "'docker build' creates an image from a Dockerfile."
+        },
+        {
+          "question": "What is Docker Compose?",
+          "options": ["Tool for defining and running multi-container applications", "Single container tool", "Image registry", "Monitoring tool"],
+          "correctAnswer": 0,
+          "explanation": "Docker Compose defines multi-container applications in docker-compose.yml and runs them together."
+        },
+        {
+          "question": "What does 'docker ps' show?",
+          "options": ["All images", "Running containers", "Networks", "Volumes"],
+          "correctAnswer": 1,
+          "explanation": "'docker ps' lists currently running containers; add '-a' to see all containers."
+        },
+        {
+          "question": "What are Docker volumes used for?",
+          "options": ["Persisting data outside container lifecycle", "Running containers", "Building images", "Networking"],
+          "correctAnswer": 0,
+          "explanation": "Volumes persist data independently of container lifecycle, surviving container deletion."
+        },
+        {
+          "question": "What is Docker Hub?",
+          "options": ["Container runtime", "Cloud-based registry for storing and sharing Docker images", "Orchestration tool", "Monitoring platform"],
+          "correctAnswer": 1,
+          "explanation": "Docker Hub is a public registry for sharing and distributing Docker images."
+        },
+        {
+          "question": "What does the '-d' flag do in 'docker run -d'?",
+          "options": ["Delete container", "Debug mode", "Run container in detached (background) mode", "Download image"],
+          "correctAnswer": 2,
+          "explanation": "'-d' runs the container in detached mode (background), freeing up the terminal."
+        },
+        {
+          "question": "What is a multi-stage build in Docker?",
+          "options": ["Multiple containers", "Using multiple FROM statements to reduce image size", "Building multiple images", "Staged deployment"],
+          "correctAnswer": 1,
+          "explanation": "Multi-stage builds use multiple FROM statements, copying only needed artifacts to reduce final image size."
+        },
+        {
+          "question": "What is the difference between CMD and ENTRYPOINT?",
+          "options": ["No difference", "ENTRYPOINT defines executable, CMD provides default arguments", "CMD is required", "ENTRYPOINT runs first"],
+          "correctAnswer": 1,
+          "explanation": "ENTRYPOINT sets the main executable; CMD provides default arguments that can be overridden."
+        },
+        {
+          "question": "What is .dockerignore used for?",
+          "options": ["Deletes files", "Excludes files from Docker build context", "Stops containers", "Networks configuration"],
+          "correctAnswer": 1,
+          "explanation": ".dockerignore specifies files to exclude from build context, reducing image size and build time."
+        },
+        {
+          "question": "What is Docker networking bridge mode?",
+          "options": ["Default network mode creating private internal network", "No networking", "Public network", "VPN"],
+          "correctAnswer": 0,
+          "explanation": "Bridge mode creates isolated network for containers on same host to communicate."
+        },
+        {
+          "question": "What are bind mounts vs volumes?",
+          "options": ["Volumes are managed by Docker, bind mounts link host paths", "No difference", "Bind mounts are faster", "Volumes are slower"],
+          "correctAnswer": 0,
+          "explanation": "Volumes are Docker-managed storage; bind mounts map specific host directories into containers."
+        },
+        {
+          "question": "What is a Docker registry?",
+          "options": ["Container runtime", "Service for storing and distributing Docker images", "Orchestration tool", "Monitoring system"],
+          "correctAnswer": 1,
+          "explanation": "Docker registry stores and distributes images (Docker Hub, ECR, private registries)."
+        },
+        {
+          "question": "What does 'docker exec' do?",
+          "options": ["Starts new container", "Runs command in running container", "Stops container", "Deletes container"],
+          "correctAnswer": 1,
+          "explanation": "'docker exec' executes commands inside already running containers, useful for debugging."
+        },
+        {
+          "question": "What is layer caching in Docker?",
+          "options": ["Reuses unchanged layers to speed up builds", "Slows builds", "Deletes cache", "No caching"],
+          "correctAnswer": 0,
+          "explanation": "Docker caches image layers; if instructions unchanged, it reuses cached layers for faster builds."
+        },
+        {
+          "question": "What is container health check?",
+          "options": ["Manual check", "Automated test to verify container is functioning properly", "No checks", "Security scan"],
+          "correctAnswer": 1,
+          "explanation": "Health checks (HEALTHCHECK in Dockerfile) test if container application is running correctly."
+        },
+        {
+          "question": "What is Docker network host mode?",
+          "options": ["Container uses host network stack directly", "Isolated network", "No network", "Bridge network"],
+          "correctAnswer": 0,
+          "explanation": "Host mode removes network isolation; container shares host's network namespace."
+        },
+        {
+          "question": "What is Docker image tagging?",
+          "options": ["Labeling images with version/name for identification", "Deleting images", "Running images", "Building images"],
+          "correctAnswer": 0,
+          "explanation": "Tags identify image versions (myapp:v1.0, myapp:latest) for organization and deployment."
+        }
+      ]
+    },
+    {
+      "id": "kubernetes",
+      "title": "Kubernetes Orchestration (4-6 weeks)",
+      "description": "Master Kubernetes architecture, pods, deployments, services, ConfigMaps, Secrets, Helm, and Ingress controllers.",
+      "resources": [
+        { "title": "Kubernetes Full Course", "url": "https://www.youtube.com/embed/X48VuDVv0do", "type": "Video", "duration": "4 hours", "note": "TechWorld with Nana - BEST" },
+        { "title": "Kubernetes - freeCodeCamp", "url": "https://www.youtube.com/embed/d6WC5n9G_sM", "type": "Video", "duration": "4 hours" },
+        { "title": "Kubernetes for Beginners", "url": "https://www.youtube.com/embed/s_o8dwzRlu4", "type": "Video", "duration": "1 hour" },
+        { "title": "Kubernetes Architecture", "url": "https://www.youtube.com/embed/8C_SCDbUJTg", "type": "Video" },
+        { "title": "Pods, Deployments, Services", "url": "https://www.youtube.com/embed/PH-2FfFD2PU", "type": "Video", "duration": "30 minutes" },
+        { "title": "Kubernetes Basics Tutorial", "url": "https://kubernetes.io/docs/tutorials/kubernetes-basics/", "type": "Article" },
+        { "title": "Learn Kubernetes - Interactive", "url": "https://kubernetes.io/docs/tutorials/", "type": "Interactive" },
+        { "title": "ConfigMaps and Secrets", "url": "https://www.youtube.com/embed/OW244LxB4oI", "type": "Video" },
+        { "title": "Kubernetes Persistent Volumes", "url": "https://www.youtube.com/embed/0swOh5C3OVM", "type": "Video" },
+        { "title": "Kubernetes Networking", "url": "https://www.youtube.com/embed/5cNrTU6o3Fw", "type": "Video" },
+        { "title": "Ingress Controller Tutorial", "url": "https://www.youtube.com/embed/80Ew_fsV4rM", "type": "Video" },
+        { "title": "Helm Tutorial for Beginners", "url": "https://www.youtube.com/embed/-ykwb1d0DXU", "type": "Video", "duration": "1 hour" },
+        { "title": "Helm Official Documentation", "url": "https://helm.sh/docs/", "type": "Article" },
+        { "title": "Minikube Local Cluster", "url": "https://minikube.sigs.k8s.io/docs/start/", "type": "Article" }
+      ],
+      "quiz": [
+        {
+          "question": "What is Kubernetes?",
+          "options": ["Container orchestration platform", "Database", "Programming language", "Cloud provider"],
+          "correctAnswer": 0,
+          "explanation": "Kubernetes automates deployment, scaling, and management of containerized applications."
+        },
+        {
+          "question": "What is a Pod in Kubernetes?",
+          "options": ["Smallest deployable unit containing one or more containers", "Server", "Network", "Storage volume"],
+          "correctAnswer": 0,
+          "explanation": "Pods are the smallest Kubernetes objects that encapsulate one or more containers."
+        },
+        {
+          "question": "What is a Deployment in Kubernetes?",
+          "options": ["Network rule", "Manages desired state and updates for Pods", "Storage class", "User account"],
+          "correctAnswer": 1,
+          "explanation": "Deployments manage ReplicaSets and provide declarative updates for Pods."
+        },
+        {
+          "question": "What is a Kubernetes Service?",
+          "options": ["Database", "Abstraction exposing applications running on Pods", "Container image", "Configuration file"],
+          "correctAnswer": 1,
+          "explanation": "Services provide stable network endpoints and load balancing for Pods."
+        },
+        {
+          "question": "What is kubectl?",
+          "options": ["Kubernetes cluster", "Command-line tool for interacting with Kubernetes", "Container runtime", "Cloud platform"],
+          "correctAnswer": 1,
+          "explanation": "kubectl is the CLI tool for deploying applications and managing Kubernetes clusters."
+        },
+        {
+          "question": "What is a ConfigMap?",
+          "options": ["Stores non-sensitive configuration data as key-value pairs", "Encrypted data", "Network configuration", "User permissions"],
+          "correctAnswer": 0,
+          "explanation": "ConfigMaps store configuration data separately from application code."
+        },
+        {
+          "question": "What are Kubernetes Secrets?",
+          "options": ["Public data", "Objects for storing sensitive information like passwords", "Network policies", "Containers"],
+          "correctAnswer": 1,
+          "explanation": "Secrets store sensitive data (passwords, tokens, keys) in base64-encoded format."
+        },
+        {
+          "question": "What is Helm?",
+          "options": ["Package manager for Kubernetes", "Container runtime", "Cloud provider", "Monitoring tool"],
+          "correctAnswer": 0,
+          "explanation": "Helm packages Kubernetes resources into charts for easier deployment and management."
+        },
+        {
+          "question": "What is an Ingress in Kubernetes?",
+          "options": ["Manages external access to services, typically HTTP/HTTPS", "Storage volume", "Container image", "Pod"],
+          "correctAnswer": 0,
+          "explanation": "Ingress provides HTTP/HTTPS routing, load balancing, and SSL termination for services."
+        },
+        {
+          "question": "What is horizontal pod autoscaling?",
+          "options": ["Automatically scales number of Pods based on metrics", "Vertical scaling", "Manual scaling", "Storage scaling"],
+          "correctAnswer": 0,
+          "explanation": "HPA automatically adjusts the number of Pod replicas based on CPU, memory, or custom metrics."
+        },
+        {
+          "question": "What is a ReplicaSet?",
+          "options": ["Ensures specified number of Pod replicas are running", "Storage class", "Network policy", "User account"],
+          "correctAnswer": 0,
+          "explanation": "ReplicaSet maintains a stable set of replica Pods running at any given time."
+        },
+        {
+          "question": "What are Kubernetes Namespaces?",
+          "options": ["Virtual clusters for resource isolation", "Networks", "Storage volumes", "Containers"],
+          "correctAnswer": 0,
+          "explanation": "Namespaces provide scope for names and isolate resources in multi-tenant environments."
+        },
+        {
+          "question": "What is a PersistentVolume (PV)?",
+          "options": ["Pod definition", "Piece of storage in cluster provisioned by admin", "Network rule", "Container image"],
+          "correctAnswer": 1,
+          "explanation": "PV is cluster-level storage resource independent of Pod lifecycle."
+        },
+        {
+          "question": "What is a PersistentVolumeClaim (PVC)?",
+          "options": ["Request for storage by user", "Pod replica", "Service type", "ConfigMap"],
+          "correctAnswer": 0,
+          "explanation": "PVC is a request for storage that binds to available PersistentVolumes."
+        },
+        {
+          "question": "What is a StatefulSet?",
+          "options": ["Manages stateful applications with stable identities", "Stateless workload", "Network policy", "Storage class"],
+          "correctAnswer": 0,
+          "explanation": "StatefulSet provides stable network identities and persistent storage for stateful applications."
+        },
+        {
+          "question": "What is a DaemonSet?",
+          "options": ["Ensures Pod runs on all (or specific) nodes", "Single pod", "Storage type", "Service mesh"],
+          "correctAnswer": 0,
+          "explanation": "DaemonSet runs a copy of a Pod on every node (e.g., logging, monitoring agents)."
+        },
+        {
+          "question": "What is kubectl get pods command?",
+          "options": ["Lists Pods in current namespace", "Deletes Pods", "Creates Pods", "Scales Pods"],
+          "correctAnswer": 0,
+          "explanation": "'kubectl get pods' displays all Pods with their status in the namespace."
+        },
+        {
+          "question": "What is Kubernetes Ingress Controller?",
+          "options": ["Implementation handling Ingress rules for HTTP routing", "Pod controller", "Storage driver", "Network plugin"],
+          "correctAnswer": 0,
+          "explanation": "Ingress Controller (NGINX, Traefik) implements the Ingress resource routing logic."
+        },
+        {
+          "question": "What is a Kubernetes Label?",
+          "options": ["Key-value pair attached to objects for identification", "Network rule", "Storage class", "Pod name"],
+          "correctAnswer": 0,
+          "explanation": "Labels organize and select subsets of objects using selectors in queries."
+        },
+        {
+          "question": "What is Helm chart?",
+          "options": ["Package of Kubernetes resource templates", "Monitoring dashboard", "Storage type", "Network policy"],
+          "correctAnswer": 0,
+          "explanation": "Helm charts bundle Kubernetes manifests into versioned, reusable packages."
+        }
+      ]
+    },
+    {
+      "id": "infrastructure-as-code",
+      "title": "Infrastructure as Code: Terraform & Ansible (3-4 weeks)",
+      "description": "Master Terraform for infrastructure provisioning and Ansible for configuration management across cloud platforms.",
+      "resources": [
+        { "title": "Terraform - freeCodeCamp", "url": "https://www.youtube.com/embed/SLB_c_ayRMo", "type": "Video", "duration": "2 hours", "note": "BEST" },
+        { "title": "Terraform Full Course", "url": "https://www.youtube.com/embed/nvNqfgojocs", "type": "Video", "duration": "3 hours", "note": "TechWorld with Nana" },
+        { "title": "Infrastructure as Code Explained", "url": "https://www.youtube.com/embed/POPP2WTJ8es", "type": "Video" },
+        { "title": "Terraform State Management", "url": "https://www.youtube.com/embed/7xngnjfIlK4", "type": "Video" },
+        { "title": "Ansible - freeCodeCamp", "url": "https://www.youtube.com/embed/9Ua2b06oAr4", "type": "Video", "duration": "2 hours", "note": "BEST" },
+        { "title": "Ansible for Beginners", "url": "https://www.youtube.com/embed/1id6ERvfozo", "type": "Video", "duration": "1 hour" },
+        { "title": "Ansible Getting Started", "url": "https://docs.ansible.com/ansible/latest/getting_started/index.html", "type": "Article" },
+        { "title": "Ansible PlayBook Tutorial", "url": "https://www.youtube.com/embed/Z01b9QZG0D0", "type": "Video" },
+        { "title": "Ansible Roles Explained", "url": "https://www.youtube.com/embed/tq9sCeQNVYc", "type": "Video" },
+        { "title": "Ansible Galaxy", "url": "https://galaxy.ansible.com/", "type": "Article", "note": "Pre-built Roles" },
+        { "title": "Ansible Best Practices", "url": "https://docs.ansible.com/ansible/latest/user_guide/playBook_best_practices.html", "type": "Article" }
+      ],
+      "quiz": [
+        {
+          "question": "What is Infrastructure as Code (IaC)?",
+          "options": ["Managing infrastructure through machine-readable files", "Manual server configuration", "Cloud provider", "Monitoring tool"],
+          "correctAnswer": 0,
+          "explanation": "IaC automates infrastructure provisioning using code instead of manual processes."
+        },
+        {
+          "question": "What is Terraform?",
+          "options": ["Container orchestrator", "Open-source IaC tool for provisioning infrastructure", "CI/CD tool", "Database"],
+          "correctAnswer": 1,
+          "explanation": "Terraform uses declarative configuration files to provision and manage infrastructure across providers."
+        },
+        {
+          "question": "What language does Terraform use?",
+          "options": ["HCL (HashiCorp Configuration Language)", "YAML", "JSON only", "Python"],
+          "correctAnswer": 0,
+          "explanation": "Terraform primarily uses HCL, though it also supports JSON format."
+        },
+        {
+          "question": "What is Terraform state?",
+          "options": ["File tracking current infrastructure state", "Configuration file", "Provider plugin", "Module"],
+          "correctAnswer": 0,
+          "explanation": "State file (terraform.tfstate) maps real-world resources to your configuration."
+        },
+        {
+          "question": "What is Ansible?",
+          "options": ["Cloud provider", "Container tool", "Agentless automation tool for configuration management", "Monitoring platform"],
+          "correctAnswer": 2,
+          "explanation": "Ansible automates configuration management, application deployment, and task automation using SSH."
+        },
+        {
+          "question": "What are Ansible PlayBooks?",
+          "options": ["YAML files defining automation tasks", "Python scripts", "Docker files", "Configuration databases"],
+          "correctAnswer": 0,
+          "explanation": "PlayBooks are YAML files describing the desired state and tasks for managed systems."
+        },
+        {
+          "question": "What is a Terraform provider?",
+          "options": ["Plugin for interacting with APIs (AWS, Azure, etc.)", "State file", "Variable file", "Module"],
+          "correctAnswer": 0,
+          "explanation": "Providers are plugins that enable Terraform to interact with cloud platforms and services."
+        },
+        {
+          "question": "What is a Terraform module?",
+          "options": ["Reusable, self-contained package of Terraform configurations", "Provider", "State file", "Variable"],
+          "correctAnswer": 0,
+          "explanation": "Modules encapsulate resources into reusable components, promoting code reuse and organization."
+        },
+        {
+          "question": "What does 'terraform plan' do?",
+          "options": ["Applies changes", "Destroys infrastructure", "Shows execution plan without making changes", "Initializes providers"],
+          "correctAnswer": 2,
+          "explanation": "'terraform plan' previews changes Terraform will make without actually applying them."
+        },
+        {
+          "question": "What is an Ansible role?",
+          "options": ["Organized structure for tasks, variables, and handlers", "User permission", "Server", "Network configuration"],
+          "correctAnswer": 0,
+          "explanation": "Roles organize playBook content into reusable components with standardized directory structure."
+        },
+        {
+          "question": "What does 'terraform apply' do?",
+          "options": ["Applies planned infrastructure changes", "Shows plan", "Destroys resources", "Initializes providers"],
+          "correctAnswer": 0,
+          "explanation": "'terraform apply' executes the planned changes to create, update, or delete infrastructure."
+        },
+        {
+          "question": "What is idempotency in IaC?",
+          "options": ["Running same operation multiple times produces same result", "One-time execution", "Random results", "Manual configuration"],
+          "correctAnswer": 0,
+          "explanation": "Idempotent operations ensure consistent state regardless of how many times executed."
+        },
+        {
+          "question": "What is Terraform drift detection?",
+          "options": ["Detecting differences between state and actual infrastructure", "Network latency", "Code errors", "Provider updates"],
+          "correctAnswer": 0,
+          "explanation": "Drift detection identifies manual changes that differ from Terraform state."
+        },
+        {
+          "question": "What is Ansible inventory?",
+          "options": ["File listing managed hosts and groups", "Task file", "Variable file", "Role definition"],
+          "correctAnswer": 0,
+          "explanation": "Inventory defines hosts and groups that Ansible manages (INI or YAML format)."
+        },
+        {
+          "question": "What is declarative vs imperative IaC?",
+          "options": ["Declarative defines desired state; imperative defines steps", "No difference", "Both same approach", "Declarative is faster"],
+          "correctAnswer": 0,
+          "explanation": "Declarative (Terraform) specifies 'what' you want; imperative specifies 'how' to achieve it."
+        },
+        {
+          "question": "What are Terraform variables?",
+          "options": ["Parameterize configurations for reusability", "State files", "Provider plugins", "Modules"],
+          "correctAnswer": 0,
+          "explanation": "Variables allow dynamic input values, making configurations flexible and reusable."
+        },
+        {
+          "question": "What is Ansible Galaxy?",
+          "options": ["Repository for sharing Ansible roles", "Cloud platform", "Monitoring tool", "Container registry"],
+          "correctAnswer": 0,
+          "explanation": "Ansible Galaxy is a community hub for finding and sharing pre-built Ansible roles."
+        },
+        {
+          "question": "What is Terraform remote state?",
+          "options": ["Storing state file in remote backend (S3, Azure Blob)", "Local file", "Provider config", "Module output"],
+          "correctAnswer": 0,
+          "explanation": "Remote state enables team collaboration and state locking in shared storage."
+        },
+        {
+          "question": "What are Ansible handlers?",
+          "options": ["Tasks triggered by notify directive when changes occur", "Variables", "Inventory groups", "Roles"],
+          "correctAnswer": 0,
+          "explanation": "Handlers run only when notified by tasks (e.g., restart service after config change)."
+        },
+        {
+          "question": "What is 'terraform destroy'?",
+          "options": ["Removes all infrastructure defined in configuration", "Creates resources", "Updates resources", "Shows plan"],
+          "correctAnswer": 0,
+          "explanation": "'terraform destroy' terminates all resources managed by the Terraform configuration."
+        }
+      ]
+    },
+    {
+      "id": "cloud-platforms",
+      "title": "Cloud Platforms: AWS/Azure/GCP (2-3 months)",
+      "description": "Master cloud services: EC2, Lambda, S3, VPC, IAM. Learn AWS primarily or choose Azure/GCP. Understand Well-Architected Framework.",
+      "resources": [
+        { "title": "AWS Full Course", "url": "https://www.youtube.com/embed/B8i49C8fC3E?si=mrO1zDewYRw5vQLc", "type": "Video", "duration": "12 hours", "note": "freeCodeCamp - BEST" },
+        { "title": "AWS Solutions Architect", "url": "https://www.youtube.com/embed/Ia-UEYYR44s", "type": "Video", "duration": "10 hours" },
+        { "title": "Azure Full Course", "url": "https://www.youtube.com/embed/10PbGbTUSAg", "type": "Video", "duration": "10 hours" },
+        { "title": "GCP Full Course", "url": "https://www.youtube.com/embed/jpno8FSqpc8", "type": "Video", "duration": "12 hours" }
+      ],
+      "quiz": [
+        {
+          "question": "What is AWS EC2?",
+          "options": ["Elastic Compute Cloud - virtual servers in the cloud", "Database service", "Storage service", "Monitoring tool"],
+          "correctAnswer": 0,
+          "explanation": "EC2 provides scalable virtual servers (instances) for running applications in AWS."
+        },
+        {
+          "question": "What is AWS Lambda?",
+          "options": ["Database", "Serverless compute service running code in response to events", "Container service", "Storage"],
+          "correctAnswer": 1,
+          "explanation": "Lambda runs code without provisioning servers, charging only for compute time used."
+        },
+        {
+          "question": "What is AWS S3?",
+          "options": ["Compute service", "Simple Storage Service - object storage", "Database", "Network service"],
+          "correctAnswer": 1,
+          "explanation": "S3 provides scalable object storage for data, backups, and static content."
+        },
+        {
+          "question": "What does AWS IAM manage?",
+          "options": ["Identity and Access Management - user permissions and roles", "Databases", "Virtual machines", "Storage"],
+          "correctAnswer": 0,
+          "explanation": "IAM securely controls access to AWS services through users, groups, roles, and policies."
+        },
+        {
+          "question": "What is a VPC in AWS?",
+          "options": ["Virtual machine", "Virtual Private Cloud - isolated network section", "Database", "Storage service"],
+          "correctAnswer": 1,
+          "explanation": "VPC creates isolated virtual networks where you can launch AWS resources with custom configurations."
+        },
+        {
+          "question": "What is Azure DevOps?",
+          "options": ["Cloud platform for development collaboration and CI/CD", "Database", "Storage service", "Monitoring only"],
+          "correctAnswer": 0,
+          "explanation": "Azure DevOps provides repos, pipelines, boards, and artifacts for software development lifecycle."
+        },
+        {
+          "question": "What is Google Kubernetes Engine (GKE)?",
+          "options": ["Database", "Managed Kubernetes service", "Storage service", "Virtual machine service"],
+          "correctAnswer": 1,
+          "explanation": "GKE is Google Cloud's managed Kubernetes service for deploying containerized applications."
+        },
+        {
+          "question": "What is AWS CloudFormation?",
+          "options": ["Infrastructure as Code service for AWS resources", "Monitoring tool", "Database", "Container service"],
+          "correctAnswer": 0,
+          "explanation": "CloudFormation uses templates (JSON/YAML) to provision and manage AWS infrastructure."
+        },
+        {
+          "question": "What is Azure Resource Manager (ARM)?",
+          "options": ["Deployment and management service for Azure resources", "Virtual machine", "Database", "Storage tool"],
+          "correctAnswer": 0,
+          "explanation": "ARM provides consistent management layer for creating, updating, and deleting Azure resources."
+        },
+        {
+          "question": "What is the purpose of AWS CloudWatch?",
+          "options": ["Monitoring and observability service", "Compute service", "Storage service", "Database"],
+          "correctAnswer": 0,
+          "explanation": "CloudWatch collects metrics, logs, and events for monitoring AWS resources and applications."
+        },
+        {
+          "question": "What is AWS Auto Scaling?",
+          "options": ["Automatically adjusts compute capacity based on demand", "Manual scaling", "Storage service", "Network service"],
+          "correctAnswer": 0,
+          "explanation": "Auto Scaling ensures the right number of EC2 instances based on traffic and load."
+        },
+        {
+          "question": "What is Azure Blob Storage?",
+          "options": ["Virtual machine service", "Object storage for unstructured data", "Database service", "Network service"],
+          "correctAnswer": 1,
+          "explanation": "Azure Blob Storage stores large amounts of unstructured data like images, videos, and backups."
+        },
+        {
+          "question": "What is GCP BigQuery?",
+          "options": ["Serverless data warehouse for analytics", "Virtual machine", "Container service", "Storage bucket"],
+          "correctAnswer": 0,
+          "explanation": "BigQuery is a fully managed, serverless data warehouse for analyzing large datasets."
+        },
+        {
+          "question": "What is AWS RDS?",
+          "options": ["Relational Database Service - managed database", "Container service", "Storage service", "Compute service"],
+          "correctAnswer": 0,
+          "explanation": "RDS manages relational databases (MySQL, PostgreSQL, Oracle, SQL Server) in the cloud."
+        },
+        {
+          "question": "What is Azure Virtual Network?",
+          "options": ["Isolated network for Azure resources", "Virtual machine", "Database", "Storage account"],
+          "correctAnswer": 0,
+          "explanation": "Azure Virtual Network (VNet) provides isolated networking for Azure resources."
+        },
+        {
+          "question": "What is AWS ECS?",
+          "options": ["Elastic Container Service for running Docker containers", "Database service", "Storage service", "Virtual machine"],
+          "correctAnswer": 0,
+          "explanation": "ECS is a fully managed container orchestration service for Docker containers."
+        },
+        {
+          "question": "What is GCP Cloud Functions?",
+          "options": ["Serverless compute for event-driven functions", "Database", "Virtual machine", "Storage"],
+          "correctAnswer": 0,
+          "explanation": "Cloud Functions runs code in response to events without server management."
+        },
+        {
+          "question": "What is AWS EKS?",
+          "options": ["Elastic Kubernetes Service - managed Kubernetes", "Database service", "Storage service", "Network service"],
+          "correctAnswer": 0,
+          "explanation": "EKS is AWS's managed Kubernetes service for deploying containerized applications."
+        },
+        {
+          "question": "What is cloud-native architecture?",
+          "options": ["Designing apps to leverage cloud platform capabilities", "Legacy monolith", "On-premises only", "Desktop applications"],
+          "correctAnswer": 0,
+          "explanation": "Cloud-native uses microservices, containers, and serverless to maximize cloud benefits."
+        },
+        {
+          "question": "What is AWS Cost Explorer?",
+          "options": ["Tool for visualizing and managing AWS costs", "Monitoring service", "Database tool", "Container service"],
+          "correctAnswer": 0,
+          "explanation": "Cost Explorer helps analyze spending patterns and optimize cloud costs."
+        }
+      ]
+    },
+    {
+      "id": "monitoring-logging",
+      "title": "Monitoring & Logging (3-4 weeks)",
+      "description": "Set up observability with Prometheus & Grafana monitoring, ELK Stack logging, distributed tracing, and alerting systems.",
+      "resources": [
+        { "title": "Prometheus & Grafana", "url": "https://www.youtube.com/embed/h4Sl21AKiDg", "type": "Video", "duration": "2 hours", "note": "BEST" },
+        { "title": "Prometheus Full Course", "url": "https://www.youtube.com/embed/7gW5pSM6dlU", "type": "Video", "duration": "1 hour" },
+        { "title": "Grafana Crash Course", "url": "https://www.youtube.com/embed/lILY8eSspEo", "type": "Video", "duration": "40 minutes" },
+        { "title": "Prometheus Getting Started", "url": "https://prometheus.io/docs/introduction/first_steps/", "type": "Article" },
+        { "title": "ELK Stack Tutorial", "url": "https://www.youtube.com/embed/gS_nHTWZEJ8", "type": "Video", "duration": "1 hour" },
+        { "title": "Elasticsearch Crash Course", "url": "https://www.youtube.com/embed/ZP0NmfyfsoM", "type": "Video" },
+        { "title": "Kibana Tutorial", "url": "https://www.youtube.com/embed/gQ1c1uILyKI", "type": "Video" },
+        { "title": "Jaeger Tracing Tutorial", "url": "https://www.youtube.com/embed/aMZoUIG-mgY", "type": "Video" },
+        { "title": "OpenTelemetry Explained", "url": "https://www.youtube.com/embed/r8UvWSX3KA8", "type": "Video" }
+      ],
+      "quiz": [
+        {
+          "question": "What is Prometheus?",
+          "options": ["Open-source monitoring and alerting toolkit", "Database", "CI/CD tool", "Container platform"],
+          "correctAnswer": 0,
+          "explanation": "Prometheus collects and stores time-series metrics with powerful querying capabilities."
+        },
+        {
+          "question": "What is Grafana used for?",
+          "options": ["Container orchestration", "Visualization and dashboarding of metrics", "Code repository", "Testing"],
+          "correctAnswer": 1,
+          "explanation": "Grafana creates dashboards to visualize metrics from Prometheus and other data sources."
+        },
+        {
+          "question": "What does ELK Stack stand for?",
+          "options": ["Elasticsearch, Logstash, Kibana", "Elastic, Linux, Kubernetes", "Error, Log, Kafka", "Enterprise, Load, Kernel"],
+          "correctAnswer": 0,
+          "explanation": "ELK is a stack for searching, analyzing, and visualizing log data in real-time."
+        },
+        {
+          "question": "What is the purpose of Elasticsearch?",
+          "options": ["Search and analytics engine for logs and data", "Container runtime", "Web server", "Database"],
+          "correctAnswer": 0,
+          "explanation": "Elasticsearch indexes and searches large volumes of log data quickly."
+        },
+        {
+          "question": "What does Kibana do?",
+          "options": ["Container orchestration", "Provides visualization interface for Elasticsearch data", "Monitors servers", "Manages secrets"],
+          "correctAnswer": 1,
+          "explanation": "Kibana creates dashboards and visualizations for data stored in Elasticsearch."
+        },
+        {
+          "question": "What is distributed tracing?",
+          "options": ["Tracking requests across microservices", "Container deployment", "Log aggregation", "Security scanning"],
+          "correctAnswer": 0,
+          "explanation": "Distributed tracing follows requests through distributed systems to identify bottlenecks."
+        },
+        {
+          "question": "What is Jaeger?",
+          "options": ["Distributed tracing system", "Database", "Container tool", "CI/CD platform"],
+          "correctAnswer": 0,
+          "explanation": "Jaeger is an open-source tool for monitoring and troubleshooting microservices-based systems."
+        },
+        {
+          "question": "What is PromQL?",
+          "options": ["Programming language", "Prometheus Query Language for metrics", "Database query language", "Container specification"],
+          "correctAnswer": 1,
+          "explanation": "PromQL is used to query and aggregate time-series data in Prometheus."
+        },
+        {
+          "question": "What is an alerting rule in Prometheus?",
+          "options": ["Condition that triggers notification when metrics cross threshold", "Network rule", "Security policy", "Container configuration"],
+          "correctAnswer": 0,
+          "explanation": "Alert rules define conditions that, when met, send notifications to Alertmanager."
+        },
+        {
+          "question": "What is OpenTelemetry?",
+          "options": ["Observability framework for metrics, logs, and traces", "Container platform", "Cloud provider", "Database"],
+          "correctAnswer": 0,
+          "explanation": "OpenTelemetry provides vendor-agnostic tools for collecting telemetry data."
+        },
+        {
+          "question": "What is Logstash?",
+          "options": ["Data processing pipeline for ingesting logs", "Visualization tool", "Database", "Container runtime"],
+          "correctAnswer": 0,
+          "explanation": "Logstash collects, parses, and transforms log data before sending to Elasticsearch."
+        },
+        {
+          "question": "What are the three pillars of observability?",
+          "options": ["Logs, metrics, traces", "CPU, memory, disk", "Servers, databases, networks", "Code, tests, deploy"],
+          "correctAnswer": 0,
+          "explanation": "Observability relies on logs (events), metrics (measurements), and traces (request flows)."
+        },
+        {
+          "question": "What is a Service Level Indicator (SLI)?",
+          "options": ["Metric measuring service performance", "Server name", "User account", "Network address"],
+          "correctAnswer": 0,
+          "explanation": "SLI is a quantitative measure of service level (e.g., uptime, latency, error rate)."
+        },
+        {
+          "question": "What is a Service Level Objective (SLO)?",
+          "options": ["Target value or range for SLI", "Service name", "Server location", "Network protocol"],
+          "correctAnswer": 0,
+          "explanation": "SLO sets reliability targets (e.g., 99.9% uptime, <200ms response time)."
+        },
+        {
+          "question": "What is Alertmanager in Prometheus?",
+          "options": ["Handles alerts from Prometheus and routes notifications", "Metric collector", "Dashboard tool", "Database"],
+          "correctAnswer": 0,
+          "explanation": "Alertmanager receives alerts from Prometheus and sends notifications via email, Slack, etc."
+        },
+        {
+          "question": "What is log aggregation?",
+          "options": ["Collecting logs from multiple sources into central system", "Deleting logs", "Creating logs", "Encrypting logs"],
+          "correctAnswer": 0,
+          "explanation": "Log aggregation centralizes logs from distributed systems for easier analysis."
+        },
+        {
+          "question": "What is APM (Application Performance Monitoring)?",
+          "options": ["Monitoring application performance and user experience", "Network monitoring", "Security scanning", "Code deployment"],
+          "correctAnswer": 0,
+          "explanation": "APM tracks application metrics, transactions, and errors to optimize performance."
+        },
+        {
+          "question": "What is a Prometheus exporter?",
+          "options": ["Component exposing metrics for Prometheus to scrape", "Deployment tool", "Database driver", "Network proxy"],
+          "correctAnswer": 0,
+          "explanation": "Exporters convert metrics from systems into Prometheus-compatible format."
+        },
+        {
+          "question": "What is incident response in observability?",
+          "options": ["Process for detecting, investigating, and resolving incidents", "Creating alerts", "Deleting logs", "Building dashboards"],
+          "correctAnswer": 0,
+          "explanation": "Incident response uses observability data to quickly identify and fix production issues."
+        },
+        {
+          "question": "What is metric cardinality?",
+          "options": ["Number of unique time series for a metric", "Metric value", "Query speed", "Dashboard count"],
+          "correctAnswer": 0,
+          "explanation": "High cardinality (many unique label combinations) can strain monitoring systems."
+        }
+      ]
+    },
+    {
+      "id": "devsecops",
+      "title": "DevSecOps & Security (2-3 weeks)",
+      "description": "Integrate security into DevOps with security scanning (SonarQube, Trivy), secrets management (Vault), and container security best practices.",
+      "resources": [
+        { "title": "DevSecOps Explained", "url": "https://www.youtube.com/embed/J73MELGF6u0", "type": "Video", "duration": "15 minutes" },
+        { "title": "DevSecOps Full Course", "url": "https://www.youtube.com/embed/nrhxNNH5lt0", "type": "Video", "duration": "3 hours" },
+        { "title": "Trivy Container Scanning", "url": "https://www.youtube.com/embed/bgYrhQ6rTXA", "type": "Video" },
+        { "title": "Kubernetes Security", "url": "https://www.youtube.com/embed/oBf5lrmquYI", "type": "Video" }
+      ],
+      "quiz": [
+        {
+          "question": "What is DevSecOps?",
+          "options": ["Integrating security practices into DevOps workflows", "Security-only team", "Cloud platform", "Monitoring tool"],
+          "correctAnswer": 0,
+          "explanation": "DevSecOps shifts security left, making it integral throughout the development lifecycle."
+        },
+        {
+          "question": "What is SonarQube?",
+          "options": ["Container tool", "Static code analysis tool for detecting bugs and vulnerabilities", "Database", "Cloud service"],
+          "correctAnswer": 1,
+          "explanation": "SonarQube performs static application security testing (SAST) to identify code quality issues."
+        },
+        {
+          "question": "What is Trivy?",
+          "options": ["Vulnerability scanner for containers and infrastructure", "CI/CD tool", "Database", "Orchestration platform"],
+          "correctAnswer": 0,
+          "explanation": "Trivy scans container images for vulnerabilities, misconfigurations, and secrets."
+        },
+        {
+          "question": "What does SAST stand for?",
+          "options": ["Static Application Security Testing", "Software Automation Service Tool", "Security Analysis System Test", "Server Application Security Type"],
+          "correctAnswer": 0,
+          "explanation": "SAST analyzes source code for vulnerabilities without executing the program."
+        },
+        {
+          "question": "What is HashiCorp Vault?",
+          "options": ["Database", "Secrets management tool for storing sensitive data", "Container platform", "Monitoring tool"],
+          "correctAnswer": 1,
+          "explanation": "Vault securely stores and manages secrets, tokens, passwords, and encryption keys."
+        },
+        {
+          "question": "What is DAST?",
+          "options": ["Database Analysis Security Testing", "Dynamic Application Security Testing - testing running apps", "Data Application Standard Test", "Deployment Automation Service Tool"],
+          "correctAnswer": 1,
+          "explanation": "DAST tests running applications to find runtime vulnerabilities."
+        },
+        {
+          "question": "What is the principle of least privilege?",
+          "options": ["Granting minimum permissions necessary to perform tasks", "Maximum access for all users", "No security", "Admin access only"],
+          "correctAnswer": 0,
+          "explanation": "Least privilege minimizes security risk by limiting access rights to what's essential."
+        },
+        {
+          "question": "What is container image scanning?",
+          "options": ["Analyzing images for vulnerabilities before deployment", "Building containers", "Running containers", "Deleting containers"],
+          "correctAnswer": 0,
+          "explanation": "Image scanning detects known vulnerabilities in container layers and dependencies."
+        },
+        {
+          "question": "What are Kubernetes Pod Security Standards?",
+          "options": ["Policies defining security controls for pods", "Network rules", "Storage policies", "Deployment strategies"],
+          "correctAnswer": 0,
+          "explanation": "Pod Security Standards define levels (Privileged, Baseline, Restricted) for pod security."
+        },
+        {
+          "question": "What is secrets rotation?",
+          "options": ["Periodically changing secrets to limit exposure", "Deleting secrets", "Encrypting secrets", "Storing secrets"],
+          "correctAnswer": 0,
+          "explanation": "Regular rotation of credentials reduces risk if secrets are compromised."
+        },
+        {
+          "question": "What is shift-left security?",
+          "options": ["Moving security testing earlier in development cycle", "Delaying security", "Left-aligned text", "Network direction"],
+          "correctAnswer": 0,
+          "explanation": "Shift-left integrates security checks early in development rather than at the end."
+        },
+        {
+          "question": "What is dependency scanning?",
+          "options": ["Checking third-party libraries for known vulnerabilities", "Network scanning", "Port scanning", "File scanning"],
+          "correctAnswer": 0,
+          "explanation": "Dependency scanning identifies vulnerable components in application dependencies."
+        },
+        {
+          "question": "What is compliance as code?",
+          "options": ["Automating compliance checks using code", "Manual compliance", "Legal documents", "Audit reports"],
+          "correctAnswer": 0,
+          "explanation": "Compliance as code automates security and regulatory compliance verification."
+        },
+        {
+          "question": "What is a security gate in CI/CD?",
+          "options": ["Checkpoint that fails pipeline if security issues found", "Network firewall", "Physical gate", "User login"],
+          "correctAnswer": 0,
+          "explanation": "Security gates block deployments when security scans detect critical vulnerabilities."
+        },
+        {
+          "question": "What is infrastructure security scanning?",
+          "options": ["Scanning IaC files for misconfigurations", "Network scanning", "Application scanning", "Database scanning"],
+          "correctAnswer": 0,
+          "explanation": "Tools like Checkov scan Terraform/CloudFormation for security misconfigurations."
+        },
+        {
+          "question": "What is RBAC in Kubernetes?",
+          "options": ["Role-Based Access Control for permissions", "Resource Backup and Copy", "Runtime Binary Analysis Check", "Remote Backend Access Control"],
+          "correctAnswer": 0,
+          "explanation": "RBAC controls who can access and perform actions on Kubernetes resources."
+        },
+        {
+          "question": "What is a security baseline?",
+          "options": ["Minimum security standards for systems", "Network speed", "Application performance", "Storage capacity"],
+          "correctAnswer": 0,
+          "explanation": "Security baselines define required configurations to maintain security posture."
+        },
+        {
+          "question": "What is runtime security monitoring?",
+          "options": ["Monitoring application behavior during execution for threats", "Compile-time checking", "Code review", "Static analysis"],
+          "correctAnswer": 0,
+          "explanation": "Runtime monitoring detects suspicious behavior in running containers and applications."
+        },
+        {
+          "question": "What is zero-trust security?",
+          "options": ["Security model assuming no implicit trust", "Complete trust", "Network firewall", "VPN connection"],
+          "correctAnswer": 0,
+          "explanation": "Zero-trust requires verification for every access request, regardless of source."
+        },
+        {
+          "question": "What is CVE?",
+          "options": ["Common Vulnerabilities and Exposures database", "Container Virtual Environment", "Code Version Editor", "Cloud Virtual Engine"],
+          "correctAnswer": 0,
+          "explanation": "CVE is a standardized identifier for publicly disclosed security vulnerabilities."
+        }
+      ]
+    },
+    {
+      "id": "advanced-topics",
+      "title": "Advanced: Service Mesh, GitOps, SRE (4-6 weeks)",
+      "description": "Master Istio service mesh, GitOps with ArgoCD, SRE principles (SLIs, SLOs, SLAs), error budgets, and chaos engineering.",
+      "resources": [
+        { "title": "Istio Explained", "url": "https://www.youtube.com/embed/6zDrLvpfCK4", "type": "Video", "duration": "15 minutes" },
+        { "title": "Istio for Beginners", "url": "https://www.youtube.com/embed/voAyroDb6xk", "type": "Video", "duration": "1 hour" },
+        { "title": "Service Mesh Comparison", "url": "https://servicemesh.es/", "type": "Article" },
+        { "title": "GitOps Explained", "url": "https://www.youtube.com/embed/f5EpcWp0THw", "type": "Video", "duration": "12 minutes" },
+        { "title": "ArgoCD Tutorial", "url": "https://www.youtube.com/embed/MeU5_k9ssrs", "type": "Video", "duration": "1 hour", "note": "BEST" },
+        { "title": "ArgoCD Official Documentation", "url": "https://argo-cd.readthedocs.io/", "type": "Article" },
+        { "title": "GitOps with ArgoCD", "url": "https://www.youtube.com/embed/vpWQeoaiRM4", "type": "Video" },
+        { "title": "GitOps Tech Guide", "url": "https://www.gitops.tech/", "type": "Article" },
+        { "title": "SRE Explained", "url": "https://www.youtube.com/embed/OnK4IKgLl24", "type": "Video", "duration": "15 minutes" },
+        { "title": "Google SRE Books", "url": "https://sre.google/Books/", "type": "Book", "note": "FREE" },
+        { "title": "SLIs, SLOs, SLAs Explained", "url": "https://www.youtube.com/embed/tEylFyxbDLE", "type": "Video" },
+        { "title": "Error Budget Tutorial", "url": "https://www.youtube.com/embed/y2ILKr8kCJU", "type": "Video" },
+        { "title": "Chaos Monkey Tutorial", "url": "https://www.youtube.com/embed/CZ3wIuvmHeM", "type": "Video" },
+        { "title": "Principles of Chaos Engineering", "url": "https://principlesofchaos.org/", "type": "Article" }
+      ],
+      "quiz": [
+        {
+          "question": "What is a service mesh?",
+          "options": ["Infrastructure layer managing service-to-service communication", "Database", "Container platform", "Cloud provider"],
+          "correctAnswer": 0,
+          "explanation": "Service mesh handles traffic management, security, and observability between microservices."
+        },
+        {
+          "question": "What is Istio?",
+          "options": ["Database", "Open-source service mesh platform", "CI/CD tool", "Monitoring tool"],
+          "correctAnswer": 1,
+          "explanation": "Istio provides traffic management, security, and observability for microservices."
+        },
+        {
+          "question": "What is GitOps?",
+          "options": ["Version control tool", "Operational model using Git as single source of truth", "Cloud platform", "Container runtime"],
+          "correctAnswer": 1,
+          "explanation": "GitOps uses Git repos to declaratively manage infrastructure and application deployments."
+        },
+        {
+          "question": "What is ArgoCD?",
+          "options": ["GitOps continuous delivery tool for Kubernetes", "Database", "Monitoring platform", "Container registry"],
+          "correctAnswer": 0,
+          "explanation": "ArgoCD automatically syncs Kubernetes applications from Git repositories."
+        },
+        {
+          "question": "What does SRE stand for?",
+          "options": ["Site Reliability Engineering", "Software Release Environment", "System Resource Evaluation", "Security Response Expert"],
+          "correctAnswer": 0,
+          "explanation": "SRE applies software engineering practices to operations and infrastructure problems."
+        },
+        {
+          "question": "What is an SLO?",
+          "options": ["Service Level Objective - target reliability for a service", "Storage Level Operation", "Security Log Output", "System Load Optimizer"],
+          "correctAnswer": 0,
+          "explanation": "SLOs define target values for service reliability (e.g., 99.9% uptime)."
+        },
+        {
+          "question": "What is an SLI?",
+          "options": ["Service Level Indicator - metric measuring service performance", "System Load Index", "Security Level Integration", "Storage Level Identifier"],
+          "correctAnswer": 0,
+          "explanation": "SLIs are quantitative measurements like latency, availability, or error rate."
+        },
+        {
+          "question": "What is an error budget?",
+          "options": ["Allowable amount of downtime before violating SLO", "Cost budget", "Testing budget", "Time budget"],
+          "correctAnswer": 0,
+          "explanation": "Error budget balances innovation velocity with system reliability."
+        },
+        {
+          "question": "What is chaos engineering?",
+          "options": ["Intentionally injecting failures to test system resilience", "Random coding", "Deleting production", "Breaking things accidentally"],
+          "correctAnswer": 0,
+          "explanation": "Chaos engineering proactively tests system behavior under failure conditions."
+        },
+        {
+          "question": "What is Chaos Monkey?",
+          "options": ["Tool randomly terminating instances to test resilience", "Monitoring tool", "Database", "CI/CD platform"],
+          "correctAnswer": 0,
+          "explanation": "Chaos Monkey, by Netflix, randomly terminates instances to ensure systems tolerate failures."
+        },
+        {
+          "question": "What is canary deployment in service mesh?",
+          "options": ["Gradually routing traffic to new version", "Instant deployment", "Rollback only", "Delete deployment"],
+          "correctAnswer": 0,
+          "explanation": "Canary deployments route small percentage of traffic to new version before full rollout."
+        },
+        {
+          "question": "What are feature flags?",
+          "options": ["Toggles to enable/disable features without deployment", "Network flags", "Compiler options", "Git branches"],
+          "correctAnswer": 0,
+          "explanation": "Feature flags decouple deployment from release, allowing controlled feature rollouts."
+        },
+        {
+          "question": "What is immutable infrastructure?",
+          "options": ["Infrastructure never modified, only replaced", "Constantly changing infrastructure", "Manual updates", "No infrastructure"],
+          "correctAnswer": 0,
+          "explanation": "Immutable infrastructure replaces servers rather than updating them, reducing drift."
+        },
+        {
+          "question": "What is microservices architecture?",
+          "options": ["Application built as small, independent services", "Monolithic application", "Single database", "Desktop software"],
+          "correctAnswer": 0,
+          "explanation": "Microservices decompose applications into loosely coupled, independently deployable services."
+        },
+        {
+          "question": "What is API Gateway?",
+          "options": ["Entry point managing API requests to microservices", "Database gateway", "Network switch", "Container runtime"],
+          "correctAnswer": 0,
+          "explanation": "API Gateway handles routing, authentication, rate limiting, and load balancing for APIs."
+        },
+        {
+          "question": "What is event-driven architecture?",
+          "options": ["Systems communicate through events and messages", "Synchronous calls only", "Batch processing", "Monolithic design"],
+          "correctAnswer": 0,
+          "explanation": "Event-driven architecture uses asynchronous messages for decoupled service communication."
+        },
+        {
+          "question": "What is Linkerd?",
+          "options": ["Lightweight service mesh for Kubernetes", "Database", "CI/CD tool", "Cloud provider"],
+          "correctAnswer": 0,
+          "explanation": "Linkerd provides service mesh capabilities with focus on simplicity and performance."
+        },
+        {
+          "question": "What is FluxCD?",
+          "options": ["GitOps operator for Kubernetes", "Database", "Monitoring tool", "Container registry"],
+          "correctAnswer": 0,
+          "explanation": "FluxCD automates deployment and updates from Git repositories to Kubernetes clusters."
+        },
+        {
+          "question": "What is toil in SRE?",
+          "options": ["Manual, repetitive work with no enduring value", "Automated tasks", "Strategic planning", "Code development"],
+          "correctAnswer": 0,
+          "explanation": "SRE aims to reduce toil by automating repetitive operational tasks."
+        },
+        {
+          "question": "What is service discovery?",
+          "options": ["Automatically detecting services in dynamic environments", "Manual configuration", "Static IP assignment", "DNS only"],
+          "correctAnswer": 0,
+          "explanation": "Service discovery enables services to find and communicate with each other dynamically."
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Automated CI/CD Pipeline",
+      "description": "Create a basic CI/CD pipeline using GitHub Actions or GitLab CI to automatically build, test, and deploy a simple web application.",
+      "difficulty": "Beginner",
+      "duration": "2-3 weeks",
+      "skills": ["Git", "CI/CD", "GitHub Actions", "Docker", "Automated Testing"],
+      "tasks": [
+        "Set up a Git repository with sample application",
+        "Configure GitHub Actions workflow",
+        "Add automated testing stage",
+        "Implement Docker containerization",
+        "Configure automated deployment",
+        "Add build status badges",
+        "Document the pipeline process"
+      ]
+    },
+    {
+      "title": "Infrastructure as Code with Terraform",
+      "description": "Design and deploy cloud infrastructure on AWS using Terraform, including VPC, EC2 instances, load balancers, and RDS database.",
+      "difficulty": "Intermediate",
+      "duration": "3-4 weeks",
+      "skills": ["Terraform", "AWS", "Infrastructure as Code", "Networking", "Cloud Architecture"],
+      "tasks": [
+        "Set up Terraform and AWS credentials",
+        "Create VPC with public and private subnets",
+        "Define EC2 instances with auto-scaling",
+        "Configure application load balancer",
+        "Set up RDS database instance",
+        "Implement security groups and IAM roles",
+        "Add state management with S3 backend",
+        "Create reusable modules"
+      ]
+    },
+    {
+      "title": "Kubernetes Multi-Tier Application",
+      "description": "Deploy a multi-tier application on Kubernetes with microservices, service discovery, ingress, and persistent storage.",
+      "difficulty": "Intermediate",
+      "duration": "4-5 weeks",
+      "skills": ["Kubernetes", "Docker", "Microservices", "Service Mesh", "Container Orchestration"],
+      "tasks": [
+        "Set up local Kubernetes cluster (Minikube/Kind)",
+        "Containerize frontend and backend services",
+        "Create Kubernetes deployments and services",
+        "Configure ingress controller",
+        "Set up persistent volumes for database",
+        "Implement ConfigMaps and Secrets",
+        "Add horizontal pod autoscaling",
+        "Configure liveness and readiness probes",
+        "Deploy to cloud Kubernetes (EKS/GKE)"
+      ]
+    },
+    {
+      "title": "Complete Monitoring and Logging Stack",
+      "description": "Build a comprehensive monitoring and logging solution using Prometheus, Grafana, ELK stack, and alerting for a production application.",
+      "difficulty": "Advanced",
+      "duration": "5-6 weeks",
+      "skills": ["Prometheus", "Grafana", "ELK Stack", "Alerting", "Performance Monitoring"],
+      "tasks": [
+        "Deploy Prometheus for metrics collection",
+        "Set up Grafana with custom dashboards",
+        "Configure ELK stack for log aggregation",
+        "Implement application instrumentation",
+        "Create alerting rules in AlertManager",
+        "Set up notification channels (Slack/PagerDuty)",
+        "Add distributed tracing with Jaeger",
+        "Configure log retention policies",
+        "Create runBooks for common alerts"
+      ]
+    },
+    {
+      "title": "GitOps-Based Multi-Cloud Platform",
+      "description": "Design and implement a GitOps-based platform spanning multiple cloud providers with ArgoCD, Terraform, and automated disaster recovery.",
+      "difficulty": "Advanced",
+      "duration": "8-10 weeks",
+      "skills": ["GitOps", "ArgoCD", "Multi-Cloud", "Disaster Recovery", "Advanced Automation"],
+      "tasks": [
+        "Design multi-cloud architecture (AWS + GCP/Azure)",
+        "Set up GitOps workflow with ArgoCD",
+        "Implement Terraform for multi-cloud IaC",
+        "Configure cross-cloud networking",
+        "Set up automated backup and disaster recovery",
+        "Implement secrets management (Vault)",
+        "Create policy-as-code with OPA",
+        "Add cost monitoring and optimization",
+        "Implement blue-green deployments",
+        "Document complete platform architecture"
+      ]
+    }
+  ]
+}

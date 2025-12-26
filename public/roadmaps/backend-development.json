@@ -1,0 +1,1348 @@
+{
+  "slug": "backend-development",
+  "title": "Backend Development",
+  "summary": "Master server-side logic, databases, APIs, and application architecture. Choose your path: Node.js, Python, or Java.",
+  "timeline": "6-10 months",
+  "difficulty": "Moderate",
+  "steps": [
+    {
+      "id": "choose-language",
+      "title": "Choose Your Language & Framework (2-3 months)",
+      "description": "Select one backend stack to master: Node.js/Express, Python/Django/Flask, or Java/Spring Boot. Learn fundamentals, OOP, and build REST APIs.",
+      "resources": [
+        { "title": "JavaScript Fundamentals", "url": "https://www.youtube.com/embed/W6NZfCO5SIk?si=8JI-gayIB00HH50G", "type": "Video", "note": "For Node.js path" },
+        { "title": "TypeScript", "url": "https://www.youtube.com/embed/d56mG7DezGs?si=bU1RGFBd29LnTPah", "type": "Video" },
+        { "title": "Node.js Getting Started", "url": "https://nodejs.org/en/docs/guides/getting-started-guide", "type": "Article" },
+        { "title": "Node.js Full Course", "url": "https://www.youtube.com/embed/Oe421EPjeBE", "type": "Video", "duration": "8 hours" },
+        { "title": "Express.js Getting Started", "url": "https://expressjs.com/en/starter/installing.html", "type": "Article" },
+        { "title": "Express Routing", "url": "https://expressjs.com/en/guide/routing.html", "type": "Article" },
+        { "title": "Express Middleware", "url": "https://expressjs.com/en/guide/using-middleware.html", "type": "Article" },
+        { "title": "Building REST API", "url": "https://www.youtube.com/embed/pKd0Rpw7O48", "type": "Video" },
+        { "title": "Python Official Tutorial", "url": "https://docs.python.org/3/tutorial/", "type": "Article", "note": "For Python path" },
+        { "title": "Python for Everybody", "url": "https://www.py4e.com/lessons", "type": "Course" },
+        { "title": "Automate the Boring Stuff", "url": "https://automatetheboringstuff.com/", "type": "Book", "note": "Free Book" },
+        { "title": "Django Full Course", "url": "https://www.youtube.com/embed/F5mRW0jo-U4", "type": "Video" },
+        { "title": "Django REST Framework", "url": "https://www.django-rest-framework.org/tutorial/quickstart/", "type": "Article" },
+        { "title": "Flask Quickstart", "url": "https://flask.palletsprojects.com/en/3.0.x/quickstart/", "type": "Article" },
+        { "title": "Flask Mega-Tutorial", "url": "https://www.youtube.com/embed/mLOaSBP0X4Q?si=TyD1LTcWA-cCfBN3", "type": "Video", "note": "Free" },
+        { "title": "Java Tutorial", "url": "https://docs.oracle.com/javase/tutorial/", "type": "Article", "note": "For Java path" },
+        { "title": "Java Programming Full", "url": "https://www.youtube.com/embed/eIrMbAQSU34", "type": "Video" },
+        { "title": "Spring Boot Getting Started", "url": "https://www.youtube.com/embed/LSEYdU8Dp9Y?si=fwZMyMu66fBMq4Yi", "type": "Video" },
+        { "title": "Spring Boot Full Course", "url": "https://www.youtube.com/embed/vtPkZShrvXQ", "type": "Video" },
+        { "title": "Spring REST APIs", "url": "https://www.youtube.com/embed/rxT5RFYxjSg?si=wBP1RSRe-Q03s_bn", "type": "Video" }
+      ],
+      "quiz": [
+        {
+          "question": "What is backend development?",
+          "options": ["Server-side logic, databases, and APIs", "Frontend design", "Mobile app development", "Game development"],
+          "correctAnswer": 0,
+          "explanation": "Backend development involves building server-side logic, managing databases, creating APIs, and handling business logic."
+        },
+        {
+          "question": "What is the primary role of a backend framework like Express.js, Django, or Spring Boot?",
+          "options": ["Style web pages", "Handle server-side logic and routing", "Create databases", "Design UI"],
+          "correctAnswer": 1,
+          "explanation": "Backend frameworks handle server-side logic, routing, middleware, and provide structure for building APIs and web services."
+        },
+        {
+          "question": "What does REST stand for in REST API?",
+          "options": ["Rapid Exchange Server Technology", "Real-time Exchange System Transfer", "Representational State Transfer", "Remote Execution Service Tool"],
+          "correctAnswer": 2,
+          "explanation": "REST (Representational State Transfer) is an architectural style for designing networked applications using HTTP."
+        },
+        {
+          "question": "What is middleware in Express.js?",
+          "options": ["A database", "A routing system", "A template engine", "Functions that execute during request-response cycle"],
+          "correctAnswer": 3,
+          "explanation": "Middleware functions have access to request and response objects and can modify them or end the request-response cycle."
+        },
+        {
+          "question": "What is the purpose of TypeScript in backend development?",
+          "options": ["Static type checking and better IDE support", "Faster runtime", "Smaller bundle size", "Built-in database"],
+          "correctAnswer": 0,
+          "explanation": "TypeScript adds static typing to JavaScript, catching errors at compile-time and improving developer experience."
+        },
+        {
+          "question": "What is Django's ORM used for?",
+          "options": ["Styling", "Database operations without writing SQL", "Routing", "Authentication only"],
+          "correctAnswer": 1,
+          "explanation": "Django's ORM (Object-Relational Mapping) allows you to interact with databases using Python objects instead of SQL queries."
+        },
+        {
+          "question": "Which HTTP method is used to update existing resources?",
+          "options": ["GET", "POST", "PUT/PATCH", "DELETE"],
+          "correctAnswer": 2,
+          "explanation": "PUT is used to update/replace entire resources, while PATCH updates partial resources."
+        },
+        {
+          "question": "What is dependency injection in Spring Boot?",
+          "options": ["Adding libraries", "Database injection", "SQL injection", "Providing dependencies to classes automatically"],
+          "correctAnswer": 3,
+          "explanation": "Dependency Injection is a design pattern where Spring automatically provides required dependencies to classes."
+        },
+        {
+          "question": "What is async/await used for in Node.js?",
+          "options": ["Handle asynchronous operations cleanly", "Speed up code", "Create servers", "Manage databases"],
+          "correctAnswer": 0,
+          "explanation": "async/await provides a cleaner way to work with Promises and handle asynchronous operations in JavaScript."
+        },
+        {
+          "question": "What is Flask primarily known for?",
+          "options": ["Being heavyweight", "Being a lightweight micro-framework for Python", "Only for databases", "Frontend framework"],
+          "correctAnswer": 1,
+          "explanation": "Flask is a lightweight, micro web framework for Python that's easy to get started with and highly extensible."
+        },
+        {
+          "question": "What is the purpose of environment variables in backend applications?",
+          "options": ["Speed", "Styling", "Store configuration and secrets securely", "Routing"],
+          "correctAnswer": 2,
+          "explanation": "Environment variables store sensitive configuration like API keys, database URLs, and settings outside the codebase."
+        },
+        {
+          "question": "What is Node.js?",
+          "options": ["JavaScript framework", "Database", "Programming language", "JavaScript runtime built on Chrome's V8 engine"],
+          "correctAnswer": 3,
+          "explanation": "Node.js is a JavaScript runtime that allows you to run JavaScript on the server side."
+        },
+        {
+          "question": "What is the purpose of package.json in Node.js?",
+          "options": ["Stores project metadata and dependencies", "Contains routes", "Database configuration", "Styling file"],
+          "correctAnswer": 0,
+          "explanation": "package.json contains project metadata, dependencies, scripts, and configuration for Node.js projects."
+        },
+        {
+          "question": "What does MVC stand for in Django?",
+          "options": ["Model View Controller", "Multiple Variable Class", "Main View Component", "Master Version Control"],
+          "correctAnswer": 0,
+          "explanation": "MVC (Model-View-Controller) is a design pattern separating data, presentation, and business logic."
+        },
+        {
+          "question": "What is Spring Boot's main advantage?",
+          "options": ["Faster Java", "Auto-configuration and rapid development", "Smaller code", "No dependencies"],
+          "correctAnswer": 1,
+          "explanation": "Spring Boot provides auto-configuration and production-ready features for rapid application development."
+        },
+        {
+          "question": "What is the purpose of Express.js Router?",
+          "options": ["Organize routes into modular groups", "Connect to database", "Handle authentication", "Serve static files"],
+          "correctAnswer": 0,
+          "explanation": "Express Router allows you to create modular, mountable route handlers for better code organization."
+        },
+        {
+          "question": "What is Python's pip?",
+          "options": ["Package installer for Python", "Testing tool", "Database", "Web server"],
+          "correctAnswer": 0,
+          "explanation": "pip is the package installer for Python, used to install and manage Python libraries and packages."
+        },
+        {
+          "question": "What is the purpose of @RestController in Spring Boot?",
+          "options": ["Delete data", "Combines @Controller and @ResponseBody for REST APIs", "Create databases", "Handle authentication"],
+          "correctAnswer": 1,
+          "explanation": "@RestController is a convenience annotation combining @Controller and @ResponseBody for RESTful services."
+        },
+        {
+          "question": "What is the event loop in Node.js?",
+          "options": ["Database query", "Error handler", "Mechanism handling asynchronous operations", "Testing framework"],
+          "correctAnswer": 2,
+          "explanation": "The event loop allows Node.js to perform non-blocking I/O operations despite JavaScript being single-threaded."
+        },
+        {
+          "question": "What is Django's manage.py used for?",
+          "options": ["Command-line utility for administrative tasks", "Database file", "Configuration", "Template file"],
+          "correctAnswer": 0,
+          "explanation": "manage.py is a command-line utility for running migrations, starting server, creating apps, and other tasks."
+        }
+      ]
+    },
+    {
+      "id": "databases",
+      "title": "Databases (1-2 months)",
+      "description": "Master SQL (PostgreSQL/MySQL) and NoSQL (MongoDB) databases. Learn CRUD operations, joins, relationships, indexing, and caching with Redis.",
+      "resources": [
+        { "title": "PostgreSQL Tutorial", "url": "https://www.postgresqltutorial.com/", "type": "Article", "note": "Recommended SQL" },
+        { "title": "SQL Basics Interactive", "url": "https://www.sqlCourse.com/", "type": "Course" },
+        { "title": "SQL Joins Visualized", "url": "https://joins.spathon.com/", "type": "Interactive" },
+        { "title": "Database Design Tutorial", "url": "https://www.guru99.com/database-design.html", "type": "Article" },
+        { "title": "PostgreSQL Performance Tips", "url": "https://wiki.postgresql.org/wiki/Performance_Optimization", "type": "Article" },
+        { "title": "MySQL Tutorial", "url": "https://www.mysqltutorial.org/", "type": "Article" },
+        { "title": "MySQL Crash Course", "url": "https://www.youtube.com/embed/7S_tz1z_5bA", "type": "Video" },
+        { "title": "MongoDB University", "url": "https://university.mongodb.com/Courses/M001/about", "type": "Course", "note": "Free" },
+        { "title": "MongoDB CRUD", "url": "https://www.mongodb.com/docs/manual/crud/", "type": "Article" },
+        { "title": "Mongoose ODM", "url": "https://mongoosejs.com/docs/guide.html", "type": "Article" },
+        { "title": "MongoDB Aggregation", "url": "https://www.mongodb.com/docs/manual/aggregation/", "type": "Article" },
+        { "title": "Redis Crash Course", "url": "https://www.youtube.com/embed/jgpVdJB2sKQ", "type": "Video" },
+        { "title": "Caching Strategies", "url": "https://www.youtube.com/embed/TV-xsNjbx_g?si=WCBABubAgCps4xr6" , "type": "Video" }
+      ],
+      "quiz": [
+        {
+          "question": "What is a database?",
+          "options": ["Organized collection of structured data", "Programming language", "Web server", "Operating system"],
+          "correctAnswer": 0,
+          "explanation": "A database is an organized collection of data that can be easily accessed, managed, and updated."
+        },
+        {
+          "question": "What does SQL stand for?",
+          "options": ["Simple Query Language", "Structured Query Language", "Server Query Logic", "Standard Question List"],
+          "correctAnswer": 1,
+          "explanation": "SQL (Structured Query Language) is the standard language for managing relational databases."
+        },
+        {
+          "question": "What is the difference between SQL and NoSQL databases?",
+          "options": ["SQL uses tables, NoSQL uses flexible schemas", "No difference", "NoSQL is faster always", "SQL is deprecated"],
+          "correctAnswer": 0,
+          "explanation": "SQL databases use structured tables with schemas, while NoSQL databases offer flexible, document-based or key-value storage."
+        },
+        {
+          "question": "What is a primary key in a database?",
+          "options": ["A password", "Database name", "Unique identifier for each record", "Table name"],
+          "correctAnswer": 2,
+          "explanation": "A primary key uniquely identifies each record in a table and must be unique and non-null."
+        },
+        {
+          "question": "What does a JOIN operation do in SQL?",
+          "options": ["Deletes data", "Creates tables", "Speeds up queries", "Combines rows from multiple tables based on relationships"],
+          "correctAnswer": 3,
+          "explanation": "JOIN combines rows from two or more tables based on a related column between them."
+        },
+        {
+          "question": "What is an index in a database?",
+          "options": ["Data structure that improves query speed", "A table", "A backup", "A foreign key"],
+          "correctAnswer": 0,
+          "explanation": "Indexes are data structures that improve the speed of data retrieval operations on database tables."
+        },
+        {
+          "question": "What type of database is MongoDB?",
+          "options": ["SQL", "Document-oriented NoSQL", "Graph", "Time-series"],
+          "correctAnswer": 1,
+          "explanation": "MongoDB is a document-oriented NoSQL database that stores data in JSON-like documents."
+        },
+        {
+          "question": "What is Redis primarily used for?",
+          "options": ["File storage", "Machine learning", "In-memory caching and data structure store", "Image processing"],
+          "correctAnswer": 2,
+          "explanation": "Redis is an in-memory data structure store used as a database, cache, and message broker."
+        },
+        {
+          "question": "What is database normalization?",
+          "options": ["Organizing data to reduce redundancy", "Speeding up queries", "Deleting data", "Creating backups"],
+          "correctAnswer": 0,
+          "explanation": "Normalization is organizing database structure to reduce data redundancy and improve data integrity."
+        },
+        {
+          "question": "What is a foreign key?",
+          "options": ["Primary key copy", "Encryption key", "Field linking to primary key in another table", "API key"],
+          "correctAnswer": 2,
+          "explanation": "A foreign key is a field that links to a primary key in another table, creating relationships between tables."
+        },
+        {
+          "question": "What is the CAP theorem in distributed databases?",
+          "options": ["Speed theorem", "Caching principle", "Performance metric", "Consistency, Availability, Partition tolerance trade-off"],
+          "correctAnswer": 3,
+          "explanation": "CAP theorem states distributed systems can only guarantee two of three: Consistency, Availability, Partition tolerance."
+        },
+        {
+          "question": "What does CRUD stand for?",
+          "options": ["Create, Read, Update, Delete", "Copy, Remove, Upload, Download", "Connect, Run, Use, Deploy", "Code, Review, Update, Debug"],
+          "correctAnswer": 0,
+          "explanation": "CRUD represents the four basic operations for persistent storage: Create, Read, Update, Delete."
+        },
+        {
+          "question": "What is ACID in database transactions?",
+          "options": ["Database type", "Atomicity, Consistency, Isolation, Durability", "SQL command", "NoSQL feature"],
+          "correctAnswer": 1,
+          "explanation": "ACID properties ensure reliable database transactions: Atomicity, Consistency, Isolation, Durability."
+        },
+        {
+          "question": "What is the difference between INNER JOIN and LEFT JOIN?",
+          "options": ["No difference", "LEFT JOIN is faster", "INNER returns matches only, LEFT returns all left table rows", "INNER is deprecated"],
+          "correctAnswer": 2,
+          "explanation": "INNER JOIN returns only matching rows; LEFT JOIN returns all rows from left table with matches from right."
+        },
+        {
+          "question": "What is MongoDB's equivalent of a table?",
+          "options": ["Collection", "Document", "Field", "Schema"],
+          "correctAnswer": 0,
+          "explanation": "In MongoDB, a collection is equivalent to a table in relational databases."
+        },
+        {
+          "question": "What is a database transaction?",
+          "options": ["Single database query", "Group of operations treated as single unit", "Database backup", "Connection pool"],
+          "correctAnswer": 1,
+          "explanation": "A transaction is a sequence of operations performed as a single logical unit of work."
+        },
+        {
+          "question": "What is PostgreSQL?",
+          "options": ["NoSQL database", "Programming language", "Open-source relational database", "Caching system"],
+          "correctAnswer": 2,
+          "explanation": "PostgreSQL is a powerful, open-source relational database management system."
+        },
+        {
+          "question": "What is sharding in databases?",
+          "options": ["Backing up data", "Encrypting data", "Deleting data", "Horizontal partitioning across multiple servers"],
+          "correctAnswer": 3,
+          "explanation": "Sharding distributes data across multiple database instances for scalability and performance."
+        },
+        {
+          "question": "What is the purpose of database migrations?",
+          "options": ["Version control for database schema changes", "Backing up data", "Deleting tables", "Encrypting data"],
+          "correctAnswer": 0,
+          "explanation": "Migrations track and apply incremental changes to database schema in a version-controlled manner."
+        },
+        {
+          "question": "What is a composite key?",
+          "options": ["Primary key made of multiple columns", "Encrypted key", "Foreign key", "API key"],
+          "correctAnswer": 0,
+          "explanation": "A composite key is a primary key consisting of two or more columns to uniquely identify records."
+        }
+      ]
+    },
+    {
+      "id": "api-development",
+      "title": "API Development (3-4 weeks)",
+      "description": "Build RESTful and GraphQL APIs. Learn HTTP methods, versioning, documentation with Swagger, and API security best practices.",
+      "resources": [
+        { "title": "REST API Best Practices", "url":"https://www.youtube.com/embed/1Wl-rtew1_E?si=3pqdZUevXQS03xcm", "type": "Video", "note": "BEST" },
+        { "title": "HTTP Methods", "url": "https://www.youtube.com/embed/KF-3jtGH6Yk?si=Ks32Tr9czev7SqQN", "type": "Video" },
+        { "title": "API Versioning", "url": "https://www.youtube.com/embed/vsb4ZkUytrU?si=Lv7duO84YPZFguqQ" , "type": "Video" },
+        { "title": "Swagger Documentation", "url": "https://swagger.io/docs/specification/about/", "type": "Article" },
+        { "title": "GraphQL Official", "url": "https://graphql.org/learn/", "type": "Article" },
+        { "title": "GraphQL vs REST", "url": "https://www.youtube.com/embed/yWzKJPw_VzM", "type": "Video" },
+        { "title": "Apollo Server Tutorial", "url": "https://www.apollographql.com/docs/apollo-server/getting-started/", "type": "Article" },
+        { "title": "GraphQL Full Course", "url": "https://www.youtube.com/embed/ed8SzALpx1Q", "type": "Video" }
+      ],
+      "quiz": [
+        {
+          "question": "What is an API?",
+          "options": ["Application Programming Interface - defines how software communicates", "Database", "Programming language", "Web server"],
+          "correctAnswer": 0,
+          "explanation": "API (Application Programming Interface) defines how software components communicate with each other."
+        },
+        {
+          "question": "What does API stand for?",
+          "options": ["Application Programming Interface", "Advanced Programming Integration", "Automated Program Interaction", "Application Protocol Internet"],
+          "correctAnswer": 0,
+          "explanation": "API (Application Programming Interface) defines how software components communicate with each other."
+        },
+        {
+          "question": "Which HTTP status code indicates successful resource creation?",
+          "options": ["201 Created", "200 OK", "204 No Content", "301 Moved"],
+          "correctAnswer": 0,
+          "explanation": "201 Created indicates a resource was successfully created, commonly returned after POST requests."
+        },
+        {
+          "question": "What is the main advantage of GraphQL over REST?",
+          "options": ["Faster always", "Easier to learn", "Client specifies exact data needed", "No advantages"],
+          "correctAnswer": 2,
+          "explanation": "GraphQL allows clients to request exactly the data they need, avoiding over-fetching or under-fetching."
+        },
+        {
+          "question": "What is API versioning?",
+          "options": ["Deleting old APIs", "Speeding up APIs", "Testing APIs", "Managing API changes without breaking clients"],
+          "correctAnswer": 3,
+          "explanation": "API versioning allows introducing changes while maintaining backward compatibility for existing clients."
+        },
+        {
+          "question": "What does Swagger/OpenAPI provide?",
+          "options": ["API documentation and specification", "Database", "Hosting", "Testing only"],
+          "correctAnswer": 0,
+          "explanation": "Swagger/OpenAPI provides standardized API documentation, Interactive testing, and code generation."
+        },
+        {
+          "question": "Which HTTP method is idempotent?",
+          "options": ["POST", "GET, PUT, DELETE", "Only POST", "None"],
+          "correctAnswer": 1,
+          "explanation": "GET, PUT, and DELETE are idempotent - making the same request multiple times has the same effect."
+        },
+        {
+          "question": "What is pagination in APIs?",
+          "options": ["Deleting pages", "Creating pages", "Splitting large datasets into smaller chunks", "Styling response"],
+          "correctAnswer": 2,
+          "explanation": "Pagination divides large result sets into manageable pages, improving performance and user experience."
+        },
+        {
+          "question": "What is rate limiting in APIs?",
+          "options": ["Speeding up requests", "Deleting requests", "Sorting requests", "Controlling number of requests per time period"],
+          "correctAnswer": 3,
+          "explanation": "Rate limiting restricts the number of API requests a client can make in a given timeframe to prevent abuse."
+        },
+        {
+          "question": "What does HATEOAS mean in REST?",
+          "options": ["HTTP Access Token", "Hypermedia As The Engine Of Application State", "High Availability Transfer", "Host Application Technology"],
+          "correctAnswer": 1,
+          "explanation": "HATEOAS is a REST principle where API responses include links to related resources, making APIs self-descriptive."
+        },
+        {
+          "question": "What is the purpose of Content-Type header?",
+          "options": ["Specify format of request/response body", "Authentication", "Set cookies", "Rate limiting"],
+          "correctAnswer": 0,
+          "explanation": "Content-Type header indicates the media type of the resource (e.g., application/json, text/html)."
+        },
+        {
+          "question": "What HTTP status code indicates 'Resource Not Found'?",
+          "options": ["400", "404", "500", "403"],
+          "correctAnswer": 1,
+          "explanation": "404 Not Found indicates the requested resource doesn't exist on the server."
+        },
+        {
+          "question": "What is the difference between PUT and PATCH?",
+          "options": ["No difference", "PUT is faster", "PUT replaces entire resource, PATCH updates partial", "PATCH is deprecated"],
+          "correctAnswer": 2,
+          "explanation": "PUT replaces the entire resource; PATCH applies partial updates to a resource."
+        },
+        {
+          "question": "What is a RESTful API?",
+          "options": ["API following REST architectural principles", "Fast API", "Database API", "Security protocol"],
+          "correctAnswer": 0,
+          "explanation": "RESTful APIs follow REST principles: stateless, client-server, cacheable, uniform interface."
+        },
+        {
+          "question": "What does HTTP status code 401 indicate?",
+          "options": ["Unauthorized - authentication required", "Forbidden", "Not found", "Server error"],
+          "correctAnswer": 0,
+          "explanation": "401 Unauthorized means authentication is required but hasn't been provided or failed."
+        },
+        {
+          "question": "What is GraphQL schema?",
+          "options": ["Database schema", "Defines types and operations available in API", "CSS file", "Configuration file"],
+          "correctAnswer": 1,
+          "explanation": "GraphQL schema defines the structure of data, types, queries, and mutations available in the API."
+        },
+        {
+          "question": "What is the purpose of API authentication?",
+          "options": ["Speed up API", "Verify identity of API consumers", "Format data", "Cache responses"],
+          "correctAnswer": 1,
+          "explanation": "API authentication verifies the identity of clients making requests to secure endpoints."
+        },
+        {
+          "question": "What is response compression in APIs?",
+          "options": ["Deleting responses", "Compressing response data to reduce bandwidth", "Caching", "Encryption"],
+          "correctAnswer": 1,
+          "explanation": "Response compression (like gzip) reduces the size of responses, improving transfer speed."
+        },
+        {
+          "question": "What does HTTP status code 500 mean?",
+          "options": ["Success", "Not found", "Internal Server Error", "Unauthorized"],
+          "correctAnswer": 2,
+          "explanation": "500 Internal Server Error indicates an unexpected condition on the server prevented fulfilling the request."
+        },
+        {
+          "question": "What is API throttling?",
+          "options": ["Limiting request rate per user/IP", "Speeding up API", "Deleting requests", "Caching responses"],
+          "correctAnswer": 0,
+          "explanation": "Throttling controls the rate at which API requests are processed to prevent overload and ensure fair usage."
+        }
+      ]
+    },
+    {
+      "id": "authentication-security",
+      "title": "Authentication & Security (2-3 weeks)",
+      "description": "Implement session-based and JWT authentication, OAuth 2.0. Learn security best practices, prevent SQL injection, XSS attacks, and configure CORS.",
+      "resources": [
+        { "title": "Session-based Auth", "url": "https://www.youtube.com/embed/-ebXpRi1yQg?si=wSeKNiY_djW4DZM5", "type": "Video" },
+        { "title": "JWT Complete Guide", "url": "https://www.youtube.com/embed/7Q17ubqLfaM", "type": "Video" },
+        { "title": "JWT Introduction", "url": "https://jwt.io/introduction", "type": "Article" },
+        { "title": "OAuth 2.0 Implementation", "url": "https://oauth.net/2/", "type": "Article" },
+        { "title": "Passport.js Tutorial", "url": "http://www.passportjs.org/tutorials/password/", "type": "Article" },
+        { "title": "OWASP Top 10", "url": "https://www.youtube.com/embed/wUaeKEl1RCw?si=uU1q-fh5i5A3w7xk", "type": "Video", "note": "Security Risks" },
+        { "title": "SQL Injection Prevention", "url": "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html", "type": "Article" },
+        { "title": "XSS Prevention", "url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html", "type": "Article" },
+        { "title": "CORS Explained", "url":"https://www.youtube.com/embed/WWnR4xptSRk?si=UZLhn0gNJwq2NZfV", "type": "Video" },
+        { "title": "Helmet.js Security", "url": "https://helmetjs.github.io/", "type": "Article" }
+      ],
+      "quiz": [
+        {
+          "question": "What is authentication?",
+          "options": ["Verifying user identity", "Checking permissions", "Encrypting data", "Caching data"],
+          "correctAnswer": 0,
+          "explanation": "Authentication is the process of verifying the identity of a user or system."
+        },
+        {
+          "question": "What does JWT stand for?",
+          "options": ["JavaScript Web Tool", "JSON Web Token", "Java Web Technology", "Just Web Transfer"],
+          "correctAnswer": 1,
+          "explanation": "JWT (JSON Web Token) is a compact, self-contained way to securely transmit information between parties."
+        },
+        {
+          "question": "What is the difference between authentication and authorization?",
+          "options": ["No difference", "Authorization is faster", "Authentication verifies identity, authorization checks permissions", "Authentication is deprecated"],
+          "correctAnswer": 2,
+          "explanation": "Authentication confirms who you are; authorization determines what you're allowed to access."
+        },
+        {
+          "question": "What is SQL injection?",
+          "options": ["Database feature", "Performance optimization", "Data migration", "Malicious attack inserting SQL code into queries"],
+          "correctAnswer": 3,
+          "explanation": "SQL injection is a code injection attack that inserts malicious SQL statements into application queries."
+        },
+        {
+          "question": "How does OAuth 2.0 work?",
+          "options": ["Delegates authentication to third-party providers", "Stores passwords", "Encrypts data", "Creates databases"],
+          "correctAnswer": 0,
+          "explanation": "OAuth 2.0 allows users to grant applications access to their resources without sharing passwords."
+        },
+        {
+          "question": "What is XSS (Cross-Site Scripting)?",
+          "options": ["CSS framework", "Database query", "Attack injecting malicious scripts into web pages", "Caching strategy"],
+          "correctAnswer": 2,
+          "explanation": "XSS attacks inject malicious scripts into web pages viewed by other users, stealing data or hijacking sessions."
+        },
+        {
+          "question": "What is CORS?",
+          "options": ["Database", "Caching system", "Authentication method", "Cross-Origin Resource Sharing security feature"],
+          "correctAnswer": 3,
+          "explanation": "CORS is a security feature that controls which domains can access resources from a different origin."
+        },
+        {
+          "question": "Why should passwords be hashed and not encrypted?",
+          "options": ["Hashing is one-way, can't be reversed", "Faster", "Smaller size", "No reason"],
+          "correctAnswer": 0,
+          "explanation": "Hashing is one-way and irreversible, so even if database is breached, passwords can't be recovered."
+        },
+        {
+          "question": "What is HTTPS?",
+          "options": ["Fast HTTP", "HTTP version 2", "HTTP with SSL/TLS encryption", "HTML Protocol"],
+          "correctAnswer": 2,
+          "explanation": "HTTPS is HTTP over SSL/TLS, providing encrypted communication between client and server."
+        },
+        {
+          "question": "What is the OWASP Top 10?",
+          "options": ["Top developers", "Best frameworks", "Top languages", "Most critical web application security risks"],
+          "correctAnswer": 3,
+          "explanation": "OWASP Top 10 is a list of the most critical security risks to web applications."
+        },
+        {
+          "question": "What is bcrypt used for?",
+          "options": ["Securely hashing passwords", "Data compression", "Encryption", "Database queries"],
+          "correctAnswer": 0,
+          "explanation": "bcrypt is a password-hashing function designed to be slow and resistant to brute-force attacks."
+        },
+        {
+          "question": "What is a JWT composed of?",
+          "options": ["Header, Payload, Signature", "Username, Password", "Key, Value", "Token only"],
+          "correctAnswer": 0,
+          "explanation": "JWT consists of three parts: Header (algorithm), Payload (claims), and Signature (verification)."
+        },
+        {
+          "question": "What is session-based authentication?",
+          "options": ["Using cookies to maintain user state", "JWT tokens", "OAuth only", "No authentication"],
+          "correctAnswer": 0,
+          "explanation": "Session-based auth stores user state on the server and uses session IDs in cookies to identify users."
+        },
+        {
+          "question": "What is CSRF (Cross-Site Request Forgery)?",
+          "options": ["Database attack", "Tricking users into executing unwanted actions", "SQL injection", "Password attack"],
+          "correctAnswer": 1,
+          "explanation": "CSRF tricks authenticated users into executing unwanted actions by exploiting their active sessions."
+        },
+        {
+          "question": "What is the purpose of salting passwords?",
+          "options": ["Add random data before hashing to prevent rainbow table attacks", "Encrypt faster", "Store passwords", "Delete passwords"],
+          "correctAnswer": 0,
+          "explanation": "Salting adds random data to passwords before hashing, making rainbow table attacks ineffective."
+        },
+        {
+          "question": "What is token-based authentication?",
+          "options": ["Database authentication", "Stateless authentication using tokens like JWT", "Password only", "No security"],
+          "correctAnswer": 1,
+          "explanation": "Token-based auth is stateless - clients send tokens with requests instead of maintaining server sessions."
+        },
+        {
+          "question": "What is input validation?",
+          "options": ["Checking user input for malicious content", "Formatting output", "Caching data", "Database query"],
+          "correctAnswer": 0,
+          "explanation": "Input validation checks and sanitizes user input to prevent injection attacks and data corruption."
+        },
+        {
+          "question": "What is SSL/TLS?",
+          "options": ["Database", "Programming language", "Cryptographic protocol for secure communication", "Web framework"],
+          "correctAnswer": 2,
+          "explanation": "SSL/TLS provides encryption and authentication for secure communication over networks."
+        },
+        {
+          "question": "What is the principle of least privilege?",
+          "options": ["Grant minimum permissions necessary", "Give all permissions", "No permissions", "Random permissions"],
+          "correctAnswer": 0,
+          "explanation": "Least privilege means granting users/systems only the minimum permissions needed to perform their tasks."
+        },
+        {
+          "question": "What is two-factor authentication (2FA)?",
+          "options": ["Using password only", "Using two passwords", "Requiring two verification methods", "OAuth only"],
+          "correctAnswer": 2,
+          "explanation": "2FA requires two different authentication factors (e.g., password + SMS code) for enhanced security."
+        }
+      ]
+    },
+    {
+      "id": "testing",
+      "title": "Testing (2-3 weeks)",
+      "description": "Master unit testing with Jest/PyTest/JUnit, integration testing, and API testing with Postman. Learn TDD methodology.",
+      "resources": [
+        { "title": "Jest Testing Framework", "url": "https://jestjs.io/docs/getting-started", "type": "Article", "note": "Node.js" },
+        { "title": "PyTest for Python", "url": "https://docs.pytest.org/en/stable/getting-started.html", "type": "Article" },
+        { "title": "JUnit for Java", "url": "https://www.youtube.com/embed/flpmSXVTqBI?si=K1jQUM2OlknGg-b9", "type": "Video" },
+        { "title": "TDD Guide", "url": "https://www.youtube.com/embed/Jv2uxzhPFl4", "type": "Video" },
+        { "title": "Supertest for Node APIs", "url":"https://www.youtube.com/embed/T2sYitv2OAY?si=wPJL7fHnQfi_xpJg", "type": "Video" },
+        { "title": "Integration Testing Best Practices P1", "url": "https://www.youtube.com/embed/rTUryJQdNTw?si=dT5t8rubm22w5el0", "type": "Video" },
+        { "title": "Integration Testing Best Practices P2", "url": "https://www.youtube.com/embed/1a7nYtbIUL4?si=H2LX1EgD5klU7XjW", "type": "Video" },
+        { "title": "Postman Tutorial", "url": "https://www.youtube.com/embed/VywxIQ2ZXw4?si=JVuMX2nPrLvK5_Cz", "type": "Video" },
+        { "title": "REST Assured (Java)", "url": "https://rest-assured.io/", "type": "Article" }
+      ],
+      "quiz": [
+        {
+          "question": "What is software testing?",
+          "options": ["Verifying software works correctly", "Writing code", "Deploying apps", "Designing databases"],
+          "correctAnswer": 0,
+          "explanation": "Software testing verifies that code behaves as expected and catches bugs before production."
+        },
+        {
+          "question": "What is the purpose of unit testing?",
+          "options": ["Test entire app", "Test individual functions/modules in isolation", "Test UI only", "Deploy code"],
+          "correctAnswer": 1,
+          "explanation": "Unit testing focuses on testing individual units of code (functions/methods) in isolation from dependencies."
+        },
+        {
+          "question": "What is integration testing?",
+          "options": ["Testing one function", "Testing performance", "Testing how multiple components work together", "Testing UI"],
+          "correctAnswer": 2,
+          "explanation": "Integration testing verifies that different modules or services work correctly together."
+        },
+        {
+          "question": "What does TDD (Test-Driven Development) mean?",
+          "options": ["Test During Development", "Testing Deployment Done", "Total Development Design", "Writing tests before code"],
+          "correctAnswer": 3,
+          "explanation": "TDD is a practice where you write tests first, then write code to make those tests pass."
+        },
+        {
+          "question": "What is Postman used for?",
+          "options": ["API testing and development", "Email", "Database management", "Code editing"],
+          "correctAnswer": 0,
+          "explanation": "Postman is a tool for testing, developing, and documenting APIs through requests and responses."
+        },
+        {
+          "question": "What is a mock in testing?",
+          "options": ["Real database", "Test framework", "Fake object simulating real dependency", "Error type"],
+          "correctAnswer": 2,
+          "explanation": "Mocks are fake objects that simulate the behavior of real dependencies for isolated testing."
+        },
+        {
+          "question": "What does code coverage measure?",
+          "options": ["Code speed", "Percentage of code executed by tests", "Number of tests", "Code quality"],
+          "correctAnswer": 1,
+          "explanation": "Code coverage measures what percentage of your codebase is executed when running tests."
+        },
+        {
+          "question": "What is the AAA pattern in testing?",
+          "options": ["All Automated Always", "Arrange, Act, Assert", "API Authentication Authorization", "Async Await Asynchronous"],
+          "correctAnswer": 1,
+          "explanation": "AAA is a test structure pattern: Arrange (setup), Act (execute), Assert (verify results)."
+        },
+        {
+          "question": "What is Jest?",
+          "options": ["Database", "Web server", "CSS framework", "JavaScript testing framework"],
+          "correctAnswer": 3,
+          "explanation": "Jest is a popular JavaScript testing framework with built-in mocking, assertions, and coverage."
+        },
+        {
+          "question": "What is end-to-end (E2E) testing?",
+          "options": ["Testing complete user workflows", "Testing functions", "Testing databases", "Testing speed"],
+          "correctAnswer": 0,
+          "explanation": "E2E testing validates entire application workflows from start to finish, simulating real user scenarios."
+        },
+        {
+          "question": "What is test automation?",
+          "options": ["Manual testing", "Automated execution of test scripts", "Deleting tests", "Writing code"],
+          "correctAnswer": 1,
+          "explanation": "Test automation uses tools to automatically execute tests, compare results, and generate reports."
+        },
+        {
+          "question": "What is PyTest?",
+          "options": ["Python testing framework", "Database", "Web server", "JavaScript tool"],
+          "correctAnswer": 0,
+          "explanation": "PyTest is a popular testing framework for Python with simple syntax and powerful features."
+        },
+        {
+          "question": "What is a test fixture?",
+          "options": ["Fixed state or data used for testing", "Test runner", "Code coverage tool", "Error message"],
+          "correctAnswer": 0,
+          "explanation": "A test fixture is a fixed state, data, or context used to run tests consistently."
+        },
+        {
+          "question": "What is JUnit used for?",
+          "options": ["Java unit testing", "JavaScript testing", "Python testing", "Database testing"],
+          "correctAnswer": 0,
+          "explanation": "JUnit is a widely-used testing framework for Java applications."
+        },
+        {
+          "question": "What is continuous testing?",
+          "options": ["Running tests automatically in CI/CD pipeline", "Manual testing", "One-time testing", "No testing"],
+          "correctAnswer": 0,
+          "explanation": "Continuous testing automatically runs tests throughout the development lifecycle as part of CI/CD."
+        },
+        {
+          "question": "What is the difference between stub and mock?",
+          "options": ["No difference", "Stubs provide canned responses, mocks verify interactions", "Stubs are faster", "Mocks are deprecated"],
+          "correctAnswer": 1,
+          "explanation": "Stubs provide predetermined responses; mocks track and verify how they're called during tests."
+        },
+        {
+          "question": "What is regression testing?",
+          "options": ["Testing new features", "Ensuring existing features still work after changes", "Performance testing", "Security testing"],
+          "correctAnswer": 1,
+          "explanation": "Regression testing verifies that recent code changes haven't broken existing functionality."
+        },
+        {
+          "question": "What is Supertest used for in Node.js?",
+          "options": ["Testing HTTP APIs", "Database testing", "Frontend testing", "Performance testing"],
+          "correctAnswer": 0,
+          "explanation": "Supertest is a library for testing Node.js HTTP servers and APIs."
+        },
+        {
+          "question": "What is the purpose of assertions in tests?",
+          "options": ["Delete code", "Verify expected outcomes", "Run servers", "Create databases"],
+          "correctAnswer": 1,
+          "explanation": "Assertions verify that the actual results match expected outcomes, determining if tests pass or fail."
+        },
+        {
+          "question": "What is smoke testing?",
+          "options": ["Quick basic tests to verify critical functionality", "Performance testing", "Security testing", "UI testing"],
+          "correctAnswer": 0,
+          "explanation": "Smoke testing runs basic tests to quickly verify that critical functionality works before detailed testing."
+        }
+      ]
+    },
+    {
+      "id": "caching-performance",
+      "title": "Caching & Performance (2-3 weeks)",
+      "description": "Implement Redis caching, HTTP caching, CDN integration, and database query optimization for high-performance applications.",
+      "resources": [
+        { "title": "Redis Caching", "url": "https://www.youtube.com/embed/jgpVdJB2sKQ?si=1oXXzzQZZ74cL35A", "type": "Video" },
+        { "title": "HTTP Caching Guide", "url": "https://www.youtube.com/embed/Cy2ZJOBgk84?si=k05CC6auzfg0dd6Z" , "type": "Video" },
+        { "title": "CDN Explained", "url": "https://www.youtube.com/embed/RI9np1LWzqw?si=EqxDOjI1-u1Skljt" , "type": "Video" },
+        { "title": "Database Query Optimization", "url":"https://www.youtube.com/embed/MpczBuIk7R8?si=q0g2eRd38Qhe4ViM", "type": "Video", "note": "BEST" }
+      ],
+      "quiz": [
+        {
+          "question": "What is performance optimization?",
+          "options": ["Making applications faster and more efficient", "Adding features", "Deleting code", "Changing colors"],
+          "correctAnswer": 0,
+          "explanation": "Performance optimization improves application speed, efficiency, and resource utilization."
+        },
+        {
+          "question": "What is caching?",
+          "options": ["Storing frequently accessed data for quick retrieval", "Deleting data", "Encrypting data", "Compressing files"],
+          "correctAnswer": 0,
+          "explanation": "Caching stores copies of frequently accessed data in fast-access storage to reduce latency and database load."
+        },
+        {
+          "question": "What is Redis commonly used for in backend systems?",
+          "options": ["File storage", "Image processing", "In-memory caching and session storage", "Code compilation"],
+          "correctAnswer": 2,
+          "explanation": "Redis is an in-memory data store used for caching, session storage, real-time analytics, and message queuing."
+        },
+        {
+          "question": "What does CDN stand for?",
+          "options": ["Central Data Network", "Content Delivery Network", "Cloud Database Node", "Code Deployment Network"],
+          "correctAnswer": 1,
+          "explanation": "CDN (Content Delivery Network) distributes content across geographically dispersed servers for faster delivery."
+        },
+        {
+          "question": "What is database query optimization?",
+          "options": ["Deleting queries", "Writing more queries", "Backing up data", "Improving query performance and efficiency"],
+          "correctAnswer": 3,
+          "explanation": "Query optimization improves query performance through indexing, query rewriting, and efficient database design."
+        },
+        {
+          "question": "What is the N+1 query problem?",
+          "options": ["Loading related data with excessive queries", "Math error", "SQL syntax", "HTTP error"],
+          "correctAnswer": 0,
+          "explanation": "N+1 problem occurs when you load a list of items (1 query) then load related data for each item (N queries)."
+        },
+        {
+          "question": "What is lazy loading in databases?",
+          "options": ["Slow queries", "Deleting data", "Loading data only when needed", "Caching everything"],
+          "correctAnswer": 2,
+          "explanation": "Lazy loading defers loading of data until it's actually accessed, reducing initial query overhead."
+        },
+        {
+          "question": "What is HTTP caching?",
+          "options": ["Deleting cookies", "Compressing HTML", "Encrypting traffic", "Browser/proxy storing responses for reuse"],
+          "correctAnswer": 3,
+          "explanation": "HTTP caching allows browsers and proxies to store and reuse responses, reducing server load and latency."
+        },
+        {
+          "question": "What is connection pooling?",
+          "options": ["Reusing database connections instead of creating new ones", "Creating databases", "Deleting connections", "Encrypting connections"],
+          "correctAnswer": 0,
+          "explanation": "Connection pooling maintains a pool of reusable database connections, avoiding the overhead of creating new connections."
+        },
+        {
+          "question": "What is the purpose of database indexing?",
+          "options": ["Delete data", "Speed up data retrieval operations", "Backup data", "Encrypt data"],
+          "correctAnswer": 1,
+          "explanation": "Indexes create data structures that allow databases to find rows faster, similar to a book index."
+        },
+        {
+          "question": "What is cache invalidation?",
+          "options": ["Creating cache", "Removing or updating stale cached data", "Encrypting cache", "Compressing cache"],
+          "correctAnswer": 1,
+          "explanation": "Cache invalidation is removing or updating cached data when the source data changes to maintain consistency."
+        },
+        {
+          "question": "What is read-through caching?",
+          "options": ["Cache automatically loads data from source on miss", "Manual caching", "No caching", "Write-only cache"],
+          "correctAnswer": 0,
+          "explanation": "Read-through cache automatically fetches data from the source when a cache miss occurs."
+        },
+        {
+          "question": "What is write-through caching?",
+          "options": ["Data written to cache and source simultaneously", "Cache only", "Source only", "No caching"],
+          "correctAnswer": 0,
+          "explanation": "Write-through caching writes data to both cache and persistent storage synchronously."
+        },
+        {
+          "question": "What is the purpose of query result caching?",
+          "options": ["Store query results to avoid repeated execution", "Delete queries", "Speed up writes", "Encrypt results"],
+          "correctAnswer": 0,
+          "explanation": "Query result caching stores the results of expensive queries to avoid re-execution for identical requests."
+        },
+        {
+          "question": "What is a cache hit ratio?",
+          "options": ["Percentage of requests served from cache", "Cache size", "Number of caches", "Cache speed"],
+          "correctAnswer": 0,
+          "explanation": "Cache hit ratio measures the percentage of requests successfully served from cache vs. total requests."
+        },
+        {
+          "question": "What is the benefit of compression in APIs?",
+          "options": ["Reduces bandwidth and transfer time", "Increases size", "Deletes data", "Slows down response"],
+          "correctAnswer": 0,
+          "explanation": "Compression (gzip, brotli) reduces response size, saving bandwidth and improving transfer speed."
+        },
+        {
+          "question": "What is eager loading?",
+          "options": ["Loading related data upfront in single query", "Lazy loading", "No loading", "Slow loading"],
+          "correctAnswer": 0,
+          "explanation": "Eager loading fetches related data in a single query, avoiding the N+1 problem."
+        },
+        {
+          "question": "What is a cache-aside pattern?",
+          "options": ["Application manages cache manually", "Automatic cache", "No cache", "Database only"],
+          "correctAnswer": 0,
+          "explanation": "Cache-aside (lazy loading) pattern has the application explicitly manage reading/writing to cache."
+        },
+        {
+          "question": "What is the purpose of database denormalization?",
+          "options": ["Improve read performance by reducing joins", "Normalize data", "Delete data", "Encrypt data"],
+          "correctAnswer": 0,
+          "explanation": "Denormalization adds redundancy to reduce complex joins, improving read performance at cost of storage."
+        },
+        {
+          "question": "What is Time to Live (TTL) in caching?",
+          "options": ["How long cached data remains valid", "Cache size", "Number of caches", "Cache type"],
+          "correctAnswer": 0,
+          "explanation": "TTL specifies how long cached data remains valid before expiring and needing refresh."
+        }
+      ]
+    },
+    {
+      "id": "message-queues",
+      "title": "Message Queues (2-3 weeks)",
+      "description": "Learn asynchronous processing with RabbitMQ and Apache Kafka. Implement message queue patterns for scalable systems.",
+      "resources": [
+        { "title": "RabbitMQ Tutorial", "url": "https://www.rabbitmq.com/getstarted.html", "type": "Article" },
+        { "title": "Message Queue Patterns", "url": "https://www.enterpriseintegrationpatterns.com/patterns/messaging/", "type": "Article" },
+        { "title": "Kafka Quickstart", "url": "https://kafka.apache.org/quickstart", "type": "Article" },
+        { "title": "Kafka for Beginners", "url": "https://www.youtube.com/embed/qu96DFXtbG4", "type": "Video" }
+      ],
+      "quiz": [
+        {
+          "question": "What is asynchronous messaging?",
+          "options": ["Communication where sender doesn't wait for response", "Synchronous calls", "Database queries", "File transfers"],
+          "correctAnswer": 0,
+          "explanation": "Asynchronous messaging allows senders to send messages without waiting for immediate responses."
+        },
+        {
+          "question": "What is a message queue?",
+          "options": ["Database", "Asynchronous communication system for services", "Cache system", "Web server"],
+          "correctAnswer": 1,
+          "explanation": "Message queues enable asynchronous communication between services by storing messages until they're processed."
+        },
+        {
+          "question": "What is RabbitMQ?",
+          "options": ["Database", "Web framework", "Message broker implementing AMQP", "Testing tool"],
+          "correctAnswer": 2,
+          "explanation": "RabbitMQ is a message broker that facilitates communication between applications using message queues."
+        },
+        {
+          "question": "What is Apache Kafka primarily used for?",
+          "options": ["Web hosting", "Database", "File storage", "Distributed event streaming and message processing"],
+          "correctAnswer": 3,
+          "explanation": "Kafka is a distributed streaming platform for building real-time data pipelines and streaming applications."
+        },
+        {
+          "question": "What is the pub/sub pattern?",
+          "options": ["Publishers send messages to subscribers via topics", "Database pattern", "Authentication", "Caching strategy"],
+          "correctAnswer": 0,
+          "explanation": "Publish/Subscribe pattern allows publishers to send messages to topics, and subscribers receive messages from topics they're interested in."
+        },
+        {
+          "question": "What is a dead letter queue?",
+          "options": ["Deleted messages", "Queue for messages that failed processing", "Priority queue", "Fast queue"],
+          "correctAnswer": 1,
+          "explanation": "Dead letter queues store messages that couldn't be processed successfully for later analysis or reprocessing."
+        },
+        {
+          "question": "What is message durability?",
+          "options": ["Message speed", "Persisting messages to disk for reliability", "Message size", "Message format"],
+          "correctAnswer": 1,
+          "explanation": "Durable messages are persisted to disk, ensuring they survive broker restarts and aren't lost."
+        },
+        {
+          "question": "What is a consumer group in Kafka?",
+          "options": ["Producer type", "Group of consumers sharing message consumption", "Topic type", "Partition type"],
+          "correctAnswer": 1,
+          "explanation": "Consumer groups allow multiple consumers to divide the work of consuming messages from topics."
+        },
+        {
+          "question": "What is the advantage of asynchronous messaging?",
+          "options": ["Slower processing", "Decoupling services and better scalability", "More complexity only", "No advantages"],
+          "correctAnswer": 1,
+          "explanation": "Asynchronous messaging decouples services, improves fault tolerance, and enables better scalability."
+        },
+        {
+          "question": "What is a message acknowledgment?",
+          "options": ["Sending messages", "Confirming message was processed successfully", "Deleting messages", "Creating messages"],
+          "correctAnswer": 1,
+          "explanation": "Acknowledgments confirm a consumer successfully processed a message, allowing it to be removed from the queue."
+        },
+        {
+          "question": "What is message partitioning in Kafka?",
+          "options": ["Deleting messages", "Dividing topics into parallel processing units", "Encrypting messages", "Compressing messages"],
+          "correctAnswer": 1,
+          "explanation": "Partitioning divides topics into partitions for parallel processing and better scalability."
+        },
+        {
+          "question": "What is a message broker?",
+          "options": ["Intermediary managing message routing between services", "Database", "Web server", "Cache"],
+          "correctAnswer": 0,
+          "explanation": "A message broker receives, routes, and delivers messages between applications and services."
+        },
+        {
+          "question": "What is AMQP?",
+          "options": ["Advanced Message Queuing Protocol", "Database protocol", "Web protocol", "Cache protocol"],
+          "correctAnswer": 0,
+          "explanation": "AMQP is an open standard protocol for message-oriented middleware, used by RabbitMQ."
+        },
+        {
+          "question": "What is at-least-once delivery?",
+          "options": ["Message delivered one or more times", "Message lost", "Exact once only", "Never delivered"],
+          "correctAnswer": 0,
+          "explanation": "At-least-once delivery guarantees messages are delivered but may result in duplicates."
+        },
+        {
+          "question": "What is exactly-once semantics?",
+          "options": ["Message processed exactly once, no duplicates", "Multiple processing", "No processing", "Random processing"],
+          "correctAnswer": 0,
+          "explanation": "Exactly-once semantics ensure each message is processed exactly once without duplicates or loss."
+        },
+        {
+          "question": "What is a message exchange in RabbitMQ?",
+          "options": ["Routes messages to queues based on rules", "Database", "Cache", "Web server"],
+          "correctAnswer": 0,
+          "explanation": "Exchanges receive messages and route them to queues based on routing keys and binding rules."
+        },
+        {
+          "question": "What is Kafka offset?",
+          "options": ["Position of message in partition", "Message size", "Queue name", "Consumer name"],
+          "correctAnswer": 0,
+          "explanation": "Offset is a unique identifier representing the position of a message within a Kafka partition."
+        },
+        {
+          "question": "What is message priority?",
+          "options": ["Ordering messages by importance", "Message size", "Message speed", "Message type"],
+          "correctAnswer": 0,
+          "explanation": "Message priority allows certain messages to be processed before others based on importance."
+        },
+        {
+          "question": "What is fan-out exchange pattern?",
+          "options": ["Broadcasting messages to all bound queues", "One-to-one messaging", "No routing", "Direct routing only"],
+          "correctAnswer": 0,
+          "explanation": "Fan-out exchange broadcasts messages to all queues bound to it, ignoring routing keys."
+        },
+        {
+          "question": "What is message TTL (Time To Live)?",
+          "options": ["How long message stays in queue before expiring", "Message size", "Queue size", "Processing time"],
+          "correctAnswer": 0,
+          "explanation": "TTL defines how long a message can remain in a queue before being automatically discarded."
+        }
+      ]
+    },
+    {
+      "id": "microservices",
+      "title": "Microservices Architecture (3-4 weeks)",
+      "description": "Design microservices systems with service discovery, API gateways, and inter-service communication patterns.",
+      "resources": [
+        { "title": "Microservices Pattern", "url": "https://www.youtube.com/embed/xuH81XGWeGQ?si=FdRoPHbOwY5PkRaK", "type": "Video", "note": "Martin Fowler" },
+        { "title": "Microservices Full Course", "url": "https://www.youtube.com/embed/CdBtNQZH8a4", "type": "Video" },
+        { "title": "Service Discovery Consul", "url": "https://www.youtube.com/embed/Dd9-UxrNiD0?si=71FPnUmNNksrEPCR", "type": "Video" },
+        { "title": "API Gateway Pattern", "url": "https://microservices.io/patterns/apigateway.html", "type": "Article" }
+      ],
+      "quiz": [
+        {
+          "question": "What is microservices architecture?",
+          "options": ["Architecture of small, independent services", "Monolithic architecture", "Database design", "Frontend pattern"],
+          "correctAnswer": 0,
+          "explanation": "Microservices architecture structures applications as collection of loosely coupled, independently deployable services."
+        },
+        {
+          "question": "What is a microservice?",
+          "options": ["Small codebase", "Independent service focused on single functionality", "Database", "Frontend component"],
+          "correctAnswer": 1,
+          "explanation": "Microservices are small, independent services that focus on doing one thing well and communicate via APIs."
+        },
+        {
+          "question": "What is the main advantage of microservices over monoliths?",
+          "options": ["Simpler always", "Less code", "Independent deployment and scalability", "Faster development"],
+          "correctAnswer": 2,
+          "explanation": "Microservices allow teams to develop, deploy, and scale services independently without affecting the entire system."
+        },
+        {
+          "question": "What is an API Gateway?",
+          "options": ["Database", "Message queue", "Cache system", "Single entry point routing requests to microservices"],
+          "correctAnswer": 3,
+          "explanation": "API Gateway acts as a single entry point, routing client requests to appropriate microservices and handling cross-cutting concerns."
+        },
+        {
+          "question": "What is service discovery?",
+          "options": ["Automatically locating service instances", "Finding bugs", "Creating services", "Testing services"],
+          "correctAnswer": 0,
+          "explanation": "Service discovery automatically detects and tracks available service instances in a dynamic environment."
+        },
+        {
+          "question": "What is the Circuit Breaker pattern?",
+          "options": ["Stopping services", "Preventing cascading failures by failing fast", "Routing pattern", "Authentication"],
+          "correctAnswer": 1,
+          "explanation": "Circuit Breaker prevents cascading failures by stopping calls to failing services and allowing them to recover."
+        },
+        {
+          "question": "What is inter-service communication?",
+          "options": ["User communication", "How microservices communicate with each other", "Database queries", "Frontend communication"],
+          "correctAnswer": 1,
+          "explanation": "Inter-service communication defines how microservices exchange data, using REST, gRPC, or message queues."
+        },
+        {
+          "question": "What is distributed tracing?",
+          "options": ["Deleting logs", "Tracking requests across multiple services", "Caching", "Load balancing"],
+          "correctAnswer": 1,
+          "explanation": "Distributed tracing tracks requests as they flow through multiple microservices for debugging and performance monitoring."
+        },
+        {
+          "question": "What is the database-per-service pattern?",
+          "options": ["Shared database", "Each microservice has its own database", "No databases", "Central database"],
+          "correctAnswer": 1,
+          "explanation": "Database-per-service gives each microservice its own database, ensuring loose coupling and independence."
+        },
+        {
+          "question": "What is eventual consistency in microservices?",
+          "options": ["Immediate consistency", "Data becomes consistent over time", "No consistency", "Database feature"],
+          "correctAnswer": 1,
+          "explanation": "Eventual consistency means distributed data will become consistent over time, accepting temporary inconsistencies."
+        },
+        {
+          "question": "What is the Saga pattern?",
+          "options": ["Story pattern", "Managing distributed transactions across services", "Testing pattern", "Caching pattern"],
+          "correctAnswer": 1,
+          "explanation": "Saga pattern manages distributed transactions using a sequence of local transactions with compensating actions for failures."
+        },
+        {
+          "question": "What is service mesh?",
+          "options": ["Infrastructure layer handling service-to-service communication", "Database", "Cache", "Frontend framework"],
+          "correctAnswer": 0,
+          "explanation": "Service mesh provides infrastructure for managing service-to-service communication, security, and observability."
+        },
+        {
+          "question": "What is the main challenge of microservices?",
+          "options": ["Faster always", "Increased complexity and distributed system challenges", "Less code", "Easier to build"],
+          "correctAnswer": 1,
+          "explanation": "Microservices introduce complexity in deployment, monitoring, distributed transactions, and data consistency."
+        },
+        {
+          "question": "What is container orchestration in microservices?",
+          "options": ["Managing deployment and scaling of containers", "Writing code", "Testing", "Database management"],
+          "correctAnswer": 0,
+          "explanation": "Container orchestration (like Kubernetes) automates deployment, scaling, and management of containerized services."
+        },
+        {
+          "question": "What is the Strangler Fig pattern?",
+          "options": ["Gradually replacing monolith with microservices", "Deleting code", "Testing pattern", "Database pattern"],
+          "correctAnswer": 0,
+          "explanation": "Strangler Fig pattern gradually migrates from monolith to microservices by replacing functionality piece by piece."
+        },
+        {
+          "question": "What is bulkhead pattern?",
+          "options": ["Isolating resources to prevent cascade failures", "Combining services", "Caching", "Authentication"],
+          "correctAnswer": 0,
+          "explanation": "Bulkhead pattern isolates resources (threads, connections) so failure in one service doesn't affect others."
+        },
+        {
+          "question": "What is health check endpoint?",
+          "options": ["Endpoint reporting service health status", "Database query", "Cache endpoint", "Authentication endpoint"],
+          "correctAnswer": 0,
+          "explanation": "Health check endpoints allow monitoring systems to verify if a service is running and healthy."
+        },
+        {
+          "question": "What is the purpose of service versioning?",
+          "options": ["Managing API changes without breaking consumers", "Deleting services", "Caching", "Authentication"],
+          "correctAnswer": 0,
+          "explanation": "Service versioning allows evolving services while maintaining backward compatibility for existing consumers."
+        },
+        {
+          "question": "What is decomposition in microservices?",
+          "options": ["Breaking monolith into smaller services", "Combining services", "Deleting code", "Testing"],
+          "correctAnswer": 0,
+          "explanation": "Decomposition is the process of breaking down a monolithic application into smaller, focused microservices."
+        },
+        {
+          "question": "What is the Sidecar pattern?",
+          "options": ["Deploying helper container alongside main service", "Database pattern", "Cache pattern", "Frontend pattern"],
+          "correctAnswer": 0,
+          "explanation": "Sidecar pattern deploys a helper container (like proxy, monitoring) alongside each service instance."
+        }
+      ]
+    },
+    {
+      "id": "devops-deployment",
+      "title": "DevOps & Deployment (1-2 months)",
+      "description": "Master Docker containerization, CI/CD with GitHub Actions, cloud deployment (AWS/Heroku), Kubernetes basics, and monitoring with Prometheus.",
+      "resources": [
+        { "title": "Docker Tutorial", "url": "https://docker-curriculum.com/", "type": "Article" },
+        { "title": "Docker Compose", "url": "https://www.youtube.com/embed/HG6yIjZapSA?si=il1Ou4YchSWYReMb", "type": "Video" },
+        { "title": "Dockerfile Best Practices", "url": "https://www.youtube.com/embed/JofsaZ3H1qM?si=aEbab1GIWvCy1ay0", "type": "Video" },
+        { "title": "GitHub Actions", "url": "https://www.youtube.com/embed/Xwpi0ITkL3U?si=aeo1_FXL6Cr5D5dj", "type": "Video" },
+        { "title": "GitLab CI/CD", "url": "https://docs.gitlab.com/ee/ci/quick_start/", "type": "Article" },
+        { "title": "Jenkins Pipeline", "url": "https://www.youtube.com/embed/videoseries?si=2eQ2S_0atI_14n53&amp;list=PL1R_HJw0CDYJul95sHEhRIGJqGJnmlGgS" , "type": "Course" },
+        { "title": "Deploy Node.js to AWS", "url": "https://www.youtube.com/embed/_U0pTlpyMGg?si=TR3IUAoqLBKyISwI", "type": "Video" },
+        { "title": "Deploy Python to Heroku", "url": "https://www.youtube.com/embed/vlnzweFFTwY?si=_JdnkleX5TepJlGg", "type": "Video" },
+        { "title": "Kubernetes Basics", "url": "https://kubernetes.io/docs/tutorials/kubernetes-basics/", "type": "Article" },
+        { "title": "Logging Best Practices", "url": "https://www.youtube.com/embed/53qCLRFcBSs?si=e563lb7XhDbm_41Z", "type": "Video" },
+        { "title": "Prometheus Monitoring", "url": "https://prometheus.io/docs/introduction/first_steps/", "type": "Article" },
+        { "title": "ELK Stack Tutorial", "url": "https://www.elastic.co/guide/en/elasticsearch/reference/current/getting-started.html", "type": "Article" }
+      ],
+      "quiz": [
+        {
+          "question": "What is DevOps?",
+          "options": ["Culture combining development and operations", "Programming language", "Database", "Testing tool"],
+          "correctAnswer": 0,
+          "explanation": "DevOps is a culture and set of practices combining software development and IT operations for faster delivery."
+        },
+        {
+          "question": "What is Docker?",
+          "options": ["Database", "Containerization platform for packaging applications", "Web server", "Programming language"],
+          "correctAnswer": 1,
+          "explanation": "Docker is a platform for developing, shipping, and running applications in containers with all their dependencies."
+        },
+        {
+          "question": "What is a Docker container?",
+          "options": ["Virtual machine", "Database", "Lightweight, standalone executable package", "Web server"],
+          "correctAnswer": 2,
+          "explanation": "Containers package code and dependencies together, running consistently across different environments."
+        },
+        {
+          "question": "What does CI/CD stand for?",
+          "options": ["Code Integration/Code Development", "Continuous Integration/Continuous Deployment", "Computer Internet/Cloud Database", "Central Integration/Custom Delivery"],
+          "correctAnswer": 1,
+          "explanation": "CI/CD automates code integration, testing, and deployment, enabling faster and more reliable releases."
+        },
+        {
+          "question": "What is Kubernetes?",
+          "options": ["Database", "Programming language", "Message queue", "Container orchestration platform"],
+          "correctAnswer": 3,
+          "explanation": "Kubernetes orchestrates and manages containerized applications across clusters of machines."
+        },
+        {
+          "question": "What is the purpose of a Dockerfile?",
+          "options": ["Instructions to build Docker image", "Database schema", "Configuration file", "Log file"],
+          "correctAnswer": 0,
+          "explanation": "Dockerfile contains instructions for building a Docker image, defining the application environment."
+        },
+        {
+          "question": "What is blue-green deployment?",
+          "options": ["Color scheme", "Running two identical environments for zero-downtime", "Testing strategy", "Database backup"],
+          "correctAnswer": 1,
+          "explanation": "Blue-green deployment maintains two identical environments, switching traffic between them for zero-downtime deployments."
+        },
+        {
+          "question": "What is Prometheus used for?",
+          "options": ["Database", "Monitoring and alerting system", "Web framework", "Container platform"],
+          "correctAnswer": 1,
+          "explanation": "Prometheus is an open-source monitoring system for collecting metrics and alerting on application/infrastructure health."
+        },
+        {
+          "question": "What is Infrastructure as Code (IaC)?",
+          "options": ["Writing code", "Cloud platform", "Managing infrastructure through code/configuration files", "Database"],
+          "correctAnswer": 2,
+          "explanation": "IaC manages infrastructure using code, enabling version control, automation, and reproducible deployments."
+        },
+        {
+          "question": "What is a load balancer?",
+          "options": ["Database", "Cache system", "Security tool", "Distributes traffic across multiple servers"],
+          "correctAnswer": 3,
+          "explanation": "Load balancers distribute incoming network traffic across multiple servers to ensure reliability and scalability."
+        },
+        {
+          "question": "What is the purpose of logging in production?",
+          "options": ["Slow down app", "Track errors, monitor behavior, debug issues", "Delete data", "Encrypt data"],
+          "correctAnswer": 1,
+          "explanation": "Logging captures application events for debugging, monitoring, security auditing, and understanding user behavior."
+        },
+        {
+          "question": "What is continuous integration?",
+          "options": ["Automatically merging and testing code changes", "Manual testing", "Deployment only", "Database migration"],
+          "correctAnswer": 0,
+          "explanation": "CI automatically integrates code changes and runs tests to detect integration issues early."
+        },
+        {
+          "question": "What is Docker Compose?",
+          "options": ["Tool for defining multi-container applications", "Database", "Web server", "Testing tool"],
+          "correctAnswer": 0,
+          "explanation": "Docker Compose defines and runs multi-container Docker applications using a YAML file."
+        },
+        {
+          "question": "What is a Kubernetes Pod?",
+          "options": ["Smallest deployable unit containing one or more containers", "Database", "Load balancer", "Web server"],
+          "correctAnswer": 0,
+          "explanation": "A Pod is the smallest deployable unit in Kubernetes, containing one or more tightly coupled containers."
+        },
+        {
+          "question": "What is canary deployment?",
+          "options": ["Gradually rolling out to subset of users", "All at once deployment", "No deployment", "Database migration"],
+          "correctAnswer": 0,
+          "explanation": "Canary deployment releases changes to a small subset of users first to test before full rollout."
+        },
+        {
+          "question": "What is horizontal scaling?",
+          "options": ["Adding more instances/servers", "Upgrading existing server", "Deleting servers", "Database optimization"],
+          "correctAnswer": 0,
+          "explanation": "Horizontal scaling adds more instances to distribute load, while vertical scaling upgrades existing resources."
+        },
+        {
+          "question": "What is a reverse proxy?",
+          "options": ["Server routing requests to backend servers", "Database", "Cache only", "Frontend server"],
+          "correctAnswer": 0,
+          "explanation": "Reverse proxy sits in front of servers, routing client requests and providing security, caching, and load balancing."
+        },
+        {
+          "question": "What is rollback in deployment?",
+          "options": ["Reverting to previous stable version", "Moving forward", "Deleting deployment", "Creating backups"],
+          "correctAnswer": 0,
+          "explanation": "Rollback reverts to a previous stable version when a deployment causes issues."
+        },
+        {
+          "question": "What is Jenkins?",
+          "options": ["Automation server for CI/CD pipelines", "Database", "Web framework", "Container platform"],
+          "correctAnswer": 0,
+          "explanation": "Jenkins is an open-source automation server for building CI/CD pipelines."
+        },
+        {
+          "question": "What is health monitoring?",
+          "options": ["Tracking application health and performance", "Deleting logs", "Writing code", "Styling pages"],
+          "correctAnswer": 0,
+          "explanation": "Health monitoring continuously checks application health, performance, and availability to detect issues early."
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "RESTful Task Management API",
+      "description": "Build a complete REST API for task management with user authentication, CRUD operations, and data validation.",
+      "difficulty": "Beginner",
+      "duration": "2-3 weeks",
+      "skills": ["Node.js", "Express", "MongoDB", "JWT", "REST API", "Postman"],
+      "tasks": [
+        "Set up Express server with proper routing",
+        "Implement user registration and login with JWT",
+        "Create CRUD endpoints for tasks",
+        "Add input validation and error handling",
+        "Implement pagination and filtering",
+        "Write API documentation with Swagger",
+        "Test endpoints using Postman",
+        "Deploy to Heroku or Render"
+      ]
+    },
+    {
+      "title": "E-Commerce Backend System",
+      "description": "Develop a robust e-commerce backend with product catalog, shopping cart, order processing, and payment integration.",
+      "difficulty": "Intermediate",
+      "duration": "4-5 weeks",
+      "skills": ["Node.js", "Express", "PostgreSQL", "Redis", "Stripe API", "Docker"],
+      "tasks": [
+        "Design database schema for products, users, orders",
+        "Implement authentication and authorization",
+        "Build product catalog with search and filters",
+        "Create shopping cart with Redis caching",
+        "Integrate Stripe payment gateway",
+        "Implement order management system",
+        "Add email notifications for orders",
+        "Write unit and integration tests",
+        "Containerize application with Docker"
+      ]
+    },
+    {
+      "title": "Social Media API with Real-Time Features",
+      "description": "Create a social media backend with user profiles, posts, likes, comments, and real-time notifications using WebSockets.",
+      "difficulty": "Intermediate",
+      "duration": "4-5 weeks",
+      "skills": ["Node.js", "Socket.io", "MongoDB", "Redis", "AWS S3", "WebSockets"],
+      "tasks": [
+        "Implement user authentication and profiles",
+        "Build post creation with image upload to S3",
+        "Add likes, comments, and shares functionality",
+        "Implement following/followers system",
+        "Create real-time notifications with Socket.io",
+        "Add Redis caching for feed optimization",
+        "Implement content moderation system",
+        "Write comprehensive API tests",
+        "Deploy with load balancing"
+      ]
+    },
+    {
+      "title": "Microservices Architecture Project",
+      "description": "Build a microservices-based application with separate services for users, products, orders, and notifications.",
+      "difficulty": "Advanced",
+      "duration": "6-8 weeks",
+      "skills": ["Node.js", "Docker", "Kubernetes", "RabbitMQ", "gRPC", "API Gateway", "Microservices"],
+      "tasks": [
+        "Design microservices architecture",
+        "Implement service-to-service communication with gRPC",
+        "Set up message queue with RabbitMQ",
+        "Create API Gateway for routing",
+        "Implement service discovery",
+        "Add distributed tracing with Jaeger",
+        "Set up centralized logging",
+        "Implement circuit breaker pattern",
+        "Deploy on Kubernetes cluster",
+        "Add health checks and monitoring"
+      ]
+    },
+    {
+      "title": "Video Streaming Platform Backend",
+      "description": "Develop a scalable backend for Video streaming with transcoding, CDN integration, and adaptive bitrate streaming.",
+      "difficulty": "Advanced",
+      "duration": "8-10 weeks",
+      "skills": ["Node.js", "FFmpeg", "AWS", "Redis", "PostgreSQL", "CDN", "Streaming Protocols"],
+      "tasks": [
+        "Implement Video upload with chunked transfer",
+        "Set up Video transcoding pipeline with FFmpeg",
+        "Store Videos in AWS S3 with CloudFront CDN",
+        "Implement adaptive bitrate streaming (HLS/DASH)",
+        "Build Video metadata and search system",
+        "Add user playlists and watch history",
+        "Implement Video analytics and view tracking",
+        "Create recommendation engine",
+        "Add live streaming capabilities",
+        "Implement content delivery optimization",
+        "Set up auto-scaling and monitoring"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1433 @@
+{
+  "slug": "frontend-developer",
+  "title": "Frontend Developer",
+  "summary": "Create beautiful, responsive, and Interactive user interfaces with modern web technologies.",
+  "timeline": "6-10 months",
+  "difficulty": "Moderate",
+  "steps": [
+    {
+      "id": "web-fundamentals",
+      "title": "Web Fundamentals (6-8 weeks)",
+      "description": "Master HTML5, CSS3, Flexbox, Grid, responsive design, and accessibility basics",
+      "resources": [
+        { "title": "HTML Full Course", "url": "https://www.youtube.com/embed/kUMe1FH4CHE?si=3F-lLNr4EkfNheFk", "type": "Video"},
+        { "title": "CSS Complete Full Course", "url": "https://www.youtube.com/embed/OXGznpKZ_sA?si=oDUXc8CnbJGST5Yk", "type": "Video"},
+        { "title": "Flexbox Froggy", "url": "https://flexboxfroggy.com/", "type": "Interactive", "duration": "1 hour", "note": "Game-based Learning" },
+        { "title": "Grid Garden", "url": "https://cssgridgarden.com/", "type": "Interactive", "duration": "1 hour", "note": "Game-based Learning" },
+        { "title": "HTML Dog Tutorials", "url": "https://htmldog.com/", "type": "Article" }
+      ],
+      "quiz": [
+        {
+          "question": "What does HTML stand for?",
+          "options": ["HyperText Markup Language", "HighTech Modern Language", "HyperTool Media Language", "HomePage Text Markup Language"],
+          "correctAnswer": 0,
+          "explanation": "HTML (HyperText Markup Language) is the standard markup language for creating web pages."
+        },
+        {
+          "question": "Which HTML5 semantic element should be used for the main navigation of a website?",
+          "options": ["<div>", "<nav>", "<menu>", "<header>"],
+          "correctAnswer": 1,
+          "explanation": "<nav> is the semantic HTML5 element specifically designed for navigation sections."
+        },
+        {
+          "question": "What is the purpose of the <section> element?",
+          "options": ["Group unrelated content", "Create headers", "Define thematic groupings of content", "Add styling"],
+          "correctAnswer": 2,
+          "explanation": "The <section> element represents a thematic grouping of content, typically with a heading."
+        },
+        {
+          "question": "Which CSS property controls text color?",
+          "options": ["text-color", "font-color", "text-style", "color"],
+          "correctAnswer": 3,
+          "explanation": "The 'color' property sets the color of text content in CSS."
+        },
+        {
+          "question": "What is the correct CSS property to make an element's layout use Flexbox?",
+          "options": ["display: flex", "flex: true", "layout: flexbox", "position: flex"],
+          "correctAnswer": 0,
+          "explanation": "display: flex is the property that enables Flexbox layout on an element."
+        },
+        {
+          "question": "Which Flexbox property is used to align items along the main axis?",
+          "options": ["align-items", "flex-align", "main-align", "justify-content"],
+          "correctAnswer": 3,
+          "explanation": "justify-content aligns flex items along the main axis (horizontal by default)."
+        },
+        {
+          "question": "What does the CSS 'box-sizing: border-box' property do?",
+          "options": ["Includes padding and border in element's total width", "Adds border styling", "Creates a box shadow", "Sets border radius"],
+          "correctAnswer": 0,
+          "explanation": "border-box makes padding and border part of the element's width/height, making layouts more predictable."
+        },
+        {
+          "question": "Which CSS Grid property defines the number and size of columns?",
+          "options": ["grid-columns", "grid-template-columns", "column-template", "grid-column-size"],
+          "correctAnswer": 1,
+          "explanation": "grid-template-columns defines the column structure of a grid container."
+        },
+        {
+          "question": "How do you center an element using Flexbox?",
+          "options": ["align: center", "flex: center", "justify-content: center; align-items: center", "center: true"],
+          "correctAnswer": 2,
+          "explanation": "Using both justify-content: center and align-items: center centers elements both horizontally and vertically."
+        },
+        {
+          "question": "What does the viewport meta tag do in responsive design?",
+          "options": ["Sets page title", "Defines CSS styles", "Adds JavaScript", "Controls zoom and scaling"],
+          "correctAnswer": 3,
+          "explanation": "The viewport meta tag controls how a webpage is displayed on mobile devices, managing zoom and scaling."
+        },
+        {
+          "question": "Which CSS unit is best for responsive typography?",
+          "options": ["rem", "px", "pt", "cm"],
+          "correctAnswer": 0,
+          "explanation": "rem (root em) is relative to the root element and scales better for responsive designs."
+        },
+        {
+          "question": "What is the purpose of CSS Grid's gap property?",
+          "options": ["Create borders", "Set spacing between grid items", "Define grid size", "Add padding"],
+          "correctAnswer": 1,
+          "explanation": "The gap property (or grid-gap) sets the spacing between rows and columns in a grid container."
+        },
+        {
+          "question": "Which CSS media query targets screens smaller than 768px?",
+          "options": ["@media (min-width: 768px)", "@media screen < 768px", "@media (max-width: 768px)", "@media (width: 768px)"],
+          "correctAnswer": 2,
+          "explanation": "@media (max-width: 768px) targets screens with a maximum width of 768px, commonly used for mobile devices."
+        },
+        {
+          "question": "What is the purpose of the 'alt' attribute in <img> tags?",
+          "options": ["Add styling", "Set image size", "Link images", "Provide alternative text for accessibility"],
+          "correctAnswer": 3,
+          "explanation": "The 'alt' attribute provides alternative text for screen readers and when images fail to load."
+        },
+        {
+          "question": "What is the recommended accessibility contrast ratio for normal text?",
+          "options": ["4.5:1", "3:1", "2:1", "7:1"],
+          "correctAnswer": 0,
+          "explanation": "WCAG 2.1 Level AA requires a contrast ratio of at least 4.5:1 for normal text."
+        },
+        {
+          "question": "Which Flexbox property controls the direction of flex items?",
+          "options": ["flex-align", "flex-direction", "direction", "flex-flow"],
+          "correctAnswer": 1,
+          "explanation": "flex-direction sets the direction (row, column, row-reverse, column-reverse) of flex items."
+        },
+        {
+          "question": "What does the CSS position: sticky property do?",
+          "options": ["Fixes element permanently", "Removes element", "Toggles between relative and fixed based on scroll", "Centers element"],
+          "correctAnswer": 2,
+          "explanation": "position: sticky behaves like relative positioning until a scroll threshold, then acts like fixed."
+        },
+        {
+          "question": "Which HTML5 element is used for self-contained content?",
+          "options": ["<div>", "<section>", "<content>", "<article>"],
+          "correctAnswer": 3,
+          "explanation": "The <article> element represents self-contained, independently distributable content."
+        },
+        {
+          "question": "What is mobile-first design approach?",
+          "options": ["Designing for desktop first", "Designing for mobile devices first, then scaling up", "Only mobile design", "Ignoring desktop users"],
+          "correctAnswer": 1,
+          "explanation": "Mobile-first means designing for mobile devices first, then progressively enhancing for larger screens."
+        },
+        {
+          "question": "Which CSS property creates rounded corners?",
+          "options": ["corner-radius", "round-corner", "border-radius", "corner-style"],
+          "correctAnswer": 2,
+          "explanation": "border-radius property creates rounded corners on elements."
+        }
+      ]
+    },
+    {
+      "id": "javascript-fundamentals",
+      "title": "JavaScript Fundamentals (8-10 weeks)",
+      "description": "Master JavaScript: variables, functions, DOM, ES6+, promises, async/await",
+      "resources": [
+        { "title": "JavaScript Full Course", "url": "https://www.youtube.com/embed/8dWL3wF_OMw", "type": "Video", "duration": "8 hours", "note": "BEST - Complete Course" },
+        { "title": "Eloquent JavaScript", "url": "https://eloquentjavascript.net/", "type": "Book", "note": "Free Book" },
+        { "title": "JavaScript30", "url": "https://javascript30.com/", "type": "Interactive", "duration": "30 days", "note": "30 Projects Challenge" }
+      ],
+      "quiz": [
+        {
+          "question": "What is JavaScript primarily used for?",
+          "options": ["Making web pages interactive", "Styling web pages", "Structuring web pages", "Database management"],
+          "correctAnswer": 0,
+          "explanation": "JavaScript is primarily used to add interactivity and dynamic behavior to web pages."
+        },
+        {
+          "question": "What is the difference between 'let' and 'const' in JavaScript?",
+          "options": ["No difference", "let can be reassigned, const cannot", "const is faster", "let is deprecated"],
+          "correctAnswer": 1,
+          "explanation": "'let' allows reassignment while 'const' creates a constant reference that cannot be reassigned."
+        },
+        {
+          "question": "What is the output of: typeof null?",
+          "options": ["'null'", "'undefined'", "'object'", "'number'"],
+          "correctAnswer": 2,
+          "explanation": "typeof null returns 'object' - this is a known JavaScript quirk from the language's early days."
+        },
+        {
+          "question": "What does the 'async' keyword do in JavaScript?",
+          "options": ["Makes code run faster", "Stops execution", "Deletes variables", "Returns a Promise"],
+          "correctAnswer": 3,
+          "explanation": "The 'async' keyword makes a function return a Promise and allows the use of 'await' inside it."
+        },
+        {
+          "question": "Which method is used to select an element by ID in the DOM?",
+          "options": ["document.getElementById()", "document.getElement()", "document.querySelector()", "document.selectId()"],
+          "correctAnswer": 0,
+          "explanation": "document.getElementById() is the specific method to select elements by their ID attribute."
+        },
+        {
+          "question": "What is a closure in JavaScript?",
+          "options": ["A way to close browser", "A loop terminator", "An error type", "Function with access to outer scope"],
+          "correctAnswer": 3,
+          "explanation": "A closure is a function that has access to variables in its outer (enclosing) scope, even after the outer function has returned."
+        },
+        {
+          "question": "Which array method creates a new array with results of calling a function for every element?",
+          "options": ["map()", "filter()", "reduce()", "forEach()"],
+          "correctAnswer": 0,
+          "explanation": "map() creates a new array by transforming each element with a provided function."
+        },
+        {
+          "question": "What is the purpose of the 'await' keyword?",
+          "options": ["Wait for user input", "Pause execution until Promise resolves", "Delay code execution", "Stop all processes"],
+          "correctAnswer": 1,
+          "explanation": "'await' pauses async function execution until the Promise is resolved or rejected."
+        },
+        {
+          "question": "What is event bubbling in JavaScript?",
+          "options": ["Animation effect", "Memory leak", "Event propagates from child to parent", "Error handling"],
+          "correctAnswer": 2,
+          "explanation": "Event bubbling is when an event propagates from the target element up through its ancestors in the DOM."
+        },
+        {
+          "question": "Which ES6 feature allows you to extract values from arrays or objects?",
+          "options": ["Spreading", "Mapping", "Filtering", "Destructuring"],
+          "correctAnswer": 3,
+          "explanation": "Destructuring allows unpacking values from arrays or properties from objects into distinct variables."
+        },
+        {
+          "question": "What does the 'strict mode' ('use strict') do in JavaScript?",
+          "options": ["Enforces stricter parsing and error handling", "Makes code run faster", "Minifies code", "Adds security"],
+          "correctAnswer": 0,
+          "explanation": "Strict mode catches common coding mistakes and prevents use of problematic language features."
+        },
+        {
+          "question": "What is the difference between '==' and '===' in JavaScript?",
+          "options": ["No difference", "== checks type and value, === checks only value", "=== checks type and value, == checks only value", "=== is deprecated"],
+          "correctAnswer": 2,
+          "explanation": "=== (strict equality) checks both type and value, while == (loose equality) performs type coercion."
+        },
+        {
+          "question": "What does the spread operator (...) do?",
+          "options": ["Deletes arrays", "Creates loops", "Expands iterables into individual elements", "Adds numbers"],
+          "correctAnswer": 2,
+          "explanation": "The spread operator (...) expands iterables like arrays into individual elements."
+        },
+        {
+          "question": "What is a Promise in JavaScript?",
+          "options": ["A variable type", "A loop structure", "An object representing eventual completion of async operation", "A CSS property"],
+          "correctAnswer": 2,
+          "explanation": "A Promise represents the eventual completion (or failure) of an asynchronous operation and its resulting value."
+        },
+        {
+          "question": "Which method adds an element to the end of an array?",
+          "options": ["append()", "add()", "insert()", "push()"],
+          "correctAnswer": 3,
+          "explanation": "push() adds one or more elements to the end of an array and returns the new length."
+        },
+        {
+          "question": "What does 'hoisting' mean in JavaScript?",
+          "options": ["Variable and function declarations are moved to top of scope", "Deleting variables", "Creating objects", "Loading files"],
+          "correctAnswer": 0,
+          "explanation": "Hoisting is JavaScript's behavior of moving declarations to the top of their scope before code execution."
+        },
+        {
+          "question": "What is the purpose of addEventListener()?",
+          "options": ["Create elements", "Attach event handlers to elements", "Remove elements", "Style elements"],
+          "correctAnswer": 1,
+          "explanation": "addEventListener() attaches an event handler to an element without overwriting existing handlers."
+        },
+        {
+          "question": "What does Array.filter() return?",
+          "options": ["Boolean value", "Single element", "New array with elements that pass test", "Original array"],
+          "correctAnswer": 2,
+          "explanation": "filter() creates a new array with all elements that pass the test implemented by the provided function."
+        },
+        {
+          "question": "What is the difference between 'null' and 'undefined'?",
+          "options": ["No difference", "null is intentional absence, undefined is uninitialized", "null is faster", "undefined is deprecated"],
+          "correctAnswer": 1,
+          "explanation": "null represents intentional absence of value; undefined means a variable has been declared but not assigned."
+        },
+        {
+          "question": "What does the ternary operator (? :) do?",
+          "options": ["Provides shorthand for if-else statements", "Creates loops", "Defines functions", "Declares variables"],
+          "correctAnswer": 0,
+          "explanation": "The ternary operator is a shorthand for if-else: condition ? valueIfTrue : valueIfFalse."
+        }
+      ]
+    },
+    {
+      "id": "css-frameworks",
+      "title": "CSS Frameworks & Preprocessors (3-4 weeks)",
+      "description": "Learn Tailwind CSS, Bootstrap, Sass/SCSS, and modern CSS methodologies",
+      "resources": [
+        { "title": "Tailwind CSS Documentation", "url": "https://tailwindcss.com/docs", "type": "Article", "note": "Official Docs - BEST" },
+        { "title": "Bootstrap 5 Documentation", "url": "https://getbootstrap.com/docs/5.3/getting-started/introduction/", "type": "Article", "note": "Official Docs" },
+        { "title": "Sass/SCSS Basics", "url": "https://sass-lang.com/guide", "type": "Article" },
+        { "title": "Tailwind CSS Crash Course", "url": "https://www.youtube.com/embed/UBOj6rqRUME", "type": "Video", "duration": "1 hour" }
+      ],
+      "quiz": [
+        {
+          "question": "What is a CSS framework?",
+          "options": ["Pre-written CSS code for common design patterns", "JavaScript library", "Database system", "Server software"],
+          "correctAnswer": 0,
+          "explanation": "CSS frameworks provide pre-written CSS code and components to speed up development."
+        },
+        {
+          "question": "What is the main philosophy behind Tailwind CSS?",
+          "options": ["Pre-built components", "Utility-first approach", "JavaScript-based styling", "Inline styles only"],
+          "correctAnswer": 1,
+          "explanation": "Tailwind CSS uses a utility-first approach, providing low-level utility classes to build custom designs."
+        },
+        {
+          "question": "In Bootstrap, which class is used to create a responsive 12-column grid?",
+          "options": ["grid-12", "row-12", "col-12", "column-12"],
+          "correctAnswer": 2,
+          "explanation": "Bootstrap uses 'col-' prefixed classes to define column widths in its 12-column grid system."
+        },
+        {
+          "question": "What is the file extension for Sass files?",
+          "options": [".css", ".less", ".style", ".scss or .sass"],
+          "correctAnswer": 3,
+          "explanation": "Sass files use either .scss (Sassy CSS) or .sass (indented syntax) extensions."
+        },
+        {
+          "question": "Which Sass feature allows you to reuse chunks of CSS properties?",
+          "options": ["Mixins", "Variables", "Functions", "Imports"],
+          "correctAnswer": 0,
+          "explanation": "Mixins in Sass allow you to define reusable chunks of CSS that can be included anywhere."
+        },
+        {
+          "question": "How do you apply hover effect in Tailwind CSS?",
+          "options": ["hover-bg-blue", "bg-blue-500-hover", "hover:bg-blue-500", ":hover bg-blue"],
+          "correctAnswer": 2,
+          "explanation": "Tailwind uses the 'hover:' prefix followed by the utility class to apply hover states."
+        },
+        {
+          "question": "What does BEM stand for in CSS methodology?",
+          "options": ["Better Element Model", "Base Element Margin", "Bootstrap Element Method", "Block Element Modifier"],
+          "correctAnswer": 3,
+          "explanation": "BEM (Block Element Modifier) is a naming convention for classes to make CSS more maintainable."
+        },
+        {
+          "question": "Which Bootstrap class makes a button take full width?",
+          "options": ["btn-full", "btn-block", "w-100", "btn-wide"],
+          "correctAnswer": 2,
+          "explanation": "In Bootstrap 5, 'w-100' (width 100%) is used to make elements take full width."
+        },
+        {
+          "question": "What symbol is used for referencing parent selector in Sass?",
+          "options": [">", "&", "*", "+"],
+          "correctAnswer": 1,
+          "explanation": "The '&' symbol in Sass references the parent selector, enabling powerful nesting patterns."
+        },
+        {
+          "question": "How do you customize Tailwind's default theme?",
+          "options": ["Modify tailwind.config.js", "Edit CSS directly", "Use inline styles", "Override with !important"],
+          "correctAnswer": 0,
+          "explanation": "Tailwind's theme is customized through the tailwind.config.js configuration file."
+        },
+        {
+          "question": "What is the purpose of CSS preprocessors like Sass?",
+          "options": ["Make CSS faster", "Replace JavaScript", "Add programming features to CSS", "Minify CSS automatically"],
+          "correctAnswer": 2,
+          "explanation": "CSS preprocessors add programming features like variables, nesting, and mixins to CSS."
+        },
+        {
+          "question": "Which Bootstrap component provides responsive navigation?",
+          "options": ["navbar", "nav-menu", "menu-bar", "top-nav"],
+          "correctAnswer": 0,
+          "explanation": "Bootstrap's navbar component provides a responsive navigation header."
+        },
+        {
+          "question": "How do you define a variable in Sass?",
+          "options": ["var $color: blue;", "@color: blue;", "$color: blue;", "--color: blue;"],
+          "correctAnswer": 2,
+          "explanation": "Sass variables are defined using the $ symbol: $variable-name: value;"
+        },
+        {
+          "question": "What is the purpose of Tailwind's @apply directive?",
+          "options": ["Import files", "Create animations", "Apply utility classes in CSS files", "Define colors"],
+          "correctAnswer": 2,
+          "explanation": "@apply lets you use Tailwind utility classes within custom CSS, extracting common patterns."
+        },
+        {
+          "question": "Which Bootstrap breakpoint targets medium devices?",
+          "options": ["sm", "md", "lg", "xl"],
+          "correctAnswer": 1,
+          "explanation": "'md' (medium) targets devices ≥768px in Bootstrap's responsive grid system."
+        },
+        {
+          "question": "What does Sass @import do?",
+          "options": ["Delete files", "Combine Sass files into one", "Export variables", "Create mixins"],
+          "correctAnswer": 1,
+          "explanation": "@import combines multiple Sass files into a single CSS output file."
+        },
+        {
+          "question": "How do you apply responsive classes in Tailwind?",
+          "options": ["Use breakpoint prefixes like md:, lg:", "Use media queries", "Use !important", "Inline styles only"],
+          "correctAnswer": 0,
+          "explanation": "Tailwind uses breakpoint prefixes (sm:, md:, lg:, xl:, 2xl:) for responsive utilities."
+        },
+        {
+          "question": "What is Bootstrap's container class used for?",
+          "options": ["Center content with responsive padding", "Create grids", "Add borders", "Style buttons"],
+          "correctAnswer": 0,
+          "explanation": "The container class provides a responsive fixed-width container with appropriate padding."
+        },
+        {
+          "question": "What is the difference between .scss and .sass syntax?",
+          "options": ["No difference", ".scss uses braces, .sass uses indentation", ".sass is newer", ".scss is deprecated"],
+          "correctAnswer": 1,
+          "explanation": ".scss uses CSS-like syntax with braces; .sass uses indentation-based syntax without braces."
+        },
+        {
+          "question": "What does JIT mode provide in Tailwind CSS?",
+          "options": ["Just-in-Time compilation for faster builds and smaller files", "JavaScript integration", "Better colors", "More components"],
+          "correctAnswer": 0,
+          "explanation": "JIT mode compiles CSS on-demand, resulting in faster builds and smaller file sizes."
+        }
+      ]
+    },
+    {
+      "id": "version-control",
+      "title": "Version Control & Dev Tools (2-3 weeks)",
+      "description": "Master Git, GitHub, Chrome DevTools, debugging, and performance auditing",
+      "resources": [
+        { "title": "Git & GitHub Full Course", "url": "https://www.youtube.com/embed/RGOj5yH7evk", "type": "Video", "duration": "1 hour" },
+        { "title": "Learn Git Branching", "url": "https://learngitbranching.js.org/", "type": "Interactive", "note": "Interactive Tutorial" },
+        { "title": "Chrome DevTools", "url": "https://www.youtube.com/embed/gTVpBbFWry8?si=ioxV8m-1crlVIu8_", "type": "Video"},
+        { "title": "GitHub Skills", "url": "https://skills.github.com/", "type": "Interactive" }
+      ],
+      "quiz": [
+        {
+          "question": "What is Git?",
+          "options": ["Distributed version control system", "Text editor", "Programming language", "Web framework"],
+          "correctAnswer": 0,
+          "explanation": "Git is a distributed version control system for tracking changes in source code."
+        },
+        {
+          "question": "What Git command is used to create a new branch?",
+          "options": ["git new-branch", "git branch <name>", "git create <name>", "git checkout -n"],
+          "correctAnswer": 1,
+          "explanation": "'git branch <name>' creates a new branch without switching to it."
+        },
+        {
+          "question": "What does 'git clone' do?",
+          "options": ["Copies files", "Creates a branch", "Downloads a repository copy", "Deletes repository"],
+          "correctAnswer": 2,
+          "explanation": "'git clone' creates a local copy of a remote repository."
+        },
+        {
+          "question": "How do you stage all modified files in Git?",
+          "options": ["git add .", "git stage all", "git commit -a", "git push all"],
+          "correctAnswer": 0,
+          "explanation": "'git add .' stages all changes in the current directory and subdirectories."
+        },
+        {
+          "question": "What is a pull request in GitHub?",
+          "options": ["Downloading code", "Deleting branches", "Creating issues", "Requesting to merge code changes"],
+          "correctAnswer": 3,
+          "explanation": "A pull request proposes changes and requests review before merging into the main branch."
+        },
+        {
+          "question": "Which Chrome DevTools tab is used for debugging JavaScript?",
+          "options": ["Elements", "Console", "Sources", "Network"],
+          "correctAnswer": 2,
+          "explanation": "The Sources tab allows you to set breakpoints and debug JavaScript code."
+        },
+        {
+          "question": "What does 'git merge' do?",
+          "options": ["Combines branches together", "Deletes branches", "Creates new branch", "Reverts changes"],
+          "correctAnswer": 0,
+          "explanation": "'git merge' combines changes from one branch into another."
+        },
+        {
+          "question": "How do you undo the last commit (keeping changes)?",
+          "options": ["git revert HEAD", "git reset --soft HEAD~1", "git undo", "git delete commit"],
+          "correctAnswer": 1,
+          "explanation": "'git reset --soft HEAD~1' undoes the last commit but keeps the changes staged."
+        },
+        {
+          "question": "What is the purpose of a .gitignore file?",
+          "options": ["Speed up Git", "Configure Git settings", "Specify files to not track", "List contributors"],
+          "correctAnswer": 2,
+          "explanation": ".gitignore specifies which files and directories Git should not track."
+        },
+        {
+          "question": "Which DevTools feature helps identify performance bottlenecks?",
+          "options": ["Console", "Elements", "Performance/Profiler", "Application"],
+          "correctAnswer": 2,
+          "explanation": "The Performance tab records and analyzes runtime performance to find bottlenecks."
+        },
+        {
+          "question": "What does 'git push origin main' do?",
+          "options": ["Downloads code", "Creates branch", "Deletes main", "Uploads local commits to remote main branch"],
+          "correctAnswer": 3,
+          "explanation": "It pushes your local main branch commits to the remote repository named 'origin'."
+        },
+        {
+          "question": "What command switches to an existing branch?",
+          "options": ["git checkout <branch>", "git switch-branch", "git change", "git move"],
+          "correctAnswer": 0,
+          "explanation": "'git checkout <branch>' or 'git switch <branch>' switches to an existing branch."
+        },
+        {
+          "question": "What does 'git status' show?",
+          "options": ["Server status", "Current branch and file changes", "Network status", "User settings"],
+          "correctAnswer": 1,
+          "explanation": "'git status' displays the current branch, staged/unstaged changes, and untracked files."
+        },
+        {
+          "question": "Which DevTools tab shows network requests?",
+          "options": ["Elements", "Console", "Sources", "Network"],
+          "correctAnswer": 3,
+          "explanation": "The Network tab displays all HTTP requests, their timing, and response data."
+        },
+        {
+          "question": "What is the purpose of git commit?",
+          "options": ["Save staged changes with a message", "Delete files", "Create branch", "Upload code"],
+          "correctAnswer": 0,
+          "explanation": "'git commit' saves staged changes to the local repository with a descriptive message."
+        },
+        {
+          "question": "How do you view commit history in Git?",
+          "options": ["git history", "git log", "git commits", "git show-all"],
+          "correctAnswer": 1,
+          "explanation": "'git log' displays the commit history for the current branch."
+        },
+        {
+          "question": "What does the Console tab in DevTools display?",
+          "options": ["CSS styles", "Network requests", "JavaScript errors and logs", "HTML structure"],
+          "correctAnswer": 2,
+          "explanation": "The Console displays JavaScript errors, warnings, and console.log() output."
+        },
+        {
+          "question": "What is a Git fork?",
+          "options": ["Deleting repository", "Copy of repository in your account", "Creating branch", "Merging code"],
+          "correctAnswer": 1,
+          "explanation": "A fork creates a personal copy of someone else's repository in your GitHub account."
+        },
+        {
+          "question": "Which DevTools tab lets you inspect and modify HTML/CSS?",
+          "options": ["Elements", "Console", "Sources", "Network"],
+          "correctAnswer": 0,
+          "explanation": "The Elements tab allows you to inspect and modify the DOM and CSS in real-time."
+        },
+        {
+          "question": "What does 'git pull' do?",
+          "options": ["Delete code", "Create branch", "Fetch and merge remote changes", "Push code"],
+          "correctAnswer": 2,
+          "explanation": "'git pull' fetches changes from the remote repository and merges them into your current branch."
+        }
+      ]
+    },
+    {
+      "id": "modern-framework",
+      "title": "React.js Framework (6-8 weeks)",
+      "description": "Learn React: components, hooks, state, props, Router, Context API",
+      "resources": [
+        { "title": "React Official Tutorial", "url": "https://react.dev/learn", "type": "Article", "note": "Official Documentation - BEST" },
+        { "title": "React Full Course - freeCodeCamp", "url": "https://www.youtube.com/embed/bMknfKXIFA8", "type": "Video", "duration": "8 hours" },
+        { "title": "React Interactive Course - Scrimba", "url": "https://scrimba.com/learn/learnreact", "type": "Course", "note": "Interactive" },
+        { "title": "React Router v6 Tutorial", "url": "https://reactrouter.com/en/main/start/tutorial", "type": "Article" }
+      ],
+      "quiz": [
+        {
+          "question": "What is React?",
+          "options": ["JavaScript library for building user interfaces", "CSS framework", "Database", "Server software"],
+          "correctAnswer": 0,
+          "explanation": "React is a JavaScript library for building component-based user interfaces."
+        },
+        {
+          "question": "What is a React component?",
+          "options": ["A CSS file", "A reusable piece of UI", "A database", "A server"],
+          "correctAnswer": 1,
+          "explanation": "React components are reusable, independent pieces of UI that can be composed together."
+        },
+        {
+          "question": "Which hook is used for managing state in functional components?",
+          "options": ["useEffect", "useState", "useContext", "useReducer"],
+          "correctAnswer": 1,
+          "explanation": "useState is the primary hook for adding state to functional components."
+        },
+        {
+          "question": "What are props in React?",
+          "options": ["CSS properties", "Global variables", "Data passed from parent to child", "HTML attributes"],
+          "correctAnswer": 2,
+          "explanation": "Props (properties) are read-only data passed from parent components to child components."
+        },
+        {
+          "question": "When does useEffect run by default?",
+          "options": ["Once on mount", "Before render", "Never", "After every render"],
+          "correctAnswer": 3,
+          "explanation": "By default, useEffect runs after every render unless dependencies are specified."
+        },
+        {
+          "question": "What is JSX?",
+          "options": ["JavaScript XML syntax extension", "A CSS framework", "A testing library", "A programming language"],
+          "correctAnswer": 0,
+          "explanation": "JSX is a syntax extension that allows writing HTML-like code in JavaScript."
+        },
+        {
+          "question": "How do you prevent a component from re-rendering unnecessarily?",
+          "options": ["Use more props", "Use React.memo", "Remove state", "Use inline styles"],
+          "correctAnswer": 1,
+          "explanation": "React.memo memoizes components and only re-renders when props change."
+        },
+        {
+          "question": "What is the purpose of React Context API?",
+          "options": ["Routing", "Styling", "Share data without prop drilling", "API calls"],
+          "correctAnswer": 2,
+          "explanation": "Context API provides a way to share data across components without passing props through every level."
+        },
+        {
+          "question": "Which hook is used for side effects in React?",
+          "options": ["useState", "useCallback", "useMemo", "useEffect"],
+          "correctAnswer": 3,
+          "explanation": "useEffect handles side effects like data fetching, subscriptions, and DOM manipulation."
+        },
+        {
+          "question": "What is the virtual DOM in React?",
+          "options": ["Lightweight copy of real DOM", "Real browser DOM", "CSS framework", "Database"],
+          "correctAnswer": 0,
+          "explanation": "Virtual DOM is React's lightweight representation of the real DOM for efficient updates."
+        },
+        {
+          "question": "How do you navigate programmatically in React Router v6?",
+          "options": ["useHistory", "useNavigate", "useRouter", "useRoute"],
+          "correctAnswer": 1,
+          "explanation": "useNavigate hook provides a function to programmatically navigate in React Router v6."
+        },
+        {
+          "question": "What is the difference between state and props?",
+          "options": ["State is mutable and local, props are immutable from parent", "No difference", "Props are faster", "State is deprecated"],
+          "correctAnswer": 0,
+          "explanation": "State is managed within a component and can change; props are passed from parent and read-only."
+        },
+        {
+          "question": "What does the key prop do in React lists?",
+          "options": ["Styles elements", "Helps React identify which items changed", "Adds security", "Creates animations"],
+          "correctAnswer": 1,
+          "explanation": "Keys help React identify which items have changed, been added, or removed for efficient updates."
+        },
+        {
+          "question": "What is a controlled component in React?",
+          "options": ["Component deleted by React", "Component with no state", "Form element whose value is controlled by React state", "Server component"],
+          "correctAnswer": 2,
+          "explanation": "Controlled components have their form data handled by React state rather than the DOM."
+        },
+        {
+          "question": "What does useCallback hook do?",
+          "options": ["Memoizes callback functions to prevent recreation", "Creates callbacks", "Deletes functions", "Handles events"],
+          "correctAnswer": 0,
+          "explanation": "useCallback returns a memoized callback function that only changes if dependencies change."
+        },
+        {
+          "question": "What is the purpose of useMemo hook?",
+          "options": ["Create state", "Memoize expensive calculations", "Handle effects", "Manage context"],
+          "correctAnswer": 1,
+          "explanation": "useMemo memoizes the result of expensive calculations, recomputing only when dependencies change."
+        },
+        {
+          "question": "How do you handle events in React?",
+          "options": ["Use camelCase event handlers like onClick", "Use lowercase like onclick", "Use addEventListener", "Events don't work in React"],
+          "correctAnswer": 0,
+          "explanation": "React uses camelCase for event handlers (onClick, onChange) and synthetic events."
+        },
+        {
+          "question": "What is the purpose of useReducer hook?",
+          "options": ["Manage complex state logic", "Reduce file size", "Delete state", "Create components"],
+          "correctAnswer": 0,
+          "explanation": "useReducer manages complex state logic with actions, similar to Redux reducers."
+        },
+        {
+          "question": "What is React Fragment used for?",
+          "options": ["Delete components", "Group children without adding extra DOM nodes", "Add styling", "Create errors"],
+          "correctAnswer": 1,
+          "explanation": "Fragments (<> </> or <Fragment>) let you group children without adding extra nodes to the DOM."
+        },
+        {
+          "question": "What does the dependency array in useEffect control?",
+          "options": ["When the effect runs - empty runs once, values trigger on change", "Component styling", "Error handling", "Nothing"],
+          "correctAnswer": 0,
+          "explanation": "Empty array runs once on mount; values trigger effect when they change; no array runs every render."
+        }
+      ]
+    },
+    {
+      "id": "state-management",
+      "title": "State Management (2-3 weeks)",
+      "description": "Redux Toolkit, Context API, Zustand, React Query for managing application state",
+      "resources": [
+        { "title": "Redux Toolkit Tutorial", "url": "https://redux-toolkit.js.org/tutorials/quick-start", "type": "Article", "note": "Official Docs" },
+        { "title": "Zustand Documentation", "url": "https://docs.pmnd.rs/zustand/getting-started/introduction", "type": "Article" },
+        { "title": "React Query Guide", "url": "https://tanstack.com/query/latest/docs/framework/react/overview", "type": "Article" },
+        { "title": "Redux Crash Course", "url": "https://www.youtube.com/embed/poQXNp9ItL4", "type": "Video", "duration": "1 hour" }
+      ],
+      "quiz": [
+        {
+          "question": "What is state management in frontend applications?",
+          "options": ["Managing application data and UI state", "CSS styling", "Server management", "Database queries"],
+          "correctAnswer": 0,
+          "explanation": "State management handles how application data and UI state are stored, updated, and shared across components."
+        },
+        {
+          "question": "What is the primary purpose of Redux?",
+          "options": ["Routing", "Global state management", "Styling", "Testing"],
+          "correctAnswer": 1,
+          "explanation": "Redux is a predictable state container for managing global application state."
+        },
+        {
+          "question": "What are the three principles of Redux?",
+          "options": ["Speed, Size, Security", "Single source of truth, State is read-only, Changes via pure functions", "Fast, Simple, Safe", "Create, Read, Update"],
+          "correctAnswer": 1,
+          "explanation": "Redux follows: single source of truth, state is read-only, and changes are made with pure functions (reducers)."
+        },
+        {
+          "question": "What is a Redux action?",
+          "options": ["A component", "A CSS class", "A router", "An object describing state change"],
+          "correctAnswer": 3,
+          "explanation": "Actions are plain JavaScript objects that describe what happened and carry data."
+        },
+        {
+          "question": "What advantage does Redux Toolkit provide over plain Redux?",
+          "options": ["Slower performance", "More boilerplate", "Simplified configuration and less code", "No advantages"],
+          "correctAnswer": 2,
+          "explanation": "Redux Toolkit reduces boilerplate, provides good defaults, and includes useful utilities."
+        },
+        {
+          "question": "What is React Query primarily used for?",
+          "options": ["Routing", "Local state", "Server state management and data fetching", "CSS styling"],
+          "correctAnswer": 2,
+          "explanation": "React Query manages server state, caching, synchronization, and data fetching."
+        },
+        {
+          "question": "How is Zustand different from Redux?",
+          "options": ["More complex", "Simpler API with less boilerplate", "Slower", "No difference"],
+          "correctAnswer": 1,
+          "explanation": "Zustand provides a minimal, hook-based API with less boilerplate than Redux."
+        },
+        {
+          "question": "What is a Redux reducer?",
+          "options": ["A component", "A middleware", "Pure function that returns new state", "An API call"],
+          "correctAnswer": 2,
+          "explanation": "Reducers are pure functions that take current state and action, returning new state."
+        },
+        {
+          "question": "When should you use Context API vs Redux?",
+          "options": ["Always use Redux", "Context for simple state, Redux for complex", "Never use Context", "They're the same"],
+          "correctAnswer": 1,
+          "explanation": "Context API is good for simple state sharing; Redux is better for complex state with many updates."
+        },
+        {
+          "question": "What does React Query's caching feature provide?",
+          "options": ["Slower performance", "Automatic background refetching and stale data management", "More API calls", "Nothing useful"],
+          "correctAnswer": 1,
+          "explanation": "React Query automatically caches data, refetches in background, and manages stale/fresh states."
+        },
+        {
+          "question": "What is Redux middleware used for?",
+          "options": ["Styling", "Rendering", "Intercepting actions for async logic/logging", "Routing"],
+          "correctAnswer": 2,
+          "explanation": "Middleware intercepts actions before they reach reducers, enabling async logic, logging, etc."
+        },
+        {
+          "question": "What does the Redux store contain?",
+          "options": ["Entire application state tree", "CSS styles", "Components", "Routes"],
+          "correctAnswer": 0,
+          "explanation": "The Redux store holds the complete application state tree in a single object."
+        },
+        {
+          "question": "What is the purpose of Redux Thunk?",
+          "options": ["Handle asynchronous actions", "Style components", "Create routes", "Test code"],
+          "correctAnswer": 0,
+          "explanation": "Redux Thunk middleware allows you to write action creators that return functions for async logic."
+        },
+        {
+          "question": "How do you access Redux state in a component?",
+          "options": ["Direct access", "useSelector hook", "props only", "localStorage"],
+          "correctAnswer": 1,
+          "explanation": "useSelector hook allows functional components to extract data from the Redux store."
+        },
+        {
+          "question": "What is the benefit of normalizing state in Redux?",
+          "options": ["Slower updates", "More complex code", "Easier updates and no data duplication", "No benefit"],
+          "correctAnswer": 2,
+          "explanation": "Normalized state keeps data flat, making updates easier and eliminating duplication."
+        },
+        {
+          "question": "What does useQuery return in React Query?",
+          "options": ["Only data", "Data, loading state, error state, and more", "Nothing", "Only errors"],
+          "correctAnswer": 1,
+          "explanation": "useQuery returns an object with data, loading/error states, refetch functions, and more."
+        },
+        {
+          "question": "What is the purpose of Redux DevTools?",
+          "options": ["Write code", "Debug and inspect state changes", "Style components", "Deploy apps"],
+          "correctAnswer": 1,
+          "explanation": "Redux DevTools allows you to inspect actions, state changes, and time-travel debug."
+        },
+        {
+          "question": "How does Zustand store state?",
+          "options": ["In components", "In localStorage", "In a hook-based store outside React", "In cookies"],
+          "correctAnswer": 2,
+          "explanation": "Zustand creates a hook-based store that exists outside the React tree for optimal performance."
+        },
+        {
+          "question": "What is optimistic update in React Query?",
+          "options": ["Waiting for server", "Immediately updating UI before server response", "Deleting data", "Error handling"],
+          "correctAnswer": 1,
+          "explanation": "Optimistic updates immediately update the UI before getting server confirmation for better UX."
+        },
+        {
+          "question": "What is the purpose of createSlice in Redux Toolkit?",
+          "options": ["Delete code", "Generate reducer and actions automatically", "Style components", "Test code"],
+          "correctAnswer": 1,
+          "explanation": "createSlice generates action creators and reducers automatically, reducing boilerplate."
+        }
+      ]
+    },
+    {
+      "id": "build-tools",
+      "title": "Build Tools & Module Bundlers (2-3 weeks)",
+      "description": "Vite, Webpack, npm, ESLint, Prettier, and build optimization",
+      "resources": [
+        { "title": "Vite Documentation", "url": "https://vitejs.dev/guide/", "type": "Article", "note": "Official Docs - BEST" },
+        { "title": "Webpack Documentation", "url": "https://webpack.js.org/concepts/", "type": "Article" },
+        { "title": "NPM Documentation", "url": "https://docs.npmjs.com/", "type": "Article" },
+        { "title": "ESLint Getting Started", "url": "https://eslint.org/docs/latest/use/getting-started", "type": "Article" },
+        { "title": "Prettier Documentation", "url": "https://prettier.io/docs/en/", "type": "Article" }
+      ],
+      "quiz": [
+        {
+          "question": "What are build tools in web development?",
+          "options": ["Tools that automate development tasks", "Text editors", "Databases", "Servers"],
+          "correctAnswer": 0,
+          "explanation": "Build tools automate tasks like bundling, transpiling, minifying, and optimizing code."
+        },
+        {
+          "question": "What is the main purpose of a module bundler like Webpack?",
+          "options": ["Write code", "Bundle modules into optimized files", "Test code", "Deploy apps"],
+          "correctAnswer": 1,
+          "explanation": "Module bundlers combine multiple JavaScript modules and assets into optimized bundles for browsers."
+        },
+        {
+          "question": "Why is Vite faster than traditional bundlers for development?",
+          "options": ["Better code", "Smaller files", "More features", "Uses native ES modules and esbuild"],
+          "correctAnswer": 3,
+          "explanation": "Vite leverages native ES modules in browsers and uses esbuild for pre-bundling, making it extremely fast."
+        },
+        {
+          "question": "What is npm?",
+          "options": ["A programming language", "Node Package Manager", "A framework", "A database"],
+          "correctAnswer": 1,
+          "explanation": "npm (Node Package Manager) is the default package manager for JavaScript and Node.js."
+        },
+        {
+          "question": "What does ESLint do?",
+          "options": ["Identifies and fixes code quality issues", "Bundles code", "Compiles TypeScript", "Manages packages"],
+          "correctAnswer": 0,
+          "explanation": "ESLint is a static code analysis tool that finds and fixes problems in JavaScript code."
+        },
+        {
+          "question": "What is the purpose of Prettier?",
+          "options": ["Minify code", "Test code", "Bundle modules", "Automatic code formatting"],
+          "correctAnswer": 3,
+          "explanation": "Prettier is an opinionated code formatter that enforces consistent code style."
+        },
+        {
+          "question": "What file defines project dependencies in npm?",
+          "options": ["config.json", "package.json", "dependencies.txt", "npm.config"],
+          "correctAnswer": 1,
+          "explanation": "package.json contains project metadata, scripts, and dependency information."
+        },
+        {
+          "question": "What is tree shaking in bundlers?",
+          "options": ["Removing animations", "Eliminating unused code", "Organizing files", "Testing code"],
+          "correctAnswer": 1,
+          "explanation": "Tree shaking removes unused code from the final bundle, reducing file size."
+        },
+        {
+          "question": "What does 'npm install --save-dev' do?",
+          "options": ["Deletes packages", "Installs development dependencies", "Updates npm", "Runs tests"],
+          "correctAnswer": 1,
+          "explanation": "--save-dev installs packages as devDependencies, needed only during development."
+        },
+        {
+          "question": "What is code splitting in bundlers?",
+          "options": ["Breaking code into bugs", "Dividing code into smaller chunks for lazy loading", "Deleting code", "Formatting code"],
+          "correctAnswer": 1,
+          "explanation": "Code splitting divides bundles into smaller chunks that can be loaded on demand, improving performance."
+        },
+        {
+          "question": "What is the difference between dependencies and devDependencies?",
+          "options": ["No difference", "dependencies for production, devDependencies for development", "Speed", "Size"],
+          "correctAnswer": 1,
+          "explanation": "dependencies are needed in production; devDependencies are only needed during development/build."
+        },
+        {
+          "question": "What command installs all project dependencies?",
+          "options": ["npm install", "npm get", "npm download", "npm add"],
+          "correctAnswer": 0,
+          "explanation": "'npm install' reads package.json and installs all listed dependencies."
+        },
+        {
+          "question": "What is Webpack's Hot Module Replacement (HMR)?",
+          "options": ["Deleting modules", "Updates modules without full page reload", "Creating modules", "Testing modules"],
+          "correctAnswer": 1,
+          "explanation": "HMR updates changed modules in the browser without a full page reload, preserving state."
+        },
+        {
+          "question": "What does minification do?",
+          "options": ["Adds comments", "Increases file size", "Removes whitespace and shortens code to reduce size", "Formats code"],
+          "correctAnswer": 2,
+          "explanation": "Minification removes whitespace, comments, and shortens variable names to reduce file size."
+        },
+        {
+          "question": "What is the purpose of .eslintrc file?",
+          "options": ["Store data", "Configure ESLint rules", "Define routes", "Manage packages"],
+          "correctAnswer": 1,
+          "explanation": ".eslintrc configures ESLint rules, plugins, and parser options for your project."
+        },
+        {
+          "question": "What does 'npm run build' typically do?",
+          "options": ["Deletes code", "Creates production-optimized bundle", "Installs packages", "Runs tests"],
+          "correctAnswer": 1,
+          "explanation": "'npm run build' typically creates an optimized production build of your application."
+        },
+        {
+          "question": "What is Babel used for?",
+          "options": ["Transpiling modern JavaScript to older versions", "Bundling modules", "Testing code", "Managing state"],
+          "correctAnswer": 0,
+          "explanation": "Babel transpiles modern JavaScript (ES6+) to older versions for browser compatibility."
+        },
+        {
+          "question": "What is the package-lock.json file for?",
+          "options": ["Security", "Lock exact dependency versions for consistency", "Configuration", "Testing"],
+          "correctAnswer": 1,
+          "explanation": "package-lock.json locks exact dependency versions to ensure consistent installs across environments."
+        },
+        {
+          "question": "What does 'npm ci' do differently than 'npm install'?",
+          "options": ["Faster clean install using package-lock.json", "No difference", "Slower install", "Deletes packages"],
+          "correctAnswer": 0,
+          "explanation": "'npm ci' performs a clean install using package-lock.json, faster and more reliable for CI/CD."
+        },
+        {
+          "question": "What is the benefit of using ESLint with Prettier?",
+          "options": ["Slower development", "More errors", "Code quality rules + consistent formatting", "No benefit"],
+          "correctAnswer": 2,
+          "explanation": "ESLint handles code quality and best practices; Prettier handles consistent code formatting."
+        }
+      ]
+    },
+    {
+      "id": "testing",
+      "title": "Testing (2-3 weeks)",
+      "description": "Jest, Vitest, React Testing Library, E2E testing with Cypress/Playwright",
+      "resources": [
+        { "title": "Jest Documentation", "url": "https://jestjs.io/docs/getting-started", "type": "Article", "note": "Official Docs" },
+        { "title": "Vitest Documentation", "url": "https://betterstack.com/community/guides/testing/vitest-explained/", "type": "Article" },
+        { "title": "React Testing Library", "url": "https://testing-library.com/docs/react-testing-library/intro/", "type": "Article" },
+        { "title": "Cypress Documentation", "url": "https://docs.cypress.io/", "type": "Article" },
+        { "title": "Playwright Documentation", "url": "https://playwright.dev/docs/intro", "type": "Article" },
+        { "title": "TDD Crash Course", "url": "https://www.youtube.com/embed/Jv2uxzhPFl4", "type": "Video" }
+      ],
+      "quiz": [
+        {
+          "question": "What is software testing?",
+          "options": ["Process of verifying software works correctly", "Writing code", "Deploying apps", "Designing UI"],
+          "correctAnswer": 0,
+          "explanation": "Software testing verifies that code behaves as expected and catches bugs before production."
+        },
+        {
+          "question": "What is unit testing?",
+          "options": ["Testing entire app", "Testing individual functions/components in isolation", "Testing UI only", "Testing servers"],
+          "correctAnswer": 1,
+          "explanation": "Unit testing focuses on testing individual units (functions/components) in isolation from the rest."
+        },
+        {
+          "question": "What does TDD stand for?",
+          "options": ["Total Development Design", "Test-Driven Development", "Technical Data Documentation", "Testing During Development"],
+          "correctAnswer": 1,
+          "explanation": "TDD (Test-Driven Development) is writing tests before writing the actual code."
+        },
+        {
+          "question": "What is React Testing Library's philosophy?",
+          "options": ["Test implementation", "Test internal state", "Test user behavior", "Test props only"],
+          "correctAnswer": 2,
+          "explanation": "React Testing Library encourages testing how users interact with components, not implementation details."
+        },
+        {
+          "question": "What type of testing does Cypress/Playwright perform?",
+          "options": ["Unit testing", "E2E (End-to-End) testing", "Style testing", "Performance testing"],
+          "correctAnswer": 1,
+          "explanation": "Cypress and Playwright are E2E testing tools that test entire user workflows in a browser."
+        },
+        {
+          "question": "What is the purpose of a test snapshot?",
+          "options": ["Speed up tests", "Delete code", "Deploy app", "Capture component output to detect unexpected changes"],
+          "correctAnswer": 3,
+          "explanation": "Snapshots capture component render output and detect unexpected UI changes over time."
+        },
+        {
+          "question": "What is mocking in testing?",
+          "options": ["Replacing dependencies with fake versions", "Deleting tests", "Writing more tests", "Running tests faster"],
+          "correctAnswer": 0,
+          "explanation": "Mocking replaces real dependencies with controlled fake versions to isolate unit tests."
+        },
+        {
+          "question": "How is Vitest different from Jest?",
+          "options": ["No difference", "Vitest is faster and Vite-native", "Vitest is slower", "Vitest can't test React"],
+          "correctAnswer": 1,
+          "explanation": "Vitest is designed for Vite projects, offering faster test execution and better Vite integration."
+        },
+        {
+          "question": "What does code coverage measure?",
+          "options": ["Code speed", "Percentage of code tested", "Code size", "Number of files"],
+          "correctAnswer": 1,
+          "explanation": "Code coverage measures what percentage of your codebase is executed by tests."
+        },
+        {
+          "question": "What is integration testing?",
+          "options": ["Testing multiple units working together", "Testing one function", "Testing CSS", "Testing performance"],
+          "correctAnswer": 0,
+          "explanation": "Integration testing verifies that multiple units/components work correctly together."
+        },
+        {
+          "question": "What is the AAA pattern in testing?",
+          "options": ["Always Add Assertions", "Arrange, Act, Assert", "All Apps Automated", "Asynchronous API Actions"],
+          "correctAnswer": 1,
+          "explanation": "AAA pattern: Arrange (setup), Act (execute), Assert (verify) - a common test structure."
+        },
+        {
+          "question": "What does Jest's describe() function do?",
+          "options": ["Groups related tests together", "Runs tests", "Mocks functions", "Measures coverage"],
+          "correctAnswer": 0,
+          "explanation": "describe() groups related test cases together for better organization."
+        },
+        {
+          "question": "What is the purpose of beforeEach() in testing?",
+          "options": ["Run code before each test in a suite", "Delete tests", "Mock functions", "Measure performance"],
+          "correctAnswer": 0,
+          "explanation": "beforeEach() runs setup code before each test, ensuring a clean state."
+        },
+        {
+          "question": "What does screen.getByRole() do in React Testing Library?",
+          "options": ["Deletes elements", "Queries elements by ARIA role", "Creates components", "Styles elements"],
+          "correctAnswer": 1,
+          "explanation": "getByRole() queries elements by their accessibility role, encouraging accessible tests."
+        },
+        {
+          "question": "What is a test fixture?",
+          "options": ["Fixed state or data used for testing", "Test runner", "Code coverage tool", "Error message"],
+          "correctAnswer": 0,
+          "explanation": "A test fixture is a fixed state, data, or context used to run tests consistently."
+        },
+        {
+          "question": "What does async/await help with in tests?",
+          "options": ["Testing synchronous code", "Testing asynchronous operations", "Speeding up tests", "Deleting tests"],
+          "correctAnswer": 1,
+          "explanation": "async/await allows tests to wait for asynchronous operations like API calls or state updates."
+        },
+        {
+          "question": "What is the purpose of jest.fn()?",
+          "options": ["Create mock functions", "Delete functions", "Run tests", "Measure coverage"],
+          "correctAnswer": 0,
+          "explanation": "jest.fn() creates a mock function to track calls and control return values."
+        },
+        {
+          "question": "What does waitFor() do in React Testing Library?",
+          "options": ["Speeds up tests", "Waits for conditions to be met before continuing", "Deletes elements", "Creates components"],
+          "correctAnswer": 1,
+          "explanation": "waitFor() waits for expectations to pass, useful for async state updates."
+        },
+        {
+          "question": "What is the difference between shallow and full rendering?",
+          "options": ["Shallow renders one level, full renders entire tree", "No difference", "Shallow is faster always", "Full is deprecated"],
+          "correctAnswer": 0,
+          "explanation": "Shallow rendering renders only the component itself; full rendering includes all children."
+        },
+        {
+          "question": "What is regression testing?",
+          "options": ["Testing new features", "Ensuring existing features still work after changes", "Performance testing", "Security testing"],
+          "correctAnswer": 1,
+          "explanation": "Regression testing verifies that recent code changes haven't broken existing functionality."
+        }
+      ]
+    },
+    {
+      "id": "performance-seo",
+      "title": "Performance & SEO (2-3 weeks)",
+      "description": "Web Vitals, lazy loading, code splitting, Next.js, SEO optimization",
+      "resources": [
+        { "title": "Core Web Vitals", "url": "https://www.youtube.com/embed/AQqFZ5t8uNc?si=DnSdedPhfgJkk_Vu", "type": "Video"},
+        { "title": "Next.js", "url": "https://www.youtube.com/embed/k7o9R6eaSes?si=gTOLnZzWdcxOpL2G", "type": "Video"},
+        { "title": "Code Splitting & Lazy Loading", "url": "https://www.youtube.com/embed/IBrmsyy9R94?si=pyk1nkoFraJU1_Wx", "type": "Video" },
+        { "title": "SEO Optimization", "url": "https://www.youtube.com/embed/xsVTqzratPs?si=jAIYAw6YGc_h69VB", "type": "Video" }
+      ],
+      "quiz": [
+        {
+          "question": "What is web performance optimization?",
+          "options": ["Making websites load and run faster", "Adding features", "Styling pages", "Database optimization"],
+          "correctAnswer": 0,
+          "explanation": "Web performance optimization improves how quickly pages load and respond to user interactions."
+        },
+        {
+          "question": "What are the three Core Web Vitals?",
+          "options": ["Speed, Size, Style", "LCP, FID, CLS", "HTML, CSS, JS", "Load, Click, Scroll"],
+          "correctAnswer": 1,
+          "explanation": "Core Web Vitals are LCP (Largest Contentful Paint), FID (First Input Delay), and CLS (Cumulative Layout Shift)."
+        },
+        {
+          "question": "What does LCP (Largest Contentful Paint) measure?",
+          "options": ["File size", "Loading performance - when main content loads", "Number of images", "Code quality"],
+          "correctAnswer": 1,
+          "explanation": "LCP measures loading performance by tracking when the largest content element becomes visible."
+        },
+        {
+          "question": "What is lazy loading?",
+          "options": ["Slow code", "Loading everything at once", "Deferring loading of non-critical resources", "Deleting files"],
+          "correctAnswer": 2,
+          "explanation": "Lazy loading defers loading of off-screen images/components until they're needed, improving initial load time."
+        },
+        {
+          "question": "What is the main benefit of Next.js over plain React?",
+          "options": ["Smaller size", "Server-side rendering and better SEO", "Easier syntax", "More components"],
+          "correctAnswer": 1,
+          "explanation": "Next.js provides server-side rendering, static generation, and automatic code splitting for better performance and SEO."
+        },
+        {
+          "question": "What does the <title> tag do for SEO?",
+          "options": ["Styles page", "Adds metadata", "Creates headers", "Defines page title shown in search results"],
+          "correctAnswer": 3,
+          "explanation": "The <title> tag sets the page title displayed in browser tabs and search engine results."
+        },
+        {
+          "question": "What is code splitting?",
+          "options": ["Breaking code into errors", "Dividing code into smaller bundles loaded on demand", "Deleting code", "Copying code"],
+          "correctAnswer": 1,
+          "explanation": "Code splitting breaks your app into smaller chunks that can be loaded when needed, improving initial load time."
+        },
+        {
+          "question": "What tool does Google provide to measure web performance?",
+          "options": ["Chrome", "Lighthouse", "Analytics", "Docs"],
+          "correctAnswer": 1,
+          "explanation": "Lighthouse is Google's automated tool for auditing performance, accessibility, SEO, and more."
+        },
+        {
+          "question": "What is CLS (Cumulative Layout Shift)?",
+          "options": ["Code size", "Visual stability - unexpected layout shifts", "Load time", "Color scheme"],
+          "correctAnswer": 1,
+          "explanation": "CLS measures visual stability by tracking unexpected layout shifts during page load."
+        },
+        {
+          "question": "What is the purpose of meta description tags?",
+          "options": ["Style content", "Add images", "Provide search result snippets", "Create links"],
+          "correctAnswer": 2,
+          "explanation": "Meta descriptions provide brief summaries shown in search results, influencing click-through rates."
+        },
+        {
+          "question": "How does image optimization improve performance?",
+          "options": ["Better colors", "Reduces file size and load time", "More formats", "Higher quality"],
+          "correctAnswer": 1,
+          "explanation": "Image optimization reduces file sizes through compression and modern formats (WebP, AVIF), speeding up page loads."
+        },
+        {
+          "question": "What is FID (First Input Delay)?",
+          "options": ["Time until first interaction can be processed", "File size", "Image count", "CSS loading"],
+          "correctAnswer": 0,
+          "explanation": "FID measures interactivity - the time from when a user first interacts to when the browser responds."
+        },
+        {
+          "question": "What is server-side rendering (SSR)?",
+          "options": ["Rendering HTML on the server before sending to client", "Client rendering", "CSS rendering", "Database rendering"],
+          "correctAnswer": 0,
+          "explanation": "SSR generates HTML on the server for each request, improving initial load and SEO."
+        },
+        {
+          "question": "What is static site generation (SSG)?",
+          "options": ["Pre-rendering pages at build time", "Runtime rendering", "No rendering", "Database generation"],
+          "correctAnswer": 0,
+          "explanation": "SSG generates static HTML at build time, offering best performance and SEO."
+        },
+        {
+          "question": "What does the loading='lazy' attribute do on images?",
+          "options": ["Deletes images", "Defers loading until image is near viewport", "Increases size", "Adds styling"],
+          "correctAnswer": 1,
+          "explanation": "loading='lazy' defers image loading until it's about to enter the viewport, saving bandwidth."
+        },
+        {
+          "question": "What is the purpose of structured data (Schema.org)?",
+          "options": ["Style pages", "Help search engines understand content", "Speed up site", "Add images"],
+          "correctAnswer": 1,
+          "explanation": "Structured data helps search engines understand page content, enabling rich results."
+        },
+        {
+          "question": "What is critical CSS?",
+          "options": ["All CSS", "Minimum CSS needed for above-fold content", "Deleted CSS", "Broken CSS"],
+          "correctAnswer": 1,
+          "explanation": "Critical CSS is the minimal CSS needed to render above-fold content, improving perceived performance."
+        },
+        {
+          "question": "What does the rel='preload' attribute do?",
+          "options": ["Deletes resources", "Hints browser to load critical resources early", "Adds styling", "Creates links"],
+          "correctAnswer": 1,
+          "explanation": "rel='preload' tells the browser to prioritize loading critical resources early."
+        },
+        {
+          "question": "What is Time to Interactive (TTI)?",
+          "options": ["When page is fully interactive", "File size", "Image count", "Color scheme"],
+          "correctAnswer": 0,
+          "explanation": "TTI measures how long it takes for a page to become fully interactive and responsive."
+        },
+        {
+          "question": "What is the benefit of using CDN (Content Delivery Network)?",
+          "options": ["Slower delivery", "Serves content from geographically closer servers", "More expensive", "Less reliable"],
+          "correctAnswer": 1,
+          "explanation": "CDNs serve content from servers closer to users, reducing latency and improving load times."
+        }
+      ]
+    },
+    {
+      "id": "advanced-frontend",
+      "title": "Advanced Topics (Ongoing)",
+      "description": "TypeScript, PWAs, Web Components, WCAG accessibility, animations",
+      "resources": [
+        { "title": "TypeScript Handbook", "url": "https://www.typescriptlang.org/docs/handbook/intro.html", "type": "Article", "note": "Official Docs" },
+        { "title": "TypeScript Deep Dive", "url": "https://www.youtube.com/embed/30LWjhZzg50?si=YD464X2jlKai66AK", "type": "Video"},
+        { "title": "PWA", "url": "https://www.youtube.com/embed/Videoseries?si=jt25N6ZZqzxV12TZ&amp;list=PLS1QulWo1RIYmLVaEFAEdL9ToDNl78Y6S", "type": "Video" },
+        { "title": "Web Components", "url": "https://www.youtube.com/embed/2I7uX8m0Ta0?si=IfLs1GnktQc6N8Cy", "type": "Video" },
+        { "title": "WCAG", "url": "https://www.youtube.com/embed/Hi3tQ_HzOgo?si=F8nfveYnk4GABmth", "type": "Video" },
+        { "title": "Framer Motion", "url": "https://www.framer.com/motion/", "type": "Article", "note": "Animation Library" }
+      ],
+      "quiz": [
+        {
+          "question": "What are advanced frontend topics?",
+          "options": ["Specialized skills beyond fundamentals", "Basic HTML", "Simple CSS", "Installing software"],
+          "correctAnswer": 0,
+          "explanation": "Advanced topics include TypeScript, PWAs, accessibility, Web Components, and performance optimization."
+        },
+        {
+          "question": "What is the main benefit of TypeScript over JavaScript?",
+          "options": ["Faster execution", "Static typing and better tooling", "Smaller file size", "Easier syntax"],
+          "correctAnswer": 1,
+          "explanation": "TypeScript adds static type checking, catching errors at compile-time and improving IDE support."
+        },
+        {
+          "question": "What does PWA stand for?",
+          "options": ["Personal Web App", "Progressive Web App", "Public Web Application", "Private Web Access"],
+          "correctAnswer": 1,
+          "explanation": "PWA (Progressive Web App) is a web app that works offline and can be installed like native apps."
+        },
+        {
+          "question": "What is a Service Worker?",
+          "options": ["JavaScript that runs in background for offline functionality", "A database", "A server", "A CSS file"],
+          "correctAnswer": 0,
+          "explanation": "Service Workers are scripts that run in the background, enabling offline functionality, push notifications, and caching."
+        },
+        {
+          "question": "What does WCAG stand for?",
+          "options": ["Web Code Access Guide", "Web Content Accessibility Guidelines", "Website CSS And Graphics", "Web Component API Guide"],
+          "correctAnswer": 1,
+          "explanation": "WCAG (Web Content Accessibility Guidelines) provides standards for making web content accessible to people with disabilities."
+        },
+        {
+          "question": "What are Web Components?",
+          "options": ["React components", "CSS files", "Reusable custom HTML elements", "JavaScript libraries"],
+          "correctAnswer": 2,
+          "explanation": "Web Components are reusable custom elements with encapsulated functionality, built with web standards."
+        },
+        {
+          "question": "What is TypeScript's 'any' type?",
+          "options": ["Strict type", "Error type", "Array type", "Opt-out of type checking"],
+          "correctAnswer": 3,
+          "explanation": "'any' type disables type checking for that variable, opting out of TypeScript's type safety."
+        },
+        {
+          "question": "What makes a PWA installable?",
+          "options": ["Large size", "Many pages", "Complex code", "Web app manifest and service worker"],
+          "correctAnswer": 3,
+          "explanation": "PWAs need a web app manifest file and a service worker to be installable on devices."
+        },
+        {
+          "question": "What is the Shadow DOM?",
+          "options": ["Dark theme", "Encapsulated DOM tree for Web Components", "Hidden HTML", "CSS feature"],
+          "correctAnswer": 1,
+          "explanation": "Shadow DOM provides encapsulation for Web Components, isolating styles and markup from the main document."
+        },
+        {
+          "question": "What accessibility feature helps screen readers?",
+          "options": ["ARIA labels and semantic HTML", "Colors", "Animations", "Images"],
+          "correctAnswer": 0,
+          "explanation": "ARIA (Accessible Rich Internet Applications) labels and semantic HTML help screen readers understand content."
+        },
+        {
+          "question": "What is the purpose of CSS animations vs JavaScript animations?",
+          "options": ["No difference", "CSS for simple, JS for complex interactions", "CSS is always better", "JS is deprecated"],
+          "correctAnswer": 1,
+          "explanation": "CSS animations are better for simple transitions; JavaScript provides more control for complex, Interactive animations."
+        },
+        {
+          "question": "What does TypeScript's interface define?",
+          "options": ["Contract for object structure", "CSS styles", "HTML elements", "Server routes"],
+          "correctAnswer": 0,
+          "explanation": "Interfaces define the structure/shape of objects, enforcing type contracts."
+        },
+        {
+          "question": "What is the manifest.json file in PWAs?",
+          "options": ["Defines app metadata for installation", "CSS file", "JavaScript code", "Database"],
+          "correctAnswer": 0,
+          "explanation": "The manifest file defines app name, icons, colors, and display mode for PWA installation."
+        },
+        {
+          "question": "What are the three Web Component technologies?",
+          "options": ["Custom Elements, Shadow DOM, HTML Templates", "React, Vue, Angular", "HTML, CSS, JS", "Git, npm, Webpack"],
+          "correctAnswer": 0,
+          "explanation": "Web Components use Custom Elements, Shadow DOM, and HTML Templates."
+        },
+        {
+          "question": "What is keyboard navigation in accessibility?",
+          "options": ["Using mouse only", "Allowing users to navigate with keyboard", "Touch gestures", "Voice commands"],
+          "correctAnswer": 1,
+          "explanation": "Keyboard navigation ensures users can interact with the site using only keyboard, crucial for accessibility."
+        },
+        {
+          "question": "What does the @keyframes rule define in CSS?",
+          "options": ["Animation sequence", "Media queries", "Font styles", "Grid layout"],
+          "correctAnswer": 0,
+          "explanation": "@keyframes defines the animation sequence with intermediate steps (keyframes)."
+        },
+        {
+          "question": "What is TypeScript's union type?",
+          "options": ["Variable can be one of multiple types", "Error type", "Array type", "Function type"],
+          "correctAnswer": 0,
+          "explanation": "Union types (e.g., string | number) allow a variable to be one of several types."
+        },
+        {
+          "question": "What does offline-first approach mean in PWAs?",
+          "options": ["Never use internet", "Design app to work offline first, sync when online", "No caching", "Server-only"],
+          "correctAnswer": 1,
+          "explanation": "Offline-first designs apps to work without network, synchronizing when connection is available."
+        },
+        {
+          "question": "What is the :host selector in Shadow DOM?",
+          "options": ["Styles the host element of shadow root", "Styles body", "Styles links", "Deletes styles"],
+          "correctAnswer": 0,
+          "explanation": ":host selects the shadow host element, allowing you to style the component from within."
+        },
+        {
+          "question": "What is focus management in accessibility?",
+          "options": ["Controlling which element receives keyboard focus", "Camera focus", "CSS focus", "Image focus"],
+          "correctAnswer": 0,
+          "explanation": "Focus management ensures logical focus order and visible focus indicators for keyboard users."
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Portfolio Website",
+      "description": "Build a fully responsive personal portfolio showcasing your projects with smooth animations and dark mode toggle.",
+      "difficulty": "Beginner",
+      "duration": "1-2 weeks",
+      "skills": ["HTML", "CSS", "JavaScript", "Responsive Design", "Git"],
+      "tasks": [
+        "Design and implement responsive layout with CSS Grid/Flexbox",
+        "Create Interactive navigation with smooth scrolling",
+        "Add dark/light mode toggle with localStorage persistence",
+        "Implement contact form with validation",
+        "Deploy on GitHub Pages or Netlify",
+        "Add animations using CSS transitions and transforms"
+      ]
+    },
+    {
+      "title": "E-Commerce Product Page",
+      "description": "Create a dynamic product page with image gallery, add to cart functionality, and real-time price calculation.",
+      "difficulty": "Intermediate",
+      "duration": "2-3 weeks",
+      "skills": ["React", "State Management", "API Integration", "Tailwind CSS", "React Router"],
+      "tasks": [
+        "Build product gallery with thumbnail navigation and zoom feature",
+        "Implement shopping cart with add/remove/update quantity",
+        "Create size and color selector with real-time preview",
+        "Add product reviews section with rating system",
+        "Integrate with mock API for product data",
+        "Implement responsive design for mobile and desktop",
+        "Add loading states and error handling"
+      ]
+    },
+    {
+      "title": "Social Media Dashboard",
+      "description": "Build a comprehensive dashboard displaying analytics, posts, and user engagement metrics with data visualization.",
+      "difficulty": "Intermediate",
+      "duration": "3-4 weeks",
+      "skills": ["React", "Redux Toolkit", "Chart.js", "REST API", "TypeScript", "Tailwind CSS"],
+      "tasks": [
+        "Design responsive dashboard layout with sidebar navigation",
+        "Implement authentication flow with JWT",
+        "Create Interactive charts using Chart.js or Recharts",
+        "Build post feed with infinite scroll",
+        "Add real-time notifications system",
+        "Implement search and filter functionality",
+        "Write unit tests for components",
+        "Optimize performance with React.memo and useMemo"
+      ]
+    },
+    {
+      "title": "Real-Time Chat Application",
+      "description": "Develop a full-featured chat app with private messaging, group chats, emoji support, and online status indicators.",
+      "difficulty": "Advanced",
+      "duration": "4-6 weeks",
+      "skills": ["React", "WebSocket", "Firebase/Socket.io", "Context API", "TypeScript", "PWA"],
+      "tasks": [
+        "Set up WebSocket connection for real-time messaging",
+        "Implement user authentication and profile management",
+        "Create chat rooms and private messaging",
+        "Add emoji picker and file upload functionality",
+        "Implement online/offline status and typing indicators",
+        "Build message search and conversation history",
+        "Add push notifications using Service Workers",
+        "Implement end-to-end encryption for messages",
+        "Create PWA with offline support",
+        "Write comprehensive E2E tests"
+      ]
+    },
+    {
+      "title": "Interactive Data Visualization Platform",
+      "description": "Build an analytics platform with customizable dashboards, multiple chart types, and data export capabilities.",
+      "difficulty": "Advanced",
+      "duration": "5-6 weeks",
+      "skills": ["React", "D3.js", "TypeScript", "Redux", "Next.js", "Testing Library"],
+      "tasks": [
+        "Create drag-and-drop dashboard builder",
+        "Implement multiple chart types (line, bar, pie, scatter)",
+        "Add data filtering and aggregation features",
+        "Build custom data table with sorting and pagination",
+        "Implement CSV/JSON data import and export",
+        "Create shareable dashboard links",
+        "Add real-time data updates",
+        "Optimize rendering for large datasets",
+        "Implement server-side rendering with Next.js",
+        "Write unit and integration tests",
+        "Deploy with performance monitoring"
+      ]
+    }
+  ]
+}

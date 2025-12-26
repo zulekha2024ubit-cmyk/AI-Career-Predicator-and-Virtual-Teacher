@@ -1,0 +1,27 @@
+/* tailwindcss directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #__next {
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #F7FAFC;
+  color: #2D3748;
+}
+
+/* Component classes grouped under Tailwind layer for better ordering */
+@layer components {
+  .input {
+    @apply w-full rounded border border-gray-300 bg-white px-3 py-2 text-sm outline-none transition focus:border-kaggle-blue focus:ring-1 focus:ring-kaggle-blue focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-kaggle-blue focus-visible:ring-offset-2 focus-visible:ring-offset-white;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center rounded bg-kaggle-blue px-4 py-2 text-sm font-semibold text-white hover:bg-[#1BA8E0] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-kaggle-blue focus-visible:ring-offset-2 focus-visible:ring-offset-white;
+  }
+  .card {
+    @apply rounded bg-white shadow-card p-6 hover:shadow-card-hover transition-shadow;
+  }
+}

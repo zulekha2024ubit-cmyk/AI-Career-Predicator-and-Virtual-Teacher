@@ -1,0 +1,1326 @@
+{
+  "slug": "cybersecurity",
+  "title": "Cybersecurity",
+  "summary": "Protect systems, networks, and data from digital attacks. Master offensive security (pentesting, ethical hacking) and defensive security (incident response, SOC operations).",
+  "timeline": "10-14 months",
+  "difficulty": "Advanced",
+  "steps": [
+    {
+      "id": "networking-fundamentals",
+      "title": "Networking Fundamentals (4-6 weeks)",
+      "description": "Master networking basics, OSI model, TCP/IP, subnetting, DNS security, firewalls, and packet analysis with Wireshark.",
+      "resources": [
+        { "title": "Networking Full Course", "url": "https://www.youtube.com/embed/qiQR5rTSshw", "type": "Video", "duration": "9 hours", "note": "freeCodeCamp - BEST" },
+        { "title": "OSI Model Explained", "url": "https://www.youtube.com/embed/vv4y_uOneC0", "type": "Video", "duration": "20 minutes" },
+        { "title": "TCP/IP Protocol Explained", "url": "https://www.youtube.com/embed/PpsEaqJV_A0", "type": "Video" },
+        { "title": "Professor Messer Network+", "url": "https://www.professormesser.com/network-plus/n10-008/n10-008-Video/n10-008-training-Course/", "type": "Course", "note": "FREE Course" },
+        { "title": "Subnetting Made Easy", "url": "https://www.youtube.com/embed/ecCuyq-Wprc", "type": "Video", "duration": "30 minutes", "note": "BEST" },
+        { "title": "DNS Security Explained", "url": "https://www.youtube.com/embed/mpQZVYPuDGU", "type": "Video" },
+        { "title": "Firewalls Explained", "url": "https://www.youtube.com/embed/kDEX1HXybrU", "type": "Video" },
+        { "title": "Wireshark Tutorial", "url": "https://www.youtube.com/embed/TkCSr30UojM", "type": "Video", "duration": "1 hour" },
+        { "title": "Practical Networking", "url": "https://www.practicalnetworking.net/", "type": "Interactive" }
+      ],
+      "quiz": [
+        {"question": "How many layers are in the OSI model?", "options": ["5", "6", "7", "8"], "correctAnswer": 2, "explanation": "The OSI model has 7 layers: Physical, Data Link, Network, Transport, Session, Presentation, and Application."},
+        {"question": "What protocol does TCP use to establish a connection?", "options": ["Two-way handshake", "Three-way handshake", "Four-way handshake", "Five-way handshake"], "correctAnswer": 1, "explanation": "TCP uses a three-way handshake (SYN, SYN-ACK, ACK) to establish a reliable connection."},
+        {"question": "Which port does HTTPS use by default?", "options": ["80", "8080", "443", "22"], "correctAnswer": 2, "explanation": "HTTPS uses port 443 by default, while HTTP uses port 80."},
+        {"question": "What is the purpose of a firewall?", "options": ["Speed up network", "Store data", "Encrypt files", "Control network traffic based on security rules"], "correctAnswer": 3, "explanation": "Firewalls filter incoming and outgoing network traffic based on defined security rules."},
+        {"question": "What does Wireshark do?", "options": ["Captures and analyzes network packets", "Blocks malware", "Encrypts data", "Creates backups"], "correctAnswer": 0, "explanation": "Wireshark is a network protocol analyzer that captures and displays packets in real-time."},
+        {"question": "What is subnetting?", "options": ["Deleting networks", "Dividing a network into smaller subnetworks", "Merging networks", "Encrypting networks"], "correctAnswer": 1, "explanation": "Subnetting divides a large network into smaller, manageable subnetworks for better organization and security."},
+        {"question": "Which protocol is used for DNS?", "options": ["TCP only", "UDP only", "Both UDP and TCP", "ICMP"], "correctAnswer": 2, "explanation": "DNS primarily uses UDP port 53 for queries, but also uses TCP for zone transfers and large responses."},
+        {"question": "What does ARP do?", "options": ["Encrypts data", "Maps IP addresses to MAC addresses", "Routes packets", "Compresses files"], "correctAnswer": 1, "explanation": "ARP (Address Resolution Protocol) resolves IP addresses to MAC addresses on a local network."},
+        {"question": "Which layer of the OSI model does a router operate at?", "options": ["Layer 1 - Physical", "Layer 2 - Data Link", "Layer 3 - Network", "Layer 4 - Transport"], "correctAnswer": 2, "explanation": "Routers operate at Layer 3 (Network layer), making routing decisions based on IP addresses."},
+        {"question": "What is the default subnet mask for a Class C network?", "options": ["255.0.0.0", "255.255.0.0", "255.255.255.0", "255.255.255.255"], "correctAnswer": 2, "explanation": "Class C networks use 255.255.255.0 as the default subnet mask, allowing 254 usable host addresses."},
+        {"question": "What is ICMP used for?", "options": ["File transfer", "Email", "Network diagnostics and error messages", "Web browsing"], "correctAnswer": 2, "explanation": "ICMP is used for network diagnostics (ping, traceroute) and error reporting."},
+        {"question": "What port does SSH use?", "options": ["21", "22", "23", "25"], "correctAnswer": 1, "explanation": "SSH (Secure Shell) uses port 22 for encrypted remote connections."},
+        {"question": "What is a VLAN?", "options": ["Virtual Local Area Network for logical segmentation", "Virtual LAN cable", "VPN service", "Virus protection"], "correctAnswer": 0, "explanation": "VLANs logically segment networks for security and traffic management."},
+        {"question": "What does NAT do?", "options": ["Network Address Translation - maps private IPs to public", "Network Analysis Tool", "Name Address Transfer", "Node Assignment Table"], "correctAnswer": 0, "explanation": "NAT translates private IP addresses to public IPs for internet connectivity."},
+        {"question": "What is the difference between TCP and UDP?", "options": ["No difference", "TCP is reliable and connection-oriented; UDP is fast and connectionless", "UDP is slower", "TCP is unreliable"], "correctAnswer": 1, "explanation": "TCP ensures reliable delivery with error checking; UDP is faster but doesn't guarantee delivery."},
+        {"question": "What is port scanning?", "options": ["Encrypting ports", "Probing for open network ports", "Closing ports", "Deleting ports"], "correctAnswer": 1, "explanation": "Port scanning identifies open ports and services running on a network."},
+        {"question": "What is a DMZ in networking?", "options": ["Demilitarized Zone - isolated network segment", "Data Management Zone", "Direct Memory Zone", "Desktop Management Zone"], "correctAnswer": 0, "explanation": "DMZ is a network segment that exposes services to the internet while protecting internal networks."},
+        {"question": "What does TTL stand for?", "options": ["Total Transfer Limit", "Time To Live", "Transfer Time Limit", "Total Time Latency"], "correctAnswer": 1, "explanation": "TTL limits packet lifetime in networks, preventing infinite routing loops."},
+        {"question": "What is DHCP?", "options": ["Dynamic Host Configuration Protocol - assigns IP addresses", "Data Host Control Protocol", "Dynamic Hosting Communication", "Digital Hardware Configuration"], "correctAnswer": 0, "explanation": "DHCP automatically assigns IP addresses and network configuration to devices."},
+        {"question": "What is the purpose of a proxy server?", "options": ["Direct connection", "Acts as intermediary between client and server", "Stores files", "Encrypts data only"], "correctAnswer": 1, "explanation": "Proxy servers forward requests, providing anonymity, caching, and filtering."}
+      ]
+    },
+    {
+      "id": "operating-systems-linux",
+      "title": "Operating Systems & Linux (3-4 weeks)",
+      "description": "Master Linux for hackers, system administration, file permissions, security, logs. Learn Windows security and PowerShell.",
+      "resources": [
+        { "title": "Linux Full Course", "url": "https://www.youtube.com/embed/ROjZy1WbCIA", "type": "Video", "duration": "5 hours", "note": "freeCodeCamp - BEST" },
+        { "title": "Linux for Hackers", "url": "https://www.youtube.com/embed/U1w4T03B30I", "type": "Video", "duration": "2 hours" },
+        { "title": "File Permissions & Security", "url": "https://www.youtube.com/embed/LnKoncbQBsM", "type": "Video" },
+        { "title": "PowerShell for Beginners", "url": "https://www.youtube.com/embed/UVUd9_k9C6A", "type": "Video", "duration": "3 hours" },
+        { "title": "OverTheWire Bandit", "url": "https://overthewire.org/wargames/bandit/", "type": "Interactive", "note": "Learn Linux Gaming - BEST" },
+        { "title": "HackTheBox Linux Challenges", "url": "https://www.hackthebox.com/", "type": "Interactive" }
+      ],
+      "quiz": [
+        {"question": "Which Linux command lists all files including hidden ones?", "options": ["ls -a", "ls -l", "ls -h", "ls -r"], "correctAnswer": 0, "explanation": "The 'ls -a' command lists all files, including hidden files that start with a dot (.)"},
+        {"question": "What does chmod 755 mean for a file?", "options": ["Read only for all", "Owner: rwx, Group: rx, Others: rx", "Full access for all", "No access"], "correctAnswer": 1, "explanation": "chmod 755 gives owner read/write/execute (7), and group/others read/execute (5) permissions."},
+        {"question": "Which directory contains system log files in Linux?", "options": ["/home", "/bin", "/var/log", "/etc"], "correctAnswer": 2, "explanation": "/var/log stores system and application log files, critical for security monitoring and troubleshooting."},
+        {"question": "What does the 'sudo' command do?", "options": ["Shutdown system", "Show users", "Save document", "Execute command with superuser privileges"], "correctAnswer": 3, "explanation": "'sudo' allows permitted users to execute commands with root/superuser privileges."},
+        {"question": "Which file stores user account information in Linux?", "options": ["/etc/passwd", "/etc/users", "/var/users", "/home/users"], "correctAnswer": 0, "explanation": "/etc/passwd contains user account information including username, UID, GID, home directory."},
+        {"question": "What is the purpose of /etc/shadow?", "options": ["Store backups", "Store encrypted passwords", "Store system logs", "Store configurations"], "correctAnswer": 1, "explanation": "/etc/shadow stores encrypted user passwords and password-related information securely."},
+        {"question": "Which command finds files in Linux?", "options": ["search", "locate", "find", "Both 'locate' and 'find'"], "correctAnswer": 3, "explanation": "Both 'find' (real-time search) and 'locate' (database search) can find files in Linux."},
+        {"question": "What does 'ps aux' display?", "options": ["All running processes", "Disk usage", "Network connections", "User accounts"], "correctAnswer": 0, "explanation": "'ps aux' displays all running processes with detailed information about CPU and memory usage."},
+        {"question": "Which Windows tool is equivalent to Linux's 'grep'?", "options": ["netstat", "findstr", "ipconfig", "tasklist"], "correctAnswer": 1, "explanation": "'findstr' in Windows searches for text patterns in files, similar to 'grep' in Linux."},
+        {"question": "What is the purpose of cron in Linux?", "options": ["Schedule automated tasks", "Compress files", "Monitor network", "Encrypt data"], "correctAnswer": 0, "explanation": "Cron is a time-based job scheduler that runs commands or scripts at specified intervals."},
+        {"question": "What does the 'chmod +x' command do?", "options": ["Deletes file", "Makes file executable", "Compresses file", "Encrypts file"], "correctAnswer": 1, "explanation": "chmod +x adds execute permission, allowing the file to be run as a program."},
+        {"question": "What is /etc/hosts file used for?", "options": ["Store passwords", "Local hostname to IP address mapping", "System logs", "User accounts"], "correctAnswer": 1, "explanation": "/etc/hosts maps hostnames to IP addresses locally, bypassing DNS."},
+        {"question": "What does 'netstat' command show?", "options": ["Disk space", "Network connections and listening ports", "User accounts", "File permissions"], "correctAnswer": 1, "explanation": "netstat displays network connections, routing tables, and network statistics."},
+        {"question": "What is the root user in Linux?", "options": ["Regular user", "Superuser with full system access", "Guest user", "Limited user"], "correctAnswer": 1, "explanation": "Root (UID 0) has unrestricted access to all system commands and files."},
+        {"question": "What does 'grep' command do?", "options": ["Delete files", "Search for text patterns in files", "Copy files", "Compress files"], "correctAnswer": 1, "explanation": "grep searches file contents for lines matching a specified pattern."},
+        {"question": "What is the purpose of /etc/sudoers?", "options": ["Store logs", "Define who can use sudo and with what permissions", "User passwords", "Network settings"], "correctAnswer": 1, "explanation": "/etc/sudoers specifies which users can execute commands as root using sudo."},
+        {"question": "What does 'chown' command do?", "options": ["Change file permissions", "Change file owner and group", "Delete files", "Copy files"], "correctAnswer": 1, "explanation": "chown changes the user and/or group ownership of files."},
+        {"question": "What is SUID bit in Linux?", "options": ["Security Update ID", "Set User ID - execute with file owner's permissions", "System User Identifier", "Secure Unix ID"], "correctAnswer": 1, "explanation": "SUID allows users to execute a file with the permissions of the file owner."},
+        {"question": "What does PowerShell's Get-NetTCPConnection do?", "options": ["Gets disk info", "Gets TCP connections similar to netstat", "Gets users", "Gets processes"], "correctAnswer": 1, "explanation": "Get-NetTCPConnection retrieves TCP connection information in Windows."},
+        {"question": "What is /proc directory in Linux?", "options": ["Program files", "Virtual filesystem providing process and kernel information", "User files", "System logs"], "correctAnswer": 1, "explanation": "/proc is a pseudo-filesystem exposing kernel and process information."}
+      ]
+    },
+    {
+      "id": "programming-scripting",
+      "title": "Programming & Scripting (4-6 weeks)",
+      "description": "Learn Python for hacking and security automation, network programming, Bash scripting, and PowerShell for penetration testing.",
+      "resources": [
+        { "title": "Python Full Course", "url": "https://www.youtube.com/embed/rfscVS0vtbw", "type": "Video", "duration": "4 hours", "note": "freeCodeCamp - BEST" },
+        { "title": "Python for Cybersecurity", "url": "https://www.youtube.com/embed/AFMcuH-rXxM?si=du9QGVdtGmYsTHiX", "type": "Video", "duration": "6 hours" },
+        { "title": "Python for Hacking", "url": "https://www.youtube.com/embed/Wfe1q7nx8WU", "type": "Video" },
+        { "title": "Automate the Boring Stuff", "url": "https://automatetheboringstuff.com/", "type": "Book", "note": "Free Book" },
+        { "title": "Socket Programming in Python", "url":"https://www.youtube.com/embed/u4kr7EFxAKk?si=rt9w0fw3vHGoU_NV", "type": "Video" },
+        { "title": "Building Port Scanner", "url": "https://www.youtube.com/embed/FGdiSJakIS4?si=sZg39ykdHybA8A_g", "type": "Video" },
+        { "title": "Bash Scripting Full Course", "url": "https://www.youtube.com/embed/tK9Oc6AEnR4", "type": "Video", "duration": "3 hours" },
+        { "title": "PowerShell for Pentesters", "url":"https://www.youtube.com/embed/videoseries?si=1H1FpVYJYni50B8R&amp;list=PLzKIBgD3ky20006eJjHXvx9MIYM7nzQlp", "type": "Video" }
+      ],
+      "quiz": [
+        {"question": "Which Python library is commonly used for network scanning?", "options": ["scapy", "numpy", "pandas", "matplotlib"], "correctAnswer": 0, "explanation": "Scapy is a powerful Python library for packet manipulation and network scanning."},
+        {"question": "What does the socket module in Python do?", "options": ["File operations", "Network programming and connections", "Data encryption", "GUI creation"], "correctAnswer": 1, "explanation": "The socket module provides low-level network interface for creating network connections."},
+        {"question": "Which symbol is used for comments in Bash scripts?", "options": ["//", "#", "/*", "--"], "correctAnswer": 1, "explanation": "The hash symbol (#) is used for single-line comments in Bash scripts."},
+        {"question": "What is the purpose of PowerShell's Get-Process cmdlet?", "options": ["Get network info", "Get disk space", "Get user accounts", "Get running processes"], "correctAnswer": 3, "explanation": "Get-Process retrieves information about running processes on the local or remote computer."},
+        {"question": "Which Python library is used for HTTP requests?", "options": ["requests", "http", "urllib", "Both 'requests' and 'urllib'"], "correctAnswer": 3, "explanation": "Both 'requests' (simpler) and 'urllib' (built-in) can be used for HTTP requests in Python."},
+        {"question": "What does 'nmap' module in Python provide?", "options": ["Python wrapper for Nmap port scanner", "Email sending", "File compression", "Database access"], "correctAnswer": 0, "explanation": "python-nmap provides a Python interface to Nmap port scanning tool."},
+        {"question": "In Bash, what does $1 represent?", "options": ["Exit code", "First command-line argument", "Process ID", "Current directory"], "correctAnswer": 1, "explanation": "$1 represents the first command-line argument passed to a Bash script."},
+        {"question": "Which PowerShell operator is used for comparison?", "options": ["==", "-eq", "is", "equals"], "correctAnswer": 1, "explanation": "PowerShell uses -eq for equality comparison, along with -ne, -gt, -lt, etc."},
+        {"question": "What is paramiko in Python?", "options": ["SSH library for remote connections", "Web framework", "Database driver", "Testing framework"], "correctAnswer": 0, "explanation": "Paramiko is a Python library for SSH protocol, enabling remote command execution and file transfer."},
+        {"question": "Which Bash command executes a script?", "options": ["run script.sh", "./script.sh or bash script.sh", "execute script.sh", "start script.sh"], "correctAnswer": 1, "explanation": "Scripts can be executed with './script.sh' (if executable) or 'bash script.sh'."},
+        {"question": "What does sys.argv contain in Python?", "options": ["Environment variables", "Command-line arguments passed to script", "System information", "File paths"], "correctAnswer": 1, "explanation": "sys.argv is a list of command-line arguments, where sys.argv[0] is the script name."},
+        {"question": "What is hashlib used for in Python?", "options": ["Network scanning", "Cryptographic hashing (MD5, SHA)", "Web scraping", "Data visualization"], "correctAnswer": 1, "explanation": "hashlib provides hash functions like MD5, SHA-1, SHA-256 for security applications."},
+        {"question": "In Bash, what does $? represent?", "options": ["Process ID", "Exit status of last command", "Number of arguments", "Home directory"], "correctAnswer": 1, "explanation": "$? contains the exit code of the most recently executed command (0 = success)."},
+        {"question": "What does PowerShell's Invoke-WebRequest do?", "options": ["Deletes files", "Makes HTTP/HTTPS requests", "Scans networks", "Lists processes"], "correctAnswer": 1, "explanation": "Invoke-WebRequest (alias: wget, curl) sends HTTP/HTTPS requests in PowerShell."},
+        {"question": "What is subprocess module in Python?", "options": ["Run external commands and processes", "Database operations", "GUI creation", "File compression"], "correctAnswer": 0, "explanation": "subprocess spawns new processes, executes system commands, and captures output."},
+        {"question": "What does chmod +x do to a Bash script?", "options": ["Deletes it", "Makes it executable", "Encrypts it", "Compresses it"], "correctAnswer": 1, "explanation": "chmod +x adds execute permission, allowing the script to be run directly."},
+        {"question": "What is the shebang (#!) in Bash scripts?", "options": ["Comment", "Specifies interpreter path", "Variable", "Function"], "correctAnswer": 1, "explanation": "Shebang (e.g., #!/bin/bash) tells the system which interpreter to use."},
+        {"question": "What does PowerShell's Get-Content cmdlet do?", "options": ["Deletes files", "Reads file contents", "Lists directories", "Gets processes"], "correctAnswer": 1, "explanation": "Get-Content reads and displays file contents (similar to 'cat' in Linux)."},
+        {"question": "What is os module used for in Python?", "options": ["Operating system interface and file operations", "Network scanning", "Web development", "Data analysis"], "correctAnswer": 0, "explanation": "os module provides functions for interacting with the operating system and filesystem."},
+        {"question": "What does the 'for' loop in Bash iterate over?", "options": ["Nothing", "List of items/values", "Time intervals", "Network ports"], "correctAnswer": 1, "explanation": "Bash 'for' loops iterate over specified items, files, or ranges of values."}
+      ]
+    },
+    {
+      "id": "security-fundamentals",
+      "title": "Information Security Basics (3-4 weeks)",
+      "description": "Learn security fundamentals, CompTIA Security+, OWASP Top 10, CIA triad, encryption, hashing, and PKI infrastructure.",
+      "resources": [
+        { "title": "Intro to Cybersecurity Full Course", "url": "https://www.youtube.com/embed/9HOpanT0GRs?si=ik105DRRZA8Oofav", "type": "Video"},
+        { "title": "CompTIA Security+ Course", "url": "https://www.professormesser.com/security-plus/sy0-601/sy0-601-Video/sy0-601-comptia-security-plus-Course/", "type": "Course", "note": "FREE" },
+        { "title": "CIA Triad Explained", "url": "https://www.youtube.com/embed/AJTJN4wDBM8", "type": "Video", "duration": "10 minutes" },
+        { "title": "OWASP Top 10 Explained", "url": "https://www.youtube.com/embed/rWHvp7rUka8", "type": "Video", "duration": "30 minutes" },
+        { "title": "Encryption Explained", "url": "https://www.youtube.com/embed/C4ATDMIz5wc", "type": "Video", "duration": "15 minutes" },
+        { "title": "Hashing vs Encryption", "url": "https://www.youtube.com/embed/GI790E1JMgw", "type": "Video" },
+        { "title": "PKI Explained", "url": "https://www.youtube.com/embed/5rT6fZUwhG8", "type": "Video" }
+      ],
+      "quiz": [
+        {"question": "What does the CIA triad stand for in cybersecurity?", "options": ["Confidentiality, Integrity, Availability", "Computer, Internet, Access", "Central Intelligence Agency", "Certification, Investigation, Analysis"], "correctAnswer": 0, "explanation": "CIA triad represents the three core principles: Confidentiality, Integrity, and Availability."},
+        {"question": "Which OWASP Top 10 vulnerability involves injecting malicious SQL code?", "options": ["XSS", "SQL Injection", "CSRF", "XXE"], "correctAnswer": 1, "explanation": "SQL Injection allows attackers to execute malicious SQL commands in database queries."},
+        {"question": "What is the difference between hashing and encryption?", "options": ["No difference", "Same thing", "Hashing is one-way, encryption is reversible", "Hashing is reversible, encryption is one-way"], "correctAnswer": 2, "explanation": "Hashing is a one-way function (cannot be reversed), while encryption can be decrypted with a key."},
+        {"question": "What does PKI stand for?", "options": ["Private Key Infrastructure", "Password Key Integration", "Public Key Identification", "Public Key Infrastructure"], "correctAnswer": 3, "explanation": "PKI (Public Key Infrastructure) manages digital certificates and public-key encryption."},
+        {"question": "Which principle ensures data has not been modified?", "options": ["Integrity", "Confidentiality", "Availability", "Authentication"], "correctAnswer": 0, "explanation": "Integrity ensures that data remains accurate and hasn't been tampered with."},
+        {"question": "What is the purpose of CompTIA Security+ certification?", "options": ["Programming skills", "Baseline cybersecurity knowledge validation", "Network administration", "Database management"], "correctAnswer": 1, "explanation": "CompTIA Security+ validates foundational cybersecurity skills and knowledge."},
+        {"question": "What does XSS stand for?", "options": ["Cross-Site Scripting", "Extra Security System", "External Site Script", "Cross-Server Security"], "correctAnswer": 0, "explanation": "XSS (Cross-Site Scripting) allows attackers to inject malicious scripts into web pages."},
+        {"question": "What is the purpose of salting in password storage?", "options": ["Speed up hashing", "Add random data to prevent rainbow table attacks", "Encrypt passwords", "Compress data"], "correctAnswer": 1, "explanation": "Salting adds random data to passwords before hashing, making rainbow table attacks ineffective."},
+        {"question": "Which principle ensures systems are accessible when needed?", "options": ["Availability", "Integrity", "Confidentiality", "Authentication"], "correctAnswer": 0, "explanation": "Availability ensures systems and data are accessible to authorized users when needed."},
+        {"question": "What is defense in depth?", "options": ["Single strong firewall", "Layered security approach with multiple controls", "Deep packet inspection", "One security measure"], "correctAnswer": 1, "explanation": "Defense in depth uses multiple layers of security controls to protect systems comprehensively."},
+        {"question": "What is authentication?", "options": ["Encrypting data", "Verifying user identity", "Blocking traffic", "Storing passwords"], "correctAnswer": 1, "explanation": "Authentication verifies that users are who they claim to be."},
+        {"question": "What is authorization?", "options": ["Verifying identity", "Determining access rights after authentication", "Encrypting files", "Creating accounts"], "correctAnswer": 1, "explanation": "Authorization determines what resources an authenticated user can access."},
+        {"question": "What is non-repudiation?", "options": ["Denying actions", "Preventing denial of having performed actions", "Encryption method", "Access control"], "correctAnswer": 1, "explanation": "Non-repudiation ensures actions cannot be denied through digital signatures and logs."},
+        {"question": "What is two-factor authentication (2FA)?", "options": ["Single password", "Two different authentication methods", "Two passwords", "Biometric only"], "correctAnswer": 1, "explanation": "2FA requires two different factors (something you know, have, or are) for authentication."},
+        {"question": "What is the least privilege principle?", "options": ["Give everyone admin rights", "Grant minimum permissions needed for job functions", "No permissions", "Full access for all"], "correctAnswer": 1, "explanation": "Least privilege limits user access rights to the minimum necessary for their role."},
+        {"question": "What is a rainbow table?", "options": ["Color chart", "Precomputed hash table for cracking passwords", "Network diagram", "Access list"], "correctAnswer": 1, "explanation": "Rainbow tables contain precomputed hashes to quickly crack unsalted passwords."},
+        {"question": "What is AAA in security?", "options": ["Authentication, Authorization, Accounting", "Advanced Access Authentication", "Automated Account Administration", "Active Account Access"], "correctAnswer": 0, "explanation": "AAA framework manages Authentication, Authorization, and Accounting for security."},
+        {"question": "What is a security policy?", "options": ["Insurance document", "Documented rules for protecting assets", "Firewall rules", "Password"], "correctAnswer": 1, "explanation": "Security policies define organizational rules and procedures for protecting information assets."},
+        {"question": "What is risk management?", "options": ["Ignoring threats", "Identifying, assessing, and mitigating security risks", "Insurance only", "Blocking everything"], "correctAnswer": 1, "explanation": "Risk management identifies threats, assesses impact, and implements controls to mitigate risks."},
+        {"question": "What is security awareness training?", "options": ["Technical hacking course", "Educating users about security threats and best practices", "Programming training", "Network setup"], "correctAnswer": 1, "explanation": "Security awareness trains users to recognize phishing, social engineering, and safe practices."}
+      ]
+    },
+    {
+      "id": "cryptography",
+      "title": "Cryptography (2-3 weeks)",
+      "description": "Master symmetric and asymmetric encryption, AES, RSA, SSL/TLS protocols, and practical cryptography implementations.",
+      "resources": [
+        { "title": "Cryptography Full Course", "url": "https://www.youtube.com/embed/4zahvcJ9glg", "type": "Video", "duration": "90 minutes", "note": "BEST" },
+        { "title": "Crypto101", "url": "https://www.crypto101.io/", "type": "Book", "note": "Free Interactive Book" },
+        { "title": "AES Encryption Explained", "url": "https://www.youtube.com/embed/C4ATDMIz5wc", "type": "Video" },
+        { "title": "RSA Encryption Tutorial", "url": "https://www.youtube.com/embed/wXB-V_Keiu8", "type": "Video" },
+        { "title": "How SSL/TLS Works", "url": "https://www.youtube.com/embed/iQsKdtjwtYI", "type": "Video" },
+        { "title": "Applied Cryptography", "url": "https://www.schneier.com/Books/applied-cryptography/", "type": "Book" }
+      ],
+      "quiz": [
+        {
+          "question": "What type of encryption uses the same key for encryption and decryption?",
+          "options": ["Asymmetric encryption", "Symmetric encryption", "Hashing", "Digital signature"],
+          "correctAnswer": 1,
+          "explanation": "Symmetric encryption uses the same key for both encryption and decryption (e.g., AES)."
+        },
+        {
+          "question": "Which algorithm is an example of asymmetric encryption?",
+          "options": ["AES", "DES", "RSA", "3DES"],
+          "correctAnswer": 2,
+          "explanation": "RSA is an asymmetric encryption algorithm using public and private key pairs."
+        },
+        {
+          "question": "What does SSL/TLS provide?",
+          "options": ["Data compression", "File storage", "Secure communication over networks", "Backup solution"],
+          "correctAnswer": 2,
+          "explanation": "SSL/TLS protocols provide encrypted, authenticated communication over networks like the internet."
+        },
+        {
+          "question": "What is AES?",
+          "options": ["Advanced Encryption Standard - symmetric cipher", "Asymmetric Encryption System", "Authentication Encryption Service", "Advanced Email Security"],
+          "correctAnswer": 0,
+          "explanation": "AES (Advanced Encryption Standard) is a widely-used symmetric encryption algorithm."
+        },
+        {
+          "question": "What is the key size of AES-256?",
+          "options": ["128 bits", "192 bits", "256 bits", "512 bits"],
+          "correctAnswer": 2,
+          "explanation": "AES-256 uses a 256-bit key, providing strong encryption security."
+        },
+        {
+          "question": "What does a digital signature provide?",
+          "options": ["Encryption only", "Authentication and non-repudiation", "Data compression", "Speed improvement"],
+          "correctAnswer": 1,
+          "explanation": "Digital signatures authenticate the sender and provide non-repudiation (proof of origin)."
+        },
+        {
+          "question": "Which hashing algorithm is considered secure?",
+          "options": ["MD5", "SHA-1", "SHA-256", "CRC32"],
+          "correctAnswer": 2,
+          "explanation": "SHA-256 is currently considered secure; MD5 and SHA-1 have known vulnerabilities."
+        },
+        {
+          "question": "What is Diffie-Hellman used for?",
+          "options": ["Hashing passwords", "Key exchange over insecure channels", "File compression", "Data storage"],
+          "correctAnswer": 1,
+          "explanation": "Diffie-Hellman allows two parties to securely exchange cryptographic keys over a public channel."
+        },
+        {
+          "question": "What is the main advantage of asymmetric encryption?",
+          "options": ["Faster than symmetric", "No need to share private key", "Uses less memory", "Simpler implementation"],
+          "correctAnswer": 1,
+          "explanation": "Asymmetric encryption doesn't require sharing the private key; only the public key is distributed."
+        },
+        {
+          "question": "What does a certificate authority (CA) do?",
+          "options": ["Issues and manages digital certificates", "Encrypts data", "Stores passwords", "Monitors networks"],
+          "correctAnswer": 0,
+          "explanation": "A CA issues, verifies, and manages digital certificates for establishing trust in PKI."
+        },
+        {
+          "question": "What is the difference between symmetric and asymmetric encryption?",
+          "options": ["No difference", "Symmetric uses one key, asymmetric uses key pairs", "Symmetric is slower", "Asymmetric is weaker"],
+          "correctAnswer": 1,
+          "explanation": "Symmetric uses single shared key; asymmetric uses public/private key pairs."
+        },
+        {
+          "question": "What is perfect forward secrecy (PFS)?",
+          "options": ["Permanent encryption", "Session keys don't compromise past sessions", "Faster encryption", "Stronger passwords"],
+          "correctAnswer": 1,
+          "explanation": "PFS ensures that compromised session keys don't decrypt past communications."
+        },
+        {
+          "question": "What is the purpose of a salt in cryptography?",
+          "options": ["Speed up encryption", "Add randomness to prevent precomputed attacks", "Compress data", "Verify identity"],
+          "correctAnswer": 1,
+          "explanation": "Salts add random data to inputs before hashing, preventing rainbow table attacks."
+        },
+        {
+          "question": "What is elliptic curve cryptography (ECC)?",
+          "options": ["Hashing method", "Public-key cryptography using elliptic curves", "Symmetric algorithm", "Password storage"],
+          "correctAnswer": 1,
+          "explanation": "ECC uses elliptic curves for efficient public-key cryptography with smaller keys."
+        },
+        {
+          "question": "What is a hash collision?",
+          "options": ["Network error", "Different inputs produce same hash output", "Key exchange fails", "Certificate expires"],
+          "correctAnswer": 1,
+          "explanation": "Hash collision happens when two different inputs generate identical hash values."
+        },
+        {
+          "question": "What is a cipher mode?",
+          "options": ["Encryption algorithm", "Method for applying block ciphers to data", "Hashing technique", "Key generation"],
+          "correctAnswer": 1,
+          "explanation": "Cipher modes (CBC, ECB, GCM) define how block ciphers process multiple data blocks."
+        },
+        {
+          "question": "What does TLS handshake accomplish?",
+          "options": ["File transfer", "Negotiate encryption and authenticate parties", "Delete data", "Scan ports"],
+          "correctAnswer": 1,
+          "explanation": "TLS handshake negotiates encryption parameters and authenticates communicating parties."
+        },
+        {
+          "question": "What is key stretching?",
+          "options": ["Making keys longer physically", "Increasing key computation time to resist brute force", "Compressing keys", "Sharing keys"],
+          "correctAnswer": 1,
+          "explanation": "Key stretching (PBKDF2, bcrypt) makes brute force attacks computationally expensive."
+        },
+        {
+          "question": "What is certificate pinning?",
+          "options": ["Storing certificates on wall", "Associating host with expected certificate", "Encrypting certificates", "Deleting certificates"],
+          "correctAnswer": 1,
+          "explanation": "Certificate pinning validates that a host presents an expected specific certificate."
+        },
+        {
+          "question": "What is the purpose of HMAC?",
+          "options": ["Encrypt files", "Provide message authentication with hashing", "Compress data", "Generate keys"],
+          "correctAnswer": 1,
+          "explanation": "HMAC (Hash-based Message Authentication Code) verifies data integrity and authenticity."
+        }
+      ]
+    },
+    {
+      "id": "web-security",
+      "title": "Web Application Security (4-6 weeks)",
+      "description": "Master OWASP Top 10: SQL Injection, XSS, CSRF, SSRF, authentication flaws, session management, API security. Practice on vulnerable apps.",
+      "resources": [
+        { "title": "OWASP Top 10 Overview", "url": "https://www.youtube.com/embed/wUaeKEl1RCw?si=Ba8GP5qteBYk6RH0", "type": "Video" },
+        { "title": "SQL Injection", "url": "https://www.youtube.com/embed/fiq59DuhY68?si=TWx4AvHVpMEC_T0n", "type": "Video" },
+        { "title": "Cross-Site Scripting (XSS)", "url": "https://www.youtube.com/embed/cWu_FJUrH5Y?si=TDA8OFCMRVvp7DeY", "type": "Video" },
+        { "title": "Cross-Site Request Forgery", "url": "https://www.youtube.com/embed/m0EHlfTgGUU?si=IBRHCVUqCJb_GHTz", "type": "Video" },
+        { "title": "Server-Side Request Forgery", "url": "https://www.youtube.com/embed/ih5R_c16bKc?si=OHEVzYHBBRrDMyIl", "type": "Video" },
+        { "title": "Authentication Vulnerabilities", "url": "https://www.youtube.com/embed/mox6DL4zK7I?si=e3MrbLRu4N9pkCM9", "type": "Video" },
+        { "title": "Session Management Vulnerabilities", "url": "https://www.youtube.com/embed/KlS15aMIpoU?si=S7BDRs1EKBYbcpDm", "type": "Video" },
+        { "title": "OWASP API Security Top 10", "url": "https://www.youtube.com/embed/YYe0FdfdgDU?si=djt5GTerJ09IfrWG", "type": "Video" }
+      ],
+      "quiz": [
+        {
+          "question": "What is SQL Injection?",
+          "options": ["Attacking databases by injecting malicious SQL code", "Encrypting SQL queries", "Optimizing database", "Backing up data"],
+          "correctAnswer": 0,
+          "explanation": "SQL Injection exploits vulnerabilities to execute unauthorized SQL commands in database queries."
+        },
+        {
+          "question": "What does XSS allow attackers to do?",
+          "options": ["Access database", "Inject malicious scripts into web pages viewed by users", "Delete files", "Encrypt data"],
+          "correctAnswer": 1,
+          "explanation": "XSS (Cross-Site Scripting) injects malicious scripts into trusted websites, executing in victims' browsers."
+        },
+        {
+          "question": "What is CSRF?",
+          "options": ["Encryption method", "Database attack", "Attack forcing users to execute unwanted actions", "Password cracking"],
+          "correctAnswer": 2,
+          "explanation": "CSRF (Cross-Site Request Forgery) tricks authenticated users into executing unwanted actions."
+        },
+        {
+          "question": "Which HTTP header helps prevent XSS attacks?",
+          "options": ["Accept", "User-Agent", "Host", "Content-Security-Policy"],
+          "correctAnswer": 3,
+          "explanation": "Content-Security-Policy (CSP) header restricts sources from which content can be loaded."
+        },
+        {
+          "question": "What is SSRF?",
+          "options": ["Server-Side Request Forgery - making server send requests", "Secure Socket Resource Forwarding", "System Security Response Framework", "SQL Server Resource Failure"],
+          "correctAnswer": 0,
+          "explanation": "SSRF tricks the server into making requests to unintended locations, potentially accessing internal resources."
+        },
+        {
+          "question": "What is the purpose of parameterized queries?",
+          "options": ["Speed up queries", "Prevent SQL injection by separating code from data", "Compress data", "Encrypt queries"],
+          "correctAnswer": 1,
+          "explanation": "Parameterized queries separate SQL code from data, preventing SQL injection attacks."
+        },
+        {
+          "question": "What does the SameSite cookie attribute prevent?",
+          "options": ["XSS", "SQL Injection", "CSRF", "DDoS"],
+          "correctAnswer": 2,
+          "explanation": "SameSite attribute prevents browsers from sending cookies with cross-site requests, mitigating CSRF."
+        },
+        {
+          "question": "What is DOM-based XSS?",
+          "options": ["XSS executed entirely in browser's DOM", "Server-side XSS", "Database XSS", "Network XSS"],
+          "correctAnswer": 0,
+          "explanation": "DOM-based XSS occurs when JavaScript modifies the DOM with untrusted data, executing malicious code."
+        },
+        {
+          "question": "What is OWASP?",
+          "options": ["Open Web Application Security Project", "Online Web Authentication Service", "Operating Web Access Protocol", "Open Wireless Application Security"],
+          "correctAnswer": 0,
+          "explanation": "OWASP is a nonprofit foundation focused on improving software security through education and tools."
+        },
+        {
+          "question": "What is broken authentication?",
+          "options": ["Fast authentication", "Flaws allowing attackers to compromise passwords or sessions", "Strong authentication", "Two-factor authentication"],
+          "correctAnswer": 1,
+          "explanation": "Broken authentication includes weak password policies, exposed session IDs, or poor credential management."
+        },
+        {
+          "question": "What is insecure deserialization?",
+          "options": ["Safe data parsing", "Converting untrusted serialized data leading to exploits", "Encryption method", "Authentication"],
+          "correctAnswer": 1,
+          "explanation": "Insecure deserialization can lead to remote code execution and other attacks."
+        },
+        {
+          "question": "What is XXE (XML External Entity)?",
+          "options": ["XSS variant", "XML parser vulnerability allowing file disclosure", "SQL injection", "Authentication bypass"],
+          "correctAnswer": 1,
+          "explanation": "XXE exploits XML parsers to access files, internal networks, or cause DoS."
+        },
+        {
+          "question": "What does HSTS header do?",
+          "options": ["Compress data", "Force HTTPS connections only", "Authenticate users", "Block scripts"],
+          "correctAnswer": 1,
+          "explanation": "HSTS (HTTP Strict Transport Security) forces browsers to use HTTPS connections."
+        },
+        {
+          "question": "What is IDOR vulnerability?",
+          "options": ["XSS attack", "Insecure Direct Object Reference accessing unauthorized data", "SQL injection", "Network attack"],
+          "correctAnswer": 1,
+          "explanation": "IDOR occurs when applications expose direct references to objects without authorization checks."
+        },
+        {
+          "question": "What is path traversal attack?",
+          "options": ["Database attack", "Accessing files outside intended directory", "XSS variant", "Authentication bypass"],
+          "correctAnswer": 1,
+          "explanation": "Path traversal (../) allows attackers to access files outside the web root directory."
+        },
+        {
+          "question": "What is clickjacking?",
+          "options": ["SQL injection", "Tricking users to click hidden malicious elements", "Password attack", "Network scan"],
+          "correctAnswer": 1,
+          "explanation": "Clickjacking uses transparent iframes to trick users into clicking unintended elements."
+        },
+        {
+          "question": "What does X-Frame-Options header prevent?",
+          "options": ["SQL injection", "Clickjacking attacks", "XSS", "CSRF"],
+          "correctAnswer": 1,
+          "explanation": "X-Frame-Options prevents pages from being embedded in iframes, mitigating clickjacking."
+        },
+        {
+          "question": "What is CORS misconfiguration?",
+          "options": ["XSS attack", "Improper Cross-Origin Resource Sharing allowing unauthorized access", "SQL injection", "Authentication error"],
+          "correctAnswer": 1,
+          "explanation": "CORS misconfiguration can allow unauthorized domains to access sensitive resources."
+        },
+        {
+          "question": "What is session fixation?",
+          "options": ["Strong sessions", "Attacker sets user's session ID to known value", "Encryption method", "Password attack"],
+          "correctAnswer": 1,
+          "explanation": "Session fixation forces a user's session ID, allowing attacker to hijack the session."
+        },
+        {
+          "question": "What is API security best practice?",
+          "options": ["No authentication", "Use authentication, rate limiting, input validation", "Allow all requests", "Disable logging"],
+          "correctAnswer": 1,
+          "explanation": "API security requires authentication, authorization, rate limiting, and input validation."
+        }
+      ]
+    },
+    {
+      "id": "penetration-testing",
+      "title": "Penetration Testing (6-8 weeks)",
+      "description": "Master penetration testing methodology, reconnaissance, scanning with Nmap, exploitation with Metasploit, privilege escalation, and report writing.",
+      "resources": [
+        { "title": "Penetration Testing Execution Standard", "url": "http://www.pentest-standard.org/index.php/PTES_Technical_Guidelines", "type": "Article" },
+        { "title": "NIST SP 800-115", "url": "https://www.youtube.com/embed/cMzIzc93TCA?si=jgFZmxr0dcgx3CX-", "type": "Video", "note": "Technical Guide to Security Testing" },
+        { "title": "OWASP Testing Guide", "url": "https://www.youtube.com/embed/FymTyV1ID0o?si=br4K3dzOYEIkXkkF", "type": "Video" },
+        { "title": "Practical Ethical Hacking", "url": "https://www.youtube.com/embed/3FNYvj2U0HM", "type": "Video", "note": "The Cyber Mentor" }
+      ],
+      "quiz": [
+        {
+          "question": "What is the first phase of penetration testing?",
+          "options": ["Reconnaissance/Information Gathering", "Exploitation", "Reporting", "Scanning"],
+          "correctAnswer": 0,
+          "explanation": "Reconnaissance is the first phase where testers gather information about the target system."
+        },
+        {
+          "question": "What does Nmap do?",
+          "options": ["Encrypts data", "Network scanning and port discovery", "Password cracking", "Web browsing"],
+          "correctAnswer": 1,
+          "explanation": "Nmap is a powerful network scanner used for port discovery, service detection, and OS fingerprinting."
+        },
+        {
+          "question": "What is Metasploit?",
+          "options": ["Antivirus software", "Firewall", "Penetration testing framework for exploitation", "Password manager"],
+          "correctAnswer": 2,
+          "explanation": "Metasploit is a comprehensive framework for developing, testing, and executing exploit code."
+        },
+        {
+          "question": "What is privilege escalation?",
+          "options": ["Removing privileges", "Encrypting files", "Backing up data", "Gaining higher-level permissions than initially obtained"],
+          "correctAnswer": 3,
+          "explanation": "Privilege escalation involves exploiting vulnerabilities to gain elevated access rights."
+        },
+        {
+          "question": "What is a reverse shell?",
+          "options": ["Shell that connects from target back to attacker", "Forward shell", "Encrypted shell", "Normal shell"],
+          "correctAnswer": 0,
+          "explanation": "A reverse shell initiates a connection from the target machine back to the attacker's system."
+        },
+        {
+          "question": "What is the purpose of a penetration testing report?",
+          "options": ["Showcase exploits", "Document findings, risks, and remediation recommendations", "Delete evidence", "Share exploits publicly"],
+          "correctAnswer": 1,
+          "explanation": "Reports document vulnerabilities discovered, their impact, and recommendations for remediation."
+        },
+        {
+          "question": "What is enumeration in pentesting?",
+          "options": ["Deleting files", "Detailed probing for usernames, shares, services", "Encryption", "Backup"],
+          "correctAnswer": 1,
+          "explanation": "Enumeration extracts detailed information like usernames, network shares, and service versions."
+        },
+        {
+          "question": "What does a vulnerability scanner do?",
+          "options": ["Exploits vulnerabilities", "Identifies potential security weaknesses", "Fixes vulnerabilities", "Deletes files"],
+          "correctAnswer": 1,
+          "explanation": "Vulnerability scanners identify potential security weaknesses without exploiting them."
+        },
+        {
+          "question": "What is the difference between white-box and black-box testing?",
+          "options": ["White-box has full knowledge, black-box has no prior knowledge", "No difference", "White-box is faster", "Black-box is better"],
+          "correctAnswer": 0,
+          "explanation": "White-box testing has full system knowledge; black-box testing simulates external attacker with no insider info."
+        },
+        {
+          "question": "What is a payload in exploitation?",
+          "options": ["Network packet", "Code executed after successful exploit", "Encryption key", "Username"],
+          "correctAnswer": 1,
+          "explanation": "A payload is the malicious code delivered and executed after a successful exploit."
+        },
+        {
+          "question": "What is post-exploitation?",
+          "options": ["Closing connections", "Activities after gaining initial access", "Deleting logs", "Scanning networks"],
+          "correctAnswer": 1,
+          "explanation": "Post-exploitation includes maintaining access, privilege escalation, lateral movement, and data exfiltration."
+        },
+        {
+          "question": "What is pivoting in penetration testing?",
+          "options": ["Rotating screen", "Using compromised system to attack other systems", "Encrypting data", "Backup strategy"],
+          "correctAnswer": 1,
+          "explanation": "Pivoting uses a compromised host as a launching point to access additional network segments."
+        },
+        {
+          "question": "What does Mimikatz do?",
+          "options": ["Network scanning", "Extract credentials from Windows memory", "Web application testing", "File encryption"],
+          "correctAnswer": 1,
+          "explanation": "Mimikatz is a tool for extracting plaintext passwords, hashes, and Kerberos tickets from memory."
+        },
+        {
+          "question": "What is a persistence mechanism?",
+          "options": ["Data backup", "Method to maintain access after reboot", "Network monitoring", "Encryption"],
+          "correctAnswer": 1,
+          "explanation": "Persistence mechanisms ensure continued access to compromised systems after reboots or logouts."
+        },
+        {
+          "question": "What is the purpose of rules of engagement?",
+          "options": ["Military strategy", "Define scope and boundaries of penetration test", "Network configuration", "Encryption policy"],
+          "correctAnswer": 1,
+          "explanation": "Rules of engagement define what is permitted during testing, protecting both tester and client."
+        },
+        {
+          "question": "What is CVSS?",
+          "options": ["Antivirus software", "Common Vulnerability Scoring System", "Network protocol", "Encryption standard"],
+          "correctAnswer": 1,
+          "explanation": "CVSS provides standardized severity scores (0-10) for security vulnerabilities."
+        },
+        {
+          "question": "What is remediation prioritization?",
+          "options": ["Random fixing", "Ranking vulnerabilities by severity and impact for fixing", "Ignoring issues", "Deleting findings"],
+          "correctAnswer": 1,
+          "explanation": "Remediation prioritization ranks vulnerabilities based on risk, ensuring critical issues are fixed first."
+        },
+        {
+          "question": "What is lateral movement?",
+          "options": ["Physical movement", "Moving between systems within network after compromise", "Network routing", "Data transfer"],
+          "correctAnswer": 1,
+          "explanation": "Lateral movement involves navigating through a network to access additional systems and resources."
+        },
+        {
+          "question": "What is covering tracks?",
+          "options": ["Physical cleanup", "Erasing evidence of intrusion from logs", "Backup strategy", "Network mapping"],
+          "correctAnswer": 1,
+          "explanation": "Covering tracks involves removing or altering logs and artifacts to hide malicious activity."
+        },
+        {
+          "question": "What is scope definition in penetration testing?",
+          "options": ["Telescope settings", "Defining target systems and test boundaries", "Network speed", "Encryption level"],
+          "correctAnswer": 1,
+          "explanation": "Scope definition specifies which systems, networks, and applications are authorized for testing."
+        }
+      ]
+    },
+    {
+      "id": "network-security",
+      "title": "Network Security & Exploitation (3-4 weeks)",
+      "description": "Master network reconnaissance, Man-in-the-Middle attacks, ARP poisoning, DNS spoofing, WiFi hacking, and social engineering techniques.",
+      "resources": [
+        { "title": "MITM Attacks Introduction", "url":"https://www.youtube.com/embed/videoseries?si=PGuONmDftxnU6j9e&amp;list=PLFa9O7rpkoWsx9z57mjxytExPRQp92JoM", "type": "Video", "note": "Bettercap Guide" },
+        { "title": "ARP Spoofing Explained", "url": "https://www.youtube.com/embed/IuUZdOJ5-m8?si=lTPSSPI3eny8n_XH", "type": "Video" },
+        { "title": "DNS Spoofing Basics", "url":"https://www.youtube.com/embed/Sf9tm7twUCw?si=b5XlCJyeahmiUe5J", "type": "Video" },
+        { "title": "WiFi Hacking", "url":"https://www.youtube.com/embed/w4nqr3z2mNo?si=zMSzI557Tnys4wSy", "type": "Video", "note": "Aircrack-ng Docs" },
+        { "title": "Social Engineering Framework", "url": "https://www.youtube.com/embed/lJGmYl8erPw?si=bl23sb_pDj7sEplL", "type": "Video" }
+      ],
+      "quiz": [
+        {
+          "question": "What is a Man-in-the-Middle (MITM) attack?",
+          "options": ["Intercepting communication between two parties", "Deleting files", "Encrypting data", "Backing up systems"],
+          "correctAnswer": 0,
+          "explanation": "MITM attack intercepts and potentially alters communication between two parties without their knowledge."
+        },
+        {
+          "question": "What does ARP poisoning do?",
+          "options": ["Encrypts ARP tables", "Sends fake ARP messages to associate attacker's MAC with legitimate IP", "Deletes ARP cache", "Speeds up network"],
+          "correctAnswer": 1,
+          "explanation": "ARP poisoning sends false ARP messages to redirect traffic through the attacker's machine."
+        },
+        {
+          "question": "What is DNS spoofing?",
+          "options": ["Encrypting DNS", "Optimizing DNS", "Corrupting DNS cache with false entries", "Backing up DNS"],
+          "correctAnswer": 2,
+          "explanation": "DNS spoofing introduces corrupt DNS data, redirecting users to malicious sites."
+        },
+        {
+          "question": "Which tool is commonly used for WiFi hacking?",
+          "options": ["Wireshark", "Metasploit", "Nmap", "Aircrack-ng"],
+          "correctAnswer": 3,
+          "explanation": "Aircrack-ng is a suite of tools for WiFi network security auditing and password cracking."
+        },
+        {
+          "question": "What is WPA2?",
+          "options": ["WiFi Protected Access 2 - security protocol", "Web Page Access", "Wireless Password Authentication", "Wide Public Access"],
+          "correctAnswer": 0,
+          "explanation": "WPA2 is a security protocol providing strong encryption for WiFi networks."
+        },
+        {
+          "question": "What is social engineering?",
+          "options": ["Software engineering", "Manipulating people to divulge confidential information", "Network engineering", "Data engineering"],
+          "correctAnswer": 1,
+          "explanation": "Social engineering exploits human psychology to trick people into revealing sensitive information."
+        },
+        {
+          "question": "What is phishing?",
+          "options": ["Network scanning", "Fraudulent attempts to obtain sensitive information via fake communications", "Port forwarding", "Data backup"],
+          "correctAnswer": 1,
+          "explanation": "Phishing uses deceptive emails or websites to trick victims into revealing credentials or personal data."
+        },
+        {
+          "question": "What does Bettercap do?",
+          "options": ["Antivirus protection", "Network attack and monitoring framework", "File encryption", "Data backup"],
+          "correctAnswer": 1,
+          "explanation": "Bettercap is a powerful framework for network attacks, reconnaissance, and MITM attacks."
+        },
+        {
+          "question": "What is a rogue access point?",
+          "options": ["Legitimate WiFi router", "Unauthorized wireless access point in a network", "Firewall", "VPN server"],
+          "correctAnswer": 1,
+          "explanation": "Rogue access points are unauthorized WiFi devices that can intercept traffic or provide backdoor access."
+        },
+        {
+          "question": "What is pretexting in social engineering?",
+          "options": ["Creating fabricated scenario to obtain information", "Writing code", "Network monitoring", "Data encryption"],
+          "correctAnswer": 0,
+          "explanation": "Pretexting creates a false scenario to manipulate targets into divulging information."
+        },
+        {
+          "question": "What is packet sniffing?",
+          "options": ["Smelling hardware", "Capturing and analyzing network traffic", "Deleting packets", "Encrypting packets"],
+          "correctAnswer": 1,
+          "explanation": "Packet sniffing captures network packets to analyze traffic, potentially exposing sensitive data."
+        },
+        {
+          "question": "What is SSL stripping?",
+          "options": ["Removing SSL certificates", "Downgrading HTTPS to HTTP to intercept traffic", "Installing SSL", "Encrypting SSL"],
+          "correctAnswer": 1,
+          "explanation": "SSL stripping downgrades secure HTTPS connections to unencrypted HTTP for interception."
+        },
+        {
+          "question": "What is an evil twin attack?",
+          "options": ["Malware type", "Fake WiFi access point mimicking legitimate one", "Database attack", "Password attack"],
+          "correctAnswer": 1,
+          "explanation": "Evil twin creates a fraudulent WiFi AP that appears legitimate to intercept user traffic."
+        },
+        {
+          "question": "What is MAC flooding?",
+          "options": ["Overwhelming switch MAC table to enable sniffing", "Encrypting MAC addresses", "Backing up MAC addresses", "Deleting MACs"],
+          "correctAnswer": 0,
+          "explanation": "MAC flooding overwhelms switch's MAC table, forcing it to broadcast traffic like a hub."
+        },
+        {
+          "question": "What is VLAN hopping?",
+          "options": ["Physical jumping", "Exploiting VLAN configuration to access other VLANs", "Network speed", "Encryption"],
+          "correctAnswer": 1,
+          "explanation": "VLAN hopping exploits switch misconfigurations to access traffic on other VLANs."
+        },
+        {
+          "question": "What is a DDoS attack?",
+          "options": ["Data encryption", "Distributed Denial of Service overwhelming target with traffic", "Password attack", "Backup failure"],
+          "correctAnswer": 1,
+          "explanation": "DDoS uses multiple compromised systems to flood a target, making it unavailable."
+        },
+        {
+          "question": "What is a botnet?",
+          "options": ["Robot network", "Network of compromised computers controlled by attacker", "Legitimate network", "Firewall system"],
+          "correctAnswer": 1,
+          "explanation": "Botnet is a collection of infected devices controlled remotely for malicious purposes like DDoS."
+        },
+        {
+          "question": "What is a honeypot?",
+          "options": ["Sweet data storage", "Decoy system to attract and study attackers", "Firewall", "Antivirus"],
+          "correctAnswer": 1,
+          "explanation": "Honeypots are intentionally vulnerable systems designed to lure attackers for research or distraction."
+        },
+        {
+          "question": "What is network segmentation?",
+          "options": ["Breaking networks", "Dividing network into isolated segments for security", "Joining networks", "Deleting networks"],
+          "correctAnswer": 1,
+          "explanation": "Network segmentation isolates network sections to contain breaches and limit lateral movement."
+        },
+        {
+          "question": "What is zero trust architecture?",
+          "options": ["Trust nothing approach, verify everything", "Trust everyone", "No security", "Basic firewall"],
+          "correctAnswer": 0,
+          "explanation": "Zero trust assumes breach and requires verification for every access request, regardless of location."
+        }
+      ]
+    },
+    {
+      "id": "incident-response",
+      "title": "Incident Response & Digital Forensics (4-6 weeks)",
+      "description": "Learn incident response process, evidence collection, memory forensics with Volatility, disk forensics with Autopsy, log analysis, and malware analysis basics.",
+      "resources": [
+        { "title": "NIST SP 800-61", "url":"https://www.youtube.com/embed/aSZ28ctcvKk?si=pN3OM6-ABte5eoT8", "type": "Video", "note": "Computer Security Incident Handling Guide" },
+        { "title": "Volatility Framework Docs", "url": "https://www.youtube.com/embed/videoseries?si=sXZUaa1qNZSZ4ojc&amp;list=PLqM63j87R5p5PxI9mrEDFN3NsZJkfwq14", "type": "Video" },
+        { "title": "Autopsy User Documentation", "url": "https://sleuthkit.org/autopsy/docs/user-docs/", "type": "Article" },
+        { "title": "Malware Analysis Basics", "url": "https://www.youtube.com/embed/videoseries?si=2u-XgoUcwnswOzKp&amp;list=PLLYYYiOtWXG9kSOiq6GX3UfKH-U6ZlBzm", "type": "Video"},
+        { "title": "SANS Digital Forensics", "url":"https://www.youtube.com/embed/eftOgRsHK4A?si=bZUrl9FNknfkH8tx", "type": "Video" },
+        { "title": "Practical Malware Analysis", "url": "https://www.youtube.com/embed/ks6csfpTRCE?si=g60RRX02NGCARxXI", "type": "Video" },
+        { "title": "Blue Team Labs", "url":"https://www.youtube.com/embed/hf0Mx8lO0mo?si=vI_hgyhTGJBZpBZe", "type": "Interactive Video" }
+      ],
+      "quiz": [
+        {
+          "question": "What are the four main phases of incident response?",
+          "options": ["Preparation, Detection & Analysis, Containment, Post-Incident", "Scan, Exploit, Report, Fix", "Plan, Do, Check, Act", "Find, Fix, Track, Prevent"],
+          "correctAnswer": 0,
+          "explanation": "NIST defines incident response: Preparation, Detection & Analysis, Containment/Eradication/Recovery, Post-Incident Activity."
+        },
+        {
+          "question": "What is digital forensics?",
+          "options": ["Deleting evidence", "Collection and analysis of digital evidence", "Creating backups", "Network monitoring"],
+          "correctAnswer": 1,
+          "explanation": "Digital forensics involves collecting, preserving, and analyzing digital evidence for investigations."
+        },
+        {
+          "question": "What does Volatility Framework analyze?",
+          "options": ["Hard drives", "Network traffic", "Memory dumps/RAM", "Web applications"],
+          "correctAnswer": 2,
+          "explanation": "Volatility is a memory forensics framework for analyzing RAM dumps to find malware and artifacts."
+        },
+        {
+          "question": "What is Autopsy?",
+          "options": ["Medical tool", "Disk forensics and analysis platform", "Network scanner", "Password cracker"],
+          "correctAnswer": 1,
+          "explanation": "Autopsy is an open-source digital forensics platform for analyzing hard drives and mobile devices."
+        },
+        {
+          "question": "What is the purpose of chain of custody in forensics?",
+          "options": ["Speed up analysis", "Document handling of evidence to ensure integrity", "Delete evidence", "Share evidence publicly"],
+          "correctAnswer": 1,
+          "explanation": "Chain of custody documents who handled evidence and when, maintaining its legal admissibility."
+        },
+        {
+          "question": "What is static malware analysis?",
+          "options": ["Running malware in sandbox", "Analyzing malware without executing it", "Deleting malware", "Encrypting malware"],
+          "correctAnswer": 1,
+          "explanation": "Static analysis examines malware code and properties without executing it, reducing risk."
+        },
+        {
+          "question": "What is a sandbox in malware analysis?",
+          "options": ["Physical box", "Isolated environment for safely executing malware", "Playground", "Storage device"],
+          "correctAnswer": 1,
+          "explanation": "A sandbox is an isolated virtual environment where malware can be executed and observed safely."
+        },
+        {
+          "question": "What does SIEM stand for in incident response?",
+          "options": ["Security Information and Event Management", "System Integration Event Monitoring", "Secure Internet Event Manager", "Software Incident Evaluation Method"],
+          "correctAnswer": 0,
+          "explanation": "SIEM platforms collect, analyze, and correlate security events from multiple sources."
+        },
+        {
+          "question": "What is an Indicator of Compromise (IOC)?",
+          "options": ["Performance metric", "Evidence of potential security breach", "Network speed", "Disk space"],
+          "correctAnswer": 1,
+          "explanation": "IOCs are artifacts or observables indicating potential intrusions (e.g., malicious IPs, file hashes)."
+        },
+        {
+          "question": "What is the goal of eradication in incident response?",
+          "options": ["Remove threat from environment", "Monitor threats", "Document threats", "Ignore threats"],
+          "correctAnswer": 0,
+          "explanation": "Eradication removes the threat (malware, backdoors, compromised accounts) from the environment."
+        },
+        {
+          "question": "What is an incident response playbook?",
+          "options": ["Sports manual", "Documented procedures for responding to specific incidents", "Network diagram", "Backup plan"],
+          "correctAnswer": 1,
+          "explanation": "Playbooks provide step-by-step procedures for handling specific security incident types."
+        },
+        {
+          "question": "What is containment in incident response?",
+          "options": ["Deleting data", "Limiting incident impact and spread", "Reporting incident", "Ignoring incident"],
+          "correctAnswer": 1,
+          "explanation": "Containment isolates affected systems to prevent further damage and lateral movement."
+        },
+        {
+          "question": "What is root cause analysis?",
+          "options": ["Finding plant roots", "Identifying underlying reason for incident", "Network analysis", "Performance testing"],
+          "correctAnswer": 1,
+          "explanation": "Root cause analysis determines the fundamental reason an incident occurred to prevent recurrence."
+        },
+        {
+          "question": "What is evidence preservation?",
+          "options": ["Deleting evidence", "Maintaining evidence integrity for investigation", "Sharing evidence publicly", "Encrypting evidence randomly"],
+          "correctAnswer": 1,
+          "explanation": "Evidence preservation maintains data integrity using write blockers, hashing, and proper handling."
+        },
+        {
+          "question": "What is timeline reconstruction?",
+          "options": ["Time travel", "Ordering events chronologically to understand incident", "Setting clocks", "Scheduling meetings"],
+          "correctAnswer": 1,
+          "explanation": "Timeline reconstruction creates chronological sequence of events during a security incident."
+        },
+        {
+          "question": "What is a communication plan in incident response?",
+          "options": ["Social media strategy", "Procedures for notifying stakeholders during incidents", "Phone system", "Email marketing"],
+          "correctAnswer": 1,
+          "explanation": "Communication plans define who to notify, when, and how during security incidents."
+        },
+        {
+          "question": "What are lessons learned in incident response?",
+          "options": ["Training courses", "Post-incident review to improve processes", "Certifications", "Books"],
+          "correctAnswer": 1,
+          "explanation": "Lessons learned analyze incident response effectiveness to improve future preparedness."
+        },
+        {
+          "question": "What is a tabletop exercise?",
+          "options": ["Board game", "Discussion-based incident response simulation", "Physical training", "Network test"],
+          "correctAnswer": 1,
+          "explanation": "Tabletop exercises simulate incidents in discussion format to test response procedures."
+        },
+        {
+          "question": "What is disaster recovery?",
+          "options": ["Cleaning up disasters", "Restoring IT systems after disruption", "Weather prediction", "Insurance"],
+          "correctAnswer": 1,
+          "explanation": "Disaster recovery plans restore critical IT systems and data after major incidents."
+        },
+        {
+          "question": "What is business continuity?",
+          "options": ["Normal operations", "Maintaining essential functions during disruptions", "Profit maximization", "Marketing strategy"],
+          "correctAnswer": 1,
+          "explanation": "Business continuity ensures critical business functions continue during and after incidents."
+        }
+      ]
+    },
+    {
+      "id": "security-monitoring",
+      "title": "Security Monitoring & SIEM (3-4 weeks)",
+      "description": "Master SIEM platforms (Splunk, ELK Stack), log management, threat hunting, IDS/IPS systems (Snort, Suricata), and SOC operations.",
+      "resources": [
+        { "title": "What is SIEM?", "url": "https://www.youtube.com/embed/GbFtSDnPZBQ?si=oUHYtdSh2QLFc5Lm", "type": "Video" },
+        { "title": "Splunk Getting Started", "url": "https://www.youtube.com/embed/rvjW5LJ0vbU?si=eqrOktmJ6iM7mqZR", "type": "Video" },
+        { "title": "Elastic Stack (ELK) Guide", "url": "https://www.youtube.com/embed/VpAH2IoMzKw?si=AopnQVdWwCXJ9BWZ", "type": "Video" },
+        { "title": "Snort 3 User Guide", "url": "https://www.youtube.com/embed/zZdYgglq8wc?si=2dro0KAK_6koJvAJ", "type": "Video", "note": "IDS/IPS" },
+        { "title": "Security Onion Documentation", "url": "https://docs.securityonion.net/", "type": "Article" },
+        { "title": "Splunk Fundamentals", "url":"https://www.youtube.com/embed/videoseries?si=42YhWOr8CVE1vRpi&amp;list=PLSr58-DJdRybowRyR8gp4cbLtoQektcze", "type": "Course" },
+        { "title": "Security Onion Training", "url": "https://securityonionsolutions.com/", "type": "Course" }
+      ],
+      "quiz": [
+        {
+          "question": "What does SIEM do?",
+          "options": ["Aggregates and analyzes security logs from multiple sources", "Blocks malware", "Encrypts data", "Backs up files"],
+          "correctAnswer": 0,
+          "explanation": "SIEM platforms collect, correlate, and analyze security events to detect threats and incidents."
+        },
+        {
+          "question": "What is Splunk?",
+          "options": ["Antivirus software", "Platform for searching, monitoring, and analyzing machine data", "Firewall", "VPN service"],
+          "correctAnswer": 1,
+          "explanation": "Splunk is a SIEM platform for collecting, indexing, and analyzing machine-generated data."
+        },
+        {
+          "question": "What does the ELK Stack consist of?",
+          "options": ["Elasticsearch, Logstash, Kibana", "Email, Login, Kernel", "Encryption, Logging, Keys", "Enterprise, Linux, Kubernetes"],
+          "correctAnswer": 0,
+          "explanation": "ELK Stack includes Elasticsearch (search), Logstash (collection), and Kibana (visualization)."
+        },
+        {
+          "question": "What is an IDS?",
+          "options": ["Internet Download Service", "Intrusion Detection System - monitors for malicious activity", "Internal Data Storage", "Integrated Development System"],
+          "correctAnswer": 1,
+          "explanation": "IDS monitors network/system activity for malicious actions and policy violations."
+        },
+        {
+          "question": "What is the difference between IDS and IPS?",
+          "options": ["No difference", "IDS detects only, IPS detects and prevents/blocks", "IPS is faster", "IDS is better"],
+          "correctAnswer": 1,
+          "explanation": "IDS only detects and alerts; IPS can actively block or prevent detected threats."
+        },
+        {
+          "question": "What is Snort?",
+          "options": ["Password manager", "Open-source network IDS/IPS", "Web browser", "Email client"],
+          "correctAnswer": 1,
+          "explanation": "Snort is an open-source network intrusion detection and prevention system."
+        },
+        {
+          "question": "What is threat hunting?",
+          "options": ["Waiting for alerts", "Proactive search for hidden threats in environment", "Deleting threats", "Ignoring threats"],
+          "correctAnswer": 1,
+          "explanation": "Threat hunting proactively searches for threats that evaded automated detection systems."
+        },
+        {
+          "question": "What is a SOC?",
+          "options": ["Security Operations Center - team monitoring security", "System Operations Command", "Software Operations Control", "Server Operations Center"],
+          "correctAnswer": 0,
+          "explanation": "SOC is a centralized team that monitors, detects, and responds to security incidents."
+        },
+        {
+          "question": "What does correlation in SIEM mean?",
+          "options": ["Deleting logs", "Linking related security events to identify patterns", "Encrypting logs", "Backing up logs"],
+          "correctAnswer": 1,
+          "explanation": "Correlation links related events from different sources to identify attack patterns and threats."
+        },
+        {
+          "question": "What is Security Onion?",
+          "options": ["Vegetable", "Linux distribution for network security monitoring", "Firewall", "Antivirus"],
+          "correctAnswer": 1,
+          "explanation": "Security Onion is a Linux distribution with tools for network security monitoring and analysis."
+        },
+        {
+          "question": "What are log correlation rules?",
+          "options": ["Random log deletion", "Patterns that identify related events across logs", "Log encryption", "Log compression"],
+          "correctAnswer": 1,
+          "explanation": "Correlation rules define patterns that link related security events to detect complex attacks."
+        },
+        {
+          "question": "What is a SOAR platform?",
+          "options": ["Security Orchestration, Automation, and Response", "System Operations and Recovery", "Software Optimization and Repair", "Server Operations Archive"],
+          "correctAnswer": 0,
+          "explanation": "SOAR platforms automate incident response workflows and security operations tasks."
+        },
+        {
+          "question": "What is threat modeling?",
+          "options": ["3D printing threats", "Systematic approach to identify and prioritize threats", "Deleting threats", "Ignoring threats"],
+          "correctAnswer": 1,
+          "explanation": "Threat modeling analyzes systems to identify, categorize, and prioritize potential threats."
+        },
+        {
+          "question": "What are security metrics/KPIs?",
+          "options": ["Random numbers", "Measurable indicators of security program effectiveness", "Password lengths", "Port numbers"],
+          "correctAnswer": 1,
+          "explanation": "Security KPIs measure effectiveness of security controls (e.g., MTTD, MTTR, incident counts)."
+        },
+        {
+          "question": "What is false positive reduction?",
+          "options": ["Ignoring all alerts", "Tuning detection rules to reduce incorrect alerts", "Blocking everything", "Deleting logs"],
+          "correctAnswer": 1,
+          "explanation": "False positive reduction fine-tunes detection systems to minimize incorrect security alerts."
+        },
+        {
+          "question": "What is alert fatigue?",
+          "options": ["Tired security staff", "Desensitization from excessive false alerts", "System slowdown", "Network congestion"],
+          "correctAnswer": 1,
+          "explanation": "Alert fatigue occurs when analysts become overwhelmed by too many alerts, missing real threats."
+        },
+        {
+          "question": "What is anomaly detection?",
+          "options": ["Finding normal behavior", "Identifying deviations from baseline behavior", "Deleting anomalies", "Creating anomalies"],
+          "correctAnswer": 1,
+          "explanation": "Anomaly detection identifies unusual patterns that deviate from established baselines."
+        },
+        {
+          "question": "What is behavioral analytics?",
+          "options": ["Psychology study", "Analyzing user/entity behavior to detect threats", "Network speed analysis", "Hardware testing"],
+          "correctAnswer": 1,
+          "explanation": "Behavioral analytics (UBA/UEBA) detects threats by analyzing deviations from normal behavior."
+        },
+        {
+          "question": "What is a security dashboard?",
+          "options": ["Car dashboard", "Visual display of security metrics and alerts", "Physical board", "Password manager"],
+          "correctAnswer": 1,
+          "explanation": "Security dashboards provide real-time visualization of security posture and key metrics."
+        },
+        {
+          "question": "What is reporting cadence in security monitoring?",
+          "options": ["Musical rhythm", "Frequency of generating security reports", "Network speed", "Alert volume"],
+          "correctAnswer": 1,
+          "explanation": "Reporting cadence defines how often security reports are generated (daily, weekly, monthly)."
+        }
+      ]
+    },
+    {
+      "id": "cloud-security",
+      "title": "Cloud Security (3-4 weeks, Optional)",
+      "description": "Learn AWS, Azure, and GCP security services, IAM, cloud misconfigurations, container security, and serverless security.",
+      "resources": [
+        { "title": "AWS Security Fundamentals", "url": "https://www.youtube.com/embed/gblkOr7phK8?si=7D4_XoAoKQkOsbfK" , "type": "Video" },
+        { "title": "Azure Security", "url": "https://microsoft.hubs.vidyard.com/watch/xgdYdihsB1icbgZuHLKvGQ?", "type": "Video" },
+        { "title": "Cloud Security Alliance", "url": "https://www.youtube.com/embed/K1nUIyvUVCo?si=8OkiV3kzmCle6RGd", "type": "Video" }
+      ],
+      "quiz": [
+        {
+          "question": "What does IAM stand for in cloud security?",
+          "options": ["Identity and Access Management", "Internet Access Manager", "Internal Application Monitor", "Integrated Authentication Method"],
+          "correctAnswer": 0,
+          "explanation": "IAM manages user identities and controls access to cloud resources based on permissions."
+        },
+        {
+          "question": "What is the shared responsibility model?",
+          "options": ["Cloud provider secures everything", "Security responsibilities split between provider and customer", "Customer secures everything", "No one is responsible"],
+          "correctAnswer": 1,
+          "explanation": "Provider secures infrastructure; customer secures data, applications, and configurations."
+        },
+        {
+          "question": "What is an S3 bucket misconfiguration?",
+          "options": ["Properly secured bucket", "Publicly accessible bucket exposing sensitive data", "Encrypted bucket", "Private bucket"],
+          "correctAnswer": 1,
+          "explanation": "S3 misconfigurations often make buckets public, exposing sensitive data to the internet."
+        },
+        {
+          "question": "What is the principle of least privilege?",
+          "options": ["Give everyone admin access", "Grant minimum permissions necessary for tasks", "No permissions for anyone", "Maximum permissions"],
+          "correctAnswer": 1,
+          "explanation": "Least privilege grants users only the minimum permissions needed to perform their job."
+        },
+        {
+          "question": "What is container security?",
+          "options": ["Physical box security", "Securing Docker/Kubernetes containers and images", "Storage security", "Network security"],
+          "correctAnswer": 1,
+          "explanation": "Container security involves securing containerized applications, images, and orchestration platforms."
+        },
+        {
+          "question": "What is serverless security concerned with?",
+          "options": ["No security needed", "Securing functions, API gateways, and event triggers", "Only server security", "Desktop security"],
+          "correctAnswer": 1,
+          "explanation": "Serverless security focuses on functions (Lambda), API gateways, permissions, and data flow."
+        },
+        {
+          "question": "What is AWS CloudTrail?",
+          "options": ["Hiking path", "Service for logging AWS API calls and account activity", "VPN service", "Storage service"],
+          "correctAnswer": 1,
+          "explanation": "CloudTrail logs all AWS API calls, providing audit trails for compliance and security analysis."
+        },
+        {
+          "question": "What is Azure Security Center?",
+          "options": ["Data center", "Unified security management and threat protection", "Shopping center", "Email service"],
+          "correctAnswer": 1,
+          "explanation": "Azure Security Center provides unified security management and advanced threat protection."
+        },
+        {
+          "question": "What is encryption at rest?",
+          "options": ["No encryption", "Encrypting data while stored on disk", "Encrypting data in transit", "Encrypting code"],
+          "correctAnswer": 1,
+          "explanation": "Encryption at rest protects data stored on disk from unauthorized access."
+        },
+        {
+          "question": "What is a VPC?",
+          "options": ["Virtual Private Cloud - isolated cloud network", "Very Public Cloud", "Video Processing Center", "Virus Protection Center"],
+          "correctAnswer": 0,
+          "explanation": "VPC provides an isolated virtual network within cloud infrastructure for resource deployment."
+        },
+        {
+          "question": "What are security groups in cloud?",
+          "options": ["User groups", "Virtual firewalls controlling inbound/outbound traffic", "Storage groups", "Admin teams"],
+          "correctAnswer": 1,
+          "explanation": "Security groups act as virtual firewalls, controlling traffic to/from cloud resources."
+        },
+        {
+          "question": "What is AWS KMS?",
+          "options": ["Keyboard Management", "Key Management Service for encryption keys", "Knowledge Management System", "Kernel Management"],
+          "correctAnswer": 1,
+          "explanation": "KMS creates and manages cryptographic keys for encrypting data in AWS."
+        },
+        {
+          "question": "What is CloudWatch in AWS?",
+          "options": ["Weather app", "Monitoring and observability service for logs/metrics", "Video streaming", "Cloud storage"],
+          "correctAnswer": 1,
+          "explanation": "CloudWatch monitors AWS resources, collects logs, and provides metrics for analysis."
+        },
+        {
+          "question": "What is CSPM?",
+          "options": ["Cloud Security Posture Management", "Computer Security Password Manager", "Central Security Protocol Monitor", "Certified Security Professional Manager"],
+          "correctAnswer": 0,
+          "explanation": "CSPM tools identify misconfigurations and compliance violations in cloud environments."
+        },
+        {
+          "question": "What is workload protection in cloud?",
+          "options": ["Physical labor security", "Securing VMs, containers, and serverless workloads", "Employee protection", "Network cables"],
+          "correctAnswer": 1,
+          "explanation": "Workload protection secures compute resources (VMs, containers, functions) from threats."
+        },
+        {
+          "question": "What is secrets management?",
+          "options": ["Keeping secrets from people", "Securely storing/accessing API keys, passwords, certificates", "Classified documents", "Private emails"],
+          "correctAnswer": 1,
+          "explanation": "Secrets management systems securely store and control access to sensitive credentials."
+        },
+        {
+          "question": "What is API gateway security?",
+          "options": ["Physical gate security", "Protecting APIs with authentication, rate limiting, validation", "Network gateway", "Door locks"],
+          "correctAnswer": 1,
+          "explanation": "API gateway security includes authentication, authorization, throttling, and input validation."
+        },
+        {
+          "question": "What are serverless security risks?",
+          "options": ["No risks", "Over-privileged functions, injection flaws, insecure dependencies", "Only server risks", "Physical risks"],
+          "correctAnswer": 1,
+          "explanation": "Serverless risks include excessive permissions, vulnerable dependencies, and injection attacks."
+        },
+        {
+          "question": "What is multi-tenancy isolation?",
+          "options": ["Single customer", "Separating customers' data and resources in shared infrastructure", "No separation", "Physical buildings"],
+          "correctAnswer": 1,
+          "explanation": "Multi-tenancy isolation ensures customers' data and workloads are logically separated in shared cloud."
+        },
+        {
+          "question": "What compliance frameworks apply to cloud?",
+          "options": ["None", "SOC 2, ISO 27001, HIPAA, PCI-DSS, GDPR", "Only PCI", "Only GDPR"],
+          "correctAnswer": 1,
+          "explanation": "Cloud environments must comply with various frameworks based on industry and data types."
+        }
+      ]
+    },
+    {
+      "id": "advanced-topics",
+      "title": "Advanced: Red Team, Threat Intelligence, Malware Analysis (Ongoing)",
+      "description": "Explore red team operations, C2 frameworks, Active Directory attacks, MITRE ATT&CK, threat intelligence lifecycle, OSINT, and malware reverse engineering.",
+      "resources": [
+        { "title": "MITRE ATT&CK", "url": "https://attack.mitre.org/", "type": "Article" },
+        { "title": "SANS Threat Intelligence", "url": "https://www.youtube.com/embed/OZ80zXwTh0g?si=kutxg04T46gZyK57", "type": "Course" },
+        { "title": "OSINT Framework", "url": "https://osintframework.com/", "type": "Article" },
+        { "title": "OWASP Mobile Security Testing", "url": "https://www.youtube.com/embed/CZZwGnqDDBI?si=RrOIPm_Nq0ywxmvI", "type": "Video" },
+        { "title": "Android App Reverse Engineering", "url": "https://maddiestone.github.io/AndroidAppRE/", "type": "Article" },
+        { "title": "Malware Unicorn RE 101", "url": "https://malwareunicorn.org/workshops/re101.html", "type": "Course" },
+        { "title": "ANY.RUN", "url": "https://www.youtube.com/embed/lyBmNALZO1w?si=SC2SA8QNc2vqUA9-", "type": "Video", "note": "Interactive malware sandbox" }
+      ],
+      "quiz": [
+        {
+          "question": "What is the MITRE ATT&CK framework?",
+          "options": ["Knowledge base of adversary tactics and techniques", "Antivirus software", "Firewall rules", "Encryption standard"],
+          "correctAnswer": 0,
+          "explanation": "MITRE ATT&CK is a globally-accessible knowledge base of adversary tactics, techniques, and procedures (TTPs)."
+        },
+        {
+          "question": "What is a red team?",
+          "options": ["Defensive security team", "Offensive security team simulating real attackers", "Network administrators", "Developers"],
+          "correctAnswer": 1,
+          "explanation": "Red teams simulate real-world attacks to test an organization's detection and response capabilities."
+        },
+        {
+          "question": "What is C2 (Command and Control)?",
+          "options": ["Computer to Computer", "Communication channel between attacker and compromised systems", "Cloud to Cloud", "Container to Container"],
+          "correctAnswer": 1,
+          "explanation": "C2 infrastructure allows attackers to communicate with and control compromised systems remotely."
+        },
+        {
+          "question": "What are Active Directory attacks?",
+          "options": ["Attacks on web servers", "Exploits targeting Windows domain controllers and AD services", "Database attacks", "Mobile attacks"],
+          "correctAnswer": 1,
+          "explanation": "AD attacks target Windows domain infrastructure to gain privileged access or lateral movement."
+        },
+        {
+          "question": "What is OSINT?",
+          "options": ["Operating System Intelligence", "Open-Source Intelligence - publicly available information", "Optical Signal Intelligence", "Offline Security Intelligence"],
+          "correctAnswer": 1,
+          "explanation": "OSINT gathers intelligence from publicly available sources like social media, websites, and public records."
+        },
+        {
+          "question": "What is threat intelligence?",
+          "options": ["Random data", "Evidence-based knowledge about threats to inform security decisions", "Backup strategy", "Network speed"],
+          "correctAnswer": 1,
+          "explanation": "Threat intelligence provides actionable information about current and emerging threats to organizations."
+        },
+        {
+          "question": "What is reverse engineering in malware analysis?",
+          "options": ["Creating malware", "Analyzing malware to understand its functionality", "Deleting malware", "Encrypting malware"],
+          "correctAnswer": 1,
+          "explanation": "Reverse engineering dissects malware to understand its behavior, capabilities, and indicators."
+        },
+        {
+          "question": "What is Cobalt Strike?",
+          "options": ["Antivirus tool", "Commercial penetration testing and red team framework", "Firewall", "VPN service"],
+          "correctAnswer": 1,
+          "explanation": "Cobalt Strike is a commercial platform for adversary simulations and red team operations."
+        },
+        {
+          "question": "What is lateral movement?",
+          "options": ["Physical movement", "Technique to move through a network after initial compromise", "Data transfer", "Software update"],
+          "correctAnswer": 1,
+          "explanation": "Lateral movement allows attackers to navigate through a network to access additional systems and data."
+        },
+        {
+          "question": "What is a zero-day vulnerability?",
+          "options": ["Old vulnerability", "Undisclosed vulnerability with no patch available", "Patched vulnerability", "Known vulnerability"],
+          "correctAnswer": 1,
+          "explanation": "Zero-day vulnerabilities are unknown to vendors, with no patch available, making them highly valuable."
+        },
+        {
+          "question": "What is an APT (Advanced Persistent Threat)?",
+          "options": ["Basic malware", "Sophisticated, prolonged cyberattack campaign", "Firewall type", "Encryption method"],
+          "correctAnswer": 1,
+          "explanation": "APTs are long-term targeted attacks by skilled adversaries, often nation-state actors."
+        },
+        {
+          "question": "What is the cyber kill chain?",
+          "options": ["Weapon chain", "Framework describing stages of cyberattack", "Network cable", "Encryption process"],
+          "correctAnswer": 1,
+          "explanation": "Cyber kill chain models attack phases: reconnaissance, weaponization, delivery, exploitation, installation, C2, actions."
+        },
+        {
+          "question": "What are TTPs in threat intelligence?",
+          "options": ["Tactics, Techniques, and Procedures", "Time, Testing, Performance", "Types, Tools, Protocols", "Threats, Targets, Passwords"],
+          "correctAnswer": 0,
+          "explanation": "TTPs describe how threat actors operate: their methods, tools, and patterns of behavior."
+        },
+        {
+          "question": "What is purple team?",
+          "options": ["Royal security team", "Collaboration between red and blue teams", "Developer team", "Management team"],
+          "correctAnswer": 1,
+          "explanation": "Purple team bridges red (offensive) and blue (defensive) teams to improve security posture."
+        },
+        {
+          "question": "What are malware families?",
+          "options": ["Biological families", "Groups of related malware variants", "Software packages", "Network protocols"],
+          "correctAnswer": 1,
+          "explanation": "Malware families (ransomware, trojans, rootkits) share characteristics, code, or infrastructure."
+        },
+        {
+          "question": "What is threat actor attribution?",
+          "options": ["Random guessing", "Identifying who is behind cyberattack", "Virus naming", "Tool listing"],
+          "correctAnswer": 1,
+          "explanation": "Attribution determines which group or nation is responsible for an attack based on TTPs and indicators."
+        },
+        {
+          "question": "What is dark web intelligence?",
+          "options": ["Night vision", "Gathering threat data from dark web sources", "Black hat hacking", "Encryption"],
+          "correctAnswer": 1,
+          "explanation": "Dark web intelligence monitors underground forums, marketplaces for stolen data and threat information."
+        },
+        {
+          "question": "What is a bug bounty program?",
+          "options": ["Insect collection", "Rewarding researchers for finding vulnerabilities", "Software development", "Network testing"],
+          "correctAnswer": 1,
+          "explanation": "Bug bounty programs reward ethical hackers for responsibly disclosing security vulnerabilities."
+        },
+        {
+          "question": "What are exploit marketplaces?",
+          "options": ["Shopping malls", "Black markets selling zero-day exploits", "App stores", "Developer platforms"],
+          "correctAnswer": 1,
+          "explanation": "Exploit marketplaces trade vulnerabilities and exploits, both legitimately and on dark web."
+        },
+        {
+          "question": "What are nation-state actors?",
+          "options": ["Movie stars", "Government-sponsored cyber threat groups", "Software companies", "Hacktivists"],
+          "correctAnswer": 1,
+          "explanation": "Nation-state actors are government-backed groups conducting cyber espionage, warfare, or sabotage."
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Network Security Scanner",
+      "description": "Build a basic network security scanner that identifies open ports, checks for common vulnerabilities, and generates security reports.",
+      "difficulty": "Beginner",
+      "duration": "2-3 weeks",
+      "skills": ["Python", "Networking", "Nmap", "Port Scanning", "Security Assessment"],
+      "tasks": [
+        "Learn basic networking and TCP/IP concepts",
+        "Write port scanner using Python sockets",
+        "Integrate Nmap for advanced scanning",
+        "Check for common vulnerabilities (CVEs)",
+        "Create HTML report generator",
+        "Add command-line interface",
+        "Test on controlled lab environment"
+      ]
+    },
+    {
+      "title": "Web Application Vulnerability Scanner",
+      "description": "Develop a tool to scan web applications for common vulnerabilities including XSS, SQL injection, and security misconfigurations.",
+      "difficulty": "Intermediate",
+      "duration": "3-4 weeks",
+      "skills": ["OWASP Top 10", "Web Security", "HTTP/HTTPS", "Python", "Penetration Testing"],
+      "tasks": [
+        "Study OWASP Top 10 vulnerabilities",
+        "Build HTTP request handler",
+        "Implement XSS detection logic",
+        "Add SQL injection testing",
+        "Check for security headers",
+        "Scan for sensitive data exposure",
+        "Create detailed vulnerability reports",
+        "Test on intentionally vulnerable apps (DVWA)"
+      ]
+    },
+    {
+      "title": "Security Information and Event Management (SIEM) Dashboard",
+      "description": "Create a SIEM dashboard using ELK Stack to collect, analyze, and visualize security logs from multiple sources with alerting.",
+      "difficulty": "Intermediate",
+      "duration": "4-5 weeks",
+      "skills": ["ELK Stack", "Log Analysis", "Threat Detection", "Data Visualization", "Security Monitoring"],
+      "tasks": [
+        "Set up ELK Stack infrastructure",
+        "Configure log collection from various sources",
+        "Parse and normalize security logs",
+        "Create detection rules for security events",
+        "Build Kibana dashboards for visualization",
+        "Implement real-time alerting",
+        "Add correlation rules for attack patterns",
+        "Test with sample attack scenarios",
+        "Document incident response procedures"
+      ]
+    },
+    {
+      "title": "Intrusion Detection and Prevention System",
+      "description": "Build a network-based IDS/IPS using Snort or Suricata with machine learning for anomaly detection and automated threat response.",
+      "difficulty": "Advanced",
+      "duration": "6-7 weeks",
+      "skills": ["IDS/IPS", "Snort/Suricata", "Machine Learning", "Network Security", "Threat Intelligence"],
+      "tasks": [
+        "Set up Snort or Suricata IDS",
+        "Configure network tap or span port",
+        "Write custom detection rules",
+        "Integrate threat intelligence feeds",
+        "Implement machine learning for anomaly detection",
+        "Build automated response mechanisms",
+        "Create alert management system",
+        "Add packet capture and analysis",
+        "Test with penetration testing tools",
+        "Optimize performance for high traffic"
+      ]
+    },
+    {
+      "title": "Enterprise Security Operations Center (SOC)",
+      "description": "Design and implement a complete SOC infrastructure with threat hunting, incident response automation, forensics, and compliance reporting.",
+      "difficulty": "Advanced",
+      "duration": "8-10 weeks",
+      "skills": ["SOC Operations", "Threat Hunting", "Incident Response", "Forensics", "SOAR"],
+      "tasks": [
+        "Design SOC architecture and workflows",
+        "Set up SIEM with advanced correlation",
+        "Implement SOAR for automation",
+        "Integrate threat intelligence platforms",
+        "Build threat hunting playBooks",
+        "Create incident response procedures",
+        "Set up forensics lab with volatility tools",
+        "Add user behavior analytics (UBA)",
+        "Implement case management system",
+        "Create compliance reports (PCI-DSS, HIPAA)",
+        "Conduct purple team exercises"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1653 @@
+{
+  "slug": "mobile-app-development",
+  "title": "Mobile App Development",
+  "summary": "Create applications for mobile devices using native (iOS/Android) or cross-platform frameworks (React Native/Flutter).",
+  "timeline": "8-12 months",
+  "difficulty": "Moderate",
+  "steps": [
+    {
+      "id": "javascript-es6",
+      "title": "JavaScript & ES6+ (4-6 weeks)",
+      "description": "Master modern JavaScript including ES6+ features, async programming with Promises and async/await, and essential programming concepts for mobile development.",
+      "resources": [
+        {
+          "title": "JavaScript Full Course - freeCodeCamp",
+          "url": "https://www.youtube.com/embed/PkZNo7MFNFg",
+          "type": "Video",
+          "duration": "3 hours",
+          "note": "BEST JavaScript course"
+        },
+        {
+          "title": "JavaScript ES6 Tutorial",
+          "url": "https://www.youtube.com/embed/NCwa_xi0Uuc",
+          "type": "Video",
+          "duration": "1 hour"
+        },
+        {
+          "title": "Promises & Async/Await Explained",
+          "url": "https://www.youtube.com/embed/V_Kr9OSfDeU",
+          "type": "Video",
+          "duration": "30 minutes"
+        },
+        {
+          "title": "JavaScript30 - 30 Day Challenge",
+          "url": "https://javascript30.com/",
+          "type": "Interactive"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is JavaScript?",
+          "options": ["High-level programming language for web and mobile", "Database", "CSS framework", "Operating system"],
+          "correctAnswer": 0,
+          "explanation": "JavaScript is essential for adding interactivity to applications."
+        },
+        {
+          "question": "What is ES6?",
+          "options": ["ECMAScript 6, major JavaScript update", "Database version", "CSS standard", "HTML version"],
+          "correctAnswer": 0,
+          "explanation": "ES6 introduced arrow functions, classes, let/const, and more."
+        },
+        {
+          "question": "What is an arrow function?",
+          "options": ["Concise function syntax: () => {}", "Loop", "Array", "Object"],
+          "correctAnswer": 0,
+          "explanation": "Arrow functions provide shorter syntax and lexical 'this' binding."
+        },
+        {
+          "question": "What is a Promise?",
+          "options": ["Database", "Object representing eventual completion or failure", "Loop", "Variable"],
+          "correctAnswer": 1,
+          "explanation": "Promises handle asynchronous operations with .then() and .catch()."
+        },
+        {
+          "question": "What is async/await?",
+          "options": ["Syntactic sugar for working with Promises", "Database query", "CSS property", "HTML tag"],
+          "correctAnswer": 0,
+          "explanation": "async/await makes asynchronous code look synchronous."
+        },
+        {
+          "question": "What is destructuring?",
+          "options": ["Deleting objects", "Extracting values from arrays or objects", "Creating functions", "Looping"],
+          "correctAnswer": 1,
+          "explanation": "Destructuring: const {name, age} = person; extracts properties."
+        },
+        {
+          "question": "What is the spread operator?",
+          "options": ["..., expands iterables into individual elements", "Division operator", "Comparison", "Loop"],
+          "correctAnswer": 0,
+          "explanation": "Spread operator copies arrays/objects: [...arr], {...obj}."
+        },
+        {
+          "question": "What is template literal?",
+          "options": ["String with embedded expressions: `Hello ${name}`", "Array", "Function", "Object"],
+          "correctAnswer": 0,
+          "explanation": "Template literals use backticks for multi-line strings and interpolation."
+        },
+        {
+          "question": "What is const?",
+          "options": ["Variable declaration for constant references", "Function", "Loop", "Class"],
+          "correctAnswer": 0,
+          "explanation": "const declares block-scoped constants, can't be reassigned."
+        },
+        {
+          "question": "What is the difference between let and var?",
+          "options": ["No difference", "let is block-scoped, var is function-scoped", "let is faster", "var is newer"],
+          "correctAnswer": 1,
+          "explanation": "let prevents issues with hoisting and scope leakage."
+        },
+        {
+          "question": "What is array map()?",
+          "options": ["Transforms each element in array", "Filters array", "Sorts array", "Deletes array"],
+          "correctAnswer": 0,
+          "explanation": "map() creates new array by applying function: arr.map(x => x * 2)."
+        },
+        {
+          "question": "What is array filter()?",
+          "options": ["Creates new array with elements passing test", "Maps array", "Deletes array", "Sorts array"],
+          "correctAnswer": 0,
+          "explanation": "filter() returns matching items: arr.filter(x => x > 5)."
+        },
+        {
+          "question": "What is array reduce()?",
+          "options": ["Reduces array to single value", "Maps array", "Filters array", "Sorts array"],
+          "correctAnswer": 0,
+          "explanation": "reduce() accumulates values: arr.reduce((sum, x) => sum + x, 0)."
+        },
+        {
+          "question": "What is a callback function?",
+          "options": ["Function passed as argument to another function", "Loop", "Variable", "Object"],
+          "correctAnswer": 0,
+          "explanation": "Callbacks execute after async operations complete."
+        },
+        {
+          "question": "What is JSON?",
+          "options": ["JavaScript Object Notation for data exchange", "Programming language", "Database", "Framework"],
+          "correctAnswer": 0,
+          "explanation": "JSON.stringify() and JSON.parse() convert between objects and strings."
+        },
+        {
+          "question": "What is closure?",
+          "options": ["Function accessing variables from outer scope", "Loop", "Array", "Class"],
+          "correctAnswer": 0,
+          "explanation": "Closures preserve access to outer function variables."
+        },
+        {
+          "question": "What is 'this' keyword?",
+          "options": ["Reference to current object context", "Variable", "Function", "Loop"],
+          "correctAnswer": 0,
+          "explanation": "'this' behavior varies between regular and arrow functions."
+        },
+        {
+          "question": "What is default parameter?",
+          "options": ["Function parameter with default value", "Loop default", "Array default", "Object default"],
+          "correctAnswer": 0,
+          "explanation": "function greet(name = 'User') uses default if no argument."
+        },
+        {
+          "question": "What is rest parameter?",
+          "options": ["...args collects remaining arguments into array", "Spread operator", "Loop", "Object"],
+          "correctAnswer": 0,
+          "explanation": "function sum(...nums) accepts any number of arguments."
+        },
+        {
+          "question": "What is try-catch?",
+          "options": ["Error handling mechanism", "Loop", "Function", "Variable"],
+          "correctAnswer": 0,
+          "explanation": "try-catch handles exceptions without crashing app."
+        }
+      ]
+    },
+    {
+      "id": "react-fundamentals",
+      "title": "React.js Fundamentals (4-6 weeks)",
+      "description": "Learn React fundamentals including components, state management, hooks (useState, useEffect, useContext), and React best practices.",
+      "resources": [
+        {
+          "title": "React Full Course - freeCodeCamp",
+          "url": "https://www.youtube.com/embed/bMknfKXIFA8",
+          "type": "Video",
+          "duration": "12 hours",
+          "note": "BEST React course"
+        },
+        {
+          "title": "React Tutorial for Beginners",
+          "url": "https://www.youtube.com/embed/SqcY0GlETPk",
+          "type": "Video",
+          "duration": "2 hours"
+        },
+        {
+          "title": "Official React Docs",
+          "url": "https://react.dev/",
+          "type": "Article"
+        },
+        {
+          "title": "React - Scrimba Interactive Course",
+          "url": "https://scrimba.com/learn/learnreact",
+          "type": "Interactive"
+        },
+        {
+          "title": "React Hooks Explained",
+          "url": "https://www.youtube.com/embed/TNhaISOUy6Q",
+          "type": "Video",
+          "duration": "1 hour"
+        },
+        {
+          "title": "useState & useEffect Tutorial",
+          "url": "https://www.youtube.com/embed/O6P86uwfdR0",
+          "type": "Video"
+        },
+        {
+          "title": "React Context API Tutorial",
+          "url": "https://www.youtube.com/embed/5LrDIWkK_Bc",
+          "type": "Video"
+        },
+        {
+          "title": "React Official Tutorial",
+          "url": "https://react.dev/learn/tutorial-tic-tac-toe",
+          "type": "Interactive"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is React?",
+          "options": ["JavaScript library for building user interfaces", "Database", "Server", "CSS framework"],
+          "correctAnswer": 0,
+          "explanation": "React creates reusable UI components for web and mobile apps."
+        },
+        {
+          "question": "What is a component?",
+          "options": ["Reusable piece of UI", "Database table", "CSS class", "HTML tag"],
+          "correctAnswer": 0,
+          "explanation": "Components are JavaScript functions/classes that return JSX."
+        },
+        {
+          "question": "What is JSX?",
+          "options": ["Database query", "JavaScript syntax extension for HTML-like code", "CSS preprocessor", "Testing tool"],
+          "correctAnswer": 1,
+          "explanation": "JSX allows writing HTML-like code in JavaScript files."
+        },
+        {
+          "question": "What is useState?",
+          "options": ["Hook for managing component state", "Database function", "CSS property", "HTML attribute"],
+          "correctAnswer": 0,
+          "explanation": "useState: const [count, setCount] = useState(0) manages state."
+        },
+        {
+          "question": "What is useEffect?",
+          "options": ["Hook for side effects like data fetching", "Database hook", "CSS effect", "Animation"],
+          "correctAnswer": 0,
+          "explanation": "useEffect runs after render for API calls, subscriptions, etc."
+        },
+        {
+          "question": "What is useContext?",
+          "options": ["CSS context", "Hook for consuming context values", "Database context", "Server context"],
+          "correctAnswer": 1,
+          "explanation": "useContext accesses shared data without prop drilling."
+        },
+        {
+          "question": "What is props?",
+          "options": ["Properties passed to components", "Database properties", "CSS properties", "Functions"],
+          "correctAnswer": 0,
+          "explanation": "Props pass data from parent to child components."
+        },
+        {
+          "question": "What is state?",
+          "options": ["Country", "Data managed within component", "CSS state", "Server state"],
+          "correctAnswer": 1,
+          "explanation": "State is local data that triggers re-renders when changed."
+        },
+        {
+          "question": "What is virtual DOM?",
+          "options": ["Lightweight copy of actual DOM for efficient updates", "Database", "Server", "CSS DOM"],
+          "correctAnswer": 0,
+          "explanation": "Virtual DOM minimizes expensive real DOM manipulations."
+        },
+        {
+          "question": "What is component lifecycle?",
+          "options": ["Phases of component: mount, update, unmount", "CSS lifecycle", "Database lifecycle", "Server lifecycle"],
+          "correctAnswer": 0,
+          "explanation": "Lifecycle methods/hooks manage component behavior over time."
+        },
+        {
+          "question": "What is conditional rendering?",
+          "options": ["Rendering different UI based on conditions", "Always rendering same", "No rendering", "CSS rendering"],
+          "correctAnswer": 0,
+          "explanation": "Use && or ternary: {isLoggedIn ? <Dashboard /> : <Login />}."
+        },
+        {
+          "question": "What is list rendering?",
+          "options": ["Rendering arrays using map()", "Single item render", "No rendering", "CSS list"],
+          "correctAnswer": 0,
+          "explanation": "items.map(item => <Item key={item.id} data={item} />)."
+        },
+        {
+          "question": "What is key prop?",
+          "options": ["Unique identifier for list items", "CSS key", "Database key", "Password"],
+          "correctAnswer": 0,
+          "explanation": "Keys help React identify which items changed for efficient updates."
+        },
+        {
+          "question": "What is event handling?",
+          "options": ["Responding to user interactions like clicks", "Database events", "CSS events", "Server events"],
+          "correctAnswer": 0,
+          "explanation": "<button onClick={handleClick}>Click</button> handles events."
+        },
+        {
+          "question": "What is controlled component?",
+          "options": ["Form input whose value is controlled by React state", "Uncontrolled component", "CSS component", "Database component"],
+          "correctAnswer": 0,
+          "explanation": "<input value={name} onChange={e => setName(e.target.value)} />."
+        },
+        {
+          "question": "What is useRef?",
+          "options": ["Hook for accessing DOM elements or persisting values", "State hook", "Effect hook", "Context hook"],
+          "correctAnswer": 0,
+          "explanation": "useRef creates mutable reference that doesn't cause re-renders."
+        },
+        {
+          "question": "What is React Fragment?",
+          "options": ["Wrapper to group elements without extra DOM node", "Database fragment", "CSS fragment", "Server fragment"],
+          "correctAnswer": 0,
+          "explanation": "<React.Fragment> or <> groups children without div wrapper."
+        },
+        {
+          "question": "What is prop drilling?",
+          "options": ["Passing props through multiple component levels", "Drilling holes", "CSS drilling", "Database drilling"],
+          "correctAnswer": 0,
+          "explanation": "Context API or state management avoids prop drilling."
+        },
+        {
+          "question": "What is memo()?",
+          "options": ["Higher-order component preventing unnecessary re-renders", "State hook", "Effect hook", "Context"],
+          "correctAnswer": 0,
+          "explanation": "React.memo() memoizes component, re-renders only when props change."
+        },
+        {
+          "question": "What is useMemo?",
+          "options": ["Hook memoizing expensive calculations", "State hook", "Effect hook", "Ref hook"],
+          "correctAnswer": 0,
+          "explanation": "useMemo caches computed values between renders."
+        }
+      ]
+    },
+    {
+      "id": "react-native-basics",
+      "title": "React Native Basics (6-8 weeks)",
+      "description": "Master React Native fundamentals including core components, Flexbox layout, React Navigation, and building mobile apps with Expo.",
+      "resources": [
+        {
+          "title": "React Native Full Course - freeCodeCamp",
+          "url": "https://www.youtube.com/embed/0-S5a0eXPoc",
+          "type": "Video",
+          "duration": "3 hours",
+          "note": "BEST React Native course"
+        },
+        {
+          "title": "React Native Tutorial for Beginners",
+          "url": "https://www.youtube.com/embed/ur6I5m2nTvk",
+          "type": "Video",
+          "duration": "2 hours"
+        },
+        {
+          "title": "React Native Official Docs",
+          "url": "https://reactnative.dev/docs/getting-started",
+          "type": "Article"
+        },
+        {
+          "title": "React Native Components Explained",
+          "url": "https://www.youtube.com/embed/qSRrxpdMpVc",
+          "type": "Video"
+        },
+        {
+          "title": "Flexbox in React Native",
+          "url": "https://www.youtube.com/embed/R2eqAgR_KlU",
+          "type": "Video",
+          "duration": "20 minutes"
+        },
+        {
+          "title": "React Navigation Complete Guide",
+          "url": "https://www.youtube.com/embed/nQVCkqvU1uE",
+          "type": "Video",
+          "duration": "1 hour"
+        },
+        {
+          "title": "React Navigation Docs",
+          "url": "https://reactnavigation.org/docs/getting-started",
+          "type": "Article"
+        },
+        {
+          "title": "Build a Todo App Tutorial",
+          "url": "https://www.youtube.com/embed/0kL6nhutjQ8",
+          "type": "Video"
+        },
+        {
+          "title": "React Native Expo Snack",
+          "url": "https://snack.expo.dev/",
+          "type": "Interactive"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is React Native?",
+          "options": ["Framework for building native mobile apps with React", "Database", "CSS framework", "Testing tool"],
+          "correctAnswer": 0,
+          "explanation": "React Native compiles to native iOS and Android code."
+        },
+        {
+          "question": "What is Expo?",
+          "options": ["Toolchain simplifying React Native development", "Database", "CSS framework", "Server"],
+          "correctAnswer": 0,
+          "explanation": "Expo provides managed workflow with built-in APIs and tools."
+        },
+        {
+          "question": "What is a View component?",
+          "options": ["Basic container like div in web", "Database view", "CSS view", "Server view"],
+          "correctAnswer": 0,
+          "explanation": "View is fundamental building block for layouts."
+        },
+        {
+          "question": "What is Text component?",
+          "options": ["Database text", "Component for displaying text", "CSS text", "Input field"],
+          "correctAnswer": 1,
+          "explanation": "Text renders text content, unlike web where any tag can."
+        },
+        {
+          "question": "What is StyleSheet?",
+          "options": ["Database schema", "API for creating styles in React Native", "CSS file", "HTML stylesheet"],
+          "correctAnswer": 1,
+          "explanation": "StyleSheet.create() optimizes style objects."
+        },
+        {
+          "question": "What is TouchableOpacity?",
+          "options": ["Button-like component with opacity feedback", "CSS property", "Animation", "Database"],
+          "correctAnswer": 0,
+          "explanation": "TouchableOpacity provides press feedback by reducing opacity."
+        },
+        {
+          "question": "What is FlatList?",
+          "options": ["Efficient list component for rendering scrollable lists", "Array method", "Database list", "CSS list"],
+          "correctAnswer": 0,
+          "explanation": "FlatList virtualizes items for performance with large datasets."
+        },
+        {
+          "question": "What is navigation in React Native?",
+          "options": ["Moving between screens using React Navigation", "GPS", "Database navigation", "CSS navigation"],
+          "correctAnswer": 0,
+          "explanation": "React Navigation library manages screen transitions."
+        },
+        {
+          "question": "What is AsyncStorage?",
+          "options": ["Local storage for persisting data on device", "Cloud storage", "Database", "Memory"],
+          "correctAnswer": 0,
+          "explanation": "AsyncStorage stores key-value pairs asynchronously."
+        },
+        {
+          "question": "What is metro bundler?",
+          "options": ["CSS bundler", "JavaScript bundler for React Native", "Database tool", "Testing tool"],
+          "correctAnswer": 1,
+          "explanation": "Metro compiles JavaScript code for mobile apps."
+        },
+        {
+          "question": "What is Flexbox in React Native?",
+          "options": ["Layout system for arranging elements", "Database layout", "CSS Grid", "Table layout"],
+          "correctAnswer": 0,
+          "explanation": "Flexbox uses flexDirection, justifyContent, alignItems."
+        },
+        {
+          "question": "What is ScrollView?",
+          "options": ["Container for scrollable content", "Fixed view", "Database view", "Image view"],
+          "correctAnswer": 0,
+          "explanation": "ScrollView enables vertical/horizontal scrolling."
+        },
+        {
+          "question": "What is Image component?",
+          "options": ["Displays images from local or remote sources", "Text component", "Button", "Database"],
+          "correctAnswer": 0,
+          "explanation": "<Image source={{uri: 'url'}} /> or require('./img.png')."
+        },
+        {
+          "question": "What is TextInput?",
+          "options": ["Component for user text entry", "Text display", "Button", "Image"],
+          "correctAnswer": 0,
+          "explanation": "TextInput captures user input with keyboard."
+        },
+        {
+          "question": "What is SafeAreaView?",
+          "options": ["Renders content within safe boundaries (notches, status bar)", "Unsafe view", "Database view", "CSS view"],
+          "correctAnswer": 0,
+          "explanation": "SafeAreaView prevents content from overlapping device features."
+        },
+        {
+          "question": "What is Stack Navigator?",
+          "options": ["Navigation pattern with stack of screens", "Database stack", "CSS stack", "Array stack"],
+          "correctAnswer": 0,
+          "explanation": "Stack Navigator manages screen history, push/pop transitions."
+        },
+        {
+          "question": "What is Tab Navigator?",
+          "options": ["Navigation with bottom/top tabs", "Database tabs", "CSS tabs", "Browser tabs"],
+          "correctAnswer": 0,
+          "explanation": "Tab Navigator creates tabbed interfaces for app sections."
+        },
+        {
+          "question": "What is Drawer Navigator?",
+          "options": ["Slide-out menu from screen edge", "Database drawer", "CSS drawer", "File drawer"],
+          "correctAnswer": 0,
+          "explanation": "Drawer Navigator provides hamburger menu navigation."
+        },
+        {
+          "question": "What is Pressable?",
+          "options": ["Flexible touchable component with press feedback", "Non-touchable", "Database", "CSS"],
+          "correctAnswer": 0,
+          "explanation": "Pressable detects press interactions with customizable feedback."
+        },
+        {
+          "question": "What is hot reloading?",
+          "options": ["Auto-refresh on code changes without losing state", "Cold start", "Manual refresh", "No reload"],
+          "correctAnswer": 0,
+          "explanation": "Hot reloading speeds development by preserving app state."
+        }
+      ]
+    },
+    {
+      "id": "advanced-react-native",
+      "title": "Advanced React Native (4-6 weeks)",
+      "description": "Learn API integration, state management (Redux, Zustand), authentication flows, push notifications, camera/media access, geolocation, and performance optimization.",
+      "resources": [
+        {
+          "title": "React Native Express",
+          "url": "https://www.reactnative.express/",
+          "type": "Article"
+        },
+        {
+          "title": "Expo Documentation",
+          "url": "https://docs.expo.dev/",
+          "type": "Article"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is API integration?",
+          "options": ["Connecting app to backend services via HTTP", "Database", "CSS integration", "Hardware"],
+          "correctAnswer": 0,
+          "explanation": "Apps use fetch() or axios to get/post data from APIs."
+        },
+        {
+          "question": "What is Redux?",
+          "options": ["State management library for predictable state", "Database", "CSS framework", "Testing tool"],
+          "correctAnswer": 0,
+          "explanation": "Redux centralizes app state with actions and reducers."
+        },
+        {
+          "question": "What is Zustand?",
+          "options": ["Database", "Lightweight state management library", "CSS library", "Navigation"],
+          "correctAnswer": 1,
+          "explanation": "Zustand is simpler alternative to Redux with hooks."
+        },
+        {
+          "question": "What is authentication?",
+          "options": ["Verifying user identity via login", "Database operation", "CSS styling", "Navigation"],
+          "correctAnswer": 0,
+          "explanation": "Authentication uses tokens (JWT) or OAuth for secure access."
+        },
+        {
+          "question": "What are push notifications?",
+          "options": ["Messages sent to users even when app is closed", "Database notifications", "CSS notifications", "Error messages"],
+          "correctAnswer": 0,
+          "explanation": "Push notifications use Firebase Cloud Messaging or APNs."
+        },
+        {
+          "question": "What is the Camera API?",
+          "options": ["CSS camera", "Access to device camera for photos/Videos", "Database camera", "Testing camera"],
+          "correctAnswer": 1,
+          "explanation": "expo-camera provides camera access in React Native."
+        },
+        {
+          "question": "What is geolocation?",
+          "options": ["Accessing device GPS for location data", "Database location", "CSS positioning", "Server location"],
+          "correctAnswer": 0,
+          "explanation": "expo-location gets current position, tracks movement."
+        },
+        {
+          "question": "What is performance optimization?",
+          "options": ["Techniques to improve app speed and responsiveness", "Database optimization", "CSS optimization", "Server optimization"],
+          "correctAnswer": 0,
+          "explanation": "Use memoization, lazy loading, image optimization, etc."
+        },
+        {
+          "question": "What is a JWT token?",
+          "options": ["Database token", "JSON Web Token for secure authentication", "CSS token", "Test token"],
+          "correctAnswer": 1,
+          "explanation": "JWT encodes user info, sent with API requests for auth."
+        },
+        {
+          "question": "What is React Query?",
+          "options": ["Library for fetching, caching, and updating data", "Database query", "CSS query", "Navigation query"],
+          "correctAnswer": 0,
+          "explanation": "React Query simplifies server state management."
+        },
+        {
+          "question": "What is OAuth?",
+          "options": ["Open Authorization protocol for secure login", "Database", "CSS framework", "Testing tool"],
+          "correctAnswer": 0,
+          "explanation": "OAuth enables login with Google, Facebook, etc."
+        },
+        {
+          "question": "What is deep linking?",
+          "options": ["Opening app to specific screen from URL", "Database link", "CSS link", "Network link"],
+          "correctAnswer": 0,
+          "explanation": "Deep links navigate users directly to app content."
+        },
+        {
+          "question": "What is image caching?",
+          "options": ["Storing images locally for faster loading", "Database caching", "CSS caching", "No caching"],
+          "correctAnswer": 0,
+          "explanation": "react-native-fast-image provides image caching."
+        },
+        {
+          "question": "What is lazy loading?",
+          "options": ["Loading content only when needed", "Eager loading", "No loading", "Database loading"],
+          "correctAnswer": 0,
+          "explanation": "Lazy loading improves performance by deferring non-critical resources."
+        },
+        {
+          "question": "What is offline support?",
+          "options": ["App functionality without internet connection", "Online-only", "No support", "Database only"],
+          "correctAnswer": 0,
+          "explanation": "NetInfo detects connectivity; AsyncStorage enables offline data."
+        },
+        {
+          "question": "What is biometric authentication?",
+          "options": ["Login using fingerprint or face recognition", "Password only", "No auth", "Database auth"],
+          "correctAnswer": 0,
+          "explanation": "expo-local-authentication provides biometric security."
+        },
+        {
+          "question": "What is in-app purchase?",
+          "options": ["Buying content/features within app", "External purchase", "Free only", "No purchase"],
+          "correctAnswer": 0,
+          "explanation": "react-native-iap handles subscriptions and purchases."
+        },
+        {
+          "question": "What is analytics?",
+          "options": ["Tracking user behavior and app usage", "Database", "CSS", "Testing"],
+          "correctAnswer": 0,
+          "explanation": "Firebase Analytics, Mixpanel track events and metrics."
+        },
+        {
+          "question": "What is crash reporting?",
+          "options": ["Logging app crashes for debugging", "No logging", "Manual testing", "CSS debugging"],
+          "correctAnswer": 0,
+          "explanation": "Sentry, Crashlytics capture errors and stack traces."
+        },
+        {
+          "question": "What is code splitting?",
+          "options": ["Breaking code into smaller bundles loaded on demand", "One bundle", "No splitting", "Database splitting"],
+          "correctAnswer": 0,
+          "explanation": "Code splitting reduces initial bundle size for faster startup."
+        }
+      ]
+    },
+    {
+      "id": "flutter-dart",
+      "title": "Flutter & Dart Programming (4-6 weeks)",
+      "description": "Learn Dart programming language and Flutter basics including widgets, layouts, state management, and Material Design.",
+      "resources": [
+      {
+          "title": "Dart Programming Crash Course",
+          "url": "https://www.youtube.com/embed/Ej_Pcr4uC2Q",
+          "type": "Video"
+        },
+        {
+          "title": "Flutter Programming Crash Course",
+          "url": "https://www.youtube.com/embed/CD1Y2DmL5JM?si=DY38YmS5DwSF_Sie",
+          "type": "Video"
+        },
+        {
+          "title": "The Complete Dart & Flutter Developer Course",
+          "url": "https://www.youtube.com/embed/CzRQ9mnmh44?si=xMxr5G85ihh__XRA",
+          "type": "Video"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is Dart?",
+          "options": ["Programming language for Flutter", "Database", "CSS framework", "Server"],
+          "correctAnswer": 0,
+          "explanation": "Dart is object-oriented language developed by Google."
+        },
+        {
+          "question": "What is Flutter?",
+          "options": ["Database", "UI framework for building cross-platform apps", "CSS framework", "Testing tool"],
+          "correctAnswer": 1,
+          "explanation": "Flutter compiles to native code for iOS, Android, web, desktop."
+        },
+        {
+          "question": "What is a widget in Flutter?",
+          "options": ["Everything in Flutter UI is a widget", "Database widget", "CSS widget", "Server widget"],
+          "correctAnswer": 0,
+          "explanation": "Widgets are immutable building blocks of Flutter UI."
+        },
+        {
+          "question": "What is StatelessWidget?",
+          "options": ["Widget that doesn't change once built", "Database state", "CSS state", "Server state"],
+          "correctAnswer": 0,
+          "explanation": "StatelessWidget is immutable, rebuild requires new instance."
+        },
+        {
+          "question": "What is StatefulWidget?",
+          "options": ["CSS widget", "Widget with mutable state that can rebuild", "Database widget", "Static widget"],
+          "correctAnswer": 1,
+          "explanation": "StatefulWidget has State object for dynamic UI updates."
+        },
+        {
+          "question": "What is hot reload?",
+          "options": ["Server reload", "Instantly seeing code changes without restart", "Database reload", "CSS reload"],
+          "correctAnswer": 1,
+          "explanation": "Hot reload updates UI in seconds preserving app state."
+        },
+        {
+          "question": "What is Material Design?",
+          "options": ["Google's design system for UI", "Database design", "Server design", "Code design"],
+          "correctAnswer": 0,
+          "explanation": "Material Design provides widgets like Scaffold, AppBar, Card."
+        },
+        {
+          "question": "What is null safety in Dart?",
+          "options": ["Variables are non-null by default", "Database safety", "CSS safety", "Server safety"],
+          "correctAnswer": 0,
+          "explanation": "Null safety prevents null reference errors at compile time."
+        },
+        {
+          "question": "What is async/await in Dart?",
+          "options": ["Database operation", "Handling asynchronous operations", "CSS animation", "UI layout"],
+          "correctAnswer": 1,
+          "explanation": "async/await works with Future objects for async code."
+        },
+        {
+          "question": "What is a Future in Dart?",
+          "options": ["Object representing value available in future", "Date", "Database future", "CSS future"],
+          "correctAnswer": 0,
+          "explanation": "Future handles asynchronous operations like network requests."
+        },
+        {
+          "question": "What is MaterialApp in Flutter?",
+          "options": ["Database app", "Root widget providing Material Design theming", "CSS app", "Testing app"],
+          "correctAnswer": 1,
+          "explanation": "MaterialApp wraps app with theme, navigation, and localization."
+        },
+        {
+          "question": "What is Scaffold widget?",
+          "options": ["Provides basic visual structure with AppBar, Drawer, BottomNavigationBar", "Database scaffold", "CSS scaffold", "Testing scaffold"],
+          "correctAnswer": 0,
+          "explanation": "Scaffold implements basic Material Design layout."
+        },
+        {
+          "question": "What is Column widget for?",
+          "options": ["Horizontal layout", "Grid layout", "Arranging children vertically", "Database column"],
+          "correctAnswer": 2,
+          "explanation": "Column arranges child widgets in a vertical array."
+        },
+        {
+          "question": "What is Row widget used for?",
+          "options": ["Arranging children horizontally", "Vertical layout", "Grid layout", "Database row"],
+          "correctAnswer": 0,
+          "explanation": "Row arranges child widgets in a horizontal array."
+        },
+        {
+          "question": "What is setState() in Flutter?",
+          "options": ["CSS state", "Database state", "Method to rebuild widget when state changes", "Server state"],
+          "correctAnswer": 2,
+          "explanation": "setState() notifies framework to schedule a rebuild."
+        },
+        {
+          "question": "What is provider package?",
+          "options": ["State management solution using InheritedWidget", "Database provider", "CSS provider", "Testing provider"],
+          "correctAnswer": 0,
+          "explanation": "Provider simplifies dependency injection and state sharing."
+        },
+        {
+          "question": "What is Navigator in Flutter?",
+          "options": ["GPS navigator", "Database navigator", "Manages stack of routes for screen navigation", "CSS navigator"],
+          "correctAnswer": 2,
+          "explanation": "Navigator.push() and pop() manage route transitions."
+        },
+        {
+          "question": "What is pubspec.yaml?",
+          "options": ["File defining project dependencies and metadata", "Database config", "CSS config", "Testing config"],
+          "correctAnswer": 0,
+          "explanation": "pubspec.yaml declares packages, assets, and project info."
+        },
+        {
+          "question": "What is Container widget?",
+          "options": ["Versatile widget for padding, margin, decoration, constraints", "Database container", "CSS container", "Testing container"],
+          "correctAnswer": 0,
+          "explanation": "Container combines painting, positioning, and sizing."
+        },
+        {
+          "question": "What is the build() method?",
+          "options": ["Database build", "Method returning widget tree for UI", "CSS build", "Compile method"],
+          "correctAnswer": 1,
+          "explanation": "build() is called when widget needs to be rendered."
+        }
+      ]
+    },
+    {
+      "id": "flutter-advanced",
+      "title": "Flutter Advanced (6-8 weeks)",
+      "description": "Master Flutter widgets, navigation, state management (Provider, Riverpod), HTTP requests, Firebase integration, and testing.",
+      "resources": [
+        {
+          "title": "Flutter: Introduction & Architecture",
+          "url": "https://docs.flutter.dev/get-started/flutter-for",
+          "type": "Article"
+        },
+        {
+          "title": "Widgets 101: Stateless vs Stateful",
+          "url": "https://docs.flutter.dev/development/ui/Interactive",
+          "type": "Article"
+        },
+        {
+          "title": "Layout Basics: Row, Column, Stack",
+          "url": "https://docs.flutter.dev/development/ui/layout",
+          "type": "Article"
+        },
+        {
+          "title": "Material Design Widgets",
+          "url": "https://docs.flutter.dev/ui/widgets/material",
+          "type": "Article"
+        },
+        {
+          "title": "Navigation and Routing",
+          "url": "https://docs.flutter.dev/development/ui/navigation",
+          "type": "Article"
+        },
+        {
+          "title": "State Management: Provider",
+          "url": "https://docs.flutter.dev/development/data-and-backend/state-mgmt/simple",
+          "type": "Article"
+        },
+        {
+          "title": "State Management: Riverpod",
+          "url": "https://riverpod.dev/docs/introduction/getting_started",
+          "type": "Article"
+        },
+        {
+          "title": "Flutter Codelabs",
+          "url": "https://docs.flutter.dev/codelabs",
+          "type": "Interactive"
+        },
+        {
+          "title": "Flutter Course - freeCodeCamp",
+          "url": "https://www.youtube.com/embed/VPvVD8t02U8",
+          "type": "Video"
+        },
+        {
+          "title": "Flutter Testing",
+          "url": "https://docs.flutter.dev/testing",
+          "type": "Article"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is Provider in Flutter?",
+          "options": ["State management solution using InheritedWidget", "Database provider", "CSS provider", "Server provider"],
+          "correctAnswer": 0,
+          "explanation": "Provider simplifies dependency injection and state sharing."
+        },
+        {
+          "question": "What is Riverpod?",
+          "options": ["Database", "Improved Provider with better safety", "CSS framework", "Testing tool"],
+          "correctAnswer": 1,
+          "explanation": "Riverpod eliminates context dependency, compile-time safety."
+        },
+        {
+          "question": "What is navigation in Flutter?",
+          "options": ["Moving between screens using Navigator", "GPS", "Database navigation", "CSS navigation"],
+          "correctAnswer": 0,
+          "explanation": "Navigator.push() and Navigator.pop() manage routes."
+        },
+        {
+          "question": "What is the http package?",
+          "options": ["Database package", "Package for making HTTP requests", "CSS package", "Animation package"],
+          "correctAnswer": 1,
+          "explanation": "http package sends GET/POST requests to REST APIs."
+        },
+        {
+          "question": "What is Firebase?",
+          "options": ["Backend platform for authentication, database, storage", "CSS framework", "UI library", "Testing tool"],
+          "correctAnswer": 0,
+          "explanation": "Firebase provides real-time database, auth, hosting, functions."
+        },
+        {
+          "question": "What is a Row widget?",
+          "options": ["Database row", "Horizontal layout widget", "Vertical layout", "Grid"],
+          "correctAnswer": 1,
+          "explanation": "Row arranges children horizontally in Flutter."
+        },
+        {
+          "question": "What is a Column widget?",
+          "options": ["Vertical layout widget", "Horizontal layout", "Grid", "Database column"],
+          "correctAnswer": 0,
+          "explanation": "Column arranges children vertically in Flutter."
+        },
+        {
+          "question": "What is a Stack widget?",
+          "options": ["CSS stack", "Overlapping widgets on top of each other", "Database stack", "Queue"],
+          "correctAnswer": 1,
+          "explanation": "Stack positions children relative to box edges."
+        },
+        {
+          "question": "What is widget testing?",
+          "options": ["Testing individual widgets in isolation", "Database testing", "CSS testing", "Server testing"],
+          "correctAnswer": 0,
+          "explanation": "Widget tests verify UI behavior using testWidgets()."
+        },
+        {
+          "question": "What is BuildContext?",
+          "options": ["Database context", "Reference to widget's location in tree", "CSS context", "Server context"],
+          "correctAnswer": 1,
+          "explanation": "BuildContext provides access to theme, navigator, inherited widgets."
+        },
+        {
+          "question": "What are animations in Flutter?",
+          "options": ["Visual transitions using AnimationController and Tween", "Database animations", "CSS animations", "Server animations"],
+          "correctAnswer": 0,
+          "explanation": "Animations use AnimationController with curves and values."
+        },
+        {
+          "question": "How do you create custom widgets?",
+          "options": ["Database widgets", "Extending StatelessWidget or StatefulWidget", "CSS widgets", "Built-in only"],
+          "correctAnswer": 1,
+          "explanation": "Custom widgets compose or extend existing widgets."
+        },
+        {
+          "question": "What are platform channels?",
+          "options": ["Communication bridge between Flutter and native code", "Database channels", "CSS channels", "Server channels"],
+          "correctAnswer": 0,
+          "explanation": "Platform channels use MethodChannel for native API access."
+        },
+        {
+          "question": "What is async programming in Dart?",
+          "options": ["CSS async", "Database async", "Non-blocking operations using async/await", "Synchronous only"],
+          "correctAnswer": 2,
+          "explanation": "async functions return Futures for asynchronous work."
+        },
+        {
+          "question": "What are Streams in Dart?",
+          "options": ["Sequence of asynchronous events over time", "Database streams", "CSS streams", "File streams only"],
+          "correctAnswer": 0,
+          "explanation": "Streams handle multiple asynchronous values using listen()."
+        },
+        {
+          "question": "What is the http package for?",
+          "options": ["Making HTTP GET/POST requests to APIs", "Database HTTP", "CSS HTTP", "Local storage"],
+          "correctAnswer": 0,
+          "explanation": "http package simplifies RESTful API calls."
+        },
+        {
+          "question": "How do you parse JSON in Dart?",
+          "options": ["Using json.decode() and json.encode()", "Database parsing", "CSS parsing", "Automatic only"],
+          "correctAnswer": 0,
+          "explanation": "dart:convert library handles JSON serialization."
+        },
+        {
+          "question": "What is form validation?",
+          "options": ["Database validation", "Checking user input with validators", "CSS validation", "No validation"],
+          "correctAnswer": 1,
+          "explanation": "Form validators ensure data correctness before submission."
+        },
+        {
+          "question": "What is shared_preferences?",
+          "options": ["Package for storing simple key-value data locally", "Database preferences", "CSS preferences", "Server preferences"],
+          "correctAnswer": 0,
+          "explanation": "shared_preferences persists small amounts of data."
+        },
+        {
+          "question": "What is responsive design?",
+          "options": ["CSS design", "Database design", "Adapting UI to different screen sizes and orientations", "Fixed layout only"],
+          "correctAnswer": 2,
+          "explanation": "Use MediaQuery and LayoutBuilder for responsive UIs."
+        }
+      ]
+    },
+    {
+      "id": "ios-swift",
+      "title": "Native iOS Development (Swift) (3-4 months)",
+      "description": "Learn Swift programming, SwiftUI, UIKit, networking, Core Data, and iOS app development for Apple devices.",
+      "resources": [
+        {
+          "title": "The Swift Programming Language",
+          "url": "https://www.youtube.com/embed/8Xg7E9shq0U?si=AgAQ4iLTZJwr0KUk",
+          "type": "Video"
+        },
+        {
+          "title": "SwiftUI Tutorials",
+          "url": "https://www.youtube.com/embed/-VC3hIEL7eQ?si=J0TPdjOzuw5q8WdJ",
+          "type": "Video"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is Swift?",
+          "options": ["Apple's programming language for iOS/macOS", "Database", "CSS framework", "Server"],
+          "correctAnswer": 0,
+          "explanation": "Swift is modern, safe language replacing Objective-C."
+        },
+        {
+          "question": "What is SwiftUI?",
+          "options": ["Database UI", "Declarative UI framework for Apple platforms", "CSS framework", "Web UI"],
+          "correctAnswer": 1,
+          "explanation": "SwiftUI builds UI with declarative Swift syntax."
+        },
+        {
+          "question": "What is UIKit?",
+          "options": ["Traditional iOS UI framework", "Database kit", "CSS kit", "Server kit"],
+          "correctAnswer": 0,
+          "explanation": "UIKit is imperative framework using ViewControllers."
+        },
+        {
+          "question": "What is Xcode?",
+          "options": ["CSS editor", "Apple's IDE for iOS/macOS development", "Database tool", "Testing tool"],
+          "correctAnswer": 1,
+          "explanation": "Xcode provides editor, debugger, simulator, and build tools."
+        },
+        {
+          "question": "What is Core Data?",
+          "options": ["Apple's framework for persistent data storage", "Database service", "CSS data", "Server data"],
+          "correctAnswer": 0,
+          "explanation": "Core Data manages object graph, saves to SQLite."
+        },
+        {
+          "question": "What is URLSession?",
+          "options": ["Database session", "API for making network requests", "CSS session", "User session"],
+          "correctAnswer": 1,
+          "explanation": "URLSession handles HTTP requests and downloads."
+        },
+        {
+          "question": "What is @State in SwiftUI?",
+          "options": ["Property wrapper for local state", "Database state", "CSS state", "Server state"],
+          "correctAnswer": 0,
+          "explanation": "@State creates source of truth for view updates."
+        },
+        {
+          "question": "What is @Binding in SwiftUI?",
+          "options": ["CSS binding", "Two-way connection to parent's state", "Database binding", "Server binding"],
+          "correctAnswer": 1,
+          "explanation": "@Binding creates reference to parent's @State."
+        },
+        {
+          "question": "What is a View in SwiftUI?",
+          "options": ["Protocol for defining UI", "Database view", "CSS view", "Server view"],
+          "correctAnswer": 0,
+          "explanation": "View protocol requires body property returning some View."
+        },
+        {
+          "question": "What is ARC?",
+          "options": ["Database", "Automatic Reference Counting for memory management", "CSS arc", "Animation"],
+          "correctAnswer": 1,
+          "explanation": "ARC automatically manages memory by counting references."
+        },
+        {
+          "question": "What are optionals in Swift?",
+          "options": ["Variables that can hold a value or nil", "Database optionals", "CSS optionals", "Required values"],
+          "correctAnswer": 0,
+          "explanation": "Optionals use ? and handle absence of values safely."
+        },
+        {
+          "question": "What is delegation pattern?",
+          "options": ["CSS pattern", "Database pattern", "Design pattern where object delegates tasks to helper", "Inheritance pattern"],
+          "correctAnswer": 2,
+          "explanation": "Delegation uses protocols for object communication."
+        },
+        {
+          "question": "What is Auto Layout?",
+          "options": ["System for creating adaptive UI with constraints", "Database layout", "CSS layout", "Manual layout"],
+          "correctAnswer": 0,
+          "explanation": "Auto Layout defines rules for view positioning and sizing."
+        },
+        {
+          "question": "What is view lifecycle in UIKit?",
+          "options": ["Database lifecycle", "Sequence: viewDidLoad, viewWillAppear, viewDidAppear, etc.", "CSS lifecycle", "No lifecycle"],
+          "correctAnswer": 1,
+          "explanation": "Lifecycle methods control view loading and appearance."
+        },
+        {
+          "question": "What is MVC pattern in iOS?",
+          "options": ["Model-View-Controller separating data, UI, logic", "Database pattern", "CSS pattern", "Testing pattern"],
+          "correctAnswer": 0,
+          "explanation": "MVC organizes code into three interconnected components."
+        },
+        {
+          "question": "What are protocols in Swift?",
+          "options": ["CSS protocols", "Blueprint defining methods and properties", "Database protocols", "Classes only"],
+          "correctAnswer": 1,
+          "explanation": "Protocols define interfaces that types can conform to."
+        },
+        {
+          "question": "What are closures in Swift?",
+          "options": ["Self-contained blocks of functionality", "Database closures", "CSS closures", "Classes"],
+          "correctAnswer": 0,
+          "explanation": "Closures capture and store references to variables."
+        },
+        {
+          "question": "What is Grand Central Dispatch?",
+          "options": ["Database dispatch", "CSS dispatch", "Framework for managing concurrent operations", "UI framework"],
+          "correctAnswer": 2,
+          "explanation": "GCD manages queues for asynchronous task execution."
+        },
+        {
+          "question": "What is app lifecycle?",
+          "options": ["States: not running, inactive, active, background, suspended", "Database lifecycle", "CSS lifecycle", "View lifecycle"],
+          "correctAnswer": 0,
+          "explanation": "App lifecycle managed by AppDelegate methods."
+        },
+        {
+          "question": "What is error handling in Swift?",
+          "options": ["Using do-try-catch for throwing functions", "Database errors", "CSS errors", "No error handling"],
+          "correctAnswer": 0,
+          "explanation": "Swift uses throws, try, and Error protocol for errors."
+        }
+      ]
+    },
+    {
+      "id": "android-kotlin",
+      "title": "Native Android Development (Kotlin) (3-4 months)",
+      "description": "Master Kotlin programming, Jetpack Compose, Android SDK, Room database, and Android app development.",
+      "resources": [
+        {
+          "title": "Kotlin Language",
+          "url": "https://www.youtube.com/embed/dzUc9vrsldM?si=ObvDrUmZ6ddAGWiK",
+          "type": "Video"
+        },
+        {
+          "title": "Android Developer Fundamentals",
+          "url": "https://www.youtube.com/embed/yaZ66V0mKSM?si=RVFNsl7oMvPws_m8",
+          "type": "Video"
+        },
+        {
+          "title": "Jetpack Compose",
+          "url": "https://www.youtube.com/embed/6_wK_Ud8--0?si=aPf2kMFqM03De2gN",
+          "type": "Video"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is Kotlin?",
+          "options": ["Modern programming language for Android", "Database", "CSS framework", "Server"],
+          "correctAnswer": 0,
+          "explanation": "Kotlin is official Android language, replacing Java."
+        },
+        {
+          "question": "What is Jetpack Compose?",
+          "options": ["Database compose", "Declarative UI toolkit for Android", "CSS framework", "Testing tool"],
+          "correctAnswer": 1,
+          "explanation": "Compose builds Android UI with Kotlin functions."
+        },
+        {
+          "question": "What is Android SDK?",
+          "options": ["Software Development Kit for Android apps", "Database SDK", "CSS SDK", "Server SDK"],
+          "correctAnswer": 0,
+          "explanation": "SDK provides libraries, tools, and APIs for Android."
+        },
+        {
+          "question": "What is an Activity?",
+          "options": ["Database activity", "Single screen with UI in Android", "CSS activity", "Server activity"],
+          "correctAnswer": 1,
+          "explanation": "Activity manages UI and lifecycle for a screen."
+        },
+        {
+          "question": "What is Room database?",
+          "options": ["SQLite abstraction layer for Android", "Cloud database", "NoSQL database", "In-memory database"],
+          "correctAnswer": 0,
+          "explanation": "Room simplifies SQLite with compile-time verification."
+        },
+        {
+          "question": "What is ViewModel?",
+          "options": ["CSS model", "Stores UI-related data surviving configuration changes", "Database model", "Server model"],
+          "correctAnswer": 1,
+          "explanation": "ViewModel separates UI logic from lifecycle."
+        },
+        {
+          "question": "What is LiveData?",
+          "options": ["Observable data holder respecting lifecycle", "Database data", "CSS data", "Server data"],
+          "correctAnswer": 0,
+          "explanation": "LiveData updates UI automatically when data changes."
+        },
+        {
+          "question": "What is Retrofit?",
+          "options": ["Database retrofit", "HTTP client for REST API calls", "CSS framework", "Testing tool"],
+          "correctAnswer": 1,
+          "explanation": "Retrofit simplifies API integration with annotations."
+        },
+        {
+          "question": "What is a Fragment?",
+          "options": ["Reusable portion of UI in Activity", "Database fragment", "CSS fragment", "Server fragment"],
+          "correctAnswer": 0,
+          "explanation": "Fragment represents modular section of UI."
+        },
+        {
+          "question": "What is Android Studio?",
+          "options": ["CSS studio", "Official IDE for Android development", "Database studio", "Testing studio"],
+          "correctAnswer": 1,
+          "explanation": "Android Studio provides editor, emulator, and build tools."
+        },
+        {
+          "question": "What is null safety in Kotlin?",
+          "options": ["Types are non-nullable by default, use ? for nullable", "Database safety", "CSS safety", "No null checking"],
+          "correctAnswer": 0,
+          "explanation": "Kotlin prevents null pointer exceptions at compile time."
+        },
+        {
+          "question": "What are data classes?",
+          "options": ["Database classes", "Classes automatically generating equals, hashCode, toString", "CSS classes", "Abstract classes"],
+          "correctAnswer": 1,
+          "explanation": "Data classes reduce boilerplate for data holding classes."
+        },
+        {
+          "question": "What are coroutines in Kotlin?",
+          "options": ["Lightweight threads for asynchronous programming", "Database coroutines", "CSS coroutines", "Synchronous only"],
+          "correctAnswer": 0,
+          "explanation": "Coroutines use suspend functions for async operations."
+        },
+        {
+          "question": "What are scope functions?",
+          "options": ["CSS functions", "Database functions", "Functions executing code block in object context: let, run, with, apply, also", "Global functions"],
+          "correctAnswer": 2,
+          "explanation": "Scope functions create temporary scope for object."
+        },
+        {
+          "question": "What is Material Design in Android?",
+          "options": ["Google's design language with components like CardView, FAB", "Database design", "CSS design", "iOS design"],
+          "correctAnswer": 0,
+          "explanation": "Material Design ensures consistent, modern UI."
+        },
+        {
+          "question": "What are intents?",
+          "options": ["Messaging objects for component communication", "Database intents", "CSS intents", "Functions"],
+          "correctAnswer": 0,
+          "explanation": "Intents start activities, services, or broadcast messages."
+        },
+        {
+          "question": "What is a Service in Android?",
+          "options": ["CSS service", "Component running in background without UI", "Database service", "UI component"],
+          "correctAnswer": 1,
+          "explanation": "Services handle long-running operations in background."
+        },
+        {
+          "question": "What are broadcast receivers?",
+          "options": ["Components responding to system-wide announcements", "Database receivers", "CSS receivers", "UI receivers"],
+          "correctAnswer": 0,
+          "explanation": "Receivers listen for broadcasts like battery low, boot completed."
+        },
+        {
+          "question": "What is Gradle?",
+          "options": ["Build automation tool for Android projects", "Database tool", "CSS tool", "Testing tool"],
+          "correctAnswer": 0,
+          "explanation": "Gradle manages dependencies, builds, and variants."
+        }
+      ]
+    },
+    {
+      "id": "deployment-publishing",
+      "title": "Deployment & Publishing (3-4 weeks)",
+      "description": "Learn to build and release apps to App Store and Google Play Store, including code signing, CI/CD with EAS Build, TestFlight, and over-the-air updates.",
+      "resources": [
+        {
+          "title": "Build & Release for iOS",
+          "url": "https://docs.flutter.dev/deployment/ios",
+          "type": "Article"
+        },
+        {
+          "title": "Build & Release for Android",
+          "url": "https://docs.flutter.dev/deployment/android",
+          "type": "Article"
+        },
+        {
+          "title": "Publishing to App Store",
+          "url": "https://reactnative.dev/docs/publishing-to-app-store",
+          "type": "Article"
+        },
+        {
+          "title": "Publishing to Play Store",
+          "url": "https://reactnative.dev/docs/signed-apk-android",
+          "type": "Article"
+        },
+        {
+          "title": "Expo EAS",
+          "url": "https://www.youtube.com/embed/uQCE9zl3dXU?si=MssXFUSHuVDmvmJl",
+          "type": "Video"
+        },
+        {
+          "title": "App Store Connect & TestFlight",
+          "url": "https://www.youtube.com/embed/6VuLukGpNv8?si=yZNHUHjG0KFXaiZd",
+          "type": "Video"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is app deployment?",
+          "options": ["Publishing app to App Store/Play Store", "Database deployment", "CSS deployment", "Testing"],
+          "correctAnswer": 0,
+          "explanation": "Deployment makes app available for users to download."
+        },
+        {
+          "question": "What is code signing?",
+          "options": ["Cryptographically signing app to verify authenticity", "Writing code", "Database signing", "CSS signing"],
+          "correctAnswer": 0,
+          "explanation": "Code signing proves app hasn't been tampered with."
+        },
+        {
+          "question": "What is TestFlight?",
+          "options": ["Database test", "Apple's beta testing platform", "CSS testing", "Unit testing"],
+          "correctAnswer": 1,
+          "explanation": "TestFlight distributes iOS apps to beta testers."
+        },
+        {
+          "question": "What is EAS Build?",
+          "options": ["CSS build", "Expo's cloud build service", "Database build", "Local build"],
+          "correctAnswer": 1,
+          "explanation": "EAS Build compiles apps without local setup."
+        },
+        {
+          "question": "What is an APK?",
+          "options": ["Database package", "Android Package file format", "iOS package", "Web package"],
+          "correctAnswer": 1,
+          "explanation": "APK contains all files needed to install Android app."
+        },
+        {
+          "question": "What is an AAB?",
+          "options": ["Android App Bundle for optimized delivery", "iOS bundle", "Database bundle", "CSS bundle"],
+          "correctAnswer": 0,
+          "explanation": "AAB is Google Play's publishing format."
+        },
+        {
+          "question": "What is OTA update?",
+          "options": ["Over-The-Air update without app store", "Database update", "CSS update", "Manual update"],
+          "correctAnswer": 0,
+          "explanation": "OTA updates JavaScript bundle directly (Expo Updates)."
+        },
+        {
+          "question": "What is app submission?",
+          "options": ["Uploading app for store review", "Database submission", "CSS submission", "Testing"],
+          "correctAnswer": 0,
+          "explanation": "Submission requires metadata, screenshots, compliance."
+        },
+        {
+          "question": "What is CI/CD for mobile?",
+          "options": ["Database automation", "Automated building and deploying apps", "CSS automation", "Manual deployment"],
+          "correctAnswer": 1,
+          "explanation": "CI/CD automates testing, building, and releasing."
+        },
+        {
+          "question": "What is App Store Connect?",
+          "options": ["Apple's portal for managing apps", "Database portal", "CSS portal", "Testing portal"],
+          "correctAnswer": 0,
+          "explanation": "App Store Connect manages releases, analytics, and TestFlight."
+        },
+        {
+          "question": "What are provisioning profiles?",
+          "options": ["CSS profiles", "Database profiles", "Files linking certificates, devices, and app IDs for iOS", "Android profiles"],
+          "correctAnswer": 2,
+          "explanation": "Provisioning profiles authorize app installation on devices."
+        },
+        {
+          "question": "What are app review guidelines?",
+          "options": ["Rules apps must follow for store approval", "Database guidelines", "CSS guidelines", "No guidelines"],
+          "correctAnswer": 0,
+          "explanation": "Guidelines cover content, privacy, functionality, design."
+        },
+        {
+          "question": "What is version management?",
+          "options": ["Database versioning", "Tracking and updating app version numbers", "CSS versioning", "No versioning"],
+          "correctAnswer": 1,
+          "explanation": "Version numbers indicate releases: major.minor.patch."
+        },
+        {
+          "question": "What are screenshots and metadata?",
+          "options": ["Images and descriptions showcasing app in store", "Database metadata", "CSS metadata", "Code comments"],
+          "correctAnswer": 0,
+          "explanation": "Screenshots, description, keywords attract users."
+        },
+        {
+          "question": "What are release strategies?",
+          "options": ["CSS strategies", "Database strategies", "Phased rollout, canary releases, staged deployment", "Immediate only"],
+          "correctAnswer": 2,
+          "explanation": "Strategies minimize risk by gradual user exposure."
+        },
+        {
+          "question": "What is Google Play Console?",
+          "options": ["Google's platform for managing Android apps", "Database console", "CSS console", "Testing console"],
+          "correctAnswer": 0,
+          "explanation": "Play Console handles releases, analytics, ratings, policies."
+        },
+        {
+          "question": "What are build variants?",
+          "options": ["Different app versions: debug, release, staging", "Database variants", "CSS variants", "Single build only"],
+          "correctAnswer": 0,
+          "explanation": "Variants configure different environments and features."
+        },
+        {
+          "question": "What are app signing keys?",
+          "options": ["Database keys", "CSS keys", "Cryptographic keys proving app ownership", "API keys"],
+          "correctAnswer": 2,
+          "explanation": "Signing keys must be kept secure for app updates."
+        },
+        {
+          "question": "What is beta testing?",
+          "options": ["Testing app with limited users before public release", "Database testing", "CSS testing", "Production testing"],
+          "correctAnswer": 0,
+          "explanation": "Beta testing identifies bugs using TestFlight or internal tracks."
+        },
+        {
+          "question": "What is app store optimization?",
+          "options": ["Improving app visibility through keywords, ratings, screenshots", "Database optimization", "CSS optimization", "Code optimization"],
+          "correctAnswer": 0,
+          "explanation": "ASO increases downloads through better discoverability."
+        }
+      ]
+    },
+    {
+      "id": "essential-topics",
+      "title": "Essential Topics (Ongoing)",
+      "description": "Master UI/UX design principles, backend & APIs, state management patterns, testing strategies, and performance optimization for mobile apps.",
+      "resources": [
+        {
+          "title": "Material Design",
+          "url": "https://www.youtube.com/embed/Abj65tkSblQ?si=gK3LPxAld3GVVw7w",
+          "type": "Video"
+        },
+        {
+          "title": "Firebase",
+          "url": "https://www.youtube.com/embed/p9pgI3Mg-So?si=CzyiiH-HMHJh1058",
+          "type": "Video"
+        },
+        {
+          "title": "Supabase",
+          "url": "https://www.youtube.com/embed/kyphLGnSz6Q?si=kCptB-KHKwaJGiaQ",
+          "type": "Video"
+        },
+        {
+          "title": "Redux Toolkit",
+          "url": "https://redux-toolkit.js.org/",
+          "type": "Article"
+        },
+        {
+          "title": "React Native Directory",
+          "url": "https://reactnative.directory/",
+          "type": "Article"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is UI/UX design?",
+          "options": ["Creating intuitive, visually appealing interfaces", "Database design", "Server design", "Code design"],
+          "correctAnswer": 0,
+          "explanation": "UI/UX focuses on user experience and interface design."
+        },
+        {
+          "question": "What is Material Design?",
+          "options": ["Database design", "Google's design system for mobile", "CSS framework", "Server design"],
+          "correctAnswer": 1,
+          "explanation": "Material Design provides guidelines for Android apps."
+        },
+        {
+          "question": "What is Human Interface Guidelines?",
+          "options": ["Apple's design principles for iOS", "Database guidelines", "CSS guidelines", "Server guidelines"],
+          "correctAnswer": 0,
+          "explanation": "HIG ensures consistency across iOS apps."
+        },
+        {
+          "question": "What is Firebase?",
+          "options": ["CSS backend", "Backend-as-a-Service platform", "Database only", "Testing tool"],
+          "correctAnswer": 1,
+          "explanation": "Firebase provides auth, database, storage, analytics, etc."
+        },
+        {
+          "question": "What is Supabase?",
+          "options": ["Open-source Firebase alternative", "CSS framework", "Testing tool", "Design tool"],
+          "correctAnswer": 0,
+          "explanation": "Supabase offers PostgreSQL, auth, storage, real-time."
+        },
+        {
+          "question": "What is Redux Toolkit?",
+          "options": ["Database toolkit", "Simplified Redux for state management", "CSS toolkit", "Testing toolkit"],
+          "correctAnswer": 1,
+          "explanation": "Redux Toolkit reduces Redux boilerplate."
+        },
+        {
+          "question": "What is unit testing?",
+          "options": ["Testing individual functions/components", "Database testing", "CSS testing", "Integration testing"],
+          "correctAnswer": 0,
+          "explanation": "Unit tests verify isolated logic with Jest/Mocha."
+        },
+        {
+          "question": "What is integration testing?",
+          "options": ["CSS testing", "Testing how components work together", "Database testing", "Unit testing"],
+          "correctAnswer": 1,
+          "explanation": "Integration tests verify component interactions."
+        },
+        {
+          "question": "What is performance optimization?",
+          "options": ["Improving app speed and responsiveness", "Database optimization", "CSS optimization", "Code formatting"],
+          "correctAnswer": 0,
+          "explanation": "Optimize images, lazy load, minimize re-renders."
+        },
+        {
+          "question": "What is accessibility?",
+          "options": ["Making apps usable for people with disabilities", "Database access", "CSS access", "Server access"],
+          "correctAnswer": 0,
+          "explanation": "Accessibility includes screen readers, labels, contrast."
+        },
+        {
+          "question": "What are debugging tools?",
+          "options": ["Database tools", "Tools like Chrome DevTools, Flipper, React DevTools", "CSS tools", "No debugging"],
+          "correctAnswer": 1,
+          "explanation": "Debugging tools inspect state, network, and performance."
+        },
+        {
+          "question": "What is app security?",
+          "options": ["Protecting data with encryption, secure storage, HTTPS", "Database security", "CSS security", "No security"],
+          "correctAnswer": 0,
+          "explanation": "Security prevents unauthorized access and data breaches."
+        },
+        {
+          "question": "What is data encryption?",
+          "options": ["CSS encryption", "Database encryption", "Converting data to unreadable format with algorithms", "No encryption"],
+          "correctAnswer": 2,
+          "explanation": "Encryption protects sensitive data at rest and in transit."
+        },
+        {
+          "question": "What is API versioning?",
+          "options": ["Managing different API versions for backward compatibility", "Database versioning", "CSS versioning", "No versioning"],
+          "correctAnswer": 0,
+          "explanation": "Versioning allows gradual API changes without breaking clients."
+        },
+        {
+          "question": "What are mobile design patterns?",
+          "options": ["Reusable solutions: MVC, MVVM, Repository, Singleton", "Database patterns", "CSS patterns", "No patterns"],
+          "correctAnswer": 0,
+          "explanation": "Design patterns solve common architectural problems."
+        },
+        {
+          "question": "What is app architecture?",
+          "options": ["CSS architecture", "Structure organizing code: clean architecture, layered architecture", "Database architecture", "No architecture"],
+          "correctAnswer": 1,
+          "explanation": "Good architecture separates concerns and improves maintainability."
+        },
+        {
+          "question": "What is memory management?",
+          "options": ["Preventing memory leaks and optimizing resource usage", "Database management", "CSS management", "No management"],
+          "correctAnswer": 0,
+          "explanation": "Proper memory management prevents crashes and slowdowns."
+        },
+        {
+          "question": "What is battery optimization?",
+          "options": ["Database optimization", "CSS optimization", "Reducing battery drain through efficient code and background tasks", "No optimization"],
+          "correctAnswer": 2,
+          "explanation": "Optimization limits location updates, network calls, wake locks."
+        },
+        {
+          "question": "What is localization?",
+          "options": ["Adapting app for different languages and regions", "Database localization", "CSS localization", "English only"],
+          "correctAnswer": 0,
+          "explanation": "Localization includes translations, date/time formats, currencies."
+        },
+        {
+          "question": "What is analytics integration?",
+          "options": ["Tracking user behavior with Firebase Analytics, Mixpanel", "Database analytics", "CSS analytics", "No tracking"],
+          "correctAnswer": 0,
+          "explanation": "Analytics provide insights into user engagement and issues."
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Personal Todo List App",
+      "description": "Build a simple mobile todo list application with local storage, add/delete/edit tasks, and a clean UI. Perfect for learning mobile app fundamentals.",
+      "difficulty": "Beginner",
+      "duration": "2-3 weeks",
+      "skills": ["React Native", "JavaScript", "AsyncStorage", "UI Components", "State Management"],
+      "tasks": [
+        "Set up React Native development environment",
+        "Design the app UI with FlatList for tasks",
+        "Implement add, edit, and delete task functionality",
+        "Add local storage using AsyncStorage",
+        "Style the app with custom components",
+        "Test on both iOS and Android simulators"
+      ]
+    },
+    {
+      "title": "Weather Forecast App",
+      "description": "Create a weather application that fetches data from a weather API, displays current weather and forecasts, and supports multiple locations.",
+      "difficulty": "Intermediate",
+      "duration": "3-4 weeks",
+      "skills": ["API Integration", "React Native", "Geolocation", "HTTP Requests", "Data Visualization"],
+      "tasks": [
+        "Integrate OpenWeather or similar API",
+        "Implement geolocation to detect user's location",
+        "Create UI for displaying weather data",
+        "Add search functionality for different cities",
+        "Display 5-day forecast with charts",
+        "Handle loading states and error messages",
+        "Add pull-to-refresh functionality"
+      ]
+    },
+    {
+      "title": "Social Media Feed App",
+      "description": "Develop a social media style app with user authentication, photo uploads, likes, comments, and a scrollable feed using Firebase backend.",
+      "difficulty": "Intermediate",
+      "duration": "4-5 weeks",
+      "skills": ["Firebase", "Authentication", "Cloud Storage", "Real-time Database", "Image Handling"],
+      "tasks": [
+        "Set up Firebase project and authentication",
+        "Implement user registration and login screens",
+        "Create image picker and upload functionality",
+        "Build scrollable feed with posts",
+        "Add like and comment features",
+        "Implement real-time updates",
+        "Add user profile pages",
+        "Optimize image loading and caching"
+      ]
+    },
+    {
+      "title": "E-Commerce Shopping App",
+      "description": "Build a full-featured e-commerce mobile app with product catalog, cart, checkout, payment integration, and order tracking.",
+      "difficulty": "Advanced",
+      "duration": "6-8 weeks",
+      "skills": ["Redux", "Payment Gateway", "REST API", "Navigation", "Complex State Management"],
+      "tasks": [
+        "Design app architecture with Redux",
+        "Create product listing and detail screens",
+        "Implement shopping cart functionality",
+        "Integrate payment gateway (Stripe/PayPal)",
+        "Build checkout flow with address management",
+        "Add order history and tracking",
+        "Implement search and filter functionality",
+        "Add push notifications for orders",
+        "Optimize performance and add analytics"
+      ]
+    },
+    {
+      "title": "Real-Time Chat Application",
+      "description": "Create a sophisticated messaging app with real-time chat, group conversations, media sharing, typing indicators, and end-to-end encryption.",
+      "difficulty": "Advanced",
+      "duration": "7-9 weeks",
+      "skills": ["WebSocket", "Real-time Communication", "Encryption", "File Upload", "Complex UI"],
+      "tasks": [
+        "Set up WebSocket server or use Firebase/Socket.io",
+        "Implement user authentication and profiles",
+        "Build one-on-one chat functionality",
+        "Add group chat features",
+        "Implement typing indicators and read receipts",
+        "Add media sharing (images, Videos, files)",
+        "Implement push notifications",
+        "Add message encryption",
+        "Create voice/Video call feature (bonus)",
+        "Optimize for performance and offline functionality"
+      ]
+    }
+  ]
+}
