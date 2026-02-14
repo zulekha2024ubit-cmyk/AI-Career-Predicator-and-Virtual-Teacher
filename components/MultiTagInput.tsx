@@ -39,9 +39,18 @@ export const MultiTagInput: React.FC<Props> = ({ label, values, onChange, placeh
       {label && <span className="mb-1 block text-sm font-medium text-gray-700">{label}</span>}
       <div className="flex min-h-[42px] flex-wrap items-center gap-2 rounded-md border border-gray-300 bg-white px-3 py-2 focus-within:border-primary focus-within:ring-2 focus-within:ring-primary/20">
         {values.map((v, i) => (
-          <span key={v} className="inline-flex items-center gap-1 rounded bg-gray-100 px-2 py-1 text-sm">
+          <span key={`${i}-${v}`} className="inline-flex items-center gap-1 rounded bg-gray-100 px-2 py-1 text-sm">
             {v}
-            <button type="button" className="text-gray-500 hover:text-gray-700" onClick={() => remove(i)} aria-label={`Remove ${v}`}>
+            <button 
+              type="button" 
+              className="text-gray-500 hover:text-gray-700" 
+              onClick={(e) => {
+                e.preventDefault()
+                e.stopPropagation()
+                remove(i)
+              }} 
+              aria-label={`Remove ${v}`}
+            >
               ×
             </button>
           </span>
