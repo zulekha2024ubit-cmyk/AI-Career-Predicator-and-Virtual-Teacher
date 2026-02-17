@@ -16,6 +16,7 @@ import { AppNavbar } from '@/components/AppNavbar'
 export default function ProfilePage() {
   const router = useRouter()
   const [userEmail, setUserEmail] = useState<string>('')
+  const [userId, setUserId] = useState<string>('')
   const [loading, setLoading] = useState(true)
   const [saved, setSaved] = useState(false)
 
@@ -56,14 +57,29 @@ export default function ProfilePage() {
         setLoading(false)
         return
       }
+      setUserId(user.id)
       setUserEmail(user.email ?? '')
       form.setValue('email', user.email ?? '')
+      
+      // Load from database first
       const { data } = await supabase.from('user_profiles').select('*').eq('id', user.id).maybeSingle()
       if (data) {
         Object.entries(data).forEach(([k, v]) => {
           // @ts-expect-error dynamic assignment into RHF
           if (k in form.getValues()) form.setValue(k, v as any)
         })
+      } else {
+        // Only load from localStorage if no database data exists
+        // and it's for the same user
+        try {
+          const draftKey = `profile_draft_${user.id}`
+          const draft = localStorage.getItem(draftKey)
+          if (draft) {
+            const parsed = JSON.parse(draft)
+            // Reset form with draft but keep current user's email
+            form.reset({ ...parsed, email: user.email ?? '' })
+          }
+        } catch {}
       }
       setLoading(false)
     }
@@ -72,22 +88,16 @@ export default function ProfilePage() {
 
   const level = form.watch('current_level')
 
-  // Local auto-save to storage
+  // Local auto-save to storage (user-specific)
   useEffect(() => {
+    if (!userId) return
     const sub = form.watch((val) => {
-      try { localStorage.setItem('profile_draft', JSON.stringify(val)) } catch {}
+      try { 
+        localStorage.setItem(`profile_draft_${userId}`, JSON.stringify(val)) 
+      } catch {}
     })
     return () => sub.unsubscribe()
-  }, [form])
-
-  useEffect(() => {
-    try {
-      const draft = localStorage.getItem('profile_draft')
-      if (draft) {
-        form.reset(JSON.parse(draft))
-      }
-    } catch {}
-  }, [])
+  }, [form, userId])
 
   const completion = useMemo(() => {
     const v = form.getValues()
